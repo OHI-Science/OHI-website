@@ -1,0 +1,31 @@
+.bg-home{
+  background-image: url('/images/bg-home.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  position: fixed;
+  height: 100%;
+  width:100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: matrix(1, 0, 0, 1, 0, -1);
+}
+
+.header-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: inherit;
+  opacity: 1;
+  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%);
+
+}
+
+.footer {
+  border-color: #494a43;
+  padding-top: 275px;
+}

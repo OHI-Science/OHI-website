@@ -1,0 +1,150 @@
+body {
+  background-color: $body-color;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: lighten($color: $primary-color, $amount: 10);
+  color: white;
+}
+
+
+a:hover {
+  color: $primary-color;
+}
+
+a.text-primary:hover {
+  color: $primary-color!important;
+}
+
+a.text-light:hover {
+  color: $primary-color!important;
+}
+
+h4{
+  transition: .2s ease;
+}
+a h4{
+  &:hover{
+    color: $primary-color;
+  }
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  &-sm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &-title {
+    margin-bottom: 30px;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-primary {
+  border-color: $border-color !important;
+}
+
+/* overlay */
+
+.page-title-section.overlay {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: relative;
+
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .8;
+  }
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+
+/* page title */
+.page-title-section {
+  padding: 200px 0 80px;
+  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%)
+}
+
+
+
+
+// New CSS
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  font-family: 'Gotham A','Gotham B',Helvetica,Arial,sans-serif
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  line-height: 1.1;
+  color: #212d5e;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.overview-bar {
+  background-color: #212d5e;
+  height:5px;
+  width:50%;
+}
+
+.column-left {
+  width: 20%;
+  float: left;
+}
+
+.column-right {
+  width: 20%;
+  float: left;
+}
+
+.right-col-nav-item {
+  border-top: 1px solid rgba(30,44,94,.2);
+  padding: 0.7rem;
+}
+
+.icon-logo {
+  fill: grey;
+  opacity: 0.2
+}
+
+.col-left-goals {
+  width: 15%;
+  float: left;
+}
+
+.column-right {
+  width: 15%;
+  float: left;
+}

@@ -1,0 +1,4 @@
+baseURL = "http://oceanhealthindex.org/"
+languageCode = "en-us"
+title = "Ocean Health Index"
+theme = "ohi"

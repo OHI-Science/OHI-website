@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ $data := index site.Data site.Language.Lang }}
+
+<section class="home-page-content">
+  <div class="bg-home">
+  </div>
+
+  <header class = "index-header">
+    
+{{ with $data.homepage.about }}
+<section class="about section" style="margin-top: 0%;">
+  <div class="container">
+    <div class="row align-items-center" style="max-width: 100%; flex: 0 0 100%; margin-top: 15%;">
+        <h1 class="home-title">{{ .title | markdownify }}</h2>
+    </div>
+  </div>
+  <div class="ohi-info" style="padding-left: 5%; padding-top: 5%; height:300px;">
+      <div class="info-container">
+          <div class="section-home" style ="height:300px; padding: 35px; width: 50%; float: left; background-color: white; background-repeat: no-repeat; background-position: 100% 100%; background-image: url('images/section-home-bg-1.png');">
+              <h2 class="section-home-title" style="max-width: 50%;">Global ASSESSMENT</h2>
+              <p class="section-home-subtitle">A measure of ocean health across countries and high seas regions.</p>
+
+              <div class="btn-wrap-home">
+                  <a class="btn" href="/region-scores" style="color: #212d5e; border: 2px solid #212d5e;">GLOBAL SCORES</a>
+                  <a class="btn" target="_blank" href="http://www.oceanhealthindex.org/methodology" style="color: #212d5e; border: 2px solid #212d5e;">Methodology</a>
+              </div>
+          </div>
+          <div class="section-home" style="height:300px; float: right; padding: 35px; width: 50%; background-color: rgb(30,44,94,.9); ">
+              <h2 class="section-home-title" style="color: white; max-width: 50%;">INDEPENDENT ASSESSMENTS</h2>
+
+              <span class="ohi-plus" style="color:white;">OHI<span style="color: red;">+</span></span> <p class="section-home-subtitle" style="z-index: 100; position:relative; color: white">is an assessment tool customized by stakeholders to meet local management needs.</p>
+
+              <div class="btn-wrap-home">
+                  <a class="btn" href="/ohi-plus" style="color: white; border: 2px solid white;">OHI+ ASSESSMENTS</a>
+                  <a class="btn" href="http://ohi-science.org" target="_blank" style="color: white; border: 2px solid white;">Conduct an assessment</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+{{ end }}
+</header>
+
+
+</section>
+
+{{ end }}

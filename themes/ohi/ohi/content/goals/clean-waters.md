@@ -1,0 +1,32 @@
+---
+title: "Goal: Clean Waters"
+url: "clean-waters"
+name: "Clean Waters"
+# Background image for the banner
+bg_image: "/images/goals/clean-waters/thumb.jpg"
+---
+
+People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, eutrophication, algal blooms, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), floating trash, and mass kills of organisms due to pollution. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist. The Clean Water goal captures the degree to which local waters are unpolluted by natural and human-made causes. This goal scores highest when the contamination level is zero.
+
+**Ideal Approach**
+
+Ideally, data would be available and combined from different categories of marine pollution that can directly cause waters to become unsuitable for recreation, enjoyment, and other purposes. These factors typically include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. Having good data from each of the desired categories, such as those pulled from a repeated effort at monitoring the conditions of the coasts, would be ideal. The Status of these components is the inverse of their intensity (i.e., high input is a bad status).
+
+**Practical Guidance**
+
+First think about what kind of point and non-point sources of pollution are in your area. Are there known sources of trash and marine debris? Is there a population that does not have access to sanitation? Does your wastewater get effectively treated before it is discharged into the environment? How does urban runoff contribute to your local coastal waters? Where possible, you should think about categories of inputs that are not used in the Global Assessments. These include information on toxic algal blooms, oil spills, turbidity or sediment input, and floating trash, and think about how they can fit in to the model areas.
+
+Once you identify the sources, you should try to find in situ measurements of contamination. This could include monitoring data for pathogen levels, chemical contaminants, or data on the frequency and location of anoxic conditions or eutrophication. If direct measurements of water pollution are unavailable, indirect indicators, or proxy data, could be used. For example, land-based nutrients pollution is a proxy measure to nutrient input. The number of people who do not have improved access to sanitation could indicate the level of pathogen pollution.
+
+If you don’t have such information, or have partial information on one of these inputs, you could combine it with population data or model the data to estimate how much of an impact it has on coastal areas. Do you have population density information over time? You could then use this later to calculate the trend.
+
+In the 2012 Global Assessment, these data layers are scores spatially for 3 nm out from shore. This is because it concentrates the effect of the inputs to coastal regions and makes them visible to the shoreline. You can change this value in your spatial analysis.
+
+You should use more refined data than the Global Assessment data, because they rely heavily on proxy data for water quality. However, you should follow the same approach of the geometric mean to sum up the data layers that you find. This guarantees that if any one of the components scores poorly, the higher scores from other components will note hide the effect.
+
+The Clean Waters goal is connected to the Pressures layers. You should approach the both of them at the same time where possible. (See the sections on Pressures and Resilience to understand more.)
+
+In the Global Assessment, marine debris from plastic pollution is one of the pressures layers. The same data are also used in the Clean Waters goal, but they are inverted such that a low value of debris is a high score in the goal. This is commonly done for these interchangeable data layers.
+
+For each contamination category, a reference point is set and all data in this category is scaled to 1. The type of reference point used will depend on the data available. You may decided that an ocean completely rid of pollution is ideal, or you may find that beach closure of less than 10 days per year due to E.coli contamination is acceptable.
+

@@ -1,0 +1,45 @@
+
+.col-mid-goals {
+  padding-top:2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 5rem;
+  padding-right: 8rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.card {
+  height: 20rem;
+  width: 27rem;
+}
+
+.card-body {
+  background-clip: border-box; 
+  background-size: cover;
+  padding: 0rem;
+  opacity: 0.8;
+}
+
+.btn.btn-primary {
+  position: absolute;
+  
+  width: 100%;
+  bottom: 0rem;
+  height: 5rem;
+  background-color: rgba(14,33,70,.9);
+  border-color: transparent;
+}
+
+.btn.btn-primary p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.btn.btn-primary:hover {
+  background-color: rgba(14,33,70,.9);;
+}
