@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="component-page">
+  <section class="section">
+    <div class="row" style="margin-left: 0rem;">
+      {{- partial "layout/left-col.html" . -}}
+      {{- partial "layout/center-col.html" . -}}
+      {{ .Scratch.Set "name" "METHODOLOGY" }}
+      {{- partial "layout/right-col.html" . -}}
+    </div>
+    {{- partial "cards.html" . -}}
+  </section>
+</section>
+
+{{end}}

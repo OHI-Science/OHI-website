@@ -1,0 +1,19 @@
+.button.download {
+  height: 4rem;
+  transition-duration: 0.4s;
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #212d5e;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:400;
+  color: #FFFFFF;
+  text-align:center;
+}
+
+.button.download:hover {
+  background-color: #212d5e;
+  color: white;
+}
