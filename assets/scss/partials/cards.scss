@@ -1,12 +1,12 @@
 
-.col-mid-goals {
+.cards {
   padding-top:2rem;
   display: grid;
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 5rem;
-  padding-right: 8rem;
   column-gap: 1rem;
   row-gap: 1rem;
+  width: 100%;
 }
 
 .card {
@@ -18,9 +18,20 @@
   background-clip: border-box; 
   background-size: cover;
   padding: 0rem;
-  opacity: 0.8;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing:0.03rem;
+  text-transform: uppercase;
+  font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
+.card-text{
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+}
 .btn.btn-primary {
   position: absolute;
   
@@ -43,3 +54,4 @@
 .btn.btn-primary:hover {
   background-color: rgba(14,33,70,.9);;
 }
+
