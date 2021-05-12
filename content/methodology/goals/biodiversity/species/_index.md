@@ -1,5 +1,5 @@
 ---
-title: "Sub Goal: Species"
+title: "Sub-Goal: Species"
 name: "Species"
 sub_url: "species"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"

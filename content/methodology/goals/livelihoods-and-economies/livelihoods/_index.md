@@ -1,5 +1,5 @@
 ---
-title: "Sub Goal:Livelihoods"
+title: "Sub-Goal: Livelihoods"
 sub_url: "livelihoods"
 name: "Livelihoods"
 card_image: "/images/methodology/goals/livelihoods-and-economies/card.jpg"

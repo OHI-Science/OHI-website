@@ -1,5 +1,5 @@
 ---
-title: "Sub Goal: Mariculture"
+title: "Sub-Goal: Mariculture"
 name: "Mariculture"
 sub_url: "mariculture"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"

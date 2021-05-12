@@ -1,5 +1,5 @@
 ---
-title: "Sub Goal: Lasting Special Places"
+title: "Sub-Goal: Lasting Special Places"
 name: "Lasting Special Places"
 sub_url: "lasting-special-places"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"

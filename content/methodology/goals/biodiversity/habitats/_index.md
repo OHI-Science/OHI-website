@@ -1,5 +1,5 @@
 ---
-title: "Sub Goal: Habitat"
+title: "Sub-Goal: Habitat"
 name: "Habitat"
 sub_url: "habitats"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"
@@ -35,4 +35,3 @@ If possible, you will want to gather habitat area and condition data through tim
 The reference point will likely be based on historic habitat area coverage and condition, with the assumption that habitat destruction has been and still is occurring and the target is to return to some point in the past. You will need historical data for this, from satellites, published papers, or even hand-drawn maps. The challenge is to find a reference point that is both ambitious and realistic (based on the S.M.A.R.T. principles: see Conceptual Guide), using the data available. If data allow, it will be possible to set a reference point that is more ambitious than that used in global assessments.
 
 Alternatively, the reference point could be guided by a policy target. For example, are there any climate change policies in your area, with defined targets and objectives? Are there any restoration or carbon storage projects in your area? Do any organizations offer guidance on the amount of carbon storage your management policies should be aiming for?
-
