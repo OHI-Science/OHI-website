@@ -1,23 +1,9 @@
+<!-- Landing page for pressures -->
 {{ define "main" }}
-
-<section class="component-page">
   <section class="section">
-    <div class="row" style="margin-left: 0rem;">
-      {{- partial "layout/left-col.html" . -}}
-      {{- partial "layout/center-col.html" . -}}
-      {{ .Scratch.Set "name" "METHODOLOGY" }}
-      {{- partial "layout/right-col.html" . -}}
-    </div>
-    <div class = "col-mid-goals">
-      {{ range .Data.Pages }}
-          <div class="card">
-            <div class="card-body" style="background-image: url({{.Params.bg_image}});">
-              <a href= "{{.Params.sub_url}}" class="btn btn-primary"><p class="card-text">{{.Params.name}}</p></a>
-            </div>
-          </div>
-      {{ end }}
-    </div>
+    {{- partial "layout/left-col.html" . -}}
+    {{- partial "layout/center-col.html" . -}}
+    {{ .Scratch.Set "name" "METHODOLOGY" }}
+    {{- partial "layout/right-col.html" . -}}
   </section>
-</section>
-
 {{end}}
