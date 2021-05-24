@@ -1,7 +1,6 @@
 ---
 title: "Sub-Goal: Habitat"
 name: "Habitat"
-sub_url: "habitats"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"
 bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
 ---

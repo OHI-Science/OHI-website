@@ -1,7 +1,6 @@
 ---
 # Title in the banner
 title: "Goal: Clean Waters"
-sub_url: "clean-waters"
 name: "Clean Waters"
 card_image: "/images/methodology/goals/clean-waters/card.jpg"
 bg_image: "/images/methodology/goals/clean-waters/banner.jpg"

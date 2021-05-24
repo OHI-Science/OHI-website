@@ -1,6 +1,5 @@
 ---
 title: "Goal: Sense of Place"
-sub_url: "sense-of-place"
 name: "Sense of Place"
 card_image: "/images/methodology/goals/sense-of-place/card.jpg"
 bg_image: "/images/methodology/goals/sense-of-place/banner.jpg"

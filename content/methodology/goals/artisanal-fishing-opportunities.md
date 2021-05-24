@@ -1,7 +1,6 @@
 ---
 title: "Goal: Artisanal Fishing Opportunities"
 name: "Artisanal Fishing Opportunities"
-sub_url: "artisanal-fishing-opportunities"
 card_image: "/images/methodology/goals/artisanal/card.jpg"
 bg_image: "/images/methodology/goals/artisanal/banner.jpg"
 type: "page"

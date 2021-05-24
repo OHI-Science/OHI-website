@@ -1,7 +1,6 @@
 ---
 title: "Goals"
 name: "Goals"
-sub_url: "goals"
 card_image: "/images/methodology/goals/card.jpg"
 bg_image: "/images/methodology/goals/banner.jpg"
 ---

@@ -1,6 +1,5 @@
 ---
 title: "Goal: Carbon Storage"
-sub_url: "carbon-storage"
 name: "Carbon Storage"
 card_image: "/images/methodology/goals/carbon-storage/card.jpg"
 bg_image: "/images/methodology/goals/carbon-storage/banner.jpg"

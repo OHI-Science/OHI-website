@@ -1,6 +1,5 @@
 ---
 title: "Goal: Food Provision"
-sub_url: "food-provision"
 name: "Food Provision"
 card_image: "/images/methodology/goals/food-provision/card.jpg"
 bg_image: "/images/methodology/goals/food-provision/banner.jpg"

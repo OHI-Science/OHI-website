@@ -1,7 +1,6 @@
 ---
 title: "Sub-Goal: Mariculture"
 name: "Mariculture"
-sub_url: "mariculture"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"
 bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
 ---

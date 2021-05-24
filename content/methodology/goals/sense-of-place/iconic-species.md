@@ -1,7 +1,6 @@
 ---
 title: "Sub-Goal: Iconic Species"
 name: "Iconic Species"
-sub_url: "iconic-species"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"
 bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
 ---

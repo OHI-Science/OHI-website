@@ -1,6 +1,6 @@
 ---
 title: "Goal: Natural Products"
-sub_url: "natural-products"
+
 name: "Natural Products"
 card_image: "/images/methodology/goals/natural-products/card.jpg"
 bg_image: "/images/methodology/goals/natural-products/banner.jpg"

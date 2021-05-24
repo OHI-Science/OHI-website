@@ -1,6 +1,5 @@
 ---
 title: "Goal: Tourism and Recreation"
-sub_url: "tourism-and-recreation"
 name: "Tourism and Recreation"
 card_image: "/images/methodology/goals/tourism-and-recreation/card.jpg"
 bg_image: "/images/methodology/goals/tourism-and-recreation/banner.jpg"

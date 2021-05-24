@@ -1,7 +1,6 @@
 ---
 title: "Goal: Biodiversity"
 name: "Biodiversity"
-sub_url: "biodiversity"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"
 bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Sub Goal: Wild Caught Fisheries"
 name: "Wild Caught Fisheries"
-sub_url: "wild-caught-fisheries"
 card_image: "/images/methodology/goals/biodiversity/card.jpg"
 bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
 ---

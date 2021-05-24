@@ -1,6 +1,5 @@
 ---
 title: "Sub-Goal:Economies"
-sub_url: "economies"
 name: "Economies"
 card_image: "/images/methodology/goals/livelihoods-and-economies/card.jpg"
 bg_image: "/images/methodology/goals/livelihoods-and-economies/banner.jpg"

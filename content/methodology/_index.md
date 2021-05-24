@@ -1,7 +1,6 @@
 ---
 title: "Methodology"
 name: "Methods"
-sub_url: "methodology/"
 card_image: "/images/methodology/resilience/card.jpg"
 bg_image: "/images/methodology/resilience/banner.jpg"
 ---
