@@ -3,10 +3,6 @@ title: "Goal: Artisanal Fishing Opportunities"
 name: "Artisanal Fishing Opportunities"
 card_image: "/images/methodology/goals/artisanal/card.jpg"
 bg_image: "/images/methodology/goals/artisanal/banner.jpg"
-type: "page"
-draft: false
-
-
 ---
 
 ### ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES
