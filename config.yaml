@@ -1,0 +1,101 @@
+baseURL: http://oceanhealthindex.org
+title: Ocean Health Index
+
+params:
+  plugins:
+    css:
+      - link: plugins/bootstrap/bootstrap.min.css
+  logo: images/logo.png
+  description: OHI Logo
+  author: Ocean Health Index
+  top_header: true
+
+  weight: 1
+  home: home
+Languages:
+  en:
+    menu:
+      main:
+        - name: Global Scores
+          url: global-scores
+          weight: 1
+          hasChildren: true
+        - parent: Global Scores
+          name: Latest Scores
+          url: latest-scores
+        - parent: Global Scores
+          name: Scores Over Time
+          url: scores-over-time
+        - parent: Global Scores
+          name: OHI Global Data Download
+          url: data-download
+
+        - name: METHODOLOGY
+          url: methodology
+          weight: 2
+          hasChildren: true
+          hasChildren: true
+        - parent: METHODOLOGY
+          name: Methods Overview
+          url: methodology
+        - parent: METHODOLOGY
+          name: Goal Descriptions
+          url: goals
+        - parent: METHODOLOGY
+          name: Pressure Descriptions
+          url: components
+        - parent: METHODOLOGY
+          name: Resilience Descriptions
+          url: components
+        - parent: METHODOLOGY
+          name: OHI Global Methods Deep Dive
+          url: components
+
+        - name: OHI +
+          url: ohi-plus
+          weight: 1
+          hasChildren: true
+        - parent: OHI +
+          name: What is OHI+
+          url: what-is
+        - parent: OHI +
+          name: OHI+ Assessments
+          url: ohi-assessments
+        - parent: OHI +
+          name: Conduct an OHI+
+          url: conduct-ohi
+
+        - name: Resources
+          url: resources
+          weight: 1
+          hasChildren: true
+        - parent: Resources
+          name: Tools for Better Science
+          url: tools
+        - parent: Resources
+          name: Data
+          url: data
+
+        - name: News
+          url: news
+          weight: 3
+
+        - name: About
+          weight: 4
+          url: about
+          hasChildren: true
+        - parent: About
+          name: What is OHI
+          url: about
+        - parent: About
+          name: Team
+          url: team
+        - parent: About
+          name: Supporters
+          url: supporters
+        - parent: About
+          name: Publications
+          url: publications
+        - parent: About
+          name: Contact
+          url: contact
