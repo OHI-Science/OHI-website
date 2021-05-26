@@ -21,11 +21,8 @@ Languages:
           weight: 1
           hasChildren: true
         - parent: Global Scores
-          name: Latest Scores
-          url: latest-scores
-        - parent: Global Scores
-          name: Scores Over Time
-          url: scores-over-time
+          name: Scores
+          url: scores
         - parent: Global Scores
           name: OHI Global Data Download
           url: data-download
@@ -69,6 +66,9 @@ Languages:
           url: resources
           weight: 1
           hasChildren: true
+        - parent: Resources
+          name: Overview
+          url: resources
         - parent: Resources
           name: Tools for Better Science
           url: tools
