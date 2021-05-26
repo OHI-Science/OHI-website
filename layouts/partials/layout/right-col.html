@@ -1,0 +1,14 @@
+<div class="column-right">
+  {{ $name := .Scratch.Get "name" }}
+  {{ range site.Menus.main }}
+  {{ if eq .Name $name }}
+  {{ if .HasChildren }}
+      {{ range .Children }}
+    <div class="right-col-nav">
+      <a href= "{{.Params}}" class="right-nav-item">{{.Name}}</a>
+    </div>
+      {{ end }}
+  {{ end }}
+  {{end}}
+  {{ end }}
+</div>

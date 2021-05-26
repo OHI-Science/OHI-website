@@ -1,0 +1,9 @@
+<div class = "cards">
+  {{ range .Pages }}
+      <a href= "{{ .Permalink }}" div class="card">
+        <span class="card-body" style="background-image: url({{.Params.card_image}});">
+        </span>
+        <div class="btn btn-primary"><p class="card-text">{{ .Params.name }}</p></div>
+      </a>
+  {{ end }}
+</div>
