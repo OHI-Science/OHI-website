@@ -17,7 +17,7 @@ Languages:
     menu:
       main:
         - name: Global Scores
-          url: scores
+          url: global-scores
           weight: 1
           hasChildren: true
         - parent: Global Scores
