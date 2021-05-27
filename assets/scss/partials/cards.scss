@@ -1,18 +1,27 @@
 .cards {
-  padding-top:3rem;
   display: grid;
-  margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  row-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  margin: auto;
+  padding-top:3rem;
+  row-gap: 1rem;
   width: min-content;
 }
 
 .card {
+  background-clip: border-box;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
   height: 20rem;
-  width: 27rem;
+  min-width: 0;
   overflow: hidden;
+  position: relative;
+  width: 27rem;
+  word-wrap: break-word;
 }
 
 .card:hover {
@@ -27,8 +36,10 @@
 .card-body {
   background-clip: border-box; 
   background-size: cover;
+  box-sizing: border-box;
+  min-height: 1px;
+  flex: 1 1 auto;
   padding: 0rem;
-
   text-transform: uppercase;
   font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;

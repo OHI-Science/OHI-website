@@ -2,9 +2,6 @@ baseURL: http://oceanhealthindex.org
 title: Ocean Health Index
 
 params:
-  plugins:
-    css:
-      - link: plugins/bootstrap/bootstrap.min.css
   logo: images/logo.png
   description: OHI Logo
   author: Ocean Health Index
