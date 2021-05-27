@@ -1,0 +1,11 @@
+main:
+- name: Global Scores
+  weight: 1
+- name: Methodology
+  weight: 2
+- name: OHI+
+  weight: 3
+- name: Resources
+  weight: 4
+- name: About
+  weight: 5
