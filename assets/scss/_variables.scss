@@ -6,6 +6,10 @@ $text-color-light: #8585a4;
 $text-color-dark: #1e1e4b;
 $body-color: #fff;
 $border-color: #ededf1;
+$highlight-color: #14aac8;
 
 // Font Variables
 $font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+
+// Sizing variables
+$page-header-height: 19rem; // Used in both nav.scss and the page-header.scss

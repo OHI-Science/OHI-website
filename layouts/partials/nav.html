@@ -1,31 +1,28 @@
-<!-- header -->
-<header class="fixed-top header">
-  <!-- navbar -->
-  <div class="navigation">
-      <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <div class="collapse navbar-collapse text-center" id="navigation">
-          <ul class="navbar-nav ml-auto">
-            {{ range site.Menus.main }}
-            {{ if .HasChildren }}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                {{ .Name }}
-              </a>
-              <div class="dropdown-menu">
-                {{ range .Children }}
-                <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                {{ end }}
-              </div>
-            </li>
-            {{ else }}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
+<nav class="navbar">
+  
+  <h1 class="logo">OHI</h1>
+
+  <ul class="menu">
+    {{ range site.Menus.main }}
+
+      {{ if .HasChildren }}
+        <li class="menu__item">
+          <button class="menu__link">{{ .Name }}</button>
+          <ul class="submenu">
+            {{ range .Children }}
+              <li class="submenu__item">
+                <a href="{{ .URL | absLangURL }}" class="submenu__link">{{ .Name }}</a>
+              </li>
             {{ end }}
           </ul>
-        </div>
-      </nav>
-  </div>
-</header>
-<!-- /header -->
+        </li>
+
+      {{ else }}
+        <li class="menu__item">
+          <a class="menu__link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+
+    {{ end }}
+  </ul>
+</nav>

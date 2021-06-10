@@ -1,0 +1,134 @@
+
+.navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 4rem;
+}
+
+.logo{
+  color: white;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 2rem;
+  text-align: left;
+  transform: translate3d(0,0,0);
+  transition: opacity .3s cubic-bezier(.75,0,.125,1),visibility .3s cubic-bezier(.75,0,.125,1);
+  position: absolute;
+  // visually hidden:
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: .89rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    line-height: 1.2;
+    position: relative;
+    letter-spacing: .02em;
+    font-weight: 500;
+
+    &:hover{
+      color: $highlight-color;
+    }
+  }
+}
+
+.menu {
+  list-style: none;
+  margin-top: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.4rem;
+
+  // dark blue background that covers the page header when the menu is hovered
+  &:before{
+    content: "";
+    left: 0;
+    background-color: rgba(30,44,94,.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    will-change: opacity;
+    visibility: hidden;
+    opacity: 0!important;
+    transition: opacity .3s cubic-bezier(.75,0,.125,1),visibility .3s cubic-bezier(.75,0,.125,1);
+    // TODO: large screens only
+    height: $page-header-height;
+  }
+
+  // make the background visible when the menu is hovered over
+  &:hover:before{
+    visibility: visible;
+    opacity: 1!important;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+  }
+
+  &__item:hover,
+  &__item.focus {
+
+    .submenu{
+      padding: 0.5rem 0;
+      width: 9rem;
+      height: auto;
+      clip: auto; 
+    }
+
+    .menu__link {
+      color: $highlight-color;
+    }
+    
+    .menu__link:after {
+      width: 100%;
+    }
+
+
+  }
+
+  &__link {
+    all: unset; // remove button styling
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color .3s cubic-bezier(.75,0,.125,1),font-weight .3s cubic-bezier(.75,0,.125,1);
+    color: #fff;
+    letter-spacing: .08em;
+    position: relative;
+    padding-bottom: 0.5rem;
+
+    // underline
+    &:after {
+      position: absolute;
+      height: 4px;
+      background-color: $highlight-color;
+      transition: all .25s cubic-bezier(.75,0,.125,1);
+      left: 0;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 0;
+    }
+  }
+}
+
+
+
