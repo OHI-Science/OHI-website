@@ -2,10 +2,23 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
+  {{/* Font families & weights, see assets/scss/fonts.scss */}}
+  {{- $fontTypes := slice "woff" "woff2" -}}
+  {{- $fontFaces := slice "montserrat-v15-latin" -}}
+  {{- $fontWeights := slice "100" "200" "300" "regular" "500" "600" "700" "800" "900" -}}
+  {{- range $type := $fontTypes -}}
+    {{- range $face := $fontFaces -}}
+      {{- $path := printf `/fonts/%s.%s` $face $type  -}}
+      {{- $pathHugo := printf `static/%s` $path -}}
+      {{- if (fileExists $pathHugo) -}}
+        <link rel="preload" as="font" type="font/{{ $type }}" href="{{ $path }}" crossorigin="anonymous">
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
   {{ $styles := resources.Get "scss/style.scss" | toCSS }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-
 </head>
