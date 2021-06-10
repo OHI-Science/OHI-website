@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
-{{- partial "head.html" . -}}
-
-<body>
-	{{- partial "header.html" . -}}
-	{{ if not .IsHome }}
-	{{ partial "page-header.html" . }}
-	{{ end }}
-
-	{{- block "main" . }}{{- end }}
-	{{- partial "footer.html" . -}}
-</body>
-
-</html>
+{{ define "main" }}
+  <section class="section">
+  {{- partial "layout/left-col.html" . -}}
+  </section>
+{{end}}
