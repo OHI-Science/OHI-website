@@ -1,8 +1,7 @@
 ---
 title: "Goal: Coastal Protection"
 name: "Coastal Protection"
-card_image: "/images/methodology/goals/coastal-protection/card.jpg"
-bg_image: "/images/methodology/goals/coastal-protection/banner.jpg"
+bg_image: "/images/banners/cliff.jpg"
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 title: "Goal: Carbon Storage"
 name: "Carbon Storage"
-card_image: "/images/methodology/goals/carbon-storage/card.jpg"
-bg_image: "/images/methodology/goals/carbon-storage/banner.jpg"
+bg_image: "/images/banners/disturbed-fish.jpg"
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 title: "Supporters"
 name: "Supporters"
-card_image: "/images/about/supporters/banner.jpg"
-bg_image: "/images/about/supporters/banner.jpg"
+bg_image: "/images/banners/whale.jpg"
 menu:
   main:
     parent: 'About'
@@ -11,7 +10,7 @@ menu:
 
 Our founding contributors go above and beyond in their generosity of intellectual and financial support. Without these forward-thinking leaders, the Ocean Health Index would not be a reality.
 
-![Wrigley](/images/about/supporters/pacific-banner.jpg)
+![Wrigley](/images/misc/pacific-banner.jpg)
 
 ### FOUNDING PRESENTING SPONSOR
 The Pacific Life Foundation has a strong tradition of creating positive societal change through its grant making program. The Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index as it has the potential to stimulate a reversal in ocean health, from negative to positive. It will be a valuable tool for citizens and policymakers to track the health of the global ocean, as well as the health of their regional and local ocean. We hope that the tools provided through the Index will enable and inspire policymakers to improve ocean governance and health.
@@ -23,7 +22,7 @@ Beau and Heather Wrigley generously provided the founding grant to the Ocean Hea
 
 Since 2007, Mr. and Mrs. Wrigley have provided vision, support and leadership to this project. Mr. Wrigley is a Board member at Conservation International, co-chair of CI’s Ocean Health Council, the former Chairman and CEO of the William Wrigley, Jr. Company, and an avid SCUBA-diver.
 
-![Wrigley](/images/about/supporters/wrigley.jpg)
+![Wrigley](/images/misc/wrigley.jpg)
 
 
 ### FOUNDING DONORS

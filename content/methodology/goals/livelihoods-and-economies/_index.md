@@ -1,8 +1,7 @@
 ---
 title: "Goal: Livelihoods and Economies"
 name: "Livelihoods and Economies"
-card_image: "/images/methodology/goals/livelihoods-and-economies/card.jpg"
-bg_image: "/images/methodology/goals/livelihoods-and-economies/banner.jpg"
+bg_image: "/images/banners/shipping-containers.jpg"
 ---
 
 

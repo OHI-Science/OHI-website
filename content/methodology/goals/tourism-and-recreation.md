@@ -1,8 +1,7 @@
 ---
 title: "Goal: Tourism and Recreation"
 name: "Tourism and Recreation"
-card_image: "/images/methodology/goals/tourism-and-recreation/card.jpg"
-bg_image: "/images/methodology/goals/tourism-and-recreation/banner.jpg"
+bg_image: "/images/banners/beach.jpg"
 ---
 
 

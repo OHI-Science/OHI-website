@@ -1,8 +1,7 @@
 ---
 title: "Goal: Sense of Place"
 name: "Sense of Place"
-card_image: "/images/methodology/goals/sense-of-place/card.jpg"
-bg_image: "/images/methodology/goals/sense-of-place/banner.jpg"
+bg_image: "/images/banners/lake.jpg"
 ---
 
 

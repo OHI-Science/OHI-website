@@ -1,7 +1,9 @@
 <div class = "cards">
   {{ range .Pages }}
+  {{ $imageResource := ($.Site.GetPage "section" "images").Resources.GetMatch (strings.TrimPrefix "/images/" .Params.bg_image ) }}
+  {{ $imageResource := $imageResource.Fill "600x600" }}
       <a href= "{{ .Permalink }}" div class="card">
-        <span class="card-body" style="background-image: url({{.Params.card_image}});">
+        <span class="card-body" style="background-image: url({{$imageResource.RelPermalink}});">
         </span>
         <div class="btn btn-primary"><p class="card-text">{{ .Params.name }}</p></div>
       </a>

@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal: Iconic Species"
 name: "Iconic Species"
-card_image: "/images/methodology/goals/biodiversity/card.jpg"
-bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
+bg_image: "/images/banners/shark-fish.jpg"
 ---
 
 Iconic species are those that are relevant to local cultural identity through a species’ relationship to one or more of the following: 1) traditional activities such as fishing, hunting or commerce; 2) local ethnic or religious practices; 3) existence value; and 4) locally-recognized aesthetic value (e.g., touristic attractions/common subjects for art such as whales). Habitat-forming species are not included in this definition of iconic species, nor are species that are harvested solely for economic or utilitarian purposes (even though they may be iconic to a sector or individual). This sub-goal assesses how well those species are conserved.

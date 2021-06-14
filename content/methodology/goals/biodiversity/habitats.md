@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal: Habitat"
 name: "Habitat"
-card_image: "/images/methodology/goals/biodiversity/card.jpg"
-bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
+bg_image: "/images/banners/shark-fish.jpg"
 ---
 
 The Habitats sub-goal includes all habitats in the study area, and assess their health condition and coverage area.
