@@ -1,134 +1,379 @@
+/**
+ * nav.scss
+ *
+ * The main navigation element at the top of every page. The nav component uses a
+ * hamburger menu on smaller (mobile) screens, and and a horizontal list of links with
+ * drop down menus on larger (desktop) screens. Defines the appearance of both versions of
+ * the nav and its main parts:
+ *
+ * - Logo
+ * - Main menu
+ * - Overlay
+ * - Menu items
+ * - Menu links
+ * - Sub-menus
+ * - Menu-button
+ *
+ * Related files:
+ *  - Nav JS: assets/js/partials/nav/nav.js
+ *  - Nav template: layouts/partials/nav.html
+ *
+ */
 
-.navbar {
+/**
+ * Nav variables
+ */
+
+$nav-icon-line-width: 4px;
+$nav-icon-line-gap: 6px;
+$nav-icon-padding: $nav-icon-line-width / 2;
+$nav-toggle-height: ($nav-icon-line-gap * 2) + ($nav-icon-line-width* 3) + $nav-icon-padding;;
+$nav-toggle-width: $nav-toggle-height + ($nav-toggle-height * (1/3));
+$nav-icon-left-pos: $nav-icon-line-width + $nav-icon-padding;
+$nav-transition-delay: 200ms;
+$nav-transition: .3s cubic-bezier(.75,0,.125,1); 
+
+.nav {
+  // Position the nav bar at the top of the page, overlapping above the header section
   position: absolute;
   left: 0;
   right: 0;
   z-index: 1;
+  // On mobile, the nav menu takes up the entire screen
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding: 1.5rem 4rem;
-}
+  height: 100%;
+  padding: 1rem;
+  
+  @include desktop {
+    // On desktop, the menu is only the height of the logo and top-level items
+    height: unset;
+    padding: 1.5rem 2vw;
+    align-items: center;
+  }
 
-.logo{
-  color: white;
-}
-
-.submenu {
-  position: absolute;
-  left: 0;
-  padding: 0;
-  list-style: none;
-  padding-top: 2rem;
-  text-align: left;
-  transform: translate3d(0,0,0);
-  transition: opacity .3s cubic-bezier(.75,0,.125,1),visibility .3s cubic-bezier(.75,0,.125,1);
-  position: absolute;
-  // visually hidden:
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-
-  &__link {
+  /**
+   * Logo
+   *
+   * The website logo which links to the home page
+   */
+ 
+  &__logo {
+    display: block;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    // z-index: 1;
     color: white;
-    text-decoration: none;
-    font-size: .89rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    line-height: 1.2;
-    position: relative;
-    letter-spacing: .02em;
-    font-weight: 500;
 
-    &:hover{
+    &:hover,
+    &:focus {
       color: $highlight-color;
     }
+
+    @include desktop {
+      height: 4.5rem;
+      position: unset;
+    }
   }
-}
 
-.menu {
-  list-style: none;
-  margin-top: 2rem;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1.4rem;
+  /**
+   * Main menu
+   *
+   * The list element that contains all the navigation links
+   */
 
-  // dark blue background that covers the page header when the menu is hovered
-  &:before{
-    content: "";
+  &__menu {
+    // Position at the top of the page
+    position: fixed;
+    top:0;
     left: 0;
-    background-color: rgba(30,44,94,.9);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    will-change: opacity;
-    visibility: hidden;
-    opacity: 0!important;
-    transition: opacity .3s cubic-bezier(.75,0,.125,1),visibility .3s cubic-bezier(.75,0,.125,1);
-    // TODO: large screens only
-    height: $page-header-height;
+    // Organize items in column (on mobile)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    // Take full screen area (on mobile)
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    // Remove list styles
+    margin: 0;
+    list-style: none;
+    overflow: auto;
+    
+    // Display as a row on desktop
+    @include desktop {
+      // On desktop, arrange menu items as a horizontal list
+      position: unset;
+      justify-content: flex-end;
+      flex-direction: row;
+      gap: 1.5vw;
+      padding: 0;
+      overflow: visible;
+    }
+
+    /**
+     * Overlay
+     *
+     * Dark blue background that covers the page header when a sub-menu is open
+     */
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background-color: rgba( $secondary-color, .85);
+      z-index: -1;
+      will-change: opacity;
+      transition: opacity $nav-transition,
+                  visibility $nav-transition;
+      transition-delay: $nav-transition-delay;
+      @include desktop {
+        visibility: hidden;
+        opacity: 0;
+        height: $page-header-height;
+      }
+
+    }
+    // Show the background when the menu is open or active
+    &.nav__menu--expanded::before,
+    &:hover:before,
+    &:focus:before{
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
-  // make the background visible when the menu is hovered over
-  &:hover:before{
-    visibility: visible;
-    opacity: 1!important;
-  }
+  /**
+   * Menu items
+   *
+   * Top-level & sub-menu items (<li>)
+   */
 
   &__item {
+    // remove list styles
     display: block;
+    list-style: none;
+    margin: 0.5rem auto;
+    padding: 0;
+    // Align sub-menus relative to items
     position: relative;
-  }
+    text-align: center;
+    cursor: pointer;
 
-  &__item:hover,
-  &__item.focus {
-
-    .submenu{
-      padding: 0.5rem 0;
-      width: 9rem;
-      height: auto;
-      clip: auto; 
+    @include desktop {
+      min-width: unset;
+      margin: 0;
+      text-align: left;
+      cursor: default;
     }
 
-    .menu__link {
+    // Show the underline on top-level items when focused/hovered
+    &--toplevel:hover{
+      > .nav__link {
+        color: $highlight-color;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+
+    // Highlight the item if the current page is part of this section
+    &--current{
+      > .nav__link {
+        color: $highlight-color;
+        font-weight: 700;
+      }
+    }
+
+    // Change padding for sub-menu items (not top-level items)
+    &--submenu {
+      text-align: left;
+      @include desktop {
+        padding: 0.2rem 0;
+      }
+    }
+  }
+
+  /**
+   * Menu links
+   *
+   * Top-level & sub-menu links (<a>)
+   */
+  &__link {
+    
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color $nav-transition;
+    transition-delay: 5s;//$nav-transition-delay;
+
+    // highlight when in focus or hovered-over
+    &:focus,
+    &:hover {
+      background-color: $secondary-color;
       color: $highlight-color;
     }
+
+    // The top-level links
+    &--toplevel{
+
+      letter-spacing: .08em;
+      position: relative;
+      padding: 0 0 0.5rem 0;
+      margin: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.15rem;
+      transition: all $nav-transition;
+      transition-delay: $nav-transition-delay;
+      text-shadow: 0 0 0.6em rgba( $secondary-color, .85);
+      @include desktop {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+      
+      // The underline shown on focus on top-level items.
+      // width is zero until the associated item is hovered,
+      // or the link is focused
+      &:after {
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 0; // Start at zero width so it's invisible
+        position: absolute;
+        height: 4px;
+        background-color: $highlight-color;
+        transition: all $nav-transition;
+        transition-delay: $nav-transition-delay;
+      }
+
+      // show the underline
+      &:focus:after {
+        width: 100%;
+      }
+      
+    }
     
-    .menu__link:after {
-      width: 100%;
-    }
-
-
   }
 
-  &__link {
-    all: unset; // remove button styling
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: color .3s cubic-bezier(.75,0,.125,1),font-weight .3s cubic-bezier(.75,0,.125,1);
-    color: #fff;
-    letter-spacing: .08em;
-    position: relative;
-    padding-bottom: 0.5rem;
+  /**
+   * Sub-menus
+   *
+   * The dropdown/popout menus shown below the top-level items
+   *
+   */
 
-    // underline
-    &:after {
+  &__submenu {
+    display: none;
+    margin: 0 auto;
+    padding: 1rem 0 0.5rem;
+    width: 100%;
+    min-width: 9rem;
+    max-width: 15rem;
+
+    @include desktop{
       position: absolute;
-      height: 4px;
-      background-color: $highlight-color;
-      transition: all .25s cubic-bezier(.75,0,.125,1);
+      top: -2px;
       left: 0;
-      content: "";
-      right: 0;
-      bottom: 0;
-      width: 0;
+      min-width: 12rem;
+      padding: 1rem 0 0 0;
     }
   }
+
+  // Shift the right-most submenu a little to the left so that it does not overflow on the
+  // right side of the screen.
+  &__item:last-of-type{
+    .nav__submenu{
+      @include desktop{
+        left: -3rem;
+      }
+    }
+  }
+
 }
 
+/**
+ * Menu-button
+ *
+ * The hamburger menu icon that is clicked to show/hide the mobile menu
+ */
+.menu-button {
 
+  position: absolute;
+  z-index: 1; 
+  right: 1rem;
+  top: 1rem;
+  width: $nav-toggle-width;
+  height: $nav-toggle-height;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  
+  @include desktop {
+    display: none;
+  }
 
+  &__icon {
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+  }
+
+  &__line{
+    display: block;
+    position: absolute;
+    height: $nav-icon-line-width;
+    width: 100%;
+    background: white;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    transform-origin: left center;
+
+    &:nth-child(1){
+      top: 0px;
+    }
+    &:nth-child(2){
+      top: $nav-icon-line-width + $nav-icon-line-gap;
+    }
+    &:nth-child(3){
+      top: ($nav-icon-line-width + $nav-icon-line-gap) * 2;
+    }
+  }
+
+  &[aria-expanded=true] {
+    .menu-button__line {
+      &:nth-child(1){
+        transform: rotate(45deg);
+        top: - $nav-icon-padding;
+        left: $nav-icon-left-pos;
+      }
+      &:nth-child(2){
+        width: 0%;
+        opacity: 0;
+      }
+      &:nth-child(3){
+        transform: rotate(-45deg);
+        top: ($nav-icon-line-gap * 2) + ($nav-icon-line-width* 3) - $nav-icon-padding; //39
+        left: $nav-icon-left-pos;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .menu-button__line{
+      background: $highlight-color;
+    }
+  }
+
+}

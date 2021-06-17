@@ -1,25 +1,84 @@
-<nav class="navbar">
-  
-  <h1 class="logo">OHI</h1>
+{{ $currentPage := . }}
 
-  <ul class="menu">
+<nav class="nav" role="navigation" aria-label="Main menu">
+
+  <button
+    id="menu-button"
+    class="menu-button"
+    aria-expanded="false"
+    aria-controls="main-menu"
+    aria-label="Show main menu"
+    aria-haspopup="true"
+  >
+    <span class="menu-button__icon">
+      <span class="menu-button__line"></span>
+      <span class="menu-button__line"></span>
+      <span class="menu-button__line"></span>
+    </span>
+
+  </button>
+
+  <a
+    class="nav__logo"
+    href="{{ .Site.BaseURL }}"
+    role="menuitem"
+    title="Ocean Health Index Homepage"
+  >
+    {{- partial "logo.html" (dict "showTitle" true) -}}
+  </a>
+
+  <ul id="main-menu" class="nav__menu" role="menubar" aria-labelledby="menu-button">
+
     {{ range site.Menus.main }}
 
+      {{ $addCurrentClass := "" }}
+      {{ if $currentPage.HasMenuCurrent "main" . }}
+        {{ $addCurrentClass = " nav__item--current" }}
+      {{ end }}
+  
       {{ if .HasChildren }}
-        <li class="menu__item">
-          <button class="menu__link">{{ .Name }}</button>
-          <ul class="submenu">
+
+        {{- $menuId := .Name | urlize -}}
+        <li class="nav__item nav__item--toplevel{{ $addCurrentClass }}" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="{{ $menuId }}"
+            aria-label="{{ .Name }} submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            {{ .Name }}
+          </a>
+          <ul class="nav__submenu" id="{{ $menuId }}" role="menu" aria-label="{{ .Name }}">
+           
             {{ range .Children }}
-              <li class="submenu__item">
-                <a href="{{ .URL | absLangURL }}" class="submenu__link">{{ .Name }}</a>
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="{{ .URL | absLangURL }}"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  {{ .Name }}
+                </a>
               </li>
             {{ end }}
+
           </ul>
         </li>
 
       {{ else }}
-        <li class="menu__item">
-          <a class="menu__link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        <li class="nav__item nav__item--toplevel {{ $addCurrentClass }}" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            href="{{ .URL | absLangURL }}"
+            role="menuitem"
+            tabindex="-1"
+          >
+            {{ .Name }}
+          </a>
         </li>
       {{ end }}
 
