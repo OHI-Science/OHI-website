@@ -3,7 +3,8 @@ main:
   weight: 1
 - name: Methodology
   weight: 2
-- name: OHI+
+- identifier: OHI+
+  name: OHI<b style="color:#f26c25">+</b>
   weight: 3
 - name: Resources
   weight: 4
