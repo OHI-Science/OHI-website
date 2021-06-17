@@ -15,4 +15,8 @@ if (
   callback();
 } else {
   document.addEventListener('DOMContentLoaded', callback);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Add main file as entry point for all website JS
