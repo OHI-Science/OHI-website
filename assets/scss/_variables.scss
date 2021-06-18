@@ -1,4 +1,7 @@
-// Color Variables
+//
+// Colors
+// 
+// ==========================================================================
 $primary-color: #5c5c77;
 $secondary-color: #1a1a37;
 $text-color: #5c5c77;
@@ -8,7 +11,23 @@ $body-color: #fff;
 $border-color: #ededf1;
 $quote-body-color: #daedef;
 $quote-border-color: #9ACED8;
+$highlight-color: #5ddae5;
 
-// Font Variables
-$primary-font: 'Poppins', sans-serif;
-$secondary-font: 'futura-bold';
+//
+// Fonts
+// 
+// ==========================================================================
+$font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+
+//
+// Sizing
+// 
+// ==========================================================================
+
+// The height of the page header element - used in both nav.scss and the page-header.scss
+$page-header-height: 19rem;
+
+// Screen width at which to switch from mobile style rules to desktop styles. If this is
+// changed, the value that is passed to the JS files in baseof.html should also be
+// changed.
+$breakpoint: 900px;

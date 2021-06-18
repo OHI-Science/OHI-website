@@ -1,0 +1,62 @@
+/* page title */
+.page-title-section {
+  height: $page-header-height;
+  padding: 200px 0 80px;
+  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%)
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+/* overlay */
+
+.page-title-section.overlay {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .8;
+  }
+}
+
+/* gradient */
+
+.header-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate3d(0,0,0);
+  background-color: rgba(14,33,70,.9);
+  // TODO: apply the following gradient on wide screens only
+  background: linear-gradient(
+    to bottom,
+    #1e2c5e 0,
+    rgba(30,45,95,.98) 5%,
+    rgba(31,46,98,.83) 17%,
+    rgba(31,46,98,.81) 18%,
+    rgba(33,49,103,.69) 25%,
+    rgba(39,58,123,.23) 50%,
+    rgba(40,59,126,.17) 54%,
+    rgba(41,61,130,.07) 60%,
+    rgba(42,62,133,.02) 65%,
+    rgba(42,62,133,.01) 66%,
+    rgba(42,62,133,0) 67%,
+    rgba(42,62,133,0) 100%);
+}

@@ -1,8 +1,12 @@
 ---
-title: "About"
-name: "About"
+title: "What is OHI"
+name: "What is OHI"
 card_image: "/images/about/banner.jpg"
 bg_image: "/images/about/banner.jpg"
+menu:
+  main:
+    parent: 'About'
+    weight: 1
 ---
 
 The Ocean Health Index is a valuable tool for the ongoing assessment of ocean health. By providing a means to advance comprehensive ocean policy and compare future progress, the Index can inform decisions about how to use or protect marine ecosystems. 

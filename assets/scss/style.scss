@@ -1,11 +1,15 @@
+@import 'fonts';
 @import 'variables';
+@import '_mixins-placeholders';
 @import 'common';
 @import 'templates/homepage';
 @import '_index';
 @import 'methodology/index.scss';
+@import 'partials/nav.scss';
 @import 'partials/layout/center-col.scss';
 @import 'partials/layout/left-col.scss';
 @import 'partials/layout/right-col.scss';
 @import 'partials/footer.scss';
 @import 'partials/cards.scss';
 @import 'partials/logo.scss';
+@import 'partials/page-header.scss';

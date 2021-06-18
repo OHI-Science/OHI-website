@@ -3,6 +3,10 @@ title: "Supporters"
 name: "Supporters"
 card_image: "/images/about/supporters/banner.jpg"
 bg_image: "/images/about/supporters/banner.jpg"
+menu:
+  main:
+    parent: 'About'
+    weight: 5
 ---
 
 Our founding contributors go above and beyond in their generosity of intellectual and financial support. Without these forward-thinking leaders, the Ocean Health Index would not be a reality.
