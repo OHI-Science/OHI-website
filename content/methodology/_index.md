@@ -1,8 +1,13 @@
 ---
 title: "Methodology Overview"
 name: "Methods"
-card_image: "/images/methodology/card.jpg"
-bg_image: "/images/methodology/banner.jpg"
+card_image: "/images/methodology/resilience/card.jpg"
+bg_image: "/images/methodology/resilience/banner.jpg"
+menu:
+  main:
+    parent: 'Methodology'
+    weight: 1
+    name: 'Methods Overview'
 ---
 
 A healthy ocean sustainably delivers a range of benefits to people now and in the future.

@@ -1,0 +1,11 @@
+//
+// Desktop: Use `@include desktop { }` to set style rules for larger screens.
+// Default rules should be for smaller screens.
+// 
+// ==========================================================================
+
+@mixin desktop {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

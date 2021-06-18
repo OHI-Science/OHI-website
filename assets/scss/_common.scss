@@ -1,3 +1,27 @@
+html {
+  font-size: 19px;
+}
+
+body {
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  
+  box-sizing     : border-box;
+  margin: 0;
+  min-height     : 100vh;
+  line-height: 1.43;
+  scroll-behavior: smooth;
+  overflow-y     : scroll;
+  max-width      : 100vw;
+  font-family: $font-family;
+  background-color: $body-color;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
 p {
   line-height: 2rem;
   font-size: 1.25rem;
@@ -5,13 +29,6 @@ p {
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   color: #333;
-  font-family: 'proxima-nova','Helvetica','Arial','sans-serif';
-}
-
-body {
-  background-color: $body-color;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
@@ -66,48 +83,6 @@ a h4{
 
 .border-primary {
   border-color: $border-color !important;
-}
-
-/* overlay */
-
-.page-title-section.overlay {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.overlay {
-  position: relative;
-
-
-  &::before {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: .8;
-  }
-}
-
-.zindex-1 {
-  z-index: 1;
-}
-
-
-/* page title */
-.page-title-section {
-  padding: 200px 0 80px;
-  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%)
-}
-
-.section-title {
-  text-transform: uppercase;
-  font-size: 36px;
-  color: white;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  font-family: 'Gotham A','Gotham B',Helvetica,Arial,sans-serif
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {

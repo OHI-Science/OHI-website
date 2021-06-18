@@ -3,8 +3,12 @@
  * builds this script in the template layouts/_default/baseof.html
  */
 
+// Functions for the main navigation menu.
+import nav from './partials/nav/nav.js'
+
 // What to do when the DOM has loaded
 async function callback() {
+  nav.init()
 };
 
 // Check if the DOM is ready, then call the callback function

@@ -1,8 +1,12 @@
 ---
-title: "OHI+"
-name: "OHI+"
+title: "What is OHI+"
+name: "What is OHI+"
 card_image: "/images/methodology/resilience/card.jpg"
 bg_image: "/images/methodology/resilience/banner.jpg"
+menu:
+  main:
+    parent: 'OHI+'
+    weight: 1
 ---
 
 ### OHI+ = INDEPENDENT ASSESSMENTS AT ANY SCALE

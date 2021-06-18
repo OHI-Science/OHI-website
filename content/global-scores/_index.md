@@ -1,8 +1,12 @@
 ---
-title: "Latest Scores"
-name: "Latest Scores"
+title: "Scores"
+name: "Scores"
 card_image: "/images/global-scores/banner.jpg"
 bg_image: "/images/global-scores/banner.jpg"
+menu:
+  main:
+    parent: 'Global Scores'
+    weight: 1
 ---
 The Index measures the global state of the world’s oceans. An Index score for 220 countries & territories, the Antarctic region, and 15 sections of the high seas, is calculated using existing global data. Click on map colored regions to see short summaries of scores by country.
 

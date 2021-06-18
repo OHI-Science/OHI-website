@@ -3,6 +3,10 @@ title: "Goals"
 name: "Goals"
 card_image: "/images/methodology/goals/card.jpg"
 bg_image: "/images/methodology/goals/banner.jpg"
+menu:
+  main:
+    parent: 'Methodology'
+    weight: 2
 ---
 
 <!--## Ocean benefits delivered to humans now and in the future.-->
