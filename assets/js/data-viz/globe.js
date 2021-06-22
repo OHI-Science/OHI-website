@@ -3,6 +3,8 @@ const d3 = Object.assign(
   require("d3-drag"),
   require("d3-selection"),
   require("d3-geo"),
+  require("d3-transition"),
+  require("d3-interpolate"),
   require("d3-geo-projection") // for geoMollweide
 );
 
