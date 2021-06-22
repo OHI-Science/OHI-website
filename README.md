@@ -7,10 +7,9 @@ Repository for the Ocean Health Index website.
 To run the server, run the following from the top level ohi-site directory,
 
 ```
-cd themes/ohi/ohi
-hugo server --themesDir ../..
+npm install
+hugo server
 ```
-
 
 # Making changes to the menu
 
@@ -31,3 +30,7 @@ menu:
 - "main" specifies the name of the menu. This is the same menu name that is shown at the start of the `config/_default/menus.yaml` file.
 - "parent" gives the name of the top-level item under which this page should be listed
 - "weight" indicates the order of this page relative to other pages in the same dropdown menu
+
+# Making changes to the data
+
+See `content/data/_index.md`
