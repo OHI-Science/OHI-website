@@ -1,8 +1,7 @@
 ---
 title: "Goals"
 name: "Goals"
-card_image: "/images/methodology/goals/card.jpg"
-bg_image: "/images/methodology/goals/banner.jpg"
+bg_image: "/images/banners/coral.jpg"
 menu:
   main:
     parent: 'Methodology'

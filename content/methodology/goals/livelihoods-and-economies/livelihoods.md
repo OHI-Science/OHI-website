@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal: Livelihoods"
 name: "Livelihoods"
-card_image: "/images/methodology/goals/livelihoods-and-economies/card.jpg"
-bg_image: "/images/methodology/goals/livelihoods-and-economies/banner.jpg"
+bg_image: "/images/banners/shipping-containers.jpg"
 ---
 
 This sub-goal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.

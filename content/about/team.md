@@ -1,8 +1,7 @@
 ---
 title: "Team"
 name: "Team"
-card_image: "/images/about/team/banner.jpg"
-bg_image: "/images/about/team/banner.jpg"
+bg_image: "/images/banners/bridge.jpg"
 menu:
   main:
     parent: 'About'

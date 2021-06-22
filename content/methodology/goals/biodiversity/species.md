@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal: Species"
 name: "Species"
-card_image: "/images/methodology/goals/biodiversity/card.jpg"
-bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
+bg_image: "/images/banners/shark-fish.jpg"
 ---
 
 This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.

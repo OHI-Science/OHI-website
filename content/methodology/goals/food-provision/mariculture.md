@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal: Mariculture"
 name: "Mariculture"
-card_image: "/images/methodology/goals/biodiversity/card.jpg"
-bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
+bg_image: "/images/banners/shark-fish.jpg"
 ---
 
 Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean’s ability to provide fish sustainably now and in the future.

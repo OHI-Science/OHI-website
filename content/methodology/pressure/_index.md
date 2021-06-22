@@ -1,8 +1,7 @@
 ---
 title: "Pressure Descriptions"
 name: "Pressure Descriptions"
-card_image: "/images/methodology/pressure/card.jpg"
-bg_image: "/images/methodology/pressure/banner.jpg"
+bg_image: "/images/banners/fish-school.jpg"
 menu:
   main:
     parent: 'Methodology'

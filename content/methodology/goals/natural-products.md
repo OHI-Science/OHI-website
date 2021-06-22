@@ -2,8 +2,7 @@
 title: "Goal: Natural Products"
 
 name: "Natural Products"
-card_image: "/images/methodology/goals/natural-products/card.jpg"
-bg_image: "/images/methodology/goals/natural-products/banner.jpg"
+bg_image: "/images/banners/red-coral.jpg"
 ---
 
 ### Harvesting Food Products

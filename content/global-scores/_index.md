@@ -1,8 +1,7 @@
 ---
 title: "Scores"
 name: "Scores"
-card_image: "/images/global-scores/banner.jpg"
-bg_image: "/images/global-scores/banner.jpg"
+bg_image: "/images/banners/fish-docks.jpg"
 menu:
   main:
     parent: 'Global Scores'
@@ -17,7 +16,7 @@ When a goal is not relevant to a specific region, no value (N/A) is shown and th
 
 ### SUBDIVISION OF THE HIGH SEAS
 
-![Wrigley](/images/global-scores/high-seas.jpeg)
+![Wrigley](/images/infographs/high-seas.jpeg)
 
 Areas Assessed: Portions of all oceans make up the High Seas. The analyses used to create the High Seas Ocean Health Index used the subdivisions created by the UN Food and Agriculture Organization (FAO), 24 of which contain marine waters. Statistical area 37, the Mediterranean Sea, was not analyzed because EEZs of its bordering countries cover its entire area, so it has no High Seas component. Three statistical areas, numbers 58, 88 and 48 were analyzed separately as part of the Antarctic analysis. International waters of the remaining 15 statistical areas were analyzed.
 

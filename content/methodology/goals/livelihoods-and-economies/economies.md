@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal:Economies"
 name: "Economies"
-card_image: "/images/methodology/goals/livelihoods-and-economies/card.jpg"
-bg_image: "/images/methodology/goals/livelihoods-and-economies/banner.jpg"
+bg_image: "/images/banners/shipping-containers.jpg"
 ---
 
 Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.
