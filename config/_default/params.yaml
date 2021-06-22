@@ -1,3 +1,4 @@
 plugins:
   css:
     - link: plugins/bootstrap/bootstrap.min.css
+images: images
