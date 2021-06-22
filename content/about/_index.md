@@ -1,8 +1,7 @@
 ---
 title: "What is OHI"
 name: "What is OHI"
-card_image: "/images/about/banner.jpg"
-bg_image: "/images/about/banner.jpg"
+bg_image: "/images/banners/gold-turtle.jpg"
 menu:
   main:
     parent: 'About'

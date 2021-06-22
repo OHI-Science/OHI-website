@@ -1,8 +1,7 @@
 ---
 title: "Goal: Food Provision"
 name: "Food Provision"
-card_image: "/images/methodology/goals/food-provision/card.jpg"
-bg_image: "/images/methodology/goals/food-provision/banner.jpg"
+bg_image: "/images/banners/fish-school.jpg"
 ---
 
 ### HARVESTING SEAFOOD SUSTAINABLY

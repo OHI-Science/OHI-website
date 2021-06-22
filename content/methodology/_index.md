@@ -1,8 +1,7 @@
 ---
 title: "Methodology Overview"
 name: "Methods"
-card_image: "/images/methodology/resilience/card.jpg"
-bg_image: "/images/methodology/resilience/banner.jpg"
+bg_image: "/images/banners/fish-school.jpg"
 menu:
   main:
     parent: 'Methodology'
@@ -27,7 +26,7 @@ Four dimensions are measured and scored for each goal. Present **STATUS** is a g
 
 For the global study, participating scientists, economists and sociologists reviewed existing studies of what people want and expect from the ocean, then grouped them into ten categories called ‘goals.’  Independent assessments at smaller scales could choose a different number of goals.
 
-![Infographic](/images/methodology/methodology-chart.jpg)
+![Infographic](/images/infographs/methodology-chart.jpg)
 
 ### GOAL SCORES
 Four dimensions are measured and scored for each goal. Present STATUS is a goal’s current value compared to its reference point. TREND is the average percent change of a goal’s status over the most recent five years. PRESSURES are the ecological and social factors that decrease status. RESILIENCE includes the ecological factors and social initiatives (policies, laws, etc) that increase status by reducing or eliminating pressures

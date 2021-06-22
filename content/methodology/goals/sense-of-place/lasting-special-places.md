@@ -1,8 +1,7 @@
 ---
 title: "Sub-Goal: Lasting Special Places"
 name: "Lasting Special Places"
-card_image: "/images/methodology/goals/biodiversity/card.jpg"
-bg_image: "/images/methodology/goals/biodiversity/banner.jpg"
+bg_image: "/images/banners/fish-school.jpg"
 ---
 
 This sub-goal focuses on those geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons, and assesses how well they are protected.
