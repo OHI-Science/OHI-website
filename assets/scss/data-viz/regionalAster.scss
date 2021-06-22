@@ -1,0 +1,36 @@
+/**
+ * regionalAster.scss
+ *
+ * Styles for the aster plot for specific regions.
+ *
+ * Related files:
+ *  - assets/js/data-viz/regionalAster.js
+ *
+ */
+
+.regional-aster {
+  &__plot {
+    padding: 2rem;
+    width: 75%;
+  }
+
+  &__controls {
+    max-width: 50rem;
+    margin: auto;
+    height: 100%;
+    position: relative;
+  }
+
+  &__control {
+    height: 40px;
+    margin-top: 1rem;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

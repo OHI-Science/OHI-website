@@ -6,6 +6,13 @@ const d3 = Object.assign(
 
 // For processing topojson
 import * as topojson from "topojson-client";
+// Parameters imported from the baseof.html template which builds the JS
+import params from '@params'
+
+let dataBundleConfig = {};
+if (params.dataConfig) {
+  dataBundleConfig = JSON.parse(params.dataConfig)
+}
 
 /**
  * Loads and processes OHI Data.
@@ -36,7 +43,7 @@ function data({
     regions: 'regions.topojson',
     goals: 'goalLabels.json',
   }
-} = {}) {
+} = dataBundleConfig) {
 
   if (!dataPaths || !dataPaths.scores || !dataPaths.regions) {
     console.log('Error: Path to data is required for OHIData to load data.');
