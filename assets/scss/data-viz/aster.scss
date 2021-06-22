@@ -12,8 +12,8 @@
 .aster {
 
   --aster-size-icon: 2.7rem;
-  --aster-color-text: $text-color;
-  --aster-color-foreground-subtle: $border-color;
+  --aster-color-text: #{$text-color};
+  --aster-color-foreground-subtle: #{$border-color};
   display: grid;
 
   /* a column for the plot, then legend */

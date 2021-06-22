@@ -9,8 +9,8 @@
  */
 
 .bar-chart {
-  --bar-chart-color-bar: $accent-color;
-  --bar-chart-color-highlight: $highlight-color;
+  --bar-chart-color-bar: #{$accent-color};
+  --bar-chart-color-highlight: #{$highlight-color};
   height: 25rem;
   width: 100%;
 

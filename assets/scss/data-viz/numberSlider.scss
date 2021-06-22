@@ -11,11 +11,11 @@
 
 .number-slider {
 
-  --number-slider-color-progress: $accent-color;
-  --number-slider-color-handle: $accent-color;
-  --number-slider-color-bkg: $border-color;
-  --number-slider-color-label: $text-color-light;
-  --number-slider-color-label: $text-color;
+  --number-slider-color-progress: #{$accent-color};
+  --number-slider-color-handle: #{$accent-color};
+  --number-slider-color-bkg: #{$border-color};
+  --number-slider-color-label: #{$text-color-light};
+  --number-slider-color-label: #{$text-color};
   --number-slider-handle-size: 14px;
   --number-slider-handle-border-radius: 2px;
   --number-slider-handle-margin-top: -15px;

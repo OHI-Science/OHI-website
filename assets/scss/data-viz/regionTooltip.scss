@@ -10,10 +10,10 @@
  */
 
 .region-tooltip {
-  --tooltip-color-bkg: $body-color;
-  --tooltip-color-border: $border-color;
-  --tooltip-color-text: $text-color;
-  --tooltip-border-radius: $border-radius;
+  --tooltip-color-bkg: #{$body-color};
+  --tooltip-color-border: #{$border-color};
+  --tooltip-color-text: #{$text-color};
+  --tooltip-border-radius: #{$border-radius};
   position: absolute;
   display: grid;
   grid-template-columns: max-content max-content;
