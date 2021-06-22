@@ -11,6 +11,19 @@ npm install
 hugo server
 ```
 
+# Adding or updating content
+
+The content for the website is all contained within the `/content/` directory. The
+markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
+add-ons.
+
+## Shortcodes
+
+In addition to basic markdown formatting, the following codes can be used in any of the markdown content files:
+
+### `{{< scoresGlobe >}}`
+This code inserts the data visualization that shows the score for each region on an interactive globe, where the year and goal can be changed using inputs. The scores globe uses the data contained in the `content/data/scores.csv` file (see `content/data/_index.md` for details). There should only be a maximum of 1 scores globe on each page.
+
 # Making changes to the menu
 
 ## Top-level items

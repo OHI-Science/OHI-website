@@ -9,18 +9,25 @@ import params from '@params'
 // Functions for the main navigation menu.
 import nav from './partials/nav/nav.js'
 
-// Functions that fetch data files and process them for use in data viz
-import data from "./data-viz/data.js"
-
 // What to do when the DOM has loaded
 async function callback() {
 
   // Enable the navigation functions
   nav.init();
 
-  // Test getting & processing the OHI data
-  const ohiData = await data(JSON.parse(params.dataConfig));
-  console.log(ohiData);
+  // If the scoresGlobe short code is used in this page, then render the interactive globe
+  // with scores.
+  const scoresGlobeEls = document.querySelectorAll(".global-scores");
+  if (scoresGlobeEls) {
+    import('./data-viz/globalScores.js')
+      .then(function (globalScores) {
+        scoresGlobeEls.forEach(function (scoresGlobeEl) {
+          globalScores.default({
+            container: scoresGlobeEl
+          });
+        })
+      })
+  }
 
 };
 

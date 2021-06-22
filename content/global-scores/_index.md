@@ -9,6 +9,8 @@ menu:
 ---
 The Index measures the global state of the world’s oceans. An Index score for 220 countries & territories, the Antarctic region, and 15 sections of the high seas, is calculated using existing global data. Click on map colored regions to see short summaries of scores by country.
 
+{{< scoresGlobe >}}
+
 ### EXCLUSIVE ECONOMIC ZONES
 The results are shown on the exclusive economic zone (EEZ) of each coastal country, an area that extends 200 nautical miles (370 KM) offshore from the country’s coast. For countries with multiple and separate coastlines, EEZs were grouped based on country, latitude, habitation, and ocean basin.
 

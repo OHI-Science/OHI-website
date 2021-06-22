@@ -17,11 +17,11 @@
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   gap: 1.5rem;
-  padding: 5rem;
+  padding: 2rem 0;
 
   &__controls {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     gap: 5rem;
     width: 100%;
     max-width: 80rem;
