@@ -1,12 +1,10 @@
 <!-- page title -->
-<header class="page-title-section overlay" style="background-image: url('{{ .Params.bg_image | relURL}}');" >
+{{ $bkg := "" }}
+{{- with .Params.bg_image -}}
+  {{ $bkg = printf `style="background-image: url('%s');"` ( . | relURL ) }}
+{{- end -}}
+
+<header class="page-title-section overlay" {{ $bkg | safeHTMLAttr }} >
   <div class="header-gradient"></div>
-  <div class="container">
-    <div class="row">
-        <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item h5"><i class="w3-bar"></i></li>
-          <li class="section-title">{{ .Title }}</li>
-        </ul>
-    </div>
-  </div>
+  <h1 class="section-title">{{ .Title }}</h1>
 </header>
