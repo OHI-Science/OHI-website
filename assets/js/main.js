@@ -29,15 +29,15 @@ async function callback() {
       })
   }
 
-  // If this is a region scores page, then render the regional aster plot.
-  const regionalAsterEls = document.querySelectorAll(".regional-aster");
-  if (regionalAsterEls) {
-    import('./data-viz/regionalAster.js')
-      .then(function (regionalAster) {
-        regionalAsterEls.forEach(function (regionalAsterEl) {
-          regionalAster.default({
-            container: regionalAsterEl,
-            regionId: regionalAsterEl.dataset.regionId,
+  // If this is a region scores page, then render the region aster plot.
+  const regionAsterEls = document.querySelectorAll(".region-aster");
+  if (regionAsterEls) {
+    import('./data-viz/regionAster.js')
+      .then(function (regionAster) {
+        regionAsterEls.forEach(function (regionAsterEl) {
+          regionAster.default({
+            container: regionAsterEl,
+            regionId: regionAsterEl.dataset.regionId,
           })
         })
       })

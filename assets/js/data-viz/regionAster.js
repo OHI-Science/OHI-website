@@ -8,11 +8,11 @@ import aster from "./aster.js"
 import numberSlider from "./numberSlider.js"
 
 /**
- * The classes to add to the various HTML elements that are combined to create a regional
+ * The classes to add to the various HTML elements that are combined to create a region
  * aster visualization. The specific HTML elements are defined in the property
  * definitions.
- * @typedef {Object} RegionalAsterClasses
- * @property {string} regionalAster - The entire container
+ * @typedef {Object} RegionAsterClasses
+ * @property {string} regionAster - The entire container
  * @property {string} plot - The aster plot with legend
  * @property {string} controls - The container for the controls
  * @property {string} control - An individual control (i.e. the year slider)
@@ -24,30 +24,30 @@ import numberSlider from "./numberSlider.js"
  * Creates a aster plot with year slider for an individual region.
  * @param {Object} options - Configurable options for the aster plot for a region with
  * time line slider.
- * @property {HTMLElement} container - The container into which the regional aster
+ * @property {HTMLElement} container - The container into which the region aster
  * visualization should be inserted
  * @property {string} regionId - The ID of the region to display
- * @property {RegionalAsterClasses} [classes] - Classes to add to the HTML elements
+ * @property {RegionAsterClasses} [classes] - Classes to add to the HTML elements
  * created by this function
  */
-async function regionalAster({
+async function regionAster({
   container = null,
   regionId = null,
   classes = {
-    regionalAster: "regional-aster",
-    plot: "regional-aster__plot",
-    controls: "regional-aster__controls",
-    control: "regional-aster__control",
-    label: "regional-aster__label"
+    regionAster: "region-aster",
+    plot: "region-aster__plot",
+    controls: "region-aster__controls",
+    control: "region-aster__control",
+    label: "region-aster__label"
   }
 } = {}) {
 
   if (!container) {
-    console.log("A container is required to render the regional aster visualization");
+    console.log("A container is required to render the region aster visualization");
     return
   }
   if (!regionId) {
-    console.log("A region ID must be set when creating a regional aster visualization");
+    console.log("A region ID must be set when creating a region aster visualization");
     return
   }
 
@@ -158,4 +158,4 @@ async function regionalAster({
 
 };
 
-export default regionalAster
+export default regionAster
