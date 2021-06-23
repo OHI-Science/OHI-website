@@ -65,6 +65,9 @@ async function regionAster({
     region: regionId
   }
 
+  // Ensure the container has the main class
+  container.classList.add(classes.regionAster)
+
   // Create the containers for the plot and year control
 
   // For the aster plot

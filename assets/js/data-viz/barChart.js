@@ -124,6 +124,7 @@ function barChart({
 
   const group = svg.append("g");
   let bars = null
+
   // Create the tooltip elements
   const tooltip = regionTooltip({
     offsetY: -10,
@@ -143,10 +144,15 @@ function barChart({
       .attr("height", d => y(minRange) - y(d.value))
       .attr("width", x.bandwidth())
       .on('mouseover', function (event, d) {
+        // Update the position and text of the tooltip.
+        // The color for the score for the given bar
         let color = colorFunction ? colorFunction(d.value) : "grey"
         tooltip.update(d.label, d.value, color)
         const rectDims = this.getBoundingClientRect()
-        tooltip.reposition(rectDims.left, rectDims.top, true, true)
+        const x = rectDims.left;
+        const y = rectDims.top + document.documentElement.scrollTop;
+        console.log(rectDims);
+        tooltip.reposition(x, y, true, true)
       })
       .on('mouseout', tooltip.hide);
   }

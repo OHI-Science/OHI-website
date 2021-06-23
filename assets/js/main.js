@@ -43,6 +43,20 @@ async function callback() {
       })
   }
 
+  // If this is a region scores page, then render the region rank chart.
+  const regionRankChartEls = document.querySelectorAll(".region-rank-chart");
+  if (regionRankChartEls) {
+    import('./data-viz/regionRankChart.js')
+      .then(function (regionRankChart) {
+        regionRankChartEls.forEach(function (regionRankChartEl) {
+          regionRankChart.default({
+            container: regionRankChartEl,
+            regionId: regionRankChartEl.dataset.regionId,
+          })
+        })
+      })
+  }
+
 };
 
 // Check if the DOM is ready, then call the callback function
