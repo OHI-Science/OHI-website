@@ -29,6 +29,20 @@ async function callback() {
       })
   }
 
+  // If this is a region scores page, then render the regional aster plot.
+  const regionalAsterEls = document.querySelectorAll(".regional-aster");
+  if (regionalAsterEls) {
+    import('./data-viz/regionalAster.js')
+      .then(function (regionalAster) {
+        regionalAsterEls.forEach(function (regionalAsterEl) {
+          regionalAster.default({
+            container: regionalAsterEl,
+            regionId: regionalAsterEl.dataset.regionId,
+          })
+        })
+      })
+  }
+
 };
 
 // Check if the DOM is ready, then call the callback function
