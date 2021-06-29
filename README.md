@@ -7,10 +7,22 @@ Repository for the Ocean Health Index website.
 To run the server, run the following from the top level ohi-site directory,
 
 ```
-cd themes/ohi/ohi
-hugo server --themesDir ../..
+npm install
+hugo server
 ```
 
+# Adding or updating content
+
+The content for the website is all contained within the `/content/` directory. The
+markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
+add-ons.
+
+## Shortcodes
+
+In addition to basic markdown formatting, the following codes can be used in any of the markdown content files:
+
+### `{{< scoresGlobe >}}`
+This code inserts the data visualization that shows the score for each region on an interactive globe, where the year and goal can be changed using inputs. The scores globe uses the data contained in the `content/data/scores.csv` file (see `content/data/_index.md` for details). There should only be a maximum of 1 scores globe on each page.
 
 # Making changes to the menu
 
@@ -31,3 +43,7 @@ menu:
 - "main" specifies the name of the menu. This is the same menu name that is shown at the start of the `config/_default/menus.yaml` file.
 - "parent" gives the name of the top-level item under which this page should be listed
 - "weight" indicates the order of this page relative to other pages in the same dropdown menu
+
+# Making changes to the data
+
+See `content/data/_index.md`

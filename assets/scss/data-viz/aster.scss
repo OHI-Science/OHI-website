@@ -1,0 +1,80 @@
+/**
+ * aster.scss
+ *
+ * Styles for the basic aster plot, used to create the region aster plots on region
+ * score pages.
+ *
+ * Related files:
+ *  - assets/js/data-viz/aster.js
+ *
+ */
+
+.aster {
+
+  --aster-size-icon: 2.7rem;
+  --aster-color-text: #{$text-color};
+  --aster-color-foreground-subtle: #{$border-color};
+  display: grid;
+
+  /* a column for the plot, then legend */
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: auto;
+
+  &__solid-arc:hover {
+    transform: scale(1.025);
+  }
+
+  &__solid-arc {
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+
+  &__solid-arc--dimmed {
+    fill: var(--aster-color-foreground-subtle);
+    opacity: 0.6;
+  }
+
+  &__outline-arc {
+    stroke: var(--aster-color-foreground-subtle);
+    stroke-width: 1px;
+  }
+
+  &__mean-score {
+    color: var(--aster-color-text);
+    line-height: 1;
+    font-size: 5rem;
+  }
+
+  &__legend-list {
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+  }
+
+  &__legend-item {
+    display: grid;
+    grid-template-columns: var(--aster-size-icon) auto;
+    gap: 0.6rem;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  &__legend-item--dimmed {
+    color: var(--aster-color-foreground-subtle) !important;
+  }
+
+  &__legend-icon {
+    height: var(--aster-size-icon);
+    width: var(--aster-size-icon);
+    stroke: currentColor;
+    stroke-width: 4px;
+    margin-right: 0.7rem;
+  }
+}
