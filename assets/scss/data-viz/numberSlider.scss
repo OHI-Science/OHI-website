@@ -1,0 +1,191 @@
+/**
+ * numberSlider.scss
+ *
+ * Styles for an enhanced number slider input element, used in some of the data
+ * visualizations.
+ *
+ * Related files:
+ *  - assets/js/data-viz/numberSlider.js
+ *
+ */
+
+.number-slider {
+
+  --number-slider-color-progress: #{$accent-color};
+  --number-slider-color-handle: #{$accent-color};
+  --number-slider-color-bkg: #{$border-color};
+  --number-slider-color-label: #{$text-color-light};
+  --number-slider-color-label: #{$text-color};
+  --number-slider-handle-size: 14px;
+  --number-slider-handle-border-radius: 2px;
+  --number-slider-handle-margin-top: -20px;
+  --number-slider-track-height: 8px;
+  --number-slider-track-border-radius: 2px;
+  position: relative;
+  display: block;
+  height: 2.5rem;
+  max-width: 100%;
+
+  &__values {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--number-slider-color-label);
+  }
+
+  &__value {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    color: var(--number-slider-color-label);
+    border-radius: var(--number-slider-handle-border-radius);
+  }
+
+  &__value > div {
+    animation: bulge 0.3s ease-out;
+  }
+
+  &__background,
+  &__progress,
+  &__ticks {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: var(--number-slider-track-height);
+    pointer-events: none;
+    border-radius: var(--number-slider-track-border-radius);
+    z-index: -1;
+  }
+
+  &__background {
+    width: 100%;
+    background-color: var(--number-slider-color-bkg);
+  }
+
+  &__progress {
+    background-color: var(--number-slider-color-progress);
+  }
+
+  &__ticks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(var(--number-slider-handle-size) / 2);
+  }
+
+  &__tick {
+    width: 2px;
+    height: calc(var(--number-slider-track-height) / 2);
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  &__label {
+    transition: opacity 0.1s ease;
+  }
+
+  &__label.hidden {
+    opacity: 0;
+  }
+
+  @keyframes bulge {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* REMOVE SLIDER STYLE DEFAULTS - input */
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    margin: 5px 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-moz-focus-outer {
+    border: 0;
+  }
+
+  /* REMOVE SLIDER STYLE DEFAULTS - input handle */
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: var(--number-slider-handle-size);
+    height: var(--number-slider-handle-size);
+    background: var(--number-slider-color-handle);
+    border-radius: var(--number-slider-handle-border-radius);
+    cursor: pointer;
+    margin-top: var(--number-slider-handle-margin-top);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  input[type="range"]:hover::-webkit-slider-thumb,
+  input[type="range"]:focus::-webkit-slider-thumb {
+    transform: scale(1.2);
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: var(--number-slider-handle-size);
+    height: var(--number-slider-handle-size);
+    background: var(--number-slider-color-handle);
+    border: none;
+    border-radius: var(--number-slider-handle-border-radius);
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  input[type="range"]:hover::-moz-range-thumb,
+  input[type="range"]:focus::-moz-range-thumb {
+    transform: scale(1.2);
+  }
+
+  /* REMOVE SLIDER STYLE DEFAULTS - track */
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: var(--number-slider-track-height);
+    cursor: pointer;
+    background: none;
+    border-radius: var(--number-slider-track-border-radius);
+  }
+
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: var(--number-slider-track-height);
+    cursor: pointer;
+    background: none;
+    border-radius: var(--number-slider-track-border-radius);
+  }
+
+  input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: none;
+  }
+
+  input[type="range"]:active::-webkit-slider-runnable-track {
+    background: none;
+  }
+}

@@ -1,0 +1,29 @@
+/**
+ * regionTooltip.scss
+ *
+ * Styles for the tooltips used to show the score for a region, used in multiple data
+ * visualizations.
+ *
+ * Related files:
+ *  - assets/js/data-viz/regionTooltip.js
+ *
+ */
+
+.region-tooltip {
+  --tooltip-color-bkg: #{$body-color};
+  --tooltip-color-border: #{$border-color};
+  --tooltip-color-text: #{$text-color};
+  --tooltip-border-radius: #{$border-radius};
+  position: absolute;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  align-items: center;
+  pointer-events: none;
+  box-shadow: 0 1px 4px black rgba(0, 0, 0, 0.3);
+  border-radius: var(--tooltip-border-radius);
+  background: var(--tooltip-color-bkg);
+  border: solid var(--tooltip-color-border) 1px;
+  color: var(--tooltip-color-text);
+}
