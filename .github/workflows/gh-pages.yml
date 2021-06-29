@@ -13,7 +13,11 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -21,6 +25,7 @@ jobs:
           extended: true
 
       - name: Build
+        run: npm install
         run: hugo --baseURL="https://ohi-science.github.io/ohi-website/"
 
       - name: Deploy
