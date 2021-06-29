@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ocean Health Index</title>
+    <link>https://ohi-science.github.io/ohi-website/</link>
+    <description>Recent content on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An example news story or blog post</title>
+      <link>https://ohi-science.github.io/ohi-website/news/example-news-item/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/news/example-news-item/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canada</title>
+      <link>https://ohi-science.github.io/ohi-website/global-scores/regions/canada/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/global-scores/regions/canada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conduct an OHI&#43;</title>
+      <link>https://ohi-science.github.io/ohi-website/ohi&#43;/conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/ohi&#43;/conduct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://ohi-science.github.io/ohi-website/about/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/about/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://ohi-science.github.io/ohi-website/resources/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/resources/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Download</title>
+      <link>https://ohi-science.github.io/ohi-website/global-scores/data-download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/global-scores/data-download/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Dive</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/deep-dive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/deep-dive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Goal: Artisanal Fishing Opportunities</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/artisanal-fishing-opportunities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/artisanal-fishing-opportunities/</guid>
+      <description>ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES One of the most fundamental services the ocean provides people is the provision of seafood, whether it is helping meet the basic nutritional needs of over half of the world’s population to high-end sushi. This goal, then, measures the amount of seafood sustainably harvested in a given EEZ or region through any means for use primarily in human consumption or export and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Carbon Storage</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/carbon-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/carbon-storage/</guid>
+      <description>Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture the ability of the coastal habitats to remove carbon given their carbon uptake rate and health conditions. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Clean Waters</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/clean-waters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/clean-waters/</guid>
+      <description>People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, eutrophication, algal blooms, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), floating trash, and mass kills of organisms due to pollution. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Coastal Protection</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/coastal-protection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/coastal-protection/</guid>
+      <description>This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.). A score of 100 would indicate that these habitats are all still intact or have been restored to their reference conditions.
+Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: Carbon Storage, Coastal Protection, and Biodiversity.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Natural Products</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/natural-products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/natural-products/</guid>
+      <description>Harvesting Food Products In many countries the harvest of non-food natural products is important for local economies and can also be traded internationally. The sustainable harvest of these products is therefore an important component of a healthy ocean. This goal assesses the ability of countries to maximize the sustainable harvest of living marine resources, such as corals, shells, seaweeds, and fish for the aquarium trade.
+It does not include bioprospecting which focuses on potential (and largely unknowable and potentially infinite) value rather than current realized value, or non-living products such as oil and gas or mining products which by definition are not sustainable.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Tourism and Recreation</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/tourism-and-recreation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/tourism-and-recreation/</guid>
+      <description>Tourism and recreation in coastal areas is a major component of thriving coastal communities and a measure of how much people value ocean systems, i.e. by traveling to coastal and ocean areas. This goal is not about the revenue or livelihoods that are generated by tourism and recreation (that is captured in the livelihoods goal, section 6F above) but instead captures the value that people have for experiencing and enjoying coastal areas.</description>
+    </item>
+    
+    <item>
+      <title>OHI Assessments</title>
+      <link>https://ohi-science.github.io/ohi-website/ohi&#43;/ohi-assessments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/ohi&#43;/ohi-assessments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://ohi-science.github.io/ohi-website/about/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/about/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scores over time</title>
+      <link>https://ohi-science.github.io/ohi-website/global-scores/over-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/global-scores/over-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sub Goal: Wild Caught Fisheries</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/food-provision/wild-caught-fisheries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/food-provision/wild-caught-fisheries/</guid>
+      <description>The Fisheries sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. The model generally compares landings with Maximum Sustainable Yield. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
+Practical Guidance Fisheries science is a discipline that in part aims to estimate the amount of fish that can sustainably be extracted from the sea.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Habitat</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/biodiversity/habitats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/biodiversity/habitats/</guid>
+      <description>The Habitats sub-goal includes all habitats in the study area, and assess their health condition and coverage area.
+ Habitat is included in the Biodiversity goal to provide a more complete picture of diversity in the system. This is because in global assessments assessed species data were limited and the diversity of habitats can be included with the assumption that healthier habitats mean healthier species. Therefore if you have comprehensive species assessments in your area you may not need to include all habitats as a sub-goal, instead only including living habitats (algae, corals) along with species in the Species sub-goal.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Iconic Species</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/sense-of-place/iconic-species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/sense-of-place/iconic-species/</guid>
+      <description>Iconic species are those that are relevant to local cultural identity through a species’ relationship to one or more of the following: 1) traditional activities such as fishing, hunting or commerce; 2) local ethnic or religious practices; 3) existence value; and 4) locally-recognized aesthetic value (e.g., touristic attractions/common subjects for art such as whales). Habitat-forming species are not included in this definition of iconic species, nor are species that are harvested solely for economic or utilitarian purposes (even though they may be iconic to a sector or individual).</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Lasting Special Places</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/sense-of-place/lasting-special-places/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/sense-of-place/lasting-special-places/</guid>
+      <description>This sub-goal focuses on those geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons, and assesses how well they are protected.
+ This sub-goal makes use of protected areas, and some of the same information gathered on projected areas can be used to create resilience data layers like Marine Protected Areas.
+ Ideal Approach Ideally, you would be able to survey everyone in your region and produce a list of all the places they consider special, and then assess how well they are protected relative to a desired state.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Livelihoods</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/livelihoods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/livelihoods/</guid>
+      <description>This sub-goal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.
+Ideal Approach Ideally, this sub-goal would speak to the quality and quantity of marine jobs in an area. It would encompass all the marine sectors that supply jobs and wages to coastal communities, incorporating information on the sustainability of different sectors while also telling about the working conditions and job satisfaction.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Mariculture</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/food-provision/mariculture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/food-provision/mariculture/</guid>
+      <description>Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean’s ability to provide fish sustainably now and in the future.
+Higher scores reflect high food provisioning in a sustainable manner, while not compromising the water quality in the farmed area and not relying on wild populations to feed or replenish the cultivated species. A score of 100 means that a region is sustainably harvesting the greatest amount of farmed seafood possible based on its own potential (where its maximum potential is estimated in different ways depending on the assessment).</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Species</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/biodiversity/species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/biodiversity/species/</guid>
+      <description>This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.
+ Data for this goal are also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
+ Ideal Approach Ideally, you would find data for all species present in your region including information on their habitat ranges along with scientific studies that speak to the health of their populations.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal:Economies</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/economies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/economies/</guid>
+      <description>Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.
+Ideal Approach Ideally, revenue data would be collected for all coastal regions, and traced from sectors both directly and indirectly related to marine industries. When these data are not available it is possible to use revenue data at a larger scale and adapt them to a coastal area based on the population distribution.</description>
+    </item>
+    
+    <item>
+      <title>Supporters</title>
+      <link>https://ohi-science.github.io/ohi-website/about/supporters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/about/supporters/</guid>
+      <description>Our founding contributors go above and beyond in their generosity of intellectual and financial support. Without these forward-thinking leaders, the Ocean Health Index would not be a reality.
+FOUNDING PRESENTING SPONSOR The Pacific Life Foundation has a strong tradition of creating positive societal change through its grant making program. The Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index as it has the potential to stimulate a reversal in ocean health, from negative to positive.</description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>https://ohi-science.github.io/ohi-website/about/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/about/team/</guid>
+      <description>This team develops scientific methods, communicates results to governments, marine managers, scientists and the public, manages current operations and directs future development of the Ocean Health Index project. Ben Halpern has been with the project since planning began in 2008. The team gratefully acknowledges the individuals, foundations, organizations and corporations listed as Contributors and Sustaining Partners. This project would not exist without them.</description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://ohi-science.github.io/ohi-website/resources/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/resources/tools/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

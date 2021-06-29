@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goals on Ocean Health Index</title>
+    <link>https://ohi-science.github.io/ohi-website/methodology/goals/</link>
+    <description>Recent content in Goals on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/methodology/goals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goal: Artisanal Fishing Opportunities</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/artisanal-fishing-opportunities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/artisanal-fishing-opportunities/</guid>
+      <description>ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES One of the most fundamental services the ocean provides people is the provision of seafood, whether it is helping meet the basic nutritional needs of over half of the world’s population to high-end sushi. This goal, then, measures the amount of seafood sustainably harvested in a given EEZ or region through any means for use primarily in human consumption or export and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Carbon Storage</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/carbon-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/carbon-storage/</guid>
+      <description>Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture the ability of the coastal habitats to remove carbon given their carbon uptake rate and health conditions. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Clean Waters</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/clean-waters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/clean-waters/</guid>
+      <description>People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, eutrophication, algal blooms, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), floating trash, and mass kills of organisms due to pollution. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Coastal Protection</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/coastal-protection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/coastal-protection/</guid>
+      <description>This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.). A score of 100 would indicate that these habitats are all still intact or have been restored to their reference conditions.
+Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: Carbon Storage, Coastal Protection, and Biodiversity.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Natural Products</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/natural-products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/natural-products/</guid>
+      <description>Harvesting Food Products In many countries the harvest of non-food natural products is important for local economies and can also be traded internationally. The sustainable harvest of these products is therefore an important component of a healthy ocean. This goal assesses the ability of countries to maximize the sustainable harvest of living marine resources, such as corals, shells, seaweeds, and fish for the aquarium trade.
+It does not include bioprospecting which focuses on potential (and largely unknowable and potentially infinite) value rather than current realized value, or non-living products such as oil and gas or mining products which by definition are not sustainable.</description>
+    </item>
+    
+    <item>
+      <title>Goal: Tourism and Recreation</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/tourism-and-recreation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/tourism-and-recreation/</guid>
+      <description>Tourism and recreation in coastal areas is a major component of thriving coastal communities and a measure of how much people value ocean systems, i.e. by traveling to coastal and ocean areas. This goal is not about the revenue or livelihoods that are generated by tourism and recreation (that is captured in the livelihoods goal, section 6F above) but instead captures the value that people have for experiencing and enjoying coastal areas.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Livelihoods and Economies on Ocean Health Index</title>
+    <link>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/</link>
+    <description>Recent content in Goal: Livelihoods and Economies on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub-Goal: Livelihoods</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/livelihoods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/livelihoods/</guid>
+      <description>This sub-goal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.
+Ideal Approach Ideally, this sub-goal would speak to the quality and quantity of marine jobs in an area. It would encompass all the marine sectors that supply jobs and wages to coastal communities, incorporating information on the sustainability of different sectors while also telling about the working conditions and job satisfaction.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal:Economies</title>
+      <link>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/economies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.github.io/ohi-website/methodology/goals/livelihoods-and-economies/economies/</guid>
+      <description>Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.
+Ideal Approach Ideally, revenue data would be collected for all coastal regions, and traced from sectors both directly and indirectly related to marine industries. When these data are not available it is possible to use revenue data at a larger scale and adapt them to a coastal area based on the population distribution.</description>
+    </item>
+    
+  </channel>
+</rss>
