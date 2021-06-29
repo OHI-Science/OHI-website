@@ -1,0 +1,35 @@
+/**
+ * barChart.scss
+ *
+ * Styles for a basic bar chart, used to create the bar charts on region score pages.
+ *
+ * Related files:
+ *  - assets/js/data-viz/barChart.js
+ *
+ */
+
+.bar-chart {
+  --bar-chart-color-bar: #{$accent-color};
+  --bar-chart-color-highlight: #{$highlight-color};
+  height: 25rem;
+  width: 100%;
+
+  &__plot {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__bar {
+    fill: var(--bar-chart-color-bar);
+  }
+
+  &__bar:hover {
+    stroke: $highlight-color;
+    fill: $highlight-color;
+    stroke-width: 0.5px;
+  }
+
+  &__bar--highlight {
+    fill: $highlight-color;
+  }
+}

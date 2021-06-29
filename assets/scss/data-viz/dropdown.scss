@@ -1,0 +1,140 @@
+/**
+ * dropdown.scss
+ *
+ * Styles for an enhanced dropdown input element, used in some of the data visualizations.
+ *
+ * Related files:
+ *  - assets/js/data-viz/dropdown.js
+ *
+ */
+
+.dropdown {
+
+  --dropdown-color-primary-dark: #{$text-color};
+  --dropdown-color-subtle-text: #{$text-color-light};
+  --dropdown-color-border: #{$border-color};
+  --dropdown-color-accent: #{$accent-color};
+  --dropdown-gutter: 0 1rem;
+  --dropdown-border: 1.5px solid var(--dropdown-color-border);
+  --dropdown-radius: 3px;
+  --dropdown-size-icon: 2rem;
+  --dropdown-item-padding: 0.5rem;
+  --input-item-height: calc(var(--dropdown-size-icon) + (2 * var(--dropdown-item-padding)));
+  --background-color: #{$body-color};
+
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  font-size: 1.1rem;
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    border: var(--dropdown-border);
+    border-radius: var(--dropdown-radius);
+    width: 100%;
+    background-color: var(--background-color);
+    cursor: pointer;
+    min-height: var(--input-item-height);
+  }
+
+  &__input:hover {
+    border-color: var(--dropdown-color-accent);
+  }
+
+  &__input--active {
+    border-color: var(--dropdown-color-accent);
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  &__placeholder {
+    padding: var(--dropdown-gutter);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Dropdown styling */
+
+  &__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 20rem;
+    width: 100%;
+    margin-top: calc(var(--input-item-height) + 3px);
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__placeholder-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__placeholder:after {
+    opacity: 0.5;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z'/%3E%3C/svg%3E");
+    height: var(--input-item-height);
+    width: calc(var(--input-item-height) * 0.4);
+    padding-top: 1rem;
+  }
+
+  &__item,
+  &__placeholder-text {
+    padding: var(--dropdown-item-padding);
+    min-height: var(--input-item-height);
+  }
+
+  &__item--child {
+    padding-left: 4rem;
+    color: var(--dropdown-color-subtle-text);
+  }
+
+  &__item--child:before {
+    opacity: 0.5;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z'/%3E%3C/svg%3E");
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    margin-top: -0.25rem;
+  }
+
+  &__item:hover {
+    background-color: var(--dropdown-color-accent);
+    color: white;
+  }
+
+  &__subtext {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--dropdown-color-subtle-text);
+  }
+
+  &__list--hidden {
+    display: none;
+  }
+
+  &__icon {
+    max-height: var(--dropdown-size-icon);
+    max-width: var(--dropdown-size-icon);
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 4px;
+    margin-right: 0.7rem;
+  }
+}

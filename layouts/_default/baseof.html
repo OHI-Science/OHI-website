@@ -2,19 +2,28 @@
 <html lang="en-US">
 {{- partial "head.html" . -}}
 
-<body>
-	{{- partial "nav.html" . -}}
-	{{ if not .IsHome }}
-	{{ partial "page-header.html" . }}
-	{{ end }}
-	{{- block "main" . }}{{- end }}
-	{{- partial "footer.html" . -}}
-  {{ with resources.Get "js/main.js" }}
-    {{/* breakpoint: Screen width at which to switch from mobile style rules to desktop styles. If this is changed, then the value in _variables.scss should also be changed. */}}
-    {{ $jsParams := dict "breakpoint" 900 }}
-    {{ $script := . | js.Build (dict "params" $jsParams) }}
-    <script src="{{ $script.RelPermalink }}" async></script>
-  {{ end }}
-</body>
+  <body>
+    {{- partial "nav.html" . -}}
+    {{- if not .IsHome -}}
+      {{- partial "page-header.html" . -}}
+    {{- end -}}
+    {{- block "main" . -}}{{- end -}}
+    {{- partial "footer.html" . -}}
+
+    {{- with resources.Get "js/main.js" -}}
+      
+      {{/* dataConfig: JSON with paths to all of the OHI data files, plus other data config properties. See content/data/_index.md */}}
+      {{- $dataConfig := partial "functions/getDataConfig.json" -}}
+
+      {{/* breakpoint: Screen width at which to switch from mobile style rules to desktop styles. If this is changed, then the value in _variables.scss should also be changed. */}}
+      {{- $breakpoint := 900 }}
+      
+      {{- $jsParams := dict "breakpoint" 900 "dataConfig" $dataConfig -}}
+
+      {{- $script := . | js.Build (dict "params" $jsParams) -}}
+      <script src="{{ $script.RelPermalink }}" async></script>
+    {{- end -}}
+
+  </body>
 
 </html>
