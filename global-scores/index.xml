@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scores on Ocean Health Index</title>
-    <link>https://ohi-science.github.io/ohi-website/global-scores/</link>
+    <link>https://ohi-science.org/OHI-website/global-scores/</link>
     <description>Recent content in Scores on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/global-scores/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/global-scores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Canada</title>
-      <link>https://ohi-science.github.io/ohi-website/global-scores/regions/canada/</link>
+      <link>https://ohi-science.org/OHI-website/global-scores/regions/canada/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ohi-science.github.io/ohi-website/global-scores/regions/canada/</guid>
+      <guid>https://ohi-science.org/OHI-website/global-scores/regions/canada/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Download</title>
-      <link>https://ohi-science.github.io/ohi-website/global-scores/data-download/</link>
+      <link>https://ohi-science.org/OHI-website/global-scores/data-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ohi-science.github.io/ohi-website/global-scores/data-download/</guid>
+      <guid>https://ohi-science.org/OHI-website/global-scores/data-download/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scores over time</title>
-      <link>https://ohi-science.github.io/ohi-website/global-scores/over-time/</link>
+      <link>https://ohi-science.org/OHI-website/global-scores/over-time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ohi-science.github.io/ohi-website/global-scores/over-time/</guid>
+      <guid>https://ohi-science.org/OHI-website/global-scores/over-time/</guid>
       <description></description>
     </item>
     

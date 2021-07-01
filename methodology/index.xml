@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Methodology Overview on Ocean Health Index</title>
-    <link>https://ohi-science.github.io/ohi-website/methodology/</link>
+    <link>https://ohi-science.org/OHI-website/methodology/</link>
     <description>Recent content in Methodology Overview on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/methodology/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/methodology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Dive</title>
-      <link>https://ohi-science.github.io/ohi-website/methodology/deep-dive/</link>
+      <link>https://ohi-science.org/OHI-website/methodology/deep-dive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ohi-science.github.io/ohi-website/methodology/deep-dive/</guid>
+      <guid>https://ohi-science.org/OHI-website/methodology/deep-dive/</guid>
       <description></description>
     </item>
     

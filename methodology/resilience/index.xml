@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resilience Descriptions on Ocean Health Index</title>
-    <link>https://ohi-science.github.io/ohi-website/methodology/resilience/</link>
+    <link>https://ohi-science.org/OHI-website/methodology/resilience/</link>
     <description>Recent content in Resilience Descriptions on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/methodology/resilience/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/methodology/resilience/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

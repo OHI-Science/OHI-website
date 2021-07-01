@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Ocean Health Index</title>
-    <link>https://ohi-science.github.io/ohi-website/news/</link>
+    <link>https://ohi-science.org/OHI-website/news/</link>
     <description>Recent content in News on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/news/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An example news story or blog post</title>
-      <link>https://ohi-science.github.io/ohi-website/news/example-news-item/</link>
+      <link>https://ohi-science.org/OHI-website/news/example-news-item/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ohi-science.github.io/ohi-website/news/example-news-item/</guid>
+      <guid>https://ohi-science.org/OHI-website/news/example-news-item/</guid>
       <description></description>
     </item>
     

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pressure Descriptions on Ocean Health Index</title>
-    <link>https://ohi-science.github.io/ohi-website/methodology/pressure/</link>
+    <link>https://ohi-science.org/OHI-website/methodology/pressure/</link>
     <description>Recent content in Pressure Descriptions on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ohi-science.github.io/ohi-website/methodology/pressure/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/methodology/pressure/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

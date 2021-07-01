@@ -10,7 +10,7 @@
   var breakpoint, dataConfig, params_default;
   var init_params = __esm(() => {
     breakpoint = 900;
-    dataConfig = '\n{\n  "goalIconsDirPath" : "/images/goal-icons/",\n  "missingValueCode" : "NA",\n  "dataPaths": {"goals": "https://ohi-science.github.io/ohi-website/data/goalLabels.json"\n        ,"regions": "https://ohi-science.github.io/ohi-website/data/regions.topojson"\n        ,"scores": "https://ohi-science.github.io/ohi-website/data/scores.csv"\n        }\n}\n';
+    dataConfig = '\n{\n  "goalIconsDirPath" : "/images/goal-icons/",\n  "missingValueCode" : "NA",\n  "dataPaths": {"goals": "https://ohi-science.org/OHI-website/data/goalLabels.json"\n        ,"regions": "https://ohi-science.org/OHI-website/data/regions.topojson"\n        ,"scores": "https://ohi-science.org/OHI-website/data/scores.csv"\n        }\n}\n';
     params_default = {breakpoint, dataConfig};
   });
 
