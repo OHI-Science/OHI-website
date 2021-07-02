@@ -111,10 +111,10 @@ async function regionAster({
     const yearDimensionData = ohiData.scores[selections.dimension][selections.year]
     const meanScore = yearDimensionData['Index'][selections.region]
     
-    // Go through each of the goals in the order they are displayed in the goalLabels array.
-    // Exclude sub-goals and the overall index (which will be used for the meanScore in the
-    // centre).
-    ohiData.goalLabels.forEach(function (goalLabel, index) {
+    // Go through each of the goals in the order they are displayed in the goalsConfig
+    // array. Exclude sub-goals and the overall index (which will be used for the
+    // meanScore in the centre).
+    ohiData.goalsConfig.forEach(function (goalLabel, index) {
       if (!goalLabel.parent && goalLabel.id !== 'Index') {
         const d = {
           id: goalLabel.id,

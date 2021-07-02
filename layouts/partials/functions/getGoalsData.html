@@ -9,7 +9,6 @@
 
 {{/* Add the overall index first */}}
 {{ $indexGoal := partial "goal-properties" $goalSection.Params }}
-{{ warnf "%s" $goalSection.Params }}
 {{ $indexGoal = merge $indexGoal (dict "url" $goalSection.Permalink) }}
 {{ $goalsData = $goalsData | append $indexGoal }}
 
