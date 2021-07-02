@@ -2,6 +2,11 @@
 title: "Goal: Artisanal Fishing Opportunities"
 name: "Artisanal Fishing Opportunities"
 bg_image: "/images/banners/fish-net.jpg"
+id: "AO"
+icon: "/images/goal-icons/artisinal-fishing-opportunities.svg"
+description: "Artisanal fisheries refer to households, cooperatives, or small firms that use fish mainly for local consumption or trade (a.k.a. small-scale fishing)"
+color: "#B94E31"
+weight: 2
 ---
 
 ### ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES

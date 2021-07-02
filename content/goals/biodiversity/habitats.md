@@ -2,6 +2,8 @@
 title: "Sub-Goal: Habitat"
 name: "Habitat"
 bg_image: "/images/banners/shark-fish.jpg"
+id: "HAB"
+description: "This sub-goal includes all habitats in the study area, and assess their health condition and coverage area."
 ---
 
 The Habitats sub-goal includes all habitats in the study area, and assess their health condition and coverage area.

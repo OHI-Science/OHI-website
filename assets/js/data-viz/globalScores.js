@@ -117,7 +117,7 @@ async function globalScores({
 
   // Update the description of the goal, depending on the goal that is current selected
   function updateDescription() {
-    const selectedGoal = ohiData.goalLabels.find(function (goal) {
+    const selectedGoal = ohiData.goalsConfig.find(function (goal) {
       return goal.id === selections.goal
     })
     const descriptionText = selectedGoal ? selectedGoal.description : null
@@ -166,7 +166,7 @@ async function globalScores({
 
     // Create the goals input
     const goalsInput = dropdown({
-      data: ohiData.goalLabels,
+      data: ohiData.goalsConfig,
       selected: selections.goal
     })
     goalsInput.addEventListener('update', function (e) {

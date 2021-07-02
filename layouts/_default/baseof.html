@@ -13,7 +13,7 @@
     {{- with resources.Get "js/main.js" -}}
       
       {{/* dataConfig: JSON with paths to all of the OHI data files, plus other data config properties. See content/data/_index.md */}}
-      {{- $dataConfig := partial "functions/getDataConfig.json" -}}
+      {{- $dataConfig := partial "functions/getDataConfig" (dict "format" "json") -}}
 
       {{/* breakpoint: Screen width at which to switch from mobile style rules to desktop styles. If this is changed, then the value in _variables.scss should also be changed. */}}
       {{- $breakpoint := 900 }}

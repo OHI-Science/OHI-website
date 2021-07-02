@@ -2,6 +2,8 @@
 title: "Sub-Goal: Species"
 name: "Species"
 bg_image: "/images/banners/shark-fish.jpg"
+id: "ICO"
+description: "Iconic species are those that are relevant to local cultural identity (e.g. through a species' relationship to traditional activities). This sub-goal assesses how well those species are conserved."
 ---
 
 This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.

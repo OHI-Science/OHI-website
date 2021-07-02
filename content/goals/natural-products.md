@@ -1,8 +1,12 @@
 ---
 title: "Goal: Natural Products"
-
 name: "Natural Products"
 bg_image: "/images/banners/red-coral.jpg"
+id: "NP"
+icon: "/images/goal-icons/natural-products.svg"
+description: "This goal assesses the ability of regions to maximize the sustainable harvest of living marine resources, such as corals, shells, seaweeds, and fish for the aquarium trade."
+color: "#E16727"
+weight: 3
 ---
 
 ### Harvesting Food Products

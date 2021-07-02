@@ -21,28 +21,24 @@ if (params.dataConfig) {
  * the complete scores data
  * @property {string} [options.dataPaths.regions] The path to the topoJSON file that has
  * ocean, land, and eez feature information
- * @property {string} [options.dataPaths.goals] The path to the JSON file that comprises
-    the array of OHI goals, in the order to be displayed in the UI. Each goal in the array
-    is an Object that comprises the id (e.g. 'AO'), label (e.g. 'Artisanal Fishing
-    Opportunities'), file name of the corresponding SVG icon, and, if it is a sub-goal,
-    the parent ID. Sub-goals do not need icons, they can use the parent icon. Icons *must*
-    be svg files. The directory for the icons is provided by the goalIconsDirPath.
- * @property {string} [options.goalIconsDirPath] The path from the root of the project to
- * the directory that contains the goal icons.
+ * @property {string} [options.goalsConfig] JSON that comprises the array of OHI goals, in
+    the order to be displayed in the UI. Each goal in the array is an Object that
+    comprises the id (e.g. 'AO'), label (e.g. 'Artisanal Fishing Opportunities'), SVG
+    icon, and, if it is a sub-goal, the parent ID. Sub-goals do not need icons, they can
+    use the parent icon. Icons *must* be SVG content embedded into the JSON.
  * @property {string} [options.missingValueCode] The string that is used in the scores CSV
  * that indicates a value is missing.
- * 
+ *
  * @returns {Object} - returns an Object with all of the OHI data, formatted for use in
  * the various OHI data viz applications
  */
 function data({
-  goalIconsDirPath = '/images/goal-icons/',
   missingValueCode = 'NA',
   dataPaths = {
     scores: 'scores.csv',
     regions: 'regions.topojson',
-    goals: 'goalLabels.json',
-  }
+  },
+  goalsConfig = {}
 } = dataBundleConfig) {
 
   if (!dataPaths || !dataPaths.scores || !dataPaths.regions) {
@@ -64,50 +60,35 @@ function data({
     return data
   }
 
-  // Fetch and return SVG for inserting inline into the DOM
-  async function importSVG(path) {
-    // For parsing the SVG icon string
-    const parser = new DOMParser();
-    let response = await fetch(path)
-    let svg = await response.text()
-    svg = svg && svg.startsWith('<svg') ? svg : null;
-    svg = svg ? parser.parseFromString(svg, "image/svg+xml").documentElement : null;
-    return svg
-  }
-
-  // If there is a path provided in a goalLabel item's icon property, import the 
-  // SVG string and save to the goalLabel item.
-  async function attachGoalIcons(goalLabels) {
-    if (!goalLabels) {
-      return
-    }
-    for (const goalLabel of goalLabels) {
-      if (goalLabel.icon) {
-        let dirPath = goalIconsDirPath || "";
-        if (dirPath) {
-          dirPath += dirPath.endsWith("/") ? "" : "/"
-        }
-        const fullIconPath = dirPath + goalLabel.icon;
-        const svgEl = await importSVG(fullIconPath);
-        goalLabel.icon = svgEl;
-      }
-    }
-  }
-
   // Creates or imports all of the data needed for the map
   async function importData() {
     const features = await importJSON(dataPaths.regions)
     const scores = await importCSV(dataPaths.scores)
-    // Map of the codes for each goal and the label user-facing label to use.
-    let goalLabels = await importJSON(dataPaths.goals)
-    // Import the SVG goal icons. Replace the SVG file path with the SVG element.
-    await attachGoalIcons(goalLabels)
-    return { goalLabels, features, scores }
+    return { goalsConfig, features, scores }
+  }
+
+  // Convert goal icons from string to SVG element
+  function parseSVG(svgString) {
+    if (!svgString || typeof svgString != "string" || !svgString.startsWith('<svg')) {
+      return null
+    }
+    // For parsing the SVG icon string
+    const parser = new DOMParser();
+    const svg = parser.parseFromString(svgString, "image/svg+xml").documentElement;
+    return svg
   }
 
   // Give the raw data, process it so that it's more manageable to use in data
   // visualizations.
   function processData(data) {
+
+    // Parse the goal icons
+    data.goalsConfig.forEach(function (goal) {
+      if (goal.icon) {
+        goal.icon = parseSVG(goal.icon)
+      }
+    })
+
     const topoFeatureName = Object.keys(data.features.objects)[0];
     // Convert the topoJSON for easy use in D3 (requires d3js.org/topojson.v1)
     const featureData = topojson

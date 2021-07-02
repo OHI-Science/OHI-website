@@ -2,6 +2,11 @@
 title: "Goal: Coastal Protection"
 name: "Coastal Protection"
 bg_image: "/images/banners/cliff.jpg"
+id: "CP"
+icon: "/images/goal-icons/costal-protection.svg"
+description: "This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value (e.g. homes, parks, special places, etc.)"
+color: "#D5A227"
+weight: 5
 ---
 
 
