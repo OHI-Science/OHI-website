@@ -4,7 +4,7 @@
       {{ if not (fileExists (string .Params.bg_image)) }}
         {{ errorf "Failed to generate card image because the following file was not found." .Params.bg_image }}
       {{ end }}
-      {{ $imageResource := ($.Site.GetPage "section" site.Params.images ).Resources.GetMatch (strings.TrimPrefix (printf "/%s/" site.Params.images) .Params.bg_image ) }}
+      {{ $imageResource := partial "functions/getImageResource" .Params.bg_image }}
       {{ $imageResource = $imageResource.Fill "870x640" }}
       <a href= "{{ .Permalink }}" div class="card">
         <span class="card-body" style="background-image: url({{$imageResource.RelPermalink}});"></span>

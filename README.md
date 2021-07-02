@@ -38,14 +38,12 @@ Goal and sub-goal pages, including goal index page, require more front-matter th
 
 - "id": The identifier code for the goal. This ID must match the identifier used in the scores
   CSV file (e.g. "FP") - see `content/data/_index.md` for details
-- "icon": The image path for icon that is associated with the goal. These icons must be
-  SVG format. (e.g. "food-provision.svg"). Do not configure icons for sub-goals; sub-goals
-  will use the parent goal icon.
-- "description": A very short, one sentence description of the goal. (e.g. "This goal
-  measures the amount of seafood sustainably harvested for use primarily in human
-  consumption or export.")
-- "color": A hex code that will be used to represent this goal. "#A7344E". Do not
-  configure colours for sub-goals; sub-goals will use the parent goal colour.
+- "icon": The image path for icon that is associated with the goal. These icons must be SVG format. (e.g. "food-provision.svg"). \*
+- "description": A very short, one sentence description of the goal. (e.g. "This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export.")
+- "color": A hex code that will be used to represent this goal. e.g. "#A7344E". \*
+- "weight": A number that gives the relative order of this goal compared to the others. Used for the display order when the goals are displayed as a list. \*
+
+\* Do not configure color, weight, or icon properties for sub-goals; sub-goals will inherit the parent property.
 
 Example:
 ```
@@ -57,6 +55,7 @@ id: "FP"
 icon: "/images/goal-icons/food-provision.svg"
 description: "This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export."
 color: "#A7344E"
+weight: 1
 ---
 ```
 

@@ -6,6 +6,7 @@ id: "SP"
 icon: "/images/goal-icons/sense-of-place.svg"
 description: "This goal reflects aspects of coastal and marine system that people value as part of their cultural identity."
 color: "#2FBD89"
+weight: 8
 ---
 
 

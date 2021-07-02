@@ -6,6 +6,7 @@ id: "CS"
 icon: "/images/goal-icons/carbon-storage.svg"
 description: "This goal intends to capture the ability of coastal habitats to remove carbon given their carbon uptake rate and health conditions."
 color: "#D78935"
+weight: 4
 ---
 
 

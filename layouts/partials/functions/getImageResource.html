@@ -1,0 +1,18 @@
+{{/* Given a path, return an image resource that is stored in the images directory */}}
+
+{{/* Get the bundle of images from the images directory */}}
+{{ $imageResource := "" }}
+{{ $imagesDirName := site.Params.images }}
+{{ $imageBundle := (site.GetPage "section" $imagesDirName).Resources }}
+
+{{/* Clean up the given path name. Remove images prefix. */}}
+{{ $path := . }}
+{{ $imagePathPrefix := (printf "/%s/" $imagesDirName) }}
+{{ if not (hasPrefix $path "/") }}
+  {{ $path = print "/" $path }}
+{{ end }}
+{{ $path = strings.TrimPrefix $imagePathPrefix $path }}
+
+{{ $imageResource = $imageBundle.GetMatch $path }}
+
+{{ return $imageResource }}

@@ -1,0 +1,44 @@
+{{/* Find the goals page index */}}
+{{ $goalSection := site.GetPage "goals" }}
+
+{{/* Get the other top-level goal pages, sorted by weight */}}
+{{ $goalPages := sort $goalSection.Pages "Params.weight" }}
+
+{{/* The list of goals with properties that we'll convert to JSON */}}
+{{ $goalsData := slice }}
+
+{{/* Add the overall index first */}}
+{{ $indexGoal := partial "goal-properties" $goalSection.Params }}
+{{ warnf "%s" $goalSection.Params }}
+{{ $indexGoal = merge $indexGoal (dict "url" $goalSection.Permalink) }}
+{{ $goalsData = $goalsData | append $indexGoal }}
+
+{{/* Range through the remaining top-level goals */}}
+{{ range $goalPage := $goalPages }}
+  {{ $goalProps := partial "goal-properties" .Params }}
+  {{ $goalProps = merge $goalProps (dict "url" $goalPage.Permalink )}}
+  {{ $goalsData = $goalsData | append $goalProps }}
+  {{/* Add sub-goals, if there are any */}}
+  {{ range .Pages }}
+    {{ $subgoalProps := dict "id" .Params.id "label" .Params.name "description" .Params.description "parent" $goalProps.id "url" .Permalink }}
+    {{ $goalsData = $goalsData | append $subgoalProps }}
+  {{ end }}
+{{ end }}
+
+{{ if eq .format "json" }}
+  {{/* Return the Hugo slice of dictionaries as a JSON array of objects */}}
+  {{ $goalsData = $goalsData | jsonify }}
+{{ end }}
+{{ return $goalsData }}
+
+{{ define "partials/goal-properties" }}
+  {{ $props := dict "id" .id "label" .name "description" .description "color" .color }}
+  {{ with .icon }}
+    {{ $iconResource := partial "functions/getImageResource" . }}
+    {{ with $iconResource }}
+      {{ $iconContent := printf "%s" $iconResource.Content }}
+      {{ $props = merge $props (dict "icon" $iconContent) }}
+    {{ end }}
+  {{ end }}
+  {{ return $props }}
+{{ end }}

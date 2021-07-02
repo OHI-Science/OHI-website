@@ -6,6 +6,7 @@ id: "FP"
 icon: "/images/goal-icons/food-provision.svg"
 description: "This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export."
 color: "#A7344E"
+weight: 1
 ---
 
 ### HARVESTING SEAFOOD SUSTAINABLY
