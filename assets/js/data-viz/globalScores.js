@@ -1,7 +1,11 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//   );
+// }
 
 // Parameters imported from the baseof.html template which builds the JS
 import colorScale from "./colorScale.js"

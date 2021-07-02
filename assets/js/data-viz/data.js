@@ -1,8 +1,11 @@
-// D3 modules
-const d3 = Object.assign(
-  {},
-  require("d3-fetch")
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-fetch")
+//   );
+// }
 
 // For processing topojson
 import * as topojson from "topojson-client";

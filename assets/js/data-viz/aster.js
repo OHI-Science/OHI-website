@@ -1,8 +1,12 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-  require("d3-shape") // for d3.pie, d3.arc
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//     require("d3-shape") // for d3.pie, d3.arc
+//   );
+// }
 
 /**
  * A single data point in an array of data that creates an aster plot. One data point

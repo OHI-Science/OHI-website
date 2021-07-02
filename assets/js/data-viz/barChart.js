@@ -1,9 +1,13 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-  require("d3-array"),
-  require("d3-scale")
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//     require("d3-array"),
+//     require("d3-scale")
+//   );
+// }
 
 import regionTooltip from "./regionTooltip.js"
 

@@ -1,12 +1,16 @@
-const d3 = Object.assign(
-  {},
-  require("d3-drag"),
-  require("d3-selection"),
-  require("d3-geo"),
-  require("d3-transition"),
-  require("d3-interpolate"),
-  require("d3-geo-projection") // for geoMollweide
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-drag"),
+//     require("d3-selection"),
+//     require("d3-geo"),
+//     require("d3-transition"),
+//     require("d3-interpolate"),
+//     require("d3-geo-projection") // for geoMollweide
+//   );
+// }
 
 import regionTooltip from "./regionTooltip.js"
 import colorScale from "./colorScale.js"
