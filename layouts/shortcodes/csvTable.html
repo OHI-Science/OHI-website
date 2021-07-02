@@ -1,0 +1,24 @@
+<!-- Adapted from https://randomgeekery.org/post/2020/06/csv-and-data-tables-in-hugo/ -->
+
+{{ $path := .Get "path" }}
+{{ $sep := "," }}
+{{ $rows := getCSV $sep $path }}
+
+<div class="column-center__full-width-container">
+<table class="goals-table">
+  {{ $headerRow := index $rows 0 }}
+  {{ $rows = after 1 $rows }}
+  <tr class ="goals-table-row"> {{ range $headerRow }} <th>{{ . }}</th> {{ end }} </tr>
+  {{ range $rows }}
+    <tr class="goals-table-row">
+      {{ range . }}
+        {{ if (findRE "^\\d+$" .) }}
+          <td class="goals-table-content">{{ . }}</td>
+        {{ else }}
+          <td class="goals-table-content">{{ . }}</td>
+        {{ end }}
+      {{ end }}
+    </tr>
+  {{ end }}
+</table>
+</div>
