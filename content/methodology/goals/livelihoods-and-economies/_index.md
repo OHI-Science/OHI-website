@@ -2,6 +2,10 @@
 title: "Goal: Livelihoods and Economies"
 name: "Livelihoods and Economies"
 bg_image: "/images/banners/shipping-containers.jpg"
+id: "LE"
+icon: "/images/goal-icons/livelihoods-and-economies.svg"
+description: "This goal tracks the number and quality of jobs and the amount of revenue produced across as many marine-related industries as possible."
+color: "#DAC32F"
 ---
 
 

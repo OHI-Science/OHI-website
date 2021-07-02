@@ -15,7 +15,15 @@ hugo server
 
 The content for the website is all contained within the `/content/` directory. The
 markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
-add-ons.
+add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called front-matter.
+
+## Front-matter
+
+Front-matter is located at the top of each markdown file, between two `---` separators, in `yaml` format. The properties common to all pages are:
+
+- title
+- name
+- bg_image
 
 ## Shortcodes
 
@@ -23,6 +31,34 @@ In addition to basic markdown formatting, the following codes can be used in any
 
 ### `{{< scoresGlobe >}}`
 This code inserts the data visualization that shows the score for each region on an interactive globe, where the year and goal can be changed using inputs. The scores globe uses the data contained in the `content/data/scores.csv` file (see `content/data/_index.md` for details). There should only be a maximum of 1 scores globe on each page.
+
+## Goal pages
+
+Goal and sub-goal pages, including goal index page, require more front-matter than other content pages. In addition to the "title", "name", and "bg_image" properties, goal pages use the properties "id", "icon", "description", and "color". These extra properties control how the OHI goal information is presented on the website, including creating the data visualizations.
+
+- "id": The identifier code for the goal. This ID must match the identifier used in the scores
+  CSV file (e.g. "FP") - see `content/data/_index.md` for details
+- "icon": The image path for icon that is associated with the goal. These icons must be
+  SVG format. (e.g. "food-provision.svg"). Do not configure icons for sub-goals; sub-goals
+  will use the parent goal icon.
+- "description": A very short, one sentence description of the goal. (e.g. "This goal
+  measures the amount of seafood sustainably harvested for use primarily in human
+  consumption or export.")
+- "color": A hex code that will be used to represent this goal. "#A7344E". Do not
+  configure colours for sub-goals; sub-goals will use the parent goal colour.
+
+Example:
+```
+---
+title: "Goal: Food Provision"
+name: "Food Provision"
+bg_image: "/images/banners/fish-school.jpg"
+id: "FP"
+icon: "/images/goal-icons/food-provision.svg"
+description: "This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export."
+color: "#A7344E"
+---
+```
 
 # Making changes to the menu
 

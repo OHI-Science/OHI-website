@@ -2,6 +2,10 @@
 title: "Goal: Food Provision"
 name: "Food Provision"
 bg_image: "/images/banners/fish-school.jpg"
+id: "FP"
+icon: "/images/goal-icons/food-provision.svg"
+description: "This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export."
+color: "#A7344E"
 ---
 
 ### HARVESTING SEAFOOD SUSTAINABLY
