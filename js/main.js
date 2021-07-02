@@ -10,7 +10,7 @@
   var breakpoint, dataConfig, params_default;
   var init_params = __esm(() => {
     breakpoint = 900;
-    dataConfig = '\n{\n  "goalIconsDirPath" : "/images/goal-icons/",\n  "missingValueCode" : "NA",\n  "dataPaths": {"goals": "https://ohi-science.org/OHI-website/data/goalLabels.json"\n        ,"regions": "https://ohi-science.org/OHI-website/data/regions.topojson"\n        ,"scores": "https://ohi-science.org/OHI-website/data/scores.csv"\n        }\n}\n';
+    dataConfig = `{"dataPaths":{"regions":"https://ohi-science.org/OHI-website/data/regions.topojson","scores":"https://ohi-science.org/OHI-website/data/scores.csv"},"goalsConfig":[{"color":null,"description":"The Ocean Health Index (OHI) defines a healthy ocean to be one that sustainably delivers a range of benefits to people now and in the future.","id":"Index","label":"Goals","url":"https://ohi-science.org/OHI-website/goals/"},{"color":"#A7344E","description":"This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M57 44l34-31c3-2 3-6 1-8s-5-2-8 1L53 39\\"/\\u003e\\n\\u003cpath d=\\"M11 42l-3-3v-2l4-4a1 1 0 011 0l4 3 5-4-1-5v-1l6-3a1 1 0 012 1l1 5h7l2-5a1 1 0 012-1l5 3 1 2-2 4 4 6h4a1 1 0 011 1v6l-1 1-4 1 1 7c4 9 12 4 14 1 3-7 5-4 5-4v8c-7 13-24 12-29 1-3-10-3-15-11-15\\"/\\u003e\\n\\u003cpath d=\\"M29 45H7c-2 0-3 1-3 3v6c0 21 16 37 36 37h7c20 0 36-16 36-37v-6c0-2-1-3-3-3H55\\"/\\u003e\\n\\u003c/svg\\u003e","id":"FP","label":"Food Provision","url":"https://ohi-science.org/OHI-website/goals/food-provision/"},{"description":"This sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. ","id":"FIS","label":"Wild Caught Fisheries","parent":"FP","url":"https://ohi-science.org/OHI-website/goals/food-provision/wild-caught-fisheries/"},{"description":"Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean\u2019s ability to provide fish sustainably now and in the future.","id":"MAR","label":"Mariculture","parent":"FP","url":"https://ohi-science.org/OHI-website/goals/food-provision/mariculture/"},{"color":"#B94E31","description":"Artisanal fisheries refer to households, cooperatives, or small firms that use fish mainly for local consumption or trade (a.k.a. small-scale fishing)","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M55 44c5 0 12 4 18 4 4 0 4-3 3-5L58 33l20-17c2-4-14-3-23-3-16 0-34 3-45 18-16 25-4 49 24 50 7 4 9 11 20 11 2-2 0-11-6-17 8-4 9-15 8-21-6 4-12 6-18 14-8 6-13-11-12-14 4-8 22-10 29-10z\\"/\\u003e\\n\\u003cpath d=\\"M50 13C48 9 37 3 32 3s5 6-5 5c0 0-14-7-10-1 2 3 3 6-4 6-16 0 0 4-2 7-3 3-8 8-5 18M34 30l-20 7 1 2c13 8 11 4 23-5M88 3a5 5 0 00-4 7l3 2a5 5 0 004-7l-3-2zM87 12v4c-1 3-1 5 4 8l2 7a8 8 0 01-14 4 8 8 0 01-1-9M80 24l-7 6\\"/\\u003e\\n\\u003c/svg\\u003e","id":"AO","label":"Artisanal Fishing Opportunities","url":"https://ohi-science.org/OHI-website/goals/artisanal-fishing-opportunities/"},{"color":"#E16727","description":"This goal assesses the ability of regions to maximize the sustainable harvest of living marine resources, such as corals, shells, seaweeds, and fish for the aquarium trade.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003crect width=\\"83\\" height=\\"63\\" x=\\"7\\" y=\\"25\\" rx=\\"1\\"/\\u003e\\n\\u003crect width=\\"89\\" height=\\"11\\" x=\\"4\\" y=\\"14\\" rx=\\"1\\"/\\u003e\\n\\u003crect width=\\"65\\" height=\\"8\\" x=\\"16\\" y=\\"6\\" rx=\\"1\\"/\\u003e\\n\\u003cpath d=\\"M30 54c-4-16 5-21 9-22 22-1 29 22 32 22 2 0 3 1 0 4 3 1 1 1 0 3-4 8-10 14-15 20-4 2-10-5-5-8M56 71c-1 1-29 14-28-3\\"/\\u003e\\n\\u003cpath d=\\"M33 62l-2 2c-3 7-6 3-6 2V51c0-2 3-1 4 1 0 2 2 2 3 2M56 47c-2 3-3 12-1 16M49 45c-2 4-3 15 0 20M41 46c-2 5-1 16 1 20\\"/\\u003e\\n\\u003c/svg\\u003e","id":"NP","label":"Natural Products","url":"https://ohi-science.org/OHI-website/goals/natural-products/"},{"color":"#D78935","description":"This goal intends to capture the ability of coastal habitats to remove carbon given their carbon uptake rate and health conditions.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M54 39v12c1 1 22 16 22 19v7c0 4-9 3-9-1v-4l-7-7-6 6v4c0 5-9 6-9 2v-7l7-10-4-3c-12 7-18 12-18 14v6c0 5-10 5-10 0v-9c0-2 7-8 24-19V39M50 4c4 0 7 1 11 3 4-1 7-1 10 1 2 1 4 3 4 6 8 1 12 5 12 11 0 9-8 12-11 12-2 0-5 0-9-2-4 3-10 4-17 4s-13-1-17-4c-2 2-5 2-8 2-6 0-14-5-14-13 0-5 4-9 12-10 0-4 2-6 5-7h10l12-3zM94 90c-5 0-10-3-12-7-2 4-6 7-11 7s-10-3-12-7c-2 4-6 7-11 7s-9-3-12-7c-2 4-6 7-11 7s-9-3-11-7c-3 4-7 7-12 7\\"/\\u003e\\n\\u003c/svg\\u003e","id":"CS","label":"Carbon Storage","url":"https://ohi-science.org/OHI-website/goals/carbon-storage/"},{"color":"#D5A227","description":"This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value (e.g. homes, parks, special places, etc.)","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M12 61V45H7v-1l6-5-1-10h6v5l7-5h0l18 15v1h-6v16H12z\\"/\\u003e\\n\\u003cpath d=\\"M49 64c10-14 14-24 11-33-7-17-23-12-26-11-2 2 1-5 4-8 5-4 12-7 21-6 19 1 28 13 31 21 3 9 1 32 1 38M94 78c-5 0-10-3-12-8-2 5-6 8-11 8s-10-3-12-8c-2 5-6 8-11 8s-9-3-12-8c-2 5-6 8-11 8s-9-3-11-8c-3 5-7 8-12 8M94 91c-5 0-10-3-12-8-2 5-6 8-11 8s-10-3-12-8c-2 5-6 8-11 8s-9-3-12-8c-2 5-6 8-11 8s-9-3-11-8c-3 5-7 8-12 8\\"/\\u003e\\n\\u003c/svg\\u003e","id":"CP","label":"Coastal Protection","url":"https://ohi-science.org/OHI-website/goals/coastal-protection/"},{"color":"#DAC32F","description":"This goal tracks the number and quality of jobs and the amount of revenue produced across as many marine-related industries as possible.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M50 66l12-6c3-2 9-4 9 2l2-2c6-4 10-1 8 5 10-8 14 2 9 4L68 83l-10 6c-7 5-16 5-18 3-14-4-19-7-31-6\\"/\\u003e\\n\\u003cpath d=\\"M3 60l15-6c3-2 8-1 9 0l8 6c11 8 12 6 25 7 3 0 5 5 0 7-12 5-20 3-31-3M49 14v5M49 41v5M50 6a23 23 0 11-1 46 23 23 0 011-46z\\"/\\u003e\\n\\u003cpath d=\\"M57 20l-7-1c-11-2-13 10 0 10 11 0 10 12-1 10l-7-1\\"/\\u003e\\n\\u003c/svg\\u003e","id":"LE","label":"Livelihoods and Economies","url":"https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/"},{"description":"This sub-goal describes livelihood quantity and quality for people living on the coast. Livelihoods includes the number of jobs and the per capita average annual wages.","id":"LIV","label":"Livelihoods","parent":"LE","url":"https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/livelihoods/"},{"description":"Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.","id":"ECO","label":"Economies","parent":"LE","url":"https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/economies/"},{"color":"#A9B646","description":"This goal captures the value that people hold for experiencing and enjoying coastal areas. A score of 100 means a region utilizes its full recreational potential without harming the ecosystem.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M69 27c12 0 22 9 22 21 0 13-9 20-23 20-11-1-14-15-20-15-5 0-8 13-19 15-14 0-23-7-23-20 0-12 10-21 22-21h41z\\"/\\u003e\\n\\u003cpath d=\\"M40 91C26 91 8 92 8 68V57M8 39V4l8-1v27M44 81h10c2 0 3 1 3 3v6c0 2-1 3-3 3H44c-2 0-3-1-3-3v-6c0-2 1-3 3-3zM27 68c7 0 14 6 21 6 6 0 13-6 20-6\\"/\\u003e\\n\\u003cpath d=\\"M40 83l-13-1c-7-1-10-5-10-16\\"/\\u003e\\n\\u003c/svg\\u003e","id":"TR","label":"Tourism and Recreation","url":"https://ohi-science.org/OHI-website/goals/tourism-and-recreation/"},{"color":"#2FBD89","description":"This goal reflects aspects of coastal and marine system that people value as part of their cultural identity.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n    \\u003cpath d=\\"M93 80c-5 0-10-3-12-7-2 4-6 7-11 7s-9-3-11-7c-2 4-7 7-11 7-5 0-10-3-12-7-2 4-6 7-11 7s-9-3-11-7c-2 4-7 7-11 7M92 92c-4 0-9-3-11-7-2 4-6 7-11 7s-9-3-11-7c-2 4-7 7-12 7-4 0-9-3-11-7-2 4-6 7-11 7s-9-3-11-7c-2 4-7 7-11 7M10 64l24-43 24 44M53 54l11-11 11 15 4-4 10 14M75 13a8 8 0 110 15 8 8 0 010-15zM75 1v6M61 7l4 4M56 20h5M61 33l4-3M74 39v-5M88 34l-4-4M93 20h-5M88 7l-4 4\\"/\\u003e\\n\\u003c/svg\\u003e","id":"SP","label":"Sense of Place","url":"https://ohi-science.org/OHI-website/goals/sense-of-place/"},{"description":"This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.","id":"SPP","label":"Iconic Species","parent":"SP","url":"https://ohi-science.org/OHI-website/goals/sense-of-place/iconic-species/"},{"description":"This sub-goal focuses on those geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons, and assesses how well they are protected.","id":"LSP","label":"Lasting Special Places","parent":"SP","url":"https://ohi-science.org/OHI-website/goals/sense-of-place/lasting-special-places/"},{"color":"#4EA09F","description":"This goal captures the degree to which local waters are unpolluted by natural and human-made causes. This goal scores highest when the contamination level is zero.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n    \\u003cpath d=\\"M30 61c-2 1-3 3-3 5 0 5 10 9 21 9s20-4 20-9l-2-4\\"/\\u003e\\n    \\u003cpath d=\\"M25 56c-6 3-10 6-10 11 0 9 15 16 33 16s32-7 32-16c0-4-3-8-9-10\\"/\\u003e\\n    \\u003cpath d=\\"M21 51C10 55 3 61 3 68c0 12 20 22 45 22 24 0 44-10 44-22 0-7-6-13-16-17\\"/\\u003e\\n    \\u003cpath d=\\"M49 63c10 0 19-9 19-20 0-12-15-20-19-35-6 15-18 23-18 35 0 11 8 20 18 20z\\"/\\u003e\\n\\u003c/svg\\u003e","id":"CW","label":"Clean Waters","url":"https://ohi-science.org/OHI-website/goals/clean-waters/"},{"color":"#367BBF","description":"This goal assesses the conservation status of species based on the best available global data. A score of 100 means all species are at very low risk of extinction, and all habitats are conserved.","icon":"\\u003csvg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 96 96\\" fill=\\"none\\" stroke=\\"currentColor\\"\\u003e\\n\\u003cpath d=\\"M30 86l-1-7h-2l-11-1-4-4-2-1c-3-2-1-8 4-4l2 2 3 1 9 1h0v-6L10 57c-1-1 3-7 2-8-1 0-4-1-7-4a3 3 0 010-5c1-1 4 1 5 2l7 3 1 1c3 1 0 6 0 9 1 1 16 8 16 10l2 14h1l2-2 2-10c0-3 0-6-5-8-6-3-4-9-3-13h0c-3 0-11-3-13-6l-2-11h0c-2-4 4-6 6-1v1a80 80 0 001 7l5-3 1-2 1-2c2-5 6-2 5 1l-1 2-1 4-3 3a27 27 0 005 1l6-4 4-1 3-4c1-1 3-2 5-1 2 0 1 2 0 3-1 3-3 4-4 5l-5 3c-1 0-9 11-6 12 7 4 8 8 8 11h8v-2c-7-6-7-10-5-13 0-2 3-4 6-6l7-4c2 0 4 1 3 2l-7 6-4 4-1 1c0 1 0 2 3 4l3-3c3-2 2-1 5-1 9 2 4 7 2 6h-4l-2 2c1 2 0 6-1 8 0 2-8 2-11 3l-3 1-2 8-1 6m-33 6c7-3 16-5 27-5s20 2 27 5M74 13c3-1 4-10 7-9 4 1 0 10 1 12 2 1 11 0 11 4 0 3-9 2-10 4-2 2 2 10-1 11s-5-8-8-8c-2-1-8 5-10 3-2-3 6-8 5-10 0-3-8-7-6-10 2-2 9 4 11 3z\\"/\\u003e\\n\\u003c/svg\\u003e","id":"BD","label":"Biodiversity","url":"https://ohi-science.org/OHI-website/goals/biodiversity/"},{"description":"This sub-goal includes all habitats in the study area, and assess their health condition and coverage area.","id":"HAB","label":"Habitat","parent":"BD","url":"https://ohi-science.org/OHI-website/goals/biodiversity/habitats/"},{"description":"Iconic species are those that are relevant to local cultural identity (e.g. through a species' relationship to traditional activities). This sub-goal assesses how well those species are conserved.","id":"ICO","label":"Species","parent":"BD","url":"https://ohi-science.org/OHI-website/goals/biodiversity/species/"}],"missingValueCode":"NA"}`;
     params_default = {breakpoint, dataConfig};
   });
 
@@ -15651,13 +15651,12 @@
 
   // ns-hugo:/home/runner/work/OHI-website/OHI-website/assets/js/data-viz/data.js
   function data({
-    goalIconsDirPath = "/images/goal-icons/",
     missingValueCode = "NA",
     dataPaths = {
       scores: "scores.csv",
-      regions: "regions.topojson",
-      goals: "goalLabels.json"
-    }
+      regions: "regions.topojson"
+    },
+    goalsConfig = {}
   } = dataBundleConfig) {
     if (!dataPaths || !dataPaths.scores || !dataPaths.regions) {
       console.log("Error: Path to data is required for OHIData to load data.");
@@ -15672,38 +15671,25 @@
       let data2 = await d35.csv(path2).then((data3) => data3);
       return data2;
     }
-    async function importSVG(path2) {
-      const parser2 = new DOMParser();
-      let response = await fetch(path2);
-      let svg2 = await response.text();
-      svg2 = svg2 && svg2.startsWith("<svg") ? svg2 : null;
-      svg2 = svg2 ? parser2.parseFromString(svg2, "image/svg+xml").documentElement : null;
-      return svg2;
-    }
-    async function attachGoalIcons(goalLabels) {
-      if (!goalLabels) {
-        return;
-      }
-      for (const goalLabel of goalLabels) {
-        if (goalLabel.icon) {
-          let dirPath = goalIconsDirPath || "";
-          if (dirPath) {
-            dirPath += dirPath.endsWith("/") ? "" : "/";
-          }
-          const fullIconPath = dirPath + goalLabel.icon;
-          const svgEl = await importSVG(fullIconPath);
-          goalLabel.icon = svgEl;
-        }
-      }
-    }
     async function importData() {
       const features = await importJSON(dataPaths.regions);
       const scores = await importCSV(dataPaths.scores);
-      let goalLabels = await importJSON(dataPaths.goals);
-      await attachGoalIcons(goalLabels);
-      return {goalLabels, features, scores};
+      return {goalsConfig, features, scores};
+    }
+    function parseSVG(svgString) {
+      if (!svgString || typeof svgString != "string" || !svgString.startsWith("<svg")) {
+        return null;
+      }
+      const parser2 = new DOMParser();
+      const svg2 = parser2.parseFromString(svgString, "image/svg+xml").documentElement;
+      return svg2;
     }
     function processData(data2) {
+      data2.goalsConfig.forEach(function(goal) {
+        if (goal.icon) {
+          goal.icon = parseSVG(goal.icon);
+        }
+      });
       const topoFeatureName = Object.keys(data2.features.objects)[0];
       const featureData = feature_default(data2.features, data2.features.objects[topoFeatureName]).features;
       data2.features = featureData;
@@ -16108,7 +16094,7 @@
     updateGlobe();
     updateDescription();
     function updateDescription() {
-      const selectedGoal = ohiData.goalLabels.find(function(goal) {
+      const selectedGoal = ohiData.goalsConfig.find(function(goal) {
         return goal.id === selections.goal;
       });
       const descriptionText = selectedGoal ? selectedGoal.description : null;
@@ -16142,7 +16128,7 @@
       });
       yearControl.appendChild(yearSlider);
       const goalsInput = dropdown_default({
-        data: ohiData.goalLabels,
+        data: ohiData.goalsConfig,
         selected: selections.goal
       });
       goalsInput.addEventListener("update", function(e3) {
@@ -18463,7 +18449,7 @@
       let arcs = [];
       const yearDimensionData = ohiData.scores[selections.dimension][selections.year];
       const meanScore = yearDimensionData["Index"][selections.region];
-      ohiData.goalLabels.forEach(function(goalLabel, index2) {
+      ohiData.goalsConfig.forEach(function(goalLabel, index2) {
         if (!goalLabel.parent && goalLabel.id !== "Index") {
           const d = {
             id: goalLabel.id,

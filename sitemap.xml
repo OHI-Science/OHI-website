@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ohi-science.org/OHI-website/goals/food-provision/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/artisanal-fishing-opportunities/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/natural-products/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/carbon-storage/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/coastal-protection/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/tourism-and-recreation/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/sense-of-place/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/clean-waters/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/goals/biodiversity/</loc>
+  </url><url>
     <loc>https://ohi-science.org/OHI-website/data/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/news/example-news-item/</loc>
@@ -20,27 +40,7 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/methodology/deep-dive/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/artisanal-fishing-opportunities/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/biodiversity/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/carbon-storage/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/clean-waters/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/coastal-protection/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/food-provision/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/livelihoods-and-economies/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/natural-products/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/sense-of-place/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/tourism-and-recreation/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/methodology/</loc>
   </url><url>
@@ -62,21 +62,21 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/global-scores/over-time/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/food-provision/wild-caught-fisheries/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/food-provision/wild-caught-fisheries/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/biodiversity/habitats/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/biodiversity/habitats/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/sense-of-place/iconic-species/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/sense-of-place/iconic-species/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/sense-of-place/lasting-special-places/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/sense-of-place/lasting-special-places/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/livelihoods-and-economies/livelihoods/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/livelihoods/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/food-provision/mariculture/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/food-provision/mariculture/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/biodiversity/species/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/biodiversity/species/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/methodology/goals/livelihoods-and-economies/economies/</loc>
+    <loc>https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/economies/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/about/supporters/</loc>
   </url><url>

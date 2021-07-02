@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Biodiversity on Ocean Health Index</title>
+    <link>https://ohi-science.org/OHI-website/goals/biodiversity/</link>
+    <description>Recent content in Goal: Biodiversity on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/goals/biodiversity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub-Goal: Habitat</title>
+      <link>https://ohi-science.org/OHI-website/goals/biodiversity/habitats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/goals/biodiversity/habitats/</guid>
+      <description>The Habitats sub-goal includes all habitats in the study area, and assess their health condition and coverage area.
+ Habitat is included in the Biodiversity goal to provide a more complete picture of diversity in the system. This is because in global assessments assessed species data were limited and the diversity of habitats can be included with the assumption that healthier habitats mean healthier species. Therefore if you have comprehensive species assessments in your area you may not need to include all habitats as a sub-goal, instead only including living habitats (algae, corals) along with species in the Species sub-goal.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Species</title>
+      <link>https://ohi-science.org/OHI-website/goals/biodiversity/species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/goals/biodiversity/species/</guid>
+      <description>This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.
+ Data for this goal are also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
+ Ideal Approach Ideally, you would find data for all species present in your region including information on their habitat ranges along with scientific studies that speak to the health of their populations.</description>
+    </item>
+    
+  </channel>
+</rss>

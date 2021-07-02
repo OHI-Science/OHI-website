@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Food Provision on Ocean Health Index</title>
+    <link>https://ohi-science.org/OHI-website/goals/food-provision/</link>
+    <description>Recent content in Goal: Food Provision on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/goals/food-provision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub Goal: Wild Caught Fisheries</title>
+      <link>https://ohi-science.org/OHI-website/goals/food-provision/wild-caught-fisheries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/goals/food-provision/wild-caught-fisheries/</guid>
+      <description>The Fisheries sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. The model generally compares landings with Maximum Sustainable Yield. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
+Practical Guidance Fisheries science is a discipline that in part aims to estimate the amount of fish that can sustainably be extracted from the sea.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Mariculture</title>
+      <link>https://ohi-science.org/OHI-website/goals/food-provision/mariculture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/goals/food-provision/mariculture/</guid>
+      <description>Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean’s ability to provide fish sustainably now and in the future.
+Higher scores reflect high food provisioning in a sustainable manner, while not compromising the water quality in the farmed area and not relying on wild populations to feed or replenish the cultivated species. A score of 100 means that a region is sustainably harvesting the greatest amount of farmed seafood possible based on its own potential (where its maximum potential is estimated in different ways depending on the assessment).</description>
+    </item>
+    
+  </channel>
+</rss>

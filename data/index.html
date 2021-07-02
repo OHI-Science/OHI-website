@@ -148,7 +148,7 @@
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://ohi-science.org/OHI-website/methodology/goals/"
+                  href="https://ohi-science.org/OHI-website/goals/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -444,11 +444,9 @@ the data files used in this website. The front-matter properties are:</p>
 the data in this directory available to other parts of the website.</li>
 <li><code>missingValueCode</code>: The string used to indicate a value is missing in the data (e.g.
 &lsquo;NA&rsquo;).</li>
-<li><code>goalIconsDirPath</code>: The directory, within the content directory, that stores the goal
-icons. Icons must be in SVG format.</li>
 <li><code>dataFiles</code>: The list of data types that are used by the website, along with the file
-name of each type. These are described in detail below. The data types are: <code>scores</code>,
-<code>goals</code>, <code>regions</code>.</li>
+name of each type. These are described in detail below. The data types are: <code>scores</code>
+and <code>regions</code>.</li>
 </ul>
 <h1 id="updating-the-data">Updating the data</h1>
 <p>To update the data that the website uses, add it to this directory (<code>content/data/</code>). If
@@ -463,40 +461,6 @@ region_name, value.</p>
 2012,AO,Artisanal opportunities,future,0,Global average,79.53
 2012,AO,Artisanal opportunities,future,1,Cocos Islands,100
 ...
-</code></pre><h2 id="goals-format-json"><code>goals</code> (format: <code>JSON</code>)</h2>
-<p>The goals JSON file configures how the OHI goal information is presented on the website.
-For each goal, including the overall index, the following properties can be configured:</p>
-<ul>
-<li>&ldquo;id&rdquo;: The identifier code for the goal. This is the same identifier used in the scores
-CSV file (e.g. &ldquo;FP&rdquo;)</li>
-<li>&ldquo;label&rdquo;: The full name of the goal (e.g. &ldquo;Food Provision&rdquo;)</li>
-<li>&ldquo;icon&rdquo;: The file name of the icon that is associated with the goal. These icons must be
-SVG format. (e.g. &ldquo;food-provision.svg&rdquo;). Do not configure icons for sub-goals; sub-goals
-will use the parent goal icon.</li>
-<li>&ldquo;description&rdquo;: A very short, one sentence description of the goal. (e.g. &ldquo;This goal
-measures the amount of seafood sustainably harvested for use primarily in human
-consumption or export.&quot;)</li>
-<li>&ldquo;color&rdquo;: A hex code that will be used to represent this goal. &ldquo;#A7344E&rdquo;. Do not
-configure colours for sub-goals; sub-goals will use the parent goal colour.</li>
-<li>&ldquo;parent&rdquo;: For sub-goals, give the id of the parent (e.g &ldquo;BD&rdquo;)</li>
-</ul>
-<p>Example:</p>
-<pre><code>[
-  {
-    &quot;id&quot;: &quot;Index&quot;,
-    &quot;label&quot;: &quot;Overall Index&quot;,
-    &quot;icon&quot;: &quot;&quot;,
-    &quot;description&quot;: &quot;The Ocean Health Index (OHI) defines a healthy ocean to be one that sustainably delivers a range of benefits to people now and in the future.&quot;
-  },
-  {
-    &quot;id&quot;: &quot;FP&quot;,
-    &quot;label&quot;: &quot;Food Provision&quot;,
-    &quot;icon&quot;: &quot;food-provision.svg&quot;,
-    &quot;description&quot;: &quot;This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export.&quot;,
-    &quot;color&quot;: &quot;#A7344E&quot;
-  },
-  ...
-]
 </code></pre><h2 id="regions-format-topojson"><code>regions</code> (format: <code>topojson</code>)</h2>
 <p>Regions is a topojson file with the features used to create the global scores map.
 Features in this file should be as simplified as possible. Each feature should contain the
