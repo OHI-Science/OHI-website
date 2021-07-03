@@ -12,6 +12,8 @@ import * as topojson from "topojson-client";
 // Parameters imported from the baseof.html template which builds the JS
 import params from '@params'
 
+const cloneDeep = require('lodash/cloneDeep');
+
 let dataBundleConfig = {};
 if (params.dataConfig) {
   dataBundleConfig = JSON.parse(params.dataConfig)
@@ -20,6 +22,9 @@ if (params.dataConfig) {
 /**
  * Loads and processes OHI Data.
  * @param {Object} options
+ * @property {string} [options.version] A code used to version the data. This is used to
+ * determine whether the localStorage, where the data is stored, should be refreshed with
+ * new, re-processed data.
  * @property {string} [options.dataPaths.scores] The path to the CSV file that comprises
  * the complete scores data
  * @property {string} [options.dataPaths.regions] The path to the topoJSON file that has
@@ -36,6 +41,7 @@ if (params.dataConfig) {
  * the various OHI data viz applications
  */
 function data({
+  version = "1",
   missingValueCode = 'NA',
   dataPaths = {
     scores: 'scores.csv',
@@ -70,6 +76,29 @@ function data({
     return { goalsConfig, features, scores }
   }
 
+  function parseIcons(dataIn) {
+    // clone the data
+    data = cloneDeep(dataIn)
+    data.goalsConfig.forEach(function (goal) {
+      if (goal.icon) {
+        goal.icon = parseSVG(goal.icon)
+      }
+    })
+    return data
+  }
+
+  function serializeIcons(dataIn) {
+    // clone the data
+    data = cloneDeep(dataIn)
+    var serializer = new XMLSerializer();
+    data.goalsConfig.forEach(function (goal) {
+      if (goal.icon) {
+        goal.icon = serializer.serializeToString(goal.icon)
+      }
+    })
+    return data
+  }
+
   // Convert goal icons from string to SVG element
   function parseSVG(svgString) {
     if (!svgString || typeof svgString != "string" || !svgString.startsWith('<svg')) {
@@ -86,11 +115,7 @@ function data({
   function processData(data) {
 
     // Parse the goal icons
-    data.goalsConfig.forEach(function (goal) {
-      if (goal.icon) {
-        goal.icon = parseSVG(goal.icon)
-      }
-    })
+    data = parseIcons(data)
 
     const topoFeatureName = Object.keys(data.features.objects)[0];
     // Convert the topoJSON for easy use in D3 (requires d3js.org/topojson.v1)
@@ -158,10 +183,38 @@ function data({
     return data
   }
 
+  function storeData(data) {
+    // Stringify the SVG icons
+    data = serializeIcons(data)
+    window.localStorage.setItem('ohiDataVersion', version);
+    window.localStorage.setItem('ohiData', JSON.stringify(data));
+  }
+
+  function getStoredData(){
+    let storedData = window.localStorage.getItem('ohiData')
+    if (!storedData) {
+      return null
+    }
+    const storedVersion = window.localStorage.getItem('ohiDataVersion');
+    if (storedVersion !== version) {
+      window.localStorage.removeItem('ohiData')
+      return null
+    }
+    storedData = JSON.parse(storedData)
+    // parse the SVG icons
+    storedData = parseIcons(storedData)
+    return storedData
+  }
+
   // Import and process data
   async function getData() {
+    const storedData = getStoredData()
+    if (storedData) {
+      return storedData
+    }
     const rawData = await importData();
-    const processedData = await processData(rawData);
+    const processedData = processData(rawData);
+    storeData(processedData)
     return processedData
   }
 

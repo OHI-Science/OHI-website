@@ -155,7 +155,6 @@ function barChart({
         const rectDims = this.getBoundingClientRect()
         const x = rectDims.left;
         const y = rectDims.top + document.documentElement.scrollTop;
-        console.log(rectDims);
         tooltip.reposition(x, y, true, true)
       })
       .on('mouseout', tooltip.hide);

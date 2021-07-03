@@ -1,19 +1,5 @@
 // Import all the D3 modules needed for all the data viz
-window.d3 = Object.assign(
-  {},
-  require("d3-selection"),
-  require("d3-drag"),
-  require("d3-selection"),
-  require("d3-geo"),
-  require("d3-transition"),
-  require("d3-interpolate"),
-  require("d3-geo-projection"),
-  require("d3-scale"),
-  require("d3-array"),
-  require("d3-axis"),
-  require("d3-shape"),
-  require("d3-fetch")
-);
+window.d3 = require("d3")
 
 function init() {
   // If the scoresGlobe short code is used in this page, then render the interactive globe

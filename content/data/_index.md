@@ -1,5 +1,6 @@
 ---
 headless: true
+dataVersion: "2021-07-02"
 missingValueCode: 'NA'
 dataFiles:
   scores: scores.csv
@@ -13,6 +14,10 @@ the data files used in this website. The front-matter properties are:
 
 - `headless`: This should always be set to `true`. This property is used by Hugo to make
   the data in this directory available to other parts of the website.
+- `dataVersion`: If one of the data files are updated, then this data version code should
+  be updated as well. It doesn't matter what the code is, as long as it's different from
+  the last code. This is so that any data stored in a user's browser gets updated when a
+  new version is available.
 - `missingValueCode`: The string used to indicate a value is missing in the data (e.g.
   'NA').
 - `dataFiles`: The list of data types that are used by the website, along with the file

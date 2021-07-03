@@ -21,8 +21,6 @@
       {{- $jsParams := dict "breakpoint" 900 "dataConfig" $dataConfig -}}
 
       {{- $script := . | js.Build (dict "params" $jsParams "minify" true) -}}
-
-      {{ $sizeInBytes := len $script.Content }}
       
       <script src="{{ $script.RelPermalink }}" async></script>
     {{- end -}}
