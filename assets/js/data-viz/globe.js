@@ -12,6 +12,9 @@ let d3 = window.d3;
 //   );
 // }
 
+import { geoMollweide } from "d3-geo-projection";
+d3.geoMollweide = geoMollweide;
+
 import regionTooltip from "./regionTooltip.js"
 import colorScale from "./colorScale.js"
 

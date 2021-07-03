@@ -21,7 +21,6 @@ import numberSlider from "./numberSlider.js"
  * @property {string} controls - The container for the controls
  * @property {string} control - An individual control (i.e. the year slider)
  * @property {string} label - A control label
- * 
  */
 
 /**
@@ -125,7 +124,8 @@ async function regionAster({
           label: goalLabel.label,
           score: yearDimensionData[goalLabel.id][selections.region],
           color: goalLabel.color,
-          icon: goalLabel.icon
+          icon: goalLabel.icon,
+          url: goalLabel.url
         }
         arcs.push(d)
       }
