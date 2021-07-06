@@ -1,15 +1,17 @@
 {{/* Find the goals page index */}}
 {{ $goalSection := site.GetPage "goals" }}
 
+
 {{/* Get the other top-level goal pages, sorted by weight */}}
 {{ $goalPages := sort $goalSection.Pages "Params.weight" }}
 
-{{/* The list of goals with properties that we'll convert to JSON */}}
+{{/* The list of goals with properties */}}
 {{ $goalsData := slice }}
 
 {{/* Add the overall index first */}}
 {{ $indexGoal := partial "goal-properties" $goalSection.Params }}
 {{ $indexGoal = merge $indexGoal (dict "url" $goalSection.Permalink) }}
+{{ $indexGoal = merge $indexGoal (dict "label" "Overall Index") }}
 {{ $goalsData = $goalsData | append $indexGoal }}
 
 {{/* Range through the remaining top-level goals */}}
@@ -21,6 +23,7 @@
   {{ range .Pages }}
     {{ $subgoalProps := dict "id" .Params.id "label" .Params.name "description" .Params.description "parent" $goalProps.id "url" .Permalink }}
     {{ $goalsData = $goalsData | append $subgoalProps }}
+  {{ else }}
   {{ end }}
 {{ end }}
 
