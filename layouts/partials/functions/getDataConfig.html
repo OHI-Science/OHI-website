@@ -14,7 +14,8 @@
 {{- end -}}
 
 {{/* The data layout */}}
-{{ $dataConfig := dict 
+{{ $dataConfig := dict
+  "version" $dataBundle.Params.dataVersion
   "missingValueCode" $dataBundle.Params.missingValueCode
   "dataPaths" $dataFullPaths
   "goalsConfig" $goalsData

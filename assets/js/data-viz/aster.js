@@ -1,8 +1,12 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-  require("d3-shape") // for d3.pie, d3.arc
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//     require("d3-shape") // for d3.pie, d3.arc
+//   );
+// }
 
 /**
  * A single data point in an array of data that creates an aster plot. One data point
@@ -13,6 +17,7 @@ const d3 = Object.assign(
  * @property {number} score - The corresponding value for the item
  * @property {string} width - The relative width (~weight) of this item. Defaults to 1.
  * @property {string} color - The color that represents this value
+ * @property {string} url - An optional URL for when a petal or legend item is clicked
  * @property {SVGElement} icon - An optional SVG icon to show in the legend
  */
 
@@ -153,6 +158,7 @@ function aster({
       .attr('class', classes.solidArc)
       .on('mouseover', highlightCategory)
       .on('mouseout', resetHighlight)
+      .on('click', goToUrl)
 
     outerPath = group.selectAll('.' + classes.outlineArc)
       .data(pieData)
@@ -225,6 +231,14 @@ function aster({
     }
   }
 
+  function goToUrl(event, datum) {
+    let clickedDatum = datum.data || datum
+    let url = clickedDatum.url;
+    if (url) {
+      window.location = url;
+    }
+  }
+
   // Creates the categorical legend 
   function createLegend(data) {
     
@@ -242,6 +256,7 @@ function aster({
       .style('color', d => d.color)
       .on('mouseover', highlightCategory)
       .on('mouseout', resetHighlight)
+      .on('click', goToUrl)
   }
 
   // Creates the inner HTML of a single item within the legend

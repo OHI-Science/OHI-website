@@ -1,8 +1,12 @@
-const d3 = Object.assign(
-  {},
-  require("d3-scale"),
-  require("d3-array"),
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-scale"),
+//     require("d3-array"),
+//   );
+// }
 
 import legend from "./legend.js"
 

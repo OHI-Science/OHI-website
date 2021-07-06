@@ -1,7 +1,11 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//   );
+// }
 
 // Parameters imported from the baseof.html template which builds the JS
 import colorScale from "./colorScale.js"
@@ -120,12 +124,17 @@ async function globalScores({
     const selectedGoal = ohiData.goalsConfig.find(function (goal) {
       return goal.id === selections.goal
     })
-    const descriptionText = selectedGoal ? selectedGoal.description : null
-    if (descriptionText) {
-      descriptionPara.innerHTML = descriptionText + " " + "<a href='#'>Learn more</a>"
-    } else {
-      descriptionPara.innerHTML = ""
+
+    let descriptionText = ""
+    if (selectedGoal) {
+      descriptionText = selectedGoal.description ? selectedGoal.description : ""
+      url = selectedGoal.url
+      if (url) {
+        descriptionText = descriptionText + " " + "<a href='"+ url +"'>Learn more</a>"
+      }
     }
+
+    descriptionPara.innerHTML = descriptionText
   }
 
   // Create the inputs for year and goal
