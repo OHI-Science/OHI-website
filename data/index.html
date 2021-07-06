@@ -442,6 +442,10 @@ the data files used in this website. The front-matter properties are:</p>
 <ul>
 <li><code>headless</code>: This should always be set to <code>true</code>. This property is used by Hugo to make
 the data in this directory available to other parts of the website.</li>
+<li><code>dataVersion</code>: If one of the data files are updated, then this data version code should
+be updated as well. It doesn&rsquo;t matter what the code is, as long as it&rsquo;s different from
+the last code. This is so that any data stored in a user&rsquo;s browser gets updated when a
+new version is available.</li>
 <li><code>missingValueCode</code>: The string used to indicate a value is missing in the data (e.g.
 &lsquo;NA&rsquo;).</li>
 <li><code>dataFiles</code>: The list of data types that are used by the website, along with the file
