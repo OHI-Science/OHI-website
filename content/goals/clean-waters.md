@@ -3,6 +3,11 @@
 title: "Goal: Clean Waters"
 name: "Clean Waters"
 bg_image: "/images/banners/turtle-swimming.jpg"
+id: "CW"
+icon: "/images/goal-icons/clean-waters.svg"
+description: "This goal captures the degree to which local waters are unpolluted by natural and human-made causes. This goal scores highest when the contamination level is zero."
+color: "#4EA09F"
+weight: 9
 ---
 
 People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, eutrophication, algal blooms, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), floating trash, and mass kills of organisms due to pollution. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist. The Clean Water goal captures the degree to which local waters are unpolluted by natural and human-made causes. This goal scores highest when the contamination level is zero.

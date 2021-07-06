@@ -2,6 +2,8 @@
 title: "Sub Goal: Wild Caught Fisheries"
 name: "Wild Caught Fisheries"
 bg_image: "/images/banners/shark-fish.jpg"
+id: "FIS"
+description: "This sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. "
 ---
 
 The Fisheries sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. The model generally compares landings with Maximum Sustainable Yield. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.

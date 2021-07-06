@@ -1,0 +1,29 @@
+{{/* Find the content/data/index.md page, then create JSON with paths to each data file */}}
+
+{{- $dataBundle := site.GetPage "data" -}}
+{{- $dataFilesList := $dataBundle.Params.dataFiles -}}
+{{ $goalsData := partial "functions/getGoalsData" (dict "format" "hugo") }}
+
+{{/* Get the permanent links for the data files */}}
+{{ $dataFullPaths := dict }}
+{{- range $name, $value := $dataFilesList -}}
+  {{- $dataFile := $dataBundle.Resources.Match $value -}}
+  {{- range first 1 $dataFile -}}
+    {{ $dataFullPaths = merge $dataFullPaths (dict $name .Permalink )}}
+  {{- end -}}
+{{- end -}}
+
+{{/* The data layout */}}
+{{ $dataConfig := dict
+  "version" $dataBundle.Params.dataVersion
+  "missingValueCode" $dataBundle.Params.missingValueCode
+  "dataPaths" $dataFullPaths
+  "goalsConfig" $goalsData
+}}
+
+{{/* Make the JSON */}}
+{{ if eq .format "json" }}
+  {{ $dataConfig = $dataConfig | jsonify }}
+{{ end }}
+
+{{ return $dataConfig }}

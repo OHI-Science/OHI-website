@@ -2,6 +2,8 @@
 title: "Sub-Goal:Economies"
 name: "Economies"
 bg_image: "/images/banners/shipping-containers.jpg"
+id: "ECO"
+description: "Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue."
 ---
 
 Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.

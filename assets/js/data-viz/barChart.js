@@ -1,9 +1,13 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-  require("d3-array"),
-  require("d3-scale")
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//     require("d3-array"),
+//     require("d3-scale")
+//   );
+// }
 
 import regionTooltip from "./regionTooltip.js"
 
@@ -151,7 +155,6 @@ function barChart({
         const rectDims = this.getBoundingClientRect()
         const x = rectDims.left;
         const y = rectDims.top + document.documentElement.scrollTop;
-        console.log(rectDims);
         tooltip.reposition(x, y, true, true)
       })
       .on('mouseout', tooltip.hide);

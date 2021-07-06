@@ -2,6 +2,8 @@
 title: "Sub-Goal: Lasting Special Places"
 name: "Lasting Special Places"
 bg_image: "/images/banners/fish-school.jpg"
+id: "LSP"
+description: "This sub-goal focuses on those geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons, and assesses how well they are protected."
 ---
 
 This sub-goal focuses on those geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons, and assesses how well they are protected.

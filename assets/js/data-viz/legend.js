@@ -1,10 +1,14 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-  require("d3-interpolate"),
-  require("d3-scale"),
-  require("d3-axis")
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//     require("d3-interpolate"),
+//     require("d3-scale"),
+//     require("d3-axis")
+//   );
+// }
 
 /**
  * @param {Object} options - Configurable options for the legend. All dimensions are in pixels.

@@ -1,7 +1,11 @@
-const d3 = Object.assign(
-  {},
-  require("d3-selection"),
-);
+let d3 = window.d3;
+
+// if (!d3) {
+//   d3 = Object.assign(
+//     {},
+//     require("d3-selection"),
+//   );
+// }
 
 import getData from "./data.js"
 import aster from "./aster.js"
@@ -17,7 +21,6 @@ import numberSlider from "./numberSlider.js"
  * @property {string} controls - The container for the controls
  * @property {string} control - An individual control (i.e. the year slider)
  * @property {string} label - A control label
- * 
  */
 
 /**
@@ -111,17 +114,18 @@ async function regionAster({
     const yearDimensionData = ohiData.scores[selections.dimension][selections.year]
     const meanScore = yearDimensionData['Index'][selections.region]
     
-    // Go through each of the goals in the order they are displayed in the goalLabels array.
-    // Exclude sub-goals and the overall index (which will be used for the meanScore in the
-    // centre).
-    ohiData.goalLabels.forEach(function (goalLabel, index) {
+    // Go through each of the goals in the order they are displayed in the goalsConfig
+    // array. Exclude sub-goals and the overall index (which will be used for the
+    // meanScore in the centre).
+    ohiData.goalsConfig.forEach(function (goalLabel, index) {
       if (!goalLabel.parent && goalLabel.id !== 'Index') {
         const d = {
           id: goalLabel.id,
           label: goalLabel.label,
           score: yearDimensionData[goalLabel.id][selections.region],
           color: goalLabel.color,
-          icon: goalLabel.icon
+          icon: goalLabel.icon,
+          url: goalLabel.url
         }
         arcs.push(d)
       }

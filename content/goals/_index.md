@@ -2,6 +2,9 @@
 title: "Goals"
 name: "Goals"
 bg_image: "/images/banners/coral.jpg"
+id: "Index"
+icon: "/images/goal-icons/"
+description: "The Ocean Health Index (OHI) defines a healthy ocean to be one that sustainably delivers a range of benefits to people now and in the future."
 menu:
   main:
     parent: 'Methodology'

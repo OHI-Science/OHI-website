@@ -1,10 +1,9 @@
 ---
 headless: true
+dataVersion: "2021-07-02"
 missingValueCode: 'NA'
-goalIconsDirPath: '/images/goal-icons/'
 dataFiles:
   scores: scores.csv
-  goals: goalLabels.json
   regions: regions.topojson
 ---
 
@@ -15,13 +14,15 @@ the data files used in this website. The front-matter properties are:
 
 - `headless`: This should always be set to `true`. This property is used by Hugo to make
   the data in this directory available to other parts of the website.
+- `dataVersion`: If one of the data files are updated, then this data version code should
+  be updated as well. It doesn't matter what the code is, as long as it's different from
+  the last code. This is so that any data stored in a user's browser gets updated when a
+  new version is available.
 - `missingValueCode`: The string used to indicate a value is missing in the data (e.g.
   'NA').
-- `goalIconsDirPath`: The directory, within the content directory, that stores the goal
-  icons. Icons must be in SVG format.
 - `dataFiles`: The list of data types that are used by the website, along with the file
-  name of each type. These are described in detail below. The data types are: `scores`,
-  `goals`, `regions`.
+  name of each type. These are described in detail below. The data types are: `scores`
+  and `regions`.
 
 # Updating the data
 
@@ -41,44 +42,6 @@ scenario,goal,long_goal,dimension,region_id,region_name,value
 2012,AO,Artisanal opportunities,future,0,Global average,79.53
 2012,AO,Artisanal opportunities,future,1,Cocos Islands,100
 ...
-```
-
-## `goals` (format: `JSON`)
-
-The goals JSON file configures how the OHI goal information is presented on the website.
-For each goal, including the overall index, the following properties can be configured:
-
-- "id": The identifier code for the goal. This is the same identifier used in the scores
-  CSV file (e.g. "FP")
-- "label": The full name of the goal (e.g. "Food Provision")
-- "icon": The file name of the icon that is associated with the goal. These icons must be
-  SVG format. (e.g. "food-provision.svg"). Do not configure icons for sub-goals; sub-goals
-  will use the parent goal icon.
-- "description": A very short, one sentence description of the goal. (e.g. "This goal
-  measures the amount of seafood sustainably harvested for use primarily in human
-  consumption or export.")
-- "color": A hex code that will be used to represent this goal. "#A7344E". Do not
-  configure colours for sub-goals; sub-goals will use the parent goal colour.
-- "parent": For sub-goals, give the id of the parent (e.g "BD")
-
-Example:
-```
-[
-  {
-    "id": "Index",
-    "label": "Overall Index",
-    "icon": "",
-    "description": "The Ocean Health Index (OHI) defines a healthy ocean to be one that sustainably delivers a range of benefits to people now and in the future."
-  },
-  {
-    "id": "FP",
-    "label": "Food Provision",
-    "icon": "food-provision.svg",
-    "description": "This goal measures the amount of seafood sustainably harvested for use primarily in human consumption or export.",
-    "color": "#A7344E"
-  },
-  ...
-]
 ```
 
 ## `regions` (format: `topojson`)
