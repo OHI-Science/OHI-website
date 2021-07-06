@@ -28,11 +28,5 @@ The overall Food Provision model should not change; it is a combination of fishe
 
 **Pressures and Resilience** measures must be considered as well. What pressures act on the harvesting of these species? If information allows, pressures and resilience measures can act on different species, group of species, or practices separately, as is done with Natural Products. Fishing or harvesting practices can also act as pressures for other goals, for example destructive fishing practices can impact habitat-based goals and genetic escapes from mariculture practices can affect Fisheries and Biodiversity.
 
-
-
-
-| Global 2012 | The status was calculated as a function of the absolute difference between a region’s total landed biomass from  the reference multi-species maximum sustainable yield weighted by a correction factor for taxonomies.  This was calculated by summing all the single-species MSY estimates obtained for commercially-landed species. | The reference point was based on the difference from multispecies MSY (mMSY), an estimate of the optimum amount of all marine species that may be caught sustainably. The reference point was set so the total landed biomass of wild-caught species will not be more than 75% of the estimated mMSY using and an asymmetrical buffer where overfished stocks achieve a perfect score if B/BMSY is up to 0.2 points below 1 and under-fished stocks achieve a perfect score if B/BMSY is within 0.5 points of 1. | The approach had to be modified by working with fisheries scientists to adapt the data that were available at the global scale. |  |
-|-|-|-|-|-|
-| Global 2013 - 2015 | The status was calculated based on estimating population biomass relative to the biomass that can deliver maximum sustainable yield for each landed stock (B/BMSY) using the catch-MSY model. Single-species values of B/ BMSY were aggregated using a geometric mean. | The reference point was similar to Global 2012 where regions were penalized for under-harvest and more severely for over-harvest. | The catch status was improved in this assessment to capture multi-species effects.The reference point was calculated through a more robust model than the one used in Global 2012, and it is a more direct measure of population health because it relates directly to population size. |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+### Examples of the Approach
+{{< csvTable path="static/tables/artisanal.csv" >}}

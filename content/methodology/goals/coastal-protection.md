@@ -9,11 +9,8 @@ This goal aims to assess the amount of protection provided by marine and coastal
 
 Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: Carbon Storage, Coastal Protection, and Biodiversity. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
 
-
-
 **Ideal Approach**
 Ideally you will have information on the relative potential of habitats to provide coastal protection, and extent and condition of each habitat. The reference point would likely be a historic reference before destruction of coastal habitats.
-
 
 **Practical Guidance**
 
@@ -25,4 +22,5 @@ In the global assessment, we did not include an assessment of the protection aff
 
 The goal status model for Coastal Protection developed for global assessments will likely be appropriate for independent assessments. However, it could be possible to incorporate the differences in vulnerability between subcountry regions. Vulnerability can be quantified as the ability to evacuate, economic ability to reconstruct in case of damage. Physical properties may be available in OHI+ assessments, allowing for more a detailed understanding of the protective ability, and likelihood of exposure for each habitat type in different portions of the coastline.
 
-
+### Examples of the Approach
+{{< csvTable path="static/tables/coastal-protection.csv" >}}

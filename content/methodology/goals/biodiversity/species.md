@@ -34,3 +34,8 @@ In any case, the original logic of the Species sub-goal of the Biodiversity goal
 When considering how to change the model, you should think about the outcome of the score on your decisions. For instance, will weighting a “Critically Endangered” species higher on the scale result in the inclusion or exclusion of more rare species? Will the way you aggregate spatial data to summarize extinction risk for your area take into account the influence of species with smaller ranges size, or will that information be lost in the averaging process? An inherent disadvantage for conservation may occur when rare species get rarer in the future, and will therefore have a relatively small influence on the score while common species drive the results.
 
 Range size has an impact on score results. For example, if you use the current model, none of the cone snail species listed below will have a big impact on the Species sub-goal score because to their small range size that covers one cell of map area. However, the 0.8 score for Conus roeckeli shows that it is a rare species as assessed by the IUCN. On the other hand, the coral Acropora palmata is also rare and yet covers a large range.
+
+{{< csvTable path="static/tables/biodiversity-species.csv" >}}
+
+### Examples of the Approach
+{{< csvTable path="static/tables/biodiversity.csv" >}}

@@ -1,7 +1,7 @@
 <!-- Adapted from https://randomgeekery.org/post/2020/06/csv-and-data-tables-in-hugo/ -->
 
 {{ $path := .Get "path" }}
-{{ $sep := "," }}
+{{ $sep := ";" }}
 {{ $rows := getCSV $sep $path }}
 
 <div class="column-center__full-width-container">
