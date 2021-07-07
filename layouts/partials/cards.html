@@ -1,5 +1,41 @@
 <div class = "cards">
-  {{ range .Pages }}
+
+  {{ $currentPage := . }}
+  {{ $menu := site.Menus.main }}
+
+  {{/* If any of the child pages of this page are menu items, then this is a top-level section overview page. */}}
+
+  {{ $isOverviewPage := false }}
+  {{ $menuSection := false }}
+
+  {{ range $menuItem := $menu }}
+    {{ range $menuItemChild := $menuItem.Children }}
+      {{ range $sectionPage := $currentPage.Pages }}
+        {{ if eq $sectionPage $menuItemChild.Page }}
+          {{ $isOverviewPage = true }}
+          {{ $menuSection = $menuItem }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* If this page is a section overview, then show cards for all the child items in the menu. */}}
+  {{/* If this is another type of index page, then just show cards for the child pages.  */}}
+
+  {{ $pages := slice }}
+
+  {{ if $isOverviewPage }}
+    {{ range $menuItemChild := $menuSection.Children }}
+        {{/* Do not add a card for the currentPage */}}
+        {{ if not (eq $currentPage $menuItemChild.Page) }}
+          {{ $pages = $pages | append $menuItemChild.Page }}
+        {{ end }}
+      {{ end }}
+  {{ else }}
+    {{ $pages = .Pages }}
+  {{ end }}
+
+  {{ range $pages }}
     {{if .Params.bg_image }}
       {{ if not (fileExists (string .Params.bg_image)) }}
         {{ errorf "Failed to generate card image because the following file was not found." .Params.bg_image }}
