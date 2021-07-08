@@ -59,6 +59,13 @@ weight: 1
 ---
 ```
 
+### Adding Tables
+
+Tables can be added to pages using th `csvTable` shortcode. To add a table to a 'Goal' page, 
+
+1. Create a semi-colon-separated CSV file and place it under `static/tables`
+1. In the goal page markdown file use the shortcode as `{{< csvTable path="static/tables/csv_name.csv" >}}`
+
 # Making changes to the menu
 
 ## Top-level items
