@@ -27,4 +27,4 @@ Ultimately, almost any species can be iconic to someone, and so the intent with 
 After identifying the list of iconic species, you need to find a matrix to reflect the health of their population. In the global study, we used IUCN threat categories and weights. The reference point is to have the risk status of all assessed species as Least Concern. Alternatively, you can use a different kind of assessment approach to see if the populations are healthy, which could be indicated, for instance, by the stability of their populations.
 
 ### Examples of the Approach
-{{< csvTable path="tables/iconic-species.csv" >}}
+{{< csvTable path="tables/iconic-species.csv" sep=";" >}}

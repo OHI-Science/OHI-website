@@ -1,7 +1,10 @@
 {{/* Adapted from https://randomgeekery.org/post/2020/06/csv-and-data-tables-in-hugo/ */}}
 
 {{ $path := .Get "path" }}
-{{ $sep := ";" }}
+{{ $sep := "," }}
+{{ with .Get "sep" }}
+  {{ $sep = . }}
+{{ end }}
 
 {{/*
   To ensure that paths consistently start from the root dir,

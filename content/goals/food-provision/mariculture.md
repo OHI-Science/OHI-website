@@ -33,4 +33,4 @@ It is important to think about the meaning of your reference point. The spatial 
 > There was a significant change between Global 2012 and Global 2013 to improve the reference point for this sub-goal. The coastal population was factored in to the reference point in 2013, where the harvested tonnes per inhabitants within 25 km of the shore was considered. This change was done under the assumption that production depends on the presence of coastal communities who can provide the labor force, infrastructures, and economic demand to support the development and economic viability of mariculture facilities. Thus, two regions with an equal number of coastal inhabitants harvesting an equal tonnage of cultured seafood should score the same, even if one is larger than the other, as the productivity is commensurate to each region’s socio-economic potential to develop mariculture. This is an example of how improvements in methods occur over time.
 
 ### Examples of the Approach
-{{< csvTable path="tables/mariculture.csv" >}}
+{{< csvTable path="tables/mariculture.csv"  sep=";" >}}

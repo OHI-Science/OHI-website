@@ -25,4 +25,4 @@ We highly recommend that this remains a temporal comparison so that a specific p
 > You may find resilience metrics that can be used throughout your assessment. There are many economic indices and some might be appropriate for your area. For example, the Global Competitiveness Index was used in global assessments as a resilience for this goal because it means that marine jobs are more likely to be maintained if an area gets a good score on the Competitiveness Index.
 
 ### Examples of the Approach
-{{< csvTable path="tables/economies.csv" >}}
+{{< csvTable path="tables/economies.csv" sep=";"  >}}

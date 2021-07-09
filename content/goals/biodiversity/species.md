@@ -37,7 +37,7 @@ When considering how to change the model, you should think about the outcome of 
 
 Range size has an impact on score results. For example, if you use the current model, none of the cone snail species listed below will have a big impact on the Species sub-goal score because to their small range size that covers one cell of map area. However, the 0.8 score for Conus roeckeli shows that it is a rare species as assessed by the IUCN. On the other hand, the coral Acropora palmata is also rare and yet covers a large range.
 
-{{< csvTable path="tables/biodiversity-species.csv" >}}
+{{< csvTable path="tables/biodiversity-species.csv" sep=";" >}}
 
 ### Examples of the Approach
-{{< csvTable path="tables/biodiversity.csv" >}}
+{{< csvTable path="tables/biodiversity.csv" sep=";" >}}

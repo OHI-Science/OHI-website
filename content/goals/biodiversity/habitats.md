@@ -37,4 +37,4 @@ The reference point will likely be based on historic habitat area coverage and c
 Alternatively, the reference point could be guided by a policy target. For example, are there any climate change policies in your area, with defined targets and objectives? Are there any restoration or carbon storage projects in your area? Do any organizations offer guidance on the amount of carbon storage your management policies should be aiming for?
 
 ### Examples of the Approach
-{{< csvTable path="tables/habitats.csv" >}}
+{{< csvTable path="tables/habitats.csv"  sep=";" >}}

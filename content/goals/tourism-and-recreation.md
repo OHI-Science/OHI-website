@@ -26,4 +26,4 @@ The best way to represent the sustainability term for this goal is to use a loca
 The reference point used will depend upon the types of data. Does your country have industry growth rate targets? Are there measures on sustainable levels of tourism and recreational activities based on ecological factors? Do you want to increase tourism, or instead ensure it does not decline?
 
 ### Examples of the Approach
-{{< csvTable path="tables/tourism-and-recreation.csv" >}}
+{{< csvTable path="tables/tourism-and-recreation.csv"  sep=";" >}}
