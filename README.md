@@ -32,6 +32,13 @@ In addition to basic markdown formatting, the following codes can be used in any
 ### `{{< scoresGlobe >}}`
 This code inserts the data visualization that shows the score for each region on an interactive globe, where the year and goal can be changed using inputs. The scores globe uses the data contained in the `content/data/scores.csv` file (see `content/data/_index.md` for details). There should only be a maximum of 1 scores globe on each page.
 
+### `{{< csvTable path="path/to/table.csv" >}}`
+
+Tables can be added to pages using th `csvTable` shortcode. To add a table to a 'Goal' page, 
+
+1. Create a semi-colon-separated CSV file and place it under `static/tables`
+1. In the goal page markdown file use the shortcode as `{{< csvTable path="static/tables/csv_name.csv" >}}`
+
 ## Goal pages
 
 Goal and sub-goal pages, including goal index page, require more front-matter than other content pages. In addition to the "title", "name", and "bg_image" properties, goal pages use the properties "id", "icon", "description", and "color". These extra properties control how the OHI goal information is presented on the website, including creating the data visualizations.
@@ -58,13 +65,6 @@ color: "#A7344E"
 weight: 1
 ---
 ```
-
-### Adding Tables
-
-Tables can be added to pages using th `csvTable` shortcode. To add a table to a 'Goal' page, 
-
-1. Create a semi-colon-separated CSV file and place it under `static/tables`
-1. In the goal page markdown file use the shortcode as `{{< csvTable path="static/tables/csv_name.csv" >}}`
 
 # Making changes to the menu
 
