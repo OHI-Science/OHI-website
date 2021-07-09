@@ -34,10 +34,11 @@ This code inserts the data visualization that shows the score for each region on
 
 ### `{{< csvTable path="path/to/table.csv" >}}`
 
-Tables can be added to pages using th `csvTable` shortcode. To add a table to a 'Goal' page, 
+Tables can be added to pages using the `csvTable` shortcode. To add a table to a markdown page, 
 
-1. Create a semi-colon-separated CSV file and place it under `static/tables`
-1. In the goal page markdown file use the shortcode as `{{< csvTable path="static/tables/csv_name.csv" >}}`
+1. Create a semi-colon-separated CSV file and place it under the `content/data` directory, or in a sub-directory of `content/data`, such as `content/data/tables`.
+2. In the goal page markdown file use the shortcode as `{{< csvTable path="tables/csv_name.csv" >}}`
+3. The contents of the table will be displayed in the page.
 
 ## Goal pages
 

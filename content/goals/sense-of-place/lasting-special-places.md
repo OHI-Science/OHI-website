@@ -29,4 +29,4 @@ Global assessment incorporated both marine and terrestrial protected areas. Howe
 > In the Global Assessment framework, the Sense of Place sub-goals were weighted equally and combined in an average to create a single goal score. The two sub-goals are averaged currently in the framework. But these could be combined with a weighted average.
 
 ### Examples of the Approach
-{{< csvTable path="static/tables/lasting-special-places.csv" >}}
+{{< csvTable path="tables/lasting-special-places.csv" >}}

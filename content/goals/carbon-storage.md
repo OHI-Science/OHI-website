@@ -29,4 +29,4 @@ Contribution is relative contribution of each habitat to total carbon storage, m
 Understanding habitat carbon storage rates is an area of ongoing research. The capacity for habitats to store carbon varies, and depends on the morphology of plants in the system. In the global assessment, we assumed equal potential for carbon storage by each habitat, and thus contribution to carbon storage is measured by habitat extents directly.
 
 ### Examples of the Approach
-{{< csvTable path="static/tables/carbon-storage.csv" >}}
+{{< csvTable path="tables/carbon-storage.csv" >}}

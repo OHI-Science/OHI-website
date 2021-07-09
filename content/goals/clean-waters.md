@@ -35,4 +35,4 @@ In the Global Assessment, marine debris from plastic pollution is one of the pre
 For each contamination category, a reference point is set and all data in this category is scaled to 1. The type of reference point used will depend on the data available. You may decided that an ocean completely rid of pollution is ideal, or you may find that beach closure of less than 10 days per year due to E.coli contamination is acceptable.
 
 ### Examples of the Approach
-{{< csvTable path="static/tables/clean-waters.csv" >}}
+{{< csvTable path="tables/clean-waters.csv" >}}
