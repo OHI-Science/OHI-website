@@ -24,20 +24,24 @@
 {{ $rows := getCSV $sep $path }}
 
 <div class="column-center__full-width-container">
-<table class="goals-table">
-  {{ $headerRow := index $rows 0 }}
-  {{ $rows = after 1 $rows }}
-  <tr class ="goals-table-row"> {{ range $headerRow }} <th>{{ . }}</th> {{ end }} </tr>
-  {{ range $rows }}
-    <tr class="goals-table-row">
-      {{ range . }}
-        {{ if (findRE "^\\d+$" .) }}
-          <td class="goals-table-content">{{ . }}</td>
-        {{ else }}
-          <td class="goals-table-content">{{ . }}</td>
-        {{ end }}
+  <table class="csv-table">
+    {{ $headerRow := index $rows 0 }}
+    {{ $rows = after 1 $rows }}
+    <tr class ="csv-table__header">
+      {{ range $headerRow }}
+        <th class ="csv-table__header-cell">{{ . }}</th>
       {{ end }}
     </tr>
-  {{ end }}
-</table>
+    {{ range $rows }}
+      <tr class="csv-table__row">
+        {{ range . }}
+          {{ if (findRE "^\\d+$" .) }}
+            <td class="csv-table__cell">{{ . }}</td>
+          {{ else }}
+            <td class="csv-table__cell">{{ . }}</td>
+          {{ end }}
+        {{ end }}
+      </tr>
+    {{ end }}
+  </table>
 </div>
