@@ -454,6 +454,307 @@
 <p>When considering how to change the model, you should think about the outcome of the score on your decisions. For instance, will weighting a “Critically Endangered” species higher on the scale result in the inclusion or exclusion of more rare species? Will the way you aggregate spatial data to summarize extinction risk for your area take into account the influence of species with smaller ranges size, or will that information be lost in the averaging process? An inherent disadvantage for conservation may occur when rare species get rarer in the future, and will therefore have a relatively small influence on the score while common species drive the results.</p>
 <p>Range size has an impact on score results. For example, if you use the current model, none of the cone snail species listed below will have a big impact on the Species sub-goal score because to their small range size that covers one cell of map area. However, the 0.8 score for Conus roeckeli shows that it is a rare species as assessed by the IUCN. On the other hand, the coral Acropora palmata is also rare and yet covers a large range.</p>
 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table class="csv-table">
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell">Scientific name</th>
+      
+        <th class ="csv-table__header-cell">IUCN Category</th>
+      
+        <th class ="csv-table__header-cell">Trend</th>
+      
+        <th class ="csv-table__header-cell">Map Cells</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Conus salreiensis</td>
+          
+        
+          
+            <td class="csv-table__cell">Critically Endangered</td>
+          
+        
+          
+            <td class="csv-table__cell">Decreasing</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Conus trochulus</td>
+          
+        
+          
+            <td class="csv-table__cell">Near Threatened</td>
+          
+        
+          
+            <td class="csv-table__cell">Unknown</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Conus roeckeli</td>
+          
+        
+          
+            <td class="csv-table__cell">Least Concern</td>
+          
+        
+          
+            <td class="csv-table__cell">Unknown</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Acropora palmata</td>
+          
+        
+          
+            <td class="csv-table__cell">Critically Endangered</td>
+          
+        
+          
+            <td class="csv-table__cell">Stable</td>
+          
+        
+          
+            <td class="csv-table__cell">1158</td>
+          
+        
+      </tr>
+    
+  </table>
+</div>
+<h3 id="examples-of-the-approach">Examples of the Approach</h3>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table class="csv-table">
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell">Assessment</th>
+      
+        <th class ="csv-table__header-cell">Developing the Model</th>
+      
+        <th class ="csv-table__header-cell">Setting the Reference Point</th>
+      
+        <th class ="csv-table__header-cell">Other Considerations</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Global 2012</td>
+          
+        
+          
+            <td class="csv-table__cell">The status of assessed species was calculated as the area- and threat status-weighted average of the number of threatened species within each 0.5-degree global grid cell. Species distribution and threat category data came from the IUCN Global Marine Species Assessment.</td>
+          
+        
+          
+            <td class="csv-table__cell">The reference point was to have all species at a risk status of Least Concern. We scaled the lower end of the biodiversity goal to be 0 when 75% species are extinct.</td>
+          
+        
+          
+            <td class="csv-table__cell">There were no measures of integrity measures included. The species chosen represents a partial sample of overall species diversity.</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Global 2013 - 2015</td>
+          
+        
+          
+            <td class="csv-table__cell">The goal model was the same as Global 2012. There were data updates available for 15 out of 6,080 species.</td>
+          
+        
+          
+            <td class="csv-table__cell">The reference point was the same as Global 2012.</td>
+          
+        
+          
+            <td class="csv-table__cell">Updates were available for data used for this sub-goal.</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Brazil 2014</td>
+          
+        
+          
+            <td class="csv-table__cell">The status of 504 assessed species was calculated as the threat status-weighted average of species occurring in the Brazilian EEZ. The sub-goal was calculated at the national level, giving equal weight to all species occurring in Brazilian waters. Threat weights were assigned based on the IUCN threat categories status of each species.</td>
+          
+        
+          
+            <td class="csv-table__cell">The reference point was the same was Global 2012.</td>
+          
+        
+          
+            <td class="csv-table__cell">This study substituted global assessment data for regional data whenever available. This study did not weight by area of occurrence as in Global 2012 because distribution maps were not available for all species.</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">U.S. West Coast 2014</td>
+          
+        
+          
+            <td class="csv-table__cell">The model was the same as Global 2012, with regional data available for threat categories.</td>
+          
+        
+          
+            <td class="csv-table__cell">The same reference point was used as the Global model.</td>
+          
+        
+          
+            <td class="csv-table__cell">This followed the Global model, but used local data. This study did not weigh by area.</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Israel 2014</td>
+          
+        
+          
+            <td class="csv-table__cell">The same as Global 2012.</td>
+          
+        
+          
+            <td class="csv-table__cell">Where all species within the region are classified with a risk status of Least Concern.</td>
+          
+        
+          
+            <td class="csv-table__cell">A list of species was composed based data from the Israel Marine Mammal Research and Assistance Center (IMMRAC) and cross-referenced with the IUCN data. Distribution maps were available for some species (from a global 0.5° grid). For those species not included in the distribution maps in the Mediterranean, data from assessments in the Black Seas were used. Additional data gap filling was done.</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Ecuador - Gulf of Guayaquil 2015</td>
+          
+        
+          
+            <td class="csv-table__cell">The approach is similar to Global 2012. This goal calculates the average IUCN threat category for all species in the study area, broken down by the type of habitat where they live. That average is weighted by the percentage of area occupied by each type of habitat in the Gulf region: soft bottom and hard bottom.</td>
+          
+        
+          
+            <td class="csv-table__cell">When all species are in the category of “least concern”.</td>
+          
+        
+          
+            <td class="csv-table__cell">The species list was adopted from the IUCN Red List threat categories with aggregated species lists and 112 species from local sources.</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">China 2015</td>
+          
+        
+          
+            <td class="csv-table__cell">Status model is similar to global assessments. However, average extinction risk of all assessed species was only calculated as the weighted sum of the number of species in each threat category, since habitat area per species is not obtainable.</td>
+          
+        
+          
+            <td class="csv-table__cell">The reference point is to have the risk status of all iconic species at lowest risk of extinction.</td>
+          
+        
+          
+            <td class="csv-table__cell">This study used a combination of local endangered species list and IUCN list.</td>
+          
+        
+      </tr>
+    
+  </table>
+</div>
+
   <div class="right-col-sep"></div>
 </div><div class="column-right">
   

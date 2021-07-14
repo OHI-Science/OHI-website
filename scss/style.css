@@ -119,23 +119,23 @@ p {
   color: #333; }
 
 ::selection {
-  background: #737393;
+  background: #82828c;
   color: white; }
 
 a:hover {
-  color: #5c5c77; }
+  color: #696972; }
 
 a.text-primary:hover {
-  color: #5c5c77 !important; }
+  color: #696972 !important; }
 
 a.text-light:hover {
-  color: #5c5c77 !important; }
+  color: #696972 !important; }
 
 h4 {
   transition: .2s ease; }
 
 a h4:hover {
-  color: #5c5c77; }
+  color: #696972; }
 
 .slick-slide {
   outline: 0; }
@@ -657,6 +657,36 @@ blockquote {
   width: 100%;
   background: linear-gradient(to bottom, #1e2c5e 0, rgba(30, 45, 95, 0.98) 5%, rgba(31, 46, 98, 0.83) 17%, rgba(31, 46, 98, 0.81) 18%, rgba(33, 49, 103, 0.69) 25%, rgba(39, 58, 123, 0.23) 50%, rgba(40, 59, 126, 0.17) 54%, rgba(41, 61, 130, 0.07) 60%, rgba(42, 62, 133, 0.02) 65%, rgba(42, 62, 133, 0.01) 66%, rgba(42, 62, 133, 0) 67%, rgba(42, 62, 133, 0) 100%); }
 
+.csv-table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+  box-shadow: 0 1px 11px -1px rgba(0, 0, 0, 0.18);
+  border-radius: 4px; }
+  .csv-table__header {
+    border-bottom: 2px solid #ededf1;
+    font-size: 0.85rem;
+    color: #1a1a37;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    background-color: #9ACED8; }
+  .csv-table__header-cell {
+    padding: 1rem 0.5rem; }
+  .csv-table__row {
+    border-bottom: 1px solid #ededf1; }
+    .csv-table__row:nth-child(odd) {
+      background: #fafafa; }
+  .csv-table__cell {
+    color: #696972;
+    line-height: 1.4;
+    padding: 0.9rem; }
+    .csv-table__cell:first-child {
+      font-weight: bold; }
+
 /**
  * dropdown.scss
  *
@@ -667,8 +697,8 @@ blockquote {
  *
  */
 .dropdown {
-  --dropdown-color-primary-dark: #5c5c77;
-  --dropdown-color-subtle-text: #8585a4;
+  --dropdown-color-primary-dark: #696972;
+  --dropdown-color-subtle-text: #adadb8;
   --dropdown-color-border: #ededf1;
   --dropdown-color-accent: #1E40AF;
   --dropdown-gutter: 0 1rem;
@@ -776,8 +806,8 @@ blockquote {
   --number-slider-color-progress: #1E40AF;
   --number-slider-color-handle: #1E40AF;
   --number-slider-color-bkg: #ededf1;
-  --number-slider-color-label: #8585a4;
-  --number-slider-color-label: #5c5c77;
+  --number-slider-color-label: #adadb8;
+  --number-slider-color-label: #696972;
   --number-slider-handle-size: 14px;
   --number-slider-handle-border-radius: 2px;
   --number-slider-handle-margin-top: -20px;
@@ -937,7 +967,7 @@ blockquote {
 .region-tooltip {
   --tooltip-color-bkg: #fff;
   --tooltip-color-border: #ededf1;
-  --tooltip-color-text: #5c5c77;
+  --tooltip-color-text: #696972;
   --tooltip-border-radius: 4px;
   position: absolute;
   display: grid;
@@ -1038,7 +1068,7 @@ blockquote {
     margin: 0 0 0 1rem;
     font-size: 0.95rem;
     line-height: 1.45;
-    color: #8585a4; }
+    color: #adadb8; }
   .global-scores__control {
     display: grid;
     grid-template-rows: auto auto;
@@ -1060,7 +1090,7 @@ blockquote {
  */
 .aster {
   --aster-size-icon: 2.7rem;
-  --aster-color-text: #5c5c77;
+  --aster-color-text: #696972;
   --aster-color-foreground-subtle: #ededf1;
   display: grid;
   /* a column for the plot, then legend */
