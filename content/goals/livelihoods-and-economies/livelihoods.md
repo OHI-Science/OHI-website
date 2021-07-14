@@ -28,3 +28,5 @@ Next you must think about how to use the data to infer quality and quantity of j
 
 It is highly recommended that you set the **reference point** for jobs as a temporal comparison (eg. the number of jobs five years before), and for for wages as a spatial comparison (eg. highest observed value across reporting units). Comparing the number of jobs across different places, for instance, would require at the very least adjusting values by the size of the workforce in each location.
 
+### Examples of the Approach
+{{< csvTable path="tables/livlihoods.csv" sep=";" >}}

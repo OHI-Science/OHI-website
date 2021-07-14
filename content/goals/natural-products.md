@@ -28,3 +28,5 @@ The overall Food Provision model should not change; it is a combination of fishe
 
 **Pressures and Resilience** measures must be considered as well. What pressures act on the harvesting of these species? If information allows, pressures and resilience measures can act on different species, group of species, or practices separately, as is done with Natural Products. Fishing or harvesting practices can also act as pressures for other goals, for example destructive fishing practices can impact habitat-based goals and genetic escapes from mariculture practices can affect Fisheries and Biodiversity.
 
+### Examples of the Approach
+{{< csvTable path="tables/natural-products.csv"  sep=";" >}}

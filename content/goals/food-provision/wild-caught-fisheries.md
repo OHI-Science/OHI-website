@@ -44,3 +44,5 @@ When calculating B/BMSY and mean catch, use as much information as possible: all
 
 How B/BMSY is calculated for global assessments is a bit unsatisfactory and is in the process of being better developed. This is because the global model is very imprecise, which also affects how to interpret B/BMSY results. **It is important to consult with a fisheries scientist in your study area, as they will have expertise with the information and knowledge available in the local context**. If possible, we suggest calculating the scores using a more precise model as well, so fisheries experts can assess whether results look reasonable. This is important so that the scores produced have credibility.
 
+### Examples of the Approach
+{{< csvTable path="tables/fisheries.csv" sep=";" >}}
