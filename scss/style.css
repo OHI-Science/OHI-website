@@ -657,6 +657,9 @@ blockquote {
   width: 100%;
   background: linear-gradient(to bottom, #1e2c5e 0, rgba(30, 45, 95, 0.98) 5%, rgba(31, 46, 98, 0.83) 17%, rgba(31, 46, 98, 0.81) 18%, rgba(33, 49, 103, 0.69) 25%, rgba(39, 58, 123, 0.23) 50%, rgba(40, 59, 126, 0.17) 54%, rgba(41, 61, 130, 0.07) 60%, rgba(42, 62, 133, 0.02) 65%, rgba(42, 62, 133, 0.01) 66%, rgba(42, 62, 133, 0) 67%, rgba(42, 62, 133, 0) 100%); }
 
+.publication-section {
+  color: grey; }
+
 .csv-table {
   box-sizing: border-box;
   border-collapse: collapse;
