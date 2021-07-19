@@ -7,3 +7,5 @@ menu:
     parent: 'About'
     weight: 2
 ---
+
+{{<news>}}
