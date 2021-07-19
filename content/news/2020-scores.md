@@ -42,7 +42,7 @@ Scores for many regions are reasonably good and global scores have overall incre
 
 Table 1. Ocean Health Index, global scores (eez area weighted average of region scores) for the Index and goals/subgoals for all years.
 
-![2020-global-table](/images/infographs/globalOHItable2020.jpg)
+![global-table](/images/misc/globalOHItable2020.jpg)
 
 Given the importance of marine fisheries as a source of food, the apparent decline in scores is alarming. From 2012, fisheries scores decreased for 138 of the 220 countries we assessed, and decreasing trends predominate in the southern hemisphere. Regions with the largest decreases include Chile, the Falkland Islands, and South Korea. This result is due to a decrease in stock status scores, and should further be explored to better understand which stocks are driving this result.
 
