@@ -5,7 +5,8 @@
     <link>https://ohi-science.org/OHI-website/</link>
     <description>Recent content on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ohi-science.org/OHI-website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goal: Artisanal Fishing Opportunities</title>
       <link>https://ohi-science.org/OHI-website/goals/artisanal-fishing-opportunities/</link>
@@ -63,12 +64,63 @@ Habitat-based goals should be considered together during the data gathering proc
     </item>
     
     <item>
-      <title>An example news story or blog post</title>
-      <link>https://ohi-science.org/OHI-website/news/example-news-item/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>2020 Global Ocean Health Index</title>
+      <link>https://ohi-science.org/OHI-website/news/2020-scores/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://ohi-science.org/OHI-website/news/example-news-item/</guid>
-      <description></description>
+      <guid>https://ohi-science.org/OHI-website/news/2020-scores/</guid>
+      <description>2020 Global Ocean Health Index by Gage Clawson &amp;amp; Melanie Frazier
+Tue, Dec 01, 2020
+2020 Global Ocean Health Index scores now available! We are proud to announce the 2020 Ocean Health Index scores (available here)!
+This year marks the ninth global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The 2020 assessment was led by Gage Clawson, a former OHI Fellow, and Melanie Frazier.</description>
+    </item>
+    
+    <item>
+      <title>2020 Baltic Health Index (BHI)</title>
+      <link>https://ohi-science.org/OHI-website/news/2020-baltic-health-index/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/news/2020-baltic-health-index/</guid>
+      <description>2020 Baltic Health Index (BHI) by Melanie Frazier
+Mon, Sep 21, 2020
+A new open data tool for science and management The new assessment tool, the Baltic Health Index (BHI) evaluates comprehensively the health status of the Baltic Sea and has been calculated by researchers at the Stockholm Resilience Centre, Stockholm University, in cooperation with scientists in California who have established the well-known global Ocean Health Index (OHI) framework. The Ocean Health Index provides comprehensive, and quantitative assessments of progress towards healthy and sustainable oceans.</description>
+    </item>
+    
+    <item>
+      <title>2019 Global Ocean Health Index Scores</title>
+      <link>https://ohi-science.org/OHI-website/news/2019-scores/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/news/2019-scores/</guid>
+      <description>2019 Global Ocean Health Index Scores by Melanie Frazier
+Tue, Dec 03, 2019
+We are excited to announce the global Ocean Health Index (OHI) scores for 2019! The overall global Index score was 71, similar to scores in previous years.
+This marks our eighth year of conducting the global assessment, and the second year hosting the Global Fellows Program to include University of California, Santa Barbara students with training to calculate the global scores.</description>
+    </item>
+    
+    <item>
+      <title>Building Transparency and Trust</title>
+      <link>https://ohi-science.org/OHI-website/news/transparency-trust/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/news/transparency-trust/</guid>
+      <description>On Building Transparency and Trust for Healthy New England Seas by Jenny Seifert
+Mon, Nov 04, 2019
+A case study about transparency in the Ocean Health Index In a world of increasingly complex decision making, transparency has become paramount. This is no exception in science and, specifically, in science-based management of natural resources.
+Transparency is at the core of the Ocean Health Index (OHI). As a scientific evaluation of ocean health designed to inform management decisions that affect not just oceans but also people, it comes with the responsibility of transparency.</description>
+    </item>
+    
+    <item>
+      <title>Assessing Local Oceans</title>
+      <link>https://ohi-science.org/OHI-website/news/three-lessons/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/news/three-lessons/</guid>
+      <description>Three Lessons for Using the Global Ocean Health Index to Assess Local Oceans by Jenny Seifert
+Fri, Apr 26, 2019
+Cross-posted at NCEAS
+It just made sense. That was a theme I drew from conversations with four people involved in separate efforts to use the Ocean Health Index’s global framework to zoom in on ocean health in their particular regions to support local ocean planning.
+The Index was designed to be useful to ocean planning around the world, and to be useful, it must be applicable to place-based management, which is how so many decisions that affect ocean health are made after all.</description>
     </item>
     
     <item>
