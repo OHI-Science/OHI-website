@@ -1,0 +1,39 @@
+{{ $path := .Get "path" }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "content" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "data" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path = path.Join "content" "data" $path}}
+
+{{ $persons := getCSV "," $path }}
+<div class="people-container">
+  {{ range $index, $row := $persons }}
+    {{ if ne $index 0 }}
+      <div class="people-card {{$index}}"  onclick="showPerson(this)">
+          <div class="person-card-body" style="background-image: url('http://d38k7xqy3o8fxn.cloudfront.net/Vault/VaultOutput?ID=8326&ts=1442233104');"></div>
+          </span>
+          <div class="person-info">
+            <p class="person-name">{{ index $row 0 }}</p>
+            <p class="person-title">{{ index $row 1 }}</p>
+          </div>
+          <div class="person-expanded">
+            <p>{{ index $row 4 }} </p>
+          </div>
+      </div>
+    {{end}}
+  {{end}}
+</div>
+
+<script type="text/javascript">
+  function showPerson(selectedPerson) {
+    person = document.getElementsByClassName(selectedPerson.className)[0];
+    person.getElementsByClassName('person-expanded')[0].style.display = 'block';
+  }
+
+  function hidePerson(selectedPerson) {
+    person = document.getElementsByClassName(selectedPerson.className)[0];
+    person.getElementsByClassName('person-expanded')[0].style.display = 'none';
+  }
+
+</script>>
