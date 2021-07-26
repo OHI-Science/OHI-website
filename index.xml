@@ -165,7 +165,9 @@ The Index was designed to be useful to ocean planning around the world, and to b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/global-scores/data-download/</guid>
-      <description></description>
+      <description>We enthusiastically support the use of our data, but please cite our work.
+Global OHI assessments require synthesizing data from nearly one hundred sources. Data are prepared and scores calculated using freely available coding and version control software. In the interest of transparency and the promotion of scientific discovery, we freely provide the data and scripts used to calculate the global Ocean Health Index.
+We do not provide unaltered data obtained from other sources; to obtain these data you must go the original data sources we provide in methods documents.</description>
     </item>
     
     <item>
