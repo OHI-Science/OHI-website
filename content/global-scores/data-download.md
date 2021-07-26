@@ -14,6 +14,9 @@ Data are prepared and scores calculated using freely available coding and versio
 
 We do not provide unaltered data obtained from other sources; to obtain these data you must go the original data sources we provide in methods documents.
 
+Every year we improve the Ocean Health Index by incorporating new data, knowledge, and feedback. In order to make scores comparable among years, we always recalculate previous year's results using the most recent methods and data. In addition to providing scores, we make all code available online on GitHub.  
+
+
 <!---From http://stackoverflow.com/questions/31753897/2-column-section-in-r-markdown:
 Put in your css file or directly in rmarkdown--->
 <style>
@@ -29,10 +32,9 @@ Put in your css file or directly in rmarkdown--->
 -----
 
 <div class="col2">
+
 **2020 Ocean Health Index scores**
 The OHI 2020 assessment includes scores for years 2012 - 2020.
-
-Every year we improve the Ocean Health Index by incorporating new data, knowledge, and feedback. In order to make scores comparable among years, we always recalculate previous year's results using the most recent methods and data. In addition to providing scores, we make all code available online on GitHub.  
 
 
 - [Download scores from 2020 assessment](ADD LINK TO SCORES).
@@ -45,7 +47,7 @@ Every year we improve the Ocean Health Index by incorporating new data, knowledg
 
 Coding scripts to prepare data:
 - [data preparation (`ohiprep` repository)](https://github.com/OHI-Science/ohiprep_v2019) 
-- [description of file organization] (https://github.com/OHI-Science/ohiprep_v2018/blob/gh-pages/src/dataOrganization_SOP.md#sop-for-data-management-for-ocean-health-index-assessments)
+  - [description of file organization] (https://github.com/OHI-Science/ohiprep_v2018/blob/gh-pages/src/dataOrganization_SOP.md#sop-for-data-management-for-ocean-health-index-assessments)
 
 Coding scripts to calculate scores:
 - [score calculation (`ohi-global` repository)](https://github.com/OHI-Science/ohi-global/releases)
