@@ -1,0 +1,47 @@
+{{/* Adapted from https://randomgeekery.org/post/2020/06/csv-and-data-tables-in-hugo/ */}}
+
+{{ $path := .Get "path" }}
+{{ $sep := "," }}
+{{ with .Get "sep" }}
+  {{ $sep = . }}
+{{ end }}
+
+{{/*
+  To ensure that paths consistently start from the root dir,
+  first remove any part of the "/content/data/" path if present...
+*/}}
+
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "content" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "data" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+
+{{/* ... Then add back the "content/data/" part of the path */}}
+
+{{ $path = path.Join "content" "data" $path}}
+
+{{ $rows := getCSV $sep $path }}
+
+<div class="column-center__full-width-container">
+  <table class="csv-table">
+    {{ $headerRow := index $rows 0 }}
+    {{ $rows = after 1 $rows }}
+    <tr class ="csv-table__header">
+      {{ range $headerRow }}
+        <th class ="csv-table__header-cell">{{ . }}</th>
+      {{ end }}
+    </tr>
+    {{ range $rows }}
+      <tr class="csv-table__row">
+        {{ range . }}
+          {{ if (findRE "^\\d+$" .) }}
+            <td class="csv-table__cell">{{ . }}</td>
+          {{ else }}
+            <td class="csv-table__cell">{{ . }}</td>
+          {{ end }}
+        {{ end }}
+      </tr>
+    {{ end }}
+  </table>
+</div>

@@ -1,0 +1,8 @@
+{{range (.Page.CurrentSection.Pages.ByDate).Reverse}}
+  <div class="single-news-container">
+    <a class="news-link" href={{.Permalink}}><h2>{{.Params.title}}</h2></a>
+    <p>{{.Params.Date.Format "Mon, Jan 02, 2006"}}</p>
+    <h1 class="news-subtitle">{{.Params.name}}</h1>
+    <a class="news-read-more" href ={{.Permalink}}>Read More...</a>
+  </div>
+{{end}}

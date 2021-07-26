@@ -8,17 +8,25 @@ menu:
     weight: 5
 ---
 
-Our founding contributors go above and beyond in their generosity of intellectual and financial support. Without these forward-thinking leaders, the Ocean Health Index would not be a reality.
+We are grateful for the generous support from the Pacific Life Foundation and the Gordon and Betty Moore Foundation, as well as our founding contributors for helping us build the Ocean Health Index from the beginning. Without their generosity of intellectual and financial support the Ocean Health Index would not be a reality.
 
-![Wrigley](/images/misc/pacific-banner.jpg)
+### The Pacific Life Foundation
 
-### FOUNDING PRESENTING SPONSOR
-The Pacific Life Foundation has a strong tradition of creating positive societal change through its grant making program. The Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index as it has the potential to stimulate a reversal in ocean health, from negative to positive. It will be a valuable tool for citizens and policymakers to track the health of the global ocean, as well as the health of their regional and local ocean. We hope that the tools provided through the Index will enable and inspire policymakers to improve ocean governance and health.
+The Pacific Life Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index. The Foundation has a strong tradition of creating positive societal change through its grant making program. Established in 1984 and headquartered in Newport Beach, CA, the Pacific Life Foundation is the charitable giving arm of Pacific Life Insurance Company and, during that time, has contributed over $84 million in donations to thousands of nonprofits.
 
-Established in 1984 and headquartered in Newport Beach, CA, the Pacific Life Foundation is the charitable giving arm of Pacific Life Insurance Company and, during that time, has contributed over $84 million in donations to thousands of nonprofits.
+![Pacific Life Foundation](/images/misc/pacific-banner.jpg)
 
-### FOUNDING GRANT
-Beau and Heather Wrigley generously provided the founding grant to the Ocean Health Index. Mr. and Mrs. Wrigley brought together the best in business thinking and marine conservation; they were early originators of the Ocean Health Index concept and nurtured its development through their leadership of the Ocean Health Council. 
+### The Gordon and Betty Moore Foundation
+
+The Gordon and Betty Moore Foundation enables lasting, meaningful change through sustained, scientifically sound philanthropy, seeking to achieve through philanthropy what Gordon Moore accomplished for the world of computing: to create an ever more powerful engine of progress in society.
+
+### The World Ocean Observatory
+
+The World Ocean Observatory is a major utility for ocean communication as a means to advance public awareness and political will, dedicated to providing information and education about the health of the ocean. Online at [World Ocean](worldoceanobservatory.org).
+
+### Beau and Heather Wrigley
+
+Beau and Heather Wrigley generously provided the founding grant to the Ocean Health Index. Mr. and Mrs. Wrigley brought together the best in business thinking and marine conservation; they were early originators of the Ocean Health Index concept and nurtured its development through their leadership of the Ocean Health Council
 
 Since 2007, Mr. and Mrs. Wrigley have provided vision, support and leadership to this project. Mr. Wrigley is a Board member at Conservation International, co-chair of CI’s Ocean Health Council, the former Chairman and CEO of the William Wrigley, Jr. Company, and an avid SCUBA-diver.
 
@@ -26,6 +34,7 @@ Since 2007, Mr. and Mrs. Wrigley have provided vision, support and leadership to
 
 
 ### FOUNDING DONORS
+
 Darden Restaurants Foundation
 
 Akiko Shiraki Dynner Fund for Ocean Exploration and Conservation
