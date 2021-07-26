@@ -36,3 +36,7 @@ $page-header-height: 19rem;
 // changed, the value that is passed to the JS files in baseof.html should also be
 // changed.
 $breakpoint: 900px;
+
+// For pages and sections that are full width but constrained on large screens, the
+// maximum allowable width.
+$max-page-width: 1440px;

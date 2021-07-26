@@ -1,5 +1,5 @@
 html {
-  font-size: 19px;
+  font-size: 16px;
 }
 *,
 *:after,
@@ -22,7 +22,7 @@ body {
 
 p {
   line-height: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: justify;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
@@ -55,10 +55,6 @@ a h4{
   }
 }
 
-.slick-slide {
-  outline: 0;
-}
-
 .section {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -83,12 +79,19 @@ a h4{
   border-color: $border-color !important;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: $text-color-dark;
   letter-spacing: .03em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 800;
   text-transform: uppercase;
+}
+
+h5, h6 {
+  font-weight: 700;
 }
 
 blockquote {
@@ -97,4 +100,75 @@ blockquote {
   padding: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 2rem;
+}
+
+.full-width-page {
+  --padding: 2rem;
+  padding: var(--padding);
+  width: 100%;
+  max-width: calc(#{$max-page-width} + (2 * var(--padding)));
+  margin-right: auto;
+  margin-left: auto;
+
+  &__section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border-color;
+
+    &:first-of-type{
+      border-top: none;
+      margin-top: 0;
+    }
+  }
+}
+
+.two-columns {
+  display: grid;
+  
+  // Only use a two-column layout on desktop
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  &__centered-column{
+    display: grid;
+    justify-items: center;
+  }
+}
+
+
+.card-section {
+  width: auto;
+  padding: 1rem 3rem;
+  box-shadow: 0 1px 11px -1px rgba(0,0,0,0.18);
+  border-radius: $border-radius;
+}
+
+.metric {
+  --size: 6.2rem;
+  --color: #{$text-color-dark};
+  line-height: var(--size);
+  font-size: calc( var(--size) * 0.4 );
+  color: var(--color);
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  &--small {
+    --size: 2.2rem;
+  }
+
+  &--circle{
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: var(--color);
+    color: white;
+  }
+
+  &--inline {
+    display: inline-block;
+  }
+
 }
