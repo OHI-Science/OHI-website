@@ -17,22 +17,6 @@ We do not provide unaltered data obtained from other sources; to obtain these da
 Every year we improve the Ocean Health Index by incorporating new data, knowledge, and feedback. In order to make scores comparable among years, we always recalculate previous year's results using the most recent methods and data. In addition to providing scores, we make all code available online on GitHub.  
 
 
-<!---From http://stackoverflow.com/questions/31753897/2-column-section-in-r-markdown:
-Put in your css file or directly in rmarkdown--->
-<style>
-  .col2 {
-    columns: 2 200px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 200px; /* chrome, safari */
-    -moz-columns: 2 200px;    /* firefox */
-  }
-</style>
-
-<br>
-
------
-
-<div class="col2">
-
 **2020 Ocean Health Index scores**
 The OHI 2020 assessment includes scores for years 2012 - 2020.
 
@@ -57,11 +41,6 @@ A (very) detailed manual for conducting the global assessment:
 
 Extra data to large to host on GitHub:
 - [Large data files](https://mazu.nceas.ucsb.edu/data/) 
-</div>
-
-</div>
-
-<br>
 
 ---- 
 
