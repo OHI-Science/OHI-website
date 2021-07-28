@@ -438,212 +438,35 @@
   
 </svg></div>
 </div><div class="column-center">
-  <p>The Fisheries sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. The model generally compares landings with Maximum Sustainable Yield. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.</p>
-<h3 id="practical-guidance">Practical Guidance</h3>
-<p>Fisheries science is a discipline that in part aims to estimate the amount of fish that can sustainably be extracted from the sea. For this reason, it is important to consult with fisheries experts in your study area. Fisheries experts will be able to advise how to best estimate the maximum amount of catch that can be sustainably fished, and the information available will determine what type of modeling to take. There are many different modeling approaches, and most are based on either catch alone, or catch-per-unit-effort.</p>
-<blockquote>
-<p>The Ocean Health Index relies on freely accessible, open-source data that is consistently updated over time. Here are two datasets used in the OHI-Global assessments, which could be also be useful for OHI+ assessments: Fisheries catch over time from the Sea Around Us Project (seaaroundus.org) and Global fisheries landings over time from FAO (fao.org/fishery/statistics/en).</p>
-</blockquote>
-<p>If only catch data are available, it is highly recommended to follow the approach in the 2013 global assessment (Halpern et al. 2015) rather than the 2012 global assessment (Halpern et al. 2012). All global assessments use national fisheries catches reported to the Food and Agricultural Organization (FAO), and the 2013 global assessment used the fisheries modeling method for data-poor sources developed by Martell &amp; Froese (2013). With this method, fisheries catch information would be used to calculate the population biomass (B), and its maximum sustainable yield (BMSY). The reference functional relationship between fisheries catch and effort information would be used to calculate the present biomass against BMSY would be used to set the reference point. The current status would be calculated using the present state of every individual species and combining each species together as the weighted proportion of the total catch.</p>
-<p>You can find data for catch-per-unit effort data, and then create a functional relationship to determine the reference point.</p>
-<blockquote>
-<p>At a global scale, catch, effort, and MSY estimates are not available for either commercial, artisanal or recreational fishing: only landings data for commercial fisheries are available through the United Nations Food and Agriculture program (UN FAO). You will hopefully be able to find more localized data when conducting your assessment.</p>
-</blockquote>
-<p>When collecting data on fish landings, it’s important to consider how you will divide the data among regions. You should try to assess each fish species by its entire population across all regions in your study area. The status in the global assessment model (2013) was calculated based on estimating population biomass relative to the biomass that can deliver maximum sustainable yield for each landed stock (B/BMSY). This ratio is conventionally used to inform fisheries management. This approach adopts the population biomass at MSY (BMSY) as a single-species reference point.</p>
-<blockquote>
-<p>If you are replicating models from the global assessment (2013-2015), do not split the catch among regions; instead, you want to sum catch across all regions so you can calculate B/BMSY for the whole population.</p>
-</blockquote>
-<p>The principle of the <strong>reference point</strong> should not change. You should be creating models that penalize scores for harvesting above the maximum sustainable yield, as defined in your assessment, and scores that penalize for harvesting below the sustainable yield. The penalties vary for models developed in the global assessments, where overfished species negatively influence scores more than under-fished species do.</p>
-<p>It is important to also consider buffering around the reference point (eg. 75% of BMSY) because of imperfect knowledge about the data. Part of this depends on the type of assumptions you want to make about the ecology of fish species in your area and the impacts upon them from fishing practices. For instance, when all species are exploited simultaneously, fishing pressure on each population might be lower due to changes in interactions between species that occur when a predator population is reduced.</p>
-<p><em>A note about methods used in the fisheries goal</em></p>
-<p>Since Global 2012, several new data-poor approaches have been developed to assess fisheries that leverage globally-available information (Costello <em>et al</em>., 2012; Martell &amp; Frœse, 2013; Thorson <em>et al</em>., 2013). The estimates of B/BMSY used in Global 2013 were obtained by applying a model developed by Martell &amp; Frœse, (2013), and referred to as the “catch-MSY” method. This approach adopts the population biomass at MSY (BMSY) as a single-species reference point.</p>
-<p>The catch-MSY approach improves upon the method used in Global 2012 in that it leverages a mechanistic understanding of the connection between harvest dynamics and population dynamics and uses this to infer stock depletion levels as a function of both historical patterns in catch and of species-specific resilience traits (Thorson <em>et al</em>. 2013). In addition, this model is more informative in the case of developing fisheries, whereas the Global 2012 approach assumed a perfect score in cases where a peak with successive decline had yet to be observed.</p>
-<p>Although it is a data-limited method, the more complex approach better takes into account species-specific fishery dynamics. The scores for each population were also combined using a geometric mean, which ensures that smaller, rarer populations have more weight so that the biodiversity of the catch is taken into account as well.</p>
-<p><em>Calculating the fisheries goal</em></p>
-<p>Calculating the fisheries goal using methods from global assessments (2013-2015 as it is not recommended to use methods from the 2012 global assessment) relies on catch or catch-per-unit-effort data. The fisheries goal model uses mean catch and B/BMSY for all species. These are two separate steps: the mean catch is not used to calculate B/BMSY. Once you have B/BMSY for all the species, you will combine them together to get a single fisheries score for each of the regions in your study area. This is where the mean catch is used: it is a weighting factor so that species with higher mean catch will contribute more to the final score. You will not need to calculate this because the Toolbox calculates the weighted mean when you provide mean catch as an input layer to the Toolbox. The input layer should simply be the mean catch for each species.</p>
-<p>When calculating B/BMSY and mean catch, use as much information as possible: all the years available. Species that have few years of available data will likely be less accurate and it is important to document this. It is admissible to have different ranges of years for different species, since too much information would be lost if all species required the same species range. However, interpreting why different species have different years of time series is important. There may be data for 30 years of history for some species, 10 for others and 5 or 6 for others. It is important to know whether there is only 6 years of data because it is a recent fishery that developed in the last 6 years; in this case 6 years is enough. But if only 6 years of data are available because they stopped collecting the data in recent years, you might get a completely misleading assessment. And of course if you know there was no catch at all in recent years, it is important to include those recent years as 0’s. 0’s must also be included when calculating B/BMSY or the results will be nonsensical.</p>
-<p>How B/BMSY is calculated for global assessments is a bit unsatisfactory and is in the process of being better developed. This is because the global model is very imprecise, which also affects how to interpret B/BMSY results. <strong>It is important to consult with a fisheries scientist in your study area, as they will have expertise with the information and knowledge available in the local context</strong>. If possible, we suggest calculating the scores using a more precise model as well, so fisheries experts can assess whether results look reasonable. This is important so that the scores produced have credibility.</p>
-<h3 id="examples-of-the-approach">Examples of the Approach</h3>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="column-center__full-width-container">
-  <table class="csv-table">
-    
-    
-    <tr class ="csv-table__header">
-      
-        <th class ="csv-table__header-cell">Assessment</th>
-      
-        <th class ="csv-table__header-cell">Developing the Model</th>
-      
-        <th class ="csv-table__header-cell">Setting the Reference Point</th>
-      
-        <th class ="csv-table__header-cell">Other Considerations</th>
-      
-    </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">Global 2012</td>
-          
-        
-          
-            <td class="csv-table__cell">The status was calculated as a function of the absolute difference between a region’s total landed biomass from the reference multi-species maximum sustainable yield weighted by a correction factor for taxonomies. This was calculated by summing all the single-species MSY estimates obtained for commercially-landed species.</td>
-          
-        
-          
-            <td class="csv-table__cell">The reference point was based on the difference from multispecies MSY (mMSY), an estimate of the optimum amount of all marine species that may be caught sustainably. The reference point was set so the total landed biomass of wild-caught species will not be more than 75% of the estimated mMSY using and an asymmetrical buffer where overfished stocks achieve a perfect score if B/BMSY is up to 0.2 points below 1 and under-fished stocks achieve a perfect score if B/BMSY is within 0.5 points of 1.</td>
-          
-        
-          
-            <td class="csv-table__cell">The approach had to be modified by working with fisheries scientists to adapt the data that were available at the global scale.</td>
-          
-        
-      </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">Global 2013 - 2015</td>
-          
-        
-          
-            <td class="csv-table__cell">The status was calculated based on estimating population biomass relative to the biomass that can deliver maximum sustainable yield for each landed stock (B/BMSY) using the catch-MSY model. Single-species values of B/ BMSY were aggregated using a geometric mean.</td>
-          
-        
-          
-            <td class="csv-table__cell">The reference point was similar to Global 2012 where regions were penalized for under-harvest and more severely for over-harvest.</td>
-          
-        
-          
-            <td class="csv-table__cell">The catch status was improved in this assessment to capture multi-species effects.The reference point was calculated through a more robust model than the one used in Global 2012, and it is a more direct measure of population health because it relates directly to population size.</td>
-          
-        
-      </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">Brazil 2014</td>
-          
-        
-          
-            <td class="csv-table__cell">The status was calculated in the same manner as Global 2012, with a modified sustainability term.</td>
-          
-        
-          
-            <td class="csv-table__cell">As in Global 2012, the reference point is based on an estimate mMSY.</td>
-          
-        
-          
-            <td class="csv-table__cell">This was calculated in the same manner as Global 2012 using local-scale data on exploitation category of species caught within Brazil’s EEZ as a catch-based sustainability index.</td>
-          
-        
-      </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">U.S. West Coast 2014</td>
-          
-        
-          
-            <td class="csv-table__cell">The status was based on B/BMSY for each landed stock and fishing mortality that can deliver maximum sustainable yield (F/FMSY). There were stock assessments for 41 species with historical data available. Estimates were extracted for each species and then assigned to each region based on the contribution of each species in each region to the overall catch in that region, along with weighting factors.</td>
-          
-        
-          
-            <td class="csv-table__cell">The reference point was a functional relationship that accounted for fishing pressure. The approach produced lower scores for species where both under-fishing and overfishing are occurring, but did not punish as much for under-fishing of stocks.</td>
-          
-        
-          
-            <td class="csv-table__cell">This study used formal stock assessments rather than data-poor estimates from catch data. The use of historical information was useful in creating sub-regional scores for this goal. This study also tested the use of a recently published data-poor approach (Costello et al. 2012) to obtain B/ BMSY values for the remaining stocks.</td>
-          
-        
-      </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">Israel 2014</td>
-          
-        
-          
-            <td class="csv-table__cell">See Global 2013 assessment.</td>
-          
-        
-          
-            <td class="csv-table__cell">See Global 2013 assessment.</td>
-          
-        
-          
-            <td class="csv-table__cell">This study used available data from the past 10 years (10 species and 9 other taxonomy groups). Trend was calculated between 2005 and 2010.</td>
-          
-        
-      </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">Ecuador-Gulf of Guayaquil 2015</td>
-          
-        
-          
-            <td class="csv-table__cell">The approach is the same as Global 2013-2015.</td>
-          
-        
-          
-            <td class="csv-table__cell">The same as Global 2013-2015.</td>
-          
-        
-          
-            <td class="csv-table__cell">Mean catch-per-taxon values come from FAO data updated with local data from Instituto Nacional de Pesca (INP).</td>
-          
-        
-      </tr>
-    
-      <tr class="csv-table__row">
-        
-          
-            <td class="csv-table__cell">China 2015</td>
-          
-        
-          
-            <td class="csv-table__cell">See Global 2012 assessment.</td>
-          
-        
-          
-            <td class="csv-table__cell">See Global 2012 assessment.</td>
-          
-        
-          
-            <td class="csv-table__cell">Data sources were poor for this assessment. Harvest data were reported by each fishing boat, which often fishes across provincial boundaries and outside of the EEZ. Current data thus might not reflect the best regional differences, and may exceed actual harvest levels within the EEZ.</td>
-          
-        
-      </tr>
-    
-  </table>
-</div>
+  <p>One of the most fundamental services the ocean provides is the provision of seafood. One in 7 people rely on fish as a daily source of protein, yet global catches have been declining steadily since peak catch in 1996 (Pauly and Zeller 2016). Given pressures on fisheries and projected increases in human population, it may become difficult to rely on wild-caught marine fish to meet basic nutritional needs. Accurate assessment of fisheries is crucial to avoid overfishing which can threaten human food supplies and the social and economic sustainability of fishing communities worldwide.</p>
+<p>###CURRENT SCORE</p>
+<p>[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]</p>
+<p>The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing their future landings with unsustainable yields, while a few are not producing as much wild-caught seafood as they could.</p>
+<p>###TRENDS
+Global fisheries scores have decreased by ??? points per year since 2012.</p>
+<p>[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]</p>
+<p>###GOAL DESCRIPTION
+The Fisheries subgoal measures the sustainability of wild-caught seafood harvests, with the aim of maximizing the amount that can be harvested year after year. Each year&rsquo;s catch must not take so much from the population that future catches will decline.</p>
+<p>The status of a fishery is usually measured by the current abundance of a stock(s), expressed as biomass of fish in the water, in comparison with a reference point.  For example, the UN Food and Agriculture Organization (FAO) categorizes stocks as &lsquo;overexploited&rsquo;, &lsquo;fully exploited&rsquo; or &lsquo;underexploited&rsquo; depending on whether the current biomass is less than 40 percent, 40-60 percent, or greater than 60 percent, respectively of the &lsquo;pristine&rsquo; (unfished) biomass (Ye 2011).</p>
+<p>The Ocean Health Index uses estimates of biomass to assess stock status, with the reference point that the biomass of all stocks should be at the level that provides maximum sustainable yield.</p>
+<p>Stock status can also be judged by spawning potential, catch trend and size-age composition. Spawning potential is measured as the ratio of the total biomass of sexually mature fish in the stock  (&lsquo;spawning stock biomass&rsquo;) to the number of fish large enough to be caught that &lsquo;recruit&rsquo; to the population each year through growth or migration. Ratios of less than 20 percent, 20-40 percent and greater than 40 percent indicate stocks that are &lsquo;overexploited&rsquo;, &lsquo;fully exploited&rsquo; and &lsquo;non-fully exploited&rsquo;, respectively. Catches that drop significantly without reduction of fishing effort or that are less than 50 percent of the maximum (after 5-year smoothing) indicate an overexploited stock, as does an unstable size-age composition. Catches that remain at or close to peak values for the past 5-10 years and/or have stable size-age composition indicate a fully exploited stock. Catches that  increase with increased effort without any change in size-age composition are non-fully exploited (Ye 2011).</p>
+<p>###OTHER RESOURCES
+FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS (FAO)
+Fishery Fact Sheets Collections</p>
+<p>ASFIS List of Species for Fishery Statistics Purposes  <br>
+<a href="http://www.fao.org/fishery/collection/asfis/en">Learn more</a></p>
+<p>FISHBASE
+Developed at the WorldFish Center in collaboration with the Food and Agriculture Organization of the United Nations (FAO) and many other partners, this global information system provides detailed information on almost all of the known world fish species and aquatic living organisms (marine and freshwater), and is searchable by country and species.</p>
+<p><a href="https://www.fishbase.in/home.htm">Learn More</a></p>
+<p>THE SEA AROUND US PROJECT
+The Sea Around Us project investigates the impact of fisheries on the marine ecosystems of the world, and offers mitigating solutions to a range of stakeholders. The project is a scientific collaboration between the University of British Columbia and the Pew Environment Group that began in July 1999. The Sea Around Us  project conducts a catch reconstruction program, the results of which improve the accuracy of estimates of catch, stock exploitation status, and other key factors for fisheries management.<br>
+<a href="http://www.seaaroundus.org/articles/">Learn More</a></p>
+<p>###LEARN MORE
+Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.</p>
+<p>[Two buttons: OHI Model, Practical Guidance]</p>
+<p>###REFERENCES
+Pauly D and Zeller D (2016a) Catch reconstructions reveal that global marine fisheries catches are higher than reported and declining. Nature Communications 7: 10244.</p>
+<p>Ye, Y. (2011). Assessment methodology. Appendix, pp. 327-334 in: FAO. 2011. Review of the state of world marine fishery resources. FAO Fisheries and AquacultureTechnical Paper 569. 334 pp. Food and Agriculture Organization of the United Nations, Rome</p>
 
   <div class="right-col-sep"></div>
 </div><div class="column-right">

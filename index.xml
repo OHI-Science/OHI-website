@@ -166,8 +166,8 @@ The Index was designed to be useful to ocean planning around the world, and to b
       
       <guid>https://ohi-science.org/OHI-website/global-scores/data-download/</guid>
       <description>We enthusiastically support the use of our data, but please cite our work.
-Global OHI assessments require synthesizing data from nearly one hundred sources. Data are prepared and scores calculated using freely available coding and version control software. In the interest of transparency and the promotion of scientific discovery, we freely provide the data and scripts used to calculate the global Ocean Health Index.
-We do not provide unaltered data obtained from other sources; to obtain these data you must go the original data sources we provide in methods documents.</description>
+Global OHI assessments require synthesizing data from nearly one hundred sources.
+Data are prepared and scores calculated using freely available coding and version control software. In the interest of transparency and the promotion of scientific discovery, we freely provide the data and scripts used to calculate the global Ocean Health Index. However, we do not provide unaltered data obtained from other sources; to obtain these data you must go the original data sources.</description>
     </item>
     
     <item>
@@ -216,8 +216,7 @@ Halpern et al. 2012, Nature.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/goals/food-provision/wild-caught-fisheries/</guid>
-      <description>The Fisheries sub-goal describes the amount of wild-caught seafood harvested and its sustainability for human consumption. The model generally compares landings with Maximum Sustainable Yield. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
-Practical Guidance Fisheries science is a discipline that in part aims to estimate the amount of fish that can sustainably be extracted from the sea.</description>
+      <description>One of the most fundamental services the ocean provides is the provision of seafood. One in 7 people rely on fish as a daily source of protein, yet global catches have been declining steadily since peak catch in 1996 (Pauly and Zeller 2016). Given pressures on fisheries and projected increases in human population, it may become difficult to rely on wild-caught marine fish to meet basic nutritional needs. Accurate assessment of fisheries is crucial to avoid overfishing which can threaten human food supplies and the social and economic sustainability of fishing communities worldwide.</description>
     </item>
     
     <item>
@@ -266,8 +265,8 @@ Ideal Approach Ideally, this sub-goal would speak to the quality and quantity of
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/goals/food-provision/mariculture/</guid>
-      <description>Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean’s ability to provide fish sustainably now and in the future.
-Higher scores reflect high food provisioning in a sustainable manner, while not compromising the water quality in the farmed area and not relying on wild populations to feed or replenish the cultivated species. A score of 100 means that a region is sustainably harvesting the greatest amount of farmed seafood possible based on its own potential (where its maximum potential is estimated in different ways depending on the assessment).</description>
+      <description>As humanity’s population continues to expand, we must increasingly rely upon new and improved methods for cultivating food on land and in the ocean. The term aquaculture refers to the cultivation in water (fresh and saltwater) of animals or plants for human consumption. Mariculture refers to the commercial harvest of seafood that is farm-raised in the ocean and along the coast.
+Aquaculture is the fastest growing animal food production sector in the world!</description>
     </item>
     
     <item>
