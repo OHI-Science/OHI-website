@@ -16,7 +16,7 @@ The global OHI score for the 2021 assessment was XXX. This interactive map shows
 
 [Canada region page example]({{< ref "canada.md" >}})
 
-Results are shown for the exclusive economic zone (EEZ) of 220 coastal countries or territories.  EEZ's extend 200 nautical miles (370 KM) offshore from the coast and describe the area a country assumes jurisdiction over the exploration and use of resources. 
+Results are shown for the exclusive economic zone (EEZ) of 220 coastal countries or territories.  EEZ's extend 200 nautical miles (370 KM) offshore from the coast and describe the ocean area a country assumes jurisdiction over the exploration and use of resources. 
 
 A country's Index score is the average of 10 "goal" scores which represent the ecological, social, and economic benefits that people expect from healthy oceans.  Each goal is scored from 0 to 100 based on the delivery of benefits with respect to a sustainable target. Lower scores indicate that more benefits could be gained or that current methods are harming the delivery of future benefits.  When a goal is not relevant to a specific region, no value (N/A) is shown and that goal is not included in calculation of the region's overall Index score.
 
