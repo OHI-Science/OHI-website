@@ -18,12 +18,14 @@ In the interest of transparency and the promotion of scientific discovery, we fr
 ### Global Ocean Health Index
 
 ![Infographic](/images/infographs/global_map_Index_2020_mol.png)
+
 Results from the most recent assessment of the global Ocean Health Index. 
 
 [NOTE: Will link to here.]
 
 ### Cumulative Human Impacts
 ![Infographic](/images/infographs/trends_cumulative_impact.jpg)
+
 Change in human impact on global oceans from 2003 to 2013, mapped to ~1 km gridded resolution.
 
 [NOTE: move following content to its own page, but just getting down here for now]
