@@ -18,7 +18,7 @@ Every year we improve the Ocean Health Index by incorporating new data, knowledg
 <br>
 ### OCEAN HEALTH INDEX SCORES
 
-The OHI 2020 assessment includes scores for years 2012 - 2020 for 220 coastal countries and territories.  Global and country Index scores are provided as well as goal scores and score components ((see score metadata)[(https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata)]).  See [Methodology tab](https://ohi-science.org/OHI-website/methodology/) for an overview of OHI score calculations. 
+The OHI 2020 assessment includes scores for years 2012 - 2020 for 220 coastal countries and territories.  Global and country Index scores are provided as well as goal scores and score components ([see score metadata](https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata)).  See [Methodology tab](https://ohi-science.org/OHI-website/methodology/) for an overview of OHI score calculations. 
 
 - [Download scores](ADD LINK TO SCORES) 
 - [Global methods](http://htmlpreview.github.io/?https://github.com/OHI-Science/ohi-global/published/documents/methods/Supplement.html)
@@ -34,28 +34,34 @@ We provide the coding scripts and additional resources we use to calculate the s
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub
 
+----
 
-### CITING THIS WORK  [question: how can I make this into a link?]
+### CITING THIS WORK  
 
 #### General references to the Ocean Health Index
 For general references to the Ocean Health Index framework, please cite the original publication:
-  *Halpern BS, Longo C, Hardy D, McLeod KL, Samhouri JF, Katona SK, et al. (2012) An index to assess the health and benefits of the global ocean. Nature. 2012;488: 615–620. doi:10.1038/nature11397*
+
+*Halpern BS, Longo C, Hardy D, McLeod KL, Samhouri JF, Katona SK, et al. (2012) An index to assess the health and benefits of the global ocean. Nature. 2012;488: 615–620. doi:10.1038/nature11397*
   
 
 #### If you are conducting an OHI+ assessment, please cite:
 
-- **Primary OHI publications** See above
+**Primary OHI publications** See above
 
-- **Github repository: ohicore** The R package used to generate the scores:
-  *Ocean Health Index. Year. ohicore version: core Ocean Health Index functions, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohicore/releases*
+**Github repository: ohicore** 
+The R package used to generate the scores
+
+*Ocean Health Index. Year. ohicore version: core Ocean Health Index functions, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohicore/releases*
   
-  - **OHI manual** This resource describes how to conduct an assessment:
-  *Ocean Health Index. 2015. Ocean Health Index Toolbox Manual [date]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: http://ohi-science.org/manual* 
+**OHI manual** 
+The manual describing how to conduct an assessment
+
+*Ocean Health Index. 2015. Ocean Health Index Toolbox Manual [date]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: http://ohi-science.org/manual* 
   
   
-  #### If you are diving deeper and using the most recent global datasets or methods, please cite:
+#### If you are using the most recent global datasets or methods, please cite:
   
-  -  *Ocean Health Index. Year. ohi-global version: Global scenarios data for Ocean Health Index, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohi-global/releases*
+*Ocean Health Index. Year. ohi-global version: Global scenarios data for Ocean Health Index, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohi-global/releases*
   
 ---- 
 

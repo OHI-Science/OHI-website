@@ -6,7 +6,28 @@ id: "ECO"
 description: "Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue."
 ---
 
-Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.
+### AN IMPORTANT GLOBAL FOOD SOURCE
+This goal assesses our ability to sustainably maximize wild-caught fisheries.
+
+### CURRENT SCORE
+
+[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+
+The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch with overharvesting, while a few are not producing as much wild-caught seafood as they could.
+
+
+Global fisheries scores have decreased by ??? points per year since 2012.
+
+[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+
+
+----
+
+### GOAL DESCRIPTION
+One of the most fundamental services the ocean provides is the
+
+
+Economies captures the economic value associated with marine industries using revenue from marine sectors. 
 
 ### Ideal Approach
 

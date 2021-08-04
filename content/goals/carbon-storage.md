@@ -9,24 +9,36 @@ color: "#D78935"
 weight: 4
 ---
 
+### PRESERVING HABITATS THAT ABSORB CARBON
 
-Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture the ability of the coastal habitats to remove carbon given their carbon uptake rate and health conditions. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.
+This goal captures the ability of coastal habitats to store carbon given the amount of carbon they store and their health.
 
-Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: Carbon Storage, Coastal Protection, and Biodiversity. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
+### CURRENT SCORE
 
-**Ideal Approach**
-Ideally, you will know which habitats contribute to carbon sequestration and storage, and their capacity to do so. You will also have information on habitat extent and health conditions. The reference point for habitat-based goals will likely be temporal, meaning you will compare the current area of these habitats to some area in the past, and thus historic data are needed. Reference points could also be set by with a proportion increase (or decrease) of known conditions.
+[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+
+The current score indicates that although, in many places, these habitats remain healthy and intact, a significant number have declined significantly since 1980 and more declines are likely in the near future. More protection and restoration must occur if they are to sequester and store the maximum amount of carbon possible.
+
+Global mariculture scores have decreased by ??? points per year since 2012.
+
+[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+
+----
+
+### GOAL DESCRIPTION
+Carbon dioxide (CO₂) is the primary heat trapping gas in Earth’s atmosphere and is a key driver of global climate change. The ocean plays a major role in slowing the pace of global climate change by absorbing CO₂ from the atmosphere and storing it as carbon. Carbon is stored in every component of the oceans. 
+
+This goal focuses on three coastal ecosystems — mangroves, tidal marshes and seagrasses — that have remarkable ability to store and sequester carbon in their living parts and buried detritus. When destroyed or degraded, these ecosystems not only stop sequestering carbon but can start to release it, becoming new sources of carbon dioxide that can accelerate global warming for decades or longer.  Though these coastal ecosystems form less than 2% of the ocean’s surface, they contribute more to long-term carbon storage and sequestration in sediments than any other ocean ecosystem.
+
+The Carbon Storage score is based on the current extent and condition of CO2-storing coastal habitats (mangrove forests, seagrass meadows, and salt marshes) relative to their recent historical condition. The status of each habitat is calculated and their contribution to the total goal score is the average of the habitats weighted by their average carbon storing capacity. 
+
+A score of 100 would indicate that these habitats are all still intact or have been restored to the same condition as in the past. A score of 0 would indicate that these carbon storing coastal habitats are completely absent, while a low score indicates that these habitats have declined significantly and that more protection and restoration must occur in order for them to store the maximum amount of carbon.
+
+Approximately one-third of the overall area of coastal habitats has been lost in the last 50 years and the remainder is severely threatened.  Destruction of these ecosystems means less carbon is stored in surrounding sediment and the resulting carbon emissions accelerate the rate of global climate change.  Majour causes of destruction of these systems include draining or clearing for agriculture or aquaculture, coastal pollution, and unsustainable coastal development.
+
+#### LEARN MORE
+Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+
+[Two buttons: OHI Model, Practical Guidance]
 
 
-**Practical Guidance**
-
-In terms of habitat types for this goal, it is recommended to search for mangroves, saltmarshes, and seagrasses because these are viewed as carbon-sequestering habitats that are both ecologically threatened and sensitive to policy responses. It is possible that there are other carbon-sequestering habitats present in your study area. But you should remember that we recommend using habitats that can store carbon on the order of 100 years, thereby limiting the types of habitat types you will need. For details on how to obtain data on habitat extent and condition, read section on Biodiversity sub-goal: Habitats.
-
-Seaweeds and coral store carbon for less than 100 years, and are not included in the carbon storage goal. While the pelagic oceanic carbon sink (phytoplankton) plays a large role in the sequestration of anthropogenic carbon, the pelagic ocean mechanisms are not amenable to local or regional management intervention. Phytoplankton and contribute to carbon fixation when they die and sink to the sea bottom at sufficient depth, because it is effectively out of circulation. However, if those phytoplankton are eaten, the carbon is cycled back into the system and not sequestered. Something that could potentially be included in the carbon storage goal is mollusc shells, if they are added to a landfill and not recycled in the sea. So if information on mariculture production and waste disposal are available, this could be an interesting addition to carbon storage at a regional scale.
-
-Contribution is relative contribution of each habitat to total carbon storage, measured by the per area, empirical rates of carbon uptake and coverage area. For this you would have to search the literature and find ratios of organic nutrient uptake between habitats, and you would have to make sure these studies represent your study area. For example, were the studies done with a young mangrove forest, or an older one, which might have different growth rates?
-
-Understanding habitat carbon storage rates is an area of ongoing research. The capacity for habitats to store carbon varies, and depends on the morphology of plants in the system. In the global assessment, we assumed equal potential for carbon storage by each habitat, and thus contribution to carbon storage is measured by habitat extents directly.
-
-### Examples of the Approach
-{{< csvTable path="tables/carbon-storage.csv"  sep=";" >}}
