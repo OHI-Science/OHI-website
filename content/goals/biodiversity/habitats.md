@@ -6,9 +6,9 @@ id: "HAB"
 description: "This sub-goal includes all habitats in the study area, and assess their health condition and coverage area."
 ---
 
-### PRESERVING COASTAL HABITATS
+### PRESERVING MARINE HABITATS
 
-This goal measures the status of coastal habitats that are particularly important in supporting large numbers of marine species. 
+This goal measures the status of marine habitats that are particularly important in supporting large numbers of marine species. 
 
 ### CURRENT SCORE
 

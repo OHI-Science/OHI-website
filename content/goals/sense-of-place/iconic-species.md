@@ -6,25 +6,44 @@ id: "SPP"
 description: "This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score."
 ---
 
-Iconic species are those that are relevant to local cultural identity through a species’ relationship to one or more of the following: 1) traditional activities such as fishing, hunting or commerce; 2) local ethnic or religious practices; 3) existence value; and 4) locally-recognized aesthetic value (e.g., touristic attractions/common subjects for art such as whales). Habitat-forming species are not included in this definition of iconic species, nor are species that are harvested solely for economic or utilitarian purposes (even though they may be iconic to a sector or individual). This sub-goal assesses how well those species are conserved.
+### Protecting culturally significant species
 
-> Data for this goal will likely have considerable overlap with Biodiversity sub-goal: Species. It will be effective for the goal keepers of Biodiversity and Sense of Place to share the data searching efforts.
+The iconic species subgoal measures the conservation status of iconic marine species, which are the animals that have unique importance to humans as demonstrated through traditional activities, ethnic or religious practices, existence value, or locally acknowledged aesthetic value.
 
-### Ideal Approach
+### CURRENT SCORE
 
-Ideally, you would have a list of species that are valued as iconic and information on their habitat ranges along with scientific studies that speak to the health of their populations. A reference point is where all iconic species are at a healthy level of existence.
+[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
 
-### Practical Guidance
+A high score indicates that few to none of the iconic species in a country’s EEZ have been categorized by the International Union for Conservation of Nature (IUCN) as endangered, threatended, vulnerable, or at risk of extinction. A low score indicates that many are in those categories.
 
-First you need to identify the Iconic Species. In practice, Iconic Species are usually a subset of the broader list of species in an area, and so you should be able to find Iconic Species after having found assessed species data for the Species sub-goal of the Biodiversity goal. (See Biodiversity for more detailed instructions.) Once you have the full list of assessed species, you can determine a subset for Iconic Species. For instance, are there known “indicator species” in your area? Are there species that are culturally held as valuable? Do any species appear on the currency or postage stamps?
+The current score indicates that iconic marine species are not as well protected as possible in many places. Substantial conservation efforts will be required in order to improve the status of many iconic species that call the ocean home.
 
-> Since different species are be iconic to different groups, defining which species are iconic can be challenging when it’s a cultural question. You might have to find information from experts on local customs and tradition.
 
-The choice of inclusion of iconic species in your list can be subjective. You could also come up with specific inclusion criteria, for instance, that would filter a list of species or filter a subset of the gathered data for Biodiversity. This would be a more rigorous approach because then it could be documented and you could replicate the study in future assessments.
+Iconic species scores have decreased by ??? points per year since 2012.
 
-Ultimately, almost any species can be iconic to someone, and so the intent with this goal was to focus on those species widely seen as iconic within a country, and iconic from a cultural or existence value (rather than for a livelihoods or extractive reason). Many lists exist for globally important, threatened, endemic, etc. species, but in all cases it is not clear if or to what extent these species represent culturally iconic species. In the global assessment, species were drawn from the World Wildlife Fund’s global and regional lists for Priority Species (especially important to people for their health, livelihoods, and/or culture) and Flagship Species (‘charismatic’ and/or well-known). These lists are note the only source that included cultural reasons for listing iconic species and you should try to acquire more information on locally relevant species.
+[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
-After identifying the list of iconic species, you need to find a matrix to reflect the health of their population. In the global study, we used IUCN threat categories and weights. The reference point is to have the risk status of all assessed species as Least Concern. Alternatively, you can use a different kind of assessment approach to see if the populations are healthy, which could be indicated, for instance, by the stability of their populations.
 
-### Examples of the Approach
-{{< csvTable path="tables/iconic-species.csv" sep=";" >}}
+----
+
+### GOAL DESCRIPTION
+
+Iconic species are those that are relevant to local cultural identity through a species’ relationship to one or more of the following: 1) traditional activities such as fishing, hunting or commerce; 2) local ethnic or religious practices; 3) existence value; and 4) locally-recognized aesthetic value (e.g., touristic attractions/common subjects for art such as whales).
+
+Habitat-forming species are not included in this definition of iconic species, nor are species that are harvested solely for economic or utilitarian purposes (even though they may be iconic to a sector or individual). 
+
+Some of the most widely recongnized iconic species are threatened or endangered.
+
+[QUESTION: Can we recreate the images/information for the specific iconic species located here (Green turtle, humpback whale...): http://www.oceanhealthindex.org/methodology/goals/sense-of-place/iconic-species]
+
+#### LEARN MORE
+Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+
+[Two buttons: OHI Model, Practical Guidance]
+
+----
+
+### OTHER RESOURCES
+INTERNATIONAL UNION FOR CONSERVATION OF NATURE (IUCN)
+The IUCN Red List assesses the conservation status of species in order to highlight those threatened with extinction and promote their conservation.
+[Learn more](https://www.iucnredlist.org/)
