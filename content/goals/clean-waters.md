@@ -27,7 +27,7 @@ Clean waters scores have ??? by ??? points per year since 2012.
 
 ### GOAL DESCRIPTION
 The Clean Water goal captures the degree to which local waters are unpolluted by human-made causes. 
-![](content/images/sources_of_pollution.jpg)
+![](/images/sources_of_pollution.jpg)
 
 People value marine waters that are free of pollution and debris for aesthetic and health reasons. 
 

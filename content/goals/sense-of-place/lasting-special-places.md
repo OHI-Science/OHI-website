@@ -25,7 +25,8 @@ Global lasting special places scores have increased by ??? points per year since
 ### GOAL DESCRIPTION
 
 Special places are coastal and marine areas that are culturally significant for a variety of reasons.  Designating a place to be a landmarke, monument, and/or Marine Protected Area can help ensure its existence, provide valuable ecosystem services and preserve cultural heritage and identity.
-![](![](content/images/lasting_special_places.jpg))
+
+![](/images/lasting_special_places.jpg)
 
 Well-maintained and protected lasting special places provide culturally significant resources that can generate economic opportunities and help to sustain coastal communities.
 
