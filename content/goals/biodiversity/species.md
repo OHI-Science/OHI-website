@@ -16,8 +16,6 @@ This goal measures the conservation status of marine species.
 
 The current score indicates that many marine species are at risk and there is the potential risk of losing a significant proportion of marine species diversity.
 
-
-
 Global species scores have decreased by ??? points per year since 2012.
 
 [Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
