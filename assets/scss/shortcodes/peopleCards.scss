@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   margin: auto;
   padding-top:3rem;
@@ -82,9 +82,4 @@
     border-color: transparent;
   }
 
-}
-
-.person-expanded {
-  position: absolute;
-  display: none;
 }
