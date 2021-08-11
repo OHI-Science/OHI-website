@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Biodiversity on Ocean Health Index</title>
+    <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/</link>
+    <description>Recent content in Goal: Biodiversity on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub-Goal: Habitat</title>
+      <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/habitats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/habitats/</guid>
+      <description>PRESERVING MARINE HABITATS This goal measures the status of marine habitats that are particularly important in supporting large numbers of marine species.
+CURRENT SCORE [Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+The current score indicates that the six habitats assessed- mangroves, coral reefs, seagrass beds, salt marshes, sea ice, and subtidal soft-bottom habitats- are still relatively healthy and intact on a global basis. However, the condition of the assessed habitats has declined over time.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Species</title>
+      <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/species/</guid>
+      <description>PRESERVING MARINE SPECIES This goal measures the conservation status of marine species.
+CURRENT SCORE [Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+The current score indicates that many marine species are at risk and there is the potential risk of losing a significant proportion of marine species diversity.
+Global species scores have decreased by ??? points per year since 2012.
+[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.</description>
+    </item>
+    
+  </channel>
+</rss>

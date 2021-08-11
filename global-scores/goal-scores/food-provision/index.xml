@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Food Provision on Ocean Health Index</title>
+    <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/</link>
+    <description>Recent content in Goal: Food Provision on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub Goal: Wild Caught Fisheries</title>
+      <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/wild-caught-fisheries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/wild-caught-fisheries/</guid>
+      <description>AN IMPORTANT GLOBAL FOOD SOURCE This goal assesses our ability to sustainably maximize wild-caught fisheries.
+CURRENT SCORE [Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch with overharvesting, while a few are not producing as much wild-caught seafood as they could.
+Global fisheries scores have decreased by ??? points per year since 2012.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Mariculture</title>
+      <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/mariculture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/mariculture/</guid>
+      <description>AN INCREASINGLY IMPORTANT SOURCE OF FOOD This goal assesses our ability to sustainably maximize the production of farm-raised marine food.
+CURRENT SCORE [Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could. A small number of countries are responsible for almost all global mariculture production.
+Global mariculture scores have decreased by ?</description>
+    </item>
+    
+  </channel>
+</rss>

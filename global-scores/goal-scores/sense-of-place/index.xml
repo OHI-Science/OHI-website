@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Sense of Place on Ocean Health Index</title>
+    <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/</link>
+    <description>Recent content in Goal: Sense of Place on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub-Goal: Iconic Species</title>
+      <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/iconic-species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/iconic-species/</guid>
+      <description>Protecting culturally significant species The iconic species subgoal measures the conservation status of iconic marine species, which are the animals that have unique importance to humans as demonstrated through traditional activities, ethnic or religious practices, existence value, or locally acknowledged aesthetic value.
+CURRENT SCORE [Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+A high score indicates that few to none of the iconic species in a country’s EEZ have been categorized by the International Union for Conservation of Nature (IUCN) as endangered, threatended, vulnerable, or at risk of extinction.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Lasting Special Places</title>
+      <link>https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/lasting-special-places/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/lasting-special-places/</guid>
+      <description>IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT The Lasting Special Places sub-goal measures how well we are protecting, for current and future generations, the locations that contribute to marine-related cultural identity.
+CURRENT SCORE [Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+A score of 100 means that a country is protecting at least 30% of their coastal areas (3nm offshore and 1km inland). Currently, many countries are acheiving this goal, but there is more progress to be made.</description>
+    </item>
+    
+  </channel>
+</rss>
