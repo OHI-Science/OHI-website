@@ -6,6 +6,7 @@ menu:
   main:
     parent: 'Global Scores'
     weight: 1
+    name: 'Scores by country'
 ---
 The global Ocean Health Index measures the state of the world’s oceans. 
 

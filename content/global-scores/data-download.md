@@ -5,7 +5,7 @@ bg_image: "/images/banners/fish-school.jpg"
 menu:
   main:
     parent: 'Global Scores'
-    weight: 2
+    weight: 3
 ---
 We enthusiastically support the use of our data, but please cite our work.
 
