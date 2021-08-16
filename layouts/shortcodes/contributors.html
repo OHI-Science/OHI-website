@@ -1,0 +1,20 @@
+{{ $path := .Get "path" }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "content" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "data" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+
+{{ $path = path.Join "content" "data" $path}}
+{{ $rows := getJSON $path }}
+
+{{range $key, $val := $rows}}
+<table class="supporter-table">
+  <h3 class="supporter-head">{{$key}}</h3>
+    <tr>
+      <td class>
+      {{delimit $val ", "}}
+    </td>
+  </tr>
+</table>
+{{end}}
