@@ -1,0 +1,52 @@
+/**
+ * gauge.scss
+ *
+ * Styles for a gauge plot, showing a single metric on a possible range of values.
+ *
+ * Related files:
+ *  - assets/js/data-viz/gauge.js
+ *
+ */
+
+.gauge {
+
+  --gauge-color-marker-label: #{$text-color-light};
+  --gauge-color-marker-label-hover: #{$text-color};
+  --gauge-color-label: #{$text-color-dark};
+  --gauge-color-ticks: #{$body-color};
+
+  // max-width: 100rem;
+  width: 100%;
+  height: 25rem;
+  margin: auto;
+
+  &__plot {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__needle {
+  opacity: 0.9;
+  fill: var(--gauge-color-label);
+  filter: drop-shadow( 0px 0px 2px rgba(255, 255, 255, .5));
+  }
+
+  &__metric {
+    font-weight: 600;
+    fill: var(--gauge-color-label)
+  }
+
+  &__tick-label{
+    fill: var(--gauge-color-marker-label);
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--gauge-color-marker-label-hover)
+    }
+  }
+
+  &__tick {
+    fill: var(--gauge-color-ticks)
+  }
+
+}

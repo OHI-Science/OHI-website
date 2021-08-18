@@ -2,9 +2,9 @@
 
 {{ $id := .Params.regionId }}
 
-{{ $rank := 69 }}
-{{ $score := 72 }}
-{{ $globalMeanScore := 71 }}
+{{ $rank := 68 }}
+{{ $score := 76 }}
+{{ $globalMeanScore := 72 }}
 {{ $numRegions := 221 }}
 {{ $name := .Params.title }}
 {{ $futureState := "+17" }}
@@ -15,45 +15,18 @@
 <main class="full-width-page">
 
     <section class="full-width-page__section">
+      <div class="score-gauge" data-region-id="{{ $id }}"></div>
+        <p style="max-width:35rem; margin-top:3rem; text-align:center; margin:auto">
+        The overall Ocean Health Index score for {{ $name }} is {{ $score }} out of 100, which is <b>higher</b> than the global average score of {{ $globalMeanScore }} out of 100.<p>
+    </section>
+
+    <section class="full-width-page__section">
       <h3>Overall Rank</h3>
       <p>Canada is ranked <span class="metric metric--small metric--circle metric--inline">{{ $rank }}</span> out of {{ $numRegions }} regions</p>
       <div class="region-rank-chart" data-region-id="{{ $id }}"></div>
     </section>
 
-    <section class="full-width-page__section">
-      <h3>Score</h3>
-      <div class="two-columns">
-
-        <div class="two-columns__centered-column">
-          <h4>Ocean Health Index Score</h4>
-          <h5>Overall</h5>
-          <div class="metric metric--circle">{{ $score }} </div>
-          <p>The overall Ocean Health Index score for {{ $name }} is {{ $score }} out of 100. The global average score is {{ $globalMeanScore }} out of 100.<p>
-        </div>
-
-        <div class="two-columns__centered-column">
-          <h4>Likely Future State</h4>
-          <div class="two-columns">
-            <div class="two-columns__centered-column">
-              <h5>Overall</h5>
-              <div class="metric">{{ $futureState }}%</div>
-            </div>
-            <div class="two-columns__centered-column">
-              <h5>Global</h5>
-              <div class="metric">{{ $gobalFutureState }}%</div>
-            </div>
-          </div>
-          <p>
-            It is estimated that in the near future the score for {{ $name }} will improve by roughly {{ $futureState }}% compared to a
-            global estimate of {{ $gobalFutureState }}%.
-          <p>
-        </div>
-
-      </div>
-      <div class="score-barometer">
-        <h1 style="color: white; background-color:#c5c6c7; width: 100%; height: 100%; padding:5rem;">SCORE CHART GOES HERE</h1> 
-      </div>
-    </section>
+   
 
     <section class="full-width-page__section">
       <h3>Goal evalulation</h3>
@@ -74,8 +47,8 @@
         {{ $numRegions }} regions. Antarctica and the Southern Ocean and the 15 High Seas sectors are not
         included because no scores are available for 2012 and 2013.
       </p>
-      <div class="card-section" style="padding-bottom:10rem">
-        <h1 style="color: white; background-color:#c5c6c7; width: 100%; height: 100%; padding:5rem;"> GOAL SCORE COMPARISON CHART GOES HERE</h1>
+      <div class="card-section">
+        <div class="line-graph" data-region-id="{{ $id }}"></div>
       </div>
     </section>
 

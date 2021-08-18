@@ -34,12 +34,17 @@ const rangeScore = maxScore - minScore;
 const numSteps = redAndBlues.length - 1;
 const step = rangeScore / numSteps;
 
+// Returns the function that gets a legend color
+const getScale = function () {
+  return d3.scaleLinear()
+    .domain(d3.range(minScore, (maxScore + step), step))
+    .range(redAndBlues)
+    .unknown(missingValueColour);
+}
+
 // A function that, given an OHI score, will give the colour from our continuous colour
 // scale palette.
-const getLegendColor = d3.scaleLinear()
-  .domain(d3.range(minScore, (maxScore + step), step))
-  .range(redAndBlues)
-  .unknown(missingValueColour);
+const getLegendColor = getScale()
 
 // Create the legend
 const getLegend = function (titleClass = "title") {
@@ -53,4 +58,4 @@ const getLegend = function (titleClass = "title") {
   })
 }
 
-export default Object.freeze({ getLegend, getLegendColor })
+export default Object.freeze({ getLegend, getLegendColor, getScale })

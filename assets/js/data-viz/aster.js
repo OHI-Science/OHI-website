@@ -44,9 +44,9 @@ let d3 = window.d3;
 /**
  * Creates an aster plot (aka flower plot)
  * @param {Object} options - The configuration for the aster plot
- * @property {HTMLElement} [container] - The element in which the aster plot should be
+ * @property {HTMLElement} container - The element in which the aster plot should be
  * rendered
- * @property {AsterDataItem[]} [data] - The data to use to create the plot
+ * @property {AsterDataItem[]} data - The data to use to create the plot
  * @property {number} [meanScore] - The number to show in the middle of the aster plot
  * @property {boolean} [legend] -  Set to false to not render a legend
  * @property {number} [width] - The relative width of the plot, in pixels
