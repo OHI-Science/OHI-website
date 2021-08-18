@@ -18,4 +18,4 @@ The Ocean Health Index defines a healthy ocean to be one that sustainably delive
 
 The 10 goals that comprise the global Ocean Health Index were based on extensive study by scientists, economists and sociologists.  However, the OHI framework is flexible and can be used to assess ocean health in  different contexts, and the goals included in other OHI assessments may differ depending on local context. 
 
-We describe the philosophy underlying each goal along with a description of the model used in the global assessment. However, [other assessments](LINK TO OHI+ page) have used different approaches for calculating goal scores in response to data availability or differences in priorities.  Given this we provide additional practical guidance for developing goal models and examples from completed assessments.
+Learn about each goal by clicking below.

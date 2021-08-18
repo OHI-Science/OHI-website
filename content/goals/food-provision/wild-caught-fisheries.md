@@ -9,17 +9,6 @@ description: "This sub-goal describes the amount of wild-caught seafood harveste
 ### AN IMPORTANT GLOBAL FOOD SOURCE
 This goal assesses our ability to sustainably maximize wild-caught fisheries.
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch with overharvesting, while a few are not producing as much wild-caught seafood as they could.
-
-
-Global fisheries scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 
 ----
 
@@ -37,7 +26,7 @@ Stock status can also be judged by spawning potential, catch trend and size-age 
 
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
 

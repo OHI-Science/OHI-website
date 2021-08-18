@@ -12,16 +12,6 @@ weight: 5
 ### PRESERVING HABITATS THAT SAFEGUARD SHORES
 This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.). 
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that although, in many places, these habitats remain healthy and intact, the extents of all five habitats have been substantially reduced or degraded when compared to their reference years.  The declines observed have occurred over only about three decades. 
-
-Coastal protection scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 ----
 
 ### GOAL DESCRIPTION
@@ -35,6 +25,6 @@ A score of 100 would indicate that these habitats are all still intact or have b
 Approximately one-third of the overall area of coastal habitats has been lost in the last 50 years and the remainder is severely threatened.  Destruction of these ecosystems means coastal areas are less protected from tidal surges, flooding, and storms.  Majour causes of destruction of these systems include draining or clearing for agriculture or aquaculture, coastal pollution, and unsustainable coastal development.
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
