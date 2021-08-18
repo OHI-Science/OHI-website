@@ -12,14 +12,8 @@ menu:
 
 <!--## Ocean benefits delivered to humans now and in the future.-->
 
-
-The Ocean Health Index defines a healthy ocean to be one that sustainably delivers a range of benefits to people now and in the future. **Ocean benefits delivered to humans are called _goals_ within the OHI framework**, and are widely recognized for supporting human well-being and sustainable ocean ecosystems.
-
-The 10 goals that comprise the global Ocean Health Index were based on extensive study by scientists, economists and sociologists.  However, the OHI framework is flexible and can be used to assess ocean health in  different contexts, and the goals included in other OHI assessments may differ depending on local context. 
-
-We describe the philosophy underlying each goal along with a description of the model used in the global assessment. However, [other assessments](LINK TO OHI+ page) have used different approaches for calculating goal scores in response to data availability or differences in priorities.  Given this we provide additional practical guidance for developing goal models and examples from completed assessments.
+The overall global score was XX, but a closer look at the underlying goal scores reveals a great deal of variation in regard to how well we are managing the sustainable delivery of different ocean benefits. Select a goal below to learn more about its score and how it has changed over time.
 
 
+[aster plot here?]
 
-
-[Learn more OHI scores]({{< ref "goals/_index.md" >}})
