@@ -1,14 +1,43 @@
 <div class="column-right">
-  {{ $name := .Scratch.Get "name" }}
-  {{ range site.Menus.main }}
-  {{ if eq .Name $name }}
-  {{ if .HasChildren }}
-      {{ range .Children }}
-    <div class="right-col-nav">
-      <a href= "{{.Params}}" class="right-nav-item">{{.Name}}</a>
-    </div>
+  {{ $currentPage := . }}
+  {{ $menu := site.Menus.main }}
+
+  {{ $isOverviewPage := false }}
+  {{ $menuSection := false }}
+  {{ $pages := slice }}
+
+  {{/* 
+    First, determine if the current page is a top level menu item. If it is, then
+    get all of the first-order sub pages and add them to the '$pages' slice.
+    If it's not, then locate the parent of the page and add all of its first-order
+    sub pages to the '$pages' slice.
+    */}}
+  {{ range $menuItem := $menu }}
+    {{ range $menuItemChild := $menuItem.Children }}
+      {{ range $sectionPage := $currentPage.Pages }}
+        {{ if eq $sectionPage $menuItemChild.Page }}
+          {{ $isOverviewPage = true }}
+          {{ $menuSection = $menuItem }}
+          {{ $pages = $pages | append $menuItemChild.Page }}
+        {{ end }}
+        {{else}}
       {{ end }}
+    {{ end }}
   {{ end }}
+
+  {{ if not $isOverviewPage }}
+    {{ range $menuItem := $menu }}
+      {{ if eq $menuItem.Name $currentPage.Parent.Params.menu.main.parent }}
+        {{ range $menuItemChild := $menuItem.Children }}
+          {{ $pages = $pages | append $menuItemChild.Page }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $pages }}
+    <div class="right-col-nav">
+      <a href= "{{.Permalink}}" class="right-nav-item">{{.Name}}</a>
+    </div>
   {{end}}
-  {{ end }}
 </div>

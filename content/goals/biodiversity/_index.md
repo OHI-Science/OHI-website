@@ -9,5 +9,27 @@ color: "#367BBF"
 weight: 10
 ---
 
-People value biodiversity in particular for its existence value. The risk of species extinction generates great emotional and moral concern for many people. As such, this goal assesses the conservation status of species based on the best available global data through two sub-goals: Species and Habitats. Species were assessed because they are what one typically thinks of in relation to biodiversity. Because only a small proportion of marine species worldwide have been mapped and assessed, we also assessed Habitats as part of this goal, and considered them a proxy for condition of the broad suite of species that depend on them. We calculate each of these sub- goals separately and treat them equally when calculating the overall goal score. A score of 100 means all species are all species are at very low risk of extinction, and all habitats are conserved.
+### SUPPORTING HEALTHY MARINE ECOSYSTEMS
+This goal describes how successfully the richness and variety of marine life is being maintained around the world.  
 
+### CURRENT SCORE
+
+[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+
+The current score indicates....
+
+
+Biodiversity scores have ??? by ??? points per year since 2012.
+
+[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+
+
+----
+
+### GOAL DESCRIPTION
+
+People value the existence of a diverse array of species for their intrinsic qualities and their contributions to the structure and function of resilient ecosystems. The risk of species extinction generates great emotional and moral concern for many people. Furthermore, people donate large sums of money to help conserve species and habitats.
+
+For the Global OHI, this goal assesses the conservation status of species based on the best available global data through two sub-goals: Species and Habitats. Species were assessed because they are what one typically thinks of in relation to biodiversity. Because only a small proportion of marine species worldwide have been mapped and assessed, we also assessed Habitats as part of this goal, and considered them a proxy for condition of the broad suite of species that depend on them. 
+
+We calculate each of these sub- goals separately and treat them equally when calculating the overall goal score. A score of 100 means all species are all species are at very low risk of extinction, and all habitats are conserved.

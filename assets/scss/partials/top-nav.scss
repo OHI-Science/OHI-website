@@ -1,0 +1,21 @@
+.top-nav {
+  color: grey;
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+}
+
+.top-nav-item {
+  color: grey;
+  text-decoration: none;
+  padding-right: 0.5rem;
+}
+.top-nav-item:visited {
+  color: grey;
+}
+
+.top-nav-item.current{
+  color:$text-color-dark;
+  font-weight: bold;
+}

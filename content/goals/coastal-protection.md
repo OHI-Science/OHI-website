@@ -9,25 +9,32 @@ color: "#D5A227"
 weight: 5
 ---
 
+### PRESERVING HABITATS THAT SAFEGUARD SHORES
+This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.). 
 
-This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.). A score of 100 would indicate that these habitats are all still intact or have been restored to their reference conditions.
+### CURRENT SCORE
 
-Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: Carbon Storage, Coastal Protection, and Biodiversity. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
+[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
 
+The current score indicates that although, in many places, these habitats remain healthy and intact, the extents of all five habitats have been substantially reduced or degraded when compared to their reference years.  The declines observed have occurred over only about three decades. 
 
+Coastal protection scores have decreased by ??? points per year since 2012.
 
-**Ideal Approach**
-Ideally you will have information on the relative potential of habitats to provide coastal protection, and extent and condition of each habitat. The reference point would likely be a historic reference before destruction of coastal habitats.
+[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
+----
 
-**Practical Guidance**
+### GOAL DESCRIPTION
 
-To see how to obtain data on habitat extent and condition, read the section on Biodiversity sub-goal: Habitats.
+Storm protection by coastal habitats saves lives, property and is worth billions of dollars each year. Coral reefs, mangroves, seagrasses, salt marshes, and sea ice act as natural buffers against incoming waves. By protecting against storm damage, flooding, and erosion, these living habitats keep people safe and can help mitigate economic loss of personal and public property, cultural landmarks and natural resources. 
 
-There can be many habitat types included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and sea ice were included. Habitats were weighted based on their protective ability identified by [Natural Capital Project](https://ohi-science.org/goals/www.naturalcapitalproject.org). Depending on the habitats you include, you will need to find additional weights.
+This goal assesses the amount of protection provided by marine and coastal habitats by measuring the area they cover now relative to the area they covered in the recent past.The status of each habitat is calculated and their contribution to the total goal score is the average of the habitats weighted by the relative protection they provide. 
 
-In the global assessment, we did not include an assessment of the protection afforded by man-made structures, such as jetties and seawalls. These structures cannot be preserved without maintenance and often have negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable service and are mostly seen as a pressure. It gets tricky when structures are built to help reduce coastal erosion–they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied.
+A score of 100 would indicate that these habitats are all still intact or have been restored to the same condition as in the past. A score of 0 would indicate that these protectie coastal habitats are completely absent, while a low score indicates that these habitats have declined significantly and that more protection and restoration must occur in order for them to store the maximum amount of carbon.
 
-The goal status model for Coastal Protection developed for global assessments will likely be appropriate for independent assessments. However, it could be possible to incorporate the differences in vulnerability between subcountry regions. Vulnerability can be quantified as the ability to evacuate, economic ability to reconstruct in case of damage. Physical properties may be available in OHI+ assessments, allowing for more a detailed understanding of the protective ability, and likelihood of exposure for each habitat type in different portions of the coastline.
+Approximately one-third of the overall area of coastal habitats has been lost in the last 50 years and the remainder is severely threatened.  Destruction of these ecosystems means coastal areas are less protected from tidal surges, flooding, and storms.  Majour causes of destruction of these systems include draining or clearing for agriculture or aquaculture, coastal pollution, and unsustainable coastal development.
 
+#### LEARN MORE
+Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
 
+[Two buttons: OHI Model, Practical Guidance]

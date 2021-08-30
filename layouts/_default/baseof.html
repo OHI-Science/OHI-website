@@ -6,10 +6,9 @@
     {{- partial "nav.html" . -}}
     {{- if not .IsHome -}}
       {{- partial "page-header.html" . -}}
+      {{- partial "top-nav.html" . -}}
     {{- end -}}
     {{- block "main" . -}}{{- end -}}
-    {{- partial "footer.html" . -}}
-
     {{- with resources.Get "js/main.js" -}}
       
       {{/* dataConfig: JSON with paths to all of the OHI data files, plus other data config properties. See content/data/_index.md */}}
