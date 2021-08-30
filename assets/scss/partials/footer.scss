@@ -1,20 +1,21 @@
 .footer-bottom-wrap{
+  display: grid;
+  grid-template-columns: 20% auto 20%;
   background-color: #ebebeb;
-  padding: 20px 0 0;
-  height: 75px;
+  height: 5rem;
   border-top: 1px solid rgba(30,44,94,.2); 
 }
 
 .footer-legal-links {
-  float: right;
-  text-align: right;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-copyright {
-  float: left;
-  padding-left: 10px;
-}
-
-.footer-container {
-  max-width: 1020px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
