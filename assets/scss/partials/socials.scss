@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #212d5e;
+    &:hover {
+      fill: #5ddae5;
+    }
+  }
+}

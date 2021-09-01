@@ -88,6 +88,10 @@ menu:
 - "parent" gives the name of the top-level item under which this page should be listed
 - "weight" indicates the order of this page relative to other pages in the same dropdown menu
 
+# Changing social media links
+
+The website shows links to facebook and twitter. The URLs for these links can be configured in the file `config/_default/params.yaml`
+
 # Making changes to the data
 
 See `content/data/_index.md`

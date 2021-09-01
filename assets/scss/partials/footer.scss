@@ -1,75 +1,64 @@
-.main-footer {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #f7f7f7;
-  border-top: 1px solid rgba(30,44,94,.2);
-}
+  border-top: 1px solid rgba(30, 44, 94, 0.2);
 
-.main-footer__content {
-  --padding: 2rem;
-  width: 100%;
-  max-width: calc( #{$max-content-width} + ( 2 * var(--padding)) );
-  padding: var(--padding);
-}
+  &__content {
+    --padding: 2rem;
+    width: 100%;
+    max-width: calc(#{$max-content-width} + (2 * var(--padding)));
+    padding: var(--padding);
 
-.main-footer__content--top {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  gap: 2rem;
-  justify-items: center;
-}
+    &--top {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 2rem;
+      justify-items: center;
+    }
 
-.main-footer__content--bottom {
-  --padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-bottom-wrap{
-  width: 100%;
-  background-color: #ebebeb;
-  border-top: 1px solid rgba(30,44,94,.2);
-  display: flex;
-  justify-content: center;
-}
-
-.footer-legal-links {
-
-}
-
-.footer-copyright {
-}
-
-.footer__logo {
-  display: flex;
-  height: 5rem;
-  text-decoration: none;
-}
-
-.footer__logo:hover {
-  .logo {
-    fill: #5ddae5;
+    &--bottom {
+      --padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
-}
 
-.social-media {
-  text-align: center;
-  justify-content: center;
-}
+  &__logo {
+    display: flex;
+    height: 5rem;
+    text-decoration: none;
 
-.facebook-icon {
-  height: 2rem;
-  width: 2rem;
-  fill: #FFFFFF;
-  text-decoration: none;
-}
+    &:hover {
+      .logo {
+        fill: #5ddae5;
+      }
+    }
+  }
 
-.twitter-icon {
-  height: 2rem;
-  width: 2rem;
-  fill: #212d5e;
-  text-decoration: none;
+  &__socials {
+    // container for the social media links
+  }
+
+  &__legal {
+    width: 100%;
+    background-color: #ebebeb;
+    border-top: 1px solid rgba(30, 44, 94, 0.2);
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  &__legal-link{
+    color: #212d5e;
+    text-decoration: none;
+
+    &:not(:last-child):after{
+      content: "|";
+      padding: 0 0.5rem 0 0.7rem;
+    }
+  }
 }
