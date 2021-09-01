@@ -1,10 +1,30 @@
+/**
+ * footer.scss
+ *
+ * The main footer element at the bottom of every page.
+ *
+ */
+
+/**
+ * Footer variables
+ */
+
+$footer-color-font: $text-color-dark;
+$footer-color-background: $body-color-darker;
+$footer-color-background-legal: $subtle-accent-color;
+$footer-color-border: $border-color;
+$footer-color-highlight: $highlight-color;
+
+
 .footer {
+
+  color: $footer-color-font;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #f7f7f7;
-  border-top: 1px solid rgba(30, 44, 94, 0.2);
+  background-color: $footer-color-background;
+  border-top: 1px solid $footer-color-border;
 
   &__content {
     --padding: 2rem;
@@ -34,7 +54,7 @@
 
     &:hover {
       .logo {
-        fill: #5ddae5;
+        fill: $footer-color-highlight;
       }
     }
   }
@@ -45,16 +65,21 @@
 
   &__legal {
     width: 100%;
-    background-color: #ebebeb;
-    border-top: 1px solid rgba(30, 44, 94, 0.2);
+    background-color: $footer-color-background-legal;
+    border-top: 1px solid $footer-color-border;
     display: flex;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    opacity: 0.7;
   }
 
   &__legal-link{
-    color: #212d5e;
+    color: $footer-color-font;
     text-decoration: none;
+
+    &:hover{
+      color:$footer-color-highlight;
+    }
 
     &:not(:last-child):after{
       content: "|";
