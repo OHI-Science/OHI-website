@@ -185,10 +185,6 @@ blockquote {
   bottom: 0;
   transform: matrix(1, 0, 0, 1, 0, -1); }
 
-.footer {
-  border-color: #494a43;
-  padding-top: 275px; }
-
 .home-title {
   color: white;
   flex: 0 0 100%; }
@@ -505,101 +501,60 @@ blockquote {
   gap: 3rem;
   padding: 2rem; }
 
-.main-footer {
-  display: grid;
-  grid-template-columns: 10% auto 10%;
-  grid-template-rows: repeat(1, 15rem);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-
-.footer-left-whitespace {
-  grid-area: 1 / 1 / 2 / 2; }
-
-.footer-right-whitespace {
-  grid-area: 1 / 3 / 2 / 4; }
-
-.footer-center-content {
-  grid-area: 1 / 2 / 2 / 3; }
-
-.footer-bottom-wrap {
-  display: grid;
-  grid-area: 2 / 1 / 3 / 4;
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  grid-template-columns: 20% auto 20%;
-  background-color: #ebebeb;
-  height: 5rem;
-  border-top: 1px solid rgba(30, 44, 94, 0.2); }
-
-.footer-legal-links {
+/**
+ * footer.scss
+ *
+ * The main footer element at the bottom of every page.
+ *
+ */
+/**
+ * Footer variables
+ */
+.footer {
+  color: #212d5e;
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-
-.footer-copyright {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-
-.footer-banner {
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  text-align: center;
-  justify-content: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-auto-rows: 100px;
-  padding-top: 4rem;
-  padding-bottom: 1rem; }
-
-.footer__logo {
-  height: 5rem; }
-
-.footer_link {
-  text-decoration: none;
-  transition: color 0.3s cubic-bezier(0.75, 0, 0.125, 1), font-weight 0.3s cubic-bezier(0.75, 0, 0.125, 1); }
-
-.footer_link:visited {
-  text-decoration: none; }
-
-.footer_link:hover .logo {
-  color: #5ddae5; }
-  .footer_link:hover .logo .logo__image {
-    fill: #5ddae5; }
-
-.footer-banner-text {
-  text-transform: uppercase;
-  top: 2rem;
-  font-size: 3.5rem; }
-
-.footer-banner-title {
-  text-transform: uppercase;
-  top: 1rem;
-  position: absolute;
-  width: 100%; }
-
-.social-media {
-  text-align: center;
-  justify-content: center;
-  border-bottom: 1px solid rgba(30, 44, 94, 0.2); }
-  .social-media .__link {
+  background-color: #fafafa;
+  border-top: 1px solid #ededf1; }
+  .footer__content {
+    --padding: 2rem;
+    width: 100%;
+    max-width: calc(1400px + (2 * var(--padding)));
+    padding: var(--padding); }
+    .footer__content--top {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 2rem;
+      justify-items: center; }
+    .footer__content--bottom {
+      --padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+  .footer__logo {
+    display: flex;
+    height: 5rem;
     text-decoration: none; }
-
-.facebook-icon {
-  height: 2rem;
-  width: 2rem;
-  fill: #FFFFFF;
-  text-decoration: none; }
-
-.twitter-icon {
-  height: 2rem;
-  width: 2rem;
-  fill: #212d5e;
-  text-decoration: none; }
+    .footer__logo:hover .logo {
+      fill: #5ddae5; }
+  .footer__legal {
+    width: 100%;
+    background-color: #daedef;
+    border-top: 1px solid #ededf1;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+    opacity: 0.7; }
+  .footer__legal-link {
+    color: #212d5e;
+    text-decoration: none; }
+    .footer__legal-link:hover {
+      color: #5ddae5; }
+    .footer__legal-link:not(:last-child):after {
+      content: "|";
+      padding: 0 0.5rem 0 0.7rem; }
 
 .cards {
   display: grid;
@@ -609,7 +564,8 @@ blockquote {
   margin: auto;
   padding-top: 3rem;
   row-gap: 1rem;
-  width: min-content; }
+  width: min-content;
+  padding-bottom: 3rem; }
 
 .card {
   background-clip: border-box;
@@ -670,6 +626,28 @@ blockquote {
 .btn.btn-primary:hover {
   background-color: rgba(14, 33, 70, 0.9); }
 
+/**
+ * socials.scss
+ *
+ * Social media links with icons
+ *
+ */
+/**
+ * Socials variables
+ */
+.socials {
+  display: flex;
+  justify-content: center; }
+  .socials__link {
+    text-decoration: none;
+    margin: 0 0.5rem; }
+  .socials__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #212d5e; }
+    .socials__icon:hover {
+      fill: #5ddae5; }
+
 .logo {
   width: auto;
   max-width: 100%;
@@ -680,9 +658,7 @@ blockquote {
     fill: grey;
     opacity: 0.2; }
   .logo--dark {
-    color: #212d5e; }
-    .logo--dark .logo__image {
-      fill: #212d5e; }
+    fill: #212d5e; }
 
 .single-news-container {
   border-bottom: 1px solid;
