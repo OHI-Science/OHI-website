@@ -36,3 +36,8 @@ $page-header-height: 19rem;
 // changed, the value that is passed to the JS files in baseof.html should also be
 // changed.
 $breakpoint: 900px;
+
+// Maximum width of content. For very wide screens, we need to limit the width of the
+// content, so that paragraphs and lines of text don't extend to a length that's
+// uncomfortable for reading.
+$max-content-width: 1400px;

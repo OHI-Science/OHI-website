@@ -1,0 +1,14 @@
+{{ with $socialLinks := site.Params.socials }}
+  <div class="socials">
+    {{ with $link := $socialLinks.facebook }}
+      <a class="socials__link socials__link--facebook" href="{{ $link }}" target="_blank">
+        <svg class="socials__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M449 0c35 0 63 28 63 63v386c0 35-28 63-63 63H343V319h67l12-83h-79v-53c0-23 11-45 47-45h36V68s-33-6-64-6c-66 0-108 40-108 111v63h-73v83h73v193H63c-35 0-63-28-63-63V63C0 28 28 0 63 0h386z"/></svg>
+      </a>
+    {{ end }}
+    {{ with $link := $socialLinks.twitter }}
+      <a class="socials__link socials__link--twitter" href="{{ $link }}" target="_blank">
+        <svg class="socials__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M161 464c193 0 299-160 299-299v-13c20-15 38-34 52-55-19 9-40 14-60 17 22-13 38-34 46-58-21 12-43 20-67 25a105 105 0 00-179 96c-84-4-163-44-216-110-28 48-14 110 32 140-17 0-33-5-48-13v2c0 49 36 93 85 103-16 4-32 4-48 1 14 43 54 72 98 73A211 211 0 010 417c48 31 104 47 161 47"/></svg>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}
