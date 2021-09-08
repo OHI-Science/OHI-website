@@ -45,6 +45,20 @@ function init() {
       })
   }
 
+  // If this is a line graph, then render it
+  const regionTimeSeriesEls = document.querySelectorAll(".region-time-series");
+  if (regionTimeSeriesEls) {
+    import('./regionTimeSeries.js')
+      .then(function (regionTimeSeries) {
+        regionTimeSeriesEls.forEach(function (regionTimeSeriesEl) {
+          regionTimeSeries.default({
+            container: regionTimeSeriesEl,
+            regionId: regionTimeSeriesEl.dataset.regionId,
+          })
+        })
+      })
+  }
+
   // If this is a gauge plot, then render it
   const scoreGaugeEls = document.querySelectorAll(".score-gauge");
   if (scoreGaugeEls) {

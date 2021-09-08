@@ -1,0 +1,21 @@
+/**
+ * timeSeries.scss
+ *
+ * Styles for the time series visualization.
+ *
+ * Related files:
+ *  - assets/js/data-viz/timeSeries.js
+ *
+ */
+
+.time-series {
+
+  &__line {
+    fill: none;
+    stroke-width: 0.7;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke: #cccccc;
+    mix-blend-mode: multiply;
+  }
+}
