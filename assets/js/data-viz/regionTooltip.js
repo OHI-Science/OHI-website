@@ -82,7 +82,7 @@ function regionTooltip({
   function update(text, num, color) {
 
     // Round the number displayed in the circle
-    const displayNumber = num ? Math.round(num) : 'NA'
+    const displayNumber = num || num === 0 ? Math.round(num) : 'NA'
 
     tooltipRegionText
       .text(text)
