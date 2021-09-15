@@ -68,6 +68,12 @@ weight: 1
 ---
 ```
 
+## Region pages
+
+Region pages are the pages that show the scores and plots for a particular country or region. The markdown files that create these pages are automatically generated using the the R file `scripts/create-region-pages.Rmd`. This R code creates (or overwrites) each of the markdown pages using the values set in the `scores.csv` file.
+
+If the `scores.csv` file is updated, or the region pages ever need to be re-created for any reason, run the R file `scripts/create-region-pages.Rmd` 
+
 # Making changes to the menu
 
 ## Top-level items
@@ -95,3 +101,5 @@ The website shows links to facebook and twitter. The URLs for these links can be
 # Making changes to the data
 
 See `content/data/_index.md`
+
+Remember that when the `scores.csv` file is updated, the region pages should be re-generated. See the "Region pages" section, above.

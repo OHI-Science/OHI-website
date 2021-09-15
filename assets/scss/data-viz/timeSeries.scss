@@ -1,0 +1,67 @@
+/**
+ * timeSeries.scss
+ *
+ * Styles for the time series visualization.
+ *
+ * Related files:
+ *  - assets/js/data-viz/timeSeries.js
+ *
+ */
+
+.time-series {
+
+  --time-series-color-highlight: #{$accent-color};
+  --time-series-color-line: #{$border-color};
+  --time-series-color-emphasis: #{$text-color};
+  --time-series-color-text: #{$text-color};
+
+  &__y-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.4rem;
+  }
+
+  &__axis{
+    color: var(--time-series-color-text);
+    opacity: 0.8;
+    font-size: 0.5rem;
+    stroke-width: 0.5;
+  }
+
+  &__dot {
+    fill: var(--time-series-color-highlight);
+  }
+
+  &__line {
+    fill: none;
+    stroke-width: 0.7;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke: var(--time-series-color-line);
+    mix-blend-mode: multiply;
+
+    &--subtle {
+      stroke-width: 0.5;
+      mix-blend-mode: normal;
+    }
+
+    &--focus {
+      stroke: var(--time-series-color-highlight);
+      stroke-width: 2;
+      mix-blend-mode: normal;
+    }
+
+    &--highlight {
+      stroke: var(--time-series-color-highlight);
+      stroke-width: 2;
+      mix-blend-mode: normal;
+    }
+
+    &--emphasize {
+      stroke: var(--time-series-color-emphasis);
+      stroke-width: 1.3;
+      mix-blend-mode: normal;
+    }
+  }
+}

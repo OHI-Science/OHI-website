@@ -2,6 +2,7 @@
 window.d3 = require("d3")
 
 function init() {
+
   // If the scoresGlobe short code is used in this page, then render the interactive globe
   // with scores.
   const scoresGlobeEls = document.querySelectorAll(".global-scores");
@@ -39,6 +40,34 @@ function init() {
           regionRankChart.default({
             container: regionRankChartEl,
             regionId: regionRankChartEl.dataset.regionId,
+          })
+        })
+      })
+  }
+
+  // If this is a line graph, then render it
+  const regionTimeSeriesEls = document.querySelectorAll(".region-time-series");
+  if (regionTimeSeriesEls) {
+    import('./regionTimeSeries.js')
+      .then(function (regionTimeSeries) {
+        regionTimeSeriesEls.forEach(function (regionTimeSeriesEl) {
+          regionTimeSeries.default({
+            container: regionTimeSeriesEl,
+            regionId: regionTimeSeriesEl.dataset.regionId,
+          })
+        })
+      })
+  }
+
+  // If this is a gauge plot, then render it
+  const scoreGaugeEls = document.querySelectorAll(".score-gauge");
+  if (scoreGaugeEls) {
+    import('./scoreGauge.js')
+      .then(function (scoreGauge) {
+        scoreGaugeEls.forEach(function (scoreGaugeEl) {
+          scoreGauge.default({
+            container: scoreGaugeEl,
+            regionId: scoreGaugeEl.dataset.regionId,
           })
         })
       })
