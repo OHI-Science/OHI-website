@@ -53,7 +53,6 @@ import baseTooltip from './tooltip.js'
  * @property {GaugeClasses} [classes] - The classes to use for elements in this plot
  * @returns {Object} returns an object with functions that can be used to interact with
  * the plot.
-
  */
 function gauge({
   container,

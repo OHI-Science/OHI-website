@@ -1,6 +1,7 @@
 import getData from "./data.js"
 import timeSeries from "./timeSeries.js"
 import dropdown from "./dropdown.js"
+import colorScale from "./colorScale.js"
 
 /**
  * The classes to add to the various HTML elements that are combined to create an gauge
@@ -77,7 +78,12 @@ async function regionTimeSeries({
     container: container,
     data: data,
     yMin: 0,
-    yMax: 100
+    yMax: 100,
+    // Highlight the given region
+    highlightLines: [regionId],
+    // Emphasize the overall Index, code: 0
+    emphasizeLines: ['0'],
+    colorFunction: colorScale.getLegendColor
   })
   function updateTimeSeriesData(regionId, goalCode) {
 
@@ -128,7 +134,6 @@ async function regionTimeSeries({
       newGoalCode = e.detail.id
       data = updateTimeSeriesData(regionId, newGoalCode)
       plot.update(data)
-      
     })
 
     goalControl.appendChild(goalsInput);
