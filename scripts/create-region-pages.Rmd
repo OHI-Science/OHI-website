@@ -13,6 +13,8 @@ library(magrittr)
 library(stringi)
 ```
 
+Below are all of the configurable variables that can be changed depending on updates to the scores.CSV file and to the template that is used to create the Hugo font-matter
+
 ```{r}
 # Path to the scores.csv file
 scores_path <- here("content", "data", "scores.csv")
@@ -28,6 +30,8 @@ value_col <- "value"
 dimension_col <- "dimension"
 # In the scores.csv file, the name for the column that has codes for each goal (e.g. AO, BD, etc.)
 goal_col <- "goal"
+# In the scores.csv file, the name for the column that contains the years
+year_col <- "scenario"
 # In the scores.csv file, the dimension used to identify OHI scores
 score_rows <- "score"
 # In the scores.csv file, the identifier in the column of goal identifiers that indicates the score/value is the overall average of all goals
@@ -35,7 +39,7 @@ average_goal <- "Index"
 # The region_name used for the global average scores
 global_avg_name <- "Global average"
 # In the scores.csv file, the names of any regions that we should not create pages for
-exclude_regions <- c(global_avg_name)
+exclude_regions <- c(global_avg_name, "Antarctica")
 # The template to use when creating front-matter for the region markdown file page. $id and $name are replaced with the region ID and name.
 template <- "---
 regionId: $id
@@ -48,44 +52,61 @@ layout: region_score
 ---"
 ```
 
+The next section organizes the data
+
 ```{r}
 # Get the data from the scores csv file. Get just the unique region names and IDs.
 all_data <- read.csv(scores_path)
 
+# Get the number of regions
+num_regions <- scores_data %>% 
+	filter(!(!!as.symbol(name_col) %in% exclude_regions)) %>% 
+	.[,name_col] %>%
+	unique() %>% 
+	length()
+
+# Find the most recent year
+max_year <- all_data[,year_col] %>% max()
+
+# Exclude any data that we don't need to create a site page for
 scores_data <- all_data %>% 
-	select(all_of(name_col), all_of(id_col), all_of(value_col), ) %>% 
-	distinct()
+	filter(!!as.symbol(dimension_col) == "score") %>% 
+	filter(!!as.symbol(year_col) == max_year) %>% 
+	filter(!!as.symbol(goal_col) == average_goal)
 
-# Exclude any that we don't need to create a site page for
+# Exclude any regions that we don't want to make pages for
 page_data <- scores_data %>% 
-	filter(!(!!as.symbol(name_col) %in% exclude_regions))
+	filter(!(!!as.symbol(name_col) %in% exclude_regions)) %>% 
+	arrange(desc(!!as.symbol(value_col)))
 
+# Get the global average score
 global_avg <- scores_data %>% 
-	filter(!!as.symbol(name_col) == global_avg_name )
+	filter(!!as.symbol(name_col) == global_avg_name ) %>% 
+	.[, value_col]
 
-all_data$goal %>% unique()
 ```
 
+Create a template for each page
 
 ```{r}
-all_data$dimension %>% unique()
-```
+# Update the template with the global mean score and the number of regions. This only needs to be done once since it is the same value for all regions.
 
-```{r}
-# Get the globalMeanScore and numRegions and update the template. This only needs to be done once since it is the same value for all regions.
-
-
-
+template <- gsub("\\$globalMeanScore", global_avg, template)
+template <- gsub("\\$numRegions", num_regions, template)
+	
 # Make a markdown file for each region
 for (row in 1:nrow(page_data)) {
 	
 	name <- page_data[row, name_col]
 	id  <- page_data[row, id_col]
+	score <- page_data[row, value_col]
+	rank <- row # because the data is sorted
 	
 	templateCopy <- template
 	templateCopy <- gsub("\\$id", id, templateCopy)
 	templateCopy <- gsub("\\$name", name, templateCopy)
-	templateCopy
+	templateCopy <- gsub("\\$rank", rank, templateCopy)
+	templateCopy <- gsub("\\$meanScore", score, templateCopy)
 	
 	# Make the markdown file name from the region name
 	fileName <- name %>%
