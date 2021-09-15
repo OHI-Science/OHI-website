@@ -10,9 +10,9 @@
 
 {{ $globalComparator := "higher than" }}
 {{ if eq $score $globalMeanScore }}
-  {{ $globalComparator := "equal to" }}
+  {{ $globalComparator = "equal to" }}
 {{ else if lt $score $globalMeanScore }}
-  {{ $globalComparator := "lower than" }}
+  {{ $globalComparator = "lower than" }}
 {{ end }}
 
 {{ $goalSection := site.GetPage "goals" }}
