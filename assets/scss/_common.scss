@@ -34,16 +34,14 @@ p {
   color: white;
 }
 
+a {
+  color: $accent-color;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 a:hover {
-  color: $text-color;
-}
-
-a.text-primary:hover {
-  color: $text-color!important;
-}
-
-a.text-light:hover {
-  color: $text-color!important;
+  color: $highlight-color;
 }
 
 h4{

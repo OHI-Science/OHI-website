@@ -70,20 +70,9 @@ weight: 1
 
 ## Region pages
 
-Region pages are the pages that show the scores and plots for a particular country or region. The markdown files that create these pages are simpler than other markdown pages. All they require is the region name and ID in the front-matter, specifically:
+Region pages are the pages that show the scores and plots for a particular country or region. The markdown files that create these pages are automatically generated using the the R file `scripts/create-region-pages.Rmd`. This R code creates (or overwrites) each of the markdown pages using the values set in the `scores.csv` file.
 
-- `title`: The name of the country or region. This should, but doesn't have to, match the name in the scores.csv file.
-- `regionId`: The ID for the region that is used
-
-Example:
-```
----
-regionId: 82
-title: Albania
----
-```
-
-If the region pages ever need to be re-created, the R file `scripts/create-region-pages.Rmd` will create each of the markdown pages using the names and IDs in the `scores.csv` file.
+If the `scores.csv` file is updated, or the region pages ever need to be re-created for any reason, run the R file `scripts/create-region-pages.Rmd` 
 
 # Making changes to the menu
 
@@ -112,3 +101,5 @@ The website shows links to facebook and twitter. The URLs for these links can be
 # Making changes to the data
 
 See `content/data/_index.md`
+
+Remember that when the `scores.csv` file is updated, the region pages should be re-generated. See the "Region pages" section, above.

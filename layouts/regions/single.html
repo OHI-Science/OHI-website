@@ -2,13 +2,16 @@
 
 {{ $id := .Params.regionId }}
 
-{{ $rank := 68 }}
-{{ $score := 76 }}
-{{ $globalMeanScore := 72 }}
-{{ $numRegions := 221 }}
+{{ $rank := .Params.rank }}
+{{ $score := .Params.meanScore }}
+{{ $globalMeanScore := .Params.globalMeanScore }}
+{{ $numRegions := .Params.numRegions }}
 {{ $name := .Params.title }}
-{{ $futureState := "+17" }}
-{{ $gobalFutureState := "+10" }}
+
+{{ $globalComparator := "higher" }}
+{{ if lt $score $globalMeanScore }}
+  {{ $globalComparator := "lower" }}
+{{ end }}
 
 {{ $goalSection := site.GetPage "goals" }}
 
@@ -17,22 +20,20 @@
     <section class="full-width-page__section">
       <div class="score-gauge" data-region-id="{{ $id }}"></div>
         <p style="max-width:35rem; margin-top:3rem; text-align:center; margin:auto">
-        The overall Ocean Health Index score for {{ $name }} is {{ $score }} out of 100, which is <b>higher</b> than the global average score of {{ $globalMeanScore }} out of 100.<p>
+        The overall Ocean Health Index score for {{ $name }} is {{ $score }} out of 100, which is <b>{{ $globalComparator }}</b> than the global average score of {{ $globalMeanScore }} out of 100.<p>
     </section>
 
     <section class="full-width-page__section">
       <h3>Overall Rank</h3>
-      <p>Canada is ranked <span class="metric metric--small metric--circle metric--inline">{{ $rank }}</span> out of {{ $numRegions }} regions</p>
+      <p>{{ $name }} is ranked <span class="metric metric--small metric--circle metric--inline">{{ $rank }}</span> out of {{ $numRegions }} regions</p>
       <div class="region-rank-chart" data-region-id="{{ $id }}"></div>
     </section>
-
-   
 
     <section class="full-width-page__section">
       <h3>Goal evalulation</h3>
       <p>Click on a goal to learn how it is calculated. 
         {{ with $goalSection.Permalink }}
-        <a href="{{ . }}">Learn more about goals</a>
+        <a href="{{ . }}">Learn more about goals</a>.
         {{ end }}
       </p>
       <div class="card-section" style="padding-bottom:10rem">
@@ -41,11 +42,11 @@
     </section>
 
     <section class="full-width-page__section">
-      <h3>Goal score comparison</h3>
+      <h3>Score over time in comparison to other regions</h3>
       <p>
-        The graph below compares the goal scores and overall average score year-to-year for
-        {{ $numRegions }} regions. Antarctica and the Southern Ocean and the 15 High Seas sectors are not
-        included because no scores are available for 2012 and 2013.
+        The time series plot below compares {{ $name }}'s score year-to-year to {{ $numRegions }} regions for the goal category shown in the dropdown menu.
+        {{ $name }}'s score line is in dark blue, while the overall average score for all regions is in dark grey.
+        Move your mouse over lines to highlight other regions' trends.
       </p>
       <div class="card-section">
         <div class="region-time-series" data-region-id="{{ $id }}"></div>
