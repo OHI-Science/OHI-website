@@ -1,0 +1,29 @@
+{{ $path := .Get "path" }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "content" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "data" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path = path.Join "content" "data" $path}}
+
+{{ $persons := getCSV "," $path }}
+<div class="people-container">
+  {{ range $index, $row := $persons }}
+    {{ if ne $index 0 }}
+      {{$bg := index $row 4 }}
+      <div class="people-card {{$index}}"  onclick="showPerson(this)">
+          <div class="person-card-body" style='background-image: url({{ $bg | safeHTML }});'></div>
+          </span>
+          <div class="person-info">
+            <p class="person-name">{{ index $row 0 }}</p>
+            <p class="person-title">{{ index $row 1 }}</p>
+          </div>
+          <div class="person-expanded">
+            <p>{{ index $row 5 }} </p>
+          </div>
+      </div>
+    {{end}}
+  {{end}}
+</div>
+
+</script>

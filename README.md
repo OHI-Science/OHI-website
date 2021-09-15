@@ -8,7 +8,7 @@ To run the server, run the following from the top level ohi-site directory,
 
 ```
 npm install
-hugo server
+hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 ```
 
 # Adding or updating content

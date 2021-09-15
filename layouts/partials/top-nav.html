@@ -1,0 +1,16 @@
+<div  class="top-nav">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" . "current" .) }}
+</div>
+
+{{ define "breadcrumbnav" }}
+  {{ if .p1.Parent }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 "current" .current)  }}
+  {{ else if not .p1.IsHome }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+  {{ end }}
+  {{if eq .p1.Title .current.Title }}
+  <a class = "top-nav-item current" href="{{ .p1.Permalink }}">&nbsp{{ .p1.Title }}</a>
+  {{ else }}
+  <a class = "top-nav-item" href="{{ .p1.Permalink }}">&nbsp{{ .p1.Title }}</a> >
+  {{end}}
+{{ end }}

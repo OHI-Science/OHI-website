@@ -10,5 +10,12 @@
     fill: grey;
     opacity: 0.2;
   }
-  
+
+  &--dark {
+    color: #212d5e;
+    .logo__image {
+      fill: #212d5e;
+    }
+  }
+
 }
