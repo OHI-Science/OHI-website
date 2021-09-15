@@ -72,6 +72,23 @@ function init() {
         })
       })
   }
+
+  // If this is a regions dropdown, then render it
+  const regionsDropdownContainers = document.querySelectorAll(".regions-dropdown");
+  if (regionsDropdownContainers) {
+    import('./regionsDropdown')
+      .then(function (regionsDropdown) {
+        regionsDropdownContainers.forEach(function (regionsDropdownContainer) {
+          regionsDropdown.default().then(
+            function (dropdownEl) {
+              regionsDropdownContainer.append(dropdownEl)
+            }
+          )
+        })
+      })
+  }
+
+
 }
 
 export default { init }

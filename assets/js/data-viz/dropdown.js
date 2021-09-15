@@ -6,7 +6,7 @@
  * @typedef {Object} Item
  * @property {string} id - The hidden identifier (or 'value') for the item
  * @property {string} label - The user-facing name of this item
- * @property {string} [icon] - (TODO) - An icon that will appear next to the label
+ * @property {string} [icon] - An icon that will appear next to the label
  * @property {string} [parent] - If this is a sub-item, the ID of the parent element. If a
  * parent is provided, then this item will appear as a sub-item and will use it's parents
  * icon. It should be appear after the parent in the Array of items. 

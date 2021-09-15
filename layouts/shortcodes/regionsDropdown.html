@@ -1,0 +1,8 @@
+
+{{ $options := dict }}
+{{ with .Get "label" }}
+  {{ $options = dict "label" . }}
+{{ end }}
+
+{{ partial "regionsDropdown" $options }}
+

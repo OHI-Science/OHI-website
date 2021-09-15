@@ -1,0 +1,20 @@
+/**
+ * regionsDropdown.scss
+ *
+ * Styles for the dropdown that shows a list of regions to navigate to
+ *
+ * Related files:
+ *  - assets/js/data-viz/regionsDropdown.js
+ *  - layouts/partials/regionsDropdown.html
+ *  - layouts/shortcodes/regionsDropdown.html
+ *
+ */
+
+
+.regions-dropdown {
+  &__label{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
