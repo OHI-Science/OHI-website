@@ -106,7 +106,7 @@ blockquote {
   --padding: 2rem;
   padding: var(--padding);
   width: 100%;
-  max-width: calc(#{$max-page-width} + (2 * var(--padding)));
+  max-width: calc(#{$max-content-width} + (2 * var(--padding)));
   margin-right: auto;
   margin-left: auto;
 

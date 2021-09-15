@@ -1,0 +1,33 @@
+
+/**
+ * socials.scss
+ *
+ * Social media links with icons
+ *
+ */
+
+/**
+ * Socials variables
+ */
+
+$socials-color-font: $text-color-dark;
+$socials-color-highlight: $highlight-color;
+
+.socials {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $text-color-dark;
+    &:hover {
+      fill: $highlight-color;
+    }
+  }
+}
