@@ -90,7 +90,7 @@
   src: local(""), url("../fonts/montserrat-v15-latin-900.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-900.woff") format("woff"); }
 
 html {
-  font-size: 19px; }
+  font-size: 16px; }
 
 *,
 *:after,
@@ -112,7 +112,7 @@ body {
 
 p {
   line-height: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: justify;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
@@ -122,23 +122,19 @@ p {
   background: #82828c;
   color: white; }
 
+a {
+  color: #1E40AF;
+  text-decoration: none;
+  font-weight: 500; }
+
 a:hover {
-  color: #696972; }
-
-a.text-primary:hover {
-  color: #696972 !important; }
-
-a.text-light:hover {
-  color: #696972 !important; }
+  color: #5ddae5; }
 
 h4 {
   transition: .2s ease; }
 
 a h4:hover {
   color: #696972; }
-
-.slick-slide {
-  outline: 0; }
 
 .section {
   padding-top: 90px;
@@ -157,12 +153,17 @@ a h4:hover {
 .border-primary {
   border-color: #ededf1 !important; }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: #212d5e;
-  letter-spacing: .03em;
+  letter-spacing: .03em; }
+
+h1, h2, h3, h4 {
+  font-weight: 800;
   text-transform: uppercase; }
+
+h5, h6 {
+  font-weight: 700; }
 
 blockquote {
   border-left: 3px solid #9ACED8;
@@ -170,6 +171,57 @@ blockquote {
   padding: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 2rem; }
+
+.full-width-page {
+  --padding: 2rem;
+  padding: var(--padding);
+  width: 100%;
+  max-width: calc(1400px + (2 * var(--padding)));
+  margin-right: auto;
+  margin-left: auto; }
+  .full-width-page__section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ededf1; }
+    .full-width-page__section:first-of-type {
+      border-top: none;
+      margin-top: 0; }
+
+.two-columns {
+  display: grid; }
+  @media only screen and (min-width: 900px) {
+    .two-columns {
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem; } }
+  .two-columns__centered-column {
+    display: grid;
+    justify-items: center; }
+
+.card-section {
+  width: auto;
+  padding: 1rem 3rem;
+  box-shadow: 0 1px 11px -1px rgba(0, 0, 0, 0.18);
+  border-radius: 4px; }
+
+.metric {
+  --size: 6.2rem;
+  --color: #212d5e;
+  line-height: var(--size);
+  font-size: calc( var(--size) * 0.4);
+  color: var(--color);
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.05em; }
+  .metric--small {
+    --size: 2.2rem; }
+  .metric--circle {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: var(--color);
+    color: white; }
+  .metric--inline {
+    display: inline-block; }
 
 .bg-home {
   background-image: url("/images/bg-home.jpeg");
@@ -379,7 +431,7 @@ blockquote {
       @media only screen and (min-width: 900px) {
         .nav__link--toplevel {
           margin: 0;
-          font-size: 0.95rem;
+          font-size: 1.2rem;
           font-weight: 600; } }
       .nav__link--toplevel:after {
         content: "";
@@ -700,7 +752,7 @@ blockquote {
   letter-spacing: 0.03em;
   padding-top: 1.1rem;
   font-size: 2.9rem;
-  max-width: 1440px;
+  max-width: 1400px;
   width: 100%;
   margin: auto; }
   .section-title:before {
@@ -1133,7 +1185,6 @@ blockquote {
 .bar-chart {
   --bar-chart-color-bar: #1E40AF;
   --bar-chart-color-highlight: #5ddae5;
-  height: 25rem;
   width: 100%; }
   .bar-chart__plot {
     height: 100%;
@@ -1148,6 +1199,31 @@ blockquote {
     fill: #5ddae5; }
 
 /**
+ * tooltip.scss
+ *
+ * Styles for all tooltips
+ *
+ * Related files:
+ *  - assets/js/data-viz/tooltip.js
+ *
+ */
+.tooltip {
+  --tooltip-color-bkg: #fff;
+  --tooltip-color-border: #ededf1;
+  --tooltip-color-text: #696972;
+  --tooltip-border-radius: 4px;
+  position: absolute;
+  display: grid;
+  padding: 0.35rem 0.5rem;
+  align-items: center;
+  pointer-events: none;
+  box-shadow: 0 1px 4px black rgba(0, 0, 0, 0.3);
+  border-radius: var(--tooltip-border-radius);
+  background: var(--tooltip-color-bkg);
+  border: solid var(--tooltip-color-border) 1px;
+  color: var(--tooltip-color-text); }
+
+/**
  * regionTooltip.scss
  *
  * Styles for the tooltips used to show the score for a region, used in multiple data
@@ -1158,22 +1234,8 @@ blockquote {
  *
  */
 .region-tooltip {
-  --tooltip-color-bkg: #fff;
-  --tooltip-color-border: #ededf1;
-  --tooltip-color-text: #696972;
-  --tooltip-border-radius: 4px;
-  position: absolute;
-  display: grid;
   grid-template-columns: max-content max-content;
-  gap: 0.5rem;
-  padding: 0.35rem 0.5rem;
-  align-items: center;
-  pointer-events: none;
-  box-shadow: 0 1px 4px black rgba(0, 0, 0, 0.3);
-  border-radius: var(--tooltip-border-radius);
-  background: var(--tooltip-color-bkg);
-  border: solid var(--tooltip-color-border) 1px;
-  color: var(--tooltip-color-text); }
+  gap: 0.5rem; }
 
 /**
  * globe.scss
@@ -1282,15 +1344,25 @@ blockquote {
  *
  */
 .aster {
-  --aster-size-icon: 2.7rem;
+  --aster-size-icon: 2.2rem;
   --aster-color-text: #696972;
   --aster-color-foreground-subtle: #ededf1;
   display: grid;
   /* a column for the plot, then legend */
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
   gap: 3rem;
   align-items: center;
   margin: auto; }
+  @media only screen and (min-width: 900px) {
+    .aster {
+      grid-template-columns: auto max-content; } }
+  .aster__plot {
+    margin: auto;
+    max-width: 400px; }
+    @media only screen and (min-width: 900px) {
+      .aster__plot {
+        max-width: unset; } }
   .aster__solid-arc:hover {
     transform: scale(1.025); }
   .aster__solid-arc {
@@ -1305,20 +1377,24 @@ blockquote {
   .aster__mean-score {
     color: var(--aster-color-text);
     line-height: 1;
-    font-size: 5rem; }
+    font-size: 3.5rem;
+    font-weight: 800; }
   .aster__legend-list {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    text-transform: uppercase;
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 0; }
+    gap: 0rem; }
   .aster__legend-item {
     display: grid;
     grid-template-columns: var(--aster-size-icon) auto;
     gap: 0.6rem;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.4rem 0;
     cursor: pointer;
     width: fit-content; }
   .aster__legend-item--dimmed {
@@ -1327,7 +1403,7 @@ blockquote {
     height: var(--aster-size-icon);
     width: var(--aster-size-icon);
     stroke: currentColor;
-    stroke-width: 4px;
+    stroke-width: 4.5px;
     margin-right: 0.7rem; }
 
 /**
@@ -1340,8 +1416,7 @@ blockquote {
  *
  */
 .region-aster__plot {
-  padding: 2rem;
-  width: 75%; }
+  max-width: 1000px; }
 
 .region-aster__controls {
   max-width: 50rem;
@@ -1359,3 +1434,112 @@ blockquote {
   font-weight: 600;
   display: block;
   margin-bottom: 1rem; }
+
+/**
+ * timeSeries.scss
+ *
+ * Styles for the time series visualization.
+ *
+ * Related files:
+ *  - assets/js/data-viz/timeSeries.js
+ *
+ */
+.time-series {
+  --time-series-color-highlight: #1E40AF;
+  --time-series-color-line: #ededf1;
+  --time-series-color-emphasis: #696972;
+  --time-series-color-text: #696972; }
+  .time-series__y-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.4rem; }
+  .time-series__axis {
+    color: var(--time-series-color-text);
+    opacity: 0.8;
+    font-size: 0.5rem;
+    stroke-width: 0.5; }
+  .time-series__dot {
+    fill: var(--time-series-color-highlight); }
+  .time-series__line {
+    fill: none;
+    stroke-width: 0.7;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke: var(--time-series-color-line);
+    mix-blend-mode: multiply; }
+    .time-series__line--subtle {
+      stroke-width: 0.5;
+      mix-blend-mode: normal; }
+    .time-series__line--focus {
+      stroke: var(--time-series-color-highlight);
+      stroke-width: 2;
+      mix-blend-mode: normal; }
+    .time-series__line--highlight {
+      stroke: var(--time-series-color-highlight);
+      stroke-width: 2;
+      mix-blend-mode: normal; }
+    .time-series__line--emphasize {
+      stroke: var(--time-series-color-emphasis);
+      stroke-width: 1.3;
+      mix-blend-mode: normal; }
+
+/**
+ * regionTimeSeries.scss
+ *
+ * Styles for the time series visualization with goal dropdown on region pages.
+ *
+ * Related files:
+ *  - assets/js/data-viz/regionTimeSeries.js
+ *
+ */
+.region-time-series__controls {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 30rem;
+  z-index: 2; }
+
+.region-time-series__control {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1rem; }
+
+.region-time-series__label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600; }
+
+/**
+ * gauge.scss
+ *
+ * Styles for a gauge plot, showing a single metric on a possible range of values.
+ *
+ * Related files:
+ *  - assets/js/data-viz/gauge.js
+ *
+ */
+.gauge {
+  --gauge-color-marker-label: #adadb8;
+  --gauge-color-marker-label-hover: #696972;
+  --gauge-color-label: #212d5e;
+  --gauge-color-ticks: #fff;
+  width: 100%;
+  height: 25rem;
+  margin: auto; }
+  .gauge__plot {
+    width: 100%;
+    height: 100%; }
+  .gauge__needle {
+    opacity: 0.9;
+    fill: var(--gauge-color-label);
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.5)); }
+  .gauge__metric {
+    font-weight: 600;
+    fill: var(--gauge-color-label); }
+  .gauge__tick-label {
+    fill: var(--gauge-color-marker-label);
+    cursor: pointer; }
+    .gauge__tick-label:hover {
+      fill: var(--gauge-color-marker-label-hover); }
+  .gauge__tick {
+    fill: var(--gauge-color-ticks); }
