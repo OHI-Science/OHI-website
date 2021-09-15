@@ -3,14 +3,16 @@
 {{ $id := .Params.regionId }}
 
 {{ $rank := .Params.rank }}
-{{ $score := .Params.meanScore }}
-{{ $globalMeanScore := .Params.globalMeanScore }}
+{{ $score := .Params.meanScore | math.Round }}
+{{ $globalMeanScore := .Params.globalMeanScore | math.Round }}
 {{ $numRegions := .Params.numRegions }}
 {{ $name := .Params.title }}
 
-{{ $globalComparator := "higher" }}
-{{ if lt $score $globalMeanScore }}
-  {{ $globalComparator := "lower" }}
+{{ $globalComparator := "higher than" }}
+{{ if eq $score $globalMeanScore }}
+  {{ $globalComparator := "equal to" }}
+{{ else if lt $score $globalMeanScore }}
+  {{ $globalComparator := "lower than" }}
 {{ end }}
 
 {{ $goalSection := site.GetPage "goals" }}
@@ -20,7 +22,7 @@
     <section class="full-width-page__section">
       <div class="score-gauge" data-region-id="{{ $id }}"></div>
         <p style="max-width:35rem; margin-top:3rem; text-align:center; margin:auto">
-        The overall Ocean Health Index score for {{ $name }} is {{ $score }} out of 100, which is <b>{{ $globalComparator }}</b> than the global average score of {{ $globalMeanScore }} out of 100.<p>
+        The overall Ocean Health Index score for {{ $name }} is {{ $score }} out of 100, which is <b>{{ $globalComparator }}</b> the global average score of {{ $globalMeanScore }} out of 100.<p>
     </section>
 
     <section class="full-width-page__section">
@@ -33,7 +35,7 @@
       <h3>Goal evalulation</h3>
       <p>Click on a goal to learn how it is calculated. 
         {{ with $goalSection.Permalink }}
-        <a href="{{ . }}">Learn more about goals</a>.
+          <a href="{{ . }}">Learn more about goals</a>.
         {{ end }}
       </p>
       <div class="card-section" style="padding-bottom:10rem">
