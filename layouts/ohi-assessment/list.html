@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $rows := getJSON "/content/data/assessments.json" }}
+
+  <section class="section">
+  {{- partial "layout/left-col.html" . -}}
+  <div class="column-center">
+    <img src="/images/misc/ohi-plus-icon.svg" class="ohi-plus-assessment-icon"> Indicates an OHI+ assessment
+  <div class="ohi-assessments-banner">
+    <div class="anchor-link-container">
+      {{ range $key, $val := $rows }}
+        <a class="assessment-anchor-links" href=#{{ $key }}><h4 class=assessment-anchor-link-text>{{ $key }}</h4></a>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="ohi-assessments">
+    {{range $key, $val := $rows}}
+    <div class="assessment-area">
+        <a name={{ $key }}><h2 class="assessment-title">{{ $key }}</h2></a>
+        {{range $data := .}}
+          <div class="assessment">
+            {{- partial "functions/getAssessment.html" . }}
+          </div>
+        {{end}}
+      </div>
+    {{end}}
+  </div>
+  </div>
+  {{- partial "layout/center-col.html" . -}}
+  {{- partial "layout/right-col.html" . -}}
+  </section>
+{{end}}
