@@ -10,17 +10,6 @@ description: "This sub-goal describes livelihood quantity and quality for people
 
 This sub-goal describes the quantity and quality of marine-related jobs for people living on the coast, such as: commercial fishing, mariculture, tourism and recreation, and whale watching. 
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that jobs and wages have declined substantially compared to their reference points leaving much room for improvement.
-
-
-Livelihood scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 
 ----
 
@@ -32,7 +21,7 @@ Ideally, this sub-goal describes the quality and quantity as well as the sustain
 
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
 

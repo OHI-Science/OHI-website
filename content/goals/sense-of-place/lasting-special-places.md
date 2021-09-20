@@ -9,16 +9,6 @@ description: "This sub-goal focuses on those geographic locations that hold part
 ### IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT
 The Lasting Special Places sub-goal measures how well we are protecting, for current and future generations, the locations that contribute to marine-related cultural identity. 
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-A score of 100 means that a country is protecting at least 30% of their coastal areas (3nm offshore and 1km inland).  Currently, many countries are acheiving this goal, but there is more progress to be made.
-
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
-Global lasting special places scores have increased by ??? points per year since 2012. Which shows the remarkable effectiveness of programs encouraging conservation.
 
 ----
 
@@ -33,7 +23,7 @@ Well-maintained and protected lasting special places provide culturally signific
 [Question: is it possible to recreate the Papahanaumokuakea infographic stuff located here: http://www.oceanhealthindex.org/methodology/goals/sense-of-place/lasting-special-places]
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
 

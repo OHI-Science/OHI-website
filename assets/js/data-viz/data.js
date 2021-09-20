@@ -30,10 +30,12 @@ if (params.dataConfig) {
  * @property {string} [options.dataPaths.regions] The path to the topoJSON file that has
  * ocean, land, and eez feature information
  * @property {string} [options.goalsConfig] JSON that comprises the array of OHI goals, in
-    the order to be displayed in the UI. Each goal in the array is an Object that
-    comprises the id (e.g. 'AO'), label (e.g. 'Artisanal Fishing Opportunities'), SVG
-    icon, and, if it is a sub-goal, the parent ID. Sub-goals do not need icons, they can
-    use the parent icon. Icons *must* be SVG content embedded into the JSON.
+ * the order to be displayed in the UI. Each goal in the array is an Object that comprises
+ * the id (e.g. 'AO'), label (e.g. 'Artisanal Fishing Opportunities'), SVG icon, and, if
+ * it is a sub-goal, the parent ID. Sub-goals do not need icons, they can use the parent
+ * icon. Icons *must* be SVG content embedded into the JSON.
+ * @property {string} [options.regionPageLinks] JSON map of region ID to the permalink for
+ * each region page
  * @property {string} [options.missingValueCode] The string that is used in the scores CSV
  * that indicates a value is missing.
  *
@@ -47,7 +49,8 @@ function data({
     scores: 'scores.csv',
     regions: 'regions.topojson',
   },
-  goalsConfig = {}
+  goalsConfig = {},
+  regionPageLinks = {}
 } = dataBundleConfig) {
 
   if (!dataPaths || !dataPaths.scores || !dataPaths.regions) {
@@ -73,7 +76,7 @@ function data({
   async function importData() {
     const features = await importJSON(dataPaths.regions)
     const scores = await importCSV(dataPaths.scores)
-    return { goalsConfig, features, scores }
+    return { goalsConfig, regionPageLinks, features, scores }
   }
 
   function parseIcons(dataIn) {
@@ -179,6 +182,14 @@ function data({
 
     // Overwrite scores with the new grouped format
     data.scores = groupedData;
+
+    // Convert the regionPageLinks from an Array (faster for Hugo to create) to a map
+    // (easier to use in JS)
+    const regionPageLinksMap = {}
+    data.regionPageLinks.forEach(function (pageLink) {
+      regionPageLinksMap[pageLink.regionId] = pageLink.url
+    })
+    data.regionPageLinks = regionPageLinksMap
 
     return data
   }

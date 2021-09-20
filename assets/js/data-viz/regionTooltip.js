@@ -1,16 +1,9 @@
-let d3 = window.d3;
-
-// if (!d3) {
-//   d3 = Object.assign(
-//     {},
-//     require("d3-selection")
-//   );
-// }
+import baseTooltip from './tooltip.js'
 
 /**
  * The classes to add to the various HTML elements that are combined to create a tooltip.
  * The specific HTML elements are defined in the property definitions.
- * @typedef {Object} BarChartClasses
+ * @typedef {Object} TooltipClasses
  * @property {string} tooltip - The main tooltip div. If the tooltip's position is set
  * with x and y coordinates, the element's position style should be set to 'absolute'.
  */
@@ -47,19 +40,24 @@ function regionTooltip({
   },
 } = {}) {
 
-
-  // Create and hide the tooltip
-  const tooltip = d3.select(containerSelector)
-    .append('div')
-    .attr('class', classes.tooltip)
-
-  hide();
+  const tooltip = baseTooltip({
+    containerSelector: containerSelector,
+    displayProperty: displayProperty,
+    offsetY: offsetY,
+    offsetX: offsetX
+  });
+  
+  const tooltipSelection = tooltip.tooltipSelection
+  // Clear the default contents of the tooltip element
+  tooltip.tooltipSelection.node().innerHTML = '';
+  // Add the region class to the tooltip element
+  tooltip.tooltipSelection.node().classList.add(classes.tooltip)
 
   // Create a span to update with region name
-  const tooltipRegionText = tooltip.append('span')
+  const tooltipRegionText = tooltipSelection.append('span')
 
   // Add a circle in the tooltip to show the score of the hovered region
-  const tooltipSvg = tooltip
+  const tooltipSvg = tooltipSelection
     .append('svg')
     .attr('preserveAspectRatio', 'xMidYMid')
     .attr('height', (circleRadius * 2))
@@ -67,8 +65,8 @@ function regionTooltip({
 
   const tooltipScoreCircle = tooltipSvg.append('circle')
     .attr('r', circleRadius)
-    .attr("cx", circleRadius)
-    .attr("cy", circleRadius)
+    .attr('cx', circleRadius)
+    .attr('cy', circleRadius)
 
   const tooltipScoreText = tooltipSvg
     .append('text')
@@ -79,11 +77,12 @@ function regionTooltip({
     .attr('alignment-baseline', 'middle')
     .attr('fill', 'black')
 
-  // Update the name, number, and circle color of the tooltip. Make sure it's not hidden.
+  // Change the tooltip update function. Update the name, number, and circle color of the
+  // tooltip. Make sure it's not hidden.
   function update(text, num, color) {
 
     // Round the number displayed in the circle
-    const displayNumber = num ? Math.round(num) : "NA"
+    const displayNumber = num || num === 0 ? Math.round(num) : 'NA'
 
     tooltipRegionText
       .text(text)
@@ -94,38 +93,20 @@ function regionTooltip({
     tooltipScoreCircle
       .attr('fill', color)
 
-    tooltip
+    tooltipSelection
       .style('display', displayProperty)
       .style('opacity', 1);
 
   }
 
-  // Hide the tooltip
-  function hide(event, feature) {
-    tooltip.style('opacity', 0)
-      .style('display', 'none');
-  }
-
-  // Change the x and y location of the tooltip
-  function reposition(x, y, addTooltipHeight = false, addHalfTooltipWidth = false) {
-    let tooltipDimensions = null
-    if (addTooltipHeight || addHalfTooltipWidth) {
-      tooltipDimensions = tooltip.node().getBoundingClientRect()
+  return Object.freeze(
+    {
+      update: update,
+      hide: tooltip.hide,
+      reposition: tooltip.reposition,
+      tooltipSelection: tooltipSelection
     }
-    if (addTooltipHeight) {
-      y -= tooltipDimensions.height
-    }
-    if (addHalfTooltipWidth) {
-      x -= (tooltipDimensions.width * 0.5)
-    }
-    tooltip
-      .style('left', x + offsetX + 'px')
-      .style('top', y + offsetY + 'px');
-  }
-
-  return Object.freeze({
-    update, hide, reposition
-  })
+  )
 
 };
 

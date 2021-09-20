@@ -1,0 +1,32 @@
+/**
+ * regionTimeSeries.scss
+ *
+ * Styles for the time series visualization with goal dropdown on region pages.
+ *
+ * Related files:
+ *  - assets/js/data-viz/regionTimeSeries.js
+ *
+ */
+
+.region-time-series {
+
+  &__controls {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 30rem;
+    z-index: 2;
+  }
+
+  &__control {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+}

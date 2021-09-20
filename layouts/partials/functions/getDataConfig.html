@@ -3,6 +3,7 @@
 {{- $dataBundle := site.GetPage "data" -}}
 {{- $dataFilesList := $dataBundle.Params.dataFiles -}}
 {{ $goalsData := partial "functions/getGoalsData" (dict "format" "hugo") }}
+{{ $regionPageLinks := partial "functions/getRegionPageLinks" (dict "format" "hugo") }}
 
 {{/* Get the permanent links for the data files */}}
 {{ $dataFullPaths := dict }}
@@ -19,6 +20,7 @@
   "missingValueCode" $dataBundle.Params.missingValueCode
   "dataPaths" $dataFullPaths
   "goalsConfig" $goalsData
+  "regionPageLinks" $regionPageLinks
 }}
 
 {{/* Make the JSON */}}

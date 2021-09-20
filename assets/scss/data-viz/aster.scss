@@ -11,16 +11,29 @@
 
 .aster {
 
-  --aster-size-icon: 2.7rem;
+  --aster-size-icon: 2.2rem;
   --aster-color-text: #{$text-color};
   --aster-color-foreground-subtle: #{$border-color};
   display: grid;
 
   /* a column for the plot, then legend */
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
   gap: 3rem;
   align-items: center;
   margin: auto;
+
+  @include desktop {
+    grid-template-columns: auto max-content;
+  }
+
+  &__plot {
+    margin: auto;
+    max-width: 400px;
+    @include desktop {
+      max-width: unset;
+    }
+  }
 
   &__solid-arc:hover {
     transform: scale(1.025);
@@ -44,16 +57,20 @@
   &__mean-score {
     color: var(--aster-color-text);
     line-height: 1;
-    font-size: 5rem;
+    font-size: 3.5rem;
+    font-weight: 800;
   }
 
   &__legend-list {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    text-transform: uppercase;
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 0;
+    gap: 0rem;
   }
 
   &__legend-item {
@@ -61,7 +78,7 @@
     grid-template-columns: var(--aster-size-icon) auto;
     gap: 0.6rem;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.4rem 0;
     cursor: pointer;
     width: fit-content;
   }
@@ -74,7 +91,7 @@
     height: var(--aster-size-icon);
     width: var(--aster-size-icon);
     stroke: currentColor;
-    stroke-width: 4px;
+    stroke-width: 4.5px;
     margin-right: 0.7rem;
   }
 }

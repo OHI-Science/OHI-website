@@ -14,8 +14,7 @@ The global OHI score for the 2021 assessment was XXX. This interactive map shows
 
 {{< scoresGlobe >}}
 
-
-[Canada region page example]({{< ref "regions/canada.md" >}})
+{{< regionsDropdown >}}
 
 Results are shown for the exclusive economic zone (EEZ) of 220 coastal countries or territories.  EEZ's extend 200 nautical miles (370 KM) offshore from the coast and describe the ocean area a country assumes jurisdiction over the exploration and use of resources. 
 

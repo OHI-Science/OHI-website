@@ -10,16 +10,6 @@ description: "This sub-goal includes all habitats in the study area, and assess 
 
 This goal measures the status of marine habitats that are particularly important in supporting large numbers of marine species. 
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that the six habitats assessed- mangroves, coral reefs, seagrass beds, salt marshes, sea ice, and subtidal soft-bottom habitats- are still relatively healthy and intact on a global basis. However, the condition of the assessed habitats has declined over time. Continued decline in the future would undermine the score for Biodiversity and impact many other aspects of ocean health.
-
-
-Global mariculture scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
 ----
 
@@ -35,6 +25,6 @@ This sub-goal score contrasts with numerous scientific studies and media reports
 
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]

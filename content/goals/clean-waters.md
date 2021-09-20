@@ -12,16 +12,6 @@ weight: 9
 ### CLEAN WATERS ARE IMPORTANT
 The Clean Water goal captures the degree to which local waters are unpolluted by human-made causes. 
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that there large opportunities for improvement. This goal scores highest when the contamination level is zero.Reducing the inflow of chemicals, nutrients, human and animal wastes and trash requires remedial actions at every level of society as well as adjustments to behavior on an individual basis.
-
-Clean waters scores have ??? by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 
 ----
 
@@ -38,7 +28,7 @@ A major source of marine pollution is agricultural activities, such as the use o
 Another source of pollution comes from human waste which causes nutrient pollution and for countries with poor sanitaiton and inadequate sewage treatment can introduce bacteria, viruses and parasites into water systems and coastal waters, resulting in disease and infection.  
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
 

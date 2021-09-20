@@ -8,7 +8,7 @@ To run the server, run the following from the top level ohi-site directory,
 
 ```
 npm install
-hugo server
+hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 ```
 
 # Adding or updating content
@@ -41,6 +41,10 @@ Besides using [regular markdown table syntax](https://www.markdownguide.org/exte
 3. If the CSV uses a separator other than a comma, then set the separator in the shortcode like so: `{{< csvTable path="my-table.csv" sep=";" >}}`
 4. The contents of the table will be displayed in the page.
 
+### `{{< regionsDropdown label="Select a region" >}}`
+
+The `regionsDropdown` shortcode creates a dropdown with all of the OHI region names that are included in the `scores.csv` file. When a user selects one of the regions, then they are directed to the score page for that region. The `label` text option is optional.
+
 ## Goal pages
 
 Goal and sub-goal pages, including goal index page, require more front-matter than other content pages. In addition to the "title", "name", and "bg_image" properties, goal pages use the properties "id", "icon", "description", and "color". These extra properties control how the OHI goal information is presented on the website, including creating the data visualizations.
@@ -68,6 +72,12 @@ weight: 1
 ---
 ```
 
+## Region pages
+
+Region pages are the pages that show the scores and plots for a particular country or region. The markdown files that create these pages are automatically generated using the the R file `scripts/create-region-pages.Rmd`. This R code creates (or overwrites) each of the markdown pages using the values set in the `scores.csv` file.
+
+If the `scores.csv` file is updated, or the region pages ever need to be re-created for any reason, run the R file `scripts/create-region-pages.Rmd` 
+
 # Making changes to the menu
 
 ## Top-level items
@@ -88,6 +98,12 @@ menu:
 - "parent" gives the name of the top-level item under which this page should be listed
 - "weight" indicates the order of this page relative to other pages in the same dropdown menu
 
+# Changing social media links
+
+The website shows links to facebook and twitter. The URLs for these links can be configured in the file `config/_default/params.yaml`
+
 # Making changes to the data
 
 See `content/data/_index.md`
+
+Remember that when the `scores.csv` file is updated, the region pages should be re-generated. See the "Region pages" section, above.

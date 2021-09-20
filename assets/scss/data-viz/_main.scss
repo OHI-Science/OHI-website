@@ -1,7 +1,10 @@
 
 @import 'dropdown';
+@import 'regionsDropdown';
+
 @import 'numberSlider';
 @import 'barChart';
+@import 'tooltip';
 @import 'regionTooltip';
 
 @import 'globe';
@@ -9,3 +12,8 @@
 
 @import 'aster';
 @import 'regionAster';
+
+@import 'timeSeries';
+@import 'regionTimeSeries';
+
+@import 'gauge'

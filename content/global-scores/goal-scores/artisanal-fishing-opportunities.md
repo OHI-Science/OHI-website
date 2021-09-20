@@ -19,6 +19,4 @@ Global fisheries scores have decreased by ??? points per year since 2012.
 
 [Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
-
-
 [Learn more about this goal]({{< ref "goals/artisanal-fishing-opportunities.md" >}})

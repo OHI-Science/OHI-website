@@ -10,16 +10,6 @@ description: "Iconic species are those that are relevant to local cultural ident
 
 This goal measures the conservation status of marine species. 
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that many marine species are at risk and there is the potential risk of losing a significant proportion of marine species diversity.
-
-Global species scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 ----
 
 ### GOAL DESCRIPTION
@@ -31,7 +21,7 @@ From the largest predators to microscopic plankton, these species depend upon ea
 This sub-goal assesses the health of all marine species present in a country's EEZ, including endangered species and species in relatively good conditions. The presence of species that are not at risk leads to a higher score.
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
 

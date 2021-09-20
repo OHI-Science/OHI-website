@@ -9,16 +9,6 @@ description: "Mariculture measures the ability to reach the highest levels of se
 ### AN INCREASINGLY IMPORTANT SOURCE OF FOOD
 This goal assesses our ability to sustainably maximize the production of farm-raised marine food.
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could.  A small number of countries are responsible for almost all global mariculture production.
-
-Global mariculture scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 ----
 
 ### GOAL DESCRIPTION
@@ -33,9 +23,10 @@ This approach does not penalize regions that have less geographic area conducive
 High scores mean that a country is sustainably rearing as much farmed fish and seafood as possible based on its own potential. A low score can indicate one of two things – that seafood is being farmed in an unsustainable manner or that regions are not maximizing their potential to farm marine animals or seaweed in their coastal territory.
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
+
 
 ### OTHER RESOURCES
 FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS (FAO)

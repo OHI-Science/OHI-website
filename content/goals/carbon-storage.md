@@ -13,15 +13,6 @@ weight: 4
 
 This goal captures the ability of coastal habitats to store carbon given the amount of carbon they store and their health.
 
-### CURRENT SCORE
-
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-The current score indicates that although, in many places, these habitats remain healthy and intact, a significant number have declined significantly since 1980 and more declines are likely in the near future. More protection and restoration must occur if they are to sequester and store the maximum amount of carbon possible.
-
-Global mariculture scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
 ----
 
@@ -37,7 +28,7 @@ A score of 100 would indicate that these habitats are all still intact or have b
 Approximately one-third of the overall area of coastal habitats has been lost in the last 50 years and the remainder is severely threatened.  Destruction of these ecosystems means less carbon is stored in surrounding sediment and the resulting carbon emissions accelerate the rate of global climate change.  Majour causes of destruction of these systems include draining or clearing for agriculture or aquaculture, coastal pollution, and unsustainable coastal development.
 
 #### LEARN MORE
-Get into the weeds exploring the global OHI methods.  Or, get practical guidance for developing this goal for other assessments.
+Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 [Two buttons: OHI Model, Practical Guidance]
 

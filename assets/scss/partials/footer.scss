@@ -1,20 +1,89 @@
-.footer-bottom-wrap{
-  background-color: #ebebeb;
-  padding: 20px 0 0;
-  height: 75px;
-  border-top: 1px solid rgba(30,44,94,.2); 
-}
+/**
+ * footer.scss
+ *
+ * The main footer element at the bottom of every page.
+ *
+ */
 
-.footer-legal-links {
-  float: right;
-  text-align: right;
-}
+/**
+ * Footer variables
+ */
 
-.footer-copyright {
-  float: left;
-  padding-left: 10px;
-}
+$footer-color-font: $text-color-dark;
+$footer-color-background: $body-color-darker;
+$footer-color-background-legal: $subtle-accent-color;
+$footer-color-border: $border-color;
+$footer-color-highlight: $highlight-color;
 
-.footer-container {
-  max-width: 1020px;
+
+.footer {
+
+  color: $footer-color-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $footer-color-background;
+  border-top: 1px solid $footer-color-border;
+
+  &__content {
+    --padding: 2rem;
+    width: 100%;
+    max-width: calc(#{$max-content-width} + (2 * var(--padding)));
+    padding: var(--padding);
+
+    &--top {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    &--bottom {
+      --padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    height: 5rem;
+    text-decoration: none;
+
+    &:hover {
+      .logo {
+        fill: $footer-color-highlight;
+      }
+    }
+  }
+
+  &__socials {
+    // container for the social media links
+  }
+
+  &__legal {
+    width: 100%;
+    background-color: $footer-color-background-legal;
+    border-top: 1px solid $footer-color-border;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+
+  &__legal-link{
+    color: $footer-color-font;
+    text-decoration: none;
+
+    &:hover{
+      color:$footer-color-highlight;
+    }
+
+    &:not(:last-child):after{
+      content: "|";
+      padding: 0 0.5rem 0 0.7rem;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+{{/* Find the region page index */}}
+
+{{ $regionSection := site.GetPage "regions" }}
+
+{{/* Get top-level region pages */}}
+{{ $regionPages := $regionSection.Pages }}
+
+{{/* The list of regions with properties */}}
+{{ $regionsData := slice }}
+
+{{/* Range through the remaining top-level regions */}}
+{{ range $regionPage := $regionPages }}
+  {{ $regionData := dict "regionId" ($regionPage.Params.regionId | string) "url" $regionPage.Permalink }}
+  {{ $regionsData = $regionsData | append $regionData }}
+{{ end }}
+
+{{ if eq .format "json" }}
+  {{/* Return the Hugo slice of dictionaries as a JSON array of objects */}}
+  {{ $regionsData = $regionsData | jsonify }}
+{{ end }}
+{{ return $regionsData }}

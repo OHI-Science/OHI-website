@@ -12,12 +12,6 @@ weight: 1
 ### HARVESTING SEAFOOD SUSTAINABLY
 This goal assesses our ability to sustainably maximize wild-caught or farmed marine foods.
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
-
-Global food provision scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
 ----
 
 One of the most fundamental services the ocean provides people is the provision of food, whether it is helping meet the basic nutritional needs of over half of the world’s population or providing high-end sushi. 

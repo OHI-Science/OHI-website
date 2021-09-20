@@ -1,13 +1,25 @@
 <!-- footer -->
-<footer>
-  <div class="footer-bottom-wrap">
-    <div class="footer-container">
-            <div class="footer-copyright">©<script>document.write(new Date().getFullYear());</script> Ocean Health Index</div>
-            <div class="footer-legal-links">
-                <a class="footer-privacy" href="/privacy-policy">Privacy Policy</a>
-                |
-                <a class="footer-tos" href="/terms-of-service">Terms of Service</a>
-            </div>
+<footer class="footer">
+  <div class="footer__content footer__content--top">
+    <a class="footer__logo" href="{{ .Site.BaseURL }}">
+      {{- partial "logo.html" (dict "showTitle" true "style" "dark") -}}
+    </a>
+    <div class="footer__socials">
+      {{- partial "socials.html" . -}}
     </div>
-</div>
+    <div class="footer__site-map">
+      <-- site map goes here -->
+    </div>
+  </div>
+  <div class="footer__legal">
+    <div class="footer__content footer__content--bottom">
+      <div class="footer__copyright">
+        ©<script>document.write(new Date().getFullYear());</script> Ocean Health Index
+      </div>
+      <div class="footer__legal-links">
+        <a class="footer__legal-link" href="/privacy-policy">Privacy Policy</a>
+        <a class="footer__legal-link" href="/terms-of-service">Terms of Service</a>
+      </div>
+    </div>
+  </div>
 </footer>
