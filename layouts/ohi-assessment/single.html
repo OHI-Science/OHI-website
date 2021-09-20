@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $rows := getJSON "/content/data/assessments.json" }}
+
+  <section class="section">
+  {{- partial "layout/left-col.html" . -}}
+  <div class="column-center">
+    <div class="ohi-assessments">
+      {{ $name := .Params.name }}
+      {{range $key, $val := $rows}}
+        {{ range $a, $b := $val }}      
+          {{ if eq $b.name $name }}
+            <div class="individual-assessment">
+              {{- partial "functions/getAssessment.html" . }}
+            </div>
+          {{ end }}
+        {{ end }}
+      {{end}}
+    </div>
+  </div>
+  {{- partial "layout/center-col.html" . -}}
+  {{- partial "layout/right-col.html" . -}}
+  </section>
+{{end}}

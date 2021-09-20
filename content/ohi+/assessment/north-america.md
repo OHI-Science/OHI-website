@@ -1,9 +1,6 @@
 ---
-title: "OHI Assessments"
+type: ohi-assessment
+title: "OHI Assessments: North America"
 name: "Assessments"
 bg_image: "/images/banners/fish-school.jpg"
-menu:
-  main:
-    parent: 'OHI+'
-    weight: 2
 ---

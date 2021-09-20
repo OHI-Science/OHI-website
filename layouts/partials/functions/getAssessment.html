@@ -1,0 +1,18 @@
+{{/* Renders the HTML for a single OHI assessment. */}}
+
+  <div class="assessment-header">
+    {{ if .isPlus }}
+      <a class="assessment-link-head" href="{{ urlize .name }}"><h3 class="assessment-name">{{ .name }}</h3> </a><img src="/images/misc/ohi-plus-icon.svg" class="ohi-plus-assessment-icon">
+    {{ else }}
+      <a class="assessment-link-head" href="{{ urlize .name }}"><h3 class="assessment-name">{{ .name }}</h3></a>
+    {{ end }}
+  </div>
+  <div class="assessment-info"><p class='assessment-key'>Status:</p>&nbsp<p class='assessment-value'>{{ .Status }}</p> </div>
+  <div class="assessment-info"><p class='assessment-key'>Leading group:</p>&nbsp<p class='assessment-value'>{{ .LeadingGroup }}</p></div>
+  <div class="assessment-info"><p class='assessment-key'>Contact:</p>&nbsp<p class='assessment-value'>{{ .Contact }}</p></div>
+  <div class="assessment-info"><p class='assessment-key'>Description:</p>&nbsp<p class='assessment-value'>{{ .Description }}</p></div>
+  <div class="assessment-links">
+    {{ range .Links }}
+      <a class="assessment-link" href={{ .link }} target="_blank">{{ .name }}</a>
+    {{ end }}
+  </div>
