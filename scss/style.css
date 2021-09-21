@@ -850,33 +850,28 @@ blockquote {
   width: 100%;
   background: linear-gradient(to bottom, #1e2c5e 0, rgba(30, 45, 95, 0.98) 5%, rgba(31, 46, 98, 0.83) 17%, rgba(31, 46, 98, 0.81) 18%, rgba(33, 49, 103, 0.69) 25%, rgba(39, 58, 123, 0.23) 50%, rgba(40, 59, 126, 0.17) 54%, rgba(41, 61, 130, 0.07) 60%, rgba(42, 62, 133, 0.02) 65%, rgba(42, 62, 133, 0.01) 66%, rgba(42, 62, 133, 0) 67%, rgba(42, 62, 133, 0) 100%); }
 
-.sub-goals-container {
+.sub-goals-banner {
   position: relative;
   top: 1rem;
   justify-content: center;
   text-align: center;
   clear: both;
-  padding-top: 1rem; }
-
-.sub-goals-banner {
+  padding-top: 1rem;
   text-align: center;
   justify-content: center; }
-
-.sub-goals__logo {
-  height: 10rem; }
-
-.subgoal-text {
-  text-transform: uppercase;
-  position: absolute;
-  top: 2rem;
-  width: 100%;
-  font-size: 3.5rem; }
-
-.subgoal-title {
-  text-transform: uppercase;
-  top: 1rem;
-  position: absolute;
-  width: 100%; }
+  .sub-goals-banner__logo {
+    height: 10rem; }
+  .sub-goals-banner__text {
+    text-transform: uppercase;
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    font-size: 3.5rem; }
+  .sub-goals-banner__title {
+    text-transform: uppercase;
+    top: 1rem;
+    position: absolute;
+    width: 100%; }
 
 .breadcrumb {
   color: grey;
