@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $rows := getJSON "/content/data/assessments.json" }}
 
-  <section class="section">
+  <section class="default-section">
   {{- partial "layout/left-col.html" . -}}
   <div class="column-center">
     <div class="ohi-assessments">
