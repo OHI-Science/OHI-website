@@ -878,22 +878,22 @@ blockquote {
   position: absolute;
   width: 100%; }
 
-.top-nav {
+.breadcrumb {
   color: grey;
   display: flex;
   padding-top: 1rem;
   padding-left: 4rem;
   padding-bottom: 1rem; }
 
-.top-nav-item {
+.breadcrumb-item {
   color: grey;
   text-decoration: none;
   padding-right: 0.5rem; }
 
-.top-nav-item:visited {
+.breadcrumb-item:visited {
   color: grey; }
 
-.top-nav-item.current {
+.breadcrumb-item.current {
   color: #212d5e;
   font-weight: bold; }
 
