@@ -6,7 +6,7 @@
     {{- partial "nav.html" . -}}
     {{- if not .IsHome -}}
       {{- partial "page-header.html" . -}}
-      {{- partial "top-nav.html" . -}}
+      {{- partial "breadcrumb.html" . -}}
     {{- end -}}
     {{- block "main" . -}}{{- end -}}
     {{- partial "footer.html" . -}}

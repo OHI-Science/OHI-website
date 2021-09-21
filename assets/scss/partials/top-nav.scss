@@ -1,4 +1,4 @@
-.top-nav {
+.breadcrumb {
   color: grey;
   display: flex;
   padding-top: 1rem;
@@ -6,16 +6,16 @@
   padding-bottom: 1rem;
 }
 
-.top-nav-item {
+.breadcrumb-item {
   color: grey;
   text-decoration: none;
   padding-right: 0.5rem;
 }
-.top-nav-item:visited {
+.breadcrumb-item:visited {
   color: grey;
 }
 
-.top-nav-item.current{
+.breadcrumb-item.current{
   color:$text-color-dark;
   font-weight: bold;
 }
