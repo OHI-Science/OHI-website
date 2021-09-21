@@ -16,6 +16,7 @@ Data are prepared and scores calculated using freely available coding and versio
 Every year we improve the Ocean Health Index by incorporating new data, knowledge, and feedback. In order to make scores comparable among years, we recalculate previous year's results using the most recent methods and data. In addition to providing scores, we make all code available online on GitHub.  
 
 <br>
+
 ### OCEAN HEALTH INDEX SCORES
 
 The OHI 2020 assessment includes scores for years 2012 - 2020 for 220 coastal countries and territories.  Global and country Index scores are provided as well as goal scores and score components ([see score metadata](https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata)).  See [Methodology tab](https://ohi-science.org/OHI-website/methodology/) for an overview of OHI score calculations. 
