@@ -1,33 +1,29 @@
-.sub-goals-container {
+.sub-goals-banner {
   position: relative;
   top: 1rem;
   justify-content: center;
   text-align: center;
   clear:both;
   padding-top: 1rem;
-  
-}
-
-.sub-goals-banner {
   text-align: center;
   justify-content: center;
-}
 
-.sub-goals__logo {
-  height: 10rem;
-}
+  &__logo {
+    height: 10rem;
+  }
 
-.subgoal-text {
-  text-transform: uppercase;
-  position: absolute;
-  top: 2rem;
-  width:100%;
-  font-size: 3.5rem;
-}
+  &__text {
+    text-transform: uppercase;
+    position: absolute;
+    top: 2rem;
+    width:100%;
+    font-size: 3.5rem;
+  }
 
-.subgoal-title {
-  text-transform: uppercase;
-  top: 1rem;
-  position: absolute;
-  width: 100%;
+  &__title {
+    text-transform: uppercase;
+    top: 1rem;
+    position: absolute;
+    width: 100%;
+  }
 }
