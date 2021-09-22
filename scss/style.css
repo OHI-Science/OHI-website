@@ -1300,7 +1300,7 @@ blockquote {
   padding: 0.35rem 0.5rem;
   align-items: center;
   pointer-events: none;
-  box-shadow: 0 1px 4px black rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.25);
   border-radius: var(--tooltip-border-radius);
   background: var(--tooltip-color-bkg);
   border: solid var(--tooltip-color-border) 1px;
@@ -1379,6 +1379,10 @@ blockquote {
  *
  */
 .global-scores {
+  --global-scores-color-bkg: #fff;
+  --global-scores-color-border: #ededf1;
+  --global-scores-color-text: #696972;
+  --global-scores-border-radius: 4px;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -1386,7 +1390,9 @@ blockquote {
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   gap: 1.5rem;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  position: relative;
+  color: var(--global-scores-color-text); }
   .global-scores__controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1414,6 +1420,53 @@ blockquote {
   .global-scores__label {
     text-transform: uppercase;
     font-size: 0.8rem;
+    font-weight: 600; }
+  .global-scores__region-details {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--global-scores-color-bkg);
+    height: 100%;
+    max-width: 20rem;
+    border: 1px solid var(--global-scores-color-border);
+    border-radius: var(--global-scores-border-radius);
+    padding: 1.3rem;
+    box-shadow: 4px 0px 9px -2px rgba(0, 0, 0, 0.2);
+    flex-direction: column; }
+    .global-scores__region-details--visible {
+      display: flex; }
+  .global-scores__region-details-button {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    opacity: 0.4;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit; }
+    .global-scores__region-details-button svg {
+      height: 15px;
+      width: 15px;
+      stroke-width: 8px; }
+    .global-scores__region-details-button:hover {
+      opacity: 0.8; }
+  .global-scores__region-details-title {
+    margin: 0.5rem 0 1.5rem 0; }
+  .global-scores__region-details-paragraph {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--global-scores-color-text); }
+  .global-scores__region-details-link {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
     font-weight: 600; }
 
 /**
