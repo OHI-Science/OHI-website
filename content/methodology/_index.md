@@ -35,3 +35,8 @@ A region's index score is the average of its goal scores. Goal scores are weight
 
 ### GLOBAL GOAL AND INDEX SCORE
 The global score is the average of scores for all assessed regions weighted by EEZ area.  
+
+### LEARN MORE
+Learn more about goals, pressures, and resilience by clicking below.
+
+"Deep Dive" will take you to the complete OHI Global methods document where you can explore all aspects of the model and data we use to calculate the Global OHI scores.
