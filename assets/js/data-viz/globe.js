@@ -74,7 +74,7 @@ import colorScale from "./colorScale.js"
  * created by this function
  * @returns {Object} - Returns an object with functions that allow interaction with the globe
  */
-function globe ({
+function globe({
   container,
   featureData,
   scoreValues,
@@ -110,13 +110,16 @@ function globe ({
     return;
   }
 
+  // A flag to keep track of whether a region is currently selected or not.
+  let regionIsSelected = false;
+
   // For the the spherical, interactive globe.
   const projectionSphere = d3.geoOrthographic()
     .scale(245)
     .rotate([0, 0])
     .translate([width / 2, height / 2])
     .clipAngle(90);
-  
+
   // For the flat, non-interactive globe
   const projectionFlat = d3.geoMollweide()
     .scale(165)
@@ -129,7 +132,7 @@ function globe ({
   globeIcon = `<svg style="width:24px;height:24px" viewBox="0 0 24 24">
       <path fill="currentColor" d="M17.36,2.64L15.95,4.06C17.26,5.37 18,7.14 18,9A7,7 0 0,1 11,16C9.15,16 7.37,15.26 6.06,13.95L4.64,15.36C6.08,16.8 7.97,17.71 10,17.93V20H6V22H16V20H12V17.94C16.55,17.43 20,13.58 20,9C20,6.62 19.05,4.33 17.36,2.64M11,3.5A5.5,5.5 0 0,0 5.5,9A5.5,5.5 0 0,0 11,14.5A5.5,5.5 0 0,0 16.5,9A5.5,5.5 0 0,0 11,3.5M11,5.5C12.94,5.5 14.5,7.07 14.5,9A3.5,3.5 0 0,1 11,12.5A3.5,3.5 0 0,1 7.5,9A3.5,3.5 0 0,1 11,5.5Z" />
     </svg>`
-  
+
   flatIcon = `<svg style="width:24px;height:24px" viewBox="0 0 24 24">
       <path fill="currentColor" d="M20.5,3L20.34,3.03L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3M10,5.47L14,6.87V18.53L10,17.13V5.47M5,6.46L8,5.45V17.15L5,18.31V6.46M19,17.54L16,18.55V6.86L19,5.7V17.54Z" />
     </svg>`
@@ -139,7 +142,7 @@ function globe ({
   switchProjButton.innerHTML = flatIcon
   switchProjButton.onclick = toggleProjection;
   container.appendChild(switchProjButton)
-  
+
   // A function used to draw SVG paths in the given projection
   let path = d3.geoPath().projection(projection);
 
@@ -154,7 +157,7 @@ function globe ({
     .append('svg')
     .attr('preserveAspectRatio', 'xMidYMid')
     .attr('viewBox', [0, 0, width, height]);
-  
+
   // Create a base 'sphere'/water layer that will listen for the drag event.
   // Useful if the feature data doesn't cover the entire globe.
   const sphere = svg.append('path')
@@ -283,9 +286,21 @@ function globe ({
     removeFocus()
   }
 
-  // Remove the focused class from all regions
-  function removeFocus() {
-    svg.selectAll('.' + classes.focused).classed(classes.focused, focused = false);
+  // Remove the focused class from all regions.
+  // If silent is true, then an event will not be dispatched.
+  function removeFocus(silent = false) {
+    if (regionIsSelected) {
+      svg.selectAll('.' + classes.focused).classed(classes.focused, focused = false);
+      if (!silent) {
+        // Trigger an event for for any parent classes indicating that a region has been
+        // un-selected.
+        const focusRegionEvent = new CustomEvent(
+          'regionFocused', { detail: { regionId: null } }
+        );
+        container.dispatchEvent(focusRegionEvent);
+        regionIsSelected = false
+      }
+    }
   }
 
   // Country focus on option select
@@ -295,8 +310,16 @@ function globe ({
     const focusedRegionId = feature.properties[propertyKeys.id]
     const p = d3.geoCentroid(focusedRegion);
 
-    // Remove any previously added focused classes
-    removeFocus();
+    // Trigger an event for for any parent classes indicating that this region has been
+    // focused.
+    const focusRegionEvent = new CustomEvent(
+      'regionFocused', { detail: { regionId: focusedRegionId } }
+    );
+    container.dispatchEvent(focusRegionEvent);
+
+    // Remove any previously added focused classes (silently, since this function will
+    // trigger an event)
+    removeFocus(true);
 
     // Add the 'focused' class
     world.classed(classes.focused, function (feature, i) {
@@ -304,6 +327,8 @@ function globe ({
         focused = feature :
         false;
     });
+
+    regionIsSelected = true
 
     // Don't rotate the map if the map isn't in the sphere projection.
     if (projection == projectionFlat) {
