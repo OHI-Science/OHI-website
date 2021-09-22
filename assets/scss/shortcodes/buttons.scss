@@ -1,0 +1,44 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  margin-right: 1rem;
+  border: 1px solid  $text-color-dark;
+  text-transform: uppercase;
+
+  &__text {
+    color: $text-color-dark;
+  }
+  
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+  }
+  
+  &__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-left: 0.5rem;
+    filter: invert(17%) sepia(8%) saturate(6167%) hue-rotate(197deg) brightness(94%);
+  }
+}
+
+.button:hover {
+  background-color: $text-color-dark;
+  .button__text {
+    color: white;
+  }
+  .button__icon {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(145deg) brightness(104%) contrast(104%);
+  } 
+}

@@ -1,0 +1,24 @@
+{{ $button_left_text := .Get "button_left_text" }}
+{{ $button_left_link := .Get "button_left_link" }}
+{{ $button_right_text := .Get "button_right_text" }}
+{{ $button_right_link := .Get "button_right_link" }}
+{{ $icon := .Get "icon" }}
+
+<div class="buttons">
+  <div class="button">
+    <a class="button__link" href="{{$button_left_link }}" target="_blank">
+      <p class="button__text">{{ $button_left_text }}</p>
+      {{if $icon}}
+        <img class="button__icon" src="{{$icon}}" alt="Icon">
+      {{end}}
+    </a>
+  </div>
+  <div class="button">
+    <a class="button__link" href="{{ $button_right_link }}" target="_blank">
+      <p class="button__text">{{ $button_right_text }}</p>
+      {{if $icon}}
+        <img class="button__icon" src="{{$icon}}" alt="Icon">
+      {{end}}
+    </a>
+  </div>
+</div>
