@@ -1414,6 +1414,8 @@ blockquote {
  */
 .global-scores {
   --global-scores-color-bkg: #fff;
+  --global-scores-color-chips: #fafafa;
+  --global-scores-color-accent: #1E40AF;
   --global-scores-color-border: #ededf1;
   --global-scores-color-text: #696972;
   --global-scores-border-radius: 4px;
@@ -1430,7 +1432,9 @@ blockquote {
   .global-scores__controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    grid-template-rows: min-content min-content;
+    column-gap: 5rem;
+    row-gap: 2rem;
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -1451,6 +1455,37 @@ blockquote {
     display: grid;
     grid-template-rows: auto auto;
     gap: 1rem; }
+  .global-scores__chips {
+    width: 100%;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center; }
+  .global-scores__chip {
+    padding: 0 0.75rem;
+    background-color: var(--global-scores-color-chips);
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    display: inline-flex;
+    margin: 0 0.4rem 0 0;
+    align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    border: 1px solid var(--global-scores-color-border); }
+    .global-scores__chip:hover {
+      color: var(--global-scores-color-accent); }
+    .global-scores__chip--active {
+      color: rgba(255, 255, 255, 0.85);
+      background-color: var(--global-scores-color-accent);
+      border: 1px solid var(--global-scores-color-accent); }
+      .global-scores__chip--active:hover {
+        color: rgba(255, 255, 255, 0.85); }
   .global-scores__label {
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -1463,9 +1498,9 @@ blockquote {
     border: 1px solid var(--global-scores-color-border);
     border-radius: var(--global-scores-border-radius);
     padding: 1.3rem;
-    box-shadow: 4px 0px 9px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
     flex-direction: column;
-    top: 10rem;
+    top: 13rem;
     right: 0;
     text-align: center; }
     .global-scores__region-details--visible {
