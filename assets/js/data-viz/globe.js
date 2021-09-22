@@ -16,8 +16,6 @@ import { geoMollweide } from "d3-geo-projection";
 d3.geoMollweide = geoMollweide;
 
 import regionTooltip from "./regionTooltip.js"
-import colorScale from "./colorScale.js"
-
 /** An interactive world globe that shows the OHI regions and scores. */
 
 /**
@@ -66,13 +64,16 @@ import colorScale from "./colorScale.js"
  * @property {number} [width] - The relative width of the SVG
  * @property {number} [height] - The relative height of the SVG
  * @property {number} [sens] - Defines the 'strength' of the rotation behaviour
+ * @property {function} colorFunction - A function that takes a number and returns a
+ * color. Used to shade the regions given the data.
  * @property {PropertyKeys} [propertyKeys] - A map of properties contained in the feature
  * properties
  * @property {FeatureTypes} [featureTypes] - Categorizes all the feature types as either
  * water, land, or (OHI) region
  * @property {GlobeClasses} [classes] - The class names to add to the HTML elements
  * created by this function
- * @returns {Object} - Returns an object with functions that allow interaction with the globe
+ * @returns {Object} - Returns an object with functions that allow interaction with the
+ * globe
  */
 function globe({
   container,
@@ -81,6 +82,7 @@ function globe({
   width = 600,
   height = 500,
   sens = 0.15,
+  colorFunction = null,
   propertyKeys = {
     type: 'rgn_typ',
     id: 'rgn_id',
@@ -217,7 +219,9 @@ function globe({
   }
 
   // Given the score data, update the fill on the polygon regions
-  function updateScores(newScoreValues) {
+  function updateScores(newScoreValues, dimension = 'score') {
+    // Update the dimension type
+    dimensionType = dimension
     // Save the score values for other functions to access
     scoreValues = newScoreValues
     // Update the fill for regions
@@ -233,7 +237,12 @@ function globe({
   // Get score colour based on a feature
   function getColour(feature) {
     const score = getScore(feature)
-    return colorScale.getLegendColor(score)
+    return colorFunction(score)
+  }
+
+  // Changes the function that is used to shade the features
+  function updateColorFunction(newFunction) {
+    colorFunction = newFunction
   }
 
   // Get the score from a feature based on the current data
@@ -363,7 +372,7 @@ function globe({
   }
 
   return Object.freeze({
-    focusRegionById, removeFocus, updateScores
+    focusRegionById, removeFocus, updateScores, updateColorFunction
   })
 };
 

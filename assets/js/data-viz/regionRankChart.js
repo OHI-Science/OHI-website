@@ -76,7 +76,7 @@ async function regionRankChart({
   const rankChart = barChart({
     container: container,
     data: barChartData,
-    colorFunction: colorScale.getLegendColor
+    colorFunction: colorScale.getColorFunction()
   })
 
   rankChart.focusBar(regionId)

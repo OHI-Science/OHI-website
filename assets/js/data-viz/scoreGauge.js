@@ -50,7 +50,7 @@ async function scoreGauge({
     metric: regionScore,
     min: 0,
     max: 100,
-    colorScale: colorScale.getScale(),
+    colorScale: colorScale.getColorFunction(),
     ticks: [
       {
         value: globalScore,

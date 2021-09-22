@@ -83,7 +83,7 @@ async function regionTimeSeries({
     highlightLines: [regionId],
     // Emphasize the overall Index, code: 0
     emphasizeLines: ['0'],
-    colorFunction: colorScale.getLegendColor
+    colorFunction: colorScale.getColorFunction()
   })
   function updateTimeSeriesData(regionId, goalCode) {
 
