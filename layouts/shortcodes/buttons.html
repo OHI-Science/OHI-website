@@ -1,23 +1,24 @@
-{{ $button_left_text := .Get "button_left_text" }}
-{{ $button_left_link := .Get "button_left_link" }}
-{{ $button_right_text := .Get "button_right_text" }}
-{{ $button_right_link := .Get "button_right_link" }}
-{{ $icon := .Get "icon" }}
+{{ $left_text := .Get "left_text" }}
+{{ $left_link := .Get "left_link" }}
+{{ $right_text := .Get "right_text" }}
+{{ $right_link := .Get "right_link" }}
+{{ $left_icon := .Get "left_icon" }}
+{{ $right_icon := .Get "right_icon" }}
 
 <div class="buttons">
   <div class="button">
-    <a class="button__link" href="{{$button_left_link }}" target="_blank">
-      <p class="button__text">{{ $button_left_text }}</p>
-      {{if $icon}}
-        <img class="button__icon" src="{{$icon}}" alt="Icon">
+    <a class="button__link" href="{{$left_link }}" target="_blank">
+      <p class="button__text">{{ $left_text }}</p>
+      {{if $left_icon}}
+        <img class="button__icon" src="{{$left_icon}}" alt="Icon">
       {{end}}
     </a>
   </div>
   <div class="button">
-    <a class="button__link" href="{{ $button_right_link }}" target="_blank">
-      <p class="button__text">{{ $button_right_text }}</p>
-      {{if $icon}}
-        <img class="button__icon" src="{{$icon}}" alt="Icon">
+    <a class="button__link" href="{{ $right_link }}" target="_blank">
+      <p class="button__text">{{ $right_text }}</p>
+      {{if $right_icon}}
+        <img class="button__icon" src="{{$right_icon}}" alt="Icon">
       {{end}}
     </a>
   </div>

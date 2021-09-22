@@ -19,6 +19,6 @@ Marine-related industries provide direct, indirect, and induced benefits and hel
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
-[Two buttons: OHI Model, Practical Guidance]
+{{<buttons left_text="OHI Model" left_link="" right_text="Practical Guidance" right_link="" left_icon="/images/misc/microscope-icon.svg" right_icon="/images/misc/directions-icon.svg">}}
 
 ----

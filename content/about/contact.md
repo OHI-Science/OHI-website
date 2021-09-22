@@ -15,4 +15,4 @@ Gage Clawson at sgclawson@bren.ucsb.edu
 
 # Press Resources
 
-{{<buttons button_left_text="Press Kit" button_left_link="/data/downloads/oct_2_press_release.pdf" button_right_text="Logo" button_right_link="/data/downloads/ohi-press-logo.eps" icon="/images/misc/download-icon.svg">}}
+{{<buttons left_text="Press Kit" left_link="/data/downloads/oct_2_press_release.pdf" right_text="Logo" right_link="/data/downloads/ohi-press-logo.eps" left_icon="/images/misc/download-icon.svg" right_icon="/images/misc/download-icon.svg">}}
