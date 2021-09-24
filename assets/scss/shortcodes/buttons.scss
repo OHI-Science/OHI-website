@@ -33,6 +33,25 @@
   }
 }
 
+.button--small {
+  height: 2rem;
+  width: 10rem;
+  border: 1px solid  $text-color-dark;
+  
+  &__text {
+    color: $text-color-dark;
+  }
+  
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+  }
+}
+
 .button:hover {
   background-color: $text-color-dark;
   .button__text {
