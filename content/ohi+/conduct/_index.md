@@ -29,7 +29,7 @@ Planning an OHI+ assessment requires identifying the needs and spatial area of t
 ## Conduct an OHI+ assessment
 Conducting an assessment requires tailoring the OHI framework to the local context and using the Toolbox software to calculate scores based on this framework. This requires conceptually identifying important characteristics and priorities in the area, and gathering existing information and developing models to represent the framework. An emphasis is on transparency and reproducible science.
 
-{{<single-button text="Learn More" link="conduct" >}}
+{{<single-button text="Learn More" link="http://ohi-science.org/toolbox-training/" >}}
 
 
 ## Inform using OHI+ assessment results
