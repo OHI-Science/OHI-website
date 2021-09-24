@@ -28,6 +28,10 @@ import dropdown from "./dropdown.js"
  * @property {string} descriptionText - The paragraph with the goal text
  * @property {string} controls - The container for the year and goal inputs
  * @property {string} control - The container for a year or goal input
+ * @property {string} chips - The container for the choice chips
+ * @property {string} chip - The choice chips used to toggle between the trends data and
+ * scores data
+ * @property {string} chipActive - Extra class to add to the chip that is selected
  * @property {string} legend - The container for the legend
  * @property {string} label - The text labels for the inputs or legend
  * @property {string} regionDetailsContainer - The element that will pop-up or slide out
@@ -60,6 +64,9 @@ async function globalScores({
     descriptionText: 'global-scores__description-text',
     controls: 'global-scores__controls',
     control: 'global-scores__control',
+    chips: 'global-scores__chips',
+    chip: 'global-scores__chip',
+    activeChip: 'global-scores__chip--active',
     legend: 'global-scores__legend',
     label: 'global-scores__label',
     regionDetailsContainer: 'global-scores__region-details',
@@ -100,9 +107,6 @@ async function globalScores({
   // Create a container for the legend
   const legendContainer = document.createElement('div');
   legendContainer.classList.add(classes.legend);
-  // Insert the legend
-  const legend = colorScale.getLegend(classes.label)
-  legendContainer.appendChild(legend);
 
   // Create a container for the region details that will appear when a region is clicked /
   // in focus.
@@ -116,23 +120,34 @@ async function globalScores({
     controls, descriptionContainer, globeContainer, legendContainer, detailsContainer
   );
 
-  // Create the globe / map
-  let scoresGlobe = globe({
-    container: globeContainer,
-    featureData: ohiData.features
-  })
-
   // The min and max years that exist for the OHI data
   const maxYear = Math.max(...ohiData.years);
   const minYear = Math.min(...ohiData.years);
 
+  // Keep track of the year that was last selected. Important when we switch from annual
+  // score data to trends over time.
+  let lastYearSelected = maxYear.toString()
+
   // Set the initial/default selections
   let selections = {
     dimension: 'score',
-    year: maxYear.toString(),
+    year: lastYearSelected,
     goal: 'Index',
     regionId: null
   }
+
+  // The initial colour score to use - the one for scores or for trend data
+  let colorFunction = colorScale.getColorFunction()
+  if (trendIsSelected()) {
+    colorFunction = colorScale.getColorFunction('trend')
+  }
+
+  // Create the globe / map
+  let scoresGlobe = globe({
+    container: globeContainer,
+    featureData: ohiData.features,
+    colorFunction: colorFunction
+  })
 
   // Listen for when a region is clicked on the globe. Show and update the region details
   // popup. Or close it, if a region was un-focused.
@@ -144,16 +159,37 @@ async function globalScores({
   // Update event will be called while the user sliders
   // the number slider. Use debounce to limit updates.
   const updateGlobe = utility.debounce(function () {
+
+    if (trendIsSelected()) {
+      scoresGlobe.updateColorFunction(colorScale.getColorFunction('trend'))
+    } else {
+      scoresGlobe.updateColorFunction(colorScale.getColorFunction())
+    }
     // Get the currently selected data
     let scoreValues = ohiData.scores[selections.dimension][selections.year][selections.goal]
     // Update the region colours on the map
     scoresGlobe.updateScores(scoreValues);
+
   }, 200)
 
   createControls()
   updateGlobe()
   updateDescription()
   updateRegionDetails()
+  updateLegend()
+
+  // Changes the legend. Important when the values represented on the map switch between
+  // OHI scores and a change in OHI scores (trends)
+  function updateLegend() {
+    let dimensionType = 'score'
+    if (trendIsSelected()) {
+      dimensionType = 'trend'
+    }
+    // Insert the legend
+    const legend = colorScale.getLegend(classes.label, dimensionType)
+    legendContainer.innerHTML = '';
+    legendContainer.appendChild(legend);
+  }
 
   // Update the description of the goal, depending on the goal that is current selected
   function updateDescription() {
@@ -188,13 +224,18 @@ async function globalScores({
     const goalControl = yearControl.cloneNode(true);
     const goalLabel = yearLabel.cloneNode(true);
 
+    // Dimension - holds two choice chips. Formatted differently from the year/score
+    // controls
+    const dimensionControl = document.createElement("div");
+    dimensionControl.classList.add(classes.chips)
+
     yearControl.appendChild(yearLabel);
     goalControl.appendChild(goalLabel);
 
-    yearLabel.innerText = "Year";
-    goalLabel.innerText = "Goal";
+    yearLabel.innerText = 'Year';
+    goalLabel.innerText = 'Goal';
 
-    controls.append(goalControl, yearControl);
+    controls.append(dimensionControl, goalControl, yearControl);
 
     // Create the years input
     const yearSlider = numberSlider({
@@ -205,6 +246,7 @@ async function globalScores({
     });
     yearSlider.addEventListener('update', function (e) {
       selections.year = e.detail.toString();
+      lastYearSelected = selections.year
       updateGlobe()
       updateRegionDetails()
     });
@@ -225,7 +267,66 @@ async function globalScores({
     })
     goalControl.appendChild(goalsInput);
 
+    // Create the dimension inputs.
+
+    // The trend choice chip
+    const trendChip = document.createElement('div')
+    trendChip.classList.add(classes.chip)
+    trendChip.innerHTML = `Score trend (${ohiData.trendTimeInterval})`
+    trendChip.addEventListener('click', switchToTrends)
+
+    // The score choice chip
+    const scoreChip = document.createElement('div')
+    scoreChip.classList.add(classes.chip)
+    scoreChip.innerHTML = 'Annual scores'
+    scoreChip.addEventListener('click', switchToScore)
+
+    if (trendIsSelected()) {
+      switchToTrends()
+    } else {
+      switchToScore()
+    }
+
+    dimensionControl.append(scoreChip, trendChip)
+
+    // Switches the map to showing the trends dimension (average change in scores over 10
+    // years)
+    function switchToTrends() {
+      yearControl.style.display = 'none'
+      scoreChip.classList.remove(classes.activeChip)
+      trendChip.classList.add(classes.activeChip)
+      selections.dimension = ohiData.trendDimension
+      selections.year = ohiData.trendTimeInterval
+      updateGlobe()
+      updateRegionDetails()
+      updateLegend()
+    }
+
+    // Switches the map to showing annual OHI scores
+    function switchToScore() {
+      yearControl.style.display = null
+      trendChip.classList.remove(classes.activeChip)
+      scoreChip.classList.add(classes.activeChip)
+      selections.dimension = 'score';
+      selections.year = lastYearSelected;
+      updateGlobe()
+      updateRegionDetails()
+      updateLegend()
+    }
+
   }
+
+  // Checks if the dimension selected gives values for the change in score (negative or
+  // positive values, 'trend'), or OHI scores (0-100, 'score')
+  function trendIsSelected() {
+    if (selections.dimension === ohiData.trendDimension) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+
 
   // Updates the pop-up with more information about the selected region. Or hides it when
   // a region is un-selected.
@@ -239,7 +340,7 @@ async function globalScores({
       detailsContainer.classList.remove(classes.regionDetailsActive);
       return
     }
-    
+
     // Add active class
     detailsContainer.classList.add(classes.regionDetailsActive);
 
@@ -247,8 +348,7 @@ async function globalScores({
     const regionId = selections.regionId;
     const regionLabel = ohiData.regionLabels[regionId]
     const regionLink = ohiData.regionPageLinks[regionId]
-    let scoreForSelection = ohiData.scores[selections.dimension][selections.year][selections.goal][selections.regionId]
-    scoreForSelection = Math.round(scoreForSelection)      
+    const scoreForSelection = ohiData.scores[selections.dimension][selections.year][selections.goal][selections.regionId]
     const goalData = ohiData.goalsConfig.find(function (goal) {
       return goal.id === selections.goal
     })
@@ -274,23 +374,26 @@ async function globalScores({
     title.innerHTML = regionLabel;
     title.classList.add(classes.regionDetailsTitle)
 
-    // Add information about the selected region
+    // Add information about the selected region. The text that is shown depends if this
+    // is trend data annual score data.
     const paragraph = document.createElement('p');
-    paragraph.innerHTML = `The ${goalLabel} ${dimension} for ${regionLabel} in ${year} is <b>${scoreForSelection}</b>.`
     paragraph.classList.add(classes.regionDetailsParagraph)
+    if (trendIsSelected()) {
+      paragraph.innerHTML = `The ${goalLabel} score has changed an average of <b>${scoreForSelection.toPrecision(2)}</b> from ${year}`
+    } else {
+      paragraph.innerHTML = `The ${goalLabel} ${dimension} for ${regionLabel} in ${year} is <b>${Math.round(scoreForSelection)}</b>.`
+    }
     
     // Create a link to the region
     const link = document.createElement('a');
     link.href = regionLink
-    link.title = `See full details about ${dimension}s for ${regionLabel}`
-    link.innerHTML = `See all ${dimension}s for ${regionLabel}`
+    link.title = `See full details about scores for ${regionLabel}`
+    link.innerHTML = `See all score data for ${regionLabel}`
     link.classList.add(classes.regionDetailsLink)
 
     // Add everything to the container
     detailsContainer.append(button, title, paragraph, link)
 
-
-    
   }
 
 };

@@ -16,6 +16,8 @@ import legend from "./legend.js"
  * SVG legend
  */
 
+// ----- For scores -----
+
 // The colours to use in the colour palette. We want ~75% of the colours to be reds -
 // yellows, since those represent 'bad' scores. The top 25% should be blues to show
 // 'good' scores.
@@ -34,23 +36,36 @@ const rangeScore = maxScore - minScore;
 const numSteps = redAndBlues.length - 1;
 const step = rangeScore / numSteps;
 
+// ----- For trends -----
+
+// const trendDomain = [-1, -0.0001, 0.0001, 1]
+// const trendCols = ['#9c0c24', '#f5d7d0', '#c5ebd8', '#08a657']
+
+
 // Returns the function that gets a legend color
-const getScale = function () {
-  return d3.scaleLinear()
-    .domain(d3.range(minScore, (maxScore + step), step))
-    .range(redAndBlues)
-    .unknown(missingValueColour);
+const getColorFunction = function (dimension = 'score') {
+  if (dimension === 'score') {
+    return d3.scaleLinear()
+      .domain(d3.range(minScore, (maxScore + step), step))
+      .range(redAndBlues)
+      .unknown(missingValueColour);
+  } else if (dimension === 'trend') {
+    return d3.scaleDiverging()
+      .range(['#a91f04', '#e3e3e3', '#049464'])
+      .domain([-1, 0, 1])
+      .unknown(missingValueColour)
+  }
 }
 
-// A function that, given an OHI score, will give the colour from our continuous colour
-// scale palette.
-const getLegendColor = getScale()
-
 // Create the legend
-const getLegend = function (titleClass = "title") {
+const getLegend = function (titleClass = 'title', dimension = 'score') {
+  let title = 'Ocean Health Index Score'
+  if (dimension === 'trend') {
+    title = 'Average Yearly Change in OHI Score'
+  }
   return legend({
-    color: getLegendColor,
-    title: 'Ocean Health Index Score',
+    color: getColorFunction(dimension),
+    title: title,
     tickSize: 2,
     width: 330,
     height: 50,
@@ -58,4 +73,4 @@ const getLegend = function (titleClass = "title") {
   })
 }
 
-export default Object.freeze({ getLegend, getLegendColor, getScale })
+export default Object.freeze({ getLegend, getColorFunction })

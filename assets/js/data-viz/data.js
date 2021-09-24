@@ -76,7 +76,8 @@ function data({
   async function importData() {
     const features = await importJSON(dataPaths.regions)
     const scores = await importCSV(dataPaths.scores)
-    return { goalsConfig, regionPageLinks, features, scores }
+    const trends = await importCSV(dataPaths.trends)
+    return { goalsConfig, regionPageLinks, features, scores, trends }
   }
 
   function parseIcons(dataIn) {
@@ -180,8 +181,40 @@ function data({
       })
     })
 
+    // Now add the trends data. It's a little different since the year component is a range, and there's a p-value.
+    // Get the name of the dimension that we're using for trends. Also get the year range that we have for trends.
+    const trendDimension = data.trends[0].dimension
+    const trendTimeInterval = data.trends[0].scenario
+
+    groupedData[trendDimension] = {}
+    groupedData[trendDimension][trendTimeInterval] = {}
+
+    // Range through goals and regions for trends like we do for the other scores
+    data.goalCodes.forEach(function (goal) {
+      groupedData[trendDimension][trendTimeInterval][goal] = {}
+      const trendGoalData = data.trends.filter(function (d) {
+        return d.goal === goal
+      })
+      // The region score within goal group within year within dimension
+      regionIds.forEach(function (region) {
+        const trendRegionData = trendGoalData.find(function (d) {
+          return d.region_id === region
+        })
+        if (trendRegionData && trendRegionData.value && trendRegionData.value !== missingValueCode) {
+          groupedData[trendDimension][trendTimeInterval][goal][region] = Number(trendRegionData.value)
+        }
+      })
+    })
+
     // Overwrite scores with the new grouped format
     data.scores = groupedData;
+
+    // Remove the trends data now
+    delete data.trends;
+
+    // Save references to the keys for the trends data
+    data.trendDimension = trendDimension;
+    data.trendTimeInterval = trendTimeInterval;
 
     // Convert the regionPageLinks from an Array (faster for Hugo to create) to a map
     // (easier to use in JS)

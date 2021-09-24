@@ -1,9 +1,10 @@
 ---
 headless: true
-dataVersion: "2021-07-02"
+dataVersion: "2021-09-22"
 missingValueCode: 'NA'
 dataFiles:
   scores: scores.csv
+  trends: trends.csv
   regions: regions.topojson
 ---
 
@@ -42,6 +43,20 @@ scenario,goal,long_goal,dimension,region_id,region_name,value
 2012,AO,Artisanal opportunities,future,0,Global average,79.53
 2012,AO,Artisanal opportunities,future,1,Cocos Islands,100
 ...
+```
+
+## `trends`  (format: `CSV`)
+
+The trends CSV file contains the trend in score over a 10 year period for each region. It is formatted just like the scores CSV file, except that:
+- The "scenario" column gives a range of years rather than a specific year.
+- There is an extra "p.value" column that indicates the statistical significance of the trend
+
+Example:
+```
+scenario,goal,long_goal,dimension,region_id,region_name,value,p.value
+2012-2020,AO,Artisanal opportunities,average_yearly_change_in_scores,0,Global average,0.18849999999999859,3.041687438143774e-7
+2012-2020,AO,Artisanal opportunities,average_yearly_change_in_scores,1,Cocos Islands,0.14666666666666495,7.857959727288833e-9
+2012-2020,AO,Artisanal opportunities,average_yearly_change_in_scores,2,Christmas Island,0.14666666666666495,7.857959727288833e-9
 ```
 
 ## `regions` (format: `topojson`)
