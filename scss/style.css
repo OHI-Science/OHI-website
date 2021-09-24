@@ -1007,7 +1007,7 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10rem;
+  width: 20rem;
   margin-right: 1rem;
   border: 1px solid #212d5e;
   text-transform: uppercase; }
