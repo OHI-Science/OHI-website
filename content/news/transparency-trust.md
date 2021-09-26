@@ -2,6 +2,7 @@
 title: "Building Transparency and Trust"
 name: "A case study about transparency in the Ocean Health Index"
 bg_image: "images/banners/lake.jpg"
+card_image: "/images/people/northeast-afflerbach-present.jpg"
 Date: 2019-11-04
 author: Jenny Seifert
 menu:
@@ -66,7 +67,7 @@ Moreover, several industries are either currently or have the potential to be ex
 
 OHI's flexible framework will allow users to track how offshore wind energy, an emerging industry in the Northeast, affects the ocean benefits people receive into the future.
 
-![wind-mill](/images/misc/northeast-wind-turbines.jpg)
+![wind-mill](/images/northeast-wind-turbines.jpg)
 
 ## The Take Home
 So, what does our experience in the Northeast mean for transparency in ocean science and management more broadly? Whether you’re part of a different regional Ocean Health Index effort or a different indicator process, here’s what we think:
