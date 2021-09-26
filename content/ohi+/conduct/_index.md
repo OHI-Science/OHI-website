@@ -19,6 +19,8 @@ The Ocean Health Index is a comprehensive assessment tool that evaluates a suite
 
 {{<single-button text="Learn More" link="learn" >}}
 
+<br>
+<br>
 
 ## Plan an OHI+ assessment
 
@@ -26,11 +28,16 @@ Planning an OHI+ assessment requires identifying the needs and spatial area of t
 
 {{<single-button text="Learn More" link="plan" >}}
 
+<br>
+<br>
+
 ## Conduct an OHI+ assessment
 Conducting an assessment requires tailoring the OHI framework to the local context and using the Toolbox software to calculate scores based on this framework. This requires conceptually identifying important characteristics and priorities in the area, and gathering existing information and developing models to represent the framework. An emphasis is on transparency and reproducible science.
 
 {{<single-button text="Learn More" link="http://ohi-science.org/toolbox-training/" >}}
 
+<br>
+<br>
 
 ## Inform using OHI+ assessment results
 
