@@ -1,15 +1,14 @@
 .assessment-area {
-  border-bottom: 1px solid rgba(30,44,94,.2);
-  display: felx;
+  border-bottom: 1px solid $text-color-dark;
 }
 
 .assessment-title {
-  color: #999;
+  color: $brown-white;
 }
 
 .assessment {
   margin-top: 1rem;
-  border-bottom: 1px solid rgba(30,44,94,.2);
+  border-bottom: 1px solid $text-color-dark;
   padding-bottom: 3rem;
 }
 
@@ -42,11 +41,11 @@
 
 .assessment-link-head {
     text-decoration: none;
-    color: #3C6CF5;
+    color: $link-blue;
 }
 .assessment-link {
   text-decoration: none;
-  color: #3C6CF5;
+  color: $link-blue;
   padding-right: 1rem;
 }
 
@@ -70,7 +69,7 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  border-bottom: 1px solid rgba(30,44,94,.2);
+  border-bottom: 1px solid $text-color-dark;
 }
 
 .assessment-anchor-links {
@@ -80,5 +79,5 @@
 
 .assessment-anchor-link-text {
   text-transform: none;
-  color: #3C6CF5;
+  color: $link-blue;
 }

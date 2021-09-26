@@ -13,7 +13,7 @@
   &__card {
     background-clip: border-box;
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid $dark-black;
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
     &--big {
       background-clip: border-box;
       background-color: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.125);
+      border: 1px solid $dark-black;
       border-radius: 0.25rem;
       display: flex;
       flex-direction: column;
@@ -56,7 +56,7 @@
       width: 100%;
       bottom: 0rem;
       height: 6.5rem;
-      background-color: rgba(14,33,70,.9);
+      background-color: $dark-blue;
 
       &--big {
         display: flex;
@@ -65,7 +65,7 @@
         width: 100%;
         bottom: 0rem;
         height: 12rem;
-        background-color: rgba(14,33,70,.9);
+        background-color: $dark-blue;
       }
 
       &__phrase {
@@ -101,7 +101,7 @@
       }
       &__button{
         &__text {
-          color: #14aac8;
+          color: $light-teal;
         }
       }
     }
