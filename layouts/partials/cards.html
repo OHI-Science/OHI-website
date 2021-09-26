@@ -42,10 +42,9 @@
       {{ end }}
       {{ $imageResource := partial "functions/getImageResource" .Params.bg_image }}
       {{ $imageResource = $imageResource.Fill "870x640" }}
-      <a href= "{{ .Permalink }}" div class="card">
-        <span class="card-body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
-        </span>
-        <div class="btn btn-primary"><p class="card-text">{{ .Params.name }}</p></div>
+      <a class="cards__card" href= "{{ .Permalink }}">
+        <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
+        <div class="cards__card__button"><p class="cards__card__button__text">{{ .Params.name }}</p></div>
       </a>
     {{ end }}
   {{ end }}

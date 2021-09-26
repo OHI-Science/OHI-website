@@ -1,3 +1,4 @@
+// The cards are arranged in a grid
 .cards {
   display: grid;
   gap: 1rem;
@@ -8,73 +9,59 @@
   row-gap: 1rem;
   width: min-content;
   padding-bottom: 3rem;
-}
 
-.card {
-  background-clip: border-box;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column;
-  height: 20rem;
-  min-width: 0;
-  overflow: hidden;
-  position: relative;
-  width: 27rem;
-  word-wrap: break-word;
-}
+  &__card {
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    width: 27rem;
+    word-wrap: break-word;
 
-.card:hover {
-  .card-text {
-    color: #14aac8;
+    &__body {
+      background-clip: border-box;
+      background-size: cover;
+      flex: 1 1 auto;
+      -webkit-font-smoothing: antialiased;
+      transition: transform .5s ease-in-out;
+    }
+
+    // The button sits at the bottom of the card with centered text
+    &__button {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      bottom: 0rem;
+      height: 6.5rem;
+      background-color: rgba(14,33,70,.9);
+
+      &__text{
+        color:white;
+        font-size: 1.25rem;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing:0.03rem;
+        text-transform: uppercase;
+      }
+    }
+
+    &:hover & {
+      &__body {
+        transform: scale(1.02);
+      }
+      &__button{
+        &__text {
+          color: #14aac8;
+        }
+      }
+    }
   }
-  .card-body {
-    transform: scale(1.02);
-  }
-}
-
-.card-body {
-  background-clip: border-box; 
-  background-size: cover;
-  box-sizing: border-box;
-  min-height: 1px;
-  flex: 1 1 auto;
-  padding: 0rem;
-  text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  transition: transform .5s ease-in-out;
-}
-
-.card-text{
-  color:white;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing:0.03rem;
-  text-transform: uppercase;
-}
-
-.btn.btn-primary {
-  position: absolute;
-  
-  width: 100%;
-  bottom: 0rem;
-  height: 6.5rem;
-  background-color: rgba(14,33,70,.9);
-  border-color: transparent;
-}
-
-.btn.btn-primary p {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn.btn-primary:hover {
-  background-color: rgba(14,33,70,.9);;
 }
