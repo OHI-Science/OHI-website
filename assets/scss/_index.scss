@@ -1,5 +1,168 @@
+// Contains all of the content (without the nav or footer) on the index page.
+// Set the display to flex to ensure proper positioning of the footer.
+.index{
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/bg-home.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+  //background-position: 100%;
+
+  // The title should be underneath the navigation with a gutter on its left
+  &__info{
+    padding-top:15rem;
+    padding-left: 13rem;
+    padding-bottom: 5rem;
+    // The title should be uppercase and fairly bold
+    &__title{
+      color:white;
+      font-weight: 800;
+      font-size: 5rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    &__subtitle {
+      width: 60rem;
+      color: white;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+
+  // There are two link boxes, one with a white background and the other with
+  // a dark blue one. Text on the dark blue is white (so that it can be seen) and
+  // text on the white background is blue (so that it can be seen).
+  // To accommodate for these two situations, 'blue' and 'white' modifiers
+  // are given to many of the elements here.
+
+  // Since this holds each card and we want them side by side, set the display to flex
+  &__cards {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // Defines the card area
+    .card{
+      &--white {
+        height:22rem;
+        padding: 2.5rem;
+        padding-top: 0rem;
+        width:50rem;
+        font-size: 1.2rem;
+        background-color: white;
+        background-image: url(/images/section-home-bg-1.png);
+        background-repeat: no-repeat;
+        background-position-x: 34rem;
+        background-position-y: 6rem;
+      }
+
+      &--blue {
+        height:22rem;
+        padding: 2.5rem;
+        padding-top: 0rem;
+        width:50rem;
+        background-color: rgb(30,44,94.9);
+        opacity: .9;
+        font-size: 1.2rem;
+      }
+
+      &__title{
+        &--white {
+          color: white;
+          font-size: 2.5rem;
+        }
+        &--blue {
+          color: $text-color-dark;
+          font-size: 2.5rem;
+        }
+      }
+
+      &__subtitle {
+        &--white {
+          color: white;
+        }
+        &--blue {
+          color: $text-color-dark;
+        }
+      }
+    }
+  }
+
+  &__news {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: auto;
+    padding-top:3rem;
+    row-gap: 1rem;
+    width: min-content;
+    padding-bottom: 3rem;
+    
+  }
+}
+
+// Container for the buttons inside each card
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+
+  // The individual button container
+  &__button {
+    
+    &--white {
+      color: white;
+      border: 2px solid white;
+      width: 15rem;
+      height: 5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2rem;
+    }
+    &--blue {
+      color: $text-color-dark;
+      border: 2px solid #212d5e;
+      width: 15rem;
+      height: 5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2rem;
+    }
+
+    &--white:hover {
+      color: $text-color-dark;
+      border: 2px solid $text-color-dark;
+      background-color: white;
+    }
+
+    &--blue:hover {
+      color: white;
+      border: 2px solid $text-color-dark;
+      background-color: $text-color-dark;
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 
 .home-title {
   color: white; flex: 0 0 100%;
+}
+
+.home-content {
+  background:linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%);
 }

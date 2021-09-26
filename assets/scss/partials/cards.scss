@@ -24,6 +24,21 @@
     width: 27rem;
     word-wrap: break-word;
 
+    &--big {
+      background-clip: border-box;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      height: 30rem;
+      min-width: 0;
+      overflow: hidden;
+      position: relative;
+      width: 27rem;
+      word-wrap: break-word;
+    }
+
     &__body {
       background-clip: border-box;
       background-size: cover;
@@ -43,6 +58,22 @@
       height: 6.5rem;
       background-color: rgba(14,33,70,.9);
 
+      &--big {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        bottom: 0rem;
+        height: 12rem;
+        background-color: rgba(14,33,70,.9);
+      }
+
+      &__phrase {
+        color:white;
+        letter-spacing:0.03rem;
+        padding-left: 1rem;
+      }
+
       &__text{
         color:white;
         font-size: 1.25rem;
@@ -50,6 +81,16 @@
         line-height: 1.1;
         letter-spacing:0.03rem;
         text-transform: uppercase;
+
+        &--padded {
+          padding-left: 1rem;
+          color:white;
+          font-size: 1.25rem;
+          font-weight: 800;
+          line-height: 1.1;
+          letter-spacing:0.03rem;
+          text-transform: uppercase;
+        }
       }
     }
 
