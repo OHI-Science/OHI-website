@@ -305,7 +305,7 @@ blockquote {
     margin-right: 2rem; }
   .card-buttons__button--blue {
     color: #212d5e;
-    border: 2px solid #212d5e;
+    border: 2px solid #1e2c5f;
     width: 15rem;
     height: 5rem;
     display: flex;
@@ -340,7 +340,7 @@ blockquote {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
-  color: #FFFFFF;
+  color: white;
   text-align: center; }
 
 .button.download:hover {
@@ -607,7 +607,7 @@ blockquote {
     background: #5ddae5; }
 
 .column-center {
-  border-bottom: 1px solid rgba(30, 44, 94, 0.2); }
+  border-bottom: 1px solid #1e2c5f; }
   .column-center__full-width-container {
     --padding: 5%;
     margin-left: calc( (var(60%)/2 * -1) + var(--padding));
@@ -627,7 +627,7 @@ blockquote {
     top: -8.5rem; }
 
 .right-col-nav {
-  border-top: 1px solid rgba(30, 44, 94, 0.2);
+  border-top: 1px solid #1e2c5f;
   padding: 0.7rem; }
 
 .right-nav-item {
@@ -709,7 +709,7 @@ blockquote {
   .cards__card {
     background-clip: border-box;
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid rgba(0, 0, 0, 0.18);
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
@@ -722,7 +722,7 @@ blockquote {
     .cards__card--big {
       background-clip: border-box;
       background-color: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.125);
+      border: 1px solid rgba(0, 0, 0, 0.18);
       border-radius: 0.25rem;
       display: flex;
       flex-direction: column;
@@ -835,15 +835,14 @@ blockquote {
   border-bottom: 1px solid; }
 
 .assessment-area {
-  border-bottom: 1px solid rgba(30, 44, 94, 0.2);
-  display: felx; }
+  border-bottom: 1px solid #212d5e; }
 
 .assessment-title {
   color: #999; }
 
 .assessment {
   margin-top: 1rem;
-  border-bottom: 1px solid rgba(30, 44, 94, 0.2);
+  border-bottom: 1px solid #212d5e;
   padding-bottom: 3rem; }
 
 .individual-assessment {
@@ -896,7 +895,7 @@ blockquote {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  border-bottom: 1px solid rgba(30, 44, 94, 0.2); }
+  border-bottom: 1px solid #212d5e; }
 
 .assessment-anchor-links {
   text-decoration: none;
@@ -1041,7 +1040,7 @@ blockquote {
 .people-card {
   position: relative;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.18);
   display: flex;
   flex-direction: column;
   height: 17rem;
