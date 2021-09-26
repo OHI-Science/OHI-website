@@ -768,6 +768,7 @@ blockquote {
         text-transform: uppercase; }
         .cards__card__button__text--padded {
           padding-left: 1rem;
+          padding-right: 1rem;
           color: white;
           font-size: 1.25rem;
           font-weight: 800;
