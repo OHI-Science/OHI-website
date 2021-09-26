@@ -1,7 +1,8 @@
 ---
 title: "2019 Global Ocean Health Index Scores"
 name: "We are excited to announce the global Ocean Health Index (OHI) scores for 2019!"
-bg_image: "images/banners/lake.jpg"
+bg_image: "/images/banners/lake.jpg"
+card_image: "/images/people/fellows2019-crop.jpg"
 Date: 2019-12-03
 author: Melanie Frazier
 menu:
@@ -25,6 +26,6 @@ The regions with the highest scores tend to be remote islands with low human pop
 
 Here are the 2019 Ocean Health Index scores for 220 regions:
 
-![2019 Global Index](/images/plots/global_map_Index_2019_mol.png)
+![2019 Global Index](/images/infographs/global_map_Index_2019_mol.png)
 
 We are now beginning the 2020 Ocean Health Index assessment. So stay tuned for future developments.

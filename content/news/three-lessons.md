@@ -2,6 +2,7 @@
 title: "Assessing Local Oceans"
 name: "Lessons for Using the Global Ocean Health"
 bg_image: "images/banners/lake.jpg"
+card_image: "/images/infographs/high-seas.jpeg"
 Date: 2019-04-26
 author: Jenny Seifert
 menu:

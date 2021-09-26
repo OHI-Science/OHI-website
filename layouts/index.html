@@ -43,13 +43,14 @@
   </div>
 
   <div class="cards">
-    <!-- Create a new card for each news article -->
+    <!-- Create a new card for each news article. Every news article needs to have a card_image defined
+    in the frontmatter. -->
     {{ range where .Site.Pages "Section" "news" }}
-      {{if .Params.bg_image }}
-        {{ if not (fileExists (string .Params.bg_image)) }}
-          {{ errorf "Failed to generate card image because the following file was not found." .Params.bg_image }}
+      {{if .Params.card_image }}
+        {{ if not (fileExists (string .Params.card_image)) }}
+          {{ errorf "Failed to generate card image because the following file was not found." .Params.card_image }}
         {{ end }}
-        {{ $imageResource := partial "functions/getImageResource" .Params.bg_image }}
+        {{ $imageResource := partial "functions/getImageResource" .Params.card_image }}
         {{ $imageResource = $imageResource.Fill "870x640" }}
         <a class="cards__card--big" href= "{{ .Permalink }}">
           <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>

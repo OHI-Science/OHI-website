@@ -1,7 +1,8 @@
 ---
 title: "2020 Global Ocean Health Index"
 name: "2020 Global Ocean Health Index scores now available!"
-bg_image: "images/banners/lake.jpg"
+bg_image: "/images/banners/lake.jpg"
+card_image: "/images/infographs/GlobalOHIFlower2020.jpg"
 Date: 2020-12-01
 author: Gage Clawson & Melanie Frazier
 menu:
@@ -30,11 +31,11 @@ The overall global index score was 72 (Figure 1), which is similar to previous y
 
 Figure 1. Flower plot describing the average 2020 global Ocean Health scores (eez area weighted average of region scores) for the overall Index (center value) and goals/subgoals (petals).
 
-![2020-flower-plot](/images/plots/GlobalOHIFlower2020.jpg)
+![2020-flower-plot](/images/infographs/GlobalOHIFlower2020.jpg)
 
 Figure 2. 2020 Ocean Health Index scores for 220 regions.
 
-![2020-global-map](/images/plots/globalOHImap2020.jpg)
+![2020-global-map](/images/infographs/globalOHImap2020.jpg)
 
 Although overall index scores have hovered around 70 since 2012, a deeper dive into the index reveals some interesting trends and patterns.
 
@@ -42,7 +43,7 @@ Scores for many regions are reasonably good and global scores have overall incre
 
 Table 1. Ocean Health Index, global scores (eez area weighted average of region scores) for the Index and goals/subgoals for all years.
 
-![global-table](/images/misc/globalOHItable2020.jpg)
+![global-table](/images/infographs/globalOHItable2020.jpg)
 
 Given the importance of marine fisheries as a source of food, the apparent decline in scores is alarming. From 2012, fisheries scores decreased for 138 of the 220 countries we assessed, and decreasing trends predominate in the southern hemisphere. Regions with the largest decreases include Chile, the Falkland Islands, and South Korea. This result is due to a decrease in stock status scores, and should further be explored to better understand which stocks are driving this result.
 
