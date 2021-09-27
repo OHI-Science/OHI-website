@@ -43,6 +43,7 @@
       flex: 1 1 auto;
       -webkit-font-smoothing: antialiased;
       transition: transform .5s ease-in-out;
+      border-bottom: 1px solid $blue-grey;
     }
 
     // The button sits at the bottom of the card with centered text
@@ -55,7 +56,6 @@
       bottom: 0rem;
       height: 6.5rem;
       background-color: $dark-blue;
-
       &--big {
         display: flex;
         flex-direction: column;
