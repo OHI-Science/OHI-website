@@ -45,6 +45,7 @@
     // Defines the card area
     .card{
       &--white {
+        position: relative;
         height:22rem;
         padding: 2.5rem;
         padding-top: 0rem;
@@ -58,6 +59,7 @@
       }
 
       &--blue {
+        position: relative;
         height:22rem;
         padding: 2.5rem;
         padding-top: 0rem;
@@ -81,9 +83,11 @@
       &__subtitle {
         &--white {
           color: white;
+          width: 40rem;
         }
         &--blue {
           color: $text-color-dark;
+          width: 40rem;
         }
       }
     }
@@ -107,6 +111,8 @@
 .card-buttons {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  bottom: 2rem;
 
   // The individual button container
   &__button {
@@ -116,7 +122,6 @@
       border: 2px solid white;
       width: 15rem;
       height: 5rem;
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -128,7 +133,6 @@
       border: 2px solid $index-blue;
       width: 15rem;
       height: 5rem;
-
       display: flex;
       flex-direction: column;
       align-items: center;
