@@ -9,7 +9,7 @@ The Clean Water goal captures the degree to which local waters are unpolluted by
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="CW" >}}
 
 The current score indicates that there large opportunities for improvement. This goal scores highest when the contamination level is zero.Reducing the inflow of chemicals, nutrients, human and animal wastes and trash requires remedial actions at every level of society as well as adjustments to behavior on an individual basis.
 

@@ -11,7 +11,7 @@ This goal measures the conservation status of marine species.
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="ICO" >}}
 
 The current score indicates that many marine species are at risk and there is the potential risk of losing a significant proportion of marine species diversity.
 

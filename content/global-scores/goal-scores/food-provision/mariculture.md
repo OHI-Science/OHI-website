@@ -10,7 +10,7 @@ This goal assesses our ability to sustainably maximize the production of farm-ra
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="MAR" >}}
 
 The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could.  A small number of countries are responsible for almost all global mariculture production.
 

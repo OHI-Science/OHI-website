@@ -11,7 +11,7 @@ This sub-goal describes the quantity and quality of marine-related jobs for peop
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="LIV" >}}
 
 The current score indicates that jobs and wages have declined substantially compared to their reference points leaving much room for improvement.
 

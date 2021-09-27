@@ -10,7 +10,7 @@ This goal assesses our ability to sustainably maximize wild-caught fisheries.
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="FIS" >}}
 
 The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch with overharvesting, while a few are not producing as much wild-caught seafood as they could.
 

@@ -11,7 +11,7 @@ This goal assesses how well countries are maximizing the sustainable harvest of 
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="NP" >}}
 
 The current score indicates that many regions have potential to improve sustainable harvests of natural products, either by eliminating overharvesting, increasing harvests that are too low, or reducing the pressures that decrease potential harvests.  
 

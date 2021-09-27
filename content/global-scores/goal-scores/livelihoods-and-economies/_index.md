@@ -10,7 +10,7 @@ This goal measures jobs and revenue from sustainable marine-related industries. 
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="LE" >}}
 
 The current score indicates .....
 

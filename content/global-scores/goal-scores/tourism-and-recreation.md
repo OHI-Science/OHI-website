@@ -9,7 +9,7 @@ Coastal and marine tourism is a vital part of a country’s economy. This goal m
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="TR" >}}
 
 Low scores for many regions are due to unsafe or unappealing conditions owing to poverty, political turmoil, war or other volatile conditions and scores will likely be depressed until those fundamental conditions improve.
 

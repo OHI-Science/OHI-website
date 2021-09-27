@@ -65,10 +65,16 @@ function init() {
     import('./scoreGauge.js')
       .then(function (scoreGauge) {
         scoreGaugeEls.forEach(function (scoreGaugeEl) {
-          scoreGauge.default({
+          var scoreGaugeOptions = {
             container: scoreGaugeEl,
-            regionId: scoreGaugeEl.dataset.regionId,
-          })
+          }
+          if (scoreGaugeEl.dataset.regionId) {
+            scoreGaugeOptions.regionId = scoreGaugeEl.dataset.regionId
+          }
+          if (scoreGaugeEl.dataset.goalCode) {
+            scoreGaugeOptions.goalCode = scoreGaugeEl.dataset.goalCode
+          }
+          scoreGauge.default(scoreGaugeOptions)
         })
       })
   }

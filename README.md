@@ -45,6 +45,10 @@ Besides using [regular markdown table syntax](https://www.markdownguide.org/exte
 
 The `regionsDropdown` shortcode creates a dropdown with all of the OHI region names that are included in the `scores.csv` file. When a user selects one of the regions, then they are directed to the score page for that region. The `label` text option is optional.
 
+### `{{< gauge regionId="0" goalCode="ICO" >}}`
+
+The `gauge` shortcode renders a gauge visualization showing the score for the given region and given goal, for the most current year that is available in the `scores.csv` file. For the `regionId` property, use one of the numbers that are used to identify regions in `scores.csv`; use "0" for the global average. The `goalCode` property should similarly be set to one of the two to three digit letter codes used in `scores.csv`.
+
 ## Goal pages
 
 Goal and sub-goal pages, including goal index page, require more front-matter than other content pages. In addition to the "title", "name", and "bg_image" properties, goal pages use the properties "id", "icon", "description", and "color". These extra properties control how the OHI goal information is presented on the website, including creating the data visualizations.

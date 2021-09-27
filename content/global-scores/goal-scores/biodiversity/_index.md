@@ -10,7 +10,7 @@ This goal describes how successfully the richness and variety of marine life is 
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="BD" >}}
 
 The current score indicates....
 

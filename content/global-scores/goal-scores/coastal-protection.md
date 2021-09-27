@@ -10,7 +10,7 @@ This goal aims to assess the amount of protection provided by marine and coastal
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="CP" >}}
 
 The current score indicates that although, in many places, these habitats remain healthy and intact, the extents of all five habitats have been substantially reduced or degraded when compared to their reference years.  The declines observed have occurred over only about three decades. 
 
