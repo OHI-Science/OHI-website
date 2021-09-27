@@ -251,6 +251,7 @@ blockquote {
     align-items: center;
     justify-content: center; }
     .index__cards .card--white {
+      position: relative;
       height: 22rem;
       padding: 2.5rem;
       padding-top: 0rem;
@@ -262,6 +263,7 @@ blockquote {
       background-position-x: 34rem;
       background-position-y: 6rem; }
     .index__cards .card--blue {
+      position: relative;
       height: 22rem;
       padding: 2.5rem;
       padding-top: 0rem;
@@ -276,9 +278,11 @@ blockquote {
       color: #212d5e;
       font-size: 2.5rem; }
     .index__cards .card__subtitle--white {
-      color: white; }
+      color: white;
+      width: 40rem; }
     .index__cards .card__subtitle--blue {
-      color: #212d5e; }
+      color: #212d5e;
+      width: 40rem; }
   .index__news {
     display: grid;
     gap: 1rem;
@@ -292,7 +296,9 @@ blockquote {
 
 .card-buttons {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: absolute;
+  bottom: 2rem; }
   .card-buttons__button--white {
     color: white;
     border: 2px solid white;
