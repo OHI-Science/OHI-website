@@ -728,8 +728,6 @@ blockquote {
     .cards__card--big {
       background-clip: border-box;
       background-color: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.18);
-      border-radius: 0.25rem;
       display: flex;
       flex-direction: column;
       height: 30rem;
@@ -743,7 +741,8 @@ blockquote {
       background-size: cover;
       flex: 1 1 auto;
       -webkit-font-smoothing: antialiased;
-      transition: transform .5s ease-in-out; }
+      transition: transform .5s ease-in-out;
+      border-bottom: 1px solid #3e4d6b; }
     .cards__card__button {
       position: absolute;
       display: flex;
