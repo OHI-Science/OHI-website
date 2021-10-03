@@ -1,0 +1,11 @@
+{{ $attrs := "" }}
+
+{{ with .Get "regionId" }}
+  {{ $attrs = printf `data-region-id="%s"` . }}
+{{ end }}
+
+{{ with .Get "goalCode" }}
+  {{ $attrs = printf `%s data-goal-code="%s"` $attrs . }}
+{{ end }}
+
+<div class="score-gauge" {{ $attrs | safeHTMLAttr }}></div>

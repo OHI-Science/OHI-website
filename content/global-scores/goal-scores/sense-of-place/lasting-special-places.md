@@ -10,7 +10,7 @@ The Lasting Special Places sub-goal measures how well we are protecting, for cur
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="LSP" >}}
 
 A score of 100 means that a country is protecting at least 30% of their coastal areas (3nm offshore and 1km inland).  Currently, many countries are acheiving this goal, but there is more progress to be made.
 

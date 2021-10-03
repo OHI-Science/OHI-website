@@ -8,7 +8,7 @@ id: "FP"
 ### HARVESTING SEAFOOD SUSTAINABLY
 This goal assesses our ability to sustainably maximize wild-caught or farmed marine foods.
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="FP" >}}
 
 Global food provision scores have decreased by ??? points per year since 2012.
 

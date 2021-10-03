@@ -11,7 +11,7 @@ This goal measures the status of marine habitats that are particularly important
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="HAB" >}}
 
 The current score indicates that the six habitats assessed- mangroves, coral reefs, seagrass beds, salt marshes, sea ice, and subtidal soft-bottom habitats- are still relatively healthy and intact on a global basis. However, the condition of the assessed habitats has declined over time. Continued decline in the future would undermine the score for Biodiversity and impact many other aspects of ocean health.
 

@@ -11,7 +11,7 @@ This goal captures the ability of coastal habitats to store carbon given the amo
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="CS" >}}
 
 The current score indicates that although, in many places, these habitats remain healthy and intact, a significant number have declined significantly since 1980 and more declines are likely in the near future. More protection and restoration must occur if they are to sequester and store the maximum amount of carbon possible.
 

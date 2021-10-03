@@ -11,7 +11,7 @@ This goal describes how well we are preserving current and future access to the 
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="SP" >}}
 
 The current score indicates that many regions are preserving the marine sources that possess cultural value.
 

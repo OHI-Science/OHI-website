@@ -11,7 +11,7 @@ This goal measures whether people who need to fish on a small, local scale have 
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="AO" >}}
 
 The current score indicates that most regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.  
 

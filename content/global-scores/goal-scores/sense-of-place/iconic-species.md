@@ -11,7 +11,7 @@ The iconic species subgoal measures the conservation status of iconic marine spe
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="SPP" >}}
 
 A high score indicates that few to none of the iconic species in a country’s EEZ have been categorized by the International Union for Conservation of Nature (IUCN) as endangered, threatended, vulnerable, or at risk of extinction. A low score indicates that many are in those categories.
 

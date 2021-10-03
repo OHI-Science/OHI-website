@@ -10,7 +10,7 @@ The Economies goal captures the economic value associated with marine industries
 
 ### CURRENT SCORE
 
-[Put a circle with Global Goal Score, like here: http://www.oceanhealthindex.org/methodology/goals/food-provision]
+{{< gauge regionId="0" goalCode="ECO" >}}
 
 The current global score indicates most coastal economies are keeping pace with growth in GDP and have sustained no recent losses. 
 
