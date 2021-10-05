@@ -1763,25 +1763,25 @@ blockquote {
  *  - assets/js/data-viz/regionAster.js
  *
  */
-.region-aster__plot {
-  max-width: 1000px; }
-
-.region-aster__controls {
-  max-width: 50rem;
-  margin: auto;
-  height: 100%;
-  position: relative; }
-
-.region-aster__control {
-  height: 40px;
-  margin-top: 1rem; }
-
-.region-aster__label {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 1rem; }
+.region-aster {
+  margin-bottom: 5rem;
+  margin-top: 3rem; }
+  .region-aster__plot {
+    max-width: 1000px; }
+  .region-aster__controls {
+    max-width: 50rem;
+    margin: auto;
+    height: 100%;
+    position: relative; }
+  .region-aster__control {
+    height: 40px;
+    margin-top: 1rem; }
+  .region-aster__label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem; }
 
 /**
  * timeSeries.scss
