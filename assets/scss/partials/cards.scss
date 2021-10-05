@@ -35,6 +35,17 @@
       position: relative;
       width: 27rem;
       word-wrap: break-word;
+
+      &:hover {
+        &__body {
+          transform: scale(1.02);
+        }
+        &__button{
+          &__text {
+            color: $light-teal;
+          }
+        }
+      }
     }
 
     &__body {

@@ -4,16 +4,44 @@
   display: flex;
   flex-direction: column;
   background-image: url('/images/bg-home.jpeg');
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height:100%;
-  //background-position: 100%;
+
+  .header-gradient{
+    position: absolute;
+    top: 0.75rem;
+    height: 20rem;
+    visibility: inherit;
+    opacity: 1;
+  }
+
+  .section-separator {
+    height: 15rem;
+    background: url('/images/bg-home-gradient.png')
+  }
 
   // The title should be underneath the navigation with a gutter on its left
   &__info{
-    padding-top:15rem;
-    padding-left: 13rem;
+    position: relative;
+    &--padding {
+      padding-top:15rem;
+      padding-left: 4rem;
+      padding-bottom: 5rem;
+    }
+    padding-top:5rem;
+    padding-left: 4rem;
     padding-bottom: 5rem;
+    // The horizontal white bar
+    &__bar {
+      height: 0.25rem;
+      width: 3rem;
+      background-color: white;
+      margin-left: 0.5rem;
+      margin-bottom: 2.5rem
+    }
     // The title should be uppercase and fairly bold
     &__title{
       color:white;
@@ -24,6 +52,7 @@
     }
     &__subtitle {
       width: 60rem;
+      padding-top: 1rem;
       color: white;
       font-weight: 400;
       font-size: 1.5rem;
@@ -94,15 +123,11 @@
   }
 
   &__news {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin: auto;
-    padding-top:3rem;
-    row-gap: 1rem;
-    width: min-content;
-    padding-bottom: 3rem;
+    background-image: url('/images/news-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
   }
 }
@@ -168,5 +193,5 @@
 }
 
 .home-content {
-  background:linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%);
+  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%);
 }

@@ -2,9 +2,9 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 <div class="index">
-
+  <div class="header-gradient"></div>
   <!-- The heading text -->
-  <div class="index__info">
+  <div class="index__info--padding">
     <div class="index__info__bar"></div>
     <p class="index__info__title">Ocean Health Index</p>
     <p class="index__info__subtitle">A healthy ocean sustainably delivers a range of benefits to people now and in the future. The Ocean Health Index is the comprehensive framework used to measure ocean health from global to local scales.</p>
@@ -37,8 +37,9 @@
       </div>
     </div>
   </div>
-
+  <div class="section-separator"></div>
   <!-- The section for the blog posts-->
+  <div class="index__news">
   <div class="index__info">
     <div class="index__info__bar"></div>
     <p class="index__info__title">News</p>
@@ -64,7 +65,7 @@
       {{ end }}
     {{ end }}
   </div>
-
+</div>
 <!-- End index content -->
 </div>
 
