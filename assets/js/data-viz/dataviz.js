@@ -26,6 +26,7 @@ function init() {
           regionAster.default({
             container: regionAsterEl,
             regionId: regionAsterEl.dataset.regionId,
+            linkTo: regionAsterEl.dataset.linkTo || "methodology",
           })
         })
       })

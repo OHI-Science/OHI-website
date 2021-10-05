@@ -2,6 +2,10 @@
 {{ $goalSection := site.GetPage "goals" }}
 
 
+{{/* Find the goal SCORES page index */}}
+{{ $goalScoreSection := site.GetPage "global-scores/goal-scores" }}
+{{ $goalScorePages := $goalScoreSection.Pages | append $goalScoreSection.RegularPagesRecursive | append $goalScoreSection }}
+
 {{/* Get the other top-level goal pages, sorted by weight */}}
 {{ $goalPages := sort $goalSection.Pages "Params.weight" }}
 
@@ -16,12 +20,31 @@
 
 {{/* Range through the remaining top-level goals */}}
 {{ range $goalPage := $goalPages }}
+
+  {{/* Get the id, label, etc. */}}
   {{ $goalProps := partial "goal-properties" .Params }}
+
+  {{/* Get a link to the goal description page */}}
   {{ $goalProps = merge $goalProps (dict "url" $goalPage.Permalink )}}
+
+  {{/* Get a link to the goal score page */}}
+  {{ range $goalScorePage := first 1 (where $goalScorePages ".Params.id" $goalProps.id ) }}
+    {{ $goalProps = merge $goalProps (dict "urlScore" $goalScorePage.Permalink )}}
+  {{ end }}
+  
   {{ $goalsData = $goalsData | append $goalProps }}
+  
   {{/* Add sub-goals, if there are any */}}
   {{ range .Pages }}
-    {{ $subgoalProps := dict "id" .Params.id "label" .Params.name "description" .Params.description "parent" $goalProps.id "url" .Permalink }}
+
+    {{ $id := .Params.id }}
+    {{ $subgoalProps := dict "id" $id "label" .Params.name "description" .Params.description "parent" $goalProps.id "url" .Permalink }}
+
+    {{/* Get a link to the goal score page */}}
+    {{ range $subgoalScorePage := first 1 (where $goalScorePages ".Params.id" $id ) }}
+      {{ $subgoalProps = merge $subgoalProps (dict "urlScore" $subgoalScorePage.Permalink )}}
+    {{ end }}
+
     {{ $goalsData = $goalsData | append $subgoalProps }}
   {{ else }}
   {{ end }}
@@ -31,6 +54,7 @@
   {{/* Return the Hugo slice of dictionaries as a JSON array of objects */}}
   {{ $goalsData = $goalsData | jsonify }}
 {{ end }}
+
 {{ return $goalsData }}
 
 {{ define "partials/goal-properties" }}
