@@ -755,10 +755,6 @@ blockquote {
       position: relative;
       width: 27rem;
       word-wrap: break-word; }
-      .cards__card--big:hover__body {
-        transform: scale(1.02); }
-      .cards__card--big:hover__button__text {
-        color: #14aac8; }
     .cards__card__body {
       background-clip: border-box;
       background-size: cover;
@@ -776,6 +772,7 @@ blockquote {
       height: 6.5rem;
       background-color: rgba(14, 33, 70, 0.9); }
       .cards__card__button--big {
+        position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -807,6 +804,38 @@ blockquote {
       transform: scale(1.02); }
     .cards__card:hover .cards__card__button__text {
       color: #14aac8; }
+
+.cards__card--big:hover .cards__card__body {
+  transform: scale(0.98); }
+
+.cards__card--big:hover .cards__card__button__text {
+  color: #14aac8; }
+
+.cards__card--big:hover .news-item-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.news-item-overlay {
+  display: none;
+  position: absolute;
+  background-color: rgba(14, 33, 70, 0.9);
+  opacity: .8;
+  height: 18rem;
+  width: 100%; }
+  .news-item-overlay .read-more-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(14, 33, 70, 0.6);
+    height: 3.5rem;
+    width: 12rem;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white; }
 
 /**
  * socials.scss
