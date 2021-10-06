@@ -16,7 +16,10 @@ menu:
 
 Results from the most recent assessment of the global Ocean Health Index. 
 
-[NOTE: Will link to here.]
+{{<button text="Download data" link="data/scores.csv" >}}
+
+<br>
+<br>
 
 ### Cumulative Human Impacts
 ![Infographic](/images/infographs/trends_cumulative_impact.jpg)

@@ -56,7 +56,10 @@ The `aster` shortcode renders an aster plot (aka a flower plot) where each 'peta
 
 ### `{{<button text="Learn More" link="inform" >}}`
 
-Add a link that looks like a button in markdown using the `button` code. To link to an external page, make sure that the `link` property starts with `http` or `https`. If the link is an internal page, it can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page). 
+Add a link that looks like a button in markdown using the `button` code, or add a button to download an image or data.
+- To link to an external page, make sure that the `link` property starts with `http` or `https`.
+- To link to an internal page, the path can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page).
+- To make a link to download an image or data, the path should start with `data/` or `image/`, for example `data/scores.csv`)
 
 ## Goal pages
 

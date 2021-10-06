@@ -3,10 +3,17 @@
 
 {{ $isExternal := false }}
 
+{{ $imageResource := partial "functions/getImageResource" $link }}
+{{ $dataResource := partial "functions/getDataResource" $link }}
+
 {{ if hasPrefix $link "http" }}
   {{ $isExternal = true }}
+{{ else if $imageResource }}
+  {{ $link = $imageResource.Permalink }}
+{{ else if $dataResource }}
+  {{ $link = $dataResource.Permalink }}
 {{ else }}
-  {{ $link := ref . $link }}
+  {{ $link = ref . $link }}
 {{ end }}
 
 <div class="buttons">

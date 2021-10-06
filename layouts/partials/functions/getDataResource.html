@@ -1,0 +1,18 @@
+{{/* Given a path, return an data resource that is stored in the data directory */}}
+
+{{/* Get the bundle of data from the data directory */}}
+{{ $dataResource := "" }}
+{{ $dataDirName := "data" }}
+{{ $dataBundle := (site.GetPage "section" $dataDirName).Resources }}
+
+{{/* Clean up the given path name. Remove data prefix. */}}
+{{ $path := . }}
+{{ $dataPathPrefix := (printf "/%s/" $dataDirName) }}
+{{ if not (hasPrefix $path "/") }}
+  {{ $path = print "/" $path }}
+{{ end }}
+{{ $path = strings.TrimPrefix $dataPathPrefix $path }}
+
+{{ $dataResource = $dataBundle.GetMatch $path }}
+
+{{ return $dataResource }}
