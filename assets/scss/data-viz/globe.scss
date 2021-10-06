@@ -26,8 +26,8 @@
   }
 
   &__water {
-    fill: #f3f4f6;
-    stroke: #e5e7eb;
+    fill: #e9ecf2;
+    stroke: #d4d7de;
     cursor: move;
   }
 
@@ -38,7 +38,7 @@
   }
 
   &__region {
-    stroke: #f9fafb;
+    stroke: #b4bfcb;
     cursor: pointer;
     transition: fill 0.2s cubic-bezier(0.75, 0, 0.125, 1);
   }

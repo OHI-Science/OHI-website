@@ -16,6 +16,10 @@ import legend from "./legend.js"
  * SVG legend
  */
 
+// ----- For all -----
+
+const missingValueColour = '#88909e';
+ 
 // ----- For scores -----
 
 // The colours to use in the colour palette. We want ~75% of the colours to be reds -
@@ -26,7 +30,6 @@ const reds = [
 ]
 const blues = ['#ABD9E9', '#4575B4', '#313695']
 const redAndBlues = reds.concat(blues)
-const missingValueColour = '#9CA3AF';
 
 // The min and max OHI score, used to calculate the step between each colour in the
 // palette.
@@ -45,9 +48,9 @@ const step = rangeScore / numSteps;
 const redsTrends = ["#A50026", "#D73027", "#F46D43", "#FDAE61", "#FEE090"];
 const bluesTrends = ["#E0F3F8", "#ABD9E9", "#74ADD1", "#4575B4", "#313695"];
 
-const minTrends = -5.9;
+const minTrends = -2;
 const divergePoint = 0;
-const maxTrends = 5.9;
+const maxTrends = 2;
 
 // Since the red and blue palette are both length 4, and each covers 5 units of trend
 // scores (-5 to 0, and 0 to +5) we can use the same steps calculation.
