@@ -54,6 +54,10 @@ The `gauge` shortcode renders a gauge visualization showing the score for the gi
 
 The `aster` shortcode renders an aster plot (aka a flower plot) where each 'petal' is represents the score for a particular goal for the given region. Data for the aster plot come from the `scores.csv` file. For the `regionId` property, use one of the numbers that are used to identify regions in `scores.csv`; use "0" for the global average. The `linkTo` property can be set to either `"methodology"` or `"score"` - this configured which type of goal page to navigate to when you click on one of the petals. `"methodology"` links to the goal pages that are under `content/goals`, `"score"` links to the goal pages that are under `content/global-scores/goal-scores`.
 
+### `{{<button text="Learn More" link="inform" >}}`
+
+Add a link that looks like a button in markdown using the `button` code. To link to an external page, make sure that the `link` property starts with `http` or `https`. If the link is an internal page, it can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page). 
+
 ## Goal pages
 
 Goal and sub-goal pages, including goal index page, require more front-matter than other content pages. In addition to the "title", "name", and "bg_image" properties, goal pages use the properties "id", "icon", "description", and "color". These extra properties control how the OHI goal information is presented on the website, including creating the data visualizations.

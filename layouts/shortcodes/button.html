@@ -1,0 +1,18 @@
+{{ $text := .Get "text" }}
+{{ $link := .Get "link" }}
+
+{{ $isExternal := false }}
+
+{{ if hasPrefix $link "http" }}
+  {{ $isExternal = true }}
+{{ else }}
+  {{ $link := ref . $link }}
+{{ end }}
+
+<div class="buttons">
+  <div class="button--small">
+    <a class="button__link" href="{{ $link }}" {{ if $isExternal }}target="_blank"{{ end }}>
+    <p class="button__text">{{ $text }}</p>
+    </a>
+  </div>
+</div>
