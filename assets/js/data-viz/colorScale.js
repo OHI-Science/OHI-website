@@ -41,19 +41,46 @@ const step = rangeScore / numSteps;
 // const trendDomain = [-1, -0.0001, 0.0001, 1]
 // const trendCols = ['#9c0c24', '#f5d7d0', '#c5ebd8', '#08a657']
 
+// Reds should cover the first 65% of the range of trend values
+const redsTrends = ["#A50026", "#D73027", "#F46D43", "#FDAE61", "#FEE090"];
+const bluesTrends = ["#E0F3F8", "#ABD9E9", "#74ADD1", "#4575B4", "#313695"];
+
+const minTrends = -5.9;
+const divergePoint = 0;
+const maxTrends = 5.9;
+
+// Since the red and blue palette are both length 4, and each covers 5 units of trend
+// scores (-5 to 0, and 0 to +5) we can use the same steps calculation.
+const numStepsTrends = redsTrends.length - 1;
+const stepTrends = maxTrends / numStepsTrends;
+
+
+const domainReds = d3.range(minTrends, (divergePoint + stepTrends), stepTrends)
+const domainBlues = d3.range(divergePoint, (maxTrends + stepTrends), stepTrends)
+
+const colorsTrends = redsTrends.concat(bluesTrends)
+const domainTrends = domainReds.concat(domainBlues)
+
+const numPadding = 0.1 // So that we don't have two numbers the same
+
+domainTrends[redsTrends.length - 1] = divergePoint - numPadding
+domainTrends[redsTrends.length] = divergePoint + numPadding
 
 // Returns the function that gets a legend color
 const getColorFunction = function (dimension = 'score') {
+
   if (dimension === 'score') {
     return d3.scaleLinear()
       .domain(d3.range(minScore, (maxScore + step), step))
       .range(redAndBlues)
       .unknown(missingValueColour);
+    
   } else if (dimension === 'trend') {
-    return d3.scaleDiverging()
-      .range(['#a91f04', '#e3e3e3', '#049464'])
-      .domain([-1, 0, 1])
+    return d3.scaleLinear()
+      .domain(domainTrends)
+      .range(colorsTrends)
       .unknown(missingValueColour)
+      .clamp(true)
   }
 }
 
