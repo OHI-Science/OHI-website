@@ -30,8 +30,12 @@ import numberSlider from "./numberSlider.js"
  * @property {HTMLElement} container - The container into which the region aster
  * visualization should be inserted
  * @property {string} regionId - The ID of the region to display
- * @property {RegionAsterClasses} [classes] - Classes to add to the HTML elements
- * created by this function
+ * @property {RegionAsterClasses} [classes] - Classes to add to the HTML elements created
+ * by this function
+ * @property {string} linkTo - Which of the goal pages the aster plot should link to. By
+ * default, links to the 'methodology' page which gives a description and overview of the
+ * goal. Can also be set to 'score', which will instead link to the goal page that gives
+ * an overview of the global score for that goal.
  */
 async function regionAster({
   container = null,
@@ -42,7 +46,8 @@ async function regionAster({
     controls: "region-aster__controls",
     control: "region-aster__control",
     label: "region-aster__label"
-  }
+  },
+  linkTo = 'methodology'
 } = {}) {
 
   if (!container) {
@@ -119,13 +124,19 @@ async function regionAster({
     // meanScore in the centre).
     ohiData.goalsConfig.forEach(function (goalLabel, index) {
       if (!goalLabel.parent && goalLabel.id !== 'Index') {
+        let url = null;
+        if (linkTo === 'methodology') {
+          url = goalLabel.url
+        } else if (linkTo === 'score') {
+          url = goalLabel.urlScore
+        }
         const d = {
           id: goalLabel.id,
           label: goalLabel.label,
           score: yearDimensionData[goalLabel.id][selections.region],
           color: goalLabel.color,
           icon: goalLabel.icon,
-          url: goalLabel.url
+          url: url
         }
         arcs.push(d)
       }

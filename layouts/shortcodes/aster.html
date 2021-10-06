@@ -1,0 +1,15 @@
+{{ $attrs := "" }}
+
+{{ with .Get "linkTo" }}
+  {{ $attrs = printf `data-link-to="%s"` . }}
+{{ else }}
+  {{ $attrs = printf `data-link-to="%s"` "methodology" }}
+{{ end }}
+
+{{ with .Get "regionId" }}
+  {{ $attrs = printf `%s data-region-id="%s"` $attrs . }}
+{{ else }}
+  {{ $attrs = printf `%s data-region-id="%s"` $attrs "0" }}
+{{ end }}
+
+<div class="region-aster" {{ $attrs | safeHTMLAttr }}></div>
