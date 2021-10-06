@@ -1,9 +1,9 @@
 ﻿Source,Pollutant,Possible approaches
-shipping,organic pollution (oil spills),direct monitoring of oil spills; shipping density
-shipping,"inorganic pollution (coatings, etc.)",direct monitoring; shipping density
-cruise ships,nutrient pollution (sewage),direct monitoring; cruise ship density
-cruise ships,pathogens (sewage),direct monitoring; cruise ship density
-fishing,trash and plastics,direct monitoring; fishing effort and equipment
+shipping,organic pollution (oil spills),"direct monitoring of oil spills, shipping density"
+shipping,"inorganic pollution (coatings, etc.)","direct monitoring; shipping density"
+cruise ships,nutrient pollution (sewage),"direct monitoring, cruise ship density"
+cruise ships,pathogens (sewage), direct monitoring cruise ship density
+fishing,trash and plastics,direct monitoring and fishing effort and equipment
 garbage disposal,trash and plastics,direct monitoring
 agriculture,nutrient pollution (fertilizer and manure),direct monitoring; modeling based on agricultural intensity
 human wastewater,microplastics,direct monitoring; modeling based on human population
