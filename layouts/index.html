@@ -57,6 +57,9 @@
         {{ $imageResource = $imageResource.Fill "870x640" }}
         <a class="cards__card--big" href= "{{ .Permalink }}">
           <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
+          <span class="news-item-overlay">
+            <span class="read-more-copy">Read More</span>
+        </span>
           <div class="cards__card__button--big">
             <p class="cards__card__button__phrase">Ocean Health Index at Work</p>
             <p class="cards__card__button__text--padded">{{ .Params.name }}</p>
