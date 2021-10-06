@@ -1731,15 +1731,15 @@ blockquote {
     height: 100%;
     width: 100%; }
   .globe__water {
-    fill: #f3f4f6;
-    stroke: #e5e7eb;
+    fill: #e9ecf2;
+    stroke: #d4d7de;
     cursor: move; }
   .globe__land {
     fill: white;
     stroke: #e5e7eb;
     cursor: move; }
   .globe__region {
-    stroke: #f9fafb;
+    stroke: #b4bfcb;
     cursor: pointer;
     transition: fill 0.2s cubic-bezier(0.75, 0, 0.125, 1); }
   .globe__region:hover, .globe__region--focused {
