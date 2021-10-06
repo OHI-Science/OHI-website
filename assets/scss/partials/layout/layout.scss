@@ -1,6 +1,16 @@
-.default-section{
+.section{
+
+  // The default section has a 3-col layout
   display: grid;
   grid-template-columns: 12% auto 16%;
   gap: 3rem;
   padding: 2rem;
+
+  // A section that has a TOC uses a 2-col layout rather than 3
+  &--has-toc{
+    grid-template-columns: auto auto;
+    width: 100%;
+    max-width: $max-content-width;
+    margin: auto;
+  }
 }

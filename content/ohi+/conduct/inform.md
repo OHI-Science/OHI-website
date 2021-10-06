@@ -2,6 +2,7 @@
 title: "Inform"
 name: "Inform"
 bg_image: "/images/banners/fish-school.jpg"
+toc: true
 ---
 
 Congratulations! You have successfully Conducted your indepenent OHI+ assessment, and you are in the last phase of OHI+, Inform. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers.

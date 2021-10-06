@@ -21,9 +21,10 @@ add-ons called "shortcodes". Content markdown files also use metadata at the sta
 
 Front-matter is located at the top of each markdown file, between two `---` separators, in `yaml` format. The properties common to all pages are:
 
-- title
-- name
-- bg_image
+- `title`: The full title of the page to show in the page header.
+- `name`: The short name of the page to use in menus, etc. May be the same as title.
+- `bg_image`: The image to use in the page's header
+- `toc`: Set to `true` to add a table of contents to the page. The page will use a 2-col layout instead of a 3-col layout. This only works for single pages (pages that aren't named `index.md` or `_index.md`)
 
 ## Shortcodes
 

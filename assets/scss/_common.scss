@@ -53,18 +53,8 @@ a h4{
   }
 }
 
-.section {
-  padding-top: 90px;
-  padding-bottom: 90px;
-
-  &-sm {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  &-title {
-    margin-bottom: 30px;
-  }
+.section-title {
+  margin-bottom: 30px;
 }
 
 .bg-cover {

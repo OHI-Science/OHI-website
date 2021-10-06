@@ -2,6 +2,7 @@
 title: "Plan"
 name: "Plan"
 bg_image: "/images/banners/fish-school.jpg"
+toc: true
 ---
 You have successfully _Learned_ about OHI, and you can start <b>Planning</b> your own assessment. This section will help you understand the financial requirements, human resources, and data requirements of conducting an assessment, as well as how to engage stakeholders and assessmble a technical team, in order to Conduct an OHI assessment in the next phase.
 
