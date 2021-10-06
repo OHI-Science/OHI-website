@@ -5,17 +5,27 @@
 {{ $left_icon := .Get "left_icon" }}
 {{ $right_icon := .Get "right_icon" }}
 
+{{ $isLeftExternal := false }}
+{{ if hasPrefix $left_link "http" }}
+  {{ $isLeftExternal = true }}
+  {{ end }}
+
+{{ $isRightExternal := false }}
+{{ if hasPrefix $right_text "http" }}
+  {{ $isRightExternal = true }}
+  {{ end }}
+
 <div class="buttons">
   <div class="button">
-    <a class="button__link" href="{{$left_link }}" target="_blank">
-      <p class="button__text">{{ $left_text }}</p>
+    <a class="button__link" href="{{$left_link }}" {{ if $isLeftExternal }}target="_blank"{{ end }}>
+      <p class="button__text">{{ safeURL $left_text }}</p>
       {{if $left_icon}}
         <img class="button__icon" src="{{$left_icon}}" alt="Icon">
       {{end}}
     </a>
   </div>
   <div class="button">
-    <a class="button__link" href="{{ $right_link }}" target="_blank">
+    <a class="button__link" href="{{ $right_link }}" {{ if $isRightExternal }}target="_blank"{{ end }}>
       <p class="button__text">{{ $right_text }}</p>
       {{if $right_icon}}
         <img class="button__icon" src="{{$right_icon}}" alt="Icon">
