@@ -28,4 +28,7 @@ Temporary Items
 
 # Dependencies
 node_modules
+
+# R stuff
 .Rproj.user
+.Rhistory

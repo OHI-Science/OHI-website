@@ -32,7 +32,7 @@ function legend({
   color,
   title,
   tickSize = 6,
-  width = 320,
+  width = 350,
   height = 44 + tickSize,
   marginTop = 18,
   marginRight = 0,
@@ -47,6 +47,14 @@ function legend({
   if (!color) {
     console.log('A color (D3 color scale function) is required to create a legend')
     return
+  }
+
+
+  let sizeNoData = 0;
+  // Make room for the No Data legend element, if there is one
+  if (color(null)) {
+    sizeNoData = (height - marginTop - marginBottom)
+    marginLeft = marginLeft + (sizeNoData * 1.9) // times 1.9 for padding
   }
 
   function ramp(color, n = 256) {
@@ -178,7 +186,36 @@ function legend({
       .attr('text-anchor', 'start')
       .attr('class', titleClass)
       .text(title));
+  
+  // If there is an no data color
+  if (color(null)) {
 
+    const noDataFontSize = 11;
+    const noData = svg.append('g')
+      .attr('transform', `translate(${sizeNoData * 0.5},${marginTop})`)
+    
+    noData.append('rect')
+      .attr('width', sizeNoData)
+      .attr('height', sizeNoData)
+      .attr('stroke', 'none')
+      .attr('transform', `translate(${-0.5 * sizeNoData},0)`)
+      .attr('fill', color(null));
+    noData.append('text')
+      .text('No')
+      .attr('fill', 'currentColor')
+      .attr('dy', `${sizeNoData + noDataFontSize}px`)
+      .style('font-size', `${noDataFontSize}px`)
+      .attr('text-anchor', 'middle')
+    noData.append('text')
+      .text('data')
+      .attr('fill', 'currentColor')
+      .attr('dy', `${sizeNoData + noDataFontSize + noDataFontSize}px`)
+      .style('font-size', `${noDataFontSize}px`)
+      .attr('text-anchor', 'middle')
+
+  }
+  
+    
   return svg.node();
 }
 

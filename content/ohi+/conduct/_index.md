@@ -1,8 +1,8 @@
 ---
 title: "Conduct an OHI+"
 name: "Conduct an OHI+"
-type: ohi-conduct
 bg_image: "/images/banners/fish-school.jpg"
+cards: false
 menu:
   main:
     parent: 'OHI+'
@@ -17,7 +17,7 @@ menu:
 
 The Ocean Health Index is a comprehensive assessment tool that evaluates a suite of goals that deliver benefits to humans. It can be tailored to identify and capture important factors in different contexts. Learn whether the OHI is the right assessment tool for your area, or learn from previous assessments to identify opportunities in subsequent assessments.
 
-{{<single-button text="Learn More" link="learn" >}}
+{{<button text="Learn More" link="learn" >}}
 
 <br>
 <br>
@@ -26,7 +26,7 @@ The Ocean Health Index is a comprehensive assessment tool that evaluates a suite
 
 Planning an OHI+ assessment requires identifying the needs and spatial area of the assessment, establishing objectives and a timeline of activities, determining necessary resources (human and financial), and aligning the assessment process with existing efforts and initiatives. Further, it is important to identify and include collaborators, including key stakeholders or decision-makers.
 
-{{<single-button text="Learn More" link="plan" >}}
+{{<button text="Learn More" link="plan" >}}
 
 <br>
 <br>
@@ -34,7 +34,7 @@ Planning an OHI+ assessment requires identifying the needs and spatial area of t
 ## Conduct an OHI+ assessment
 Conducting an assessment requires tailoring the OHI framework to the local context and using the Toolbox software to calculate scores based on this framework. This requires conceptually identifying important characteristics and priorities in the area, and gathering existing information and developing models to represent the framework. An emphasis is on transparency and reproducible science.
 
-{{<single-button text="Learn More" link="http://ohi-science.org/toolbox-training/" >}}
+{{<button text="Learn More" link="http://ohi-science.org/toolbox-training/" >}}
 
 <br>
 <br>
@@ -44,4 +44,4 @@ Conducting an assessment requires tailoring the OHI framework to the local conte
 The scores produced from the assessment process, as well as what was learned through the process itself, should be shared. Along with final scores and methods, it is important to transparently describe successes and challenges of the process (including information and knowledge gaps). These can help to prioritize policy decisions and can also make future assessments more efficient.
 
 
-{{<single-button text="Learn More" link="inform" >}}
+{{<button text="Learn More" link="inform" >}}

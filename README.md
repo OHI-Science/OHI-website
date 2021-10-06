@@ -21,9 +21,10 @@ add-ons called "shortcodes". Content markdown files also use metadata at the sta
 
 Front-matter is located at the top of each markdown file, between two `---` separators, in `yaml` format. The properties common to all pages are:
 
-- title
-- name
-- bg_image
+- `title`: The full title of the page to show in the page header.
+- `name`: The short name of the page to use in menus, etc. May be the same as title.
+- `bg_image`: The image to use in the page's header
+- `toc`: Set to `true` to add a table of contents to the page. The page will use a 2-col layout instead of a 3-col layout. This only works for single pages (pages that aren't named `index.md` or `_index.md`)
 
 ## Shortcodes
 
@@ -52,6 +53,13 @@ The `gauge` shortcode renders a gauge visualization showing the score for the gi
 ### `{{< aster regionId="0" linkTo="methodology" >}}`
 
 The `aster` shortcode renders an aster plot (aka a flower plot) where each 'petal' is represents the score for a particular goal for the given region. Data for the aster plot come from the `scores.csv` file. For the `regionId` property, use one of the numbers that are used to identify regions in `scores.csv`; use "0" for the global average. The `linkTo` property can be set to either `"methodology"` or `"score"` - this configured which type of goal page to navigate to when you click on one of the petals. `"methodology"` links to the goal pages that are under `content/goals`, `"score"` links to the goal pages that are under `content/global-scores/goal-scores`.
+
+### `{{<button text="Learn More" link="inform" >}}`
+
+Add a link that looks like a button in markdown using the `button` code, or add a button to download an image or data.
+- To link to an external page, make sure that the `link` property starts with `http` or `https`.
+- To link to an internal page, the path can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page).
+- To make a link to download an image or data, the path should start with `data/` or `image/`, for example `data/scores.csv`)
 
 ## Goal pages
 

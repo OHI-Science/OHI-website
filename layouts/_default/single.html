@@ -1,7 +1,24 @@
 {{ define "main" }}
-  <section class="default-section">
-  {{- partial "layout/left-col.html" . -}}
-  {{- partial "layout/center-col.html" . -}}
-  {{- partial "layout/right-col.html" . -}}
+
+  {{- $page := . -}}
+  {{- $hasTOC := $page.Params.toc -}}
+
+  {{- $pageClass := "section" -}}
+  {{- if $hasTOC -}}
+    {{- $pageClass = printf "%s %s--has-toc" $pageClass $pageClass -}}
+  {{- end -}}
+  
+  <section class="{{ $pageClass }}">
+
+    {{- if .Params.toc -}}
+      {{- $tocBlock := dict "toc_html" $page.TableOfContents "content" $page.Content -}}
+      {{- partial "toc" (dict "Page" $page "Block" $tocBlock ) -}}
+    {{- else -}}
+      {{- partial "layout/left-col.html" . -}}
+      {{- partial "layout/center-col.html" . -}}
+      {{- partial "layout/right-col.html" . -}}
+    {{- end -}}
+
   </section>
+
 {{end}}

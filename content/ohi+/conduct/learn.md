@@ -2,6 +2,7 @@
 title: "Learn"
 name: "Learn"
 bg_image: "/images/banners/fish-school.jpg"
+toc: true
 ---
 
 Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.
@@ -74,7 +75,7 @@ The Ocean Health Index Toolbox Manual
 
 In addition, you will have access to the OHI+ online community via our Forum
 
-# Global Assessments and Your OHI+ Assessment
+# 2 Global Assessments and Your OHI+ Assessment
 
 > By conducting a OHI+ study, you will be developing an Independent Ocean Health Index at a spatial scale of your choice. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
 
