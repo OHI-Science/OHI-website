@@ -1,8 +1,8 @@
 ---
 title: "Conduct an OHI+"
 name: "Conduct an OHI+"
-type: ohi-conduct
 bg_image: "/images/banners/fish-school.jpg"
+cards: false
 menu:
   main:
     parent: 'OHI+'
