@@ -2,7 +2,7 @@
 <html lang="en-US"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guidance: Species</title>
+  <title>Biodiversity: Species</title>
 
   
   <link rel="stylesheet" href="https://ohi-science.org/OHI-website/scss/style.css" media="screen">
@@ -422,7 +422,7 @@
 </nav>
 <header class="page-title-section overlay" style="background-image: url('/OHI-website/images/banners/shark-fish.jpg');" >
   <div class="header-gradient"></div>
-  <h1 class="section-title">Guidance: Species</h1>
+  <h1 class="section-title">Biodiversity: Species</h1>
 </header><div  class="breadcrumb">
   
   
@@ -441,7 +441,7 @@
 
   
   
-  <a class = "breadcrumb-item current" href="https://ohi-science.org/OHI-website/guidance/species/">&nbspGuidance: Species</a>
+  <a class = "breadcrumb-item current" href="https://ohi-science.org/OHI-website/guidance/species/">&nbspBiodiversity: Species</a>
   
 
 </div>
@@ -470,7 +470,152 @@
   
 </svg></div>
 </div><div class="column-center">
+  <p>The Species sub-goal is part of the Biodiversity goal and assesses the condition of all marine species present in a region, including endangered species and species in relatively good condition.</p>
+<blockquote>
+<p>Data for this goal may also used in Sense of Place sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.</p>
+</blockquote>
+<h4 id="practical-guidance">Practical Guidance</h4>
+<p>Ideally, every marine species living in the assessment area will have spatial data describing their location and descriptions of their popoulation health.</p>
+<p><em><em>STEP 1: Identify and find the data</em></em></p>
+<p>A useful starting point is to develop a list of all the species living in the assessment area.</p>
+<p>Then, begin hunting for data describing each species distribution and conservation status. It is best if you only use species for which there are both spatial data and conservation status (or, can be reliably estimated using gapfilling approaches).</p>
+<p>For the global assessment, we identified the extinction risk of each species using data from the International Union for the Conservation of Nature (IUCN) (<a href="http://www.iucnredlist.org/technical-documents/spatial-data)">www.iucnredlist.org/technical-documents/spatial-data)</a>. IUCN provides global species assessments that describe the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct. These risk categories are converted into weights (between 0 and 1) for calculations. IUCN comprehensively assesses <em>all</em> the species within a particular taxa, which provides a relatively unbiased geographic snapshot of how total marine biodiversity is faring, even though it is a very small sub-sample of overall species diversity.</p>
+<p>The species ranges were mostly determined using IUCN distribution maps; however, AquaMaps data was used for species not covered by the IUCN distribution maps.</p>
+<p>IUCN and Aquamaps may be a valuable source of data for OHI+ studies.  However, applying these global datasets to more local areas can create potential gaps. For example, not all species identified in a region will be in these databases because they do belong to one of the assessed taxa, or due to oversights or errors in range maps. Furthermore, for the most part, the extinction risk scores reflect the global average, even though this can vary by region.</p>
+<p>Due to these shortcomings, if available, local studies of marine species distribution and status are often preferred. A good compromise might be to use a combination of global data and local data. However, one thing to keep in mind when using local data sets is that local lists might focus on endangered species and leave species in relatively good conditions un-assessed. This could result in bias, resulting in poorer scores.</p>
+<p>Ideally, data describing species distributions will be in a map form, either describing presence/absence or more detailed data. If spatial distribution distribution maps are unavailable, you can simplify the model by identifying the species to each assessed region. In this case, the contribution of the species to the region score will not be weighted by the size of their distribution. But that is fine! If data at this spatial resolution are unavailable, the score can be calculated by lumping all the species in the entire assessment area and applying the same score to all regions.</p>
+<p>In regard to conservation status, You can complement IUCN data (or other global data) with supplementary scientific literature and/or expert judgement.</p>
+<p><em><em>STEP 2: Consider the reference point</em></em></p>
+<p>It will be important to identify a meaningful reference points for both 0 and 100 scores.  For example, for the Global Assessment a score of 100 indicates that all species are of &ldquo;Least Concern&rdquo;, and a zero score indicates that 75% (or more) of species go extinct. In this case, the data was rescaled so that a zero score did not reflect 100% extinction, based on the literature of mass extinctions (e.g., Barnosky et al., 2011).  Rescaling could be further refined using nonlinear relationships between species condition scores and ultimate status scores.</p>
+<p><em><em>STEP 3: Develop the model</em></em></p>
+<p>At this point, you will want to consider how to best aggregate all the species information to arrive at a single score.  For instance, will the model take into account range size? Or, count all species equally. An inherent disadvantage for conservation may occur when rare species get rarer in the future, and will therefore have a relatively small influence on the score while common species drive the results.</p>
+<p>The model used for the Global Assessment, starts by analyzing the data at the raster cell scale. The species located in each raster cell are replaced by their numeric extinction risk values and these values are then averaged to get a single condition value for each cell.  The resulting cell values are then averaged within each country&rsquo;s EEZ to get the region score.</p>
+<p>The result is that range size has an impact on score results. For example, most cone snail species will not have a big impact on the Species sub-goal score because they tend to be rare species and have small distributions.</p>
+<p>This approach may, or may not, reflect the desired objectives of other OHI+ assessments.</p>
+<p><em><em>Additional notes</em></em>
+Do you know how the data were collected? Do you have information on sampling effort? If you don’t know, you may not be sure whether changes in condition are due to monitoring efforts or biodiversity change, and you therefore may want to consider the uncertainty of your model.</p>
+<h4 id="examples-of-the-approach">Examples of the Approach</h4>
+
+
+
+
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table class="csv-table">
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell">Scientific name</th>
+      
+        <th class ="csv-table__header-cell">IUCN Category</th>
+      
+        <th class ="csv-table__header-cell">Trend</th>
+      
+        <th class ="csv-table__header-cell">Map Cells</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Conus salreiensis</td>
+          
+        
+          
+            <td class="csv-table__cell">Critically Endangered</td>
+          
+        
+          
+            <td class="csv-table__cell">Decreasing</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Conus trochulus</td>
+          
+        
+          
+            <td class="csv-table__cell">Near Threatened</td>
+          
+        
+          
+            <td class="csv-table__cell">Unknown</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Conus roeckeli</td>
+          
+        
+          
+            <td class="csv-table__cell">Least Concern</td>
+          
+        
+          
+            <td class="csv-table__cell">Unknown</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Acropora palmata</td>
+          
+        
+          
+            <td class="csv-table__cell">Critically Endangered</td>
+          
+        
+          
+            <td class="csv-table__cell">Stable</td>
+          
+        
+          
+            <td class="csv-table__cell">1158</td>
+          
+        
+      </tr>
+    
+  </table>
+</div>
+
   <div class="right-col-sep"></div>
 </div><div class="column-right">
   
