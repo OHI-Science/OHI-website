@@ -57,6 +57,14 @@
       font-weight: 400;
       font-size: 1.5rem;
     }
+    &__more_news {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-right: 3rem;
+      color: white;
+      font-size: 1.2rem;
+    }
   }
 
   // There are two link boxes, one with a white background and the other with
@@ -178,15 +186,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
 
 .home-title {
   color: white; flex: 0 0 100%;
