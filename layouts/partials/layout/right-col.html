@@ -6,6 +6,8 @@
   {{ $menuSection := false }}
   {{ $pages := slice }}
 
+  {{/* The root navigation page should always be at the top */}}
+  {{ $pages = $pages | append $currentPage.Page }}
   {{/* 
     First, determine if the current page is a top level menu item. If it is, then
     get all of the first-order sub pages and add them to the '$pages' slice.
