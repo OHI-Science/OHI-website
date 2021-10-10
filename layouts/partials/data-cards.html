@@ -1,0 +1,51 @@
+<div class = "cards">
+
+  {{ $currentPage := . }}
+  {{ $menu := site.Menus.main }}
+
+  {{/* If any of the child pages of this page are menu items, then this is a top-level section overview page. */}}
+
+  {{ $isOverviewPage := false }}
+  {{ $menuSection := false }}
+
+  {{ range $menuItem := $menu }}
+    {{ range $menuItemChild := $menuItem.Children }}
+      {{ range $sectionPage := $currentPage.Pages }}
+        {{ if eq $sectionPage $menuItemChild.Page }}
+          {{ $isOverviewPage = true }}
+          {{ $menuSection = $menuItem }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* If this page is a section overview, then show cards for all the child items in the menu. */}}
+  {{/* If this is another type of index page, then just show cards for the child pages.  */}}
+
+  {{ $pages := slice }}
+
+  {{ if $isOverviewPage }}
+    {{ range $menuItemChild := $menuSection.Children }}
+        {{/* Do not add a card for the currentPage */}}
+        {{ if not (eq $currentPage $menuItemChild.Page) }}
+          {{ $pages = $pages | append $menuItemChild.Page }}
+        {{ end }}
+      {{ end }}
+  {{ else }}
+    {{ $pages = .Pages }}
+  {{ end }}
+
+  {{ range $pages }}
+    {{if .Params.card_image }}
+      {{ $imageResource := partial "functions/getImageResource" .Params.card_image }}
+      {{ $imageResource = $imageResource.Fill "870x640" }}
+      <a class="cards__card" href= "{{ .Permalink }}">
+        <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
+          <div class="cards__card__button--long">
+            <p class="cards__card__button__data-text">{{ .Params.name }}</p>
+            <p class="cards__card__button__data-description">{{ .Params.card_desc }}</p>
+          </div>
+      </a>
+    {{end}}
+  {{end}}
+</div>

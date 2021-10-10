@@ -2,4 +2,4 @@
 headless: true
 title: Guidance
 ---
-{{<redirect path="/">}}
+{{<redirect path="/goals">}}

@@ -52,10 +52,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       width: 100%;
       bottom: 0rem;
       height: 6.5rem;
       background-color: $dark-blue;
+      
       &--big {
         position: absolute;
         display: flex;
@@ -63,9 +65,19 @@
         justify-content: center;
         width: 100%;
         bottom: 0rem;
-        height: 12rem;
+        height: 16rem;
         background-color: $dark-blue;
+      }
 
+      &--long {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+        height: 8rem;
+        background-color: $dark-blue;
       }
 
       &__phrase {
@@ -92,6 +104,33 @@
           letter-spacing:0.03rem;
           text-transform: uppercase;
         }
+      }
+
+      &__data-text {
+        color:white;
+        font-size: 1.25rem;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing:0.03rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 1rem;
+      }
+
+      &__description {
+        color:white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      &__data-description {
+        color:white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0rem;
+        font-size: .8rem;
       }
     }
 

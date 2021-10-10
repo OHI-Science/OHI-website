@@ -1,0 +1,22 @@
+.data-banner {
+  position: relative;
+  top: 1rem;
+  justify-content: center;
+  text-align: center;
+  clear:both;
+  padding-top: 1rem;
+  text-align: center;
+  justify-content: center;
+
+  &__logo {
+    height: 10rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    top: 1rem;
+    position: absolute;
+    width: 100%;
+    font-size: 3rem;
+  }
+}
