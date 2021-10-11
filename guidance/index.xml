@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ocean Health Index</title>
+    <title>Guidance on Ocean Health Index</title>
     <link>https://ohi-science.org/OHI-website/guidance/</link>
-    <description>Recent content on Ocean Health Index</description>
+    <description>Recent content in Guidance on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/guidance/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -23,6 +23,16 @@
       <guid>https://ohi-science.org/OHI-website/guidance/natural-products/</guid>
       <description>This goal assesses the ability of countries to maximize the sustainable harvest of living marine resources that are not consumed as food by humans, such as sponges, fishoil and fishmeal, shells, seaweeds, mangrove wood, and fish for the aquarium trade.
  Similar to Food Provisions, this goal is trying to capture the value of goods sustainably harvested by the ocean. While Food Provision focuses on goods for human consumption, Natural Products assesses non-food goods.</description>
+    </item>
+    
+    <item>
+      <title>Carbon Storage</title>
+      <link>https://ohi-science.org/OHI-website/guidance/carbon-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/carbon-storage/</guid>
+      <description>This goal captures the ability of marine habitats to store carbon given the amount of carbon they uptake and store and the habitat health.
+Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture the ability of the coastal habitats to remove carbon given the amount of carbon they store and/or their carbon uptake rate and the health condition of the habitat.</description>
     </item>
     
     <item>

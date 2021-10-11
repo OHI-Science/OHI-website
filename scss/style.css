@@ -262,6 +262,13 @@ blockquote {
       color: white;
       font-weight: 400;
       font-size: 1.5rem; }
+    .index__info__more_news {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-right: 3rem;
+      color: white;
+      font-size: 1.2rem; }
   .index__cards {
     display: flex;
     flex-direction: row;
@@ -951,6 +958,7 @@ blockquote {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       width: 100%;
       bottom: 0rem;
       height: 6.5rem;
@@ -962,7 +970,16 @@ blockquote {
         justify-content: center;
         width: 100%;
         bottom: 0rem;
-        height: 12rem;
+        height: 16rem;
+        background-color: rgba(14, 33, 70, 0.9); }
+      .cards__card__button--long {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+        height: 8rem;
         background-color: rgba(14, 33, 70, 0.9); }
       .cards__card__button__phrase {
         color: white;
@@ -984,6 +1001,27 @@ blockquote {
           line-height: 1.1;
           letter-spacing: 0.03rem;
           text-transform: uppercase; }
+      .cards__card__button__data-text {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 1rem; }
+      .cards__card__button__description {
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem; }
+      .cards__card__button__data-description {
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0rem;
+        font-size: .8rem; }
     .cards__card:hover .cards__card__body {
       transform: scale(1.02); }
     .cards__card:hover .cards__card__button__text {
@@ -1214,6 +1252,24 @@ blockquote {
     top: 1rem;
     position: absolute;
     width: 100%; }
+
+.data-banner {
+  position: relative;
+  top: 1rem;
+  justify-content: center;
+  text-align: center;
+  clear: both;
+  padding-top: 1rem;
+  text-align: center;
+  justify-content: center; }
+  .data-banner__logo {
+    height: 10rem; }
+  .data-banner__title {
+    text-transform: uppercase;
+    top: 1rem;
+    position: absolute;
+    width: 100%;
+    font-size: 3rem; }
 
 .breadcrumb {
   color: grey;

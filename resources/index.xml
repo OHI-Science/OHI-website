@@ -7,19 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data</title>
-      <link>https://ohi-science.org/OHI-website/resources/data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/resources/data/</guid>
-      <description>[NOTE: instead of the following list, I am thinking cards linking to these pages?]
-Global Ocean Health Index Results from the most recent assessment of the global Ocean Health Index.
-Download data
-   Cumulative Human Impacts Change in human impact on global oceans from 2003 to 2013, mapped to ~1 km gridded resolution.
-[NOTE: move following content to its own page, but just getting down here for now]</description>
-    </item>
-    
-    <item>
       <title>Tools</title>
       <link>https://ohi-science.org/OHI-website/resources/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

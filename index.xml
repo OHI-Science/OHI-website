@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ocean Health Index</title>
+    <title>Home on Ocean Health Index</title>
     <link>https://ohi-science.org/OHI-website/</link>
-    <description>Recent content on Ocean Health Index</description>
+    <description>Recent content in Home on Ocean Health Index</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ohi-science.org/OHI-website/index.xml" rel="self" type="application/rss+xml" />
@@ -44,6 +44,16 @@
       <guid>https://ohi-science.org/OHI-website/guidance/natural-products/</guid>
       <description>This goal assesses the ability of countries to maximize the sustainable harvest of living marine resources that are not consumed as food by humans, such as sponges, fishoil and fishmeal, shells, seaweeds, mangrove wood, and fish for the aquarium trade.
  Similar to Food Provisions, this goal is trying to capture the value of goods sustainably harvested by the ocean. While Food Provision focuses on goods for human consumption, Natural Products assesses non-food goods.</description>
+    </item>
+    
+    <item>
+      <title>Carbon Storage</title>
+      <link>https://ohi-science.org/OHI-website/guidance/carbon-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/carbon-storage/</guid>
+      <description>This goal captures the ability of marine habitats to store carbon given the amount of carbon they uptake and store and the habitat health.
+Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture the ability of the coastal habitats to remove carbon given the amount of carbon they store and/or their carbon uptake rate and the health condition of the habitat.</description>
     </item>
     
     <item>
@@ -663,19 +673,6 @@ Press Resources Press Kit
     </item>
     
     <item>
-      <title>Data</title>
-      <link>https://ohi-science.org/OHI-website/resources/data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/resources/data/</guid>
-      <description>[NOTE: instead of the following list, I am thinking cards linking to these pages?]
-Global Ocean Health Index Results from the most recent assessment of the global Ocean Health Index.
-Download data
-   Cumulative Human Impacts Change in human impact on global oceans from 2003 to 2013, mapped to ~1 km gridded resolution.
-[NOTE: move following content to its own page, but just getting down here for now]</description>
-    </item>
-    
-    <item>
       <title>Data Download</title>
       <link>https://ohi-science.org/OHI-website/global-scores/data-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -692,7 +689,7 @@ Data are prepared and scores calculated using freely available coding and versio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/methodology/deep-dive/</guid>
-      <description>This will direct here: https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html</description>
+      <description>  window.location.replace(&#34;https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html&#34;)  </description>
     </item>
     
     <item>

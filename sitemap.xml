@@ -12,6 +12,8 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/guidance/natural-products/</loc>
   </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/carbon-storage/</loc>
+  </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/carbon-storage/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/coastal-protection/</loc>
@@ -32,11 +34,10 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/biodiversity/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/</loc>
-    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url><url>
     <loc>https://ohi-science.org/OHI-website/news/2020-scores/</loc>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/news/</loc>
@@ -53,8 +54,6 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/news/three-lessons/</loc>
     <lastmod>2019-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/albania/</loc>
   </url><url>
@@ -166,8 +165,6 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/cyprus/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/resources/data/</loc>
-  </url><url>
     <loc>https://ohi-science.org/OHI-website/global-scores/data-download/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/methodology/deep-dive/</loc>
@@ -261,6 +258,8 @@
     <loc>https://ohi-science.org/OHI-website/regions/guatemala/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/guernsey/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/guinea/</loc>
   </url><url>
