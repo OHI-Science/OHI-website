@@ -1095,7 +1095,8 @@ blockquote {
 
 .single-news-container {
   border-bottom: 1px solid;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin-bottom: 4rem; }
 
 .news-link {
   text-decoration: none; }
@@ -1104,7 +1105,8 @@ blockquote {
   text-decoration: none; }
 
 .news-subtitle {
-  color: black; }
+  color: black;
+  font-size: 1rem; }
 
 .news-author {
   color: grey; }
