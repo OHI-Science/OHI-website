@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Ocean Health Index</title>
+    <link>https://ohi-science.org/OHI-website/resources/data/</link>
+    <description>Recent content in Data on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/resources/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cumulative Human Impacts</title>
+      <link>https://ohi-science.org/OHI-website/resources/data/cumulative-human-impacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/resources/data/cumulative-human-impacts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global OHI</title>
+      <link>https://ohi-science.org/OHI-website/resources/data/global-ohi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/resources/data/global-ohi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
