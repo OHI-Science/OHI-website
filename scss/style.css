@@ -118,6 +118,9 @@ p {
   -webkit-font-smoothing: antialiased;
   color: #333; }
 
+img {
+  max-width: 100%; }
+
 ::selection {
   background: #82828c;
   color: white; }
