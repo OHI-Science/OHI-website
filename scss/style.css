@@ -2096,20 +2096,16 @@ blockquote {
     stroke: var(--time-series-color-line);
     mix-blend-mode: multiply; }
     .time-series__line--subtle {
-      stroke-width: 0.5;
-      mix-blend-mode: normal; }
+      stroke-width: 0.5; }
     .time-series__line--focus {
       stroke: var(--time-series-color-highlight);
-      stroke-width: 2;
-      mix-blend-mode: normal; }
+      stroke-width: 2; }
     .time-series__line--highlight {
       stroke: var(--time-series-color-highlight);
-      stroke-width: 2;
-      mix-blend-mode: normal; }
+      stroke-width: 2; }
     .time-series__line--emphasize {
       stroke: var(--time-series-color-emphasis);
-      stroke-width: 1.3;
-      mix-blend-mode: normal; }
+      stroke-width: 1.3; }
 
 /**
  * regionTimeSeries.scss
