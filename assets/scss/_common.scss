@@ -29,6 +29,10 @@ p {
   color: #333;
 }
 
+img {
+  max-width: 100%;
+}
+
 ::selection {
   background: lighten($color: $text-color, $amount: 10);
   color: white;
