@@ -8,4 +8,4 @@ menu:
     weight: 5
 ---
 
-This will direct here: https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html
+{{<redirect path="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html">}}
