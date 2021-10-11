@@ -43,25 +43,21 @@
 
     &--subtle {
       stroke-width: 0.5;
-      mix-blend-mode: normal;
     }
 
     &--focus {
       stroke: var(--time-series-color-highlight);
       stroke-width: 2;
-      mix-blend-mode: normal;
     }
 
     &--highlight {
       stroke: var(--time-series-color-highlight);
       stroke-width: 2;
-      mix-blend-mode: normal;
     }
 
     &--emphasize {
       stroke: var(--time-series-color-emphasis);
       stroke-width: 1.3;
-      mix-blend-mode: normal;
     }
   }
 }
