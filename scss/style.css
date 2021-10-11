@@ -1097,9 +1097,13 @@ blockquote {
   border-bottom: 1px solid;
   padding-bottom: 2rem;
   margin-bottom: 4rem; }
+  .single-news-container__date {
+    margin-top: 0; }
 
 .news-link {
   text-decoration: none; }
+  .news-link__title {
+    margin-bottom: 0; }
 
 .news-read-more {
   text-decoration: none; }
