@@ -2,10 +2,18 @@
   border-bottom: 1px solid;
   padding-bottom: 2rem;
   margin-bottom: 4rem;
+
+  &__date {
+    margin-top: 0;
+  }
 }
 
 .news-link{
   text-decoration: none;
+
+  &__title {
+    margin-bottom: 0;
+  }
 }
 
 .news-read-more {
