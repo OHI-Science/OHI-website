@@ -1,7 +1,9 @@
 <div class = "cards">
 
-  {{ $currentPage := . }}
+  {{ $currentPage := .page }}
+  {{ $pages := .pages }}
   {{ $menu := site.Menus.main }}
+  {{ $overlayText := .overlayText }}
 
   {{/* If any of the child pages of this page are menu items, then this is a top-level section overview page. */}}
 
@@ -22,30 +24,48 @@
   {{/* If this page is a section overview, then show cards for all the child items in the menu. */}}
   {{/* If this is another type of index page, then just show cards for the child pages.  */}}
 
-  {{ $pages := slice }}
-
-  {{ if $isOverviewPage }}
-    {{ range $menuItemChild := $menuSection.Children }}
-        {{/* Do not add a card for the currentPage */}}
-        {{ if not (eq $currentPage $menuItemChild.Page) }}
-          {{ $pages = $pages | append $menuItemChild.Page }}
+  {{ if (not $pages) }}
+    {{ $pages = slice }}
+    {{ if $isOverviewPage }}
+      {{ range $menuItemChild := $menuSection.Children }}
+          {{/* Do not add a card for the currentPage */}}
+          {{ if not (eq $currentPage $menuItemChild.Page) }}
+            {{ $pages = $pages | append $menuItemChild.Page }}
+          {{ end }}
         {{ end }}
-      {{ end }}
-  {{ else }}
-    {{ $pages = .Pages }}
+    {{ else }}
+      {{ $pages = $currentPage.Pages }}
+    {{ end }}
   {{ end }}
 
-  {{ range $pages }}
-    {{if .Params.bg_image }}
-      {{ if not (fileExists (string .Params.bg_image)) }}
-        {{ errorf "Failed to generate card image because the following file was not found." .Params.bg_image }}
+  {{ range $subPage := $pages }}
+
+    {{ $imagePath := $subPage.Params.card_image | default $subPage.Params.bg_image }}
+    {{ $subText := $subPage.Params.description }}
+
+    {{if $imagePath }}
+
+      {{ if not (fileExists (string $imagePath)) }}
+        {{ errorf "Failed to generate card image because the following file was not found." $imagePath }}
       {{ end }}
-      {{ $imageResource := partial "functions/getImageResource" .Params.bg_image }}
+      {{ $imageResource := partial "functions/getImageResource" $imagePath }}
       {{ $imageResource = $imageResource.Fill "870x640" }}
-      <a class="cards__card" href= "{{ .Permalink }}">
-        <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
-        <div class="cards__card__button"><p class="cards__card__button__text">{{ .Params.name }}</p></div>
+
+      <a class="cards__card {{ if $subText }}cards__card--has-description{{ end }}" href= "{{ $subPage.Permalink }}">
+        <span class="cards__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
+        {{ with $overlayText }}
+          <div class="cards__overlay">
+            <div class="cards__overlay-text">{{ . }}</div>
+          </div>
+        {{ end }}
+        <div class="cards__banner">
+          <span class="cards__title">{{ $subPage.Params.name }}</span>
+          {{ with $subText }}
+            <span class="cards__description">{{ . }}</span>
+          {{ end }}
+        </div>
       </a>
+
     {{ end }}
   {{ end }}
 </div>

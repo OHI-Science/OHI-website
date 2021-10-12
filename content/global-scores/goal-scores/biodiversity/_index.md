@@ -3,6 +3,7 @@ title: "Goal: Biodiversity"
 name: "Biodiversity"
 bg_image: "/images/banners/shark-fish.jpg"
 id: "BD"
+cards_title: "Sub-Goals"
 ---
 
 ### SUPPORTING HEALTHY MARINE ECOSYSTEMS

@@ -40,34 +40,17 @@
   <div class="section-separator"></div>
   <!-- The section for the blog posts-->
   <div class="index__news">
-  <div class="index__info">
-    <div class="index__info__bar"></div>
-    <p class="index__info__title">News</p>
-    <a class="index__info__more_news" href="/news">View All News</p>
-  </div>
+    <div class="index__info">
+      <div class="index__info__bar"></div>
+      <p class="index__info__title">News</p>
+      <a class="index__info__more_news" href="/news">View All News</p>
+    </div>
 
-  <div class="cards">
     <!-- Create a new card for each news article. Every news article needs to have a card_image defined
     in the frontmatter. -->
-    {{ range where .Site.Pages "Section" "news" }}
-      {{if .Params.card_image }}
-        {{ if not (fileExists (string .Params.card_image)) }}
-          {{ errorf "Failed to generate card image because the following file was not found." .Params.card_image }}
-        {{ end }}
-        {{ $imageResource := partial "functions/getImageResource" .Params.card_image }}
-        {{ $imageResource = $imageResource.Fill "870x640" }}
-        <a class="cards__card--big" href= "{{ .Permalink }}">
-          <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
-          <span class="news-item-overlay">
-            <span class="read-more-copy">Read More</span>
-        </span>
-          <div class="cards__card__button--big">
-            <p class="cards__card__button__phrase">Ocean Health Index at Work</p>
-            <p class="cards__card__button__text--padded">{{ .Params.name }}</p>
-          </div>
-        </a>
-      {{ end }}
-    {{ end }}
+    {{ $newsArticles := where .Site.RegularPages "Section" "news" }}
+    {{ $newsArticles = first 6 $newsArticles }}
+    {{ partial "cards" (dict "currentPage" . "pages" $newsArticles "overlayText" "Read More" )}}
   </div>
 </div>
 <!-- End index content -->

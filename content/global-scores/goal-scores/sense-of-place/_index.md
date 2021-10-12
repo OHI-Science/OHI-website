@@ -3,6 +3,7 @@ title: "Goal: Sense of Place"
 name: "Sense of Place"
 bg_image: "/images/banners/lake.jpg"
 id: "SP"
+cards_title: "Sub-Goals"
 ---
 
 ### PRESERVING WHAT WE VALUE

@@ -1,190 +1,122 @@
 // The cards are arranged in a grid
 .cards {
+
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  gap: 1.5rem;
+  justify-content: center;
   margin: auto;
-  padding-top:3rem;
-  row-gap: 1rem;
-  width: min-content;
-  padding-bottom: 3rem;
+  padding: 3rem 1rem;
+  width: 100%;
+  max-width: $max-content-width;
+  grid-template-columns: 1fr 1fr;
+
+  @include desktop {
+    padding: 3rem 0;
+    grid-template-columns: repeat(auto-fit, 27rem);
+  }
 
   &__card {
+
+    --cards-banner-height: 6.6rem;
+
+    &--has-description{
+      --cards-banner-height: 10rem;
+    }
+
+    &:hover{
+      .cards__body{
+        transform: scale(1.02);
+      }
+      .cards__overlay{
+        display: flex;
+      }
+    }
+    
     background-clip: border-box;
     background-color: #fff;
-    border: 1px solid $dark-black;
-    border-radius: 0.25rem;
+    box-shadow: 0 1px 8px -1px $dark-black;
+    border-radius: $border-radius;
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 20rem;
     min-width: 0;
     overflow: hidden;
     position: relative;
-    width: 27rem;
     word-wrap: break-word;
 
     &--big {
-      background-clip: border-box;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
       height: 30rem;
-      min-width: 0;
-      overflow: hidden;
-      position: relative;
-      width: 27rem;
-      word-wrap: break-word;
     }
-
-    &__body {
-      background-clip: border-box;
-      background-size: cover;
-      flex: 1 1 auto;
-      -webkit-font-smoothing: antialiased;
-      transition: transform .5s ease-in-out;
-      border-bottom: 1px solid $blue-grey;
-    }
-
-    // The button sits at the bottom of the card with centered text
-    &__button {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
-      bottom: 0rem;
-      height: 6.5rem;
-      background-color: $dark-blue;
-      
-      &--big {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        bottom: 0rem;
-        height: 16rem;
-        background-color: $dark-blue;
-      }
-
-      &--long {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        bottom: 0;
-        width: 100%;
-        height: 8rem;
-        background-color: $dark-blue;
-      }
-
-      &__phrase {
-        color:white;
-        letter-spacing:0.03rem;
-        padding-left: 1rem;
-      }
-
-      &__text{
-        color:white;
-        font-size: 1.25rem;
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing:0.03rem;
-        text-transform: uppercase;
-
-        &--padded {
-          padding-left: 1rem;
-          padding-right:1rem;
-          color:white;
-          font-size: 1.25rem;
-          font-weight: 800;
-          line-height: 1.1;
-          letter-spacing:0.03rem;
-          text-transform: uppercase;
-        }
-      }
-
-      &__data-text {
-        color:white;
-        font-size: 1.25rem;
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing:0.03rem;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 1rem;
-      }
-
-      &__description {
-        color:white;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 1rem;
-      }
-
-      &__data-description {
-        color:white;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 1rem;
-        margin-top: 0rem;
-        font-size: .8rem;
-      }
-    }
-
-    &:hover & {
-      &__body {
-        transform: scale(1.02);
-      }
-      &__button{
-        &__text {
-          color: $light-teal;
-        }
-      }
-    }
+    
   }
-}
 
-.cards__card--big:hover {
-
-  .cards__card {
-    &__body {
-      transform: scale(.98);
-    }
-    &__button{
-      &__text {
-        color: $light-teal;
-      }
-    }
+  &__body {
+    background-clip: border-box;
+    background-size: cover;
+    flex: 1 1 auto;
+    transition: transform 0.5s ease-in-out;
+    border-bottom: 1px solid $blue-grey;
+    
   }
-  .news-item-overlay{
+
+  // The dark text container that sits at the bottom of the card with centered text
+  &__banner {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: var(--cards-banner-height);
+    background-color: $dark-blue;
   }
-}
 
-.news-item-overlay{
-  display: none;
-  position: absolute;
-  background-color: $dark-blue;
-  opacity: .8;
-  height: 18rem;
-  width: 100%;
-  .read-more-copy {
-    display: flex; 
-    flex-direction: column;
+  &__sub-title {
+    color:white;
+    letter-spacing:0.03rem;
+  }
+
+  &__title{
+    width: 100%;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    font-weight: 500;
+    color: white;
+    font-size: 0.95rem;
+  }
+
+  &__overlay{
+    display: none;
+    position: absolute;
+    background-color: rgba($dark-blue, .85);
+    height: calc(100% - var(--cards-banner-height));
+    width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: $darker-blue;
-    height: 3.5rem;
-    width: 12rem;
+  }
+
+  &__overlay-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: .7rem 1.5rem;
+    border-radius: $border-radius;
     border: 1px solid white;
     font-size: 1.5rem;
     font-weight: 800;
+    background-color: $darker-blue;
     color: white;
   }
 }

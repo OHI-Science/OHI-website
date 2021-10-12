@@ -2,6 +2,7 @@
 
   {{- $page := . -}}
   {{- $hasCards := ne $page.Params.cards false -}}
+  {{- $hasCardsTitle := and $hasCards $page.Params.cards_title -}}
 
   <section class="section">
     {{- partial "layout/left-col.html" . -}}
@@ -9,8 +10,13 @@
     {{- partial "layout/right-col.html" . -}}
   </section>
 
-  {{- if $hasCards -}}
-    {{- partial "cards.html" . -}}
+  {{- if $hasCardsTitle -}}
+    {{- partial "cardsTitle" . -}}
   {{- end -}}
+
+  {{- if $hasCards -}}
+    {{- partial "cards" (dict "page" . ) -}}
+  {{- end -}}
+  
 
 {{ end }}

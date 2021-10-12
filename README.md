@@ -23,8 +23,12 @@ Front-matter is located at the top of each markdown file, between two `---` sepa
 
 - `title`: The full title of the page to show in the page header.
 - `name`: The short name of the page to use in menus, etc. May be the same as title.
-- `bg_image`: The image to use in the page's header
+- `bg_image`: The image to use in the page's header, and also any cards that link to this page
+- `card_image`: An alternative image to use instead of `bg_image` in any cards that link to this page
+- `description`: An optional, very brief summary of the page contents. This will be displayed in any cards that link to this page
 - `toc`: Set to `true` to add a table of contents to the page. The page will use a 2-col layout instead of a 3-col layout. This only works for single pages (pages that aren't named `index.md` or `_index.md`)
+- `cards`: Set to `false` to hide the cards at the bottom of the page that link to subpages. Only applies to pages named `_index.md`
+- `cards_title`: Add a title above the cards.  Only applies to pages named `_index.md`
 
 ## Shortcodes
 
