@@ -9,11 +9,8 @@
   {{- $fontWeights := slice "100" "200" "300" "regular" "500" "600" "700" "800" "900" -}}
   {{- range $type := $fontTypes -}}
     {{- range $face := $fontFaces -}}
-      {{- $path := printf `/fonts/%s.%s` $face $type  -}}
-      {{- $pathHugo := printf `static/%s` $path -}}
-      {{- if (fileExists $pathHugo) -}}
-        <link rel="preload" as="font" type="font/{{ $type }}" href="{{ $path }}" crossorigin="anonymous">
-      {{- end -}}
+      {{- $path := printf `%sfonts/%s.%s` site.BaseURL $face $type  -}}
+      <link rel="preload" as="font" type="font/{{ $type }}" href="{{ $path }}" crossorigin="anonymous">
     {{- end -}}
   {{- end -}}
 
