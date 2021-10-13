@@ -1,3 +1,5 @@
+$baseUrl: "{{ site.BaseURL }}";
+
 @import 'fonts';
 @import 'variables';
 @import '_mixins-placeholders';

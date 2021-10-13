@@ -17,7 +17,11 @@
     {{- end -}}
   {{- end -}}
 
-  {{ $styles := resources.Get "scss/style.scss" | toCSS }}
+  {{ $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | 
+    toCSS | 
+    minify | 
+    fingerprint }}
+
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
