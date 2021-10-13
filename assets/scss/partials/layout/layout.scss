@@ -91,11 +91,6 @@ $section-half-content-width: 0.5 * (#{$section-col-sides-size} + (#{$section-col
       margin-left: calc(#{-1 *$section-left2center});
     }
   }
-
-  // The first paragraph in a center column does not need a margin on top
-  > p:first-of-type {
-    margin-top: 0;
-  }
   
 }
 
@@ -107,9 +102,10 @@ $section-half-content-width: 0.5 * (#{$section-col-sides-size} + (#{$section-col
 
   &__title {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: .6rem;
+    top: 1.9rem;
     font-size: 1.2rem;
+    margin: 0;
   }
 
   &__logo {

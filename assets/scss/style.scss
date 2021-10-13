@@ -19,7 +19,6 @@ $baseUrl: "{{ site.BaseURL }}";
 @import 'partials/cards-title.scss';
 @import 'partials/breadcrumb.scss';
 @import 'about/publications.scss';
-@import 'shortcodes/csv-table.scss';
 @import 'shortcodes/peopleCards.scss';
 @import 'shortcodes/buttons.scss';
 @import 'data-viz/_main';

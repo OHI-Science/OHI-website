@@ -15,7 +15,7 @@ hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 
 The content for the website is all contained within the `/content/` directory. The
 markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
-add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called front-matter. 
+add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called "front-matter". 
 
 ## Front-matter
 
@@ -30,7 +30,7 @@ Front-matter is located at the top of each markdown file, between two `---` sepa
 - `cards`: Set to `false` to hide the cards at the bottom of the page that link to subpages. Only applies to pages named `_index.md`
 - `cards_title`: Add a title above the cards.  Only applies to pages named `_index.md`
 
-## Shortcodes
+## Shortcodes (markdown extensions)
 
 In addition to basic markdown formatting, the following codes can be used in any of the markdown content files:
 
@@ -64,6 +64,15 @@ Add a link that looks like a button in markdown using the `button` code, or add 
 - To link to an external page, make sure that the `link` property starts with `http` or `https`.
 - To link to an internal page, the path can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page).
 - To make a link to download an image or data, the path should start with `data/` or `image/`, for example `data/scores.csv`)
+
+### Other shortcodes
+
+Hugo has some other, built-in shortcodes. See https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
+
+### Other markdown extensions
+
+- Add emojis with the syntax: `:emoji-name:`. You can add any of the emojis listed [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
+- The markdown extensions listed here are also supported: https://github.com/yuin/goldmark/#built-in-extensions
 
 ## Goal pages
 

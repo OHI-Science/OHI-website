@@ -3,8 +3,8 @@
     <a class="news-link" href={{.Permalink}}>
       <h2 class="news-link__title">{{.Params.title}}</h2>
     </a>
-    <p class="single-news-container__date">{{.Params.Date.Format "Mon, Jan 02, 2006"}}</p>
-    <h4 class="news-subtitle">{{.Params.name}}</h4>
+    <time datetime="{{ .Params.Date.Format "2006-01-02" }}" class="single-news-container__date">{{ .Params.Date.Format "Mon, Jan 02, 2006" }}</time>
+    <h5 class="news-subtitle">{{.Params.name}}</h5>
     <a class="news-read-more" href ={{.Permalink}}>Read More...</a>
   </div>
 {{end}}
