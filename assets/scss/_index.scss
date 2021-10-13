@@ -26,11 +26,6 @@
   }
 }
 
-// This uses styles that are set for the page header (see page-header.scss)
-.header-gradient {
-  height: 30em !important;
-}
-
 .section-separator {
   height: 15rem;
   background: url(#{$baseUrl + "images/bg-home-gradient.png"});
