@@ -2,4 +2,3 @@ baseURL: https://oceanhealthindex.org
 title: Ocean Health Index
 languageCode: en-us
 metaDataFormat: yaml
-canonifyURLs: true
