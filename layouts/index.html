@@ -1,43 +1,34 @@
 {{ define "main" }}
 {{ $data := index site.Data site.Language.Lang }}
+{{ $homePage := . }}
 
 <div class="index">
   <div class="header-gradient"></div>
   <!-- The heading text -->
   <div class="index__info--padding">
     <div class="index__info__bar"></div>
-    <p class="index__info__title">Ocean Health Index</p>
-    <p class="index__info__subtitle">A healthy ocean sustainably delivers a range of benefits to people now and in the future. The Ocean Health Index is the comprehensive framework used to measure ocean health from global to local scales.</p>
+    <p class="index__info__title">{{ site.Title }}</p>
+    <p class="index__info__subtitle">{{ .Params.intro }}</p>
   </div>
 
   <!-- The two side-by-side cards that are under the title -->
   <div class="index__cards">
-
-    <!-- The white card is the one whose background is white -->
-    <div class="card--white">
-      <h2 class="card__title--blue">Global<br>Assessment</h2>
-      <p class="card__subtitle--blue">A measure of ocean health across countries and high seas regions.</p>
-
-      <!-- Holds the two buttons -->
-      <div class="card-buttons">
-        <a class="card-buttons__button--blue" href="/global-scores">Global Scores</a>
-        <a class="card-buttons__button--blue" href="/methodology">Methodology</a>
+    {{ range $i, $box := first 2 .Params.boxes }}
+      <div class="card--white">
+        <h2 class="card__title--blue">{{ $box.title }}</h2>
+        <p class="card__subtitle--blue">{{ $box.intro | safeHTML }}</p>
+        <!-- Holds the two buttons -->
+        <div class="card-buttons">
+          {{ range $button := first 2 $box.buttons }}
+            <a class="card-buttons__button--blue" href="{{ ref $homePage $button.link }}">{{ $button.text }}</a>
+          {{ end }}
+        </div>
       </div>
-    </div>
-
-    <!-- The blue card is the card with the blue background -->
-    <div class="card--blue">
-      <h2 class="card__title--white">Independent<br>Assessments</h2>
-      <p class="card__subtitle--white">OHI<span style="color: #f26c25;">+</span> is an assessment tool customized by stakeholders to meet local management needs.</p>
-
-      <!-- Holds the two buttons -->
-      <div class="card-buttons">
-        <a class="card-buttons__button--white" href="/ohi+">Learn More</a>
-        <a class="card-buttons__button--white" href="/ohi+/conduct/">Conduct an assessment</a>
-      </div>
-    </div>
+    {{ end }}
   </div>
+
   <div class="section-separator"></div>
+
   <!-- The section for the blog posts-->
   <div class="index__news">
     <div class="index__info">
