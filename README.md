@@ -15,7 +15,7 @@ hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 
 The content for the website is all contained within the `/content/` directory. The
 markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
-add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called front-matter.
+add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called front-matter. 
 
 ## Front-matter
 
