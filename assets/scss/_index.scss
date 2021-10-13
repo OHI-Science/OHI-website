@@ -1,16 +1,16 @@
 // Contains all of the content (without the nav or footer) on the index page.
 // Set the display to flex to ensure proper positioning of the footer.
-.index{
+.index {
   display: flex;
   flex-direction: column;
-  background-image: url('/images/bg-home.jpeg');
+  background-image: url("/images/bg-home.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:100%;
+  height: 100%;
 
-  .header-gradient{
+  .header-gradient {
     position: absolute;
     top: 0.75rem;
     height: 20rem;
@@ -20,18 +20,18 @@
 
   .section-separator {
     height: 15rem;
-    background: url('/images/bg-home-gradient.png')
+    background: url("/images/bg-home-gradient.png");
   }
 
   // The title should be underneath the navigation with a gutter on its left
-  &__info{
+  &__info {
     position: relative;
     &--padding {
-      padding-top:15rem;
+      padding-top: 15rem;
       padding-left: 4rem;
       padding-bottom: 5rem;
     }
-    padding-top:5rem;
+    padding-top: 5rem;
     padding-left: 4rem;
     padding-bottom: 5rem;
     // The horizontal white bar
@@ -40,11 +40,11 @@
       width: 3rem;
       background-color: white;
       margin-left: 0.5rem;
-      margin-bottom: 2.5rem
+      margin-bottom: 2.5rem;
     }
     // The title should be uppercase and fairly bold
-    &__title{
-      color:white;
+    &__title {
+      color: white;
       font-weight: 800;
       font-size: 5rem;
       text-transform: uppercase;
@@ -67,130 +67,107 @@
     }
   }
 
-  // There are two link boxes, one with a white background and the other with
-  // a dark blue one. Text on the dark blue is white (so that it can be seen) and
-  // text on the white background is blue (so that it can be seen).
-  // To accommodate for these two situations, 'blue' and 'white' modifiers
-  // are given to many of the elements here.
-
-  // Since this holds each card and we want them side by side, set the display to flex
-  &__cards {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    // Defines the card area
-    .card{
-      &--white {
-        position: relative;
-        height:22rem;
-        padding: 2.5rem;
-        padding-top: 0rem;
-        width:50rem;
-        font-size: 1.2rem;
-        background-color: white;
-        background-image: url(/images/section-home-bg-1.png);
-        background-repeat: no-repeat;
-        background-position-x: 34rem;
-        background-position-y: 6rem;
-      }
-
-      &--blue {
-        position: relative;
-        height:22rem;
-        padding: 2.5rem;
-        padding-top: 0rem;
-        width:50rem;
-        background-color: $index-blue;
-        opacity: .9;
-        font-size: 1.2rem;
-      }
-
-      &__title{
-        &--white {
-          color: white;
-          font-size: 2.5rem;
-        }
-        &--blue {
-          color: $text-color-dark;
-          font-size: 2.5rem;
-        }
-      }
-
-      &__subtitle {
-        &--white {
-          color: white;
-          width: 40rem;
-        }
-        &--blue {
-          color: $text-color-dark;
-          width: 40rem;
-        }
-      }
-    }
-  }
-
   &__news {
-    background-image: url('/images/news-bg.jpg');
+    background-image: url("/images/news-bg.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
-  }
-}
-
-// Container for the buttons inside each card
-.card-buttons {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 2rem;
-
-  // The individual button container
-  &__button {
-    
-    &--white {
-      color: white;
-      border: 2px solid white;
-      width: 15rem;
-      height: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: 2rem;
-    }
-    &--blue {
-      color: $text-color-dark;
-      border: 2px solid $index-blue;
-      width: 15rem;
-      height: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: 2rem;
-    }
-
-    &--white:hover {
-      color: $text-color-dark;
-      border: 2px solid $text-color-dark;
-      background-color: white;
-    }
-
-    &--blue:hover {
-      color: white;
-      border: 2px solid $text-color-dark;
-      background-color: $text-color-dark;
-    }
   }
 }
 
 .home-title {
-  color: white; flex: 0 0 100%;
+  color: white;
+  flex: 0 0 100%;
 }
 
 .home-content {
-  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%);
+  background: linear-gradient(
+    to bottom,
+    #1e2c5e 0,
+    rgba(30, 45, 95, 0.98) 5%,
+    rgba(31, 46, 98, 0.83) 17%,
+    rgba(31, 46, 98, 0.81) 18%,
+    rgba(33, 49, 103, 0.69) 25%,
+    rgba(39, 58, 123, 0.23) 50%,
+    rgba(40, 59, 126, 0.17) 54%,
+    rgba(41, 61, 130, 0.07) 60%,
+    rgba(42, 62, 133, 0.02) 65%,
+    rgba(42, 62, 133, 0.01) 66%,
+    rgba(42, 62, 133, 0) 67%,
+    rgba(42, 62, 133, 0) 100%
+  );
+}
+
+// There are two link boxes, one with a white background and the other with
+// a dark blue one. Text on the dark blue is white (so that it can be seen) and
+// text on the white background is blue (so that it can be seen).
+// To accommodate for these two situations, 'blue' and 'white' modifiers
+// are given to many of the elements here.
+
+// Since this holds each card and we want them side by side, set the display to flex
+.boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+
+  --box-background-col: white;
+  --box-foreground-col: #{$index-blue};
+  --box-background-img: url(/images/section-home-bg-1.png);
+
+  &--blue{
+    --box-background-col: #{rgba($index-blue, 0.9)};
+    --box-foreground-col: white;
+    --box-background-img: url(/images/section-home-bg-1.png);
+  }
+
+  position: relative;
+  height: 22rem;
+  padding: 2.5rem;
+  padding-top: 0rem;
+  width: 50rem;
+  font-size: 1.2rem;
+  background-color: var(--box-background-col);
+  color: var(--box-foreground-col);
+  background-image: var(--box-background-img);
+  background-repeat: no-repeat;
+  background-position-x: 34rem;
+  background-position-y: 6rem;
+
+  &__title {
+    color: var(--box-foreground-col);
+    font-size: 2.5rem;
+  }
+
+  &__subtitle {
+    width: 40rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  &__button{
+    color: var(--box-foreground-col);
+    border: 2px solid var(--box-foreground-col);
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+
+    &:hover{
+      color: var(--box-background-col);
+      background-color: var(--box-foreground-col);
+    }
+  }
+
 }
