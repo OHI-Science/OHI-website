@@ -108,9 +108,18 @@
 // Since this holds each card and we want them side by side, set the display to flex
 .boxes {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: $max-content-width;
+  margin: auto;
+  padding: 0 2rem;
+
+  @include desktop {
+    padding: 0;
+    flex-direction: row;
+  }
 }
 .box {
 
@@ -121,48 +130,92 @@
   &--blue{
     --box-background-col: #{rgba($index-blue, 0.9)};
     --box-foreground-col: white;
-    --box-background-img: url(/images/section-home-bg-1.png);
+    --box-background-img: none;
   }
 
   position: relative;
-  height: 22rem;
-  padding: 2.5rem;
-  padding-top: 0rem;
-  width: 50rem;
-  font-size: 1.2rem;
+  width: 100%;
+  
+  border-radius: $border-radius;
+  box-shadow: 0 1px 8px -1px $dark-black;
+  padding: 2rem 1.4rem 1rem;
   background-color: var(--box-background-col);
   color: var(--box-foreground-col);
   background-image: var(--box-background-img);
   background-repeat: no-repeat;
-  background-position-x: 34rem;
-  background-position-y: 6rem;
+  background-position: 100% 100%;
+  margin-bottom: 0.8rem;
+
+  @include desktop {
+    width: 50%;
+    height: 21rem;
+    margin-bottom: 0;
+    padding: 2.8rem 2.9rem;
+  }
 
   &__title {
     color: var(--box-foreground-col);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    margin: 1rem 0 .9rem 0;
+    position: relative;
+
+    @include desktop {
+      max-width: 50%;
+      font-size: 2.25rem;
+    }
+    // The line above the title
+    &:before{
+      content: "";
+      position: absolute;
+      height: 0.25rem;
+      width: 1.6rem;
+      top: -1.2rem;
+      left: 0.12rem;
+      background-color: var(--box-foreground-col);
+    }
   }
 
   &__subtitle {
-    width: 40rem;
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 1.9rem;
+    max-width: 30rem;
+
+    @include desktop {
+      font-size: 1.09rem;
+    }
   }
 
   &__buttons {
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 2rem;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &__button{
     color: var(--box-foreground-col);
-    border: 2px solid var(--box-foreground-col);
-    width: 15rem;
-    height: 5rem;
+    border: 1px solid var(--box-foreground-col);
+    font-size: .88rem;
+    padding: 0.9rem 1.2rem;
+    letter-spacing: .035em;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-radius: $border-radius;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 2rem;
+    margin-bottom: .5rem;
+
+    @include desktop {
+      margin-right: 1.5rem;
+      margin-bottom: 0;
+    }
 
     &:hover{
       color: var(--box-background-col);
