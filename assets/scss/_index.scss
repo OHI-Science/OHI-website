@@ -3,68 +3,18 @@
 .index {
   display: flex;
   flex-direction: column;
+
   background-image: url("/images/bg-home.jpeg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  padding-top: 10rem;
+  color: white;
 
-  .header-gradient {
-    position: absolute;
-    top: 0.75rem;
-    height: 20rem;
-    visibility: inherit;
-    opacity: 1;
-  }
-
-  .section-separator {
-    height: 15rem;
-    background: url("/images/bg-home-gradient.png");
-  }
-
-  // The title should be underneath the navigation with a gutter on its left
-  &__info {
-    position: relative;
-    &--padding {
-      padding-top: 15rem;
-      padding-left: 4rem;
-      padding-bottom: 5rem;
-    }
-    padding-top: 5rem;
-    padding-left: 4rem;
-    padding-bottom: 5rem;
-    // The horizontal white bar
-    &__bar {
-      height: 0.25rem;
-      width: 3rem;
-      background-color: white;
-      margin-left: 0.5rem;
-      margin-bottom: 2.5rem;
-    }
-    // The title should be uppercase and fairly bold
-    &__title {
-      color: white;
-      font-weight: 800;
-      font-size: 5rem;
-      text-transform: uppercase;
-      margin: 0;
-    }
-    &__subtitle {
-      width: 60rem;
-      padding-top: 1rem;
-      color: white;
-      font-weight: 400;
-      font-size: 1.5rem;
-    }
-    &__more_news {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-right: 3rem;
-      color: white;
-      font-size: 1.2rem;
-    }
+  @include desktop {
+    padding-top: 18rem;
   }
 
   &__news {
@@ -76,27 +26,78 @@
   }
 }
 
-.home-title {
-  color: white;
-  flex: 0 0 100%;
+// This uses styles that are set for the page header (see page-header.scss)
+.header-gradient {
+  height: 30em !important;
 }
 
-.home-content {
-  background: linear-gradient(
-    to bottom,
-    #1e2c5e 0,
-    rgba(30, 45, 95, 0.98) 5%,
-    rgba(31, 46, 98, 0.83) 17%,
-    rgba(31, 46, 98, 0.81) 18%,
-    rgba(33, 49, 103, 0.69) 25%,
-    rgba(39, 58, 123, 0.23) 50%,
-    rgba(40, 59, 126, 0.17) 54%,
-    rgba(41, 61, 130, 0.07) 60%,
-    rgba(42, 62, 133, 0.02) 65%,
-    rgba(42, 62, 133, 0.01) 66%,
-    rgba(42, 62, 133, 0) 67%,
-    rgba(42, 62, 133, 0) 100%
-  );
+.section-separator {
+  height: 15rem;
+  background: url("/images/bg-home-gradient.png");
+}
+
+.index-header{
+
+  width: 100%;
+  max-width: $max-content-width;
+  margin: auto;
+  position: relative;
+  padding: 0 1rem 4rem;
+
+
+  // The title should be uppercase and fairly bold
+  &__title {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+
+    &--h1{
+      font-weight: 900;
+      font-size: 4.5rem;
+    }
+
+    // The horizontal white bar
+    &:before{
+      content: "";
+      position: absolute;
+      height: 0.25rem;
+      width: 3rem;
+      top: -0.9rem;
+      left: 0.25rem;
+      background-color: white;
+    }
+  }
+
+  &__subtitle {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    letter-spacing: .04em;
+    text-shadow: 0 0 7px rgba(black, 0.4);
+    font-weight: 500;
+    margin: 0.5rem 0 0 0.3rem;
+
+    @include desktop {
+      width: 65%;
+      font-size: 1.3rem;
+    }
+
+    @include smaller-than-max-content {
+      width: 100%;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 1.2rem;
+  }
+
 }
 
 // There are two link boxes, one with a white background and the other with
@@ -112,13 +113,17 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  max-width: $max-content-width;
+  max-width: calc( #{$max-content-width} + 3rem);
   margin: auto;
   padding: 0 2rem;
 
   @include desktop {
     padding: 0;
     flex-direction: row;
+  }
+
+  @include smaller-than-max-content {
+    padding: 0 1rem;
   }
 }
 .box {
@@ -215,6 +220,10 @@
     @include desktop {
       margin-right: 1.5rem;
       margin-bottom: 0;
+    }
+
+    @include smaller-than-max-content {
+      font-size: .75rem;
     }
 
     &:hover{

@@ -1,51 +1,55 @@
 {{ define "main" }}
-{{ $data := index site.Data site.Language.Lang }}
-{{ $homePage := . }}
+  {{ $data := index site.Data site.Language.Lang }}
+  {{ $homePage := . }}
 
-<div class="index">
-  <div class="header-gradient"></div>
-  <!-- The heading text -->
-  <div class="index__info--padding">
-    <div class="index__info__bar"></div>
-    <p class="index__info__title">{{ site.Title }}</p>
-    <p class="index__info__subtitle">{{ .Params.intro }}</p>
-  </div>
+  <article class="index">
 
-  <!-- The two side-by-side cards that are under the title -->
-  <div class="boxes">
-    {{ range $i, $box := first 2 .Params.boxes }}
-      {{/* The default box has a white background. Add a modifier to the second card that gives it a blue background and white text. */}}
-      <div class="box {{ if eq $i 1 }} box--blue {{ end }}">
-        <h2 class="box__title">{{ $box.title }}</h2>
-        <p class="box__subtitle">{{ $box.intro | safeHTML }}</p>
-        <!-- Holds the two buttons -->
-        <div class="box__buttons">
-          {{ range $button := first 2 $box.buttons }}
-            <a class="box__button" href="{{ ref $homePage $button.link }}">{{ $button.text }}</a>
-          {{ end }}
+    <div class="header-gradient"></div>
+
+    <!-- The heading text -->
+    <header class="index-header">
+      <h1 class="index-header__title index-header__title--h1">{{ site.Title }}</h1>
+      <p class="index-header__subtitle">{{ .Params.intro }}</p>
+    </header>
+
+      <!-- The two side-by-side cards that are under the title -->
+      <section class="boxes">
+        {{ range $i, $box := first 2 .Params.boxes }}
+        {{/* The default box has a white background. Add a modifier to the second card that gives it a blue background and white text. */}}
+        <div class="box {{ if eq $i 1 }} box--blue {{ end }}">
+          <h2 class="box__title">{{ $box.title }}</h2>
+          <p class="box__subtitle">{{ $box.intro | safeHTML }}</p>
+          <!-- Holds the two buttons -->
+          <div class="box__buttons">
+            {{ range $button := first 2 $box.buttons }}
+              <a class="box__button" href="{{ ref $homePage $button.link }}">
+                {{ $button.text }}
+              </a>
+            {{ end }}
+          </div>
         </div>
-      </div>
-    {{ end }}
-  </div>
+      {{ end }}
+    </section>
 
   <div class="section-separator"></div>
 
   <!-- The section for the blog posts-->
-  <div class="index__news">
-    <div class="index__info">
-      <div class="index__info__bar"></div>
-      <p class="index__info__title">News</p>
-      <a class="index__info__more_news" href="/news">View All News</p>
-    </div>
+  <section class="index__news">
+
+    <header class="index-header">
+      <h2 class="index-header__title">News</h2>
+      <a class="index-header__link" href="{{ ref $homePage "news" }}">View All News</p>
+    </header>
 
     <!-- Create a new card for each news article. Every news article needs to have a card_image defined
     in the frontmatter. -->
     {{ $newsArticles := where .Site.RegularPages "Section" "news" }}
     {{ $newsArticles = first 6 $newsArticles }}
     {{ partial "cards" (dict "currentPage" . "pages" $newsArticles "overlayText" "Read More" )}}
-  </div>
-</div>
+
+  </section>
+
+</article>
 <!-- End index content -->
-</div>
 
 {{ end }}

@@ -9,8 +9,8 @@ boxes:
         link: "global-scores/_index.md"
       - text: Methodology
         link: "methodology/_index.md"
-  - title: Independent Assessments
-    intro: "OHI<b style='color:#f26c25'>+</b> is an assessment tool customized by stakeholders to meet local management needs."
+  - title: Independent Assessment
+    intro: "<b>OHI<span style='color:#f26c25'>+</span></b> is an assessment tool customized by stakeholders to meet local management needs."
     buttons:
       - text: Learn More
         link: "ohi+/_index.md"
