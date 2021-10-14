@@ -22,7 +22,7 @@
           <!-- Holds the two buttons -->
           <div class="box__buttons">
             {{ range $button := first 2 $box.buttons }}
-              <a class="box__button" href="{{ ref $homePage $button.link }}">
+              <a class="box__button button" href="{{ ref $homePage $button.link }}">
                 {{ $button.text }}
               </a>
             {{ end }}

@@ -1,5 +1,6 @@
 {{ $text := .Get "text" }}
 {{ $link := .Get "link" }}
+{{ $icon := .Get "icon" }}
 
 {{ $isExternal := false }}
 
@@ -16,10 +17,9 @@
   {{ $link = ref . $link }}
 {{ end }}
 
-<div class="buttons">
-  <div class="button--small">
-    <a class="button__link" href="{{ $link }}" {{ if $isExternal }}target="_blank"{{ end }}>
-    <p class="button__text">{{ $text }}</p>
-    </a>
-  </div>
-</div>
+<a class="button" href="{{ $link }}" {{ if $isExternal }}target="_blank"{{ end }}>
+  {{ $text }}
+  {{ with $icon }}
+    <img class="button__icon" src="{{ . }}" alt="Icon">
+  {{ end }}
+</a>

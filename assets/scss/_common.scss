@@ -103,7 +103,6 @@ h6 {
   font-weight: 500;
 }
 
-
 p {
   margin-block-end: 1.05rem;
   margin-block-start: 1.05rem;
@@ -254,8 +253,7 @@ blockquote {
   box-shadow: 0 0 5px -1px $dark-black;
 }
 
-/* gradient used in both the header of every regular page, and the header of the homepage */
-
+// gradient used in both the header of every regular page, and the header of the homepage
 .header-gradient {
   position: absolute;
   top: 0;
@@ -287,6 +285,7 @@ blockquote {
   }
 }
 
+// A container that takes the entire page width
 .full-width-page {
   --padding: 2rem;
   padding: var(--padding);
@@ -307,6 +306,7 @@ blockquote {
   }
 }
 
+// A two-colum container
 .two-columns {
   display: grid;
 
@@ -322,13 +322,15 @@ blockquote {
   }
 }
 
-.card-section {
+// A section with rounded corners and a box-shadow effect
+.box-shadow-section {
   width: auto;
   padding: 1rem 3rem;
   box-shadow: 0 1px 11px -1px $dark-black;
   border-radius: $border-radius;
 }
 
+// A single measurement/number in a circle
 .metric {
   --size: 6.2rem;
   --color: #{$text-color-dark};
@@ -353,5 +355,51 @@ blockquote {
 
   &--inline {
     display: inline-block;
+  }
+}
+
+// Buttons used throughout the page
+.button {
+  --button-foreground-col: #{$text-color-dark};
+  --button-background-col: #{$body-color};
+
+  color: var(--button-foreground-col);
+  background-color: var(--button-background-col);
+  border: 1px solid var(--button-foreground-col);
+  font-size: 0.88rem;
+  padding: 0.9rem 1.2rem;
+  letter-spacing: 0.035em;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-radius: $border-radius;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+
+  @include desktop {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  @include smaller-than-max-content {
+    font-size: 0.75rem;
+  }
+
+  &:hover {
+    color: var(--button-background-col);
+    background-color: var(--button-foreground-col);
+
+    .button__icon {
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(145deg) brightness(104%) contrast(104%);
+    } 
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: auto;
+    padding-left: 0.5rem;
   }
 }

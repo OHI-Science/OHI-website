@@ -198,34 +198,8 @@
   }
 
   &__button{
-    color: var(--box-foreground-col);
-    border: 1px solid var(--box-foreground-col);
-    font-size: .88rem;
-    padding: 0.9rem 1.2rem;
-    letter-spacing: .035em;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-    white-space: nowrap;
-    border-radius: $border-radius;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: .5rem;
-
-    @include desktop {
-      margin-right: 1.5rem;
-      margin-bottom: 0;
-    }
-
-    @include smaller-than-max-content {
-      font-size: .75rem;
-    }
-
-    &:hover{
-      color: var(--box-background-col);
-      background-color: var(--box-foreground-col);
-    }
+    --button-foreground-col: var(--box-foreground-col);
+    --button-background-col: var(--box-background-col);
   }
 
 }

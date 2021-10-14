@@ -111,12 +111,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    padding: .7rem 1.5rem;
-    border-radius: $border-radius;
-    border: 1px solid white;
-    font-size: 1.5rem;
-    font-weight: 800;
-    background-color: $darker-blue;
-    color: white;
+    --button-foreground-col: white;
+    --button-background-col: #{$darker-blue};
   }
 }

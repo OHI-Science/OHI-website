@@ -58,7 +58,7 @@ The `gauge` shortcode renders a gauge visualization showing the score for the gi
 
 The `aster` shortcode renders an aster plot (aka a flower plot) where each 'petal' is represents the score for a particular goal for the given region. Data for the aster plot come from the `scores.csv` file. For the `regionId` property, use one of the numbers that are used to identify regions in `scores.csv`; use "0" for the global average. The `linkTo` property can be set to either `"methodology"` or `"score"` - this configured which type of goal page to navigate to when you click on one of the petals. `"methodology"` links to the goal pages that are under `content/goals`, `"score"` links to the goal pages that are under `content/global-scores/goal-scores`.
 
-### `{{<button text="Learn More" link="inform" >}}`
+### `{{<button text="Learn More" link="inform" icon="images/path/to/icon.svg" >}}`
 
 Add a link that looks like a button in markdown using the `button` code, or add a button to download an image or data.
 - To link to an external page, make sure that the `link` property starts with `http` or `https`.

@@ -25,7 +25,8 @@ Some of the most widely recongnized iconic species are threatened or endangered.
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
-{{<buttons left_text="OHI Model" left_link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#691_iconic_species_(subgoal_of_sense_of_place)" right_text="Practical Guidance" right_link="/guidance/iconic-species" left_icon="/images/misc/microscope-icon.svg" right_icon="/images/misc/directions-icon.svg">}}
+{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#691_iconic_species_(subgoal_of_sense_of_place)" icon="/images/misc/microscope-icon.svg" >}}
+{{<button text="Practical Guidance" link="/guidance/iconic-species" icon="/images/misc/directions-icon.svg" >}}
 
 ----
 
