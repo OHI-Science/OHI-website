@@ -16,8 +16,9 @@
         {{ end }}
       {{end}}
     </div>
+    {{ .Content }}
   </div>
-  {{- partial "layout/center-col.html" . -}}
+  
   {{- partial "layout/right-col.html" . -}}
   </section>
 {{end}}
