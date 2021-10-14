@@ -41,7 +41,7 @@
   {{ range $subPage := $pages }}
 
     {{ $imagePath := $subPage.Params.card_image | default $subPage.Params.bg_image }}
-    {{ $subText := $subPage.Params.description }}
+    {{ $subText := $subPage.Params.cards_text }}
 
     {{if $imagePath }}
 

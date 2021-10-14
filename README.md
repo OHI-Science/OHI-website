@@ -28,7 +28,8 @@ Front-matter is located at the top of each markdown file, between two `---` sepa
 - `description`: An optional, very brief summary of the page contents. This will be displayed in any cards that link to this page
 - `toc`: Set to `true` to add a table of contents to the page. The page will use a 2-col layout instead of a 3-col layout. This only works for single pages (pages that aren't named `index.md` or `_index.md`)
 - `cards`: Set to `false` to hide the cards at the bottom of the page that link to subpages. Only applies to pages named `_index.md`
-- `cards_title`: Add a title above the cards.  Only applies to pages named `_index.md`
+- `cards_title`: Add a title above the cards. Only applies to pages named `_index.md`
+- `card_text`: Add an optional summary of the page content that will be displayed on **all** cards that link to this page.
 
 ## Shortcodes (markdown extensions)
 
