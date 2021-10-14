@@ -1,196 +1,205 @@
 // Contains all of the content (without the nav or footer) on the index page.
 // Set the display to flex to ensure proper positioning of the footer.
-.index{
+.index {
   display: flex;
   flex-direction: column;
-  background-image: url('/images/bg-home.jpeg');
+
+  background-image: url(#{$baseUrl + "/images/bg-home.jpeg"});
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
-  height:100%;
+  height: 100%;
+  padding-top: 10rem;
+  color: white;
 
-  .header-gradient{
-    position: absolute;
-    top: 0.75rem;
-    height: 20rem;
-    visibility: inherit;
-    opacity: 1;
-  }
-
-  .section-separator {
-    height: 15rem;
-    background: url('/images/bg-home-gradient.png')
-  }
-
-  // The title should be underneath the navigation with a gutter on its left
-  &__info{
-    position: relative;
-    &--padding {
-      padding-top:15rem;
-      padding-left: 4rem;
-      padding-bottom: 5rem;
-    }
-    padding-top:5rem;
-    padding-left: 4rem;
-    padding-bottom: 5rem;
-    // The horizontal white bar
-    &__bar {
-      height: 0.25rem;
-      width: 3rem;
-      background-color: white;
-      margin-left: 0.5rem;
-      margin-bottom: 2.5rem
-    }
-    // The title should be uppercase and fairly bold
-    &__title{
-      color:white;
-      font-weight: 800;
-      font-size: 5rem;
-      text-transform: uppercase;
-      margin: 0;
-    }
-    &__subtitle {
-      width: 60rem;
-      padding-top: 1rem;
-      color: white;
-      font-weight: 400;
-      font-size: 1.5rem;
-    }
-    &__more_news {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-right: 3rem;
-      color: white;
-      font-size: 1.2rem;
-    }
-  }
-
-  // There are two link boxes, one with a white background and the other with
-  // a dark blue one. Text on the dark blue is white (so that it can be seen) and
-  // text on the white background is blue (so that it can be seen).
-  // To accommodate for these two situations, 'blue' and 'white' modifiers
-  // are given to many of the elements here.
-
-  // Since this holds each card and we want them side by side, set the display to flex
-  &__cards {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    // Defines the card area
-    .card{
-      &--white {
-        position: relative;
-        height:22rem;
-        padding: 2.5rem;
-        padding-top: 0rem;
-        width:50rem;
-        font-size: 1.2rem;
-        background-color: white;
-        background-image: url(/images/section-home-bg-1.png);
-        background-repeat: no-repeat;
-        background-position-x: 34rem;
-        background-position-y: 6rem;
-      }
-
-      &--blue {
-        position: relative;
-        height:22rem;
-        padding: 2.5rem;
-        padding-top: 0rem;
-        width:50rem;
-        background-color: $index-blue;
-        opacity: .9;
-        font-size: 1.2rem;
-      }
-
-      &__title{
-        &--white {
-          color: white;
-          font-size: 2.5rem;
-        }
-        &--blue {
-          color: $text-color-dark;
-          font-size: 2.5rem;
-        }
-      }
-
-      &__subtitle {
-        &--white {
-          color: white;
-          width: 40rem;
-        }
-        &--blue {
-          color: $text-color-dark;
-          width: 40rem;
-        }
-      }
-    }
+  @include desktop {
+    padding-top: 18rem;
   }
 
   &__news {
-    background-image: url('/images/news-bg.jpg');
+    background-image: url(#{$baseUrl + "images/news-bg.jpg"});
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
   }
 }
 
-// Container for the buttons inside each card
-.card-buttons {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 2rem;
+.section-separator {
+  height: 15rem;
+  background: url(#{$baseUrl + "images/bg-home-gradient.png"});
+}
 
-  // The individual button container
-  &__button {
-    
-    &--white {
-      color: white;
-      border: 2px solid white;
-      width: 15rem;
-      height: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: 2rem;
-    }
-    &--blue {
-      color: $text-color-dark;
-      border: 2px solid $index-blue;
-      width: 15rem;
-      height: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: 2rem;
+.index-header {
+
+  width: 100%;
+  max-width: $max-content-width;
+  margin: auto;
+  position: relative;
+  padding: 0 1rem 4rem;
+
+
+  // The title should be uppercase and fairly bold
+  &__title {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px 8px rgba(black, 0.3);
+
+    &--h1{
+      font-weight: 900;
+      font-size: 4.5rem;
     }
 
-    &--white:hover {
-      color: $text-color-dark;
-      border: 2px solid $text-color-dark;
+    // The horizontal white bar
+    &:before{
+      content: "";
+      position: absolute;
+      height: 0.25rem;
+      width: 3rem;
+      top: -0.9rem;
+      left: 0.25rem;
       background-color: white;
     }
+  }
 
-    &--blue:hover {
-      color: white;
-      border: 2px solid $text-color-dark;
-      background-color: $text-color-dark;
+  &__subtitle {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    letter-spacing: .04em;
+    text-shadow: 0 0 7px rgba(black, 0.4);
+    font-weight: 500;
+    margin: 0.5rem 0 0 0.3rem;
+
+    @include desktop {
+      width: 65%;
+      font-size: 1.3rem;
+    }
+
+    @include smaller-than-max-content {
+      width: 100%;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
     }
   }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 1.2rem;
+  }
+
 }
 
-.home-title {
-  color: white; flex: 0 0 100%;
-}
+// There are two link boxes, one with a white background and the other with
+// a dark blue one. Text on the dark blue is white (so that it can be seen) and
+// text on the white background is blue (so that it can be seen).
+// To accommodate for these two situations, 'blue' and 'white' modifiers
+// are given to many of the elements here.
 
-.home-content {
-  background: linear-gradient(to bottom,#1e2c5e 0,rgba(30,45,95,.98) 5%,rgba(31,46,98,.83) 17%,rgba(31,46,98,.81) 18%,rgba(33,49,103,.69) 25%,rgba(39,58,123,.23) 50%,rgba(40,59,126,.17) 54%,rgba(41,61,130,.07) 60%,rgba(42,62,133,.02) 65%,rgba(42,62,133,.01) 66%,rgba(42,62,133,0) 67%,rgba(42,62,133,0) 100%);
+// Since this holds each card and we want them side by side, set the display to flex
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: calc( #{$max-content-width} + 3rem);
+  margin: auto;
+  padding: 0 2rem;
+
+  @include desktop {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  @include smaller-than-max-content {
+    padding: 0 1rem;
+  }
+}
+.box {
+
+  --box-background-col: white;
+  --box-foreground-col: #{$index-blue};
+  --box-background-img: url(#{$baseUrl + 'images/section-home-bg-1.png'});
+
+  &--blue{
+    --box-background-col: #{rgba($index-blue, 0.9)};
+    --box-foreground-col: white;
+    --box-background-img: none;
+  }
+
+  position: relative;
+  width: 100%;
+  
+  border-radius: $border-radius;
+  box-shadow: 0 1px 8px -1px $dark-black;
+  padding: 2rem 1.4rem 1rem;
+  background-color: var(--box-background-col);
+  color: var(--box-foreground-col);
+  background-image: var(--box-background-img);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin-bottom: 0.8rem;
+
+  @include desktop {
+    width: 50%;
+    height: 21rem;
+    margin-bottom: 0;
+    padding: 2.8rem 2.9rem;
+  }
+
+  &__title {
+    color: var(--box-foreground-col);
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    margin: 1rem 0 .9rem 0;
+    position: relative;
+
+    @include desktop {
+      max-width: 50%;
+      font-size: 2.25rem;
+    }
+    // The line above the title
+    &:before{
+      content: "";
+      position: absolute;
+      height: 0.25rem;
+      width: 1.6rem;
+      top: -1.2rem;
+      left: 0.12rem;
+      background-color: var(--box-foreground-col);
+    }
+  }
+
+  &__subtitle {
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 1.9rem;
+    max-width: 30rem;
+
+    @include desktop {
+      font-size: 1.09rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__button{
+    --button-foreground-col: var(--box-foreground-col);
+    --button-background-col: var(--box-background-col);
+  }
+
 }

@@ -9,3 +9,14 @@
     @content;
   }
 }
+
+//
+// Desktop: Use `@include smaller-than-max-content { }` to set style rules for screens that are larger
+// than mobile but smaller than the max-content-width
+//
+// ==========================================================================
+@mixin smaller-than-max-content {
+  @media only screen and (min-width: $breakpoint) and (max-width: $max-content-width) {
+    @content;
+  }
+}

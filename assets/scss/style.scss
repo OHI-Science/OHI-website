@@ -1,13 +1,11 @@
+$baseUrl: "{{ site.BaseURL }}";
+
 @import 'fonts';
 @import 'variables';
 @import '_mixins-placeholders';
 @import 'common';
 @import '_index';
-@import 'methodology/index.scss';
 @import 'partials/nav.scss';
-@import 'partials/layout/center-col.scss';
-@import 'partials/layout/left-col.scss';
-@import 'partials/layout/right-col.scss';
 @import 'partials/layout/layout.scss';
 @import 'partials/footer.scss';
 @import 'partials/toc.scss';
@@ -17,11 +15,8 @@
 @import 'partials/news.scss';
 @import 'partials/ohi-assessments.scss';
 @import 'partials/page-header.scss';
-@import 'partials/sub-goal.scss';
-@import 'partials/data-banner.scss';
+@import 'partials/cards-title.scss';
 @import 'partials/breadcrumb.scss';
 @import 'about/publications.scss';
-@import 'shortcodes/csv-table.scss';
 @import 'shortcodes/peopleCards.scss';
-@import 'shortcodes/buttons.scss';
 @import 'data-viz/_main';

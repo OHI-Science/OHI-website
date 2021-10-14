@@ -4,7 +4,7 @@
   {{ $bkg = printf `style="background-image: url('%s');"` ( . | relURL ) }}
 {{- end -}}
 
-<header class="page-title-section overlay" {{ $bkg | safeHTMLAttr }} >
+<header class="page-header" {{ $bkg | safeHTMLAttr }} >
   <div class="header-gradient"></div>
-  <h1 class="section-title">{{ .Title }}</h1>
+  <h1 class="page-header__title">{{ .Title }}</h1>
 </header>

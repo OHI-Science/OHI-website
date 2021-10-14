@@ -24,9 +24,9 @@ The GOAL SCORE is the average of the scores for Present Status and Likely Future
 
 **LIKELY FUTURE STATUS** is the predicted status score five years into the future, which is estimated by adjusting current status scores by 3 variables: 
 
-* **TREND** is the observed change of a goal’s status over the most recent five years. 
-* **PRESSURES** are the ecological and social factors that decrease a goal's status. 
-* **RESILIENCE** are ecological factors and social initiatives (policies, laws, etc) that mitigate the pressures acting on a goal.  
+1. **TREND** is the observed change of a goal’s status over the most recent five years. 
+2. **PRESSURES** are the ecological and social factors that decrease a goal's status. 
+3. **RESILIENCE** are ecological factors and social initiatives (policies, laws, etc) that mitigate the pressures acting on a goal.  
 
 ![Infographic](/images/infographs/methodology-chart.jpg)
 

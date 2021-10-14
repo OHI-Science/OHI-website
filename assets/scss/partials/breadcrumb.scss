@@ -1,18 +1,19 @@
 .breadcrumb {
-  color: grey;
+  color: $text-color;
   display: flex;
-  padding-top: 1rem;
-  padding-left: 4rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: $max-content-width;
+  margin: auto;
 }
 
 .breadcrumb-item {
-  color: grey;
+  color: $text-color;
   text-decoration: none;
   padding-right: 0.5rem;
 }
 .breadcrumb-item:visited {
-  color: grey;
+  color: $text-color;
 }
 
 .breadcrumb-item.current{

@@ -7,6 +7,7 @@ icon: "/images/goal-icons/biodiversity.svg"
 description: "This goal assesses the conservation status of species based on the best available global data. A score of 100 means all species are at very low risk of extinction, and all habitats are conserved."
 color: "#367BBF"
 weight: 10
+cards_title: "Sub-Goals"
 ---
 
 ### SUPPORTING HEALTHY MARINE ECOSYSTEMS

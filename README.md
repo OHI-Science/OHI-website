@@ -15,7 +15,7 @@ hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 
 The content for the website is all contained within the `/content/` directory. The
 markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
-add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called front-matter.
+add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called "front-matter". 
 
 ## Front-matter
 
@@ -23,10 +23,15 @@ Front-matter is located at the top of each markdown file, between two `---` sepa
 
 - `title`: The full title of the page to show in the page header.
 - `name`: The short name of the page to use in menus, etc. May be the same as title.
-- `bg_image`: The image to use in the page's header
+- `bg_image`: The image to use in the page's header, and also any cards that link to this page
+- `card_image`: An alternative image to use instead of `bg_image` in any cards that link to this page
+- `description`: An optional, very brief summary of the page contents. This will be displayed in any cards that link to this page
 - `toc`: Set to `true` to add a table of contents to the page. The page will use a 2-col layout instead of a 3-col layout. This only works for single pages (pages that aren't named `index.md` or `_index.md`)
+- `cards`: Set to `false` to hide the cards at the bottom of the page that link to subpages. Only applies to pages named `_index.md`
+- `cards_title`: Add a title above the cards. Only applies to pages named `_index.md`
+- `card_text`: Add an optional summary of the page content that will be displayed on **all** cards that link to this page.
 
-## Shortcodes
+## Shortcodes (markdown extensions)
 
 In addition to basic markdown formatting, the following codes can be used in any of the markdown content files:
 
@@ -54,12 +59,21 @@ The `gauge` shortcode renders a gauge visualization showing the score for the gi
 
 The `aster` shortcode renders an aster plot (aka a flower plot) where each 'petal' is represents the score for a particular goal for the given region. Data for the aster plot come from the `scores.csv` file. For the `regionId` property, use one of the numbers that are used to identify regions in `scores.csv`; use "0" for the global average. The `linkTo` property can be set to either `"methodology"` or `"score"` - this configured which type of goal page to navigate to when you click on one of the petals. `"methodology"` links to the goal pages that are under `content/goals`, `"score"` links to the goal pages that are under `content/global-scores/goal-scores`.
 
-### `{{<button text="Learn More" link="inform" >}}`
+### `{{<button text="Learn More" link="inform" icon="images/path/to/icon.svg" >}}`
 
 Add a link that looks like a button in markdown using the `button` code, or add a button to download an image or data.
 - To link to an external page, make sure that the `link` property starts with `http` or `https`.
 - To link to an internal page, the path can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page).
 - To make a link to download an image or data, the path should start with `data/` or `image/`, for example `data/scores.csv`)
+
+### Other shortcodes
+
+Hugo has some other, built-in shortcodes. See https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
+
+### Other markdown extensions
+
+- Add emojis with the syntax: `:emoji-name:`. You can add any of the emojis listed [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
+- The markdown extensions listed here are also supported: https://github.com/yuin/goldmark/#built-in-extensions
 
 ## Goal pages
 

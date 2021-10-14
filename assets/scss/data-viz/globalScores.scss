@@ -11,6 +11,7 @@
 
 .global-scores {
 
+  --global-scores-max-width: 90rem;
   --global-scores-color-bkg: #{$body-color};
   --global-scores-color-chips: #{$body-color-darker};
   --global-scores-color-accent: #{$accent-color};
@@ -21,15 +22,26 @@
 
   box-sizing: border-box;
   width: 100%;
+  max-width: var(--global-scores-max-width);
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   gap: 1.5rem;
-  padding: 2rem 0;
+  padding: 1.8rem; 
+  // Need extra padding on right because the legend extends a little beyond svg boundaries
+  padding-right: 2.5rem;
   // To absolutely position the region details container
   position: relative;
   color: var(--global-scores-color-text);
+
+  @include desktop {
+    padding-right: 6rem;
+  }
+
+  @include smaller-than-max-content {
+    padding-right: 4rem;
+  }
 
   &__controls {
     display: grid;
@@ -38,18 +50,18 @@
     column-gap: 5rem;
     row-gap: 2rem;
     width: 100%;
-    max-width: 80rem;
     margin: auto;
-    z-index: 2;
   }
 
   &__legend {
-    justify-self: right;
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__description {
     width: 100%;
-    max-width: 80rem;
     margin: auto;
   }
 
@@ -82,7 +94,6 @@
     display: inline-flex;
     margin: 0 0.4rem 0 0;
     align-items: center;
-    // height: 1.6rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
     height: 1.5rem;
@@ -118,9 +129,7 @@
   &__region-details{
     display: none;
     position: absolute;
-    // z-index: 3;
     background-color: var(--global-scores-color-bkg);
-    // height: 100%;
     max-width: 20rem;
     border: 1px solid var(--global-scores-color-border);
     border-radius: var(--global-scores-border-radius);
@@ -138,7 +147,6 @@
   }
 
   &__region-details-button{
-    // align-self: flex-end;
     display: flex;
     align-items: center;
     justify-content: center;

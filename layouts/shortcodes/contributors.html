@@ -9,12 +9,10 @@
 {{ $rows := getJSON $path }}
 
 {{range $key, $val := $rows}}
-<table class="supporter-table">
+<section class="supporter-table">
   <h3 class="supporter-head">{{$key}}</h3>
-    <tr>
-      <td class>
-      {{delimit $val ", "}}
-    </td>
-  </tr>
-</table>
+    <p>
+      {{ delimit $val ", "}}
+    </p>
+</section>
 {{end}}

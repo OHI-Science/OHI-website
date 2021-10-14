@@ -3,6 +3,7 @@ title: "Goal: Livelihoods and Economies"
 name: "Livelihoods and Economies"
 bg_image: "/images/banners/shipping-containers.jpg"
 id: "LE"
+cards_title: "Sub-Goals"
 ---
 
 ### SUSTAINING JOBS AND THRIVING COASTAL ECONOMIES

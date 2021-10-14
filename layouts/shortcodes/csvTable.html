@@ -24,7 +24,7 @@
 {{ $rows := getCSV $sep $path }}
 
 <div class="column-center__full-width-container">
-  <table class="csv-table">
+  <table>
     {{ $headerRow := index $rows 0 }}
     {{ $rows = after 1 $rows }}
     <tr class ="csv-table__header">

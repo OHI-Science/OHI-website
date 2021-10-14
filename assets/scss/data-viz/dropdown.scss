@@ -71,6 +71,12 @@
     background-color: white;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
     padding: 10px 0;
+    z-index: 1;
+
+    &--hidden {
+      display: none;
+      z-index: -1;
+    }
   }
 
   &__item {
@@ -123,10 +129,6 @@
     font-weight: 400;
     font-size: 13px;
     color: var(--dropdown-color-subtle-text);
-  }
-
-  &__list--hidden {
-    display: none;
   }
 
   &__icon {

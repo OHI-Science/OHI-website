@@ -42,7 +42,8 @@ $nav-transition: .3s cubic-bezier(.75,0,.125,1);
   // On mobile, the nav menu takes up the entire screen
   display: flex;
   width: 100%;
-  height: 100%;
+  // Set height to 0 so that the nav doesn't overlap clickable elements when collapsed
+  height: 0;
   padding: 1rem;
   
   @include desktop {

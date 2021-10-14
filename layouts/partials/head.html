@@ -1,25 +1,36 @@
 <head>
+
+  {{- $currentPageUrl := .Permalink -}}
+  {{- $title := printf "%s | OHI" .Title  -}}
+  {{- if .IsHome -}}
+    {{- $title = site.Title -}}
+  {{- end -}}
+  {{- $description := .Params.intro | default .Params.description | default .Summary -}}
+  {{- $version := now.Format "2006-01-02_15.04.05_-0700" -}}
+  {{- $dateUpdated := now.Format "January 2, 2006 15:04:05 MST" -}}
+  {{ $styles := resources.Get "scss/style.scss" |
+    resources.ExecuteAsTemplate "style.main.scss" . | 
+    toCSS | 
+    minify | 
+    fingerprint }}
+  {{ $icon := `images/favicon.png` | absURL }}
+  {{ $fontDir := "static/fonts" -}}
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
-
-  {{/* Font families & weights, see assets/scss/fonts.scss */}}
-  {{- $fontTypes := slice "woff" "woff2" -}}
-  {{- $fontFaces := slice "montserrat-v15-latin" -}}
-  {{- $fontWeights := slice "100" "200" "300" "regular" "500" "600" "700" "800" "900" -}}
-  {{- range $type := $fontTypes -}}
-    {{- range $face := $fontFaces -}}
-      {{- $path := printf `/fonts/%s.%s` $face $type  -}}
-      {{- $pathHugo := printf `static/%s` $path -}}
-      {{- if (fileExists $pathHugo) -}}
-        <link rel="preload" as="font" type="font/{{ $type }}" href="{{ $path }}" crossorigin="anonymous">
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{ $styles := resources.Get "scss/style.scss" | toCSS }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <link rel="canonical" href="{{ $currentPageUrl }}">
+  <meta name="description" content="{{ $description }}"/>
+  <meta name="date" content='{{ $dateUpdated }}'>
+  <title>{{ $title }}</title>
+  <link rel="stylesheet" href="{{ $styles.Permalink }}?v={{ $version }}" media="screen">
+  <link rel="shortcut icon" href="{{ $icon }}" type="image/x-icon">
+  <link rel="icon" href="{{ $icon }}" type="image/x-icon">
+  
+{{/* Font families & weights, see assets/scss/fonts.scss */}}
+{{- range (readDir $fontDir) -}}
+  {{- $path := (path.Join $fontDir .Name) | strings.TrimPrefix "static/" -}}
+  {{ $path = $path | absURL }}
+  {{- $type := path.Ext $path | strings.TrimPrefix "." -}}
+  <link rel="preload" as="font" type="font/{{ $type }}" href="{{ $path }}" crossorigin="anonymous">
+{{- end -}}
 </head>

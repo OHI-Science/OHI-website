@@ -1,76 +1,55 @@
 {{ define "main" }}
-{{ $data := index site.Data site.Language.Lang }}
+  {{ $data := index site.Data site.Language.Lang }}
+  {{ $homePage := . }}
 
-<div class="index">
-  <div class="header-gradient"></div>
-  <!-- The heading text -->
-  <div class="index__info--padding">
-    <div class="index__info__bar"></div>
-    <p class="index__info__title">Ocean Health Index</p>
-    <p class="index__info__subtitle">A healthy ocean sustainably delivers a range of benefits to people now and in the future. The Ocean Health Index is the comprehensive framework used to measure ocean health from global to local scales.</p>
-  </div>
+  <article class="index">
 
-  <!-- The two side-by-side cards that are under the title -->
-  <div class="index__cards">
+    <div class="header-gradient header-gradient--fixed-height"></div>
 
-    <!-- The white card is the one whose background is white -->
-    <div class="card--white">
-      <h2 class="card__title--blue">Global<br>Assessment</h2>
-      <p class="card__subtitle--blue">A measure of ocean health across countries and high seas regions.</p>
+    <!-- The heading text -->
+    <header class="index-header">
+      <h1 class="index-header__title index-header__title--h1">{{ site.Title }}</h1>
+      <p class="index-header__subtitle">{{ .Params.intro }}</p>
+    </header>
 
-      <!-- Holds the two buttons -->
-      <div class="card-buttons">
-        <a class="card-buttons__button--blue" href="/global-scores">Global Scores</a>
-        <a class="card-buttons__button--blue" href="/methodology">Methodology</a>
-      </div>
-    </div>
+      <!-- The two side-by-side cards that are under the title -->
+      <section class="boxes">
+        {{ range $i, $box := first 2 .Params.boxes }}
+        {{/* The default box has a white background. Add a modifier to the second card that gives it a blue background and white text. */}}
+        <div class="box {{ if eq $i 1 }} box--blue {{ end }}">
+          <h2 class="box__title">{{ $box.title }}</h2>
+          <p class="box__subtitle">{{ $box.intro | safeHTML }}</p>
+          <!-- Holds the two buttons -->
+          <div class="box__buttons">
+            {{ range $button := first 2 $box.buttons }}
+              <a class="box__button button" href="{{ ref $homePage $button.link }}">
+                {{ $button.text }}
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </section>
 
-    <!-- The blue card is the card with the blue background -->
-    <div class="card--blue">
-      <h2 class="card__title--white">Independent<br>Assessments</h2>
-      <p class="card__subtitle--white">OHI<span style="color: #f26c25;">+</span> is an assessment tool customized by stakeholders to meet local management needs.</p>
-
-      <!-- Holds the two buttons -->
-      <div class="card-buttons">
-        <a class="card-buttons__button--white" href="/ohi+">Learn More</a>
-        <a class="card-buttons__button--white" href="/ohi+/conduct/">Conduct an assessment</a>
-      </div>
-    </div>
-  </div>
   <div class="section-separator"></div>
-  <!-- The section for the blog posts-->
-  <div class="index__news">
-  <div class="index__info">
-    <div class="index__info__bar"></div>
-    <p class="index__info__title">News</p>
-    <a class="index__info__more_news" href="/news">View All News</p>
-  </div>
 
-  <div class="cards">
+  <!-- The section for the blog posts-->
+  <section class="index__news">
+
+    <header class="index-header">
+      <h2 class="index-header__title">News</h2>
+      <a class="index-header__link" href="{{ ref $homePage "news" }}">View All News</p>
+    </header>
+
     <!-- Create a new card for each news article. Every news article needs to have a card_image defined
     in the frontmatter. -->
-    {{ range where .Site.Pages "Section" "news" }}
-      {{if .Params.card_image }}
-        {{ if not (fileExists (string .Params.card_image)) }}
-          {{ errorf "Failed to generate card image because the following file was not found." .Params.card_image }}
-        {{ end }}
-        {{ $imageResource := partial "functions/getImageResource" .Params.card_image }}
-        {{ $imageResource = $imageResource.Fill "870x640" }}
-        <a class="cards__card--big" href= "{{ .Permalink }}">
-          <span class="cards__card__body" style="background-image: url({{$imageResource.RelPermalink}});"></span>
-          <span class="news-item-overlay">
-            <span class="read-more-copy">Read More</span>
-        </span>
-          <div class="cards__card__button--big">
-            <p class="cards__card__button__phrase">Ocean Health Index at Work</p>
-            <p class="cards__card__button__text--padded">{{ .Params.name }}</p>
-          </div>
-        </a>
-      {{ end }}
-    {{ end }}
-  </div>
-</div>
+    {{ $newsArticles := where .Site.RegularPages "Section" "news" }}
+    {{ $newsArticles = first 6 $newsArticles }}
+    {{ partial "cards" (dict "currentPage" . "pages" $newsArticles "overlayText" "Read More" )}}
+
+  </section>
+
+</article>
 <!-- End index content -->
-</div>
 
 {{ end }}

@@ -1,16 +1,131 @@
-.section{
+// These sizes must be px, rem, em, etc. Not %.
+$section-col-left-size: 10rem;
+$section-col-right-size: 10rem;
+$section-col-gap: 2.5rem;
+$section-padding: 1.5rem;
 
-  // The default section has a 3-col layout
+// How much space does the left and right column take
+$section-col-sides-size: $section-col-left-size + $section-col-right-size;
+// How much padding does the section have, total?
+$section-col-total-padding: (2 * $section-padding) + (2 * $section-col-gap);
+// The width of the center column
+$section-col-center-size: 100% - #{$section-col-sides-size + 0.5 * $section-col-total-padding};
+// The distance between the start of the first column and the start of the center column
+$section-left2center: $section-col-left-size + (0.5 * $section-col-total-padding);
+// The width of half of the section element that holds content
+$section-half-content-width: 0.5 * (#{$section-col-sides-size} + (#{$section-col-center-size}));
+
+.section {
+
+  // The default section is 1 column on smaller screens. The first row contains what is
+  // the 'left' and 'right' column on larger screens.
   display: grid;
-  grid-template-columns: 12% auto 16%;
-  gap: 3rem;
-  padding: 2rem;
+  grid-template-columns: minmax(0, $section-col-left-size) 1fr;
+  grid-template-rows: min-content max-content;
+  gap: $section-col-gap;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo sub-nav"
+    "main-content main-content";
+  padding: $section-padding;
+  width: 100%;
+  max-width: $max-content-width;
+  margin: auto;
+
+  // The default section has a 3-col layout on larger screens
+  @include desktop {
+    grid-template-rows: auto;
+    grid-template-columns: $section-col-left-size calc(#{$section-col-center-size}) $section-col-right-size;
+    grid-template-areas: "logo main-content sub-nav";
+  }
 
   // A section that has a TOC uses a 2-col layout rather than 3
-  &--has-toc{
+  &--has-toc {
     grid-template-columns: auto auto;
-    width: 100%;
     max-width: $max-content-width;
     margin: auto;
   }
+}
+
+.column-center {
+
+  grid-area: main-content;
+
+  // A container that is allowed to expand beyond the left and right col to take the
+  // entire width of the section (on larger screens. On mobile, the center col takes the
+  // entire width anyways)
+  &__full-width-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+
+    // Larger screens
+    @include desktop {
+      width: calc(100% + #{$section-col-sides-size + $section-col-total-padding});
+      margin-left: -#{$section-col-left-size + 0.5*$section-col-total-padding};
+    }
+  }
+
+  // A container that is allowed to expand beyond the left and right col and any section
+  // padding to take the entire width of the page
+  &__full-page-container{
+    
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-left: -#{$section-padding};
+
+    // For the largest screens, the container takes up the entire screen width. Use the
+    // margin to place the container on the left side of the page outside of the center
+    // column container.
+    @include desktop {
+      width: 100vw;
+      margin-left: calc(#{-1 *$section-left2center} - (50vw - (#{$section-half-content-width}) ) - #{$section-padding} + 4px );
+    }
+
+    // For screens that are smaller than the max-content-width, the margin just needs to
+    // extend to the start of the first column.
+    @include smaller-than-max-content {
+      width: 100vw;
+      margin-left: calc(#{-1 *$section-left2center});
+    }
+  }
+  
+}
+
+.column-left {
+  position: relative;
+  grid-area: logo;
+  max-width: $section-col-left-size;
+  width: 100%;
+
+  &__title {
+    position: absolute;
+    right: .6rem;
+    top: 1.9rem;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+}
+
+.column-right {
+  grid-area: sub-nav;
+}
+
+.right-col-nav {
+  text-transform: uppercase;
+  border-top: 1px solid $border-color;
+  padding: .6rem 0;
+  
+}
+
+.right-nav-item {
+  font-size: .85rem;
+  color: $text-color-dark;
+  font-weight: 500;
 }

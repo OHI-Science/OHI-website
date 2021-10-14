@@ -7,6 +7,7 @@ menu:
   main:
     parent: 'Resources'
     weight: 3
+cards_title: "OHI DATASETS"
 ---
 
 #### Most recent project

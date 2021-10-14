@@ -3,6 +3,7 @@ title: "Goal: Food Provision"
 name: "Food Provision"
 bg_image: "/images/banners/fish-school.jpg"
 id: "FP"
+cards_title: "Sub-Goals"
 ---
 
 ### HARVESTING SEAFOOD SUSTAINABLY
