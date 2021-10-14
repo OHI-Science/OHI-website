@@ -28,10 +28,20 @@
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   gap: 1.5rem;
-  padding: 2rem 1rem;
+  padding: 1.8rem; 
+  // Need extra padding on right because the legend extends a little beyond svg boundaries
+  padding-right: 2.5rem;
   // To absolutely position the region details container
   position: relative;
   color: var(--global-scores-color-text);
+
+  @include desktop {
+    padding-right: 6rem;
+  }
+
+  @include smaller-than-max-content {
+    padding-right: 4rem;
+  }
 
   &__controls {
     display: grid;
