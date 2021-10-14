@@ -6,33 +6,89 @@
   {{ $menuSection := false }}
   {{ $pages := slice }}
 
-  {{/* The root navigation page should always be at the top */}}
-  {{ $pages = $pages | append $currentPage.Page }}
-  {{/* 
+  {{/*
     First, determine if the current page is a top level menu item. If it is, then
     get all of the first-order sub pages and add them to the '$pages' slice.
     If it's not, then locate the parent of the page and add all of its first-order
     sub pages to the '$pages' slice.
     */}}
+  {{ $end := false }}
   {{ range $menuItem := $menu }}
     {{ range $menuItemChild := $menuItem.Children }}
       {{ range $sectionPage := $currentPage.Pages }}
         {{ if eq $sectionPage $menuItemChild.Page }}
-          {{ $isOverviewPage = true }}
-          {{ $menuSection = $menuItem }}
-          {{ $pages = $pages | append $menuItemChild.Page }}
+          {{ if eq $end false}}
+            {{ $isOverviewPage = true }}
+            {{ $menuSection = $menuItem }}
+            {{ range $chi := $menuItem.Children}}
+              {{ $pages = $pages | append $chi.Page }}
+            {{ end }}
+            {{$end = true}}
+          {{ end }}
         {{ end }}
         {{else}}
       {{ end }}
     {{ end }}
   {{ end }}
 
+  {{ $found := false }}
+  {{ $stop := false }}
+
   {{ if not $isOverviewPage }}
+    {{ $quitLoop := false }}
     {{ range $menuItem := $menu }}
-      {{ if eq $menuItem.Name $currentPage.Parent.Params.menu.main.parent }}
-        {{ range $menuItemChild := $menuItem.Children }}
-          {{ $pages = $pages | append $menuItemChild.Page }}
+      {{/* Check to see if that this page's parent isn't the index page (ie it's not a root nav page) */}}
+      {{ if ne $currentPage.Parent.Name "Home" }}
+        {{ if eq $menuItem.Identifier $currentPage.Parent.Params.menu.main.parent }}
+          {{/* If the current menu item is this page's parent, add all of the children to the list of pages */}}
+          {{ range $menuItemChild := $menuItem.Children }}
+            {{ $pages = $pages | append $menuItemChild.Page }}
+          {{ end }}
         {{ end }}
+      {{else if eq $currentPage.Parent.Name "Home" }}
+        {{/* If the parent is the home page, we have a detached folder like 'news' or 'goals'. Find out if it's a child 
+        to anything in the menu */}}
+        {{ range $item := $menu }}
+          {{ range $childPage := $item.Children}}
+            {{ if eq $childPage.Name $currentPage.Title }}
+              {{ $section := site.GetPage $item.Name }}
+                {{ if ne $stop true }}
+                {{/* Add the parent and current page */}}
+                {{ $pages = $pages | append $section }}
+                {{ $pages = $pages | append $currentPage }}
+                  {{range $regPage := $section.Pages}}
+                    {{ $pages = $pages | append $regPage }}
+                  {{ end }}
+                  {{ $stop = true }}
+                {{ end }}
+            {{ end }}
+          {{ end }}
+        {{end}}
+      {{else }}
+        {{/* Otherwise this page doesn't have a parent that has a menu item. This page still needs to have a menu, so see if we can find the page's parent in the site menu */}}
+        {{if ne $found true}}
+          {{ $pages = $pages | append $currentPage.Parent }}
+          {{range $page := $currentPage.Parent.Pages }}
+            {{ $pages = $pages | append $page }}
+          {{ end }}
+          {{ $found = true }}
+        {{ end }}
+      {{end}}
+    {{ end }}
+    {{ if $currentPage.Parent.Parent }}
+      {{ if ne $currentPage.Parent.Parent.Name "Home" }}
+          {{ $parent := $currentPage.Parent.Parent.Params.menu.main.parent }}
+          {{ $end := false }}
+          {{ range $menuItem := $menu }}
+            {{ if eq $menuItem.Name $parent }}
+              {{ if ne $end true }}
+                {{range $page := $menuItem.Children }}
+                  {{ $pages = $pages | append $page.Page }}
+                {{ end }}
+                {{ $end := true }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}

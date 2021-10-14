@@ -1,12 +1,16 @@
 main:
-- name: Global Scores
+- identifier: Global Scores
+  name: Global Scores
   weight: 1
-- name: Methodology
+- identifier: Methodology
+  name: Methodology
   weight: 2
 - identifier: OHI+
   name: OHI<b style="color:#f26c25">+</b>
   weight: 3
-- name: Resources
+- identifier: Resources
+  name: Resources
   weight: 4
-- name: About
+- identifier: About
+  name: About
   weight: 5
