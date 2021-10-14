@@ -12,7 +12,7 @@ env:
   global:
   - PRODUCTION=true
   - HUGO_RELEASE=0.82.0
-  - TEST=1
+  - TEST=2
 
 deploy:
   - provider: script
