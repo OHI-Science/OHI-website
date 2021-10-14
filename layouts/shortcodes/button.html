@@ -20,6 +20,6 @@
 <a class="button" href="{{ $link }}" {{ if $isExternal }}target="_blank"{{ end }}>
   {{ $text }}
   {{ with $icon }}
-    <img class="button__icon" src="{{ . }}" alt="Icon">
+    <img class="button__icon" src="{{ . | absURL }}" alt="Icon">
   {{ end }}
 </a>
