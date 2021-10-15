@@ -1,4 +1,9 @@
-$baseUrl: "{{ site.BaseURL }}";
+{{- $baseUrl := site.BaseURL -}}
+{{- if not (strings.HasSuffix $baseUrl "/") -}}
+  {{- $baseUrl = print $baseUrl "/" -}}
+{{- end -}}
+
+$baseUrl: "{{ $baseUrl }}";
 
 @import 'fonts';
 @import 'variables';
