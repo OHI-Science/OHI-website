@@ -10,9 +10,6 @@
 
 # Note that the rsync moves the files to the DEPLOY_DIRECTORY, but that in a separate step we move the files
 # into the PUBLISH_DIRECTORY to ensure file consistency
-echo $DEPLOY_USER
-echo $DEPLOY_HOST
-echo $DEPLOY_DIRECTORY
 ssh -p22 $DEPLOY_USER@$DEPLOY_HOST "mkdir -p $DEPLOY_DIRECTORY" && \
     rsync -rav -e ssh ./docs/ $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY && \
     ssh -p22 $DEPLOY_USER@$DEPLOY_HOST "if [ -d ${PUBLISH_DIRECTORY}_old ]; then rm -r ${PUBLISH_DIRECTORY}_old; fi; if [ -d ${PUBLISH_DIRECTORY} ]; then mv ${PUBLISH_DIRECTORY} ${PUBLISH_DIRECTORY}_old; fi; mv ${DEPLOY_DIRECTORY} ${PUBLISH_DIRECTORY}; chgrp -R web-dev ${PUBLISH_DIRECTORY}; chmod -R g+rwx ${PUBLISH_DIRECTORY}"
