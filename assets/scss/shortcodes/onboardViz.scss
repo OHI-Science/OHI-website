@@ -1,0 +1,19 @@
+.ohi-onboard-viz {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.onboard-viz {
+  width: 200rem;
+  height: 40rem;
+  margin-top: 8rem;
+  margin-right: 3rem;
+}
+
+.onboard-info{
+
+  &__indented{
+    margin-left: 1rem;
+  }
+}

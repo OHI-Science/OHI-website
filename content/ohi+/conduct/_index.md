@@ -9,6 +9,8 @@ menu:
     weight: 3
 ---
 
+
+{{<onboardViz>}}
 # OHI Onboarding
 
 [OHI Onboarding](http://ohi-science.org/onboarding/) is a reference guide to help you begin your independent OHI assessment (OHI+). It provides links to open data science & OHI Toolbox training resources for each phase of an OHI+ assessments.
