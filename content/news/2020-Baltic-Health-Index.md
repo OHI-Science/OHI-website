@@ -3,6 +3,7 @@ title: "2020 Baltic Health Index (BHI)"
 name: "A new open data tool for science and management"
 bg_image: "images/banners/lake.jpg"
 card_image: "/images/infographs/bhi_pie.png"
+preview_text: "The new assessment tool, the Baltic Health Index (BHI) evaluates comprehensively the health status of the Baltic Sea and has been calculated by researchers at the Stockholm Resilience Centre, Stockholm University, ..."
 Date: 2020-09-21
 author: Melanie Frazier
 menu:

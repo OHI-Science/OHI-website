@@ -3,6 +3,7 @@ title: "Building Transparency and Trust"
 name: "A case study about transparency in the Ocean Health Index"
 bg_image: "images/banners/lake.jpg"
 card_image: "/images/people/northeast-afflerbach-present.jpg"
+preview_text: "In a world of increasingly complex decision making, transparency has become paramount. This is no exception in science and, specifically, in science-based management ..."
 Date: 2019-11-04
 author: Jenny Seifert
 menu:

@@ -5,6 +5,7 @@
     </a>
     <time datetime="{{ .Params.Date.Format "2006-01-02" }}" class="single-news-container__date">{{ .Params.Date.Format "Mon, Jan 02, 2006" }}</time>
     <h5 class="news-subtitle">{{.Params.name}}</h5>
+    <p>{{.Params.preview_text}}</p>
     <a class="news-read-more" href ={{.Permalink}}>Read More...</a>
   </div>
 {{end}}

@@ -3,6 +3,7 @@ title: "Assessing Local Oceans"
 name: "Lessons for Using the Global Ocean Health"
 bg_image: "images/banners/lake.jpg"
 card_image: "/images/infographs/high-seas.jpeg"
+preview_text: "The Index was designed to be useful to ocean planning around the world, and to be useful, it must be applicable to place-based management, which is how so many decisions that affect ocean health ..."
 Date: 2019-04-26
 author: Jenny Seifert
 menu:
