@@ -6,7 +6,7 @@ id: "FIS"
 description: "This sub-goal describes the amount of sustainably harvested seafood for human consumption. "
 ---
 
-This goal measures the amount of seafood sustainably harvested in a given EEZ or region through any means for use primarily in human consumption and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries. The Food Provision goals aim to maximize the amount of sustainably produced seafood from wild or ocean-cultured stocks so both over- or under- harvesting should be penalized. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
+Fisheries is part of the Food Provision goal. The Fisheries subgoal measures the amount of seafood sustainably harvested in a given EEZ or region through any means for use primarily in human consumption and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries. The Food Provision goals aim to maximize the amount of sustainably produced seafood from wild or ocean-cultured stocks so both over- or under- harvesting should be penalized. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
 
 
 >The sub-goals of Food Provision (Fisheries and Mariculture) measure the amount of goods sustainably harvested from the sea for human consumption, while the Natural Products goal measures the amounts of non-food goods for trade (e.g., fish meal and oil, fish for aquarium, etc) in your study area. Data for both goals are often recorded in the same sources. It may be time-saving for the goal keepers for these two goals to join efforts to gather data.

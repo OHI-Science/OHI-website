@@ -21,22 +21,28 @@ The first is to identify identify which products are in your study area. For exa
 > This goal does not include bioprospecting which focuses on potential (and largely unknowable and potentially infinite) value rather than current realized value, or non-living products such as oil and gas or mining products which by definition are not sustainable.
 
 
-*_STEP 1: Gather the data_*
+*_STEP 2: Gather the data_*
 
 After identifying the natural products to include in the model you will need to find the appropriate data. Ideally, you will find information about the quantity and location of species harvested (tonnes), the sustainability of the harvest practice, and, potentially, the value of the product.
 
-The global model includes seaweed (the portion not consumed by humans), fishoil/fishmeal, 
+The global assessment includes seaweed (the portion not consumed by humans as food, see Table 6.12 in [methods](http://htmlpreview.github.io/?https://github.com/OHI-Science/ohi-global/published/documents/methods/Supplement.html#68_natural_products)), fishoil/fishmeal, and ornamental fish. We excluded some natural products due to a lack of global data (e.g., mangrove wood harvest), or being highly variable (e.g., shells), or non-sustainable (e.g., mammal oil and coral). However, localities could use different criteria. 
+
+> In the global assessments, the tonnes and value of the natural product harvest is from the [UN’s Food and Agriculture Administration](www.fao.org/fishery/statistics/software/fishstatj/en). These data are compiled and reported by product for each country, and available by downloading the FishStatJ software.
+
+The goal model should also incorporate an indicator of  *sustainability* for each product.  It is possible to measure sustainability in a number of different ways. Quantitative information can be used, or expert judgment, perhaps based on information or rough estimates of how sustainable the harvest method is.
+
+For the global assessment, we assess sustainability in several ways. In the case of fishoil/fishmeal, we filter the Fisheries subgoal data to include only the fish stocks used for fish oil/meal (see table 6.12 in [methods](http://htmlpreview.github.io/?https://github.com/OHI-Science/ohi-global/published/documents/methods/Supplement.html#68_natural_products)). For seaweed mariculture we use the mariculture sustainability scores from the [Monterey Bay Aquarium Seafood Watch](https://www.montereybayaquarium.org/act-for-the-ocean/our-programs/seafood-watch?gclid=CjwKCAjwkvWKBhB4EiwA-GHjFoYx9KE6wnlJFccEi003QkTtAsEsgiMlKRyIA6KJVrqudFdR_bGmGRoCAMoQAvD_BwE).
+
+*_STEP 3: Determine the reference point_*
+
+The next important thing to consider is the reference point for the harvest amount for each product. Setting the reference point is a decision your team must make based on the available data and an inferred functional relationship between the harvest of the product and the amount in the system. Understanding the patterns in harvest can help inform how to set the reference point. For example, knowing whether harvesting effort was constant or whether product yields changed due to the market demand and not the availability. This information could help inform whether it is more appropriate to set the reference point as the peak yield of the time-series, or some percentage above or below, or some other approach that is both ambitious and realistic (SMART principles). The decision you make for the reference point should be based on the trend of the data; for instance, if your harvests have only increased over time, which may be indicative of an emerging economy, you will have to account for that.
 
 
-Regarding the species caught or harvested in your area, in Global Assessments, information by species for fisheries and mariculture are processed separately before being combined to calculate status scores.
+*_STEP 4: Combine all the information_*
 
-Goal models should also incorporate a indicator of the sustainability of each practice. In the case of Fisheries sub-goal, Maximum Sustainable Yield (MSY) is used as a benchmark, calculated from available harvest (and efforts) information.
+The status of each natural product is estimated separately based on a model that takes into account harvest amount relative to the reference point and the sustainability of the harvest.
 
-For Mariculture, Mariculture Sustainability Index (MSI) is used in the model. In the global assessment, MSI is calculated based on three sub-indices that directly measured long-term renewability of a given mariculture practice: the wastewater treatment index, the origin of feed index (i.e. fishmeal or other) and the origin of seed (i.e. hatchery or wild caught).
+The status values of the individual products are then averaged. The contribution of each product to the average can be weighted by tonnes of harvest or the value of the harvest. 
 
-The overall Food Provision model should not change; it is a combination of fisheries and mariculture scores, with the contribution of each type of practice to the overall score is weighted by its relative contribution to the total seafood yield. This assumes that one tonne of seafood by any method is the same as any other tonne of seafood. It would be possible to work with different assumptions and apportion weighting differently.
-
-**Pressures and Resilience** measures must be considered as well. What pressures act on the harvesting of these species? If information allows, pressures and resilience measures can act on different species, group of species, or practices separately, as is done with Natural Products. Fishing or harvesting practices can also act as pressures for other goals, for example destructive fishing practices can impact habitat-based goals and genetic escapes from mariculture practices can affect Fisheries and Biodiversity.
-
-### Examples of the Approach
+#### Examples of the Approach
 {{< csvTable path="tables/natural-products.csv"  sep=";" >}}
