@@ -9,7 +9,6 @@ description: ""
 color: "#4EA09F"
 weight: 9
 ---
-
 People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), and trash. Pollution can result in contaminated marine food resources, damage to mariculture, toxic blooms, beach closures, and mass kills of organisms. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist. The Clean Water goal captures the degree to which local waters are unpolluted by natural and human-made causes. This goal scores highest when the contamination level is zero.
 
 This goal should aim to capture the full spectrum of pollution types that can cause waters to become unsuitable for recreation, enjoyment, and other purposes. Categories of pollution can include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. Ideally, data will be from direct measurements of pollutants from each category collected from on-going monitoring programs. 
@@ -33,7 +32,7 @@ You should attempt to use more refined data than the Global Assessment data, bec
 
 *_Example sources of pollution_*
 
-{{< csvTable path="tables/sources_of_pollution.csv"  sep="," >}}
+{{< csvTable path="tables/sources_of_pollution.csv"  sep=";" >}}
 
 One potential problem to avoid is counting the same source of pollution in multiple ways. For example, if you have in situ measurements of excess nutrients, it would be unnecesary to include modeled nitrogen inputs from agriculture because presumably this would already be accounted for in the direct measures.  
 
@@ -54,4 +53,4 @@ The data used in the Clean Waters goal is also used as Pressures layers. You sho
 
 
 ### Examples of the Approach
-{{< csvTable path="tables/clean-waters.csv"  sep=";" >}}
+{{< csvTable path="tables/clean-waters.csv"  sep="," >}}

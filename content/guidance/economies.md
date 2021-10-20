@@ -6,7 +6,7 @@ id: "ECO"
 description: "Economies captures the economic value associated with marine industries using revenue from marine sectors."
 ---
 
-Economies captures the economic value of marine-related industries. A score of 100 indicates that a coastal region has maximized their revenue from the marine sector.  
+Economies is a component of the Livelihoods and Economies goal. The Economies subgoal captures the economic value of marine-related industries. A score of 100 indicates that a coastal region has maximized their revenue from the marine sector.  
 
 Before embarking on the Economies subgoal, consider how you want to structure the larger goal. The global assessment is composed of two equally important sub-goals, livelihoods and economies, which are assessed across as many marine-related sectors as possible. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality. Economies is composed of a single component, revenue. We track the two halves of this goal separately because the number and quality of jobs and the amount of revenue produced are both of considerable interest to stakeholders and governments, and could show very different patterns in some cases (e.g., high revenue sectors do not necessarily provide large employment opportunities). The status of the livelihoods and economies goal is the average of the livelihoods and economies subgoals.
 

@@ -6,7 +6,7 @@ id: "HAB"
 description: "This sub-goal includes all habitats in the study area, and assess their health condition and coverage area."
 ---
 
-The Habitat sub-goal is part of the Biodiversity goal and assesses the condition of habitats that support many species.
+The Habitat sub-goal is a component of the Biodiversity goal and assesses the condition of habitats that support many species.
 
 > Habitat-based goals (Storage, Coastal Protection, and Biodiversity) should be considered together during the data gathering process because the same data underly these goals.
 

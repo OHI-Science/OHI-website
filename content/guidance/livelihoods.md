@@ -6,7 +6,7 @@ id: "LIV"
 description: "This sub-goal describes livelihood quantity and quality for people living on the coast. Livelihoods includes the number of jobs and the per capita average annual wages."
 ---
 
-This sub-goal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.
+Livelihoods is a component of the Livelihoods and Economies goal. The Livelihoods subgoal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.
 
 A score of 100 indicates that a coastal region has maximized the quantity and quality of jobs in the marine sector.  
 

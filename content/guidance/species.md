@@ -6,7 +6,8 @@ id: "ICO"
 description: "Iconic species are those that are relevant to local cultural identity (e.g. through a species' relationship to traditional activities). This sub-goal assesses how well those species are conserved."
 ---
 
-The Species sub-goal is part of the Biodiversity goal and assesses the condition of all marine species present in a region, including endangered species and species in relatively good condition.
+
+The Species sub-goal is a component of the Biodiversity goal and assesses the condition of all marine species present in a region, including endangered species and species in relatively good condition.
 
 > Data for this goal may also used in Sense of Place sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
 

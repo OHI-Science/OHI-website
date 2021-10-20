@@ -6,7 +6,7 @@ id: "MAR"
 description: "Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean’s ability to provide fish sustainably now and in the future."
 ---
 
-The Mariculture subgoal measures the ability to maximize the amount of seafood from farm-raised facilities without compromising the ocean’s ability to sustainably provide food now and in the future. 
+Mariculture is a component of the Food Provision goal.  The Mariculture subgoal measures the ability to maximize the amount of seafood from farm-raised facilities without compromising the ocean’s ability to sustainably provide food now and in the future. 
 
 A score of 100 means that a region is growing the greatest amount of farmed seafood possible based on its potential (where its maximum potential is estimated in different ways depending on the assessment) and without compromising future production.  Sustainable production is acheived by not compromising water quality, avoiding unsustainable sources of feed and sources for replenishing cultivated species, and ensuring the safety and quality of the product. 
 
