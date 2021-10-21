@@ -53,4 +53,4 @@ The data used in the Clean Waters goal is also used as Pressures layers. You sho
 
 
 ### Examples of the Approach
-{{< csvTable path="tables/clean-waters.csv"  sep="," >}}
+{{< csvTable path="tables/clean-waters.csv"  sep=";" >}}
