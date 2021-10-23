@@ -10,7 +10,7 @@ In order to run and build the website, Node.js and Hugo are both required.
 
 ### Running
 
-To run the server, run the following from the top level ohi-site directory,
+To run the server locally, run the following from the top level ohi-site directory,
 
 ```
 npm install
@@ -24,11 +24,11 @@ hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 
 ### Building
 
-Building the site creates a `public/` directory will all of the website assets (html, js, images, etc). The contents of this folder are
-transferred to the server that's hosting the website. In the case of the actual website, the server is Apache instead of the built in Hugo one; Apache isn't familiar with the directory structure of hugo projects, hence the need for building.
+Building the site creates a `public/` directory with all of the website assets (html, js, images, etc). To perform a build, run `hugo` from the project root. The contents of this folder are transferred to the server that's hosting the website. The server holding the website is using Apache as the web server instead of the built in Hugo one (the built in hugo server isn't meant for production use); Apache isn't familiar with the directory structure of hugo projects, hence the need for building.
 
 A GitHub Action will pick up new pushes to the main branch, attempt to build the site, and then transfer the content to the Apache server. Actions can be viewed on the [Actions](https://github.com/OHI-Science/OHI-website/actions) page; to see the logs from an action select the name from the list.
 
+Since this is more of a deployment thing, building will be a rare action done manually (I like to run a build to make sure it works before pushing).
 
 ### Developing
 
