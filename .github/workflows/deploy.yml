@@ -38,4 +38,5 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
           source: "./public/"
-          target: "./public/"
+          target: ${{ secrets.DEPLOY_PATH }}
+          rm: true
