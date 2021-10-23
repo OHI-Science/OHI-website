@@ -38,5 +38,4 @@ jobs:
           host: ${{ secrets.HOST }} # eg: example.com
           port: 22
           user: ${{ secrets.USER }} # eg: github-action
-          key: ${{ secrets.PRIVATE_KEY }}
-
+          key: ${{ secrets.KEY }}
