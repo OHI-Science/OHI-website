@@ -31,11 +31,11 @@ jobs:
 
       # Copy the source to the nceas server
       - name: Copy
-        uses: horochx/deploy-via-scp@master
+        uses: appleboy/scp-action@master
         with:
-          local: ./public/
-          remote: ~./public/
-          host: ${{ secrets.HOST }} # eg: example.com
-          port: 22
-          user: ${{ secrets.USER }} # eg: github-action
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
+          source: "./public/"
+          target: "./public/"
