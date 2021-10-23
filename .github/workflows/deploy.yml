@@ -31,12 +31,12 @@ jobs:
 
       # Copy the source to the nceas server
       - name: Copy
-        uses: garygrossgarten/github-action-scp@release
-        with:
-          local: ./public/
-          remote: ~./public/
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          password: ${{ secrets.PASSWORD }}
-          privateKey: ${{ secrets.PRIVATE_KEY}}
+      uses: horochx/deploy-via-scp@master
+      with:
+        local: ./public/
+        remote: ~./public/
+        host: ${{ secrets.HOST }} # eg: example.com
+        port: 22
+        user: ${{ secrets.USER }} # eg: github-action
+        key: ${{ secrets.PRIVATE_KEY }}
 
