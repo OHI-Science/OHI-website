@@ -38,3 +38,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
+
