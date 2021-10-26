@@ -6,7 +6,7 @@ Repository for the Ocean Health Index website.
 
 ### Prerequisites
 
-In order to run and build the website, Node.js and Hugo are both required.
+In order to build and run the website, Node.js and Hugo are both required.
 
 ### Running
 
@@ -32,27 +32,28 @@ Since this is more of a deployment thing, building will be a rare action done ma
 
 ### Developing
 
-The workflow development is 
+The workflow development can be summarized as a series of steps below
 
 ```
 1. Clone the repository
-2. Git checkout development
+2. Checkout the `dev` branch
 3. Make changes
-4. Push to develop
+4. Push to develop [dev.oceanhealthindex.org is updated]
 5. Repeat 3-4 n times
-6. Merge develop to main when the changes should happen on the main website
+6. Pull request to the `main` branch
+6. Merge develop to main [oceanhealthindex.org is updated]
 ```
+The goal is to first get the content deployed on the `preview.` site before making production-wide changes. The pull request is flexible and a direct merge with `main` without review should suffice if needed.
 
 ### Deployment
 
 There are two websites that the OHI website is deployed to
 
-`oceanhealthindes.org`: This is the main website that users see; it has its source built from the `main` branch
+`devoceanhealthindes.org`: This is the interim main website that users see; it has its source built from the `main` branch
 
-`preview.oceanhealthindex.org`: The preview branch is meant to see the site _before_ it gets to produciton; it's built off of the `develop` branch.
+`preview.oceanhealthindex.org`: The preview branch is meant to see the site _before_ it gets to produciton; it's built off of the `dev` branch.
 
-This logic is controlled by a GitHub Action, which makes use of the `deploy.sh` script. In summary, the GitHub Action connects to the server and 
-runs `deploy.sh` which clones, builds, and then copies the static site to the appropriate Apache web folder.
+Two separate GitHub actions are run, depending on which branch the code is being pushed to. These scripts can be found under the `.github` folder and their logs can be checked in the main [Actions](https://github.com/OHI-Science/OHI-website/actions) interface.
 
 ## Adding or updating content
 
