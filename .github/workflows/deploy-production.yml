@@ -1,4 +1,4 @@
-name: github pages
+name: Deploy Production
 
 on:
   push:
@@ -13,22 +13,18 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-
       - name: Build
         run: |
           npm install
-          hugo --baseURL="https://ohi-science.org/OHI-website/"
-
+          hugo --baseURL="http://dev.oceanhealthindex.org/"
       # Copy the source to the nceas server
       - name: Copy
         uses: siva1024/scp-deployer@latest
@@ -38,6 +34,6 @@ jobs:
           pass: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: "public/"
-          target: ${{ secrets.DEPLOY_PATH }}
+          target: ${{ secrets.DEPLOY_PATH_PROD }}
           key: ${{ secrets.KEY }}
           rm: true
