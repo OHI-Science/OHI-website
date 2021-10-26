@@ -2,16 +2,60 @@
 
 Repository for the Ocean Health Index website.
 
+## Running, Deploying & Developing
+
+### Prerequisites
+
+In order to build and run the website, Node.js and Hugo are both required.
+
 ### Running
 
-To run the server, run the following from the top level ohi-site directory,
+To run the server locally, run the following from the top level ohi-site directory,
 
 ```
 npm install
 hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 ```
 
-# Adding or updating content
+`npm install` will install all of the necessary third party packages used
+
+`hugo server` will tell Hugo to run a server locally
+
+
+### Building
+
+Building the site creates a `public/` directory with all of the website assets (html, js, images, etc). To perform a build, run `hugo` from the project root. The contents of this folder are transferred to the server that's hosting the website. The server holding the website is using Apache as the web server instead of the built in Hugo one (the built in hugo server isn't meant for production use); Apache isn't familiar with the directory structure of hugo projects, hence the need for building.
+
+A GitHub Action will pick up new pushes to the main branch, attempt to build the site, and then transfer the content to the Apache server. Actions can be viewed on the [Actions](https://github.com/OHI-Science/OHI-website/actions) page; to see the logs from an action select the name from the list.
+
+Since this is more of a deployment thing, building will be a rare action done manually (I like to run a build to make sure it works before pushing).
+
+### Developing
+
+The workflow development can be summarized as a series of steps below
+
+```
+1. Clone the repository
+2. Checkout the `dev` branch
+3. Make changes
+4. Push to develop [dev.oceanhealthindex.org is updated]
+5. Repeat 3-4 n times
+6. Pull request to the `main` branch
+6. Merge develop to main [oceanhealthindex.org is updated]
+```
+The goal is to first get the content deployed on the `preview.` site before making production-wide changes. The pull request is flexible and a direct merge with `main` without review should suffice if needed.
+
+### Deployment
+
+There are two websites that the OHI website is deployed to
+
+`devoceanhealthindes.org`: This is the interim main website that users see; it has its source built from the `main` branch
+
+`preview.oceanhealthindex.org`: The preview branch is meant to see the site _before_ it gets to produciton; it's built off of the `dev` branch.
+
+Two separate GitHub actions are run, depending on which branch the code is being pushed to. These scripts can be found under the `.github` folder and their logs can be checked in the main [Actions](https://github.com/OHI-Science/OHI-website/actions) interface.
+
+## Adding or updating content
 
 The content for the website is all contained within the `/content/` directory. The
 markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
@@ -74,6 +118,7 @@ Hugo has some other, built-in shortcodes. See https://gohugo.io/content-manageme
 
 - Add emojis with the syntax: `:emoji-name:`. You can add any of the emojis listed [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
 - The markdown extensions listed here are also supported: https://github.com/yuin/goldmark/#built-in-extensions
+
 
 ## Goal pages
 
