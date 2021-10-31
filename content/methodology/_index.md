@@ -36,6 +36,8 @@ A region's index score is the average of its goal scores. Goal scores are weight
 ### GLOBAL GOAL AND INDEX SCORE
 The global score is the average of scores for all assessed regions weighted by EEZ area.  
 
+{{<button text="Download the paper" link="/data/downloads/HalpernNature2012.pdf" icon="/images/misc/download-icon.svg" >}}
+
 ### LEARN MORE
 Learn more about goals, pressures, and resilience by clicking below.
 
