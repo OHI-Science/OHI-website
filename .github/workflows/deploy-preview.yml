@@ -1,0 +1,39 @@
+name: Deploy Preview
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Build
+        run: |
+          npm install
+          hugo --baseURL="http://preview.oceanhealthindex.org/"
+      # Copy the source to the nceas server
+      - name: Copy
+        uses: siva1024/scp-deployer@latest
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          pass: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "public/"
+          target: ${{ secrets.DEPLOY_PATH_DEV }}
+          key: ${{ secrets.KEY }}
+          rm: true
