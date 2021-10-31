@@ -69,7 +69,7 @@
     margin-top: calc(var(--input-item-height) + 3px);
     overflow: auto;
     background-color: white;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px 0 $dropdown-shadow;
     padding: 10px 0;
     z-index: 1;
 
