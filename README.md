@@ -135,6 +135,9 @@ Hugo has some other, built-in shortcodes. See https://gohugo.io/content-manageme
 - Add emojis with the syntax: `:emoji-name:`. You can add any of the emojis listed [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
 - The markdown extensions listed here are also supported: https://github.com/yuin/goldmark/#built-in-extensions
 
+### Adding photo credits
+
+If a new image is used as a banner image and photo attributes need to be given to it, add a record to `content/data/photo-credits.json`.
 
 ## Goal pages
 

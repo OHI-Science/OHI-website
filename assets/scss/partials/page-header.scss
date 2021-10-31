@@ -40,4 +40,22 @@
       background-color: $body-color;
     }
   }
+
+  .photo-credit{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+    padding-right:1rem;
+    font-size: 0.75rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .photo-credit {
+      padding-top: 0.4rem;
+     font-size: 0.5rem;
+    }
+  }
+
+  
 }
