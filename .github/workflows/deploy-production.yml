@@ -36,4 +36,3 @@ jobs:
           source: "public/"
           target: ${{ secrets.DEPLOY_PATH_PROD }}
           key: ${{ secrets.KEY }}
-          rm: true
