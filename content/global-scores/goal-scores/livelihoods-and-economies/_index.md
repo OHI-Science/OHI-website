@@ -13,12 +13,9 @@ This goal measures jobs and revenue from sustainable marine-related industries. 
 
 {{< gauge regionId="0" goalCode="LE" >}}
 
-The current score indicates .....
+Sadly, the Livelihoods and Economies goal has not been meaningfully updated since the origin of the global Ocean Health Index in 2012. The datasets we used for this model were discontinued, and we have been unable to find good replacements.
 
-
-Livelihoods and Economies scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+Please let us know if you have any good leads on data we could use to calculate this goal!
 
 
 ----

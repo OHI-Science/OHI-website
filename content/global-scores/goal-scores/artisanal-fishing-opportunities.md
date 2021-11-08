@@ -13,10 +13,10 @@ This goal measures whether people who need to fish on a small, local scale have 
 
 {{< gauge regionId="0" goalCode="AO" >}}
 
-The current score indicates that most regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.  
+The current score indicates that many regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.  
 
-Global fisheries scores have decreased by ??? points per year since 2012.
+Despite the relatively good global score, trends in Artisanal Opportunities are concerning. The global score has, on average, dropped a third of a point every year since 2012. This decline is due mainly to the decreasing sustainability of artisanal fisheries, which means these stocks are being overfished. 
 
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+Another factor that may have contributed to decreasing Artisanal Opportunities scores was an increase in need, indicated by a decrease in per capita GDP (standardized by purchasing power), in 2020 due to the global eocnomic slowdown caused by the pandemic.
 
 [Learn more about this goal]({{< ref "goals/artisanal-fishing-opportunities.md" >}})

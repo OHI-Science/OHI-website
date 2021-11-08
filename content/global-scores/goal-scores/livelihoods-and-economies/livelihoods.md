@@ -13,16 +13,8 @@ This sub-goal describes the quantity and quality of marine-related jobs for peop
 
 {{< gauge regionId="0" goalCode="LIV" >}}
 
-The current score indicates that jobs and wages have declined substantially compared to their reference points leaving much room for improvement.
+Sadly, the Livelihoods subgoal has not been meaningfully updated since the origin of the global Ocean Health Index in 2012. The datasets we used for this model were discontinued, and we have been unable to find good replacements.
 
-
-Livelihood scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
-
-
-
-
+Please contact us if you have any good leads on data we could use to calculate this goal!
 
 [Learn more about this goal]({{< ref "goals/livelihoods-and-economies/livelihoods.md" >}})

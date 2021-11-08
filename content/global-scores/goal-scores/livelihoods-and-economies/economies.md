@@ -12,14 +12,9 @@ The Economies goal captures the economic value associated with marine industries
 
 {{< gauge regionId="0" goalCode="ECO" >}}
 
-The current global score indicates most coastal economies are keeping pace with growth in GDP and have sustained no recent losses. 
+Sadly, the Economies subgoal has not been meaningfully updated since the origin of the global Ocean Health Index in 2012. The datasets we used for this model were discontinued, and we have been unable to find good replacements.
 
-Global eocnomies scores have ??? by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
-
-
+Please let us know if you have any good leads on data we could use to calculate this goal!
 
 
 [Learn more about this goal]({{< ref "goals/livelihoods-and-economies/economies.md" >}})
