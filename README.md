@@ -110,6 +110,22 @@ Add a link that looks like a button in markdown using the `button` code, or add 
 - To link to an internal page, the path can have one of the following formats: `learn`, `learn.md`, `ohi+/conduct/learn.md` (useful if there are two pages with the same name in different directories) `learn.md#introduction` (to link to a specific part of a page).
 - To make a link to download an image or data, the path should start with `data/` or `image/`, for example `data/scores.csv`)
 
+### `{{<peopleCards path="people.csv">}}`
+
+The `peopleCards` shortcode adds the widget that's on the `People` page under `About`. To change the people that appear in the widget change the `people.csv` file or create a new one.
+
+### `{{<news>}}`
+
+The news shortcode renders the news page. It should _only_ be used in that context.
+
+### `{{<contributors path="contributors.json">}}`
+
+The `contributors` shortcode is used to render a list of all the OHI contributors. The csv file specified in the call contains information about the various people involved in the project.
+
+### `{{<newsHead>}}`
+
+The `newsHead` shortcode is responsible for displaying the author and date that a news article was published. It appears at the top of _each_ news page. New news pages should have this shortcode at the top of the page for author & datetime attributes.
+
 ### Other shortcodes
 
 Hugo has some other, built-in shortcodes. See https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
@@ -119,6 +135,9 @@ Hugo has some other, built-in shortcodes. See https://gohugo.io/content-manageme
 - Add emojis with the syntax: `:emoji-name:`. You can add any of the emojis listed [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
 - The markdown extensions listed here are also supported: https://github.com/yuin/goldmark/#built-in-extensions
 
+### Adding photo credits
+
+If a new image is used as a banner image and photo attributes need to be given to it, add a record to `content/data/photo-credits.json`.
 
 ## Goal pages
 

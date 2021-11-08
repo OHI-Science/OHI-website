@@ -26,14 +26,14 @@
   }
 
   &__water {
-    fill: #e9ecf2;
-    stroke: #d4d7de;
+    fill: $light-dark-grey;
+    stroke: $dark-grey-blue;
     cursor: move;
   }
 
   &__land {
     fill: white;
-    stroke: #e5e7eb;
+    stroke: $light-grey;
     cursor: move;
   }
 
@@ -45,7 +45,7 @@
 
   &__region:hover,
   &__region--focused {
-    stroke: #9ca3af;
+    stroke: $grey-blue;
     z-index: 99999;
   }
 
@@ -60,6 +60,6 @@
     cursor: pointer;
     outline: inherit;
     border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px $globe-button-shadow;
   }
 }

@@ -25,4 +25,5 @@ $baseUrl: "{{ $baseUrl }}";
 @import 'about/publications.scss';
 @import 'shortcodes/peopleCards.scss';
 @import 'shortcodes/onboardViz.scss';
+@import 'templates/404.scss';
 @import 'data-viz/_main';

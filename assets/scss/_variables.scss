@@ -10,10 +10,21 @@ $body-color: #fff;
 $body-color-darker: #fafafa;
 $border-color: #ededf1;
 
+
 $subtle-accent-color: #daedef;
 $subtle-accent-color-darker: #9ACED8;
 $highlight-color: #5ddae5;
 $accent-color: #1E40AF;
+$light-dark-grey: #e9ecf2;
+$grey-blue: #9ca3af;
+$dark-grey-blue: #d4d7de;
+$light-grey: #e5e7eb;
+$light-light-black: rgba(black, 0.2);
+$light-black: rgba(black, 0.3);
+$light-dark-black: rgba(0,0,0,0.25);
+$lighter-black: rgba(black, 0.4);
+$lightest-black: rgba(0, 0, 0, 0.15);
+$cream: rgba(255, 255, 255, .85);
 
 // The hue of blue that's used throughout the index page
 $index-blue: rgb(30,44,94.9);
@@ -31,7 +42,7 @@ $link-blue: #3C6CF5;
 $light-teal: #14aac8;
 // A shade of blue that's close to being grey
 $blue-grey: #3e4d6b;
-
+$light-dark-blue: rgba($dark-blue, .85);
 //
 // Fonts
 // 
@@ -58,3 +69,24 @@ $breakpoint: 900px;
 // content, so that paragraphs and lines of text don't extend to a length that's
 // uncomfortable for reading.
 $max-content-width: 1400px;
+
+$header-gradient: linear-gradient(
+  to bottom,
+  #1e2c5e 0,
+  rgba(30, 45, 95, 0.98) 5%,
+  rgba(31, 46, 98, 0.83) 17%,
+  rgba(31, 46, 98, 0.81) 18%,
+  rgba(33, 49, 103, 0.69) 25%,
+  rgba(39, 58, 123, 0.23) 50%,
+  rgba(40, 59, 126, 0.17) 54%,
+  rgba(41, 61, 130, 0.07) 60%,
+  rgba(42, 62, 133, 0.02) 65%,
+  rgba(42, 62, 133, 0.01) 66%,
+  rgba(42, 62, 133, 0) 67%,
+  rgba(42, 62, 133, 0) 100%
+);
+
+$submenu-background-color: rgba( $secondary-color, .85);
+$dropdown-shadow: rgba(0, 0, 0, 0.2);
+$globe-button-shadow: rgba(0, 0, 0, 0.3);
+$gauge-grey: rgba(255, 255, 255, .5);

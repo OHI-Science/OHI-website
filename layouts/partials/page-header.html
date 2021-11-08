@@ -4,7 +4,41 @@
   {{ $bkg = printf `style="background-image: url('%s');"` ( . | relURL ) }}
 {{- end -}}
 
+{{ $name := ""}}
+{{ $file_path := split .Params.bg_image "/" }}
+{{ $len := (len $file_path) }}
+
+{{ range $index, $element := $file_path }}
+  {{ if eq (add $index 1) $len }}
+    {{ $name = $element }}
+  {{ end }}
+{{ end }}
+
+{{ $path := "photo-credits.json" }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "content" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "data" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+
+{{ $path = path.Join "content" "data" $path}}
+{{ $rows := getJSON $path }}
+
+
 <header class="page-header" {{ $bkg | safeHTMLAttr }} >
   <div class="header-gradient"></div>
   <h1 class="page-header__title">{{ .Title }}</h1>
+  {{range $dict := $rows}}
+  {{ range $k, $v := $dict}}
+    {{ if eq $k "image_name" }}
+      {{ if eq $v $name }}
+        {{ range $key, $val := $dict}}
+          {{ if eq $key "credit"}}
+            <p class="photo-credit">PHOTO(S): © {{ $val }}</p>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 </header>

@@ -126,7 +126,7 @@ $nav-transition: .3s cubic-bezier(.75,0,.125,1);
       left: 0;
       right: 0;
       height: 100%;
-      background-color: rgba( $secondary-color, .85);
+      background-color: $submenu-background-color;
       z-index: -1;
       will-change: opacity;
       transition: opacity $nav-transition,
@@ -206,7 +206,7 @@ $nav-transition: .3s cubic-bezier(.75,0,.125,1);
    */
   &__link {
     
-    color: #fff;
+    color: $body-color;
     text-decoration: none;
     background-color: transparent;
     transition: background-color $nav-transition;
