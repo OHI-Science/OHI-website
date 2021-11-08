@@ -33,7 +33,7 @@
     }
     
     background-clip: border-box;
-    background-color: #fff;
+    background-color: $body-color;
     box-shadow: 0 1px 8px -1px $dark-black;
     border-radius: $border-radius;
     display: flex;
@@ -99,7 +99,7 @@
   &__overlay{
     display: none;
     position: absolute;
-    background-color: rgba($dark-blue, .85);
+    background-color: $light-dark-blue;
     height: calc(100% - var(--cards-banner-height));
     width: 100%;
     align-items: center;

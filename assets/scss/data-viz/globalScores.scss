@@ -110,12 +110,12 @@
     }
 
     &--active{
-      color: rgba(255, 255, 255, .85);
+      color: $cream;
       background-color: var(--global-scores-color-accent);
       border: 1px solid var(--global-scores-color-accent);
 
       &:hover{
-        color: rgba(255, 255, 255, .85);
+        color: $cream;
       }
     }
   }
@@ -134,7 +134,7 @@
     border: 1px solid var(--global-scores-color-border);
     border-radius: var(--global-scores-border-radius);
     padding: 1.3rem;
-    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px -2px $dropdown-shadow;
     flex-direction: column;
     top: 13rem;
     right: 0;

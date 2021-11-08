@@ -21,7 +21,7 @@
     max-width: $max-content-width;
     width: 100%;
     margin: auto;
-    text-shadow: 0 1px 8px rgba(black, 0.3);
+    text-shadow: 0 1px 8px $light-black;
 
     @include desktop {
       font-size: 2.9rem;
@@ -37,7 +37,25 @@
       width: 2.2rem;
       top: 0;
       left: 2px;
-      background-color: #fff;
+      background-color: $body-color;
     }
   }
+
+  .photo-credit{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+    padding-right:1rem;
+    font-size: 0.75rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .photo-credit {
+      padding-top: 0.4rem;
+     font-size: 0.5rem;
+    }
+  }
+
+  
 }

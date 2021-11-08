@@ -56,7 +56,7 @@
       display: grid;
       grid-template-columns: auto 70px;
       padding: 0;
-      box-shadow: -22px 1px 11px rgba(0, 0, 0, 0.15);
+      box-shadow: -22px 1px 11px $lightest-black;
       // when the button is visible
       #{$bn}__button {
         display: block;
@@ -182,7 +182,7 @@
       }
 
       &.active {
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 0 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 3px 8px $light-light-black, 0 0 2px $light-black;
         border-radius: $border-radius;
         filter: brightness(1.04);
         background-color: $body-color;
