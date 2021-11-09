@@ -11,9 +11,6 @@ This goal assesses our ability to sustainably maximize wild-caught or farmed mar
 
 {{< gauge regionId="0" goalCode="FP" >}}
 
-Global food provision scores have decreased by ??? points per year since 2012.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
 ----
 

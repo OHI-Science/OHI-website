@@ -20,8 +20,5 @@ Despite the relatively good global score, trends in Natural Products are decreas
 However, there are regions which aren't driven by forage fisheries and have increased their Natural Products score. For instance, both China and Indonesia lead the world in seaweed mariculture production (accounting for ~87% of seaweed production included in our assessment for 2019), increasing their production each year. Because of this both regions scores have improved greatly since 2012.
 
 
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
-
-
 
 [Learn more about this goal]({{< ref "goals/natural-products.md" >}})

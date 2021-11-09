@@ -16,10 +16,9 @@ This goal describes how well we are preserving current and future access to the 
 
 The current score indicates that many regions are preserving the marine sources that possess cultural value.
 
+People derive a sense of identity or value from living near the ocean, visiting coastal or marine locations or just knowing that such places and their characteristic species exist.This goal tries to capture the aspects of the coastal and marine system that people value as part of their cultural identity by measuring two subgoals: the condition of iconic species and the condition of lasting special places.
 
-Sense of Place scores have ?? by ??? points per year since 2012, mostly because of the successful implementation of marine protected areas in many countries.
-
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+The health of iconic species and protected places are two ways of assessing the cultural, spiritual, aesthetic and other intangible benefits that people value for a region.
 
 
 [Learn more about this goal]({{< ref "goals/sense-of-place/_index.md" >}})

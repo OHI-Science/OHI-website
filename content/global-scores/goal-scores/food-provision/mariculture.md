@@ -12,13 +12,12 @@ This goal assesses our ability to sustainably maximize the production of farm-ra
 
 {{< gauge regionId="0" goalCode="MAR" >}}
 
-The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could. A small number of countries are responsible for almost all global mariculture production. In fact, China produces a staggering 67% of global mariculture production included in our assessment, as of 2019.
+The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could. A small number of countries are responsible for almost all global mariculture production. In fact, in 2019 China produced a staggering 67% of global mariculture production included in our assessment.
 
 Even though mariculture has been one of the fastest growing food sectors in the world over the past 20 years ([FAO 2020](https://www.fao.org/3/ca9229en/online/ca9229en.html)) global mariculture scores have only seen a slight increase since 2012. This is largely because many countries are not reaching their mariculture production potential. 
 
 Chile and Norway are two of the worlds largest mariculture producers, however they receive vastly different Mariculture scores (a score of ~10 for all years for Chile, a score of 100 for all years for Norway). Why is this the case? Both are large producers of Salmon, and both have pretty terrible sustainability scores due to excess nutrient run-off from antibiotics and pesticides associated with marine net pen farming. The large discrepancy between these two regions, despite having similar production, is due to production potential ([Gentry et al. 2017](https://www.nature.com/articles/s41559-017-0257-9)). Norway has a much lower production potential than Chile, because Chile has a massive coastline with many bays and inlets perfect for mariculture farming. Norway exceeds its potential mariculture demand, while Chile does not. 
 
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
 
 ----
 

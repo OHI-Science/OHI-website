@@ -13,11 +13,11 @@ This goal captures the ability of coastal habitats to store carbon given the amo
 
 {{< gauge regionId="0" goalCode="CS" >}}
 
-The current score indicates that although, in many places, these habitats remain healthy and intact, a significant number have declined significantly since 1980 and more declines are likely in the near future. More protection and restoration must occur if they are to sequester and store the maximum amount of carbon possible.
+The current score indicates that the three habitats assessed for carbon storage- mangroves,  seagrass beds, and salt marshes - are still relatively healthy and intact on a global basis.
 
-Global mariculture scores have decreased by ??? points per year since 2012.
 
-[Explore country trends from past 10 years. Showing a histogram with trend for each country for this goal.]
+Generally we know that there is a global decline in carbon storing habitat extent and health since 1980, but for the most part this is hard to monitor, and many of the data associated with these habitats are of poor quality (aside from mangroves). In particular, habitat health data is extremely lacking, and for all of our carbon storing habitats we do not have data which are tracked over time. As a result we rely on global health values. For this reason, we see a stagnant global score for the Carbon Storage goal.
+
 
 
 [Learn more about this goal]({{< ref "goals/carbon-storage.md" >}})
