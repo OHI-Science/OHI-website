@@ -1,9 +1,9 @@
 ---
 regionId: 157
 title: Phoenix Islands (Kiribati)
-rank: 57
-meanScore: 75.93
-globalMeanScore: 71.78
+rank: 62
+meanScore: 72.58
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

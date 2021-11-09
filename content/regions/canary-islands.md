@@ -1,9 +1,9 @@
 ---
 regionId: 58
 title: Canary Islands
-rank: 139
-meanScore: 66.68
-globalMeanScore: 71.78
+rank: 75
+meanScore: 71.38
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

@@ -59,7 +59,7 @@ The next section organizes the data
 all_data <- read.csv(scores_path)
 
 # Get the number of regions
-num_regions <- scores_data %>% 
+num_regions <- all_data %>% 
 	filter(!(!!as.symbol(name_col) %in% exclude_regions)) %>% 
 	.[,name_col] %>%
 	unique() %>% 

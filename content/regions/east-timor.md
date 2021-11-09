@@ -1,9 +1,9 @@
 ---
 regionId: 231
 title: East Timor
-rank: 179
-meanScore: 61.69
-globalMeanScore: 71.78
+rank: 197
+meanScore: 61.18
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

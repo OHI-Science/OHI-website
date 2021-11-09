@@ -1,9 +1,9 @@
 ---
 regionId: 111
 title: Turks and Caicos Islands
-rank: 32
-meanScore: 79.19
-globalMeanScore: 71.78
+rank: 7
+meanScore: 81.56
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

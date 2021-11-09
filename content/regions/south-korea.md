@@ -1,9 +1,9 @@
 ---
 regionId: 20
 title: South Korea
-rank: 39
-meanScore: 78.6
-globalMeanScore: 71.78
+rank: 104
+meanScore: 69.15
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

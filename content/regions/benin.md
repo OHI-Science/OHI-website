@@ -1,9 +1,9 @@
 ---
 regionId: 99
 title: Benin
-rank: 196
-meanScore: 58.57
-globalMeanScore: 71.78
+rank: 202
+meanScore: 59.92
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

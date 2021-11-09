@@ -1,9 +1,9 @@
 ---
 regionId: 180
 title: United Kingdom
-rank: 79
-meanScore: 73.75
-globalMeanScore: 71.78
+rank: 91
+meanScore: 70.28
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

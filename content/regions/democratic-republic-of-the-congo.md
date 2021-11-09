@@ -1,9 +1,9 @@
 ---
 regionId: 199
 title: Democratic Republic of the Congo
-rank: 218
-meanScore: 46.71
-globalMeanScore: 71.78
+rank: 217
+meanScore: 53.29
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

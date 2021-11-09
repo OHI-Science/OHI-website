@@ -1,9 +1,9 @@
 ---
 regionId: 181
 title: Ireland
-rank: 115
-meanScore: 69.83
-globalMeanScore: 71.78
+rank: 113
+meanScore: 68.5
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

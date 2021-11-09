@@ -1,9 +1,9 @@
 ---
 regionId: 146
 title: Pitcairn
-rank: 41
-meanScore: 78.33
-globalMeanScore: 71.78
+rank: 79
+meanScore: 71.07
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

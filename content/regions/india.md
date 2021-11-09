@@ -1,9 +1,9 @@
 ---
 regionId: 203
 title: India
-rank: 178
-meanScore: 61.7
-globalMeanScore: 71.78
+rank: 201
+meanScore: 60.48
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

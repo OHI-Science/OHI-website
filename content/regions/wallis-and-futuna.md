@@ -1,9 +1,9 @@
 ---
 regionId: 161
 title: Wallis and Futuna
-rank: 67
-meanScore: 74.83
-globalMeanScore: 71.78
+rank: 34
+meanScore: 76.11
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

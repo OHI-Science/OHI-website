@@ -2,7 +2,7 @@
 title: "Sub-Goal: Species"
 name: "Species"
 bg_image: "/images/banners/shark-fish.jpg"
-id: "ICO"
+id: "SPP"
 ---
 
 ### PRESERVING MARINE SPECIES
@@ -11,7 +11,7 @@ This goal measures the conservation status of marine species.
 
 ### CURRENT SCORE
 
-{{< gauge regionId="0" goalCode="ICO" >}}
+{{< gauge regionId="0" goalCode="SPP" >}}
 
 
 A high score indicates that most native species in a given country are free from risk (invasive species are excluded), and it is 0 when up to 75% of native species are at high risk (this is a level comparable to prehistoric mass extinctions).

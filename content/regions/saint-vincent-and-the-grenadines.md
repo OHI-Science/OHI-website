@@ -1,9 +1,9 @@
 ---
 regionId: 127
 title: Saint Vincent and the Grenadines
-rank: 138
-meanScore: 66.89
-globalMeanScore: 71.78
+rank: 158
+meanScore: 65.05
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

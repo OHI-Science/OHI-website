@@ -1,9 +1,9 @@
 ---
 regionId: 149
 title: Jarvis Island
-rank: 5
-meanScore: 85.99
-globalMeanScore: 71.78
+rank: 4
+meanScore: 83.91
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

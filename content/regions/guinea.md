@@ -1,9 +1,9 @@
 ---
 regionId: 194
 title: Guinea
-rank: 212
-meanScore: 52.88
-globalMeanScore: 71.78
+rank: 132
+meanScore: 67.07
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

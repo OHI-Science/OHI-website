@@ -1,9 +1,9 @@
 ---
 regionId: 158
 title: Howland Island and Baker Island
-rank: 1
-meanScore: 93.41
-globalMeanScore: 71.78
+rank: 2
+meanScore: 89.9
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

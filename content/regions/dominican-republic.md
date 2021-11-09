@@ -1,9 +1,9 @@
 ---
 regionId: 115
 title: Dominican Republic
-rank: 64
-meanScore: 75.13
-globalMeanScore: 71.78
+rank: 156
+meanScore: 65.54
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

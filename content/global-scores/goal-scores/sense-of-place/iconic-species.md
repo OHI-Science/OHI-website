@@ -2,7 +2,7 @@
 title: "Sub-Goal: Iconic Species"
 name: "Iconic Species"
 bg_image: "/images/banners/shark-fish.jpg"
-id: "SPP"
+id: "ICO"
 ---
 
 ### Protecting culturally significant species
@@ -11,7 +11,7 @@ The iconic species sub-goal measures the conservation status of iconic marine sp
 
 ### CURRENT SCORE
 
-{{< gauge regionId="0" goalCode="SPP" >}}
+{{< gauge regionId="0" goalCode="ICO" >}}
 
 A high score indicates that few to none of the iconic species in a country’s EEZ have been categorized by the International Union for Conservation of Nature ([IUCN](https://www.iucnredlist.org/)) as endangered, threatended, vulnerable, or at risk of extinction. A low score indicates that many are in those categories.
 

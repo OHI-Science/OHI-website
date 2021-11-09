@@ -1,9 +1,9 @@
 ---
 regionId: 70
 title: Estonia
-rank: 11
-meanScore: 83.35
-globalMeanScore: 71.78
+rank: 24
+meanScore: 77.78
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

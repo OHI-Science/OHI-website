@@ -1,9 +1,9 @@
 ---
 regionId: 48
 title: Oman
-rank: 55
-meanScore: 75.99
-globalMeanScore: 71.78
+rank: 63
+meanScore: 72.37
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 69
 title: Latvia
-rank: 99
-meanScore: 71.4
-globalMeanScore: 71.78
+rank: 23
+meanScore: 77.9
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 104
 title: Equatorial Guinea
-rank: 202
-meanScore: 57.6
-globalMeanScore: 71.78
+rank: 196
+meanScore: 61.45
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

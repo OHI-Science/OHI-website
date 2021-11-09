@@ -2,7 +2,7 @@
 title: "Biodiversity: Species"
 name: "Species"
 bg_image: "/images/banners/shark-fish.jpg"
-id: "ICO"
+id: "SPP"
 description: "Iconic species are those that are relevant to local cultural identity (e.g. through a species' relationship to traditional activities). This sub-goal assesses how well those species are conserved."
 ---
 

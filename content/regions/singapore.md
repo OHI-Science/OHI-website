@@ -1,9 +1,9 @@
 ---
 regionId: 208
 title: Singapore
-rank: 130
-meanScore: 68.01
-globalMeanScore: 71.78
+rank: 171
+meanScore: 64.14
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 189
 title: Lithuania
-rank: 93
-meanScore: 71.96
-globalMeanScore: 71.78
+rank: 48
+meanScore: 74.27
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

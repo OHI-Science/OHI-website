@@ -1,9 +1,9 @@
 ---
 regionId: 49
 title: Sudan
-rank: 204
-meanScore: 57.14
-globalMeanScore: 71.78
+rank: 218
+meanScore: 52.79
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---

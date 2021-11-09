@@ -1,9 +1,9 @@
 ---
 regionId: 107
 title: Clipperton Island
-rank: 12
-meanScore: 83.02
-globalMeanScore: 71.78
+rank: 20
+meanScore: 78.51
+globalMeanScore: 69.82
 numRegions: 220
 layout: region_score
 ---
