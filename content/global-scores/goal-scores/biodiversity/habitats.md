@@ -17,7 +17,7 @@ The current score indicates that the seven habitats assessed- kelp forests, mang
 
 Generally we know that there is a global decline in habitat extent and health, but for the most part this is hard to monitor, and many of the data associated with these habitats are of poor quality (aside from mangroves and sea ice). For this reason, we see a pretty stagnant score for the habitats sub-goal. Of course this isn't true when we look at regions which have particularly good habitat data, like Iceland. 
 
-In Iceland, we see a modest decrease over the past 10 years, but its score is low (61). This decrease and low score are associated with the sea ice layer that is used in our Habitats goal model, which has a very poor condition associated with Iceland. We see similar stories in regions that also have seaice, like Jan Mayen. 
+In Iceland, we see a modest decrease over the past 10 years, but its score is low (61). This decrease and low score are associated with the sea ice layer that is used in our Habitats goal model, which has a very poor condition associated with Iceland. We see similar stories in regions that also have sea ice, like Jan Mayen. 
 
 
 

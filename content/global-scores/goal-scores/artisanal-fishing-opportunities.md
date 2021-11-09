@@ -17,6 +17,6 @@ The current score indicates that many regions are addressing and meeting the nee
 
 Despite the relatively good global score, trends in Artisanal Opportunities are concerning. The global score has, on average, dropped a third of a point every year since 2012. This decline is due mainly to the decreasing sustainability of artisanal fisheries, which means these stocks are being overfished. 
 
-Another factor that may have contributed to decreasing Artisanal Opportunities scores was an increase in need, indicated by a decrease in per capita GDP (standardized by purchasing power), in 2020 due to the global eocnomic slowdown caused by the pandemic.
+Another factor that may have contributed to decreasing Artisanal Opportunities scores was an increase in need, indicated by a decrease in per capita GDP (standardized by purchasing power), in 2020 due to the global economic slowdown caused by the pandemic.
 
 [Learn more about this goal]({{< ref "goals/artisanal-fishing-opportunities.md" >}})
