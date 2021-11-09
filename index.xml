@@ -969,7 +969,8 @@ CURRENT SCORE  The current score indicates that many regions are addressing and 
       
       <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/carbon-storage/</guid>
       <description>PRESERVING HABITATS THAT ABSORB CARBON This goal captures the ability of coastal habitats to store carbon given the amount of carbon they store and their health.
-CURRENT SCORE  The current score indicates that although, in many places, these habitats remain healthy and intact, a significant number have declined significantly since 1980 and more declines are likely in the near future. More protection and restoration must occur if they are to sequester and store the maximum amount of carbon possible.</description>
+CURRENT SCORE  The current score indicates that the three habitats assessed for carbon storage- mangroves, seagrass beds, and salt marshes - are still relatively healthy and intact on a global basis.
+Generally we know that there is a global decline in carbon storing habitat extent and health since 1980, but for the most part this is hard to monitor, and many of the data associated with these habitats are of poor quality (aside from mangroves).</description>
     </item>
     
     <item>
@@ -989,7 +990,7 @@ CURRENT SCORE  The current score indicates that there large opportunities for im
       
       <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/coastal-protection/</guid>
       <description>PRESERVING HABITATS THAT SAFEGUARD SHORES This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.).
-CURRENT SCORE  The current score indicates that although, in many places, these habitats remain healthy and intact, the extents of all five habitats have been substantially reduced or degraded when compared to their reference years.</description>
+CURRENT SCORE  The current score indicates that although, in many places, these habitats (mangroves, salt marshes, coastal sea ice, coral reefs, and seagrasses) remain healthy and intact, the extents of all five habitats have been substantially reduced or degraded when compared to their reference years.</description>
     </item>
     
     <item>
@@ -2418,8 +2419,7 @@ Halpern et al. 2012, Nature.</description>
       <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/wild-caught-fisheries/</guid>
       <description>AN IMPORTANT GLOBAL FOOD SOURCE This goal assesses our ability to sustainably maximize wild-caught fisheries.
 CURRENT SCORE  The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch with overharvesting, while a few are not producing as much wild-caught seafood as they could.
-Global fisheries scores have decreased by ??? points per year since 2012.
-[Explore country trends from past 10 years.</description>
+The trends in global Fisheries are concerning. The global score has, on average, dropped nearly a third of a point every year since 2012.</description>
     </item>
     
     <item>
@@ -2448,7 +2448,7 @@ Global fisheries scores have decreased by ??? points per year since 2012.
       
       <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/habitats/</guid>
       <description>PRESERVING MARINE HABITATS This goal measures the status of marine habitats that are particularly important in supporting large numbers of marine species.
-CURRENT SCORE  The current score indicates that the six habitats assessed- mangroves, coral reefs, seagrass beds, salt marshes, sea ice, and subtidal soft-bottom habitats- are still relatively healthy and intact on a global basis.
+CURRENT SCORE  The current score indicates that the seven habitats assessed- kelp forests, mangroves, coral reefs, seagrass beds, salt marshes, sea ice, and subtidal soft-bottom habitats- are still relatively healthy and intact on a global basis.
 Generally we know that there is a global decline in habitat extent and health, but for the most part this is hard to monitor, and many of the data associated with these habitats are of poor quality (aside from mangroves and sea ice).</description>
     </item>
     
@@ -2560,7 +2560,7 @@ A score of 100 indicates that a coastal region has maximized the quantity and qu
       
       <guid>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/mariculture/</guid>
       <description>AN INCREASINGLY IMPORTANT SOURCE OF FOOD This goal assesses our ability to sustainably maximize the production of farm-raised marine food.
-CURRENT SCORE  The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could. A small number of countries are responsible for almost all global mariculture production. In fact, China produces a staggering 67% of global mariculture production included in our assessment, as of 2019.</description>
+CURRENT SCORE  The current score indicates that most regions are not sustainably producing the amounts of farmed fish and seafood that they potentially could. A small number of countries are responsible for almost all global mariculture production. In fact, in 2019 China produced a staggering 67% of global mariculture production included in our assessment.</description>
     </item>
     
     <item>
