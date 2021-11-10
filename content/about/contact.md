@@ -11,7 +11,7 @@ menu:
 # Contact OHI
 For all inquiries about the OHI, contact lead analyst
 
-Gage Clawson at sgclawson@bren.ucsb.edu
+Gage Clawson at clawson@nceas.ucsb.edu
 
 # Press Resources
 
