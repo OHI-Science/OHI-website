@@ -29,7 +29,7 @@ Stock status can also be judged by spawning potential, catch trend and size-age 
 Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
 
 
-{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#661_fisheries_(subgoal_of_food_provision)" icon="content/images/misc/microscope-icon.svg" >}}
+{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#661_fisheries_(subgoal_of_food_provision)" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/wild-caught-fisheries" icon="/images/misc/directions-icon.svg" >}}
 
 ----
