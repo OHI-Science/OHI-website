@@ -11,6 +11,8 @@ library(here)
 library(dplyr)
 library(magrittr)
 library(stringi)
+library(tidyr)
+library(broom)
 ```
 
 Below are all of the configurable variables that can be changed depending on updates to the scores.CSV file and to the template that is used to create the Hugo font-matter
@@ -83,6 +85,25 @@ page_data <- scores_data %>%
 global_avg <- scores_data %>% 
 	filter(!!as.symbol(name_col) == global_avg_name ) %>% 
 	.[, value_col]
+
+
+## Create a trends dataset and save to content/data folder
+region_trends <- all_data %>%
+  filter(dimension == "score") %>%
+  filter(!is.na(value)) %>%
+  group_by(goal, long_goal, region_id, region_name) %>%
+  do(mdl = tidy(lm(value ~ scenario, data = .))) %>%
+  unnest(mdl)  #fitting a model per each goal and rgn_id
+  
+# data.frame(glance(data_lm, mdl))
+region_trends2 <- region_trends %>%
+  filter(term == "scenario") %>%
+  mutate(scenario = sprintf("2012 - %s", max_year),
+         dimension = "average_yearly_change_in_scores") %>%
+  select(scenario, goal, long_goal, dimension, region_id, region_name, value = estimate, p.value) %>%
+  data.frame() 
+
+write.csv(region_trends2, here("content/data/trends.csv"), row.names = FALSE)
 
 ```
 

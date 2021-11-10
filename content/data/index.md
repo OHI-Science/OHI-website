@@ -1,6 +1,6 @@
 ---
 headless: true
-dataVersion: "2021-11-08"
+dataVersion: "2021-11-10"
 missingValueCode: 'NA'
 dataFiles:
   scores: scores.csv
@@ -47,7 +47,7 @@ scenario,goal,long_goal,dimension,region_id,region_name,value
 
 ## `trends`  (format: `CSV`)
 
-The trends CSV file contains the trend in score over a 10 year period for each region. It is formatted just like the scores CSV file, except that:
+The trends CSV file contains the trend in score over a 10 year period for each region. This file is created in the create-region-pages.Rmd script. It is formatted just like the scores CSV file, except that:
 - The "scenario" column gives a range of years rather than a specific year.
 - There is an extra "p.value" column that indicates the statistical significance of the trend
 
