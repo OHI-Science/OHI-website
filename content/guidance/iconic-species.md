@@ -3,7 +3,7 @@ title: "Sub-Goal: Iconic Species"
 name: "Iconic Species"
 bg_image: "/images/banners/shark-fish.jpg"
 id: "ICO"
-description: "This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score."
+description: "Iconic species are those that are relevant to local cultural identity (e.g. through a species' relationship to traditional activities). This sub-goal assesses how well those species are conserved."
 ---
 
 Iconic species is a component of the Sense of Place goal which aims to capture how well we are protecting the local coastal and marine systems that we value as part of our cultural identity. For the iconic species subgoal, a score of 100 means the local marine species important for cultural identity are healthy. 
