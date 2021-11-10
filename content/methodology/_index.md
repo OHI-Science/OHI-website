@@ -28,7 +28,7 @@ The GOAL SCORE is the average of the scores for Present Status and Likely Future
 2. **PRESSURES** are the ecological and social factors that decrease a goal's status. 
 3. **RESILIENCE** are ecological factors and social initiatives (policies, laws, etc) that mitigate the pressures acting on a goal.  
 
-![Infographic](/images/infographs/methodology-chart.png)
+![Infographic](/content/images/infographs/methodology-chart.png)
 
 ### REGION INDEX SCORES
 A region's index score is the average of its goal scores. Goal scores are weighted equally in global assessments, but independent assessments could weight them differently depending on local conditions and values.   
