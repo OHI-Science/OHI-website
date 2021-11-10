@@ -20,7 +20,7 @@ Habitat-forming species are not included in this definition of iconic species, n
 
 Some of the most widely recongnized iconic species are threatened or endangered.
 
-[QUESTION: Can we recreate the images/information for the specific iconic species located here (Green turtle, humpback whale...): http://www.oceanhealthindex.org/methodology/goals/sense-of-place/iconic-species]
+![](/images/infographs/OHI_GOALS_SOP_ICONIC_SPECIES_BP-1.png)
 
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.

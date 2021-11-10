@@ -20,7 +20,7 @@ Special places are coastal and marine areas that are culturally significant for 
 
 Well-maintained and protected lasting special places provide culturally significant resources that can generate economic opportunities and help to sustain coastal communities.
 
-[Question: is it possible to recreate the Papahanaumokuakea infographic stuff located here: http://www.oceanhealthindex.org/methodology/goals/sense-of-place/lasting-special-places]
+![](/images/infographs/OHI_GOALS_SOP_SPECIAL_PLACES.png)
 
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
@@ -31,7 +31,7 @@ Explore the full description of the data and model used in the Global OHI Assess
 ----
 
 ### OTHER RESOURCES
-WORLD DATABASED ON PROTECTED AREAS (WDPA)
+[WORLD DATABASED ON PROTECTED AREAS (WDPA)](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
 Explore protected areas on the most comprehensive global database on marine and terrestrial protected areas.
 
 [Learn more](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
