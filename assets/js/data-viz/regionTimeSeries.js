@@ -63,7 +63,7 @@ async function regionTimeSeries({
     series: [],
     dates: []
   }
-  var dateParser = d3.utcParse('%Y')
+  var dateParser = d3.timeParse('%Y')
   var scoreData = ohiData.scores.score
 
   // Years stay consistent

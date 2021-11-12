@@ -120,7 +120,7 @@ function timeSeries({
     .attr('viewBox', [0, 0, width, height])
 
   // Initialize the x axis
-  const x = d3.scaleUtc()
+  const x = d3.scaleTime()
     .range([margin.left, width - margin.right])
 
   let xAxis = d3.axisBottom()
