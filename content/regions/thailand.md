@@ -1,9 +1,9 @@
 ---
 regionId: 25
 title: Thailand
-rank: 106
-meanScore: 68.87
-globalMeanScore: 69.82
+rank: 79
+meanScore: 71.65
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

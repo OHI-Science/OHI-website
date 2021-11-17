@@ -1,9 +1,9 @@
 ---
 regionId: 100
 title: Republique du Congo
-rank: 206
-meanScore: 59.47
-globalMeanScore: 69.82
+rank: 207
+meanScore: 59.78
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

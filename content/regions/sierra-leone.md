@@ -1,9 +1,9 @@
 ---
 regionId: 96
 title: Sierra Leone
-rank: 176
-meanScore: 63.47
-globalMeanScore: 69.82
+rank: 179
+meanScore: 63.61
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

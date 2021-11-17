@@ -1,9 +1,9 @@
 ---
 regionId: 144
 title: Jan Mayen
-rank: 90
+rank: 98
 meanScore: 70.28
-globalMeanScore: 69.82
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

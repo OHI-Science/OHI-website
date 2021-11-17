@@ -1,9 +1,9 @@
 ---
 regionId: 81
 title: Cyprus
-rank: 166
-meanScore: 64.5
-globalMeanScore: 69.82
+rank: 157
+meanScore: 65.68
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

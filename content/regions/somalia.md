@@ -1,9 +1,9 @@
 ---
 regionId: 44
 title: Somalia
-rank: 147
-meanScore: 65.9
-globalMeanScore: 69.82
+rank: 146
+meanScore: 66.57
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

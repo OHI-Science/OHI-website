@@ -1,9 +1,9 @@
 ---
 regionId: 172
 title: Argentina
-rank: 165
-meanScore: 64.56
-globalMeanScore: 69.82
+rank: 169
+meanScore: 64.64
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

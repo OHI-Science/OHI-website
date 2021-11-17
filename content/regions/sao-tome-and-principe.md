@@ -1,9 +1,9 @@
 ---
 regionId: 103
 title: Sao Tome and Principe
-rank: 41
-meanScore: 75.4
-globalMeanScore: 69.82
+rank: 39
+meanScore: 75.47
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

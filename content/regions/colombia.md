@@ -1,9 +1,9 @@
 ---
 regionId: 132
 title: Colombia
-rank: 177
-meanScore: 63.43
-globalMeanScore: 69.82
+rank: 175
+meanScore: 64.09
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

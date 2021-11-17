@@ -1,9 +1,9 @@
 ---
 regionId: 59
 title: Belgium
-rank: 161
-meanScore: 64.96
-globalMeanScore: 69.82
+rank: 163
+meanScore: 65.05
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

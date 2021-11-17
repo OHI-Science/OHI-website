@@ -1,9 +1,9 @@
 ---
 regionId: 108
 title: Bermuda
-rank: 136
+rank: 140
 meanScore: 66.87
-globalMeanScore: 69.82
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

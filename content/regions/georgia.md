@@ -1,9 +1,9 @@
 ---
 regionId: 74
 title: Georgia
-rank: 107
-meanScore: 68.85
-globalMeanScore: 69.82
+rank: 106
+meanScore: 69.65
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

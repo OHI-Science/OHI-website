@@ -1,9 +1,9 @@
 ---
 regionId: 26
 title: Andaman and Nicobar
-rank: 170
-meanScore: 64.16
-globalMeanScore: 69.82
+rank: 160
+meanScore: 65.35
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 118
 title: Anguilla
-rank: 57
-meanScore: 73.4
-globalMeanScore: 69.82
+rank: 59
+meanScore: 73.46
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

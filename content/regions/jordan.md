@@ -1,9 +1,9 @@
 ---
 regionId: 215
 title: Jordan
-rank: 50
+rank: 52
 meanScore: 73.91
-globalMeanScore: 69.82
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

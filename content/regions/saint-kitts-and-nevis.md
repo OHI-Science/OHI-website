@@ -1,9 +1,9 @@
 ---
 regionId: 119
 title: Saint Kitts and Nevis
-rank: 67
-meanScore: 71.93
-globalMeanScore: 69.82
+rank: 75
+meanScore: 71.94
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

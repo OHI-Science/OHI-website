@@ -1,9 +1,9 @@
 ---
 regionId: 137
 title: Ecuador
-rank: 115
-meanScore: 68.44
-globalMeanScore: 69.82
+rank: 113
+meanScore: 69.21
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

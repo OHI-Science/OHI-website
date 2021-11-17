@@ -1,9 +1,9 @@
 ---
 regionId: 151
 title: American Samoa
-rank: 61
-meanScore: 72.65
-globalMeanScore: 69.82
+rank: 67
+meanScore: 72.75
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

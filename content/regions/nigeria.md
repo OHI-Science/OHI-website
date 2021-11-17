@@ -1,9 +1,9 @@
 ---
 regionId: 196
 title: Nigeria
-rank: 175
-meanScore: 63.71
-globalMeanScore: 69.82
+rank: 178
+meanScore: 63.74
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 55
 title: Azores
-rank: 43
-meanScore: 74.68
-globalMeanScore: 69.82
+rank: 46
+meanScore: 74.79
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---

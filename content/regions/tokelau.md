@@ -1,9 +1,9 @@
 ---
 regionId: 156
 title: Tokelau
-rank: 93
-meanScore: 70.12
-globalMeanScore: 69.82
+rank: 99
+meanScore: 70.22
+globalMeanScore: 70.22
 numRegions: 220
 layout: region_score
 ---
