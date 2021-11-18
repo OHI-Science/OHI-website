@@ -15,9 +15,9 @@ This goal assesses how well countries are maximizing the sustainable harvest of 
 
 The current score indicates that many regions have potential to improve sustainable harvests of natural products, either by eliminating overharvesting, increasing harvests that are too low, or reducing the pressures that decrease potential harvests.  
 
-Despite the relatively good global score, trends in Natural Products are decreasing. The global score has, on average, dropped a third of a point every year since 2012. This decline is likely due to the decreasing sustainability of forage fisheries, which largely drive the Natural Products scores due to the large amount of harvest compared to seaweeds or ornamental fish in many regions. 
+Despite the relatively good global score, trends in Natural Products are decreasing. The global score has, on average, dropped one fifth of a point every year since 2012. This decline is likely due to the decreasing sustainability of forage fisheries, which largely drive the Natural Products scores due to the large amount of harvest compared to seaweeds or ornamental fish in many regions. 
 
-However, there are regions which aren't driven by forage fisheries and have increased their Natural Products score. For instance, both China and Indonesia lead the world in seaweed mariculture production (accounting for ~87% of seaweed production included in our assessment for 2019), increasing their production each year. Because of this both regions scores have improved greatly since 2012.
+However, there are regions which aren't driven by forage fisheries and have increased their Natural Products score. For instance, both China and Indonesia lead the world in seaweed mariculture production (accounting for ~87% of seaweed production included in our assessment for 2019), increasing their production each year. Seaweed mariculture is also relatively sustainable. Because of this both regions scores have improved greatly since 2012.
 
 
 
