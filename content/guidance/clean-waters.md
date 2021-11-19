@@ -32,7 +32,7 @@ You should attempt to use more refined data than the Global Assessment data, bec
 
 *_Example sources of pollution_*
 
-{{< csvTable path="tables/sources_of_pollution.csv"  sep="," >}}
+{{< csvTable path="tables/sources_of_pollution.csv" sep="," >}}
 
 One potential problem to avoid is counting the same source of pollution in multiple ways. For example, if you have in situ measurements of excess nutrients, it would be unnecesary to include modeled nitrogen inputs from agriculture because presumably this would already be accounted for in the direct measures.  
 
