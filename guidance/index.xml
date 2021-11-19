@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://ohi-science.org/OHI-website/guidance/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Artisanal Fishing Opportunities</title>
+      <title>Guidance: Artisanal Fishing Opportunities</title>
       <link>https://ohi-science.org/OHI-website/guidance/artisanal-fishing-opportunities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -16,7 +16,7 @@
     </item>
     
     <item>
-      <title>Goal: Natural Products</title>
+      <title>Guidance: Natural Products</title>
       <link>https://ohi-science.org/OHI-website/guidance/natural-products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>Carbon Storage</title>
+      <title>Guidance: Carbon Storage</title>
       <link>https://ohi-science.org/OHI-website/guidance/carbon-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -47,7 +47,7 @@ A score of 100 indicates habitats that provide coastal protection are intact or 
     </item>
     
     <item>
-      <title>Goal: Tourism and Recreation</title>
+      <title>Guidance: Tourism and Recreation</title>
       <link>https://ohi-science.org/OHI-website/guidance/tourism-and-recreation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -66,7 +66,17 @@ A score of 100 indicates habitats that provide coastal protection are intact or 
     </item>
     
     <item>
-      <title>Biodiversity: Habitat</title>
+      <title>Guidance: Economies</title>
+      <link>https://ohi-science.org/OHI-website/guidance/economies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/economies/</guid>
+      <description>Economies is a component of the Livelihoods and Economies goal. The Economies subgoal captures the economic value of marine-related industries. A score of 100 indicates that a coastal region has maximized their revenue from the marine sector.
+Before embarking on the Economies subgoal, consider how you want to structure the larger goal. The global assessment is composed of two equally important sub-goals, livelihoods and economies, which are assessed across as many marine-related sectors as possible.</description>
+    </item>
+    
+    <item>
+      <title>Guidance: Habitat</title>
       <link>https://ohi-science.org/OHI-website/guidance/habitats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -78,7 +88,48 @@ Habitat is included in the Biodiversity goal to provide a more complete picture 
     </item>
     
     <item>
-      <title>Biodiversity: Species</title>
+      <title>Guidance: Iconic Species</title>
+      <link>https://ohi-science.org/OHI-website/guidance/iconic-species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/iconic-species/</guid>
+      <description>Iconic species is a component of the Sense of Place goal which aims to capture how well we are protecting the local coastal and marine systems that we value as part of our cultural identity. For the iconic species subgoal, a score of 100 means the local marine species important for cultural identity are healthy.
+Practical Guidance This sub-goal assesses the condition of local marine species that are iconic to a region.</description>
+    </item>
+    
+    <item>
+      <title>Guidance: Lasting Special Places</title>
+      <link>https://ohi-science.org/OHI-website/guidance/lasting-special-places/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/lasting-special-places/</guid>
+      <description>Lasting Special Places is a component of the Sense of Place goal which aims to capture how well we are protecting the local coastal and marine systems that we value as part of our cultural identity.
+For the Lasting Special Places subgoal, a score of 100 indicates marine regions that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons are well-protected and healthy.
+ Marine protected areas are often used for resilience metrics.</description>
+    </item>
+    
+    <item>
+      <title>Guidance: Livelihoods</title>
+      <link>https://ohi-science.org/OHI-website/guidance/livelihoods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/livelihoods/</guid>
+      <description>Livelihoods is a component of the Livelihoods and Economies goal. The Livelihoods subgoal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.
+A score of 100 indicates that a coastal region has maximized the quantity and quality of jobs in the marine sector.</description>
+    </item>
+    
+    <item>
+      <title>Guidance: Mariculture</title>
+      <link>https://ohi-science.org/OHI-website/guidance/mariculture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohi-science.org/OHI-website/guidance/mariculture/</guid>
+      <description>Mariculture is a component of the Food Provision goal. The Mariculture subgoal measures the ability to maximize the amount of seafood from farm-raised facilities without compromising the ocean’s ability to sustainably provide food now and in the future.
+A score of 100 means that a region is growing the greatest amount of farmed seafood possible based on its potential (where its maximum potential is estimated in different ways depending on the assessment) and without compromising future production.</description>
+    </item>
+    
+    <item>
+      <title>Guidance: Species</title>
       <link>https://ohi-science.org/OHI-website/guidance/species/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -95,57 +146,6 @@ Habitat is included in the Biodiversity goal to provide a more complete picture 
       
       <guid>https://ohi-science.org/OHI-website/guidance/wild-caught-fisheries/</guid>
       <description>Fisheries is part of the Food Provision goal. The Fisheries subgoal measures the amount of seafood sustainably harvested in a given EEZ or region through any means for use primarily in human consumption and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries. The Food Provision goals aim to maximize the amount of sustainably produced seafood from wild or ocean-cultured stocks so both over- or under- harvesting should be penalized.</description>
-    </item>
-    
-    <item>
-      <title>Sub-Goal: Iconic Species</title>
-      <link>https://ohi-science.org/OHI-website/guidance/iconic-species/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/guidance/iconic-species/</guid>
-      <description>Iconic species is a component of the Sense of Place goal which aims to capture how well we are protecting the local coastal and marine systems that we value as part of our cultural identity. For the iconic species subgoal, a score of 100 means the local marine species important for cultural identity are healthy.
-Practical Guidance This sub-goal assesses the condition of local marine species that are iconic to a region.</description>
-    </item>
-    
-    <item>
-      <title>Sub-Goal: Lasting Special Places</title>
-      <link>https://ohi-science.org/OHI-website/guidance/lasting-special-places/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/guidance/lasting-special-places/</guid>
-      <description>Lasting Special Places is a component of the Sense of Place goal which aims to capture how well we are protecting the local coastal and marine systems that we value as part of our cultural identity.
-For the Lasting Special Places subgoal, a score of 100 indicates marine regions that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons are well-protected and healthy.
- Marine protected areas are often used for resilience metrics.</description>
-    </item>
-    
-    <item>
-      <title>Sub-Goal: Livelihoods</title>
-      <link>https://ohi-science.org/OHI-website/guidance/livelihoods/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/guidance/livelihoods/</guid>
-      <description>Livelihoods is a component of the Livelihoods and Economies goal. The Livelihoods subgoal describes livelihood quantity and quality for people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages, which is a proxy for job quality.
-A score of 100 indicates that a coastal region has maximized the quantity and quality of jobs in the marine sector.</description>
-    </item>
-    
-    <item>
-      <title>Sub-Goal: Mariculture</title>
-      <link>https://ohi-science.org/OHI-website/guidance/mariculture/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/guidance/mariculture/</guid>
-      <description>Mariculture is a component of the Food Provision goal. The Mariculture subgoal measures the ability to maximize the amount of seafood from farm-raised facilities without compromising the ocean’s ability to sustainably provide food now and in the future.
-A score of 100 means that a region is growing the greatest amount of farmed seafood possible based on its potential (where its maximum potential is estimated in different ways depending on the assessment) and without compromising future production.</description>
-    </item>
-    
-    <item>
-      <title>Sub-Goal:Economies</title>
-      <link>https://ohi-science.org/OHI-website/guidance/economies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohi-science.org/OHI-website/guidance/economies/</guid>
-      <description>Economies is a component of the Livelihoods and Economies goal. The Economies subgoal captures the economic value of marine-related industries. A score of 100 indicates that a coastal region has maximized their revenue from the marine sector.
-Before embarking on the Economies subgoal, consider how you want to structure the larger goal. The global assessment is composed of two equally important sub-goals, livelihoods and economies, which are assessed across as many marine-related sectors as possible.</description>
     </item>
     
   </channel>

@@ -4,17 +4,17 @@
   <url>
     <loc>https://ohi-science.org/OHI-website/goals/food-provision/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/artisanal-fishing-opportunities/</loc>
-  </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/artisanal-fishing-opportunities/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/artisanal-fishing-opportunities/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/natural-products/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/guidance/natural-products/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/carbon-storage/</loc>
-  </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/carbon-storage/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/carbon-storage/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/coastal-protection/</loc>
   </url><url>
@@ -98,10 +98,6 @@
     <loc>https://ohi-science.org/OHI-website/regions/benin/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/bermuda/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/habitats/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/species/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/bonaire/</loc>
   </url><url>
@@ -268,6 +264,20 @@
     <loc>https://ohi-science.org/OHI-website/regions/guernsey/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/guidance/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/economies/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/habitats/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/iconic-species/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/lasting-special-places/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/livelihoods/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/mariculture/</loc>
+  </url><url>
+    <loc>https://ohi-science.org/OHI-website/guidance/species/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/guinea/</loc>
   </url><url>
@@ -591,25 +601,17 @@
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/sense-of-place/iconic-species/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/iconic-species/</loc>
-  </url><url>
     <loc>https://ohi-science.org/OHI-website/global-scores/goal-scores/sense-of-place/lasting-special-places/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/sense-of-place/lasting-special-places/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/lasting-special-places/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/livelihoods/</loc>
   </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/livelihoods/</loc>
-  </url><url>
     <loc>https://ohi-science.org/OHI-website/global-scores/goal-scores/food-provision/mariculture/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/food-provision/mariculture/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/mariculture/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/global-scores/goal-scores/biodiversity/species/</loc>
   </url><url>
@@ -618,8 +620,6 @@
     <loc>https://ohi-science.org/OHI-website/global-scores/goal-scores/livelihoods-and-economies/economies/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/economies/</loc>
-  </url><url>
-    <loc>https://ohi-science.org/OHI-website/guidance/economies/</loc>
   </url><url>
     <loc>https://ohi-science.org/OHI-website/regions/sudan/</loc>
   </url><url>
