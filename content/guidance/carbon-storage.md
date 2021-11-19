@@ -1,10 +1,10 @@
 ---
-title: "Carbon Storage"
+title: "Guidance: Carbon Storage"
 name: "Carbon Storage"
 bg_image: "/images/banners/disturbed-fish.jpg"
 id: "CS"
 icon: "/images/goal-icons/carbon-storage.svg"
-description: "This goal intends to capture the ability of coastal habitats to remove carbon given their carbon uptake rate and health conditions."
+description: "This goal captures the ability of coastal habitats to remove carbon given their carbon uptake rate and health."
 color: "#D78935"
 weight: 4
 ---

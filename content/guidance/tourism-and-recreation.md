@@ -1,10 +1,10 @@
 ---
-title: "Goal: Tourism and Recreation"
+title: "Guidance: Tourism and Recreation"
 name: "Tourism and Recreation"
 bg_image: "/images/banners/beach.jpg"
 id: "TR"
 icon: "/images/goal-icons/tourism-and-recreation.svg"
-description: "This goal captures the value that people hold for experiencing and enjoying coastal areas. A score of 100 means a region utilizes its full recreational potential without harming the ecosystem."
+description: "This goal captures the value of experiencing and enjoying coastal areas."
 color: "#A9B646"
 weight: 7
 ---

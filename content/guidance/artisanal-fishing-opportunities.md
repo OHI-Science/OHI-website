@@ -1,5 +1,5 @@
 ---
-title: "Artisanal Fishing Opportunities"
+title: "Guidance: Artisanal Fishing Opportunities"
 name: "Artisanal Fishing Opportunities"
 bg_image: "/images/banners/fish-net.jpg"
 id: "AO"

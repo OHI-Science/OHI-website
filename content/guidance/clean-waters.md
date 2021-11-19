@@ -5,7 +5,7 @@ name: "Clean Waters"
 bg_image: "/images/banners/turtle-swimming.jpg"
 id: "CW"
 icon: "/images/goal-icons/clean-waters.svg"
-description: ""
+description: "This goal captures the degree to which local waters are unpolluted."
 color: "#4EA09F"
 weight: 9
 ---
@@ -53,4 +53,4 @@ The data used in the Clean Waters goal is also used as Pressures layers. You sho
 
 
 ### Examples of the Approach
-{{< csvTable path="tables/clean-waters.csv"  sep=";" >}}
+{{< csvTable path="tables/clean-waters.csv"  sep="," >}}

@@ -1,9 +1,9 @@
 ---
-title: "Sub-Goal: Lasting Special Places"
+title: "Guidance: Lasting Special Places"
 name: "Lasting Special Places"
 bg_image: "/images/banners/fish-school.jpg"
 id: "LSP"
-description: "This sub-goal focuses on those geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational or existence reasons, and assesses how well they are protected."
+description: "This sub-goal assesses how well we protect geographic locations that hold particular value for aesthetic, spiritual, cultural, recreational, or existence reasons."
 ---
 
 Lasting Special Places is a component of the Sense of Place goal which aims to capture how well we are protecting the local coastal and marine systems that we value as part of our cultural identity. 

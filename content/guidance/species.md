@@ -1,11 +1,10 @@
 ---
-title: "Biodiversity: Species"
+title: "Guidance: Species"
 name: "Species"
 bg_image: "/images/banners/shark-fish.jpg"
 id: "SPP"
-description: "This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score."
+description: "This subgoal measures the health of regionally iconic species that are relevant to local cultural identity."
 ---
-
 
 The Species sub-goal is a component of the Biodiversity goal and assesses the condition of all marine species present in a region, including endangered species and species in relatively good condition.
 

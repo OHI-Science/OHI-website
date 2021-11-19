@@ -1,9 +1,9 @@
 ---
-title: "Sub-Goal:Economies"
+title: "Guidance: Economies"
 name: "Economies"
 bg_image: "/images/banners/shipping-containers.jpg"
 id: "ECO"
-description: "Economies captures the economic value associated with marine industries using revenue from marine sectors."
+description: "Economies captures the economic value associated with marine industries based on revenue from marine sectors."
 ---
 
 Economies is a component of the Livelihoods and Economies goal. The Economies subgoal captures the economic value of marine-related industries. A score of 100 indicates that a coastal region has maximized their revenue from the marine sector.  

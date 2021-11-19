@@ -49,9 +49,9 @@ The goal is to first get the content deployed on the `preview.` site before maki
 
 There are two websites that the OHI website is deployed to
 
-`devoceanhealthindes.org`: This is the interim main website that users see; it has its source built from the `main` branch
+`dev.oceanhealthindex.org`: This is the interim main website that users see; it has its source built from the `main` branch
 
-`preview.oceanhealthindex.org`: The preview branch is meant to see the site _before_ it gets to produciton; it's built off of the `dev` branch.
+`preview.oceanhealthindex.org`: The preview branch is meant to see the site _before_ it gets to production; it's built off of the `dev` branch.
 
 Two separate GitHub actions are run, depending on which branch the code is being pushed to. These scripts can be found under the `.github` folder and their logs can be checked in the main [Actions](https://github.com/OHI-Science/OHI-website/actions) interface.
 
@@ -201,3 +201,5 @@ The website shows links to facebook and twitter. The URLs for these links can be
 See `content/data/_index.md`
 
 Remember that when the `scores.csv` file is updated, the region pages should be re-generated. See the "Region pages" section, above.
+
+Run code in scripts/create-region-pages.Rmd.  This updates the region pages as well as creates an updated trend.csv file for data analysis.

@@ -1,9 +1,9 @@
 ---
-title: "Sub-Goal: Mariculture"
+title: "Guidance: Mariculture"
 name: "Mariculture"
 bg_image: "/images/banners/shark-fish.jpg"
 id: "MAR"
-description: "Mariculture measures the ability to reach the highest levels of seafood gained from farm-raised facilities without damaging the ocean’s ability to provide fish sustainably now and in the future."
+description: "Mariculture measures the ability to sustainably produce food from farm facilities."
 ---
 
 Mariculture is a component of the Food Provision goal.  The Mariculture subgoal measures the ability to maximize the amount of seafood from farm-raised facilities without compromising the ocean’s ability to sustainably provide food now and in the future. 

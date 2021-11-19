@@ -1,9 +1,9 @@
 ---
-title: "Biodiversity: Habitat"
+title: "Guidance: Habitat"
 name: "Habitat"
 bg_image: "/images/banners/shark-fish.jpg"
 id: "HAB"
-description: "This sub-goal includes all habitats in the study area, and assess their health condition and coverage area."
+description: "This sub-goal assesses the condition of marine habitats in a region."
 ---
 
 The Habitat sub-goal is a component of the Biodiversity goal and assesses the condition of habitats that support many species.
