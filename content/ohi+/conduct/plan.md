@@ -201,7 +201,7 @@ Potential members for the Technical Team
 
 A proposition of next steps
 
-## 3 Team Structure
+# 3 Team Structure
 
 The Team Structure will largely depend on the goal of conducting an assessment, thus there is no single “right” team requirements for developing an OHI+ assessment. Academic-led assessments (such as those led by research labs or for a Ph.D thesis) tend to have fewer people involved. However, most assessments to date have management and/or policy goals, and therefore, have wider stakeholder involvement. Effective assessments are carefully planned and require adequate project leadership and vision. Due to the multidisciplinary nature of the Index, assessments often count with participation of various stakeholder groups. Nevertheless, we recommend a key agency or group assumes the leadership of the assessment to ensure proper planning, development, and engagement throughout the assessment.
 

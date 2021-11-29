@@ -22,4 +22,5 @@ A country's Index score is the average of 10 "goal" scores which represent the e
 
 The global score is the average of the country scores, weighted by EEZ area. 
 
-Explore the [METHODOLOGY](http://www.oceanhealthindex.org/methodology) tab to learn about the general OHI framework, and take a look at the [global OHI supplement](LINK TO DOCUMENT HERE) to learn the nitty-gritty details of the global assesmnet.
+Explore the [METHODOLOGY](/methodology) tab to learn about the general OHI framework, and take a look at the [global OHI supplement](https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html) to learn the nitty-gritty details of the global assesmnet.
+

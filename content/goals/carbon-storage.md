@@ -28,7 +28,8 @@ A score of 100 would indicate that these habitats are all still intact or have b
 Approximately one-third of the overall area of coastal habitats has been lost in the last 50 years and the remainder is severely threatened.  Destruction of these ecosystems means less carbon is stored in surrounding sediment and the resulting carbon emissions accelerate the rate of global climate change.  Majour causes of destruction of these systems include draining or clearing for agriculture or aquaculture, coastal pollution, and unsustainable coastal development.
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
+
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#64_carbon_storage" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/carbon-storage" icon="/images/misc/directions-icon.svg" >}}

@@ -30,7 +30,7 @@ A high score indicates that the demand for artisanal fishing is being met using 
 While small-scale fishing provides benefits and opportunities for local communities, limited or ineffective regulation and enforcement can signficantly impact the ability to pursue it.
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#61_artisanal_opportunities" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/artisanal-fishing-opportunities" icon="/images/misc/directions-icon.svg" >}}

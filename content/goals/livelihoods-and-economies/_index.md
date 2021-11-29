@@ -20,10 +20,6 @@ This goal measures jobs and revenue from sustainable marine-related industries. 
 
 The jobs and revenue produced from marine-related industries are clearly of huge value to many people, even for those people who do not directly participate in marine-related industries. People value community identity, tax revenue, and indirect economic and social impacts of a stable coastal economy. This goal tracks **the number and quality of jobs and the amount of revenue produced across as many marine-related industries/sectors as possible** through two sub-goals, Livelihoods and Economies. A score of 100 reflects productive coastal economies that avoid the loss of ocean-dependent livelihoods while maximizing livelihood quality.
 
-#### LEARN MORE
-Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
-
-[Two buttons: OHI Model, Practical Guidance]
 
 ----
 

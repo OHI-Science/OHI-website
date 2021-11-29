@@ -28,7 +28,8 @@ A major source of marine pollution is agricultural activities, such as the use o
 Another source of pollution comes from human waste which causes nutrient pollution and for countries with poor sanitaiton and inadequate sewage treatment can introduce bacteria, viruses and parasites into water systems and coastal waters, resulting in disease and infection.  
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
+
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#65_clean_waters" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/clean-waters" icon="/images/misc/directions-icon.svg" >}}
