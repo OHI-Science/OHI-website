@@ -21,7 +21,8 @@ From the largest predators to microscopic plankton, these species depend upon ea
 This sub-goal assesses the health of all marine species present in a country's EEZ, including endangered species and species in relatively good conditions. The presence of species that are not at risk leads to a higher score.
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI Assessment. Or, take a look at the "Practical Guidance" to get advice on adapting the goal for future assessments, and to see how previous [OHI+ assessments](LINK TO OHI+ page) have assessed goals to address differences in data availability or priorities.
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
+
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#622_species_condition_(subgoal_of_biodiversity)" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/species" icon="/images/misc/directions-icon.svg" >}}
