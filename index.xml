@@ -636,7 +636,8 @@ Press Resources Logo  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/resources/data/cumulative-human-impacts/</guid>
-      <description></description>
+      <description>Most recent project  We mapped the cumulative impact of human activities on global oceans from 2003 to 2013. We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.
+ Citation: Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean.</description>
     </item>
     
     <item>
@@ -663,9 +664,9 @@ Press Resources Logo  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/global-scores/data-download/</guid>
-      <description>We enthusiastically support the use of our data, but please cite our work.
-Global OHI assessments require synthesizing data from nearly one hundred sources.
-Data are prepared and scores calculated using freely available coding and version control software. In the interest of transparency and the promotion of scientific discovery, we freely provide the data and scripts used to calculate the global Ocean Health Index. However, we do not provide unaltered data obtained from other sources; to obtain these data you must go the original data sources.</description>
+      <description>10 YEARS OF SCORES! The OHI 2021 global assessment calculates 10 years of ocean condition, from 2012 to 2021, for 220 coastal countries and territories!
+Download Scores  Global and country Index scores are provided as well as goal scores and score components (see score metadata). See Methodology tab for an overview of OHI score calculations.
+ PREPARATION MATERIALS In addition to providing scores, we make all code available online on GitHub.</description>
     </item>
     
     <item>
@@ -917,7 +918,7 @@ Data are prepared and scores calculated using freely available coding and versio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/resources/data/global-ohi/</guid>
-      <description></description>
+      <description>  window.location.replace(&#34;global-scores/data-download.html&#34;)  </description>
     </item>
     
     <item>
@@ -2633,7 +2634,7 @@ CURRENT SCORE  Sadly, the Economies subgoal has not been meaningfully updated si
       <guid>https://ohi-science.org/OHI-website/goals/livelihoods-and-economies/economies/</guid>
       <description>MARINE ENVIRONMENTS SUPPORT ECONOMIES The Economies goal captures the economic value associated with marine industries using revenue from marine sectors, such as commercial fishing, mariculture, tourism and recreation, shipping and transportation, whale watching, ports and harbors, ship and boat building, and renewable energy production.
  GOAL DESCRIPTION Marine-related industries provide direct, indirect, and induced benefits and help to strengthen the economies of marine-related communities.
-LEARN MORE Explore the full description of the data and model used in the Global OHI Assessment.</description>
+LEARN MORE Explore the full description of the data and model used in the Global OHI MODEL.</description>
     </item>
     
     <item>
@@ -2742,7 +2743,9 @@ The Pacific Life Foundation The Pacific Life Foundation made a commitment in 201
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/resources/tools/</guid>
-      <description></description>
+      <description>How to start practicing open data science!  Open data science means that methods, data, and code are available so others can access, reuse, and build from it without much fuss. We use a variety of programs, tools, and practices to do reproducible research.
+ Our workflow depends on R, RStudio, RMarkdown, and Git/GitHub. These resources will get you started.
+Introduction to Open Data Science is a hands-on training book that introduces the tools, practices, and workflows that underpin our work (Lowndes et al.</description>
     </item>
     
     <item>

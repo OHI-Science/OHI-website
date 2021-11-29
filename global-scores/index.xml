@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohi-science.org/OHI-website/global-scores/data-download/</guid>
-      <description>We enthusiastically support the use of our data, but please cite our work.
-Global OHI assessments require synthesizing data from nearly one hundred sources.
-Data are prepared and scores calculated using freely available coding and version control software. In the interest of transparency and the promotion of scientific discovery, we freely provide the data and scripts used to calculate the global Ocean Health Index. However, we do not provide unaltered data obtained from other sources; to obtain these data you must go the original data sources.</description>
+      <description>10 YEARS OF SCORES! The OHI 2021 global assessment calculates 10 years of ocean condition, from 2012 to 2021, for 220 coastal countries and territories!
+Download Scores  Global and country Index scores are provided as well as goal scores and score components (see score metadata). See Methodology tab for an overview of OHI score calculations.
+ PREPARATION MATERIALS In addition to providing scores, we make all code available online on GitHub.</description>
     </item>
     
     <item>
