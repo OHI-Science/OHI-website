@@ -23,4 +23,4 @@ The jobs and revenue produced from marine-related industries are clearly of huge
 
 ----
 
-[DOWNLOADABLE INFOGRAPHIC](http://dev.oceanhealthindex.org/images/infographs/LE.png)
+{{<button text="Download Infographic" link=images/infographs/LE.png icon="images/goal-icons/livelihoods-and-economies.svg" >}}

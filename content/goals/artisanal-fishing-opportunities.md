@@ -40,6 +40,7 @@ Explore the full description of the data and model used in the Global OHI MODEL.
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#61_artisanal_opportunities" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/artisanal-fishing-opportunities" icon="/images/misc/directions-icon.svg" >}}
+{{<button text="Download Infographic" link=images/infographs/AO.png icon="images/goal-icons/artisinal-fishing-opportunities.svg" >}}
 
 ### OTHER RESOURCES
 FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS (FAO)
@@ -50,7 +51,6 @@ UNITED NATIONS SUSTAINABLE DEVELOPMENT GOALS
 GOAL 14.b.1: Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries
 [Learn more](https://unstats.un.org/sdgs/metadata/?Text=&Goal=14&Target=14.b)
 
-[DOWNLOADABLE INFOGRAPHIC](http://dev.oceanhealthindex.org/images/infographs/AO.png)
 
 ### References
 Jacquet J, Pauly D (2008) Funding priorities: Big barriers to small-scale fisheries. Conservation Biology 22: 832-835 doi 10.1111/j.1523-1739.2008.00978.x

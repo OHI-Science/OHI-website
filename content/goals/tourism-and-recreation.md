@@ -26,7 +26,7 @@ A score of 100 means a region utilizes its full recreational potential without h
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
 
-[DOWNLOADABLE INFOGRAPHIC](http://dev.oceanhealthindex.org/images/infographs/TR.png)
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#610_tourism_and_recreation" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/tourism-and-recreation" icon="/images/misc/directions-icon.svg" >}}
+{{<button text="Download Infographic" link=images/infographs/TR.png icon="images/goal-icons/tourism-and-recreation.svg" >}}
