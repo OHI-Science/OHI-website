@@ -93,7 +93,7 @@
     {{ end }}
   {{ end }}
 
-  {{ range $pages }}
+  {{ range $pages | uniq}}
     <div class="right-col-nav">
       <a href= "{{.Permalink}}" class="right-nav-item">{{.Name}}</a>
     </div>
