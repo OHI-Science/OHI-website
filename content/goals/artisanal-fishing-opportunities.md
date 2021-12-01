@@ -29,6 +29,12 @@ A high score indicates that the demand for artisanal fishing is being met using 
 
 While small-scale fishing provides benefits and opportunities for local communities, limited or ineffective regulation and enforcement can signficantly impact the ability to pursue it.
 
+**Comparison of large scale and small scale fisheries**
+
+![Infographic](/images/art_vs_comm.png)
+
+(figure from Jacquet et al. 2008)
+
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
 
@@ -43,3 +49,6 @@ FAO Umbrella Programme for the promotion and application of the Voluntary Guidel
 UNITED NATIONS SUSTAINABLE DEVELOPMENT GOALS
 GOAL 14.b.1: Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries
 [Learn more](https://unstats.un.org/sdgs/metadata/?Text=&Goal=14&Target=14.b)
+
+### References
+Jacquet J, Pauly D (2008) Funding priorities: Big barriers to small-scale fisheries. Conservation Biology 22: 832-835 doi 10.1111/j.1523-1739.2008.00978.x

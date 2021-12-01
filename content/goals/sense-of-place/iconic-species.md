@@ -35,3 +35,7 @@ Explore the full description of the data and model used in the Global OHI MODEL.
 INTERNATIONAL UNION FOR CONSERVATION OF NATURE (IUCN)
 The IUCN Red List assesses the conservation status of species in order to highlight those threatened with extinction and promote their conservation.
 [Learn more](https://www.iucnredlist.org/)
+
+
+DOWNLOADABLE INFOGRAPHIC
+[click here](http://dev.oceanhealthindex.org/images/infographs/AO.png)

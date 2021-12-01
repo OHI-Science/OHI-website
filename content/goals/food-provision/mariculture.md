@@ -14,7 +14,11 @@ This goal assesses our ability to sustainably maximize the production of farm-ra
 ### GOAL DESCRIPTION
 As humanity’s population continues to expand, we must increasingly rely upon new and improved methods for cultivating food on land and in the ocean. The term aquaculture refers to the cultivation in water (fresh and saltwater) of animals or plants for human consumption. Mariculture refers to the commercial harvest of seafood that is farm-raised in the ocean and along the coast.
 
-Aquaculture is the fastest growing animal food production sector in the world! As the population contines to grow, it will become increasingly important to efficiently grow food using sustainable mariculture practices.
+Aquaculture is the fastest growing animal food production sector in the world, with a 527% rise in production from 1990 to 2018 (FAO 2020)! As the population contines to grow, it will become increasingly important to efficiently grow food using sustainable mariculture practices.
+
+![Infographic](/images/FAO_mariculture_production.png)
+
+(image from [FAO 2020](https://www.fao.org/state-of-fisheries-aquaculture))
 
 The mariculture goal score is based on the quantity of food obtained from mariculture relative to the potential amount it could produce given the availability of suitable habitat. The harvest quantity for each species is adjusted for the sustainability of the farming practices where it is grown.
 
@@ -38,3 +42,8 @@ SEAFOOD WATCH
 Monterey Bay Aquarium provides many resources, including regional guides to help consumers find sustainable seafood.
 
 [Learn More](https://www.seafoodwatch.org/) 
+
+----
+
+### REFERENCES
+FAO. (2020). The State of World Fisheries and Aquaculture 2020: Interactive story. https://www.fao.org/state-of-fisheries-aquaculture
