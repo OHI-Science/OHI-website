@@ -24,3 +24,4 @@ People derive a sense of identity or value from living near the ocean, visiting 
 The health of iconic species and protected places are two ways of assessing the cultural, spiritual, aesthetic and other intangible benefits that people value for a region.
 
 
+[DOWNLOADABLE INFOGRAPHIC](http://dev.oceanhealthindex.org/images/infographs/SP.png)

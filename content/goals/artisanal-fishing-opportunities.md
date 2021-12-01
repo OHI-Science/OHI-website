@@ -50,5 +50,7 @@ UNITED NATIONS SUSTAINABLE DEVELOPMENT GOALS
 GOAL 14.b.1: Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries
 [Learn more](https://unstats.un.org/sdgs/metadata/?Text=&Goal=14&Target=14.b)
 
+[DOWNLOADABLE INFOGRAPHIC](http://dev.oceanhealthindex.org/images/infographs/AO.png)
+
 ### References
 Jacquet J, Pauly D (2008) Funding priorities: Big barriers to small-scale fisheries. Conservation Biology 22: 832-835 doi 10.1111/j.1523-1739.2008.00978.x

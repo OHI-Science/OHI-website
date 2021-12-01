@@ -27,3 +27,5 @@ A high score indicates that a region has maximized the amount of sustainably pro
 
 This goal is the combination of two subgoals: Fisheries and Mariculture. For the Global Assessment, the contribution of these two subgoals to the overall score is weighted by their total seafood yield. However, other approaches for weighting the contribution of these subgoals are reasonable.
  
+ 
+[DOWNLOADABLE INFOGRAPHIC](http://dev.oceanhealthindex.org/images/infographs/FP.png)
