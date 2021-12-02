@@ -13,11 +13,11 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 <h4 class="publication-section">Global</h4>
 
-[website with all data and supplementary methods](http://ohi-science.org/ohi-global/)
+[all data and supplementary methods](/global-scores/data-download/)
 
-[Halpern et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178267), *PLoS ONE**. Drivers and implications of change in global ocean health over the past 5 years. [(website with interactive figures and maps)](http://ohi-science.nceas.ucsb.edu/plos*change*in*global*ocean*health/)
+[Halpern et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178267), *PLoS ONE**. Drivers and implications of change in global ocean health over the past 5 years.
 
-[Halpern et al. 2015](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117863), *PLoS ONE**. Patterns and emerging trends in global ocean health. [(2013 and updated 2012 global data)](https://github.com/OHI-Science/ohi-global/blob/master/eez2013/OHI2013*PLOS.zip?raw=true)
+[Halpern et al. 2015](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117863), *PLoS ONE**. Patterns and emerging trends in global ocean health. [(2013 and updated 2012 global data)](https://github.com/OHI-Science/ohi-global/blob/master/eez2013/OHI2013_PLOS.zip?raw=true)
 
 [Halpern et al. 2012, Nature](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html). An index to assess the health and benefits of the global ocean. [(original 2012 global data)](ftp://ohi.nceas.ucsb.edu/pub/data/2012/layers.html)
 
@@ -29,11 +29,11 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 <h4 class="publication-section">U.S. West Coast</h4>
 
-[Halpern et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0098995), *PLoS ONE**. Assessing the health of the U.S. West Coast with a regional-scale application of the Ocean Health Index. [(data)](https://github.com/OHI-Science/ohi-uswest/blob/master/USwest*PLOS.zip?raw=true)
+[Halpern et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0098995), *PLoS ONE**. Assessing the health of the U.S. West Coast with a regional-scale application of the Ocean Health Index. [(data)](https://github.com/OHI-Science/ohi-uswest/blob/master/USwest_PLOS.zip?raw=true)
 
 <h4 class="publication-section">Brazil</h4>
 
-[Elfes et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0092589), *PLoS ONE**. A regional-scale Ocean Health Index for Brazil. [(data)](http://ohi.nceas.ucsb.edu/data/br-2012/)
+[Elfes et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0092589), *PLoS ONE**. A regional-scale Ocean Health Index for Brazil. 
 
 <h4 class="publication-section">Fiji</h4>
 
