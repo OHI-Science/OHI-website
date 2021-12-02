@@ -3,7 +3,7 @@ title: "Home"
 intro: "A healthy ocean sustainably delivers a range of benefits to people now and in the future. The Ocean Health Index is the comprehensive framework used to measure ocean health from global to local scales."
 boxes:
   - title: Global Assessment
-    intro: A measure of ocean health across countries and high seas regions.
+    intro: A measure of ocean health for 220 countries.
     buttons:
       - text: Global Scores
         link: "global-scores/_index.md"
