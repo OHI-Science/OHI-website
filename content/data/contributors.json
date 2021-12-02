@@ -1,11 +1,11 @@
 {
   "Project Team":[
     "Laure Katz, Director",
-    "Victor Ramos, Manager",
+    "Victor Ramos, International Projects Manager",
     "Ben Halpern, Director",
     "Melanie Frazier, Lead Scientist",
     "Julia Stewart Lowndes, Project Scientist",
-    "Gage Clawson, Fellows"
+    "Gage Clawson, Fellows Coordinator and Analyst"
   ],
   "Additional Science":[
     "Jamie Afflerbach",
@@ -23,9 +23,6 @@
     "Ashleigh McGovern",
     "Emily Pidgeon",
     "'Aulani Wilhelm"
-  ],
-  "Outreach and Communications":[
-    "Victor Ramos"
   ],
   "Financial Oversight":[
     "Carolyn Hicks",
@@ -49,12 +46,20 @@
     "New England Aquarium",
     "RadicalMedia"
   ],
+ "Fellows": [
+    "Ellie Campbell",
+    "Camila Vargas",
+    "Iwen Su",
+    "Gage Clawson",
+    "Molly Williams",
+    "Laura Ingulsrud",
+    "Sara Orofino",
+    "Madeline Berger"
+  ],
   "Science": [
     "Lydia Bergen",
-    "Madeline Berger",
     "Jacqueline  Bort",
     "Daniel  Brumbaugh",
-    "Ellie Campbell",
     "Kenneth Casey",
     "F. Stuart 'Terry' Chapin",
     "Michelle  Cho",
@@ -72,7 +77,6 @@
     "Steven D. Gaines",
     "Andrea Ghermandi",
     "Darren Hardy",
-    "Laura Ingulsrud",
     "Kelsey Jacobson",
     "Regen Jamieson",
     "Meghan Jeans",
@@ -94,7 +98,6 @@
     "David Obura",
     "Jennifer O'Leary",
     "Laura Onofri",
-    "Sara Orofino",
     "Erich Pacheco",
     "Emily Pidgeon",
     "Stephen Polasky",
@@ -112,13 +115,10 @@
     "Kimberly Selkoe",
     "Lisa Speer",
     "Kevin St. Martin",
-    "Iwen Su",
     "Rashid Sumaila",
     "Heather Tallis",
     "Heather Tausig",
-    "Camila Vargas",
     "Bryan Wallace",
-    "Molly Williams",
     "Kyrstn Zylich"
   ],
   "Advisory": [
@@ -178,6 +178,7 @@
     "Lucy McNeil",
     "Savanna Nilsen",
     "Tim Noviello",
+    "Victor Ramos",
     "Erin O’Reilly",
     "Sebastian Perry",
     "Paula Seriff",

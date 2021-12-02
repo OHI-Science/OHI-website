@@ -24,7 +24,7 @@ This sub-goal assesses the health of all marine species present in a country's E
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
 
 
-{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#622_species_condition_(subgoal_of_biodiversity)" icon="/images/misc/microscope-icon.svg" >}}
+{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#62_Biodiversity" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/species" icon="/images/misc/directions-icon.svg" >}}
 
 ----

@@ -11,6 +11,7 @@ This team develops scientific methods, communicates results to governments, mari
 
 {{<peopleCards path="people.csv">}}
 
+{{<contributors path="current_contributors.json">}}
 
 ## Previous Contributors
 

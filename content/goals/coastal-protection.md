@@ -28,6 +28,6 @@ Approximately one-third of the overall area of coastal habitats has been lost in
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
 
 
-{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2020/globalprep/methods_doc/v2020/Supplement.html#63_coastal_protection" icon="/images/misc/microscope-icon.svg" >}}
+{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#63_Coastal_protection" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/coastal-protection" icon="/images/misc/directions-icon.svg" >}}
 {{<button text="Download Infographic" link=images/infographs/CP.png icon="images/goal-icons/costal-protection.svg" >}}

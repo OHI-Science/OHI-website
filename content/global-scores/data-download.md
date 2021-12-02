@@ -12,14 +12,19 @@ menu:
 
 The OHI 2021 global assessment includes scores from 2012 to 2021 for 220 coastal countries and territories.  
 
-This is a BIG deal because this marks our 10th year of calculating the global Ocean Health Index. You can now download 10 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This is a BIG deal because this marks our 10th year of calculating the global Ocean Health Index. The average 2021 Index score was 70 out of 100. Average Index scores have not dramatically changed over ten years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 10 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
 
-{{<button text="Download Scores" link=data/scores.csv icon="images/flower_plot.png">}}
+![Flowerplot](/images/flower_GlobalAverage.png)
+
+{{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
+{{<button text="Supplemental Results" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement_Results.html icon="images/flower_plot.png">}}
+{{<button text="Supplemental Methods" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html icon="images/misc/microscope-icon.svg">}}
+
 
 <br>
 <br>
 
-The downloadable dataset includes global and country index scores as well as the goal scores and components used to calculate the scores (see score [metadata](https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata) for a description of the data).  See [Methodology tab](https://ohi-science.org/OHI-website/methodology/) for an overview of OHI score calculations. 
+The downloadable dataset includes global and country index scores as well as the goal scores and components used to calculate the scores (see score [metadata](https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata) for a description of the data). See [Methodology tab](/methodology) for an overview of OHI score calculations. 
 
 Every year we improve the Ocean Health Index by incorporating new data, knowledge, and feedback. In order to make scores comparable among years, we recalculate previous year's results using the most recent methods and data. 
 
@@ -33,10 +38,11 @@ Data are prepared and scores calculated using freely available coding and versio
 
 Extra materials we use to calculate scores are available from these locations:
 
-- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2019) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2018/blob/gh-pages/src/dataOrganization_SOP.md#sop-for-data-management-for-ocean-health-index-assessments) describing how these files are organized.  
+- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2021) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
 - [Calculating scores: ](https://github.com/OHI-Science/ohi-global/releases) GitHub repository (ohi-global) with scripts used to calculate scores.
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment.
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub.
+- [View interactive map on the ARCGIS Living Atlas of the World](https://ucsb.maps.arcgis.com/home/item.html?id=1f305abdc47a45bf867783c7419db6d0) 
 
 ----
 
