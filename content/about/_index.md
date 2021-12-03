@@ -10,9 +10,11 @@ menu:
 
 ## What is the Ocean Health Index?
 
-> The Ocean Health Index (OHI) is a framework to assess ocean health based on the sustainable provisioning of the benefits and services people expect healthy oceans to provide, such as food, cultural and social value, and jobs.
+> The Ocean Health Index (OHI) is a framework for assessing ocean health based on the sustainable provisioning of  benefits and services people expect from healthy oceans, such as food, cultural and social value, and jobs.
 
-The Ocean Health Index was originally developed by an interdisciplinary team of scientists to assess global ocean health. This was a huge success and the global OHI assessment has been repeated every year since 2012! **This year we are celebrating 10 years of OHI!**
+The Ocean Health Index was originally developed by an interdisciplinary team of scientists to assess global ocean health. This was a huge success and the global OHI assessment has been repeated every year since 2012! 
+
+**This year we are celebrating 10 years of OHI!**
 
 
 You can explore the global OHI scores in a variety of ways:
@@ -23,28 +25,44 @@ You can explore the global OHI scores in a variety of ways:
 
 The OHI framework has since been applied to many different regions, which we refer to as OHI+ assessments.  The beauty of the OHI framework is that it can be tailored to different spatial scales and can accomodate a range of contexts and values. This is possible because the core framework of how goals are scored does not change while the goal models can be adapted to accomodate local information and decisions.
 
-Explore many of the OHI+ assessments that have been conducted:
+Explore the many OHI+ assessments that have been conducted:
 
 {{<button text="OHI+ assessments" link=/ohi+/assessment icon="images/flower_plot.png">}}
 
-We provide many resources to help regions conduct their own 
+<br>
+<br>
+
+We provide many resources to help people conduct their own regional assessments and generally learn how to do open data science: 
 
 {{<button text="Conducting an OHI+" link=/ohi+/conduct icon="images/flower_plot.png">}}
 
+{{<button text="Open Data Science" link=/resources/tools icon="images/flower_plot.png">}}
+
 
 ----
-still working on...
 
-The Ocean Health Index measures progress towards a suite of key societal ‘goals’ representing the benefits and services people expect healthy oceans to provide.  
+<br>
 
+> While humans exist they will be an important part of marine systems.  The Ocean Health Index acknowledges this reality.
 
-This framework scores By analyzing these goals together and scoring them from 0-100, OHI assessments provide an integrated picture of the state of the ecosystem and can be communicated to a wide range of audiences.
+The basic philosophy of the Ocean Health Index is that it measures how well ocean systems are sustainably providing people with the benefits and services they need and desire from marine systems. The global OHI measures the status of these key societal ‘goals’:
 
+* artisanal fishing opportunity 
+* biodiversity
+* carbon storage
+* clean waters
+* coastal livelihoods and economies
+* coastal protection
+* food provision
+* natural products
+* sense of place
+* tourism and recreation  
 
-The OHI framework is standardized yet tailorable to different contexts and spatial scales. This is possible because the core framework of how goals are scored does not change while the goal models themselves are developed with local information and local decisions specific to the context.
+This approach to assessing ocean health is inherently human-centric, which we believe is an advantage of the Index. While humans exist they will be part of the marine system, both depending on and impacting global oceans. The OHI acknowledges this reality and directly assesses what we ultimately care about. For example, most people do not directly care about nutrient pollution, however, they do care about its effects on the ocean’s ability to provide recreation and food.
 
-![OHI-Flow-Chart](/images/infographs/ohi_framework_flower.png)
+For this reason, the OHI goes beyond assessing only the pressures acting on ocean ecosystems.  However, pressures are important, and they are incorporated into the Ocean Health Index as a threat to the future provisioning of benefits and services. 
 
-Assessments using the OHI framework are facilitated by the OHI Toolbox that is used to calculate and visualize scores. The OHI Toolbox is a suite of collaborative, open-source tools and instruction that provides structure for data organization and storage, data processing and goal modeling. Like the framework, the Toolbox has two parts: the core engine behind calculating and visualizing scores, which is an R package called ohicore, and a tailored repository to organize, store, and share information and write goal model equations specific to the local context.
+Another benefit of the OHI is that it combines many indicators into a comprehensive framework. This is in contrast to focusing on individual indicators, such as phosphate levels, sedimentation, biodiversity, etc. Of course, individual indicators provide very important pieces to the puzzle, but individually they provide limited information when it comes to evaluating how well an overall ecosystem is functioning. 
 
-The Toolbox enables assessments to be transparent, reproducible through access to detailed methods and computational code, and repeatable with the ability to modify methods and computational code. The results are visualized in a Flower Plot for easy communication with a wide audience - each petal represents one goal and its length is with the score of the goal. To learn more about our open data science workflow, please see our [publication](https://www.nature.com/articles/s41559-017-0160).
+Without an overall framework to evaluate indicators, certain indicators may be overemphasized relative to their true importance due to researcher bias (most researchers believe their area of study is the most important), trends in research (what is currently considered a hot topic and is funded), and availability of data (e.g., some data is easier to collect). A model that combines multiple indicators will inevitably have flaws, but at least we know which variables are included and how they are weighted.
+

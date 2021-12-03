@@ -9,5 +9,3 @@ menu:
     parent: 'OHI+'
     weight: 2
 ---
-
-Regional assessements that have used the Ocean Health Index framework.
