@@ -10,11 +10,32 @@ menu:
 
 ## What is the Ocean Health Index?
 
-> The Ocean Health Index (OHI) is a tailorable marine assessment framework to comprehensively and quantitatively evaluate ocean health.
+> The Ocean Health Index (OHI) is a tailorable framework to comprehensively and quantitatively evaluate ocean health.
 
-The OHI measures progress towards a suite of key societal ‘goals’ representing the benefits and services people expect healthy oceans to provide. By analyzing these goals together and scoring them from 0-100, OHI assessments provide an integrated picture of the state of the ecosystem and can be communicated to a wide range of audiences.
+The Ocean Health Index was originally developed by an interdisciplinary team of scientists to assess global ocean health. This was a huge success and, the global OHI assessment has been repeated every year since 2012! **This year we are celebrating 10 years of OHI!**
 
-Originally developed by an interdisciplinary team of scientists (Halpern et al., 2012, Nature), global assessments have been repeated every year since 2012 (Halpern et al., 2015, PLOS One; Halpern et al., 2017, PLOS One).
+
+You can explore the global OHI scores in a variety of ways:
+
+{{<button text="Explore scores" link=/global-scores icon="images/flower_plot.png">}}
+
+----
+
+The OHI framework has since been applied to many different regions, which we refer to as OHI+ assessments.  The beauty of the OHI framework is that it can be tailored to different spatial scales and can accomodate a range of contexts and values. This is possible because the core framework of how goals are scored does not change while the goal models can be adapted to accomodate local information and decisions.
+
+Explore many of the OHI+ assessments that have been conducted:
+
+{{<button text="OHI+ assessments" link=/ohi+/assessment icon="images/flower_plot.png">}}
+
+
+----
+still working on...
+
+The Ocean Health Index measures progress towards a suite of key societal ‘goals’ representing the benefits and services people expect healthy oceans to provide.  
+
+
+This framework scores By analyzing these goals together and scoring them from 0-100, OHI assessments provide an integrated picture of the state of the ecosystem and can be communicated to a wide range of audiences.
+
 
 The OHI framework is standardized yet tailorable to different contexts and spatial scales. This is possible because the core framework of how goals are scored does not change while the goal models themselves are developed with local information and local decisions specific to the context.
 
