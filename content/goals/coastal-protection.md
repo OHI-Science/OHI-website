@@ -25,8 +25,7 @@ A score of 100 would indicate that these habitats are all still intact or have b
 Approximately one-third of the overall area of coastal habitats has been lost in the last 50 years and the remainder is severely threatened.  Destruction of these ecosystems means coastal areas are less protected from tidal surges, flooding, and storms.  Majour causes of destruction of these systems include draining or clearing for agriculture or aquaculture, coastal pollution, and unsustainable coastal development.
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
-
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#63_Coastal_protection" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/coastal-protection" icon="/images/misc/directions-icon.svg" >}}

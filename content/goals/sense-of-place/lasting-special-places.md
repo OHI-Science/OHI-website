@@ -23,8 +23,7 @@ Well-maintained and protected lasting special places provide culturally signific
 ![](/images/infographs/OHI_GOALS_SOP_SPECIAL_PLACES.png)
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
-
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#69_Sense_of_Place" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/lasting-special-places" icon="/images/misc/directions-icon.svg" >}}

@@ -27,8 +27,7 @@ This approach does not penalize regions that have less geographic area conducive
 High scores mean that a country is sustainably rearing as much farmed fish and seafood as possible based on its own potential. A low score can indicate one of two things – that seafood is being farmed in an unsustainable manner or that regions are not maximizing their potential to farm marine animals or seaweed in their coastal territory.
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
-
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#66_Food_Provision" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/mariculture" icon="/images/misc/directions-icon.svg" >}}

@@ -21,7 +21,7 @@ Ideally, this sub-goal describes the quality and quantity as well as the sustain
 
 
 #### LEARN MORE
-Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE to get advice on adapting the goal for future assessments, and to see how previous have assessed goals to address differences in data availability or priorities.
+Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
 
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#67_Livelihoods_and_economies" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/livelihoods" icon="/images/misc/directions-icon.svg" >}}
