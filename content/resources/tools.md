@@ -39,10 +39,10 @@ In addition to R, RStudio, RMarkdown, and GitHub, we use these resources to impr
 
 ## Dealing with spatial data
 
-> If you are dealing with ecological data, at some point you will probably need to embrace spatial data.
+> If you are dealing with ecological data, at some point you will need to embrace spatial data.
 
 
-- **Coordinate Reference Systems (CRS)** CRS describe the units used to describe real world locations. The system most people are familar with is latitude and longitude, but there are many many other ways to describe location. Each system has advantages and disadvantages. When you use spatial data, you will need to understand what CRS the data uses, and possibly project it to another CRS to get it in the same units as your other data.Here is a link to a [handy primer on CRS](https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/CRS.pdf). 
+- **Coordinate Reference Systems (CRS)** CRS describe the units used to describe real world locations. The system most people are familar with is latitude and longitude, but there are many many other ways to describe location. Each system has advantages and disadvantages. When you use spatial data, you will need to understand what CRS the data uses, and possibly project it to another CRS to get it in the same units as your other data. Here is a link to a [handy primer on CRS](https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/CRS.pdf). 
 
 - **Spatial data wrangling** 
 

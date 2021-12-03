@@ -11,6 +11,9 @@ menu:
 
 
 {{<onboardViz>}}
+
+----
+
 # OHI Onboarding
 
 [OHI Onboarding](http://ohi-science.org/onboarding/) is a reference guide to help you begin your independent OHI assessment (OHI+). It provides links to open data science & OHI Toolbox training resources for each phase of an OHI+ assessments.
@@ -22,7 +25,6 @@ The Ocean Health Index is a comprehensive assessment tool that evaluates a suite
 {{<button text="Learn" link="learn" >}}
 
 <br>
-<br>
 
 ## Plan an OHI+ assessment
 
@@ -30,7 +32,6 @@ Planning an OHI+ assessment requires identifying the needs and spatial area of t
 
 {{<button text="Plan" link="plan" >}}
 
-<br>
 <br>
 
 ## Conduct an OHI+ assessment
@@ -40,7 +41,8 @@ OHI Toobox Training is a hands-on training book introducing you to the OHI Toolb
 
 {{<button text="OHI Toolbox Training" link="http://ohi-science.org/toolbox-training/" >}}
 
-<br>
+Another potential resource (that may have more details than anyone wants) is the [reference guide](http://ohi-science.org/ohi-global-guide/index.html) we use to conduct our OHI global assessment.
+
 <br>
 
 ## Inform using OHI+ assessment results

@@ -18,23 +18,28 @@ This is a BIG deal because this marks our 10th year of calculating the global Oc
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
 {{<button text="Supplemental Results" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement_Results.html icon="images/flower_plot.png">}}
-{{<button text="Supplemental Methods" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html icon="images/misc/microscope-icon.svg">}}
+{{<button text="ArcGIS LIVING ATLAS" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html icon="images/misc/microscope-icon.svg">}}
 
 
 <br>
 <br>
 
-The downloadable dataset includes global and country index scores as well as the goal scores and components used to calculate the scores (see score [metadata](https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata) for a description of the data). See [Methodology tab](/methodology) for an overview of OHI score calculations. 
+The downloadable dataset includes global and country index scores as well as the goal scores and components used to calculate the scores (see score [metadata](https://github.com/OHI-Science/ohi-global/blob/draft/yearly_results/README.md#global-ohi-score-metadata) for a description of the data). 
+
 
 Every year we improve the Ocean Health Index by incorporating new data, knowledge, and feedback. In order to make scores comparable among years, we recalculate previous year's results using the most recent methods and data. 
+
+To learn more about the methods used to calculate the scores select the METHODOLOGY TAB for a general overview and the GLOBAL METHODS for a detailed description of the OHI global methods. 
+
+{{<button text="METHODOLOGY TAB" link=/methodology icon="images/misc/microscope-icon.svg">}}
+
+{{<button text="GLOBAL METHODS" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html icon="images/misc/microscope-icon.svg">}}
 
 ----
 
 ### PREPARATION MATERIALS 
 
-In addition to providing scores, we make all the code used to prepare data and calculate scores available online on GitHub. 
-
-Data are prepared and scores calculated using freely available coding and version control software. In the interest of transparency and to promote scientific discovery that builds off our methods, we freely provide the data and scripts used to calculate the global Ocean Health Index. However, we do not provide unaltered data obtained from other sources, to obtain these data you must go the original data sources.
+In the interest of transparency and to promote scientific discovery that builds off our methods, we freely provide the data and scripts used to calculate the global Ocean Health Index. However, we do not provide unaltered data obtained from other sources, to obtain these data you must go the original data sources.
 
 Extra materials we use to calculate scores are available from these locations:
 
@@ -42,7 +47,6 @@ Extra materials we use to calculate scores are available from these locations:
 - [Calculating scores: ](https://github.com/OHI-Science/ohi-global/releases) GitHub repository (ohi-global) with scripts used to calculate scores.
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment.
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub.
-- [View interactive map on the ARCGIS Living Atlas of the World](https://ucsb.maps.arcgis.com/home/item.html?id=1f305abdc47a45bf867783c7419db6d0) 
 
 ----
 
@@ -50,30 +54,23 @@ Extra materials we use to calculate scores are available from these locations:
 
 We enthusiastically support the use of our data, but please cite our work.
 
-##### General references to the Ocean Health Index
-For general references to the Ocean Health Index framework, please cite the original publication:
+##### For general references to the Ocean Health Index, please cite:
 
-*Halpern BS, Longo C, Hardy D, McLeod KL, Samhouri JF, Katona SK, et al. (2012) An index to assess the health and benefits of the global ocean. Nature. 2012;488: 615–620. doi:10.1038/nature11397*
+* *Halpern BS, Longo C, Hardy D, McLeod KL, Samhouri JF, Katona SK, et al. (2012) An index to assess the health and benefits of the global ocean. Nature. 2012;488: 615–620. doi:10.1038/nature11397*
   
 
-##### If you are conducting an OHI+ assessment, please cite:
+##### If you are conducting an OHI+ assessment, please consider citing the following:
 
-**Primary OHI publications** See above
+* *Halpern BS, Longo C, Hardy D, McLeod KL, Samhouri JF, Katona SK, et al. (2012) An index to assess the health and benefits of the global ocean. Nature. 2012;488: 615–620. doi:10.1038/nature11397*
 
-**GitHub repository: ohicore** 
-The R package used to generate the scores
-
-*Ocean Health Index. Year. ohicore version: core Ocean Health Index functions, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohicore/releases*
+* *Ocean Health Index. Year. ohicore version: core Ocean Health Index functions, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohicore/releases*
   
-**OHI manual** 
-The manual describing how to conduct an assessment
-
-*Ocean Health Index. 2015. Ocean Health Index Toolbox Manual [date]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: http://ohi-science.org/manual* 
+* *Ocean Health Index. 2015. Ocean Health Index Toolbox Manual [date]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: http://ohi-science.org/manual* 
   
   
 ##### If you are using the most recent global datasets or methods, please cite:
   
-*Ocean Health Index. Year. ohi-global version: Global scenarios data for Ocean Health Index, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohi-global/releases*
+* *Ocean Health Index. Year. ohi-global version: Global scenarios data for Ocean Health Index, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohi-global/releases*
   
 ---- 
 
