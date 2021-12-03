@@ -28,6 +28,7 @@ A high score indicates that natural resources are maximally harvested at a rate 
 
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
+
 {{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#68_Natural_products" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/natural-products" icon="/images/misc/directions-icon.svg" >}}
 {{<button text="Download Infographic" link=images/infographs/NP.png icon="images/goal-icons/natural-products.svg" >}}

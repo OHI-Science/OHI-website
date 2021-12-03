@@ -18,7 +18,7 @@ This is a BIG deal because this marks our 10th year of calculating the global Oc
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
 {{<button text="Supplemental Results" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement_Results.html icon="images/flower_plot.png">}}
-{{<button text="ArcGIS LIVING ATLAS" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html icon="images/misc/microscope-icon.svg">}}
+{{<button text="ArcGIS LIVING ATLAS" link=https://ucsb.maps.arcgis.com/home/item.html?id=1f305abdc47a45bf867783c7419db6d0 icon="images/misc/microscope-icon.svg">}}
 
 
 <br>
