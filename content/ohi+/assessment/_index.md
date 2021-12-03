@@ -1,7 +1,7 @@
 ---
 type: ohi-assessment
 
-title: "OHI Assessments"
+title: "Regional Assessments"
 name: "Assessments"
 bg_image: "/images/banners/fish-school.jpg"
 menu:
@@ -9,3 +9,5 @@ menu:
     parent: 'OHI+'
     weight: 2
 ---
+
+Regional assessements that have used the Ocean Health Index framework.

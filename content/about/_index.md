@@ -10,9 +10,9 @@ menu:
 
 ## What is the Ocean Health Index?
 
-> The Ocean Health Index (OHI) is a tailorable framework to comprehensively and quantitatively evaluate ocean health.
+> The Ocean Health Index (OHI) is a framework to assess ocean health based on the sustainable provisioning of the benefits and services people expect healthy oceans to provide, such as food, cultural and social value, and jobs.
 
-The Ocean Health Index was originally developed by an interdisciplinary team of scientists to assess global ocean health. This was a huge success and, the global OHI assessment has been repeated every year since 2012! **This year we are celebrating 10 years of OHI!**
+The Ocean Health Index was originally developed by an interdisciplinary team of scientists to assess global ocean health. This was a huge success and the global OHI assessment has been repeated every year since 2012! **This year we are celebrating 10 years of OHI!**
 
 
 You can explore the global OHI scores in a variety of ways:
@@ -26,6 +26,10 @@ The OHI framework has since been applied to many different regions, which we ref
 Explore many of the OHI+ assessments that have been conducted:
 
 {{<button text="OHI+ assessments" link=/ohi+/assessment icon="images/flower_plot.png">}}
+
+We provide many resources to help regions conduct their own 
+
+{{<button text="Conducting an OHI+" link=/ohi+/conduct icon="images/flower_plot.png">}}
 
 
 ----

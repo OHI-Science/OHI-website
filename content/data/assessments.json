@@ -6,7 +6,7 @@
       "LeadingGroup": "Conservation International, Africa Field Division",
       "Contact":"Dr. Peter Alele (palele@conservation.org)",
       "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -24,7 +24,7 @@
       "LeadingGroup": "Conservation International, Africa Field Division",
       "Contact":"Alice Ruhweza (aruhweza@conservation.org)",
       "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -44,7 +44,7 @@
       "LeadingGroup": "Imperial College London",
       "Contact":"Michael Burgass (m.burgass14@imperial.ac.uk)",
       "Description": "Academic assessment conducted as part of a PhD dissertation.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Publications",
@@ -94,7 +94,7 @@
       "LeadingGroup": "Healthy Oceans Network (CHONe)",
       "Contact":"Remi Daigle (daigleremi @ gmail.com)",
       "Description": "A pilot study to better represent Canada at the national level by incorporating public goals and goal weightings that are more relevant to Canadians.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -112,7 +112,7 @@
       "LeadingGroup": "Institut des Sciences de la Mer de Rimouski, Université du Québec à Rimouski",
       "Contact":"Remi Daigle (daigleremi @ gmail.com)",
       "Description": "An OHI+ assessment for Atlantic Canada’s marine biogeographic regions with a focus on the Saint Lawrence gulf/estuary.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Publications",
@@ -148,7 +148,7 @@
       "LeadingGroup": "Mexico’s Department of the Environment and Natural Resources (SEMARNAT)",
       "Contact": "Salomon Diaz (salomon.diaz @ semarnat.gob.mx)",
       "Description": "Working with local partners, this assessment will incorporate locally meaningful information, priorities, and perspectives to track change in the health of B.C.’s ocean during the past ten years and to describe how management may have contributed to these patterns.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": []
     },
     {
@@ -225,7 +225,7 @@
       "LeadingGroup": "Conservation International, Department of Marine Affairs",
       "Contact":"Mael Imirizaldu (mimirizaldu@conservation.org)",
       "Description": "Following the Proof of Concept assessment completed in 2016, the project focuses on establishing a baseline for the management of the Coral Sea Park to allow for ongoing monitoring, assessing, and adaptive management.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Publications",
@@ -243,7 +243,7 @@
       "LeadingGroup": "The Nature Conservancy’s Palmyra 4site team and NCEAS",
       "Contact":"Sara Orofino (saraorofino@ucsb.edu), Gage Clawson (clawson@nceas.ucsb.edu)",
       "Description": "To assess the performance of 7 goals on Palmyra, a mostly uninhabited island in the Line Islands Archipelago halfway between Hawaii and American Samoa that is a National Wildlife Refuge administered by the U.S. Fish and Wildlife Service and was purchased by The Nature Conservancy in 2000.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Methods and Results",
@@ -261,7 +261,7 @@
       "LeadingGroup": "Conservation International, Division of Environmental Conservation",
       "Contact":"-",
       "Description": "National level assessment to measure progress towards ocean health and sustainable economic growth.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "OHI Go Workshop",
@@ -275,7 +275,7 @@
       "LeadingGroup": "Tetiaroa Society’s Tetiaroa 4site team and NCEAS",
       "Contact":"Madeline Berger (berger@nceas.ucsb.edu), Gage Clawson (clawson@nceas.ucsb.edu)",
       "Description": "To assess the performance of 5 goals on Tetiaroa, a mostly uninhabited collection of islets in the Windward group of the Society Islands of French Polynesia where management, conservation, and protection of the entire island are carried out by the Tetiaroa Society, a US-based non-profit organization.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Methods and Results",
@@ -293,7 +293,7 @@
       "LeadingGroup": "Conservation International and the U.S. National Oceanic and Atmospheric Administration",
       "Contact":"Dr. Eva Schemmel (eschemmel@conservation.org)",
       "Description": "The Hawaii Ocean Health Index is integrating economic, social, and ecological information to track the sustainable use of our ocean resources. This assessment will increase awareness on the activities that are being done across the state that support the sustainable use of our ocean resources and identify remaining knowledge gaps and priorities. With this information we we will catalyze stakeholder involvement across sectors and facilitate collaborations to ensure the health of our ocean now and into the future.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "GitHub",
@@ -331,7 +331,7 @@
       "LeadingGroup": "University of California, Santa Barbara",
       "Contact": "Patricia Cecilia Faundez Baez (patriciafaundezbaez @ gmail.com)",
       "Description": "Academic assessment conducted as part of a PhD dissertation.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -345,7 +345,7 @@
       "LeadingGroup": "Colombian Commission for the Oceans",
       "Contact": "Ivan Murillo (datos @ cco.gov.co)",
       "Description": "National assessment of Colombia’s Pacific, Atlantic, and Caribbean Islands regions developed with 113 national indicators and through a multi-agency working group.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -363,7 +363,7 @@
       "LeadingGroup": "Ecuador’s Technical Sea Secretariat (SETEMAR)",
       "Contact": "Santiago Torres Báez (storres@secretariamar.gob.ec)",
       "Description": "Completed assessment of the Gulf of Guayaquil (Provinces of El Oro, Guayas, Santa Elena) using 96 local indicators, 4 context specific models, and 5 locally relevant reference points..",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Publication",
@@ -381,7 +381,7 @@
       "LeadingGroup": "Peru’s Ministry of Environment",
       "Contact": "Nina Prado",
       "Description": "Pilot study in Ica province.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": []
     }
   ],
@@ -445,7 +445,7 @@
       "LeadingGroup": "Spanish Oceanography Institute",
       "Contact": "Marcos Llope (marcos.llope@cd.ieo.es)",
       "Description": "This assessment will evaluate the Gulf of Cadiz and compare its health through time.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -459,7 +459,7 @@
       "LeadingGroup": "Campus do Mar",
       "Contact": "Sebastian Villasante (s.villasante.arg@gmail.com)",
       "Description": "This assessment will evaluate the coast of Galicia and compare its health through time.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -501,7 +501,7 @@
       "LeadingGroup": "China State Oceanic Administration",
       "Contact": "Zhiguo Liu (liuzhiguo150@163.com), Wen Quan (qwen@nmemc.gov.cn)",
       "Description": "National assessment of China’s 11 coastal provinces using locally developed models, reference points, and data.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -515,7 +515,7 @@
       "LeadingGroup": "Fujian Provincial Key Laboratory for Coastal Ecology and Environmental Studies, Coastal and Ocean Management Institute, Xiamen University",
       "Contact": "Deqiang Ma (dqma@xmu.edu.cn), Qinhua Fang (qhfang@xmu.edu.cn), Shuhao Liao (362453823@qq.com)",
       "Description": "Applying the Ocean Health Index framework to the city level: A case study of Xiamen, China",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Publications",
@@ -529,7 +529,7 @@
       "LeadingGroup": "School of Geographic and Oceanographic Sciences, Nanjing University",
       "Contact": "Zhen Wu (zhenwu@smail.nju.edu.cn)",
       "Description": "Application of the Ocean Health Index to assess ecosystem health for the coastal areas of Shanghai, China",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Publications",
@@ -543,7 +543,7 @@
       "LeadingGroup": "Ministry of Marine Affairs and Fisheries, Conservation International",
       "Contact": "Iwan Dewantama (idewantama@conservation.org)",
       "Description": "Pilot assessment for the provincial island of Bali to fine tune the OHI framework to the Indonesian context and build local capacity.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -565,7 +565,7 @@
       "LeadingGroup": "Hamaraag — Israel’s National Nature Assessment Program",
       "Contact": "Yossi Mossel (yossimosse@hamaarag.org.il)",
       "Description": "First indepently-led assessment, evaluated 6 regions of Israel’s Mediterranean coast.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": [
         {
           "name": "Github",
@@ -583,7 +583,7 @@
       "LeadingGroup": "Korean Maritime Institute (KMI)",
       "Contact": "Jungho Nam (jhnam007@gmail.com)",
       "Description": "Nationwide project to assess the health of oceans in South Korea. Efforts will focus on running management scenarios to test implications of proposed projects.",
-      "isPlus": true,
+      "isPlus": false,
       "Links": []
     }
   ]
