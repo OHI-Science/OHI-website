@@ -13,6 +13,3 @@ For all inquiries about the OHI, contact lead analyst
 
 Gage Clawson at clawson@nceas.ucsb.edu
 
-# Press Resources
-
-{{<button text="Logo" link="/data/downloads/ohi-press-logo.eps" icon="/images/misc/download-icon.svg" >}}

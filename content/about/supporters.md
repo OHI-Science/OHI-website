@@ -24,13 +24,11 @@ The Gordon and Betty Moore Foundation enables lasting, meaningful change through
 
 The World Ocean Observatory is a major utility for ocean communication as a means to advance public awareness and political will, dedicated to providing information and education about the health of the ocean. Online at [World Ocean](worldoceanobservatory.org).
 
-### Beau and Heather Wrigley
+### The Wrigleys
 
-Beau and Heather Wrigley generously provided the founding grant to the Ocean Health Index. Mr. and Mrs. Wrigley brought together the best in business thinking and marine conservation; they were early originators of the Ocean Health Index concept and nurtured its development through their leadership of the Ocean Health Council
+The Wrigleys generously provided the founding grant to the Ocean Health Index. They brought together the best in business thinking and marine conservation. They were early originators of the Ocean Health Index concept and nurtured its development through their leadership of the Ocean Health Council
 
-Since 2007, Mr. and Mrs. Wrigley have provided vision, support and leadership to this project. Mr. Wrigley is a Board member at Conservation International, co-chair of CI’s Ocean Health Council, the former Chairman and CEO of the William Wrigley, Jr. Company, and an avid SCUBA-diver.
-
-![Wrigley](/images/misc/wrigley.jpg)
+Since 2007, the Wrigleys have provided vision, support and leadership to this project. Mr. Wrigley is a Board member at Conservation International, co-chair of CI’s Ocean Health Council, the former Chairman and CEO of the William Wrigley, Jr. Company, and an avid SCUBA-diver.
 
 
 ### FOUNDING DONORS
