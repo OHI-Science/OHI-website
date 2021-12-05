@@ -27,12 +27,10 @@ jobs:
           hugo --baseURL="http://preview.oceanhealthindex.org/"
       # Copy the source to the nceas server
       - name: Copy
-        uses: siva1024/scp-deployer@latest
+        uses: dataoneorg/rsync-deploy@latest
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          pass: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
           source: "public/"
           target: ${{ secrets.DEPLOY_PATH_DEV }}
-          key: ${{ secrets.KEY }}
