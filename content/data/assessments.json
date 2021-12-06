@@ -159,15 +159,11 @@
       "Links": [
         {
           "name": "Publication",
-          "link": "https://ohi-science.org/resources/publications#us-west-coast"
+          "link": "/about/publications"
         },
         {
           "name": "Github",
           "link": "https://github.com/OHI-Science/ohi-uswest/releases"
-        },
-        {
-          "name": "Website",
-          "link": "http://www.oceanhealthindex.org/ohi-plus/us-west-coast-assessment"
         }
       ]
     }
@@ -290,10 +286,6 @@
         {
           "name": "Publications",
           "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0092589"
-        },
-        {
-          "name": "Website",
-          "link": "http://www.oceanhealthindex.org/ohi-plus/brazil-assessment-en"
         }
       ]
     },
@@ -322,10 +314,6 @@
         {
           "name": "Github",
           "link": "https://github.com/OHI-Science/col"
-        },
-        {
-          "name": "Media",
-          "link": "http://www.oceanhealthindex.org/news/colombia-makes-strides-developing-independent-assessment"
         }
       ]
     },

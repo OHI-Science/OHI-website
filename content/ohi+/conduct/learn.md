@@ -9,7 +9,7 @@ Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework t
 
 You are currently at the first of four phases of conducting an OHI assessment - the Learn Phase. Here you will get an overview of the OHI framework, its workflow, what to expect from an OHI assessment, and how the scores are calculated, in order to prepare yourself for the next planning phase of an assessment. You will also be introduced to the philosophy behind each OHI goal.
 
-For a more in-depth look at OHI and its process, check out our other web materials, including Presentations, and [Publications]("/about/publications"). If you want to know more about how to define and measure each goal, visit the [Goals]("/goals/") page.
+For a more in-depth look at OHI and its process, check out our other web materials, including Presentations, and [Publications](/about/publications). If you want to know more about how to define and measure each goal, visit the [Goals](/goals/) page.
 
 Let’s get started!
 
@@ -20,25 +20,25 @@ The OHI framework assesses a suite of key <b>social, economic, and ecological</b
 
 In the OHI framework a <b>healthy ocean is one that sustainably delivers a range of benefits to people now and in the future</b>. The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that are commonly included in an Index broadly capture the universal ocean benefits:
 
-[Food Provision]() from sustainably harvested or cultured fish stocks
+[Food Provision](/goals/food-provision) from sustainably harvested or cultured fish stocks
 
-[Artisanal Fishing Opportunities]() for local communities to engage in sustainable practices
+[Artisanal Fishing Opportunities](/goals/artisanal-fishing-opportunities) for local communities to engage in sustainable practices
 
-[Natural Products]() that are sustainably extracted from the ocean
+[Natural Products](/goals/natural-products) that are sustainably extracted from the ocean
 
-[Carbon Storage]() in coastal habitats
+[Carbon Storage](/goals/carbon-storage) in coastal habitats
 
-[Coastal Protection]() from inundation and erosion
+[Coastal Protection](/goals/coastal-protection) from inundation and erosion
 
-[Sense of Place]() from culturally valued iconic species, habitats, and landscapes
+[Sense of Place](/goals/sense-of-place) from culturally valued iconic species, habitats, and landscapes
 
-[Livelihoods and Economies]() from coastal and ocean-dependent communities
+[Livelihoods and Economies](/goals/livelihoods-and-economies) from coastal and ocean-dependent communities
 
-[Tourism and Recreation]() opportunities
+[Tourism and Recreation](/goals/tourism-and-recreation) opportunities
 
-[Clean Waters]() and beaches for aesthetic and health values
+[Clean Waters](/goals/clean-waters) and beaches for aesthetic and health values
 
-[Biodiversity]() of species and habitats
+[Biodiversity](/goals/biodiversity) of species and habitats
 
 
 This framework was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framework to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow.
@@ -69,11 +69,11 @@ However, these scores will not be quantitatively comparable to those of other OH
 
 Our team of scientists and managers is prepared to provide guidance for regional assessments, from initial meetings to the technical calculations to disseminating results. We have created a suite of guides and manuals that provide in-depth information for the Ocean Health Index+ assessment process in addition to recommendations on how to best approach the task, including:
 
-A Guide to Planning OHI+ Assessments and Informing Decision-Making
+A [Guide](http://ohi-science.org/onboarding/index.html) to Planning OHI+ Assessments and Informing Decision-Making
 
-The Ocean Health Index Toolbox Manual
+The Ocean Health Index [Toolbox Manual](http://ohi-science.org/toolbox-training/)
 
-In addition, you will have access to the OHI+ online community via our Forum
+In addition, you will have access to the OHI+ online community via our [Forum](https://github.com/OHI-Science/ohi-science.github.io/issues)
 
 # 2 Global Assessments and Your OHI+ Assessment
 
@@ -212,7 +212,7 @@ The current status of each goal is determined by comparing the most recent measu
 
 # 5 Philosophy of OHI Goals
 
-In this section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. We provide a more in-depth description of each goal including an Ideal Approach and Practical Guidance on our [goals page](/goals) to help you develop context-specific goal models in the [Conduct Phase](https://ohi-science.org/manual/#appendix-1-developing-goal-models-and-setting-reference-points).
+In this section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. We provide a more in-depth description of each goal including an Ideal Approach and Practical Guidance on our [goals page](/goals) to help you develop context-specific goal models in the [Conduct Phase](/ohi+/conduct).
 
 
 ## 5.1 Food Provision

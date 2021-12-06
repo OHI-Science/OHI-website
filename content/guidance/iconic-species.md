@@ -26,7 +26,7 @@ Ultimately, almost any species can be iconic to someone, and so the intent with 
 
 *_STEP 2: Assess condition_*
 
-For the global assessment, we used the extinction risk of each species using data from the International Union for the Conservation of Nature (IUCN) (www.iucnredlist.org/technical-documents/spatial-data). IUCN provides global species assessments that describe the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct.
+For the global assessment, we used the extinction risk of each species using data from the International Union for the Conservation of Nature ([IUCN](https://www.iucnredlist.org/resources/spatial-data-download)). IUCN provides global species assessments that describe the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct.
 
 Beyond extinction risk, there are many metrics that can be used to assess species health, for instance, by the stability of their populations.
 

@@ -25,7 +25,7 @@ We generally do not include an assessment of the protection afforded by man-made
 
 *_STEP 2: Determine contribution of each habitat_*
 
-The relative contribution of each habitat to total coastal protection is based on the area of the habitat and the relative protection it provides.  For the Global Assessment, the protective ability of each habitat was based on relative weights obtained from the [Natural Capital Project](https://ohi-science.org/goals/www.naturalcapitalproject.org). Depending on the habitats you include, you will need to find additional weights.
+The relative contribution of each habitat to total coastal protection is based on the area of the habitat and the relative protection it provides.  For the Global Assessment, the protective ability of each habitat was based on relative weights obtained from the [Natural Capital Project](https://naturalcapitalproject.stanford.edu/). Depending on the habitats you include, you will need to find additional weights.
 
 *_STEP 3: Determine habitat condition_*
 

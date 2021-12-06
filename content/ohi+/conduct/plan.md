@@ -57,7 +57,6 @@ Work with stakeholders to identify proposed management actions that can be teste
 
 Seek agreements with stakeholders and oversee the implementation of those stakeholders.
 
-The convener may choose to enter into an informal agreement with the OHI Program for the development of their OHI+. We have drafted a [Memorandum of Understanding (MoU) Template](https://drive.google.com/open?id=1wsHmE5TKNgHo_5SxKcSR8x8FA9s28zzsxZnmG6CP2vY), outlining the role and commitments of the convener and the OHI Program, and other related stipulations, which can be easily edited to meet local needs. The MoU can help and clarify the overlap and complementarity of interests and expectations of parties at the table; its main objective is to articulate agreement and confirm organizational buy-in.
 
 ### 2.2 Stakeholder Needs Analysis (SNA)
 
@@ -155,21 +154,16 @@ Ocean dependent industries (mariculture, ports, energy)
 
 Chamber of commerce
 
-The “stakeholder mapping tool” (see figure below) may be useful in identifying stakeholder influence. Using this tool, the convener can do a quick initial assessment of the interests and influence of other stakeholders with regard to the goals that the convener is trying to achieve. Based on this analysis, he or she can identify potential coalition partners who share interests, as well as potential blocking coalitions that might need to be addressed, and other stakeholders who might be mobilized in support or opposition.
-
-![Stakeholder Mapping Tool](this/picture/was/missing/on/ohi-science)
-
-
-**Figure based on Consensus Building Institute: Mapping Key Stakeholders to Identify Potential Coalitions**
-
-
-As the figure shows, stakeholders can be grouped into four basic categories: those with high support for the convener’s interests and high ability to influence the outcome; those with low support (or opposition) and high influence; those with low support and low influence; and those with high support and low influence. Conceptually, those with high support and high influence are the negotiator’s top priority allies and coalition partners. Those with low support and high influence are potentially members of a blocking coalition, unless some combination of education, advocacy and/or negotiation can shift them to support. Those with low support and low influence may be mobilized to support a blocking coalition, may be persuaded to support the convener’s goals, or may be ignored. Those with high support and low influence may be mobilized to support the negotiator’s coalition.
-
-The stakeholder mapping exercise can help you identify: * The stakeholders to interview * List of stakeholder to be interviewed * Managers with mandates and key influencers * Resource users - those to be impacted by/subjects of actions * Those with information and sources of knowledge (information management/experts)
+You should be able to identify identify: 
+* The stakeholders to interview 
+* List of stakeholder to be interviewed 
+* Managers with mandates and key influencers 
+* Resource users - those to be impacted by/subjects of actions 
+* Those with information and sources of knowledge (information management/experts)
 
 ## 2.2.2 Gather information: questionnaires, interviews, focus groups
 
-You may use stakeholder interviews, meetings, and surveys as some of the techniques in the SNA process. It is important to note that conveners may not be perceived as impartial to the process, and thus it may be difficult for them to obtain complete and honest responses from some stakeholders. For this reason, the convener may choose to commission the SNA to an expert independent analyst, but this decision will largely depend on the context, conflict levels among stakeholders, and budgetary constraints. To obtain the most information possible, we recommend using semi-structured interviews using a written protocol and conducting a survey. We developed a [Template Ocean Health Stakeholder Engagement Survey](https://docs.google.com/forms/d/e/1FAIpQLSc1nfAJBoBhgKRJMfdgn8hXfMG2IGtv6-puHzJez3M9_7mBog/viewform) to provide you with a starting point for gathering basic information from various groups. This survey is designed to complement, not replace, stakeholder interviews and group meetings.
+You may use stakeholder interviews, meetings, and surveys as some of the techniques in the SNA process. It is important to note that conveners may not be perceived as impartial to the process, and thus it may be difficult for them to obtain complete and honest responses from some stakeholders. For this reason, the convener may choose to commission the SNA to an expert independent analyst, but this decision will largely depend on the context, conflict levels among stakeholders, and budgetary constraints. To obtain the most information possible, we recommend using semi-structured interviews using a written protocol and conducting a survey. 
 
 ### 2.2.3 Technical team identification
 
@@ -306,7 +300,7 @@ These are the types of data that have been used in previous assessments:
 
 ## 3.2 Workshop
 
-Following the SNA and the initial target setting and indicator selection exercises, the conveners should host a stakeholder workshop, aimed at discussing the results of the SNA as well as the proposed reference points for each OHI Goal. All people interviewed during the SNA as well as stakeholders identified should be invited and encouraged to participate in this workshop. The workshop provides an opportunity for stakeholders to work together and ensure their interests are captured within the context of the OHI assessment. Further, it is the space where the governance structure will be determined; that is, the format used to make decisions as a group. During this meeting, OHI methodology is explained in more detail to ensure all stakeholders understand the framework and the process. You should also discuss whether all 10 OHI goals are relevant to the local context Lastly, the workshop serves as an initial planning meeting. Here, you should identify potential members for the management and technical teams (or discuss proposed members), as well as develop an initial work plan of next steps to ensure the OHI assessment evolves within a reestablished time line. We developed the [OHI workshop template](https://drive.google.com/file/d/0BzrZTod-pGCWN01LRm4tamU2V3c/view) for your reference, but keep in mind this template should be edited to be made locally relevant.
+Following the SNA and the initial target setting and indicator selection exercises, the conveners should host a stakeholder workshop, aimed at discussing the results of the SNA as well as the proposed reference points for each OHI Goal. All people interviewed during the SNA as well as stakeholders identified should be invited and encouraged to participate in this workshop. The workshop provides an opportunity for stakeholders to work together and ensure their interests are captured within the context of the OHI assessment. Further, it is the space where the governance structure will be determined; that is, the format used to make decisions as a group. During this meeting, OHI methodology is explained in more detail to ensure all stakeholders understand the framework and the process. You should also discuss whether all 10 OHI goals are relevant to the local context Lastly, the workshop serves as an initial planning meeting. Here, you should identify potential members for the management and technical teams (or discuss proposed members), as well as develop an initial work plan of next steps to ensure the OHI assessment evolves within a reestablished time line.
 
 The convener and stakeholders must decide together how far they would like to take the OHI process. There are two possible options: 1) work with stakeholders to test management options and reach agreements among them, or 2) simply provide recommendations for management based on the findings. Your decision will largely depend on local conditions, such as stakeholder willingness to continue their commitment to the process and their willingness to engage with each other to implement agreements over the short-to-medium term.
 
