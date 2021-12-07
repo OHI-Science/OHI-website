@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: |
           npm install
-          hugo --baseURL="https://oceanhealthindex.org/"
+          hugo --baseURL="http://oceanhealthindex.org/"
       # Copy the source to the nceas server
       - name: Copy
         uses: dataoneorg/rsync-deploy@latest
