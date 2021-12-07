@@ -13,6 +13,8 @@ library(magrittr)
 library(stringi)
 library(tidyr)
 library(broom)
+library(readr)
+library(stringr)
 ```
 
 Below are all of the configurable variables that can be changed depending on updates to the scores.CSV file and to the template that is used to create the Hugo font-matter
@@ -59,6 +61,16 @@ The next section organizes the data
 ```{r}
 # Get the data from the scores csv file. Get just the unique region names and IDs.
 all_data <- read.csv(scores_path)
+
+
+all_data <- all_data %>%
+  mutate(region_name = ifelse(region_name == "R_union", "Réunion", region_name))
+
+
+write_csv(all_data, file.path(scores_path))
+
+# Get the data from the scores csv file. Get just the unique region names and IDs.
+all_data <- read.csv(scores_path, encoding = "UTF-8")
 
 # Get the number of regions
 num_regions <- all_data %>% 
@@ -117,7 +129,7 @@ template <- gsub("\\$numRegions", num_regions, template)
 	
 # Make a markdown file for each region
 for (row in 1:nrow(page_data)) {
-	# row = 93
+	# row = 90
 	name <- page_data[row, name_col]
 	id  <- page_data[row, id_col]
 	score <- page_data[row, value_col]
@@ -130,19 +142,29 @@ for (row in 1:nrow(page_data)) {
 	templateCopy <- gsub("\\$meanScore", score, templateCopy)
 	
 	# Make the markdown file name from the region name
+	
+	if(id == 32){ # keep accent for Reunion
+	  	fileName <- name %>%
+		tolower() %>% # make lower case
+		gsub("\\s*\\([^\\)]+\\)","", .) %>% # remove text between parentheses at end of name
+	#	stri_trans_general("Latin-ASCII") %>% # convert characters with accents to non-accented character
+		gsub("\\s","-", .) %>%  # convert spaces to dashes
+		paste0(., ".md") #Add the markdown extension
+	  
+	}else{
+	
 	fileName <- name %>%
 		tolower() %>% # make lower case
 		gsub("\\s*\\([^\\)]+\\)","", .) %>% # remove text between parentheses at end of name
-		stri_trans_general("Latin-ASCII") %>% # convert characters with accents to non-accented character
+	#	stri_trans_general("Latin-ASCII") %>% # convert characters with accents to non-accented character
 		gsub("\\s","-", .) %>%  # convert spaces to dashes
 		paste0(., ".md") #Add the markdown extension
+	
+	}
 	
 	fileConn<-file(here(output_dir, fileName))
 	writeLines(templateCopy, fileConn)
 	close(fileConn)
 }
 
-
-test <- scores_data %>%
-  
 ```

@@ -25,7 +25,7 @@
 "2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",28,"Comoro Islands",-0.0223030303031432,0.979688467311999
 "2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",29,"Mayotte",1.91751515151519,0.0517970907183891
 "2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",31,"Seychelles",-0.281333333333368,0.36048594590714
-"2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",32,"R_union",1.73781818181827,0.0211340296997616
+"2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",32,"Réunion",1.73781818181827,0.0211340296997616
 "2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",37,"Mauritius",0.0970303030302903,0.420185635436235
 "2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",38,"British Indian Ocean Territory",1.80133333333332,0.101480835771942
 "2012 - 2021","AO","Artisanal opportunities","average_yearly_change_in_scores",39,"Maldives",-3.2341818181821,0.073920370749902
@@ -229,7 +229,7 @@
 "2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",29,"Mayotte",-0.00393939393939061,0.902523419715014
 "2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",30,"Glorioso Islands",-0.199030303030304,0.18439593001462
 "2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",31,"Seychelles",-0.128787878787881,1.12690808350903e-07
-"2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",32,"R_union",-0.195696969696973,3.98586359734554e-07
+"2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",32,"Réunion",-0.195696969696973,3.98586359734554e-07
 "2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.251575757575767,0.000968275616464851
 "2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",34,"Bassas da India",-0.223939393939404,0.000379612205727558
 "2012 - 2021","BD","Biodiversity","average_yearly_change_in_scores",35,"Ile Europa",-0.121393939393944,1.56019341919013e-09
@@ -450,7 +450,7 @@
 "2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",29,"Mayotte",2.45120009442433e-15,0.121502918817151
 "2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",30,"Glorioso Islands",2.45120009442433e-15,0.121502918817151
 "2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",31,"Seychelles",0,NA
-"2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",32,"R_union",2.45120009442433e-15,0.121502918817151
+"2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",32,"Réunion",2.45120009442433e-15,0.121502918817151
 "2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",33,"Juan de Nova Island",2.45120009442433e-15,0.121502918817151
 "2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",34,"Bassas da India",2.45120009442433e-15,0.121502918817151
 "2012 - 2021","CP","Coastal protection","average_yearly_change_in_scores",35,"Ile Europa",2.45120009442433e-15,0.121502918817151
@@ -652,7 +652,7 @@
 "2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",28,"Comoro Islands",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",29,"Mayotte",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",31,"Seychelles",-2.45120009442433e-15,0.121502918817151
-"2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",32,"R_union",7.35360028327298e-15,0.121502918817151
+"2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",32,"Réunion",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",35,"Ile Europa",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",37,"Mauritius",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","CS","Carbon storage","average_yearly_change_in_scores",38,"British Indian Ocean Territory",2.45120009442433e-15,0.121502918817151
@@ -839,7 +839,7 @@
 "2012 - 2021","CW","Clean water","average_yearly_change_in_scores",29,"Mayotte",3.85800000000012,4.72239572102741e-07
 "2012 - 2021","CW","Clean water","average_yearly_change_in_scores",30,"Glorioso Islands",-0.103333333333351,0.630536075556927
 "2012 - 2021","CW","Clean water","average_yearly_change_in_scores",31,"Seychelles",-0.544000000000058,0.128576719230349
-"2012 - 2021","CW","Clean water","average_yearly_change_in_scores",32,"R_union",0.131515151515175,0.658729705084868
+"2012 - 2021","CW","Clean water","average_yearly_change_in_scores",32,"Réunion",0.131515151515175,0.658729705084868
 "2012 - 2021","CW","Clean water","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.0569696969697071,0.630536075556925
 "2012 - 2021","CW","Clean water","average_yearly_change_in_scores",34,"Bassas da India",-0.0551515151515268,0.630536075556912
 "2012 - 2021","CW","Clean water","average_yearly_change_in_scores",35,"Ile Europa",-0.0954545454545625,0.630536075556926
@@ -1059,7 +1059,7 @@
 "2012 - 2021","ECO","Economies","average_yearly_change_in_scores",29,"Mayotte",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","ECO","Economies","average_yearly_change_in_scores",30,"Glorioso Islands",0.0376363636363591,0.121502918817151
 "2012 - 2021","ECO","Economies","average_yearly_change_in_scores",31,"Seychelles",0.32236363636362,0.121502918817151
-"2012 - 2021","ECO","Economies","average_yearly_change_in_scores",32,"R_union",0.540545454545424,0.121502918817151
+"2012 - 2021","ECO","Economies","average_yearly_change_in_scores",32,"Réunion",0.540545454545424,0.121502918817151
 "2012 - 2021","ECO","Economies","average_yearly_change_in_scores",33,"Juan de Nova Island",0.0376363636363591,0.121502918817151
 "2012 - 2021","ECO","Economies","average_yearly_change_in_scores",37,"Mauritius",0.165272727272714,0.121502918817151
 "2012 - 2021","ECO","Economies","average_yearly_change_in_scores",38,"British Indian Ocean Territory",0.293999999999983,0.121502918817151
@@ -1265,7 +1265,7 @@
 "2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",29,"Mayotte",-0.0835757575758083,0.829254977649361
 "2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",30,"Glorioso Islands",-0.00836363636364774,0.927705461094235
 "2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",31,"Seychelles",-0.332242424242461,0.112351625865817
-"2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",32,"R_union",-0.482727272727311,0.0216401342054114
+"2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",32,"Réunion",-0.482727272727311,0.0216401342054114
 "2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",33,"Juan de Nova Island",1.06357575757565,0.335699139534101
 "2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",34,"Bassas da India",1.06357575757565,0.335699139534101
 "2012 - 2021","FIS","Fisheries (subgoal)","average_yearly_change_in_scores",35,"Ile Europa",1.06357575757565,0.335699139534101
@@ -1486,7 +1486,7 @@
 "2012 - 2021","FP","Food provision","average_yearly_change_in_scores",29,"Mayotte",0.0862424242423811,0.832396931618876
 "2012 - 2021","FP","Food provision","average_yearly_change_in_scores",30,"Glorioso Islands",-0.00836363636364774,0.927705461094235
 "2012 - 2021","FP","Food provision","average_yearly_change_in_scores",31,"Seychelles",-0.332242424242461,0.112351625865817
-"2012 - 2021","FP","Food provision","average_yearly_change_in_scores",32,"R_union",-0.379393939393975,0.0574001872065774
+"2012 - 2021","FP","Food provision","average_yearly_change_in_scores",32,"Réunion",-0.379393939393975,0.0574001872065774
 "2012 - 2021","FP","Food provision","average_yearly_change_in_scores",33,"Juan de Nova Island",1.06357575757565,0.335699139534101
 "2012 - 2021","FP","Food provision","average_yearly_change_in_scores",34,"Bassas da India",1.06357575757565,0.335699139534101
 "2012 - 2021","FP","Food provision","average_yearly_change_in_scores",35,"Ile Europa",1.06357575757565,0.335699139534101
@@ -1707,7 +1707,7 @@
 "2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",29,"Mayotte",0.260060606060621,0.0040677199251163
 "2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",30,"Glorioso Islands",-0.109575757575752,0.696070175947838
 "2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",31,"Seychelles",0.0576363636363651,0.00529233478874572
-"2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",32,"R_union",-0.0768484848484846,0.00755328604234307
+"2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",32,"Réunion",-0.0768484848484846,0.00755328604234307
 "2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.246909090909101,0.0320434432239613
 "2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",34,"Bassas da India",-0.197515151515156,0.0281218919185733
 "2012 - 2021","HAB","Habitat (subgoal)","average_yearly_change_in_scores",35,"Ile Europa",-4.90240018884865e-15,0.121502918817151
@@ -1928,7 +1928,7 @@
 "2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",29,"Mayotte",-0.69963636363641,0.043227930387276
 "2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",30,"Glorioso Islands",0.580848484848495,0.000179840607185302
 "2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",31,"Seychelles",-0.308424242424267,0.137136399441908
-"2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",32,"R_union",-0.731757575757613,0.0263373011818517
+"2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",32,"Réunion",-0.731757575757613,0.0263373011818517
 "2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",33,"Juan de Nova Island",0.580848484848495,0.000179840607185302
 "2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",34,"Bassas da India",0.580848484848495,0.000179840607185302
 "2012 - 2021","ICO","Iconic species (subgoal)","average_yearly_change_in_scores",35,"Ile Europa",0.580848484848495,0.000179840607185302
@@ -2149,7 +2149,7 @@
 "2012 - 2021","Index","Index","average_yearly_change_in_scores",29,"Mayotte",0.533212121212132,0.000338577789962616
 "2012 - 2021","Index","Index","average_yearly_change_in_scores",30,"Glorioso Islands",-0.00963636363636996,0.825283232548045
 "2012 - 2021","Index","Index","average_yearly_change_in_scores",31,"Seychelles",0.0024242424242293,0.97754762872
-"2012 - 2021","Index","Index","average_yearly_change_in_scores",32,"R_union",0.245757575757586,0.0442051134545808
+"2012 - 2021","Index","Index","average_yearly_change_in_scores",32,"Réunion",0.245757575757586,0.0442051134545808
 "2012 - 2021","Index","Index","average_yearly_change_in_scores",33,"Juan de Nova Island",0.124727272727252,0.5199122824037
 "2012 - 2021","Index","Index","average_yearly_change_in_scores",34,"Bassas da India",0.194303030303006,0.407651253896507
 "2012 - 2021","Index","Index","average_yearly_change_in_scores",35,"Ile Europa",0.0736363636363393,0.735711679497562
@@ -2369,7 +2369,7 @@
 "2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",29,"Mayotte",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",30,"Glorioso Islands",-0.0365454545454532,0.121502918817151
 "2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",31,"Seychelles",0.160909090909078,0.121502918817151
-"2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",32,"R_union",0.238363636363623,0.121502918817151
+"2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",32,"Réunion",0.238363636363623,0.121502918817151
 "2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.0365454545454532,0.121502918817151
 "2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",37,"Mauritius",0.153818181818174,0.121502918817151
 "2012 - 2021","LE","Livelihoods & economies","average_yearly_change_in_scores",38,"British Indian Ocean Territory",0.316909090909076,0.121502918817151
@@ -2574,7 +2574,7 @@
 "2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",29,"Mayotte",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",30,"Glorioso Islands",-0.110181818181811,0.121502918817151
 "2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",31,"Seychelles",7.35360028327298e-15,0.121502918817151
-"2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",32,"R_union",-0.0638181818181801,0.121502918817151
+"2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",32,"Réunion",-0.0638181818181801,0.121502918817151
 "2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.110181818181811,0.121502918817151
 "2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",37,"Mauritius",0.143454545454539,0.121502918817151
 "2012 - 2021","LIV","Livelihoods","average_yearly_change_in_scores",38,"British Indian Ocean Territory",0.340909090909071,0.121502918817151
@@ -2780,7 +2780,7 @@
 "2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",29,"Mayotte",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",30,"Glorioso Islands",7.35360028327298e-15,0.121502918817151
 "2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",31,"Seychelles",2.55109090909104,0.121502918817105
-"2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",32,"R_union",-6.12800023606082e-16,0.121502918817151
+"2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",32,"Réunion",-6.12800023606082e-16,0.121502918817151
 "2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",33,"Juan de Nova Island",0,NA
 "2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",34,"Bassas da India",0,NA
 "2012 - 2021","LSP","Lasting special places (subgoal)","average_yearly_change_in_scores",35,"Ile Europa",7.35360028327298e-15,0.121502918817151
@@ -2997,7 +2997,7 @@
 "2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",28,"Comoro Islands",0,NA
 "2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",29,"Mayotte",-0.00933333333333375,0.195758120959862
 "2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",31,"Seychelles",-0.000969696969696975,0.0252932495854611
-"2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",32,"R_union",-0.20084848484849,1.15039498446399e-05
+"2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",32,"Réunion",-0.20084848484849,1.15039498446399e-05
 "2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",37,"Mauritius",0.0198787878787887,0.000346923224079212
 "2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",38,"British Indian Ocean Territory",0,NA
 "2012 - 2021","MAR","Mariculture (subgoal)","average_yearly_change_in_scores",39,"Maldives",0,NA
@@ -3193,7 +3193,7 @@
 "2012 - 2021","NP","Natural products","average_yearly_change_in_scores",28,"Comoro Islands",0.105333333333334,0.663317424540325
 "2012 - 2021","NP","Natural products","average_yearly_change_in_scores",29,"Mayotte",-0.341575757575771,2.02474032100525e-06
 "2012 - 2021","NP","Natural products","average_yearly_change_in_scores",31,"Seychelles",0.0287878787878789,0.184021719208482
-"2012 - 2021","NP","Natural products","average_yearly_change_in_scores",32,"R_union",1.22373161764699,0.264729805065432
+"2012 - 2021","NP","Natural products","average_yearly_change_in_scores",32,"Réunion",1.22373161764699,0.264729805065432
 "2012 - 2021","NP","Natural products","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.621428571428665,0.0922922839471426
 "2012 - 2021","NP","Natural products","average_yearly_change_in_scores",34,"Bassas da India",-0.621428571428665,0.0922922839471426
 "2012 - 2021","NP","Natural products","average_yearly_change_in_scores",35,"Ile Europa",-0.621428571428665,0.0922922839471426
@@ -3389,7 +3389,7 @@
 "2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",29,"Mayotte",-0.349454545454567,0.0433624273163707
 "2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",30,"Glorioso Islands",0.290242424242427,0.000177163665846813
 "2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",31,"Seychelles",1.12115151515157,0.146847891187437
-"2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",32,"R_union",-0.365696969696988,0.0262428473600951
+"2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",32,"Réunion",-0.365696969696988,0.0262428473600951
 "2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",33,"Juan de Nova Island",0.290242424242429,0.000177163665846823
 "2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",34,"Bassas da India",0.290242424242429,0.000177163665846823
 "2012 - 2021","SP","Sense of place","average_yearly_change_in_scores",35,"Ile Europa",0.290242424242427,0.000177163665846813
@@ -3610,7 +3610,7 @@
 "2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",29,"Mayotte",-0.268000000000007,1.83613705140529e-09
 "2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",30,"Glorioso Islands",-0.288242424242433,1.75339046320555e-09
 "2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",31,"Seychelles",-0.315272727272738,1.80473506081909e-09
-"2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",32,"R_union",-0.313272727272737,1.76443527082628e-09
+"2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",32,"Réunion",-0.313272727272737,1.76443527082628e-09
 "2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",33,"Juan de Nova Island",-0.255272727272737,1.64384032804414e-09
 "2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",34,"Bassas da India",-0.250666666666671,1.53915185185136e-09
 "2012 - 2021","SPP","Species condition (subgoal)","average_yearly_change_in_scores",35,"Ile Europa",-0.241515151515157,1.7040362601467e-09
@@ -3828,7 +3828,7 @@
 "2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",28,"Comoro Islands",-0.101696969696956,0.517033680433089
 "2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",29,"Mayotte",0.170787878787902,0.368332870365925
 "2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",31,"Seychelles",7.35360028327298e-15,0.121502918817151
-"2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",32,"R_union",0.165696969696962,0.392731805581515
+"2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",32,"Réunion",0.165696969696962,0.392731805581515
 "2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",37,"Mauritius",1.5691515151516,0.0302816306064617
 "2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",38,"British Indian Ocean Territory",0.295272727272716,0.26272860994924
 "2012 - 2021","TR","Tourism & recreation","average_yearly_change_in_scores",39,"Maldives",0.0578787878787931,0.429647551621258
