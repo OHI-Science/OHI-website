@@ -156,7 +156,7 @@ for (row in 1:nrow(page_data)) {
 	fileName <- name %>%
 		tolower() %>% # make lower case
 		gsub("\\s*\\([^\\)]+\\)","", .) %>% # remove text between parentheses at end of name
-	#	stri_trans_general("Latin-ASCII") %>% # convert characters with accents to non-accented character
+	stri_trans_general("Latin-ASCII") %>% # convert characters with accents to non-accented character
 		gsub("\\s","-", .) %>%  # convert spaces to dashes
 		paste0(., ".md") #Add the markdown extension
 	
