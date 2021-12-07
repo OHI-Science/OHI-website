@@ -16,12 +16,14 @@ The Clean Water goal captures the degree to which local waters are unpolluted by
 ----
 
 ### GOAL DESCRIPTION
-The Clean Water goal captures the degree to which local waters are unpolluted by human-made causes. 
-![](/images/sources_of_pollution.jpg)
-
 People value marine waters that are free of pollution and debris for aesthetic and health reasons. 
 
-Contamination of waters from chemicals, eutrophication, pathogens, and trash enter the marine environment in a number of ways. Water pollution harms human health, livelihoods, and recreation, as well as the health of marine life and habitats.  
+Chemicals, excess nutrients, pathogens, and trash that enter the marine environment can harm human health, livelihoods, and recreation, as well  as the health of marine life and habitats.  
+
+
+![](/images/sources_of_pollution.jpg)
+
+There are many sources of pollution in marine systems.
 
 A major source of marine pollution is agricultural activities, such as the use of fertilizers containing nitrogen and phosphorous. This pollutant can seep into groundwaters and be washed into the ocean as runoff, resulting in the spread of dead zones in coastal waters.
 
