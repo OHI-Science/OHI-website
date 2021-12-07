@@ -1,0 +1,58 @@
+---
+title: "Create a markdown page for each region in the OHI website"
+author: "Robyn Thiessen-Bock"
+date: "2021-07-07"
+---
+
+This R code reads in the `scores.csv` file and creates a markdown page for each country/region in the scores file.
+
+```{r}
+library(here)
+library(dplyr)
+library(magrittr)
+library(stringi)
+library(tidyr)
+library(broom)
+library(readr)
+library(stringr)
+```
+
+Below are all of the configurable variables that can be changed depending on updates to the scores.CSV file and to the template that is used to create the Hugo font-matter
+
+```{r}
+# Path to the scores.csv file
+scores_path <- here("content", "data", "scores.csv")
+
+```
+
+The next section organizes the data
+
+```{r}
+# Get the data from the scores csv file. Get just the unique region names and IDs.
+all_data <- read.csv(scores_path)
+
+# data <- read.csv(here(sprintf('yearly_results/global%s/OHI_final_formatted_scores_%s.csv', scenario, radicalFile))) 
+
+data_filter <- all_data %>%
+  filter(region_id != 213)  %>%         # Antarctica (calculated in a very different way)
+  mutate(region_name = as.character(region_name)) %>%
+  mutate(value = round(value, 1))
+
+data_index <- data_filter %>%
+  filter(region_id == 0) %>%
+  filter(dimension == "score") %>%
+  select(scenario, goal, long_goal, value)
+
+goals <- c('Index', 'AO', 'SPP', 'BD', 'HAB', 'CP', 'CS', 'CW', 'ECO', 'LE', 'LIV', 'FIS', 'FP', 'MAR', 'ICO', 'SP', 'LSP', 'NP', 'TR')
+
+data_index$goal <- factor(data_index$goal, levels = goals)
+
+data_spread <- spread(data_index, scenario, value) %>%
+  arrange(goal) %>%
+  filter(!goal %in% c("ECO", "LE", "LIV")) %>%
+  select(-goal) %>%
+  rename(goal = long_goal)
+
+write.csv(data_spread, file.path(here("content", "data", "tables"), "article_table.csv"), sep = ";")
+```
+

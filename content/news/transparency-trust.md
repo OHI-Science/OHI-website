@@ -12,11 +12,10 @@ menu:
     weight: 2
 ---
 
-# On Building Transparency and Trust for Healthy New England Seas
+# Building Transparency and Trust for Healthy New England Seas Using the Ocean Health Index
 
 {{<newsHead>}}
 
-## A case study about transparency in the Ocean Health Index
 
 In a world of increasingly complex decision making, transparency has become paramount. This is no exception in science and, specifically, in science-based management of natural resources.
 
