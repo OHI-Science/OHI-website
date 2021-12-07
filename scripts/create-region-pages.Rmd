@@ -117,7 +117,7 @@ template <- gsub("\\$numRegions", num_regions, template)
 	
 # Make a markdown file for each region
 for (row in 1:nrow(page_data)) {
-	
+	# row = 93
 	name <- page_data[row, name_col]
 	id  <- page_data[row, id_col]
 	score <- page_data[row, value_col]
@@ -141,4 +141,8 @@ for (row in 1:nrow(page_data)) {
 	writeLines(templateCopy, fileConn)
 	close(fileConn)
 }
+
+
+test <- scores_data %>%
+  
 ```
