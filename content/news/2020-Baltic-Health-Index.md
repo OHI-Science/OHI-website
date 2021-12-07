@@ -11,11 +11,10 @@ menu:
     parent: 'News'
     weight: 2
 ---
-# 2020 Baltic Health Index (BHI)
+# A new open data tool for science and management
 
 {{<newsHead>}}
 
-## A new open data tool for science and management
 
 The new assessment tool, the Baltic Health Index (BHI) evaluates comprehensively the health status of the Baltic Sea and has been calculated by researchers at the Stockholm Resilience Centre, Stockholm University, in cooperation with scientists in California who have established the well-known global Ocean Health Index (OHI) framework. The Ocean Health Index provides comprehensive, and quantitative assessments of progress towards healthy and sustainable oceans.
 
