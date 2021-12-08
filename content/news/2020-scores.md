@@ -11,11 +11,10 @@ menu:
     parent: 'News'
     weight: 2
 ---
-# 2020 Global Ocean Health Index
+# 2020 Global Ocean Health Index scores now available!
 
 {{<newsHead>}}
 
-## 2020 Global Ocean Health Index scores now available!
 
 We are proud to announce the 2020 Ocean Health Index scores ([available here](http://ohi-science.org/ohi-global/))!
 

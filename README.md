@@ -49,7 +49,7 @@ The goal is to first get the content deployed on the `preview.` site before maki
 
 There are two websites that the OHI website is deployed to
 
-`dev.oceanhealthindex.org`: This is the interim main website that users see; it has its source built from the `main` branch
+`oceanhealthindex.org`: This is the main website that users see; it has its source built from the `main` branch
 
 `preview.oceanhealthindex.org`: The preview branch is meant to see the site _before_ it gets to production; it's built off of the `dev` branch.
 
