@@ -4,7 +4,7 @@ name: "The Global Ocean Health Index Celebrates its 10th Birthday!"
 bg_image: "/images/banners/ohi_celebration.jpg"
 card_image: "/images/infographs/ohi_celebration.png"
 preview_text: "This year marks the ninth global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The ..."
-Date: 2021-12-07
+Date: 2021-12-08
 author: Gage Clawson & Melanie Frazier
 menu:
   main:
