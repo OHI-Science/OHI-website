@@ -5,7 +5,7 @@ bg_image: "images/banners/lake.jpg"
 card_image: "/images/misc/surface_air_temp.jpg"
 preview_text: "Climate models from the CMIP6 Scenario experiments predict the future climate of our planet. These data are amazing AND complex, and we are here to help you make sense of it..."
 Date: 2022-01-28
-author: Melanie Frazier
+author: ????
 menu:
   main:
     parent: 'News'
@@ -18,7 +18,7 @@ menu:
 
 If you are an ecologist or biologist and need data predicting future climate, then CMIP6 Scenario data may be what you are searching for! But, these data are big and complicated, and it can take some effort to understand them, especially if you are not a climate scientist. 
 
-If you are like me, you hate trying to use data that you don't really understand. In this blogpost, I describe these data in simple terms so you can be on your way to responsibly using them (or, CMIP6 derived data) in your research to better predict how climate change will impact biological systems. 
+If you are like us, you hate trying to use data that you don't really understand. In this blogpost, we describe these data so you can be on your way to responsibly using them (or, CMIP6 derived data) in your research to better predict how climate change will impact biological systems. 
 
 <br>
 
