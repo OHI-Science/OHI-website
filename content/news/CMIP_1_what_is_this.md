@@ -62,8 +62,10 @@ Many different climate variables (e.g., sea surface temperature, near surface ai
 - 2-d surface and 3-d data for a range of atmospheric air pressures and ocean depths.
 - Various time intervals, including: monthly, daily, 3-hour intervals. 
 
+{{%expand "Click here if you want to see a long list of CMIP6 climate variables ?" %}}
 *Some common CMIP6 climate variables (from this incredibly helpful  [resource](https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections#CMIP6:Globalclimateprojections-Parameterlistings)):* 
 {{< csvTable path="tables/climate_variables.csv" sep="," >}}
+{{% /expand%}}
 
 The short ESGF names for the climate variables are important identifiers because they are often used to label CMIP6 data. For example, to search for sea surface temperature data, you will often need to use the "tos" shortname. 
 
