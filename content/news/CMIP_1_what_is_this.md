@@ -2,10 +2,10 @@
 title: "CMIP-6: Predicting Future Climate Change"
 name: "Reducing the pain of understanding CMIP-6 scenario data"
 bg_image: "images/banners/lake.jpg"
-card_image: "/images/misc/surface_air_temp.jpg"
+card_image: "/images/cmip6/marisco2.jpg"
 preview_text: "Climate models from the CMIP6 Scenario experiments predict the future climate of our planet. These data are amazing AND complex, and we are here to help you make sense of it..."
 Date: 2022-01-28
-author: ????
+author: Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard
 menu:
   main:
     parent: 'News'
@@ -23,7 +23,7 @@ In this blogpost, we describe these data so you can be on your way to responsibl
 <br>
 
 *OUR GOAL: Reduce the pain of using CMIP6, or CMIP6-derived, data*
-![painfig](/images/misc/painscale.jpg)
+![painfig](/images/cmip6/painscale.jpg)
 
 This is the first blogpost of an upcoming series that will: 
 
@@ -103,7 +103,7 @@ SSP5-8.5 | SSP5-8.5 is based on SSP5 in which climate change mitigation challeng
 <br>
 
 *This plot shows how future surface air temperature is predicted to increase for 5 CMIP6 scenarios (from: https://esd.copernicus.org/articles/12/253/2021/). The numbers included in the legend describe the number of models included in each scenario.  The dark line indicates the mean of the models. Note that the historical predictions are also included.*
-![cmip_scenarios](/images/misc/surface_air_temp.jpg)
+![cmip_scenarios](/images/cmip6/surface_air_temp.jpg)
 
 
 <details>
@@ -156,7 +156,7 @@ When it comes to using the historical data, I was confused because it seems that
 
 The CMIP6 process generates many models for each scenario and climate variable. The mean of all, or a subset, of these models generally provides a better climate estimate than any given individual model (e.g., below figure, solid lines for each scenario). And, the range spanned by the models can be interpreted as an estimate of scenario uncertainty (e.g., below figure, shaded portions around means).
 
-![cmip_scenarios](/images/misc/surface_air_temp.jpg)
+![cmip_scenarios](/images/cmip6/surface_air_temp.jpg)
 
 In addition to all the climate centers producing their independent models, a single climate center can have multiple "ensemble members" (these have names like: r1i1p1f1) that vary in terms of initial starting conditions of the model. Some models only have one member.  Five models (CanESM5, IPSL-CM6A-LR, MPI-ESM1-2-HR, MPI-ESM1-2-LR and UKESM1) have at least 10 ensemble members for some scenarios. The CanESM5 has an impressive 50 ensemble members. This is kind of cool because provides two levels of variation that can be explored! 
 
@@ -180,7 +180,7 @@ Even if you do not use raw CMIP6 data, I recommend taking a quick look at the we
 
 The CMIP6 data archive is distributed through the [Earth System Grid Federation (ESGF)](https://esgf-node.llnl.gov/search/cmip6/)
 
-![esgf](/images/misc/WCRP_cmip6_data.jpg)
+![esgf](/images/cmip6/WCRP_cmip6_data.jpg)
 
 The Climate Data Store (CDS) also provides a [quality-controlled subset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cmip6?tab=overview) of the wider CMIP6 data. This quality control procedure ensures a high standard of dependability of the data, in contrast to the ESGF archive which comes "with very limited quality assurance and may have metadata errors or omissions."(from: https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections)
 
@@ -196,4 +196,16 @@ The Climate Data Store also provides [climate extreme data](https://cds.climate.
 
 * Tebaldi, C., et al., 2021. Climate model projections from the Scenario Model Intercomparison Project (ScenarioMIP) of CMIP6. Earth System Dynamics 12, 253–293. https://doi.org/10.5194/esd-12-253-2021
 
+<br>
+<br>
 
+<b>
+
+---
+
+This post was created as part of the [MARISCO project](https://belmontforum.org/connect/oceans2018/groups/marisco-project/) which is funded by the Belmont Forum.
+
+Belmont Forum members and partner organizations work together to direct and fund research on environmental change that affect us all. 
+
+![cmip_scenarios](/images/cmip6/logos.jpg)
+---
