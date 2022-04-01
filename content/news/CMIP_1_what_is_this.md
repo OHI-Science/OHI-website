@@ -84,7 +84,7 @@ Shared Socioeconomic Pathways (SSPs) describe 5 potential pathways of global soc
 
 RCPs describe specific radiative forcing endpoints by 2100 based on future concentrations of emissions. RCPs were first used in the Fifth IPCC assessment. For continuity, the current CMIP6 scenarios includes the original 4 RCP categories from the Fifth Assessment, but the current framework aligns these with SSP categories and fills in some RCP gaps (e.g., SSP-RCP). Note that an SSP scenario may have multiple potential RCPs. 
 
-These pathways are defined by the *concentration* of carbon in the atmosphere and not the volume of *emissions*. Models based on *concentration* scenarios do not include [climate feedbacks](https://earthhow.com/climate-feedback-loops/) that are likely to exacerbate warming, such as: the release of methane if permafrost melts, disruptions to ocean circulation, rainforest drought and loss, etc. Emission-based scenarios take into account some carbon cycle feedbacks, and warming predictions tend to be [higher](https://journals.ametsoc.org/view/journals/clim/27/2/jcli-d-12-00579.1.xml).
+These pathways are defined by the *concentration* of carbon in the atmosphere and not the volume of *emissions*. Models based on *concentration* scenarios do not include [climate feedbacks](https://earthhow.com/climate-feedback-loops/) that are likely to exacerbate warming, such as: the release of methane if permafrost melts, disruptions to ocean circulation, rainforest drought and loss, etc. Warming predictions tend to be [higher](https://journals.ametsoc.org/view/journals/clim/27/2/jcli-d-12-00579.1.xml) under emission-based scenarios that take into account some carbon cycle feedbacks.
 
 
 *Scenarios included in CMIP6*
@@ -126,13 +126,11 @@ SSP3: Regional rivalry | Regional rivalries, nationalistic tendancies, and conce
 SSP4: Inequality  | Highly unequal investments in human capital, combined with increasing disparities in economic opportunity and political power, lead to increasing inequalities and stratification both across and within countries. The depressing result is that social cohesion breaks down and conflict and unrest become increasingly common. Environmental issues are not addressed at the global scale, but instead address local issues in richer areas.
 SSP5: Fossil-Fueled Development | Rapid economic and social development that is sustained by resource and energy intensive lifestyles around the world. The global economy grows along with green house gas emissions. Local environmental problems are managed, but greenhouse gas emissions are essentially uncontrolled.  
 
-</details>
-
 
 ### Representative Concentration Pathways
 Representative Concentration Pathways describe likely future climate scenarios in units of radiative forcing, W/m2, in the year 2100 (https://en.wikipedia.org/wiki/Radiative_forcing). For the IPCC's Fifth Assessement Report (2014), 4 Representative Concentration Pathways (RCP 2.6, 4.5, 6, 8.5) were chosen to represent the range of possible possible climate outcomes due to future anthropogenic greenhouse gas emissions.   
 
-
+</details>
 ### What scenarios should I use???!
 All of them! [At least in the ideal world.] 
 
@@ -144,13 +142,13 @@ In the real world, there are limits on time and computational resources. And, de
 
 > Although emissions pathways are subject to deep uncertainty, recent research suggests that emissions scenarios producing a range of approximately 3.4-4.5W/m2 radiative forcing by 2100 might be most plausible. With median climate sensitivities, this corresponds to approximately 2-3 degrees C global warming by 2100. Climate-sensitivity uncertainties expand this range to approximately 1.5-4 degrees C. In terms of the Shared Socioeconomic Pathways (SSPs) and Representative Concentration Pathways (RCPs), radiative forcing outcomes mostly fall between SSP2-3.4 and SSP2-4.5/RCP4.5, though higher and lower emissions scenarios (e.g., RCP2.6 and RCP6.0) might be plausible and should be explored in research. However, we argue that uses of the highest-emission scenarios (RCP8.5/SSP5-8.5, SSP3-7.0)—which currently predominate the literature—should come with clearly articulated rationales and appropriate caveats to ensure results are not misinterpreted by scholars, policymakers, and media. 
 
-And, this [post](https://climatenexus.org/climate-change-news/rcp-8-5-business-as-usual-or-a-worst-case-scenario/) discusses whether RCP8.5 is a good prediction of future warming, or, is a worst case scenario. This depends on future green house gas emissions and carbon/warming feedback loops (which have a lot of uncertainty). 
+And, this [post](https://climatenexus.org/climate-change-news/rcp-8-5-business-as-usual-or-a-worst-case-scenario/) discusses whether RCP8.5 is a good prediction of future warming, or, is a worst case scenario. Spoiler Alert: This depends on what green house gas emissions look like in the future and how carbon/warming feedback loops play out (which is particularly difficult to predict). 
 
 
 ## Historical vs. Future Data
-A point of confusion for me was how to use the modeled CMIP6 historical data. The historical scenario data are generated using the same General Circulation Models used to generate the future scenarios. There is a fair amount of variation around the predicted historical data among the different climate models (see the scenario figure above, specifically the gray shaded area of historical region), especially as you go back further in time. These data are handy for determining how well particular models are working.  
+Along with future predictions, the CMIP6 scenario data provides modeled historical data. The historical scenario data are generated using the same General Circulation Models used to generate the future scenarios. There is a fair amount of variation around the predicted historical data among the different climate models (see the scenario figure above, specifically the gray shaded area of historical region), especially as you go back further in time. These data are handy for determining how well particular models are working.  
 
-When it comes to using the historical data, I was confused because it seems that using historical climate data based on observed data would be better than using entirely modeled data (like that from CMIP).  AND: This is true if you are only comparing historical and current data!! BUT, if you want to compare current climate to future climate then you should use CMIP historical data for the comparison.
+The best way to use the CMIP historical data can be confusing! When it comes to using the historical data, it feels like datasets based on observed measurements should be preferable to fully modeled data (like that from CMIP).  AND: This is true if you are comparing near-historical climate data to current climate data!! BUT, if you want to compare current climate to future climate then you should use CMIP historical data for these comparisons.
 
 > In short: If you are comparing current climate to future climate, you should use the corresponding CMIP historical data for these comparisons! 
 
@@ -165,7 +163,7 @@ The CMIP6 process generates many models for each scenario and climate variable. 
 
 ![cmip_scenarios](/images/cmip6/surface_air_temp.jpg)
 
-In addition to all the climate centers producing their independent models, a single climate center can have multiple "ensemble members" (these have names like: r1i1p1f1) that vary in terms of initial starting conditions of the model. Some models only have one member.  Five models (CanESM5, IPSL-CM6A-LR, MPI-ESM1-2-HR, MPI-ESM1-2-LR and UKESM1) have at least 10 ensemble members for some scenarios. The CanESM5 has an impressive 50 ensemble members. This is kind of cool because provides two levels of variation that can be explored! 
+In addition to all the climate centers producing independent models, a single climate center can have multiple "ensemble members" (these have names like: r1i1p1f1) that vary in regard to initial model starting conditions. Some models only have one member. Five models (CanESM5, IPSL-CM6A-LR, MPI-ESM1-2-HR, MPI-ESM1-2-LR and UKESM1) have at least 10 ensemble members for some scenarios. The CanESM5 has an impressive 50 ensemble members. This is kind of cool because provides two levels of variation that can be explored! 
 
 The overall idea of an ensemble is simple, but there are two critical things to keep in mind:
 * Models should only be averaged within a scenario (e.g., do not combine models from different scenarios)
@@ -175,15 +173,15 @@ The overall idea of an ensemble is simple, but there are two critical things to 
 Beyond this general advice, there are many additional things to consider:
 * **What is the best way to deal with the "ensemble members" generated by a single climate center/model?** In some cases, these within-model ensemble members are averaged. In other cases, a representative ensemble member is selected (often r1i1p1f1 because that is the most common one available across models).
 
-* **What subset of models should be included?**  This seems to vary from about 5 to all of them!
+* **What models should be included?**  This seems to vary from about 5 to all of them!
 * **Should the contributions of the models be weighted?** Some models have weighted the models based on their independence from other models as well as how well they predict historical conditions.
 
 
 ## Where do I get the data?
 
-> If you are an ecologist or biologist who wants climate predictions to understand impacts on organisms or ecological systems (vs. someone who is actually studying climate) ideally you will be able to download premade ensembles, and not have to deal with raw climate data! It is my hope that you will be able to minimize your contact with the raw data (unlesss you love this kind of thing). But if you have to resort to the raw data, the next posts will be helpful.
+> If you are an ecologist or biologist who wants climate predictions to understand impacts on organisms or ecological systems (vs. someone who is actually studying climate) ideally you will be able to download premade ensembles, and not have to deal with raw climate data! We hope that you will be able to minimize your contact with the raw data (unlesss you love this kind of thing). But if you have to resort to the raw data, the next posts will be helpful.
 
-Even if you do not use raw CMIP6 data, I recommend taking a quick look at the websites that distribute the data because this can be helpful for understanding the data. And, if you need more information, I will walk through the process of obtaining raw CMIP6 data in the next post.
+Even if you do not use raw CMIP6 data, I recommend taking a quick look at the websites that distribute the data because this can be helpful for understanding the data. And, if you need more information, we will guide you through the process of obtaining raw CMIP6 data in the next post.
 
 The CMIP6 data archive is distributed through the [Earth System Grid Federation (ESGF)](https://esgf-node.llnl.gov/search/cmip6/)
 
