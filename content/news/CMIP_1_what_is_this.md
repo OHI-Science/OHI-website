@@ -11,7 +11,6 @@ menu:
     parent: 'News'
     weight: 2
 ---
-
 # CMIP6 Climate Scenario data: We are here to help!
 
 {{<newsHead>}}
@@ -81,9 +80,12 @@ Predicting future climate requires making underlying predictions about how our w
 
 The IPCC Sixth Assessment Report (CMIP6) includes 8 future scenarios (2015-2100) and one historical scenario (1850-2014). The CMIP6 scenarios combine two frameworks: the Shared Socioeconomic Pathway (SSP, *first part of the scenario name*) and the Representative Concentration Pathway (RCP, *second part of the scenario name*). 
 
-Shared Socioeconomic Pathways (SSPs) describe 5 potential pathways of global socioeconomic development, based on variables such as population, technological advancements, climate policies, and gross domestic product. These storylines are then used to determine the likely consequences of these developments on anthropogenic emissions and land-use. Ultimately, the SSPs result in warming predictions, or, Representative Concentration Pathways (RCPs).  
+Shared Socioeconomic Pathways (SSPs) describe 5 potential pathways of global socioeconomic development, based on variables such as population, technological advancements, climate policies, and gross domestic product. These storylines are then used to determine the likely consequences of these developments on anthropogenic emissions and land-use. 
 
 RCPs describe specific radiative forcing endpoints by 2100 based on future concentrations of emissions. RCPs were first used in the Fifth IPCC assessment. For continuity, the current CMIP6 scenarios includes the original 4 RCP categories from the Fifth Assessment, but the current framework aligns these with SSP categories and fills in some RCP gaps (e.g., SSP-RCP). Note that an SSP scenario may have multiple potential RCPs. 
+
+These pathways are defined by the *concentration* of carbon in the atmosphere and not the volume of *emissions*. Models based on *concentration* scenarios do not include [climate feedbacks](https://earthhow.com/climate-feedback-loops/) that are liekly to exacerbate warming, such as: the release of methane if permafrost melts, disruptions to ocean circulation, rainforest drought and loss, etc. Emission-based scenarios take into account some carbon cycle feedbacks, and warming predictions tend to be [higher](https://journals.ametsoc.org/view/journals/clim/27/2/jcli-d-12-00579.1.xml).
+
 
 *Scenarios included in CMIP6*
 
@@ -127,7 +129,6 @@ SSP5: Fossil-Fueled Development | Rapid economic and social development that is 
 ### Representative Concentration Pathways
 Representative Concentration Pathways describe likely future climate scenarios in units of radiative forcing, W/m2, in the year 2100 (https://en.wikipedia.org/wiki/Radiative_forcing). For the IPCC's Fifth Assessement Report (2014), 4 Representative Concentration Pathways (RCP 2.6, 4.5, 6, 8.5) were chosen to represent the range of possible possible climate outcomes due to future anthropogenic greenhouse gas emissions.   
 
-</details>
 
 ### What scenarios should I use???!
 All of them! [At least in the ideal world.] 
@@ -139,6 +140,9 @@ In the real world, there are limits on time and computational resources. And, de
 
 
 > Although emissions pathways are subject to deep uncertainty, recent research suggests that emissions scenarios producing a range of approximately 3.4-4.5W/m2 radiative forcing by 2100 might be most plausible. With median climate sensitivities, this corresponds to approximately 2-3 degrees C global warming by 2100. Climate-sensitivity uncertainties expand this range to approximately 1.5-4 degrees C. In terms of the Shared Socioeconomic Pathways (SSPs) and Representative Concentration Pathways (RCPs), radiative forcing outcomes mostly fall between SSP2-3.4 and SSP2-4.5/RCP4.5, though higher and lower emissions scenarios (e.g., RCP2.6 and RCP6.0) might be plausible and should be explored in research. However, we argue that uses of the highest-emission scenarios (RCP8.5/SSP5-8.5, SSP3-7.0)—which currently predominate the literature—should come with clearly articulated rationales and appropriate caveats to ensure results are not misinterpreted by scholars, policymakers, and media. 
+
+And, this [post](https://climatenexus.org/climate-change-news/rcp-8-5-business-as-usual-or-a-worst-case-scenario/) discusses whether RCP8.5 is a good prediction of future warming, or, is a worst case scenario. This depends on future green house gas emissions and carbon/warming feedback loops (which have a lot of uncertainty). 
+
 
 ## Historical vs. Future Data
 A point of confusion for me was how to use the modeled CMIP6 historical data. The historical scenario data are generated using the same General Circulation Models used to generate the future scenarios. There is a fair amount of variation around the predicted historical data among the different climate models (see the scenario figure above, specifically the gray shaded area of historical region), especially as you go back further in time. These data are handy for determining how well particular models are working.  
