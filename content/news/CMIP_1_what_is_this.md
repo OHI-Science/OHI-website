@@ -126,7 +126,7 @@ SSP3: Regional rivalry | Regional rivalries, nationalistic tendancies, and conce
 SSP4: Inequality  | Highly unequal investments in human capital, combined with increasing disparities in economic opportunity and political power, lead to increasing inequalities and stratification both across and within countries. The depressing result is that social cohesion breaks down and conflict and unrest become increasingly common. Environmental issues are not addressed at the global scale, but instead address local issues in richer areas.
 SSP5: Fossil-Fueled Development | Rapid economic and social development that is sustained by resource and energy intensive lifestyles around the world. The global economy grows along with green house gas emissions. Local environmental problems are managed, but greenhouse gas emissions are essentially uncontrolled.  
 
-<\details>
+</details>
 
 
 ### Representative Concentration Pathways
