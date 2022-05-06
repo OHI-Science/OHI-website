@@ -15,7 +15,6 @@ The team gratefully acknowledges the individuals, foundations, organizations and
 
 {{<peopleCards path="people.csv">}}
 
-### 2022 Fellows
 {{<peopleCards path="fellows.csv">}}
 
 {{<contributors path="current_contributors.json">}}
