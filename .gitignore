@@ -32,3 +32,5 @@ node_modules
 # R stuff
 .Rproj.user
 .Rhistory
+
+.hugo_build.lock
