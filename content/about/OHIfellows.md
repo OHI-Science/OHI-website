@@ -8,6 +8,10 @@ menu:
     weight: 3
 ---
 
+<br>
+<br>
+
+
 ## About the OHI Fellows Program
 
 The OHI Global Fellowship was created to familiarize a small group of interested early-career data scientists with the workings of the OHI — the theory, the tools, and the workflows the team employs to ensure the work is open, transparent and reproducible — while also testing the ease-of-use of training materials and the framework. With fresh eyes and the unique perspective of learning all this from scratch, we are in a position to offer perspective on questions like:
@@ -41,6 +45,12 @@ Moving forward at the Ocean Health Index, she hopes to contribute to our underst
 ***
 
 ### Peter Menzies
+
+<img src="/images/people/Menzies_Peter_mountains.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+Peter grew up in North Carolina, and studied terrestrial plant ecology at the University of North Carolina at Asheville where his passion for the natural world blossomed into a career path. After several years of involvement in ecology research among the southern Appalachian Mountains, he spent three years as an Environmental Educator for a small nonprofit in Asheville. 
+
+In his free time when he wasn’t climbing rocks, Peter started teaching himself to code and was drawn to the idea of applying data science techniques to combat environmental issues. Following this goal, he drove across the country with his two cats and is now pursuing a Master of Environmental Data Science degree at UC Santa Barbara’s Bren School of Environmental Science and Management. After living alongside the Pacific for the better part of a year, Peter has found a passion for marine ecosystems and is thrilled to apply his growing data science skill set to assessing global ocean health as an OHI Fellow. 
+
 
 
 
