@@ -45,12 +45,18 @@ Moving forward at the Ocean Health Index, she hopes to contribute to our underst
 ***
 
 ### Peter Menzies
-
-<img src="/images/people/Menzies_Peter_mountains.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<div style="width: 100%;">
+<p>
+<img src="/images/people/Menzies_Peter_mountains.jpg" style="float: right; width: 40%; margin: 0px 6px;" />
 Peter grew up in North Carolina, and studied terrestrial plant ecology at the University of North Carolina at Asheville where his passion for the natural world blossomed into a career path. After several years of involvement in ecology research among the southern Appalachian Mountains, he spent three years as an Environmental Educator for a small nonprofit in Asheville. 
 
-In his free time when he wasn’t climbing rocks, Peter started teaching himself to code and was drawn to the idea of applying data science techniques to combat environmental issues. Following this goal, he drove across the country with his two cats and is now pursuing a Master of Environmental Data Science degree at UC Santa Barbara’s Bren School of Environmental Science and Management. After living alongside the Pacific for the better part of a year, Peter has found a passion for marine ecosystems and is thrilled to apply his growing data science skill set to assessing global ocean health as an OHI Fellow. 
+In his free time, when he wasn’t climbing rocks, Peter started teaching himself to code and was drawn to the idea of applying data science techniques to combat environmental issues. Following this goal, he drove across the country with his two cats and is now pursuing a Master of Environmental Data Science degree at UC Santa Barbara’s Bren School of Environmental Science and Management. After living alongside the Pacific for the better part of a year, Peter has found a passion for marine ecosystems and is thrilled to apply his growing data science skill set to assessing global ocean health as an OHI Fellow. 
+</p>
 
+</div>
+
+<div style="clear:both;"></div>
+<br>
 
 
 
