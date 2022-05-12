@@ -10,23 +10,58 @@ menu:
 
 ## About the OHI Fellows Program
 
-The OHI Global Fellowship was created to familiarize a small group of interested students with the workings of the OHI — the theory, the tools, and the workflows the team employs to ensure the work is open, transparent and reproducible — while also testing the ease-of-use of training materials and the framework. With fresh eyes and the unique perspective of learning all this from scratch, we are in a position to offer perspective on questions like: How do we build familiarity with the tools, the processes, and methods used? What are some of the key stepping stones to understanding along the way?
+The OHI Global Fellowship was created to familiarize a small group of interested early-career data scientists with the workings of the OHI — the theory, the tools, and the workflows the team employs to ensure the work is open, transparent and reproducible — while also testing the ease-of-use of training materials and the framework. With fresh eyes and the unique perspective of learning all this from scratch, we are in a position to offer perspective on questions like:
+- How do we build familiarity with the tools, the processes, and methods used?
+- What are some of the key stepping stones to understanding along the way?
 
 ## Current Fellows
 
 
 ### Juliet Cohen
+<div style="width: 100%;">
+<img src="/images/people/Cohen_Juliet.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<p>
+Juliet is an aspiring wildlife biologist and marine data scientist interested in the interactions between landscapes, wildlife populations, and human livelihoods in the face of climate change. She is currently pursuing a Master’s degree in Environmental Data Science from UC Santa Barbara’s Bren School of Environmental Science and Management. Prior to the Bren School, she earned a Bachelor’s degree in Ecology and Evolution from UC Santa Barbara and studied tropical biology in Costa Rica. Her undergraduate research investigated mammalian spatial ecology and the role of bivalves in mariculture systems. Following this research, she served as a field technician studying endangered populations of flat-tailed horned lizards and steelhead trout in Southern California, as well as invasive species across the Hawaiian islands. These field roles inspired her to delve into environmental data science in order to recognize broad ecological patterns across scientific disciplines. 
+</p>
+<p>
+Moving forward at the Ocean Health Index, she hopes to contribute to our understanding of marine health on a global scale. With open source programming tools and a collaborative approach, she hopes to advise policies to protect habitats, wildlife, and human livelihoods in the Anthropocene. In her free time, Juliet enjoys snorkeling, surfing, climbing, hiking, and playing with her pet gecko, Bembe.
+</p>
 
+<br>
+<br>
 
+<a href = "http://github.com/julietcohen" target = "_blank">
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
+
+</div>
+
+<div style="clear:both;"></div>
+<br>
+
+***
 
 ### Peter Menzies
 
 
 
 ### Cullen Molitor
+<div style="width: 100%;">
+<img src="/images/people/Cullen_Molitor.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<p>
+Cullen is a marine ecologist with expertise in long term monitoring of kelp forest environments in California. He graduated from Humboldt State University in 2014 where he studied history, mathematics, and scientific diving. Cullen worked five seasons with Channel Islands National Park's Kelp Forest Monitoring Program where he developed his skills in subtidal field methods. Cullen is interested in how ecological communities change in response to environmental stressors such as climate patterns, fishing pressure, and disease events. Working for a long term monitoring program inspired him to return to school to learn analytical methods that would allow him to better understand the historical context of the data he was helping to collect. 
 
+Cullen is currently a master’s candidate of Environmental Data Science at the Bren School of Environmental Science and Management at UC Santa Barbara. At Bren, Cullen has been excited about working with spatial data and remote sensing technologies. He uses these skills for his capstone project where his team is developing a workflow that uses satellite imagery and machine learning to make crop yield predictions in sub-Saharan Africa. As a global OHI fellow, Cullen is excited to continue working in marine science with his expanded data processing, modeling, and presentation skills. He is glad to participate in a program that seeks to improve our understanding of the health of our global oceans.
+</p>
 
 <br>
+<br>
+
+<a href = "http://github.com/cullen-molitor" target = "_blank">
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
+
+</div>
+
+<div style="clear:both;"></div>
 <br>
 
 ***
