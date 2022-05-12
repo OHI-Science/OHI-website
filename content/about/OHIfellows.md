@@ -23,7 +23,9 @@ The OHI Global Fellowship was created to familiarize a small group of interested
 
 ### Juliet Cohen
 <div style="width: 100%;">
-<img src="/images/people/Cohen_Juliet.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<a href="https://julietcohen.github.io/">
+  <img src="/images/people/Cohen_Juliet.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
 <p>
 Juliet is an aspiring wildlife biologist and marine data scientist interested in the interactions between landscapes, wildlife populations, and human livelihoods in the face of climate change. She is currently pursuing a Master’s degree in Environmental Data Science from UC Santa Barbara’s Bren School of Environmental Science and Management. Prior to the Bren School, she earned a Bachelor’s degree in Ecology and Evolution from UC Santa Barbara and studied tropical biology in Costa Rica. Her undergraduate research investigated mammalian ecology and mariculture systems. Following this research, she served as a field technician studying endangered populations of flat-tailed horned lizards and steelhead trout in Southern California, as well as invasive species across the Hawaiian islands. These field roles inspired her to delve into environmental data science in order to recognize broad ecological patterns across scientific disciplines. 
 </p>
@@ -42,8 +44,6 @@ Moving forward at the Ocean Health Index, she hopes to contribute to our underst
 <div style="clear:both;"></div>
 <br>
 
-***
-
 ### Peter Menzies
 
 <img src="/images/people/Menzies_Peter_mountains.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
@@ -56,7 +56,9 @@ In his free time when he wasn’t climbing rocks, Peter started teaching himself
 
 ### Cullen Molitor
 <div style="width: 100%;">
-<img src="/images/people/Cullen_Molitor.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<a href="https://cullen-molitor.github.io/">
+  <img src="/images/people/Cullen_Molitor.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
 <p>
 Cullen is a marine ecologist with expertise in long term monitoring of kelp forest environments in California. He graduated from Humboldt State University in 2014 where he studied history, mathematics, and scientific diving. Cullen worked five seasons with Channel Islands National Park's Kelp Forest Monitoring Program where he developed his skills in subtidal field methods. Cullen is interested in how ecological communities change in response to environmental stressors such as climate patterns, fishing pressure, and disease events. Working for a long term monitoring program inspired him to return to school to learn analytical methods that would allow him to better understand the historical context of the data he was helping to collect. 
 
