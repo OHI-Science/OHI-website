@@ -18,8 +18,15 @@ The OHI Global Fellowship was created to familiarize a small group of interested
 - How do we build familiarity with the tools, the processes, and methods used?
 - What are some of the key stepping stones to understanding along the way?
 
+
 ## Current Fellows
 
+The 2022 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
+
+<div style="width: 100%;">
+<img src="/images/people/MEDS/hex_meds.png" style="float: middle; width: 15%; margin: 0px 6px;" />
+<img src="/images/people/MEDS/peter_juliet_cullen.jpg" style="float: middle; width: 50%; margin: 0px 6px;" />
+<img src="/images/people/MEDS/hex_data_science.png" style="float: center; width: 15%; margin: 0px 6px;" />
 
 ### Juliet Cohen
 <div style="width: 100%;">
@@ -160,6 +167,8 @@ Now a second-year masters student at the Bren School of Environmental Science & 
 
 ## **2019 Fellows**
 
+<img src="/images/people/fellows2019-crop.jpg" style="float: middle; width: 50%; margin: 0px 6px;" />
+
 <br>
 
 
@@ -206,6 +215,8 @@ After spending a few years teaching math in Hawaii and then wrangling microbes a
 <br>
 
 ## **2018 Fellows**
+
+<img src="/images/people/fellows_2018.png" style="float: center; width: 50%; margin: 0px 6px;" />
 
 <br>
 
