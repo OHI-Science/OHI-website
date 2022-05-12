@@ -36,7 +36,7 @@ The OHI Global Fellowship was created to familiarize a small group of interested
 
 ### Madeline Berger
 <div style="width: 100%;">
-<img src="images/maddie.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<img src="/images/people/maddie_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
 <p>
 A San Francisco Bay Area native, Madeline learned to scuba dive in the Monterrey Bay at age 15 sparking a passion for coastal and ocean ecosystems. Madeline holds a B.A. in Economics from the University of California Los Angeles, where she also minored in Environmental Systems. After working in the private sector and as a Research Intern at the Natural Capital Project at Stanford, she is now a 2nd year Master’s at the Bren School, specializing in Conservation Planning and focusing on Environmental Data Science.
 </p>
@@ -50,8 +50,8 @@ Maddie was a competitive swimmer for many years and still takes any chance possi
 <br>
 <br>
 
-<a href = "http://github.com/lauraing" target = "_blank">
-<img src = "https://docs.google.com/drawings/d/e/2PACX-1vQ_0SFvcSoWQZyjn33jtxQxfIUjzm5boGjOdWXHQ-WVxm1I3G9P6PT5Em04m3MBFvbDWy9TBifFhDlr/pub?w=598&h=151" style="float: right; width: 15%; margin: 0px 6px;" /></a>
+<a href = "http://github.com/madelinemberger" target = "_blank">
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -62,7 +62,7 @@ Maddie was a competitive swimmer for many years and still takes any chance possi
 
 ### Laura Ingulsrud
 <div style="width: 100%;">
-<img src="images/laura.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<img src="/images/people/laura_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
 <p>
 Laura grew up in Sacramento, CA and Tokyo, Japan, but has lived in Santa Barbara for the past 10 years. She moved here to get an Environmental Studies degree at UCSB and quickly fell in love with the central coast. After graduating, Laura worked as a sailing instructor, guide on Mt. Fuji, and environmental consultant before going back to grad school.  
 </p>
@@ -74,7 +74,7 @@ She is now a 2nd year master’s student at the Bren School of Environmental Sci
 <br>
 
 <a href = "http://github.com/lauraing" target = "_blank">
-<img src = "https://docs.google.com/drawings/d/e/2PACX-1vQ_0SFvcSoWQZyjn33jtxQxfIUjzm5boGjOdWXHQ-WVxm1I3G9P6PT5Em04m3MBFvbDWy9TBifFhDlr/pub?w=598&h=151" style="float: right; width: 15%; margin: 0px 6px;" /></a>
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -85,7 +85,7 @@ She is now a 2nd year master’s student at the Bren School of Environmental Sci
 
 ### Sara Orofino
 <div style="width: 100%;">
-<img src="images/sara.jpeg" style="float: right; width: 34%; margin: 0px 6px;" />
+<img src="/images/people/sara_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
 <p>
 Sara grew up in Placerville, California a town in the Northern Sierras. She graduated in 2014 from Oregon State University with a B.S. in Zoology. After college, she spent four years bouncing around from California to Southeast Asia and the Bahamas leading scuba diving tours, teaching marine science courses, and communicating scientific research to broad public audiences.   
 </p>
@@ -100,7 +100,7 @@ Now a second-year masters student at the Bren School of Environmental Science & 
 <br>
 
 <a href = "http://github.com/saraorofino" target = "_blank">
-<img src = "https://docs.google.com/drawings/d/e/2PACX-1vTXm-85N4B9kozmKMSmOtzN67P-15yT-VX7zc1LcJfqHkJoQV5nKU8-0yW_UquNf46dUbCF1hyCKIO4/pub?w=598&h=151" style="float: right; width: 15%; margin: 0px 6px;" /></a>
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -127,7 +127,7 @@ He is now a first-year student at the Bren School, pursuing a specialization in 
 </p>
 
 <a href = "http://github.com/gclawson1" target = "_blank">
-<img src = "images/git handle gage.jpg" style="float: right; width: 15%; margin: 0px 6px;" /></a>
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -138,7 +138,7 @@ He is now a first-year student at the Bren School, pursuing a specialization in 
 
 ### Molly Williams
 <div style="width: 100%;">
-<img src="images/molly.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<img src="/images/people/molly_2019.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
 <p>
 Molly is originally from Seattle, WA and grew up in and around the Pacific Ocean. She received her undergraduate degree in Environmental Studies on the other coast at Mount Holyoke College. During this time, she spent a semester abroad studying in the Turks and Caicos Islands where she was captivated by the marine life as well as the challenge of managing human-environment relationships.
 </p>
@@ -147,7 +147,7 @@ After spending a few years teaching math in Hawaii and then wrangling microbes a
 </p>
 
 <a href = "http://github.com/molly-williams" target = "_blank">
-<img src = "images/git handle molly.jpg" style="float: right; width: 15%; margin: 0px 6px;" /></a>
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -165,7 +165,7 @@ After spending a few years teaching math in Hawaii and then wrangling microbes a
 ### Camila Vargas
 
 <div style="width: 100%;">
-<img src="images/camila_pic.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<img src="/images/people/camila_2018.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
 <p>
 Camila is originally from Santiago, Chile and holds a degree in Biology from Pontificia Universidad Católica de Chile (PUC), with a major in ecology and specialization in natural resources management. Her working experiences has mostly been related to academic research for the Marine Conservation Center – PUC, exploring social-ecological systems dynamics in small-scale fisheries in Chile.
 </p>
@@ -177,7 +177,8 @@ She recently graduated from her master degree at the Bren School of Environmenta
 Her focus on marine resources is motivated by her passion for ocean and marine life as well as her desire to develop solutions, using the best available science, for threatened coastal resources which are the main livelihood for many coastal communities.
 </p>
 
-<img src = "https://docs.google.com/drawings/d/e/2PACX-1vRSilACRzJvoAHMxWq7tYtdY0nBr4Rk2kym0z8Nq4k369ooUnssatA7trYJmt-FfD2rW8hFNcfVntI1/pub?w=598&h=151" style="float: right; width: 15%; margin: 0px 6px;" />
+<a href = "http://github.com/camilavargasp" target = "_blank">
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -190,7 +191,7 @@ Her focus on marine resources is motivated by her passion for ocean and marine l
 
 
 <div style="width: 100%;">
-<img src="images/iwen_pic.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<img src="/images/people/iwen_2018.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
 <p>
 Iwen grew up in San Diego and Taiwan, and received her B.A. in Biology, Marine Emphasis from Occidental College. After graduating, she set off to Madagascar for three months to conduct underwater surveys on coral reefs. She has also volunteered on various projects throughout San Diego, including coral identification at the Scripps Institution of Oceanography, event planning for WildCoast, and scientific diving with San Diego State graduate students. During this time, Iwen primarily worked along the coast collecting recreational fisheries data for the CA Department of Fish and Wildlife and on the water for a white seabass enhancement project at the Hubbs-Seaworld Research Institute. 
 </p>
@@ -199,7 +200,8 @@ Iwen grew up in San Diego and Taiwan, and received her B.A. in Biology, Marine E
 She is now pursuing a specialization in Coastal and Marine Resources Management at the Bren School. Over the last year and half, she’s worked on various projects at NCEAS including the Arctic Data Center, the SeaSketch-TNC groundfish spatial plan, and now the Ocean Health Index. Her career interests include marine spatial planning for fisheries and aquaculture and seafood sustainability. Outside of school, Iwen enjoys diving artificial reefs, and drawing pictures of sea-creatures to hang on her walls.
 </p>
 
-<img src = "https://docs.google.com/drawings/d/e/2PACX-1vSohclPTHr8A0Dzo2t8LUrOVsLKNDhRHkaekApz_GT1TtaPP1-1_YXwYOXeW9k7ProzSpECJAk8trhS/pub?w=578&h=150" style="float: right; width: 15%; margin: 0px 6px;" />
+<a href = "http://github.com/iwensu0313" target = "_blank">
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
@@ -212,12 +214,13 @@ She is now pursuing a specialization in Coastal and Marine Resources Management 
 ### Ellie Campbell
 
 <div style="width: 100%;">
-<img src="images/ellie_pic.JPG" style="float: right; width: 39%; margin: 0px 6px;" />
+<img src="/images/people/ellie_2018.jpg" style="float: right; width: 39%; margin: 0px 6px;" />
 <p>
 Ellie graduated from the Bren School of Environmental Science & Management, where she pursued a Masters of Environmental Science and Management with a specialization in Energy and Climate. Originally from Anchorage, Alaska, Ellie graduated from Colorado College in 2016 with a B.A. in Mathematics. For her masters project, she collaborated with four peers to synthesize an ecological monitoring framework for the Tejon Ranch Conservancy, incorporating drones and other remote sensing technologies. She previously worked with Conservation Science Partners on GLUED (Global Land Use/Cover Emergent Database), a platform to collect and share data on land use and land cover. She gained additional technical training in remote sensing methodology through an interdisciplinary research experience for undergraduates at the University of Northern Iowa. In her free time, she enjoys spending time outdoors skiing, running, and playing ultimate frisbee.
 </p>
-<br>
-<img src = "https://docs.google.com/drawings/d/e/2PACX-1vTq4-mE3u-NngtJn46YFxN-BwMilVVatfcF-dfT6PrsX1wZqgxcgfyhYiZfCdXL8yUBwvFzU158N-Oh/pub?w=578&h=150" style="float: right; width: 15%; margin: 0px 6px;" />
+
+<a href = "http://github.com/eleanorecc" target = "_blank">
+<img src = "/images/GitHub-Mark-120px-plus.png" style="float: right; width: 8%; margin: 0px 6px;" /></a>
 
 </div>
 
