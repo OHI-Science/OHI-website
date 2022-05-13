@@ -13,9 +13,7 @@ menu:
 
 ## About the OHI Fellows Program
 
-The OHI Global Fellowship was created to familiarize a small group of interested early-career data scientists with the workings of the OHI — the theory, the tools, and the workflows the team employs to ensure the work is open, transparent and reproducible — while also testing the ease-of-use of training materials and the framework. With fresh eyes and the unique perspective of learning all this from scratch, we are in a position to offer perspective on questions like:
-- How do we build familiarity with the tools, the processes, and methods used?
-- What are some of the key stepping stones to understanding along the way?
+The Ocean Health Index Global Fellowship was created to familiarize a small group of early-career data scientists with the inner workings of the OHI. With the objective of calculating OHI scores, the fellows dive into the theory, tools, and workflows employed by the larger team to ensure openness, transparency, and reproducibility. While fellows gain valuable experience and build useful skills, they also contribute fresh eyes and new perspectives that help the OHI to continually grow and innovate. This program is an integral part of what the Ocean Health Index has accomplished thus far and what it is today.
 
 
 ## Current Fellows
