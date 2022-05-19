@@ -15,16 +15,17 @@ menu:
 
 The Ocean Health Index Global Fellowship was created to familiarize a small group of early-career data scientists with the inner workings of the OHI. With the objective of calculating OHI scores, the fellows dive into the theory, tools, and workflows employed by the larger team to ensure openness, transparency, and reproducibility. While fellows gain valuable experience and build useful skills, they also contribute fresh eyes and new perspectives that help the OHI to continually grow and innovate. This program is an integral part of what the Ocean Health Index has accomplished thus far and what it is today.
 
-
 ## Current Fellows
 
 The 2022 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
 
-<div style="width: 100%;">
-<img src="/images/people/MEDS/hex_meds.png" style="float: middle; width: 15%; margin: 0px 6px;" />
-<img src="/images/people/MEDS/peter_juliet_cullen.jpg" style="float: middle; width: 50%; margin: 0px 6px;" />
-<img src="/images/people/MEDS/hex_data_science.png" style="float: center; width: 15%; margin: 0px 6px;" />
-</div>
+<center>
+
+<img src="/images/people/MEDS/hex_meds.png" style="float: middle; width: 13%; margin: 0px 6px;" />
+<img src="/images/people/MEDS/peter_juliet_cullen.jpg" style="width: 50%; height: 50%"/>
+<img src="/images/people/MEDS/hex_data_science.png" style="float: center; width: 13%; margin: 0px 6px;" />
+
+</center>
 
 ### Juliet Cohen <a href = "http://github.com/julietcohen" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
 <div style="width: 100%;">
@@ -101,10 +102,13 @@ Now a second-year masters student at the Bren School of Environmental Science & 
 
 ## **2019 Fellows**
 
-<img src="/images/people/fellows2019-crop.jpg" style="float: middle; width: 50%; margin: 0px 6px;" />
+<center>
+
+<img src="/images/people/fellows2019-crop.jpg" style="width: 40%; height: 40%"/>
+
+</center>
 
 <br>
-
 
 ### Gage Clawson <a href = "http://github.com/gclawson1" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
 
@@ -127,7 +131,11 @@ After spending a few years teaching math in Hawaii and then wrangling microbes a
 
 ## **2018 Fellows**
 
-<img src="/images/people/fellows_2018.png" style="float: center; width: 50%; margin: 0px 6px;" />
+<center>
+
+<img src="/images/people/fellows_2018.png" style="width: 50%; height: 50%"/>
+
+</center>
 
 <br>
 
