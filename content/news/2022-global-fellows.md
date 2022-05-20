@@ -57,9 +57,9 @@ In this blogpost, we ask the incoming fellows questions to better understand the
 
 > What is something you have recently read or learned that you found interesting and want to recommend to others?
 
-**Cullen:** I recently finished a book Abalone: The Remarkable History and Uncertain Future of California's Iconic Shellfish by Ann Vileisis. It is a very interesting and comprehensive look at the role abalone have played in the ecology, history, and culture of the west coast. The author does an excellent job at putting this iconic species into context and I highly recommend this book even to those who do not know what abalone are.
+**Cullen:** I recently finished a book _Abalone: The Remarkable History and Uncertain Future of California's Iconic Shellfish_ by Ann Vileisis. It is a very interesting and comprehensive look at the role abalone have played in the ecology, history, and culture of the west coast. The author does an excellent job at putting this iconic species into context and I highly recommend this book even to those who do not know what abalone are.
 
-**Juliet:** Through the book Into the Planet: My Life as a Cave Diver by Jill Heinerth, I recently learned about the sport of cave diving in the extensive underground systems of Mexico and Florida. I am amazed by the idea of swimming through a labyrinth of undocumented freshwater caves filled with exotic species. It’s a good reminder that we can never understand everything about the world, but we can keep trying.
+**Juliet:** Through the book _Into the Planet: My Life as a Cave Diver_ by Jill Heinerth, I recently learned about the sport of cave diving in the extensive underground systems of Mexico and Florida. I am amazed by the idea of swimming through a labyrinth of undocumented freshwater caves filled with exotic species. It’s a good reminder that we can never understand everything about the world, but we can keep trying.
 
 **Peter:** 
 
