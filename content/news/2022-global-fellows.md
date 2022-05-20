@@ -15,9 +15,9 @@ menu:
 
 {{<newsHead>}}
 
-If you are an ecologist or biologist and need data predicting future climate, then CMIP6 Scenario data may be what you are searching for! But, these data are big and complicated, and it can take some effort to understand them, especially if you are not a climate scientist. 
+This year the Ocean Health Index Global Fellows program has taken on three new Data Science and Communication Fellows. All three fellows have been picked from the new Masters of Environmental Data Science ([MEDS](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)) program, jointly taught through the Bren School of Environmental Science and Management and the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)). 
 
-In this blogpost, we describe these data so you can be on your way to responsibly using them (or, CMIP6 derived data) in your research to better predict how climate change will impact biological systems. 
+In this blogpost, we ask the incoming fellows questions to better understand their motivations while getting to know them. 
 
 <br>
 
