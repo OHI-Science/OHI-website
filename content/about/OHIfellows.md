@@ -21,9 +21,7 @@ The 2022 Fellows are three students in the Environmental Data Science program at
 
 <center>
 
-<img src="/images/people/MEDS/hex_meds.png" style="float: middle; width: 13%; margin: 0px 6px;" />
-<img src="/images/people/MEDS/peter_juliet_cullen.jpg" style="width: 50%; height: 50%"/>
-<img src="/images/people/MEDS/hex_data_science.png" style="float: center; width: 13%; margin: 0px 6px;" />
+<img src="/images/people/fellows_2022.jpg" style="width: 50%; height: 50%"/>
 
 </center>
 
@@ -104,7 +102,7 @@ Now a second-year masters student at the Bren School of Environmental Science & 
 
 <center>
 
-<img src="/images/people/fellows2019-crop.jpg" style="width: 40%; height: 40%"/>
+<img src="/images/people/fellows_2019.jpg" style="width: 40%; height: 40%"/>
 
 </center>
 
