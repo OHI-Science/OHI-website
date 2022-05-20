@@ -38,30 +38,23 @@ Much of the content in this post is derived from these excellent sources:
 
 * Tebaldi, C., et al., 2021. Climate model projections from the Scenario Model Intercomparison Project (ScenarioMIP) of CMIP6. Earth System Dynamics 12, 253–293. https://doi.org/10.5194/esd-12-253-2021
 
-## What is CMIP6 Scenario data?
+## Question 1
 
-CMIP Phase 6 (i.e., Coupled Model Intercomparison Project) is a huge experiment coordinated by the World Climate Research Progam (WCRP) to predict the future of our climate. CMIP6 (as of 2022) is the most recent version of climate models and the outputs are used in the IPCC's (Intergovernmental Panel on Climate Change) sixth assessment report.    
-
-> CMIP6 is comprised of [23 CMIP6-Endorsed MIPs](https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-cmip6-endorsed-mips), but we focus only on the **ScenarioMIP** part of the project. 
-
-The ScenarioMIP project provides historical (1850-2014) climate projections and future climate projections (2015-2100) for eight different scenarios of emissions and land use change (see section: "CMIP6 Scenarios").
-
-Using this framework, independent institutions around the world (53 of them, in fact) model future climate using general circulation models which represent physical processes in the atmosphere, ocean, cryosphere, and land surface ([ECMWF 2022](https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections#CMIP6:Globalclimateprojections-Parameterlistings)). For example, near-surface air temperature models require information on radiation, convection, clouds, land characteristics, surface fluxes, as well as atmospheric circulation and turbulent transport. The centers use similar protocols with (mostly) the same input parameters (also known as "forcings") and the best supported estimates of the sensitivity of climate to these forcings.
-
-Because so many institutions are running simulations, many independent models are generated for each scenario and climate variable. By combining these independent, but standardized, outputs into *ensembles* we can, ideally, obtain better estimates of future climate change and get a better idea of the uncertainty in the estimates (See section: "Why Ensembles?").   
+> Where are you from? 
 
 <br>
 
-> **Forcing**     You will often see the word "Forcing" in climate literature. This refers to the variables that drive climate by affecting the flow of energy coming into and leaving the earth's climate system. This includes variables such as solar radiation, green house gases, ozone, land use, volcanic eruptions. 
+**Cullen:** I grew up in the suburbs of Chicago and finished high school in Southwest Michigan. Following high school I moved to Arcata California for college and lived there for 7 years before finally moving to Santa Barbara for work.
 
-## Climate variables
+**Juliet:** I’m from Southern California and grew up with both the Santa Monica mountains and Pacific ocean within reach. I moved around California and Hawaii as a biological technician and returned to Santa Barbara for school and work.
 
-Many different climate variables (e.g., sea surface temperature, near surface air temperature, rainfall) are modeled for the CMIP6 project. These data are available at various spatial and temporal levels:
-- Different realms, including: land, atmosphere, and ocean.  
-- 2-d surface and 3-d data for a range of atmospheric air pressures and ocean depths.
-- Various time intervals, including: monthly, daily, 3-hour intervals. 
+**Peter:** 
 
-The climate variables often go by a short identifier. For example, to search for sea surface temperature data, you will often need to use it's shortname which is "tos". You can learn more about some of the common CMIP6 climate variables and their shortname (i.e., ESGF Variable ID) in the below table. 
+## Question 2
+
+> What are some of your interests, personally and professionally?
+
+
 
 <details>
 <summary> Click the triangle to see a long list of CMIP6 climate variables</summary>
