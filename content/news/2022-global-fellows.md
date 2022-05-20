@@ -49,7 +49,7 @@ In this blogpost, we ask the incoming fellows questions to better understand the
 
 **Cullen:** I was first exposed to the Ocean Health Index through the Master of Environmental Data Science Program. My first introduction was largely around how OHI was able to restructure their work to be more open and reproducible. After looking into what the project was about I was amazed by the scope of the project and the magnitude of the ambition it took to initiate such an index. I am excited to learn more about their specific methods and to become integrated into their process while updating the 2022 scores.
 
-**Juliet:** I’m drawn to the Ocean Health Index because of the emphasis on using a reproducible and scientific approach finding the balance between human livelihoods and marine ecosystem health. I think that OHI bridges the gap between the two huge struggles we will face with climate change (ecological degradation and humanitarian crisis) and that interdisciplinary approaches will be integral to finding sustainable solutions.
+**Juliet:** I’m drawn to the Ocean Health Index because of the emphasis on using a reproducible and scientific approach to find the balance between human livelihoods and marine ecosystem health. I think that OHI bridges the gap between the two huge struggles we will face with climate change (ecological degradation and humanitarian crisis) and that interdisciplinary approaches will be integral to finding sustainable solutions.
 
 **Peter:** 
 
