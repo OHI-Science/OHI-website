@@ -31,7 +31,7 @@ In this blogpost, we ask the incoming fellows questions to better understand the
 
 **Juliet:** I’m from Southern California and grew up with both the Santa Monica mountains and Pacific ocean within reach. I moved around California and Hawaii as a biological technician and returned to Santa Barbara for school and work.
 
-**Peter:** 
+**Peter:** I was born and raised in Raleigh, North Carolina. My love for the mountains took me to Asheville, NC, located among the southern Appalachians, where I lived for almost 8 years before moving out to Santa Barbara.
 
 ## Question 2
 
@@ -41,7 +41,7 @@ In this blogpost, we ask the incoming fellows questions to better understand the
 
 **Juliet:** I enjoy all things outdoors like hiking, surfing, snorkeling, and climbing. Observing animals and plants in the wild helps me brainstorm new ways to apply my programming skills and refreshes my brain. Professionally, I’m interested in spatial modeling and helping increase psychological safety in the programming world. Coding and asking questions can be intimidating, and I hope I can help break down some barriers for other early-career scientists by adopting OHI’s methods.
 
-**Peter:** 
+**Peter:** I’m generally fascinated by technology, the natural world, and particularly the confluence of the two. Professionally, I’m drawn to the idea of leveraging innovations to help conserve the environment and mitigate climate change—whether those innovations are machine learning techniques, advancements in remote sensing, carbon capture technologies… The list goes on. I’m also interested in pursuing these goals in an open and collaborative way—utilizing open data, open-source tools, and reproducible methods. Personally, I love to climb, play guitar, hang out with my cats, and learn about animals, technology, and the universe, 
 
 ## Question 3
 
@@ -51,7 +51,7 @@ In this blogpost, we ask the incoming fellows questions to better understand the
 
 **Juliet:** I’m drawn to the Ocean Health Index because of the emphasis on using a reproducible and scientific approach to find the balance between human livelihoods and marine ecosystem health. I think that OHI bridges the gap between the two huge struggles we will face with climate change (ecological degradation and humanitarian crisis) and that interdisciplinary approaches will be integral to finding sustainable solutions.
 
-**Peter:** 
+**Peter:** With an affinity for mountain environments and a background in terrestrial ecology, I’m a bit surprised to find myself as an OHI fellow—but living, for the first time in my life, a short walk from the beach has ignited in me a passion for the ocean. As part of the OHI, I’m thrilled to learn more about ocean ecosystems and how humans can sustainably benefit from their myriad resources.
 
 ## Question 4
 
@@ -61,5 +61,5 @@ In this blogpost, we ask the incoming fellows questions to better understand the
 
 **Juliet:** Through the book _Into the Planet: My Life as a Cave Diver_ by Jill Heinerth, I recently learned about the sport of cave diving in the extensive underground systems of Mexico and Florida. I am amazed by the idea of swimming through a labyrinth of undocumented freshwater caves filled with exotic species. It’s a good reminder that we can never understand everything about the world, but we can keep trying.
 
-**Peter:** 
+**Peter:** I’m currently listening to the audiobook _Something Deeply Hidden_ written by Sean Carroll, and highly recommended reading or listening to it. The book is about quantum mechanics. I was initially apprehensive about approaching such a dense topic, but Carroll, a theoretical physicist at CalTech, masterfully conveys the subject in an accessible and captivating way. He has me convinced that the existence of many worlds is the most logical explanation of what we have observed and understand about quantum mechanics so far.
 
