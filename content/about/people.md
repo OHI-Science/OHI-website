@@ -15,8 +15,13 @@ The team gratefully acknowledges the individuals, foundations, organizations and
 
 {{<peopleCards path="people.csv">}}
 
+{{<peopleCards path="fellows.csv">}}
+
 {{<contributors path="current_contributors.json">}}
 
 ## Previous Contributors
 
 {{<contributors path="contributors.json">}}
+
+
+
