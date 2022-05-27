@@ -19,6 +19,12 @@ This year the Ocean Health Index Global Fellows program has taken on three new D
 
 In this blogpost, we ask the incoming fellows questions to better understand their motivations while getting to know them. 
 
+<center>
+
+<img src="/images/people/fellows_2022.jpg" style="width: 70%; height: 70%"/>
+
+</center>
+
 <br>
 
 ## Question 1
