@@ -4,7 +4,7 @@ name: "Introducing the 2022 OHI Global Fellows"
 bg_image: "/images/banners/disturbed-fish.jpg"
 card_image: "/images/people/fellows_2022.jpg"
 preview_text: "This year the Ocean Health Index Global Fellows program has taken on three new Data Science and Communication Fellows. All three fellows have been picked from the new Masters of Environmental Data Science..."
-Date: 2022-05-20
+Date: 2022-05-27
 author: Cullen Molitor, Peter Menzies, Juliet Cohen
 menu:
   main:
