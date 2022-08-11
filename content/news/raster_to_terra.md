@@ -11,7 +11,7 @@ menu:
     parent: 'News'
     weight: 2
 ---
-# Switching Spatial Analysis from the `raster` packagr
+# Switching Spatial Analysis from the `raster` package
 
 {{<newsHead>}}
 
