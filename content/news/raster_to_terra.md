@@ -1,11 +1,11 @@
 ---
-title: "From Raster --> Terra"
+title: "Shifting from Raster to Terra"
 name: "Making the Spatial Switch"
 bg_image: "/images/banners/disturbed-fish.jpg"
 card_image: "/images/people/fellows_2022.jpg"
 preview_text: "`raster` has been the go-to spatial analysis package in R since the dawn of time, but we converted our workflow to the more modern `terra` package. At the Ocean Health Index, we work with spatial data for a plethora of goals like mapping sea ice extent and habitat types that sequester carbon throughout the land and coastal nations. Let's dive into how we converted our code from `raster` to `terra`."
 Date: 2022-08-11
-author: Cullen Molitor, Peter Menzies, Juliet Cohen
+author: Cullen Molitor, Juliet Cohen
 menu:
   main:
     parent: 'News'
@@ -15,17 +15,18 @@ menu:
 
 {{<newsHead>}}
 
-Spatial data in `R` has a reputation for being tedious and time consuming. With so many file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few), it can be challenging to wrangle maps and metadata and and visualize results. The Ocean Health Index has historically utilized the `raster` package to monitor the relationship between the health of marine systems and human well-being for 220 regions. The Ocean Health Index program aims to continuously improve methodology while keeping up with the hip trends in environmental science, which motivated the switch from using `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. Some examples of similar functions between `raster` and `terra` are as follows:
+Spatial data in `R` has a reputation for being tedious and time consuming. With so many different spatial file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. The Ocean Health Index has historically utilized the `raster` package to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The Ocean Health Index program aims to continuously improve methodology while keeping up with the hip trends in environmental science, which motivated the switch from using `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. Some examples of similar functions between `raster` and `terra` are as follows:
 
 `raster`|`terra`|Use
+--------|-------|---
 `raster()`|`rast()`|Rasterize a spatial file (such as a `.tif` or a sptial dataframe) into a `rasterLayer` (`raster`) or `spatRaster` (`terra`)
 `stack()`|`rast()`|Create raster stack of multiple rasters in order to execute calculations across layers. `rast()` is a more broadly applicable function since it can detect if there is only 1 `spatRaster` or multiple, and if there are multiple within the same directory, then it creates a stack automatically without any additional arguments.
 `calc()`|`app()`, `lapp()`, `focal()`, etc.|Execute a function across a raster or raster stack. `terra` has multiple functions with varying degrees of flexibility depending on if the function is applied across layers, and if the same function is applied to each layer.
-`resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a low resolution of 0.5 degrees to 0.01 degrees to match the resolution of the second raster.
+`resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a low resolution of 0.5 to 0.01 degrees or meters to match the resolution of the second raster.
 `extract()`|`extract()`|Pull value from a raster object where they intersect the locations of another spatial object, such as points that may fall within polygons. For `raster()`, the spatial objects can be points, lines, and polygons. For `terra`, the second spatial object must be a vector or matrix/dataframe of coordinates. For example, the spatial object from which we are extracting are polygons, the user cannot input a spatial dataframe, but rather needs to vectorize the geometry column of the polygons to use `terra::extract()`. 
 
 
-Let's take a look at how we converted our workflows to calculate `soft bottom habitat destruction` and implemented a new spatial extent layer for `tidal flat habitat`.
+Let's take a look at how we converted our workflows to calculate **soft bottom habitat destruction** and implemented a new spatial extent layer for **tidal flat habitat**.
 
 <br>
 
@@ -48,7 +49,9 @@ for(i in years){
     terra::rast(type = "xyz", crs = "EPSG:4326", digits = 6, extent = NULL)
     
     # save annual raster file for trawling:
-  terra::writeRaster(trawl_annual_raster, filename = paste0(dir_M, "/git-annex/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022/int/fish_effort_annual/trawling/", i,"/fish_effort_trawl_", i, ".tif"), overwrite = TRUE)
+  terra::writeRaster(trawl_annual_raster, filename = paste0(dir_M,
+  "/git-annex/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022/int/fish_effort_annual/
+  trawling/", i,"/fish_effort_trawl_", i, ".tif"), overwrite = TRUE)
 }
 ```
 
@@ -56,22 +59,29 @@ for(i in years){
 
 Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the trawling method that damages the seafloor. We do this by multiplying the trawling `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate. In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:
 
-> 1. Use the local mean of surrounding cells to fill in `NA` values (nearest neighbor) using `terra::focal()` like so:
+> 1. Use the local mean of surrounding cells to fill in `NA` values (nearest neighbor) using `terra::focal()`.
 
 ```r
-trawl_depth_proportion_interpolated <- terra::focal(x = trawl_depth_proportion, 
-                                                      w = 5, # sets a 5 cell window around NA pixel
-                                                      fun = "mean", 
-                                                      na.policy = "only", # only interpolate NA values
+trawl_depth_proportion_interpolated <- terra::focal(x = trawl_depth_proportion,
+                                                      # sets a 5 cell window around NA pixel
+                                                      w = 5, 
+                                                      fun = "mean",
+                                                      # only interpolate NA values
+                                                      na.policy = "only", 
                                                       na.rm = T,
                                                       overwrite = TRUE)
 ```
 
-> 2. Interpoalte all remaining `NA` values using the `terra::global()` function:
+> 2. Interpoalte all remaining `NA` values using the `terra::global()` function.
+
+This `global()` function can be used similarly to `terra::app()` for simple functions, such as calculating the mean of all values in the entire raster layer:
 
 ```r
-global_trawl_proportion_avg <- terra::global(trawl_depth_proportion_interpolated, fun = "mean", na.rm = TRUE)
-trawl_depth_proportion_interpolated[is.na(trawl_depth_proportion_interpolated)] <- global_trawl_proportion_avg[1,1]
+global_trawl_proportion_avg <- terra::global(trawl_depth_proportion_interpolated, 
+                                            fun = "mean", 
+                                            na.rm = TRUE)
+trawl_depth_proportion_interpolated[is.na(
+trawl_depth_proportion_interpolated)] <- global_trawl_proportion_avg[1,1]
 ```
 
 In order to check if any `NA` values remain, we can use other arguments for `terra::global()` that returns the sum of all NA values in the `spatRaster`:
@@ -80,49 +90,64 @@ In order to check if any `NA` values remain, we can use other arguments for `ter
 terra::global(trawl_depth_proportion_interpolated, fun = "isNA")
 ```
 
-Next, we want to resample that `spatRaster` to match the resolution of the trawling fishing effort `spatRaster`, which has a higher resolution of 0.01 meters. We also use nearest neighbor for this step:
+Next, we want to resample that `spatRaster` to up-sample the resolution to match that of the other raster, which has a higher resolution of 0.01 meters:
 
 ```r
-# resample the interpolated trawling proportion data to match the resolution of the GFW fishing effort data
-  trawl_depth_proportion_resampled <- terra::resample(x = trawl_depth_proportion_interpolated, 
-                                                      y = fish_effort_trawl, # use the GFW data as the sample geometry
-                                                      method = "near") # nearest neighbor
+# resample the interpolated trawling proportion data
+# match the resolution of the GFW fishing effort data
+  trawl_depth_proportion_resampled <- terra::resample(x = trawl_depth_proportion_interpolated,
+                                                    # use the GFW data as the sample geometry
+                                                      y = fish_effort_trawl,
+                                                    # nearest neighbor calculation to up-sample
+                                                      method = "near") 
 ```
 
-Next, we need to match the `spatRaster` extents, which is the minimum and maximum coordinates in both the x and y directions. We use `terra::extend()` for this, and first extend one to the extent of the other, and then vice versa so ensure that each of the 4 dimensions are maximized and consistent with the other `spatRaster`. If we were to use the `raster` package, the equavalent (but slower) function goes by the same name. Both packages also have the function `crop()` that reduces the extent of a larger rater to that of a smaller raster.
+Next, we need to match the `spatRaster` extents, which is the minimum and maximum coordinates in both the x and y directions (xmin, xmax, ymin, ymax). We use `terra::extend()` for this. First extend one `spatRaster` to the extent of the other, and then vice versa to ensure that each of the four dimensions are maximized and consistent with the other `spatRaster`. If we were to use the `raster` package, the equavalent (but slower) function goes by the same name. Both packages also have the function `crop()` that reduces the extent of a larger rater to that of a smaller raster.
 
 ```r
-trawl_depth_proportion_extended <- terra::extend(trawl_depth_proportion_raster, fish_effort_raster)
-fish_effort_extended <- terra::extend(fish_effort_raster, trawl_depth_proportion_extended)
+trawl_depth_proportion_extended <- terra::extend(trawl_depth_proportion_raster, 
+                                                fish_effort_raster)
+fish_effort_extended <- terra::extend(fish_effort_raster, 
+                                      trawl_depth_proportion_extended)
 ```
 
 In order to check if the extents match, we can use `terra::compareGeom()` to return `TRUE` or `FALSE`:
 
 ```r
 terra::compareGeom(fish_effort_extended, trawl_depth_proportion_extended, stopOnError = FALSE)
-# setting stopOnError = FALSE makes the function return FALSE if the extents are different, rather than erroring
+# setting stopOnError = FALSE makes the function return FALSE if the extents are different
 ```
 
-Then we use `terra::writeRaster()` to re-write the two extended `spatRasters` as `.tif` files to the same directory so we can read them in as `spatRasters` in our next loop.
+There is no direct equivalent `raster` function for `terra::compareGeom()`, but it's quite handy! One annual map of fishing effort ends up looking like this:
+
+<img src="/images/terra_post/2017_map.png" style="width: 70%; height: 70%"/>
+
+
+Next, we use `writeRaster()` to re-write the two extended `spatRasters` as `.tif` files to the same directory so we can read them in as `spatRasters` in our next loop.
 
 The last step before multiplying the `spatRasters` is to stack them. With the `raster` package, we would use the `stack()` function. With `terra`, we simply read in the `spatRasters` simultaneously from the same directory using the familiar function `terra::rast()` and the result is a `spatRaster` object with two layers that have matching resolutions, origins, and extents!
 
 ```r
 # define the 2 raster filepaths as an object 
-rasters <- list.files(paste0(dir_M, "/git-annex/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022/int/fish_effort_annual/trawling/", i, "/extended/"), pattern = ".tif", full = TRUE)
+rasters <- list.files(paste0(dir_M,
+"/git-annex/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022/int/fish_effort_annual/
+trawling/", i, "/extended/"), pattern = ".tif", full = TRUE)
 
 # stack the spatRasters, with each spatRaster representing 1 layer:
 trawl_stack <- terra::rast(rasters)
 ```
 
 Finally, it's time to multiply the `spatRasters`! There are a few options for multiplying, summing, taking the mean of two rasters, or executing custom functions in the `terra` package. For example, you could use `app()`, `lapp()`, `sapp()`, etc. You should choose your calcuation function depending on:
-- if you are calculating through layers, across only one layer, if you are using the same calculation on all layers or not (for example, if you have three layers you might execute `x * y * z` or `x * y + z`) and if your function is simple (like "sum") or a complex custom function that would take much more compute to execute over a large, global `spatRaster`. Since we are working with only two layers and are executing a basic multiplication, we can use the simplest option: `app()` or have a little more fun with the syntax and use `lapp()` like so:
+- if you are calculating through layers, across only one layer, if you are using the same calculation on all layers or not (for example, if you have three layers you might execute `x * y * z` or `x * y + z`)
+- if your function is simple (like "sum" or "mean") or a complex custom function that would take much more compute to execute over a large, global `spatRaster`.
+
+Since we are working with only two layers and are executing a basic multiplication, we can use the simplest option: `app()` or have a little more fun with the syntax and use `lapp()` like so:
 
 ```r
 trawling_corrected <- terra::lapp(trawl_stack, fun = function(x,y){return(x*y)})
 ```
 
-If we were working with `rasterLayers` in the `raster` package, we would have used the general function for simple calculations: `calc()`.
+If we were working with `rasterLayers` in the `raster` package, we would have used the general function `calc()` for simple calculations.
 
 When we clean up the dredging `spatRaster` and want to add that to this corrected trawling raster, we can stack them similarly and execute simple addition across layers:
 
@@ -130,13 +155,24 @@ When we clean up the dredging `spatRaster` and want to add that to this correcte
 all_fishing <- terra::app(effort_stack, fun = "sum", na.rm = TRUE)
 ```
 
-### Sea Level Rise
+In order to pair the trawling and dredging fishing effort with the 220 OHI regions, we extract the trawling and dredging points from the exclusive economic zone polygons that are associated with each region.
+- In `raster` and `terra`, we would use their respective functions both called `extract()`. `terra::extract()` allows for more flexibility in extracting the proportion of cells that fall within the polygons, if they are on the borders. However, our experience with these functions is that they are very slow to execute.
+- `exact_extractr::exact_extract()` offers _much_ faster processing speeds, but requires different syntax. This function allows the user different options for the output that range in complexity. For example, one can extract a list of dataframes, each of which contains the cell values and weight (coverage proportion) for one polygon. The user can then use those values and weights as they want. Alternatively, `exact_extractr()` can do a weighted calculation for us, with arguments that specfies a _weighted_ function and the data to use as weights.
+
+That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Let's move on to tidal flats!
 
 ## Designing new workflows
 
 ### Tidal flat habitat (extent, trend, and condition)
 
-The 2022 OHI analysis decided to include tidal flat as a new habitat type. This new habitat will affect the habitat subgoal of biodiversity, coastal protection goal, and carbon storage goal. We are also evaluating its potential as a resilience layer towards clean waters, by providing vital habitat for many filter feeding bivalves which have been shown to purify water such as oysters. 
+The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal flat is defined as area where river and ocean sediments deposit mud or sand. An increase in tidal flat extent over time can imply that fresh water systems are decreasing in size (such as a river would if it downstream from a newly constructed dam), revealing more muddy sediment on the riverbanks. Additionally, countries may implement restoration efforts for tidal flats that decrease urban expansion into these zones, resulting in an increase in coverage.
+
+This new habitat will affect the following goals:
+- habitat subgoal of biodiversity
+- coastal protection 
+- carbon storage
+
+We are also evaluating its potential as a resilience layer towards the clean waters goal by assessing vital habitat for many filter feeding bivalves which have been shown to purify water. 
 
 #### Data exploration  
 
@@ -272,7 +308,7 @@ Now we can see that this tile falls along a section of coastline, and has both 0
 
 #### Designing a workflow
 
-Now that we know our files contain what we expect, and have seen a few outputs, it is time to design a workflow that will allow us to extract the information we want from the files. For OHI, our first goal is to summarize the extent of habitat in each region, for each time step . Our ideal final product will have an extent measured in km<sup>2</sup>, the region ID, the year, and the habitat type. 
+Now that we know our files contain what we expect, and have seen a few outputs, it is time to design a workflow that will allow us to extract the information we want from the files. For OHI, our first goal is to summarize the extent of habitat in each region, for each time step. Our ideal final product will have an extent measured in km<sup>2</sup>, the region ID, the year, and the habitat type. 
 
 Even though each time step is broken into 108 files, the resolution still makes this data hard to work with. The `terra` package offers a solution to reduce resolution, often referred to as down-sampling. The function `terra::aggregate()` allows a user to specify how many pixels should be connected into one and what function to use on the pixels being aggregated. In our case we want to sum the pixels to retain all of the habitat information. We want to choose a resolution that will allow us to continue using the rasters for analysis without bogging down our computer. We chose to down-sample to ~1 km<sup>2</sup> resolution by choosing 30 pixels as our aggregation factor. Our final function then looks like:
 ```r
@@ -280,7 +316,7 @@ down_sampled_image <- terra::aggregate(x = image, fact = 30, fun = sum, na.rm = 
 ```
 The true resolution in km<sup>2</sup> can be found with a bit of simple math, 30 meters by 30 pixels is 900 meters so our new pixel has dimensios 900 x 900 meters. We then divide these new dimensions by by a pixel with an area of 1 km<sup>2</sup>: (900 * 900)/(1,000 * 1,000) = 0.81 km^2<sup>2</sup>. 
 
-Our next goal is to convert pixel counts, into area. If the native raster cells are 30 m x 30 m, then a raster cell with a value of 1 would be equivalent to 0.0009 km<sup>2</sup> habitat area. This can be found by multiplying the pixel dimensions together and dividing by a pixel with an area of 1 km<sup>2</sup>: (30 * 30) / (1,000 * 1,000) = 0.0009 km<sup>2</sup>. The simplest way to convert to area in this scenario with `terra` is to simply multiply our down-sampled raster by 0.0009. 
+Our next goal is to convert pixel counts into area. If the native raster cells are 30 x 30 meters, then a raster cell with a value of 1 would be equivalent to 0.0009 km<sup>2</sup> habitat area. This can be found by multiplying the pixel dimensions together and dividing by a pixel with an area of 1 km<sup>2</sup>: (30 * 30) / (1,000 * 1,000) = 0.0009 km<sup>2</sup>. The simplest way to convert to area in this scenario with `terra` is to simply multiply our down-sampled raster by 0.0009. 
 ```r
 down_sampled_image <- down_sampled_image * 0.0009
 ```
@@ -304,7 +340,7 @@ Output (frequency table)
 
 Results look good! Just as expected, we now have raster cells at ~1 km<sup>2</sup> resolution, with cell values representing the area in km<sup>2</sup> of tidal flat habitat. In this case there are 61 cells which contained a single cell of tidal flat, prior to aggregation, 59 which had two, and so on.
 
-Now we need to extract the values that fall with each OHI region polygon. To do this we use another package new to OHI, `exactextractr`. This package allows us to extract values from polygons and return an estimate if a polygon goes through a raster cell. This is handy for after aggregation as it allows us to maintain a higher level of precision. The `raster::extract()` function will only include a cell if the center of the cell falls inside a polygon. Our shapefile has separate polygons for a countries EEZ and for their land area. We want to use both because our data primarily goes through the intersection of these two polygons. Our function then looks like:
+Now we need to extract the values that fall with each OHI region polygon. To do this we use another package new to OHI, `exactextractr`. As we saw above in the soft bottom habitat analysis, this package allows us to extract values from polygons and return an estimate if a polygon goes through a raster cell. This is handy to implement after aggregation as it allows us to maintain a higher level of precision. The `raster::extract()` function will only include a cell if the center of the cell falls inside a polygon. Our shapefile has separate polygons for all regions' EEZ's and for their land area. We want to use both because our data primarily goes through the intersection of these two polygons. Our function then looks like:
 ```r
 regions_eez_and_land <- here::here('regions.shp') %>% 
   sf::read_sf() %>%
@@ -322,7 +358,7 @@ exactextractr::exact_extract(
 
 Unfortunately, our regions file is not public, but this will work with any polygon shapefile with matching CRS. 
 
-Now that we have a workflow that works on a single raster, all we have to do is desing a loop that goes through each file and outputs a simple `.csv` file.
+Now that we have a workflow that works on a single raster, all we have to do is design a loop that goes through each file and outputs a simple `.csv` file.
 
 ```r 
 tictoc::tic() # time this code 
@@ -418,5 +454,5 @@ There is a lot to take in there, but if you follow it line by line it isn't too 
 
 #### Checking results
 
-Compare against the paper results.
+Compare against the paper results. Check out this full script on the OHI repository for the 2022 assessment [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_tidal_flat/v2022). 
 
