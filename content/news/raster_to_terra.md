@@ -143,7 +143,7 @@ terra::compareGeom(
 There is no direct equivalent `raster` function for `terra::compareGeom()`, but it's quite handy! One annual map of fishing effort ends up looking like this:
 
 <center>
-<img src="/images/terra_post/2017_map.png" style="width: 70%; height: 70%"/>
+<img src="/images/terra_post/map_2017.png" style="width: 70%; height: 70%"/>
 </center>
 
 Next, we use `writeRaster()` to re-write the two extended `spatRasters` as `.tif` files to the same directory so we can read them in as `spatRasters` in our next loop.
