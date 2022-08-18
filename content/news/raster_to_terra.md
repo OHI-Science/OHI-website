@@ -15,8 +15,17 @@ menu:
 
 {{<newsHead>}}
 
-Spatial data in `R` has a reputation for being tedious and time consuming. With so many file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few), it can be challenging to wrangle data and metadata to execute analyses and visualize results. The [Ocean Health Index](https://oceanhealthindex.org/) has historically applied the `raster` package to monitor the relationship between the health of marine systems and human well-being for 220 regions. The Ocean Health Index program aims to continuously improve methodology while keeping up with the hip trends in environmental science, which motivated the switch from using `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. However, there were certainly some bumps along the road. Let's take a look at how we converted our workflows to calculate `soft bottom habitat destruction` and `sea level rise`, while implementing new data layers for `tidal flat habitat`.
+Spatial data in `R` has a reputation for being tedious and time consuming. With so many file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few), it can be challenging to wrangle maps and metadata and and visualize results. The Ocean Health Index has historically utilized the `raster` package to monitor the relationship between the health of marine systems and human well-being for 220 regions. The Ocean Health Index program aims to continuously improve methodology while keeping up with the hip trends in environmental science, which motivated the switch from using `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. Some examples of similar functions between `raster` and `terra` are as follows:
 
+`raster`|`terra`|Use
+`raster()`|`rast()`|Rasterize a spatial file (such as a `.tif` or a sptial dataframe) into a `rasterLayer` (`raster`) or `spatRaster` (`terra`)
+`stack()`|`rast()`|Create raster stack of multiple rasters in order to execute calculations across layers. `rast()` is a more broadly applicable function since it can detect if there is only 1 `spatRaster` or multiple, and if there are multiple within the same directory, then it creates a stack automatically without any additional arguments.
+`calc()`|`app()`, `lapp()`, `focal()`, etc.|Execute a function across a raster or raster stack. `terra` has multiple functions with varying degrees of flexibility depending on if the function is applied across layers, and if the same function is applied to each layer.
+`resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a low resolution of 0.5 degrees to 0.01 degrees to match the resolution of the second raster.
+`extract()`|`extract()`|Pull value from a raster object where they intersect the locations of another spatial object, such as points that may fall within polygons. For `raster()`, the spatial objects can be points, lines, and polygons. For `terra`, the second spatial object must be a vector or matrix/dataframe of coordinates. For example, the spatial object from which we are extracting are polygons, the user cannot input a spatial dataframe, but rather needs to vectorize the geometry column of the polygons to use `terra::extract()`. 
+
+
+Let's take a look at how we converted our workflows to calculate `soft bottom habitat destruction` and implemented a new spatial extent layer for `tidal flat habitat`.
 
 <br>
 
@@ -24,11 +33,11 @@ Spatial data in `R` has a reputation for being tedious and time consuming. With 
 
 ### Soft Bottom Habitat Destruction
 
-The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, which severely disturb benthic habitat. The fisheries catch data is rasterized and overlaid onto  EEZ polygons for all regions, then standardized by dividing each fishing coordinate value by the kilometers squared of softbottom habitat within those polygons. In 2022, OHI converted this `raster` workflow to `terra`, and switch the data source from fisheries catch to apparent fishing effort for trawling and dredging from Global Fishing Watch. This data comes with the hours of fishing effort associated with the latitude and longitude of each fishing detection, the gertype used, and a timestamp.
+The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, because these types of fishing severely disturb benthic habitat. The fisheries catch data is rasterized and overlaid onto polygons of exclusive economic zones for all OHI regions, then spatially standardized by dividing each fishing coordinate value by the kilometers squared of softbottom habitat. In 2022, OHI switched the data source from fisheries catch to apparent fishing effort for trawling and dredging from [Global Fishing Watch](www.globalfishingwatch.org) using their new [API](https://github.com/GlobalFishingWatch/gfwr). This data comes in units of hours of fishing effort associated with the latitude and longitude of each fishing detection, the geartype used, and a timestamp.
 
-While cleaning the Gloal Fishing Watch data, we separate it into different dataframes for trawling and dredging since we need to process the trawling data differently than the dredging data. In order to convert the fishing effort coordinates into annual rasters, we use the following approach:
+While initially cleaning the Global Fishing Watch data, we separate it into different dataframes for trawling and dredging since we need to process the geartypes differently. In order to convert the fishing effort coordinates into annual `spatRasters`, we use the following approach:
 
-```{r}
+```r
 years = as.factor(2012:2020) 
 
 for(i in years){
@@ -43,12 +52,13 @@ for(i in years){
 }
 ```
 
-`terra` is processes this dataframe into a `spatRaster` object because we simplified it into just 3 columns: x, y, and fishing effort, and with the argument `type = "xyz"` we specified that there's an x value, y value, and other value (z) at that xy coordinate. Note that the `WGS84` coordinate reference system is specified using the simple `"EPSG:4326"` syntax, rather than the complex `proj4` format that `raster::raster()` prefers: `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`. We run the same code for the dredging dataframe. 
+`terra` processes this dataframe into a `spatRaster` object because we simplified it into just 3 columns: x, y, and fishing effort, and with the argument `type = "xyz"` we specified that there's an x value, y value, and other value (z) at that coordinate. Note that the `WGS84` coordinate reference system is specified using the simple `"EPSG:4326"` syntax, rather than the complex `proj4` format that `raster::raster()` prefers: `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`. We run the same code for the dredging dataframe. 
 
-Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the fishing method that damages the seafloor. We do this by multiplying the trawling `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling that occurred at that coordinate. That second raster was produced by using the fishieries catch data as a proxy for bottom trawling. In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpoaltion takes 2 steps:
-1. Use the local mean of surrounding cells to fill in `NA` values (nearest neighbor) using `terra::focal()` like so:
+Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the trawling method that damages the seafloor. We do this by multiplying the trawling `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate. In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:
 
-```{r}
+> 1. Use the local mean of surrounding cells to fill in `NA` values (nearest neighbor) using `terra::focal()` like so:
+
+```r
 trawl_depth_proportion_interpolated <- terra::focal(x = trawl_depth_proportion, 
                                                       w = 5, # sets a 5 cell window around NA pixel
                                                       fun = "mean", 
@@ -57,38 +67,38 @@ trawl_depth_proportion_interpolated <- terra::focal(x = trawl_depth_proportion,
                                                       overwrite = TRUE)
 ```
 
-2. Interpoalte all remaining `NA` values using the `terra::global()` function:
+> 2. Interpoalte all remaining `NA` values using the `terra::global()` function:
 
-```{r}
+```r
 global_trawl_proportion_avg <- terra::global(trawl_depth_proportion_interpolated, fun = "mean", na.rm = TRUE)
 trawl_depth_proportion_interpolated[is.na(trawl_depth_proportion_interpolated)] <- global_trawl_proportion_avg[1,1]
 ```
 
 In order to check if any `NA` values remain, we can use other arguments for `terra::global()` that returns the sum of all NA values in the `spatRaster`:
 
-```{r}
+```r
 terra::global(trawl_depth_proportion_interpolated, fun = "isNA")
 ```
 
 Next, we want to resample that `spatRaster` to match the resolution of the trawling fishing effort `spatRaster`, which has a higher resolution of 0.01 meters. We also use nearest neighbor for this step:
 
-```{r}
+```r
 # resample the interpolated trawling proportion data to match the resolution of the GFW fishing effort data
   trawl_depth_proportion_resampled <- terra::resample(x = trawl_depth_proportion_interpolated, 
                                                       y = fish_effort_trawl, # use the GFW data as the sample geometry
                                                       method = "near") # nearest neighbor
 ```
 
-Next, we need to match the `spatRaster` extents, which is the minimum and maximum coordinates in both the x and y directions. We use `terra::extend()` for this, and first extend one to the extent of the other, and then vice versa so ensure that each of the 4 dimensions are maximized and consistent with the other `spatRaster`.
+Next, we need to match the `spatRaster` extents, which is the minimum and maximum coordinates in both the x and y directions. We use `terra::extend()` for this, and first extend one to the extent of the other, and then vice versa so ensure that each of the 4 dimensions are maximized and consistent with the other `spatRaster`. If we were to use the `raster` package, the equavalent (but slower) function goes by the same name. Both packages also have the function `crop()` that reduces the extent of a larger rater to that of a smaller raster.
 
-```{r}
+```r
 trawl_depth_proportion_extended <- terra::extend(trawl_depth_proportion_raster, fish_effort_raster)
 fish_effort_extended <- terra::extend(fish_effort_raster, trawl_depth_proportion_extended)
 ```
 
 In order to check if the extents match, we can use `terra::compareGeom()` to return `TRUE` or `FALSE`:
 
-```{r}
+```r
 terra::compareGeom(fish_effort_extended, trawl_depth_proportion_extended, stopOnError = FALSE)
 # setting stopOnError = FALSE makes the function return FALSE if the extents are different, rather than erroring
 ```
@@ -97,7 +107,7 @@ Then we use `terra::writeRaster()` to re-write the two extended `spatRasters` as
 
 The last step before multiplying the `spatRasters` is to stack them. With the `raster` package, we would use the `stack()` function. With `terra`, we simply read in the `spatRasters` simultaneously from the same directory using the familiar function `terra::rast()` and the result is a `spatRaster` object with two layers that have matching resolutions, origins, and extents!
 
-```{r}
+```r
 # define the 2 raster filepaths as an object 
 rasters <- list.files(paste0(dir_M, "/git-annex/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022/int/fish_effort_annual/trawling/", i, "/extended/"), pattern = ".tif", full = TRUE)
 
@@ -105,18 +115,20 @@ rasters <- list.files(paste0(dir_M, "/git-annex/globalprep/hab_prs_hd_subtidal_s
 trawl_stack <- terra::rast(rasters)
 ```
 
-Finally, it's time to multiply the `spatRasters`! There are a few options for multiplying, summing, taking the mean of two rasters, or executing custom functions in the `terra` package. For example, you could use `app()`, `lapp()`, `sapp()`, etc. You should choose your function based on if you are calculating through layers, across only 1 layer, if you are using the same calculation on all layers or not (for example, if you have 3 layers you might execute `x * y * z` or `x * y + z`) and if your function is simple (like "sum") or a complex custom function that would take much more compute to execute over a large, global `spatRaster`. Since we are working with only 2 layers and are executing a basic multiplication, we can use the simplest option: `app()` or have a little more fun with the syntax and use `lapp()` like so:
+Finally, it's time to multiply the `spatRasters`! There are a few options for multiplying, summing, taking the mean of two rasters, or executing custom functions in the `terra` package. For example, you could use `app()`, `lapp()`, `sapp()`, etc. You should choose your calcuation function depending on:
+- if you are calculating through layers, across only one layer, if you are using the same calculation on all layers or not (for example, if you have three layers you might execute `x * y * z` or `x * y + z`) and if your function is simple (like "sum") or a complex custom function that would take much more compute to execute over a large, global `spatRaster`. Since we are working with only two layers and are executing a basic multiplication, we can use the simplest option: `app()` or have a little more fun with the syntax and use `lapp()` like so:
 
-```{r}
+```r
 trawling_corrected <- terra::lapp(trawl_stack, fun = function(x,y){return(x*y)})
 ```
 
+If we were working with `rasterLayers` in the `raster` package, we would have used the general function for simple calculations: `calc()`.
+
 When we clean up the dredging `spatRaster` and want to add that to this corrected trawling raster, we can stack them similarly and execute simple addition across layers:
 
-```{r}
+```r
 all_fishing <- terra::app(effort_stack, fun = "sum", na.rm = TRUE)
 ```
-
 
 ### Sea Level Rise
 
