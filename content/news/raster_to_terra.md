@@ -64,7 +64,29 @@ for(i in years){
 
 `terra` processes this dataframe into a `spatRaster` object because we simplified it into just 3 columns: x, y, and fishing effort, and with the argument `type = "xyz"` we specified that there's an x value, y value, and other value (z) at that coordinate. Note that the `WGS84` coordinate reference system is specified using the simple `"EPSG:4326"` syntax, rather than the complex `proj4` format that `raster::raster()` prefers: `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`. We run the same code for the dredging dataframe. 
 
-Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the trawling method that damages the seafloor. We do this by multiplying this trawling effort `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate, provided by Watson and Tidd (2018). In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:
+Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the trawling method that damages the seafloor. In order to do this, we multiply the trawling effort `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate, provided by Watson and Tidd (2018). The raw trawling proportion raster has many `NA` values:
+
+<center>
+<img src="/images/terra_post/trawling_prop_2017_raw.png"/>
+</center>
+
+We can check the initial resolution, extent, and other characteristics by calling the raster and viewing the output:
+
+```r
+class       : SpatRaster 
+dimensions  : 360, 720, 1  (nrow, ncol, nlyr)
+resolution  : 0.5, 0.5  (x, y)
+extent      : -180, 180, -90, 90  (xmin, xmax, ymin, ymax)
+coord. ref. : lon/lat WGS 84 (EPSG:4326) 
+source      : bottom_trawl_prop_2017.tif 
+name        : bottom_trawl_prop_2017 
+min value   :                      0 
+max value   :                      1 
+```
+
+Note that the resolution is 0.5 meters. We want to up-sample this raster to increase the resolution to that of the fishing raster, which is 0.01 meters.
+
+In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:
 
 **1. Use the local mean of surrounding cells to fill in `NA` values (nearest neighbor) using `terra::focal()`.**
 
@@ -115,6 +137,30 @@ trawl_depth_proportion_resampled <- terra::resample(
 ) 
 ```
 
+The fully interpolated and resampled map for trawling proportion looks like this:
+
+<center>
+<img src="/images/terra_post/trawling_prop_2017_interp.png"/>
+</center>
+
+The continents cells are filled in with a value of 1 because they were `NA` before, and we used `terra::global()` to fill in all the remaining `NA` values with 1. While it does not make logical sense to assign land value with a trawling proportion value, this is fine for our case because the only purpose of this raster is to maintain all the trawling fishing effort in the other raster, and subset many of them to a smaller value if the proportion is less than 1. All the land cells that have a value of 1 will be multiplied by NA in the fishing effort raster, so they will not be counted in the final fishing effort scores.
+
+We can check that the resolution was increased to 0.01 meters by calling the name of the raster again to view the adjusted raster characteristics:
+
+```r
+class       : SpatRaster 
+dimensions  : 14930, 36001, 1  (nrow, ncol, nlyr)
+resolution  : 0.01, 0.01  (x, y)
+extent      : -180.005, 180.005, -67.315, 81.985  (xmin, xmax, ymin, ymax)
+coord. ref. : lon/lat WGS 84 (EPSG:4326) 
+source      : trawl_depth_proportion_resampled_2017.tif 
+name        : focal_mean 
+min value   :          0 
+max value   :          1 
+```
+
+Great!
+
 Next, we need to match the `spatRaster` extents, which is the minimum and maximum coordinates in both the x and y directions (xmin, xmax, ymin, ymax). We use `terra::extend()` for this. First extend one `spatRaster` to the extent of the other, and then vice versa to ensure that each of the four dimensions are maximized and consistent with the other `spatRaster`. If we were to use the `raster` package, the equivalent (but slower) function goes by the same name. Both packages also have the function `crop()` that reduces the extent of a larger rater to that of a smaller raster.
 
 ```r
@@ -140,10 +186,12 @@ terra::compareGeom(
 
 ```
 
-There is no direct equivalent `raster` function for `terra::compareGeom()`, and it's quite handy! One annual map of fishing effort looks like this:
+There is no direct equivalent `raster` function for `terra::compareGeom()`, and it's quite handy! 
+
+The 2017 map of fishing effort looks like this:
 
 <center>
-<img src="/images/terra_post/map_2017.png" style="width: 70%; height: 70%"/>
+<img src="/images/terra_post/map_2017.png"/>
 </center>
 
 Next, we use `writeRaster()` to re-write the two extended `spatRasters` as `.tif` files to the same directory so we can read them in as `spatRasters` in our next loop. 
@@ -240,7 +288,7 @@ for (i in years_all) {
 }
 ```
 
-That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Let's move on to tidal flats!
+That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Please feel free to contact the OHI team with any questions or suggestions. For more spatial rangling with `terra`, check out the blog post about our new tidal flats data layer!
 
 ## References
 
