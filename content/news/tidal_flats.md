@@ -16,11 +16,11 @@ menu:
 
 {{<newsHead>}}
 
-The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems as a new habitat type. This new habitat will complement the existing habitat types seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom. Currently, tidal flats will affect the habitat subgoal, carbon storage goal, and coastal protection goal. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
+The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom. Tidal flats will affect the habitat subgoal, carbon storage goal, and coastal protection goal scores. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
 
 ## Designing a new workflow
 
-This post will give a brief explanation of tidal flat habitat, explore the new dataset, and demonstrate how to programmatically summarize the data in the R software environment. The goal of the data summarization is to distill the large raster dataset into simple tabular data which can be integrated into the OHI annual analysis as new data layers for 2022.  
+This post will give a brief explanation of tidal flat habitat, explore the new dataset, and demonstrate how to programmatically summarize the data in the R software environment. The goal of data summarization is to distill the large raster dataset into simple tabular data which can be integrated into the OHI annual analysis as new data layers for 2022.  
 
 ### Tidal flat data
 
@@ -163,7 +163,7 @@ ggplot(data = world) +
 
 Now we can see that this tile falls along a section of coastline, and has both 0 and 1 values. Things look good so far. 
 
-#### Designing a workflow
+### Transforming the data
 
 Now that we know our files contain what we expect, and have seen a few outputs, it is time to design a workflow that will allow us to extract the information we want from the files. For OHI, our goal is to summarize the extent of habitat in each region, for each time step. Our ideal final product will have an extent measured in km<sup>2</sup>, the region ID, the year, and the habitat type. 
 
@@ -247,12 +247,13 @@ exactextractr::exact_extract(
 )
 ```
 
-#### Putting it all together
+### Putting it all together
 
 Now that we have a workflow that has been tested on a single raster, all we have to do is design a loop that goes through each raster file and outputs a simple `.csv` file.
 
 ```r 
-dir.create("int") # create an empty intermediate output folder
+### Create an empty intermediate output folder
+dir.create("int") 
 
 tictoc::tic() # time this code 
 
@@ -345,19 +346,20 @@ There is a lot to take in there, but if you follow it line by line it isn't too 
 > Summarize to the region level  
 > Write the results!  
 
-#### Consolidate results
+### Consolidate results
 
 The end result of the above workflow produces a single `.csv` file for every raster in every time step with the extent of tidal wetland in every OHI region. We also know that each raster only covers a 1/108 chunk of the globe, which means there are a lot of 0 values in each of the files. These can be further condensed and summarized with a simple for loop. 
 
 ```r
-dir.create("output") # create an empty output folder
+### Create an empty output folder
+dir.create("output")
 
 ### list csv files with extracted tidal flat values
 files <- here::here("int", "tidal_flat") %>% 
   list.files(full.names = T)
 
 ### make an empty tibble to fill through iteration
-output <- dplyr::tibble()
+output <- tibble::tibble()
 
 ### loop through files
 for (file in files) {
