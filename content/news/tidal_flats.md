@@ -1,39 +1,40 @@
 ---
 title: "Introducing Tidal Flat Habitat"
-name: "Making the Spatial Switch"
-bg_image: "/images/banners/ca-sealion.jpg"
+name: "Same goals, new data layers!"
+bg_image: "/images/banners/tidal_zone.jpg"
 card_image: "/images/people/fellows_2022.jpg"
-preview_text: "`raster` has been the go-to spatial analysis package in R since the dawn of time, but we converted our workflow to the more modern `terra` package. At the Ocean Health Index, we work with spatial data for a plethora of goals like mapping sea ice extent and habitat types that sequester carbon throughout the land and coastal nations. Let's dive into how we converted our code from `raster` to `terra`."
-Date: 2022-08-12
+preview_text: "Tidal flats will complement the existing habitat types and will affect the habitat subgoal, carbon storage goal, and coastal protection goal. Three new data layers created are tidal flat extent, tidal flat trend, and tidal flat condition..."
+Date: 2022-08-19
 author: Cullen Molitor
 menu:
   main:
     parent: 'News'
     weight: 2
 ---
-# Switching from the `raster` package to `terra` for spatial analysis
+
+# Adding tidal flat ecosystems to OHI
 
 {{<newsHead>}}
 
-Spatial data in `R` has a reputation for being tedious and time consuming. With so many different spatial file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. The Ocean Health Index has historically utilized the `raster` package to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The Ocean Health Index aims to continuously improve methodology while keeping up with the hip trends in environmental science, which motivated the switch from using `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. 
+The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems as a new habitat type. This new habitat will complement the existing habitat types seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom. Currently, tidal flats will affect the habitat subgoal, carbon storage goal, and coastal protection goal. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
 
 ## Designing a new workflow
 
-### Tidal flat habitat (extent, trend, and condition)
+This post will give a brief explanation of tidal flat habitat, explore the new dataset, and demonstrate how to programmatically summarize the data in the R software environment. The goal of the data summarization is to distill the large raster dataset into simple tabular data which can be integrated into the OHI annual analysis as new data layers for 2022.  
 
-The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal flat is defined as sand, rock, or mud flats that undergo regular tidal inundation. The data come from a paper published in 2018 in Nature, [The global distribution and trajectory of tidal flats](https://www.nature.com/articles/s41586-018-0805-8), which used satellite imagery and machine learning methods to classify tidal flat habitat from over 700,000 satellite images between 1984 and 2016. The paper found that: 
+### Tidal flat data
+
+The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal flat is defined as sand, rock, or mud flats that undergo regular tidal inundation. The data come from a paper published in 2019 in the journal Nature, [The global distribution and trajectory of tidal flats](https://www.nature.com/articles/s41586-018-0805-8), which used satellite imagery and machine learning methods to classify tidal flat habitat from over 700,000 satellite images between 1984 and 2016. The paper found that: 
 
 > "Extensive degradation from coastal development, reduced sediment delivery from major rivers, sinking of riverine deltas, increased coastal erosion, and sea-level rise signal a continuing negative trajectory for tidal flat ecosystems around the world."
 
-This new habitat type will affect the following goals:  
+This is a vital habitat is distributed globally, but up until this publication there was very limited data on the extent of these ecosystems, especially at the global scale. Their data product has given OHI the opportunity to further improve our methods and hopefully of understanding the health of the world's oceans. 
 
-> habitat (subgoal of biodiversity)  
-> coastal protection   
-> carbon storage  
+This new habitat type will affect the habitat subgoal (of biodiversity), the coastal protection goal, and the carbon storage goal.   
 
-#### Data exploration  
+### Data exploration  
 
-The final product of published analysis were 11 sets (1 for each time step) of global maps containing tidal flat habitat at 30 meter Ground Sample Distance (GSD; AKA resolution). This means that each pixel in each raster represented 30 m<sup>2</sup>, and contained either a value of 0 for "not tidal flat", or a 1 for "tidal flat." This is a massive amount of data, but thankfully, each of the 11 time steps were broken into 108 files with discrete spatial extents, making individual files easy to work with. 
+The published data product includes 11 sets (1 for each time step) of global tidal flat extent maps at 30 meter Ground Sample Distance (GSD; AKA resolution). This means that each pixel in each raster represents 30 m<sup>2</sup>, and contains either 0 for "not tidal flat", or 1 for "tidal flat." This is a massive amount of data, but thankfully, each of the 11 time steps were broken into 108 files with discrete spatial extents, making individual files easy to work with. 
 
 So where to begin? Well first, we needed to access the data. The authors provide several options for [data access](https://www.intertidal.app/download) including through [Google Earth Engine](https://developers.google.com/earth-engine/datasets/tags/tidal-flats), [UNEP-WCMC Ocean Data Viewer](https://data.unep-wcmc.org/datasets/47), and finally through [direct download](https://www.intertidal.app/download/direct-download). We chose the direct download option and wrote a simple shell script that is executed in an R Markdown code chunk. 
 
@@ -210,7 +211,7 @@ Output (frequency table)
 
 Results look good! Just as expected, we now have raster cells at ~1 km<sup>2</sup> resolution, with cell values representing the area in km<sup>2</sup> of tidal flat habitat. In this case there are 61 cells which contained a single cell of tidal flat, prior to aggregation, 59 which had two, and so on.
 
-Now we need to extract the values that fall with each OHI region polygon. To do this we use another package new to OHI, `exactextractr`. As we saw above in the soft bottom habitat analysis, this package allows us to extract values from polygons and return an estimate if a polygon goes through a raster cell. This is handy to implement after aggregation as it allows us to maintain a higher level of precision. The `raster::extract()` function will only include a cell if the center of the cell falls inside a polygon. Our shapefile has separate polygons for all regions' EEZ's and for their land area. We want to use both because our data primarily goes through the intersection of these two polygons. 
+Now we need to extract the values that fall with each OHI region polygon. To do this we use another package new to OHI, `exactextractr`. As we saw in the previous post on soft bottom habitat analysis, this package allows us to extract values from polygons and return an estimate if a polygon goes through a raster cell. This is handy to implement after aggregation as it allows us to maintain a higher level of precision. The `raster::extract()` function will only include a cell if the center of the cell falls inside a polygon. Our shapefile has separate polygons for all regions' EEZ's and for their land area. We want to use both because our data primarily goes through the intersection of these two polygons. 
 
 The first thing we need to do is [download](https://oceanhealthindex.org/global-scores/data-download/) the OHI region [polygon file](https://mazu.nceas.ucsb.edu/data/). 
 
