@@ -3,7 +3,7 @@ title: "Introducing Tidal Flat Habitat"
 name: "Same goals, new data layers!"
 bg_image: "/images/banners/tidal_zone.jpg"
 card_image: "/images/people/fellows_2022.jpg"
-preview_text: "Tidal flats will complement the existing habitat types and will affect the habitat subgoal, carbon storage goal, and coastal protection goal. Three new data layers created are tidal flat extent, tidal flat trend, and tidal flat condition..."
+preview_text: "Tidal flats will complement the existing habitat types and will affect the habitat subgoal and carbon storage goal. Three new data layers created are tidal flat extent, tidal flat trend, and tidal flat condition..."
 Date: 2022-08-19
 author: Cullen Molitor
 menu:
@@ -16,7 +16,7 @@ menu:
 
 {{<newsHead>}}
 
-The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom. Tidal flats will affect the habitat subgoal, carbon storage goal, and coastal protection goal scores. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
+The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom. Tidal flats will affect the habitat subgoal and carbon storage goal scores. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
 
 ## Designing a new workflow
 
@@ -30,7 +30,7 @@ The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal
 
 This is a vital habitat is distributed globally, but up until this publication there was very limited data on the extent of these ecosystems, especially at the global scale. Their data product has given OHI the opportunity to further improve our methods and hopefully of understanding the health of the world's oceans. 
 
-This new habitat type will affect the habitat subgoal (of biodiversity), the coastal protection goal, and the carbon storage goal.   
+This new habitat type will affect the habitat subgoal (of biodiversity) and the carbon storage goal.   
 
 ### Data exploration  
 
