@@ -24,7 +24,7 @@ Some examples of similar functions between `raster` and `terra` are as follows:
 `raster()`|`rast()`|Rasterize a spatial file (such as a `.tif` or a spatial dataframe) into a `rasterLayer` (for the `raster` package) or `spatRaster` (for the `terra` package)
 `stack()`|`rast()`|Create raster stack to execute calculations across layers. `terra::rast()` is a more broadly applicable function since it can detect the quantity of `spatRasters` present, then automatically stacks them if there are multiple.
 `calc()`|`app()`, `lapp()`, `focal()`, etc.|Execute a function across a raster or raster stack. `terra` has multiple functions with varying degrees of flexibility depending on if the function is applied across layers, and if the same function is applied to each layer.
-`resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a resolution of 0.5 meters to 0.01 meters to match the higher resolution of the second raster.
+`resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a resolution of 0.5 degrees to 0.01 degrees to match the higher resolution of the second raster.
 `extract()`|`extract()`|Pull values from a raster object where they intersect the locations of another spatial object, such as points that fall within polygons. For `raster()`, the spatial objects can be points, lines, and polygons. For `terra`, the second spatial object must be a vector or matrix/dataframe of coordinates. For example, the spatial object from which we are extracting is a geometry columns of polygons, the user cannot input the entire spatial dataframe, but rather needs to vectorize the geometry column of the polygons using `terra::vect()` then input that object into `terra::extract()`. 
 `aggregate()`|`aggregate()`|Combine cells of a raster to create a new raster with a lower resolution (larger cells). Aggregation groups rectangular areas to create larger cells. The value for the resulting cells is computed with a user-specified function. Also know as down-sampling.  
 `freq()`|`freq()`|Create a frequency table of the values of a raster. 
@@ -84,7 +84,7 @@ min value   :                      0
 max value   :                      1 
 ```
 
-Note that the resolution is 0.5 meters. We want to up-sample this raster to increase the resolution to that of the fishing raster, which is 0.01 meters.
+Note that the resolution is 0.5 degrees. We want to up-sample this raster to increase the resolution to that of the fishing raster, which is 0.01 degrees.
 
 In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:
 
@@ -125,7 +125,7 @@ terra::global(
 )
 ```
 
-Next, we want to resample that `spatRaster` to up-sample the resolution to match that of the other raster, which has a higher resolution of 0.01 meters:
+Next, we want to resample that `spatRaster` to up-sample the resolution to match that of the other raster, which has a higher resolution of 0.01 degrees:
 
 ```r
 # resample the interpolated trawling proportion data
@@ -145,7 +145,7 @@ The fully interpolated and resampled map for trawling proportion looks like this
 
 The continents cells are filled in with a value of 1 because they were `NA` before, and we used `terra::global()` to fill in all the remaining `NA` values with 1. While it does not make logical sense to assign land value with a trawling proportion value, this is fine for our case because the only purpose of this raster is to maintain all the trawling fishing effort in the other raster, and subset many of them to a smaller value if the proportion is less than 1. All the land cells that have a value of 1 will be multiplied by NA in the fishing effort raster, so they will not be counted in the final fishing effort scores.
 
-We can check that the resolution was increased to 0.01 meters by calling the name of the raster again to view the adjusted raster characteristics:
+We can check that the resolution was increased to 0.01 degrees by calling the name of the raster again to view the adjusted raster characteristics:
 
 ```r
 class       : SpatRaster 
