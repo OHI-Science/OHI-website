@@ -1,7 +1,7 @@
 ---
 title: "Shifting from Raster to Terra"
 name: "Making the Spatial Switch"
-bg_image: "/images/banners/disturbed-fish.jpg"
+bg_image: "/images/banners/ca-sealion.jpg"
 card_image: "/images/people/fellows_2022.jpg"
 preview_text: "`raster` has been the go-to spatial analysis package in R since the dawn of time, but we converted our workflow to the more modern `terra` package. At the Ocean Health Index, we work with spatial data for a plethora of goals like mapping sea ice extent and habitat types that sequester carbon throughout the land and coastal nations. Let's dive into how we converted our code from `raster` to `terra`."
 Date: 2022-08-11
