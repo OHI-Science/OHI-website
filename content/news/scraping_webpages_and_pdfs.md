@@ -3,8 +3,8 @@ title: "Scraping Webpages and PDFs in R"
 name: "Automating inconvenient data extraction"
 bg_image: "/images/banners/disturbed-fish.jpg"
 card_image: "/images/people/fellows_2022.jpg"
-preview_text: ""
-Date: 2022-08-11
+preview_text: "What to do when the data you need are trapped in highly formatted tables spread among 185 different PDFs which are only downloadable separately... "
+Date: 2022-08-19
 author: Cullen Molitor, Peter Menzies, Juliet Cohen
 menu:
   main:
@@ -18,7 +18,7 @@ menu:
 
 ## The Use Case
 
-One of the component data layers of the Tourism OHI goal is the percent of total jobs in a region that are directly tied to tourism. In the past we've conveniently retrieved these data from the World Travel and Tourism Council (WTTC), but this was not possible for this year's assessment. We were able to access 2018 and 2020 tourism employment data indirectly via the World Economic Forum's Travel and Tourism Development Index (TTDI) --- however, this only provided values for countries and did not separately include the many territories we assess as part of the OHI. We discovered that the WTTC did provide percent change of tourism employment values for 2019--2020 and 2020--2021. We could use these values along with the 2019 data we had to calculate 2020 values for regions not included in the TTDI, and all 2021 values. The one caveat being that the percent change data were located in highly formatted tables on \~180 individual PDFs, each of which are linked separately on [this page](https://wttc.org/Research/Economic-Impact). This presented two options: several hours of mind numbing manual file downloading and data transcribing, or developing an automated scraping pipeline. The latter sounded a lot more fun.
+One of the component data layers of the Tourism OHI goal is the percent of total jobs in a region that are directly tied to tourism. In the past we've conveniently retrieved these data from the World Travel and Tourism Council (WTTC), but this was not possible for this year's assessment. We were able to access 2018 and 2020 tourism employment data indirectly via the World Economic Forum's Travel and Tourism Development Index (TTDI) --- however, this only provided values for countries and did not separately include the many territories we assess as part of the OHI. We discovered that the WTTC did provide percent change of tourism employment values for 2019--2020 and 2020--2021. We could use these values along with the 2019 data we had to calculate 2020 values for regions not included in the TTDI, and all 2021 values. The one caveat being that the percent change data were located in highly formatted tables on 185 individual PDFs, each of which are linked separately on [this page](https://wttc.org/Research/Economic-Impact). This presented two options: several hours of mind numbing manual file downloading and data transcribing, or developing an automated scraping pipeline. The latter sounded a lot more fun.
 
 ## Packages used
 
