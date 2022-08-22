@@ -16,7 +16,7 @@ menu:
 
 {{<newsHead>}}
 
-The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom. Tidal flats will affect the habitat subgoal and carbon storage goal scores. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
+The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types (seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom). Tidal flats will affect the habitat subgoal and carbon storage goal scores. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
 
 ## Designing a new workflow
 
@@ -24,13 +24,11 @@ This post will give a brief explanation of tidal flat habitat, explore the new d
 
 ### Tidal flat data
 
-The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal flat is defined as sand, rock, or mud flats that undergo regular tidal inundation. The data come from a paper published in 2019 in the journal Nature, [The global distribution and trajectory of tidal flats](https://www.nature.com/articles/s41586-018-0805-8), which used satellite imagery and machine learning methods to classify tidal flat habitat from over 700,000 satellite images between 1984 and 2016. The paper found that: 
+The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal flat is defined as sand, rock, or mud flats that undergo regular tidal inundation. The data come from a paper, [The global distribution and trajectory of tidal flats](https://www.nature.com/articles/s41586-018-0805-8), published in the journal Nature in 2019 which used satellite imagery and machine learning methods to classify tidal flat habitat from over 700,000 satellite images between 1984 and 2016. The paper found that: 
 
 > "Extensive degradation from coastal development, reduced sediment delivery from major rivers, sinking of riverine deltas, increased coastal erosion, and sea-level rise signal a continuing negative trajectory for tidal flat ecosystems around the world."
 
-This is a vital habitat is distributed globally, but up until this publication there was very limited data on the extent of these ecosystems, especially at the global scale. Their data product has given OHI the opportunity to further improve our methods and hopefully of understanding the health of the world's oceans. 
-
-This new habitat type will affect the habitat subgoal (of biodiversity) and the carbon storage goal.   
+This vital habitat is distributed globally, but up until this publication there was very limited data on the extent of these ecosystems, especially at the global scale. Their data product has given OHI the opportunity to further improve our methods and hopefully, understanding the health of the world's oceans. 
 
 ### Data exploration  
 
