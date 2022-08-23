@@ -2,7 +2,7 @@
 title: "Introducing Tidal Flat Habitat"
 name: "Same goals, new data layers!"
 bg_image: "/images/banners/tidal_zone.jpg"
-card_image: "/images/people/fellows_2022.jpg"
+card_image: "/images/news-bg.jpg"
 preview_text: "Tidal flats will complement the existing habitat types and will affect the habitat subgoal and carbon storage goal. Three new data layers created are tidal flat extent, tidal flat trend, and tidal flat condition..."
 Date: 2022-08-19
 author: Cullen Molitor
