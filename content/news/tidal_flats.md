@@ -2,7 +2,7 @@
 title: "Introducing Tidal Flat Habitat"
 name: "Same goals, new data layers!"
 bg_image: "/images/banners/tidal_zone.jpg"
-card_image: "/images/people/fellows_2022.jpg"
+card_image: "/images/tidal_flat.jpg"
 preview_text: "Tidal flats will complement the existing habitat types and will affect the habitat subgoal and carbon storage goal. Three new data layers created are tidal flat extent, tidal flat trend, and tidal flat condition..."
 Date: 2022-08-19
 author: Cullen Molitor
@@ -16,19 +16,17 @@ menu:
 
 {{<newsHead>}}
 
-The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types (seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom). Tidal flats will affect the habitat subgoal and carbon storage goal scores. The three new data layers created for this habitat type are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
+The Ocean Health Index has decided to update the [habitat](https://oceanhealthindex.org/goals/biodiversity/habitats/) subgoal of [biodiversity](https://oceanhealthindex.org/goals/biodiversity/) by adding tidal flat ecosystems to complement the existing habitat types (seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom). Tidal flat habitat is defined as sand, rock, or mud flats that undergo regular tidal inundation. This vital habitat is distributed globally, but up until this recently there was very limited data on the extent of these ecosystems, especially at the global scale.
 
-## Designing a new workflow
+The data come from a paper, [The global distribution and trajectory of tidal flats](https://www.nature.com/articles/s41586-018-0805-8) (Murray et al. 2019), which used satellite imagery and machine learning methods to classify tidal flat habitat from over 700,000 satellite images between 1984 and 2016. 
 
-This post will give a brief explanation of tidal flat habitat, explore the new dataset, and demonstrate how to programmatically summarize the data in the R software environment. The goal of data summarization is to distill the large raster dataset into simple tabular data which can be integrated into the OHI annual analysis as new data layers for 2022.  
-
-### Tidal flat data
-
-The 2022 OHI analysis decided to include tidal flat as a new habitat type. Tidal flat is defined as sand, rock, or mud flats that undergo regular tidal inundation. The data come from a paper, [The global distribution and trajectory of tidal flats](https://www.nature.com/articles/s41586-018-0805-8), published in the journal Nature in 2019 which used satellite imagery and machine learning methods to classify tidal flat habitat from over 700,000 satellite images between 1984 and 2016. The paper found that: 
+This new dataset has given OHI the opportunity to further improve our methods and in turn, the ability to understand the health of the world's oceans. For example, the paper found that: 
 
 > "Extensive degradation from coastal development, reduced sediment delivery from major rivers, sinking of riverine deltas, increased coastal erosion, and sea-level rise signal a continuing negative trajectory for tidal flat ecosystems around the world."
 
-This vital habitat is distributed globally, but up until this publication there was very limited data on the extent of these ecosystems, especially at the global scale. Their data product has given OHI the opportunity to further improve our methods and hopefully, understanding the health of the world's oceans. 
+Tidal flats will affect the OHI global scores by adding additional layers to the habitat subgoal and carbon storage goal. The three new data layers created are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
+
+This post will give a brief explanation of tidal flat habitat, explore the new dataset, and demonstrate how to programmatically summarize the data in the R software environment. The goal of data summarization is to distill the large raster dataset into simple tabular data which can be integrated into the OHI annual analysis as new data layers for 2022 and beyond.  
 
 ### Data exploration  
 
