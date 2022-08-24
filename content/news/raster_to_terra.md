@@ -11,33 +11,79 @@ menu:
     parent: 'News'
     weight: 2
 ---
+
 # Switching from the `raster` package to `terra` for spatial analysis
 
 {{<newsHead>}}
 
-Spatial data in `R` has a reputation for being tedious and time consuming. With so many different spatial file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. The Ocean Health Index has historically utilized the `raster` package to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The Ocean Health Index aims to continuously improve methodology while keeping up with the hip trends in environmental science, which motivated the switch from using `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. 
+Spatial data in `R` has a reputation for being tedious and time consuming. With so many different spatial file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the `raster` package to make maps, calculate cell values across different layers, and recognize patterns over space anf time. In pursuit of improved methodology and keeping up with the hip trends in environmental science, many scientists are motivated to make the spatial switch from `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. 
 
 Some examples of similar functions between `raster` and `terra` are as follows:
 
 `raster`|`terra`|Use
 --------|-------|---
 `raster()`|`rast()`|Rasterize a spatial file (such as a `.tif` or a spatial dataframe) into a `rasterLayer` (for the `raster` package) or `spatRaster` (for the `terra` package)
-`stack()`|`rast()`|Create raster stack to execute calculations across layers. `terra::rast()` is a more broadly applicable function since it can detect the quantity of `spatRasters` present, then automatically stacks them if there are multiple.
+`stack()`|`rast()`, `c()`|Create raster stack to execute calculations across layers. `terra::rast()` is a more broadly applicable function since it can detect the quantity of `spatRasters` present as `.tif` files, then automatically stacks them if there are multiple. Alternatively, if the files have already been read in, use `c()` to stack them and assign and assign the stack to a new object name.
 `calc()`|`app()`, `lapp()`, `focal()`, etc.|Execute a function across a raster or raster stack. `terra` has multiple functions with varying degrees of flexibility depending on if the function is applied across layers, and if the same function is applied to each layer.
 `resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a resolution of 0.5 degrees to 0.01 degrees to match the higher resolution of the second raster.
 `extract()`|`extract()`|Pull values from a raster object where they intersect the locations of another spatial object, such as points that fall within polygons. For `raster()`, the spatial objects can be points, lines, and polygons. For `terra`, the second spatial object must be a vector or matrix/dataframe of coordinates. For example, the spatial object from which we are extracting is a geometry columns of polygons, the user cannot input the entire spatial dataframe, but rather needs to vectorize the geometry column of the polygons using `terra::vect()` then input that object into `terra::extract()`. 
-`aggregate()`|`aggregate()`|Combine cells of a raster to create a new raster with a lower resolution (larger cells). Aggregation groups rectangular areas to create larger cells. The value for the resulting cells is computed with a user-specified function. Also know as down-sampling.  
+`aggregate()`|`aggregate()`|Combine cells of a raster to create a new raster with a lower resolution. Aggregation groups rectangular areas to create larger cells. The value for the resulting cells is computed with a user-specified function. This is also know as down-sampling.  
 `freq()`|`freq()`|Create a frequency table of the values of a raster. 
 
-Let's take a look at how we converted our workflows to calculate **soft bottom habitat destruction** and implemented a new spatial extent layer for **tidal flat habitat** from scratch.
+Let's take a look at how we converted our workflows to calculate **soft bottom habitat destruction**.
 
-<br>
+## Soft Bottom Habitat Destruction
 
-## Converting existing workflows
+The Ocean Health Index (OHI) uses various spatial datasets to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, because these types of fishing severely disturb benthic habitat. The fisheries catch data is rasterized and overlaid onto polygons of exclusive economic zones for all OHI regions, then spatially standardized by summing each fishing coordinate within the exclusive economic sozne and dividing that sum by the kilometers squared of softbottom habitat. In 2022, OHI switched the data source from fisheries catch to apparent fishing effort for trawling and dredging from [Global Fishing Watch](www.globalfishingwatch.org) using their new user-friendly [API](https://github.com/GlobalFishingWatch/gfwr). This data comes in units of hours of apparent fishing effort associated with the coordinate, geartype, and year of each observation.
 
-### Soft Bottom Habitat Destruction
+We used the Global Fishing Watch API to pull codes for all the exclusive economic zones for the 220 OHI regions, then pulled apparent fishing effort for each exclusive economic zone from 2012-2020.
 
-The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, because these types of fishing severely disturb benthic habitat. The fisheries catch data is rasterized and overlaid onto polygons of exclusive economic zones for all OHI regions, then spatially standardized by summing each fishing coordinate within the exclusive economic sozne and dividing that sum by the kilometers squared of softbottom habitat. In 2022, OHI switched the data source from fisheries catch to apparent fishing effort for trawling and dredging from [Global Fishing Watch](www.globalfishingwatch.org) using their new [API](https://github.com/GlobalFishingWatch/gfwr). This data comes in units of hours of fishing effort associated with the latitude and longitude of each fishing detection, the geartype used, and a timestamp.
+<center>
+<img src="/images/terra_post/ohi_hex_transparent.png" style="width: 20%; height: 20%"/><img src="/images/terra_post/gfwr_hex.png" style="width: 20%; height: 20%"/><img src="/images/terra_post/terra_hex.png" style="width: 20%; height: 20%"/> 
+</center>
+
+<details>
+<summary>
+Expand to see the Global Fishing Watch API in action
+</summary>
+
+```r
+# iterate through all EEZ codes for all regions to extract apparent fishing hours:
+for(i in regions) {
+  
+  # create dataframe that contains the column `id` that is list of all EEZ codes for one region
+  eez_code_df <- get_region_id(region_name = i, region_source = 'eez', key = key)
+  
+  # convert that column into a numeric list of EEZ codes to feed into the next loop:
+  eez_codes <- eez_code_df$id
+  
+  print(paste0("Processing apparent fishing hours for ", i, " EEZ code ", eez_codes))
+  
+  for(j in eez_codes) { 
+    fishing_hours <- gfwr::get_raster(spatial_resolution = 'high', # 0.01 degree resolution 
+                                      temporal_resolution = 'yearly',
+                                      group_by = 'flagAndGearType', 
+                                      date_range = '2012-01-01,2020-12-31', 
+                                      region = j, 
+                                      region_source = 'eez',
+                                      key = key) %>%
+      # rename columns for clarity:
+      rename(year = "Time Range",
+             apparent_fishing_hours = "Apparent Fishing hours",
+             y = Lat,
+             x = Lon,
+             geartype = Geartype) %>%
+      # keep track of the administrative country for each EEZ 
+      mutate(eez_admin_rgn = i) %>% 
+      select(year, apparent_fishing_hours, y, x, eez_admin_rgn, geartype)
+    
+    print(paste0("Extracted all apparent fishing hours for ", i, " EEZ code ", j))
+    
+    write_csv(fishing_hours, paste0(filepath, i, "_", j, "_effort.csv")) 
+  }
+}
+```
+</details>
 
 While initially cleaning the Global Fishing Watch data, we separate it into different dataframes for trawling and dredging since we need to process the geartypes differently. In order to convert the fishing effort coordinates into annual `spatRasters`, we use the following approach:
 
@@ -51,12 +97,12 @@ for(i in years){
     dplyr::select(-year) %>%
     terra::rast(type = "xyz", crs = "EPSG:4326", digits = 6, extent = NULL)
   
-  fn <- paste0("fish_effort_trawl_", i, ".tif")
+  filename <- paste0("fish_effort_trawl_", i, ".tif")
   
   # save annual raster file for trawling:
   terra::writeRaster(
     trawl_annual_raster, 
-    filename = here::here('data', 'int', 'fish_effort_annual', 'trawling', i, fn), 
+    filename = paste0(filepath, i, filename), 
     overwrite = TRUE
   )
 }
@@ -67,12 +113,12 @@ for(i in years){
 Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the trawling method that damages the seafloor. In order to do this, we multiply the trawling effort `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate, provided by Watson and Tidd (2018). The raw trawling proportion raster has many `NA` values:
 
 <center>
-<img src="/images/terra_post/trawling_prop_2017_raw.png"/>
+<img src="/images/terra_post/trawling_prop_2017_raw.png" style="width: 80%; height: 80%"/>
 </center>
 
 We can check the initial resolution, extent, and other characteristics by calling the raster and viewing the output:
 
-```r
+```console
 class       : SpatRaster 
 dimensions  : 360, 720, 1  (nrow, ncol, nlyr)
 resolution  : 0.5, 0.5  (x, y)
@@ -140,14 +186,14 @@ trawl_depth_proportion_resampled <- terra::resample(
 The fully interpolated and resampled map for trawling proportion looks like this:
 
 <center>
-<img src="/images/terra_post/trawling_prop_2017_interp.png"/>
+<img src="/images/terra_post/trawling_prop_2017_interp.png" style="width: 80%; height: 80%"/>
 </center>
 
-The continents cells are filled in with a value of 1 because they were `NA` before, and we used `terra::global()` to fill in all the remaining `NA` values with 1. While it does not make logical sense to assign land value with a trawling proportion value, this is fine for our case because the only purpose of this raster is to maintain all the trawling fishing effort in the other raster, and subset many of them to a smaller value if the proportion is less than 1. All the land cells that have a value of 1 will be multiplied by NA in the fishing effort raster, so they will not be counted in the final fishing effort scores.
+The continental raster cells were originally `NA` values, and we used `terra::global()` to fill in all the remaining `NA` values with 1. While it does not make logical sense to assign land value with a trawling proportion value, this is useful for our use case because the only purpose of this trawling proportion raster is to maintain all the trawling fishing effort in the _other_ raster, and subset many of them to a smaller value if the proportion is less than 1. All the land cells that have a value of 1 will be multiplied by `NA` in the fishing effort raster, so they will not be counted in the final fishing effort scores.
 
 We can check that the resolution was increased to 0.01 degrees by calling the name of the raster again to view the adjusted raster characteristics:
 
-```r
+```console
 class       : SpatRaster 
 dimensions  : 14930, 36001, 1  (nrow, ncol, nlyr)
 resolution  : 0.01, 0.01  (x, y)
@@ -288,7 +334,11 @@ for (i in years_all) {
 }
 ```
 
-That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Please feel free to contact the OHI team with any questions or suggestions. For more spatial rangling with `terra`, check out the blog post about our new tidal flats data layer!
+That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Please feel free to contact the OHI team with any questions or suggestions. For more spatial wrangling with `terra`, check out the blog post about our new tidal flats data layer!
+
+<center>
+<img src="/images/terra_post/fish_icon_ohi.png" style="width: 20%; height: 20%"/>
+</center>
 
 ## References
 
