@@ -24,6 +24,12 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* code wrapping */
+pre code { 
+  white-space: pre-wrap;
+  color: white;
+}
+
 ::selection {
   background: $text-color-dark;
   color: white;
@@ -106,6 +112,15 @@ h6 {
 p {
   margin-block-end: 1.05rem;
   margin-block-start: 1.05rem;
+  line-height: 1.8;
+}
+
+/* styling of ticked text */
+code {
+  color: black;
+  margin-block-end: 1.05rem;
+  margin-block-start: 1.05rem;
+  background-color: #e9ecf2;
   line-height: 1.8;
 }
 
