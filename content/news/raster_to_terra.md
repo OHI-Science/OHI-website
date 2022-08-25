@@ -4,7 +4,7 @@ name: "Making the Spatial Switch"
 bg_image: "/images/banners/ca-sealion.jpg"
 card_image: "/images/terra_post/map_2017.png"
 preview_text: "`raster` has been the go-to spatial analysis package in R since the dawn of time, but we converted our workflow to the more modern `terra` package. At the Ocean Health Index, we work with spatial data for a plethora of goals like mapping sea ice extent and habitat types that sequester carbon throughout the land and coastal nations. Let's dive into how we converted our code from `raster` to `terra`."
-Date: 2022-08-11
+Date: 2022-08-25
 author: Juliet Cohen
 menu:
   main:
