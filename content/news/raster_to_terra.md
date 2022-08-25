@@ -110,27 +110,11 @@ for(i in years){
 
 `terra` processes this dataframe into a `spatRaster` object because we simplified it into just 3 columns: x, y, and fishing effort, and with the argument `type = "xyz"` we specified that there's an x value, y value, and other value (z) at that coordinate. Note that the `WGS84` coordinate reference system is specified using the simple `"EPSG:4326"` syntax, rather than the complex `proj4` format that `raster::raster()` prefers: `"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"`. We run the same code for the dredging dataframe. 
 
-Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the trawling method that damages the seafloor. In order to do this, we multiply the trawling effort `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate, provided by Watson and Tidd (2018). The raw trawling proportion raster has many `NA` values:
+Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the method that damages the seafloor. In order to do this, we multiply the trawling effort `spatRaster` by another `spatRaster` that represents the proportion of bottom trawling to mid-water trawling at each coordinate, provided by Watson and Tidd (2018). The raw trawling proportion raster has many `NA` values:
 
 <center>
 <img src="/images/terra_post/trawling_prop_2017_raw.png" style="width: 80%; height: 80%"/>
 </center>
-
-We can check the initial resolution, extent, and other characteristics by calling the raster and viewing the output:
-
-```console
-class       : SpatRaster 
-dimensions  : 360, 720, 1  (nrow, ncol, nlyr)
-resolution  : 0.5, 0.5  (x, y)
-extent      : -180, 180, -90, 90  (xmin, xmax, ymin, ymax)
-coord. ref. : lon/lat WGS 84 (EPSG:4326) 
-source      : bottom_trawl_prop_2017.tif 
-name        : bottom_trawl_prop_2017 
-min value   :                      0 
-max value   :                      1 
-```
-
-Note that the resolution is 0.5 degrees. We want to up-sample this raster to increase the resolution to that of the fishing raster, which is 0.01 degrees.
 
 In order to multiply these `spatRasters`, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:
 
@@ -147,7 +131,7 @@ trawl_depth_proportion_interpolated <- terra::focal(
 )
 ```
 
-**2. Interpoalte all remaining `NA` values using the `terra::global()` function.**
+**2. Interpolate all remaining `NA` values using the `terra::global()` function.**
 
 `global()` can be used similarly to `terra::app()` for simple functions, such as calculating the mean of all non-`NA` values in the entire raster layer:
 
@@ -161,7 +145,7 @@ global_trawl_proportion_avg <- terra::global(
 trawl_depth_proportion_interpolated[is.na(trawl_depth_proportion_interpolated)] <- global_trawl_proportion_avg[1,1]
 ```
 
-In order to check if any `NA` values remain, we can use other arguments for `terra::global()` that returns the sum of all `NA` values in the `spatRaster`:
+In order to check if any `NA` values remain, we can use the `isNA` function in `terra::global()` that returns the sum of all `NA` values in the `spatRaster`:
 
 ```r
 terra::global(
@@ -170,7 +154,31 @@ terra::global(
 )
 ```
 
-Next, we want to resample that `spatRaster` to up-sample the resolution to match that of the other raster, which has a higher resolution of 0.01 degrees:
+An output of 0 informs us we have successfully interpolated all `NA`'s! 
+
+The fully interpolated and resampled map for trawling proportion looks like this:
+
+<center>
+<img src="/images/terra_post/trawling_prop_2017_interp.png" style="width: 80%; height: 80%"/>
+</center>
+
+The continental raster cells were originally `NA` values, and we used `terra::global()` to fill them in with the mean value in our last interpolation step. While it does not make logical sense to assign land value with a trawling proportion value greater than 0, this is useful for our use case because the only purpose of this trawling proportion raster is to retain the trawling fishing effort values in the _other_ raster and subset many of them to a smaller value if the proportion is less than 1 in this interpolated raster. As a result, all the land cells that have a value of 1 in the interpolated raster will be multiplied by `NA` in the fishing effort raster, so they will not be counted in the final fishing effort scores.
+
+Next, we check the raster's resolution, extent, and other characteristics by calling the raster object and viewing the output:
+
+```console
+class       : SpatRaster 
+dimensions  : 360, 720, 1  (nrow, ncol, nlyr)
+resolution  : 0.5, 0.5  (x, y)
+extent      : -180, 180, -90, 90  (xmin, xmax, ymin, ymax)
+coord. ref. : lon/lat WGS 84 (EPSG:4326) 
+source      : bottom_trawl_prop_2017.tif 
+name        : bottom_trawl_prop_2017 
+min value   :                      0 
+max value   :                      1 
+```
+
+Note that the resolution is 0.5 degrees. We want to up-sample this `spatRaster` to increase the resolution to that of the fishing raster, which is 0.01 degrees. We can do this by using the trawling effort raster as a template resolution in the `resample()` function:
 
 ```r
 # resample the interpolated trawling proportion data
@@ -181,14 +189,6 @@ trawl_depth_proportion_resampled <- terra::resample(
   method = "near" # nearest neighbor calculation to up-sample
 ) 
 ```
-
-The fully interpolated and resampled map for trawling proportion looks like this:
-
-<center>
-<img src="/images/terra_post/trawling_prop_2017_interp.png" style="width: 80%; height: 80%"/>
-</center>
-
-The continental raster cells were originally `NA` values, and we used `terra::global()` to fill in all the remaining `NA` values with 1. While it does not make logical sense to assign land value with a trawling proportion value, this is useful for our use case because the only purpose of this trawling proportion raster is to maintain all the trawling fishing effort in the _other_ raster, and subset many of them to a smaller value if the proportion is less than 1. All the land cells that have a value of 1 will be multiplied by `NA` in the fishing effort raster, so they will not be counted in the final fishing effort scores.
 
 We can check that the resolution was increased to 0.01 degrees by calling the name of the raster again to view the adjusted raster characteristics:
 
