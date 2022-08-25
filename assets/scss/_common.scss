@@ -25,7 +25,10 @@ body {
 }
 
 /* code wrapping */
-pre code { white-space: pre-wrap; }
+pre code { 
+  white-space: pre-wrap;
+  color: white;
+}
 
 ::selection {
   background: $text-color-dark;
@@ -114,10 +117,10 @@ p {
 
 /* styling of ticked text */
 code {
-  color: #FFFFFF;
+  color: black;
   margin-block-end: 1.05rem;
   margin-block-start: 1.05rem;
-  background-color: grey;
+  background-color: #e9ecf2;
   line-height: 1.8;
 }
 
