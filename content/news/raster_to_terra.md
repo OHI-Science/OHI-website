@@ -20,7 +20,7 @@ Spatial data in `R` has a reputation for being tedious and time consuming. With 
 
 Some examples of similar functions between `raster` and `terra` are as follows:
 
-`raster`|`terra`|Use
+raster|terra|Use
 --------|-------|---
 `raster()`|`rast()`|Rasterize a spatial file (such as a `.tif` or a spatial dataframe) into a `rasterLayer` (for the `raster` package) or `spatRaster` (for the `terra` package)
 `stack()`|`rast()`, `c()`|Create raster stack to execute calculations across layers. `terra::rast()` is a more broadly applicable function since it can detect the quantity of `spatRasters` present as `.tif` files in a directory, then automatically stacks them. Alternatively, if the files have already been read in as `spatRasters`, use `c()` to stack them and assign and assign the stack to a new object name.
