@@ -16,27 +16,27 @@ menu:
 
 {{<newsHead>}}
 
-Spatial data in `R` has a reputation for being tedious and time consuming. With so many different spatial file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the `raster` package to make maps, calculate cell values across different layers, and recognize patterns over space anf time. In pursuit of improved methodology and keeping up with the hip trends in environmental science, many scientists are motivated to make the spatial switch from `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. 
+Spatial data in `R` has a reputation for being tedious and time consuming. With so many different spatial file types (`.shp`, `.nc`, `.gpkg`, `.geojson`, and `.tif` to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the `raster` package to calculate cell values across stacked layers and recognize patterns over space and time. In pursuit of improving methodology and keeping up with the hip trends in environmental science, many scientists are motivated to make the spatial switch from `raster` to `terra`. The `terra` package is essentially the modern version of `raster`, but with faster processing speeds and more flexible functions. 
 
 Some examples of similar functions between `raster` and `terra` are as follows:
 
 `raster`|`terra`|Use
 --------|-------|---
 `raster()`|`rast()`|Rasterize a spatial file (such as a `.tif` or a spatial dataframe) into a `rasterLayer` (for the `raster` package) or `spatRaster` (for the `terra` package)
-`stack()`|`rast()`, `c()`|Create raster stack to execute calculations across layers. `terra::rast()` is a more broadly applicable function since it can detect the quantity of `spatRasters` present as `.tif` files, then automatically stacks them if there are multiple. Alternatively, if the files have already been read in, use `c()` to stack them and assign and assign the stack to a new object name.
+`stack()`|`rast()`, `c()`|Create raster stack to execute calculations across layers. `terra::rast()` is a more broadly applicable function since it can detect the quantity of `spatRasters` present as `.tif` files in a directory, then automatically stacks them. Alternatively, if the files have already been read in as `spatRasters`, use `c()` to stack them and assign and assign the stack to a new object name.
 `calc()`|`app()`, `lapp()`, `focal()`, etc.|Execute a function across a raster or raster stack. `terra` has multiple functions with varying degrees of flexibility depending on if the function is applied across layers, and if the same function is applied to each layer.
 `resample()`|`resample()`|Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a resolution of 0.5 degrees to 0.01 degrees to match the higher resolution of the second raster.
 `extract()`|`extract()`|Pull values from a raster object where they intersect the locations of another spatial object, such as points that fall within polygons. For `raster()`, the spatial objects can be points, lines, and polygons. For `terra`, the second spatial object must be a vector or matrix/dataframe of coordinates. For example, the spatial object from which we are extracting is a geometry columns of polygons, the user cannot input the entire spatial dataframe, but rather needs to vectorize the geometry column of the polygons using `terra::vect()` then input that object into `terra::extract()`. 
 `aggregate()`|`aggregate()`|Combine cells of a raster to create a new raster with a lower resolution. Aggregation groups rectangular areas to create larger cells. The value for the resulting cells is computed with a user-specified function. This is also know as down-sampling.  
 `freq()`|`freq()`|Create a frequency table of the values of a raster. 
 
-Let's take a look at how we converted our workflows to calculate **soft bottom habitat destruction**.
+Let's take a look at how we converted our workflow to calculate global **soft bottom habitat destruction** through the years 2012-2020.
 
 ## Soft Bottom Habitat Destruction
 
-The Ocean Health Index (OHI) uses various spatial datasets to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, because these types of fishing severely disturb benthic habitat. The fisheries catch data is rasterized and overlaid onto polygons of exclusive economic zones for all OHI regions, then spatially standardized by summing each fishing coordinate within the exclusive economic sozne and dividing that sum by the kilometers squared of softbottom habitat. In 2022, OHI switched the data source from fisheries catch to apparent fishing effort for trawling and dredging from [Global Fishing Watch](www.globalfishingwatch.org) using their new user-friendly [API](https://github.com/GlobalFishingWatch/gfwr). This data comes in units of hours of apparent fishing effort associated with the coordinate, geartype, and year of each observation.
+The Ocean Health Index (OHI) uses various spatial datasets to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, because these types of fishing severely disturb benthic habitat. The fisheries catch data was rasterized and overlaid onto polygons of exclusive economic zones for all OHI regions, then spatially standardized by summing each fishing coordinate within the exclusive economic zone and dividing that sum by the square kilometers of softbottom habitat.
 
-We used the Global Fishing Watch API to pull codes for all the exclusive economic zones for the 220 OHI regions, then pulled apparent fishing effort for each exclusive economic zone from 2012-2020.
+In 2022, OHI switched the data source from fisheries catch to apparent fishing effort for trawling and dredging from [Global Fishing Watch](www.globalfishingwatch.org) using their new user-friendly [API](https://github.com/GlobalFishingWatch/gfwr). This data comes in units of hours of apparent fishing effort associated with the coordinate, geartype, and year of each observation. We used the Global Fishing Watch API to pull codes for all the exclusive economic zones for the 220 OHI regions, then pulled apparent fishing effort for each exclusive economic zone from 2012-2020.
 
 <center>
 <img src="/images/terra_post/ohi_hex_transparent.png" style="width: 20%; height: 20%"/><img src="/images/terra_post/gfwr_hex.png" style="width: 20%; height: 20%"/><img src="/images/terra_post/terra_hex.png" style="width: 20%; height: 20%"/> 
@@ -158,8 +158,7 @@ global_trawl_proportion_avg <- terra::global(
   na.rm = TRUE
 )
   
-trawl_depth_proportion_interpolated[is.na(trawl_depth_proportion_interpolated)] <- 
-  global_trawl_proportion_avg[1,1]
+trawl_depth_proportion_interpolated[is.na(trawl_depth_proportion_interpolated)] <- global_trawl_proportion_avg[1,1]
 ```
 
 In order to check if any `NA` values remain, we can use other arguments for `terra::global()` that returns the sum of all `NA` values in the `spatRaster`:
