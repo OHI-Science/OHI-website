@@ -333,7 +333,7 @@ for (i in years_all) {
 }
 ```
 
-That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Please feel free to contact the OHI team with any questions or suggestions. For more spatial wrangling with `terra`, check out the blog post about our new tidal flats data layer!
+That about covers it for fishing effort rasters. You can find the complete script [here](https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022) on the OHI github repository for the 2022 assessment. Please feel free to contact the OHI team with any questions or suggestions. For more spatial wrangling with `terra`, check out the upcoming blog post about our new tidal flats data layer!
 
 <center>
 <img src="/images/terra_post/fish_icon_ohi.png" style="width: 20%; height: 20%"/>
