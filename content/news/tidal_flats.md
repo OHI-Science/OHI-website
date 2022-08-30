@@ -24,6 +24,10 @@ This new dataset has given OHI the opportunity to further improve our methods an
 
 > "Extensive degradation from coastal development, reduced sediment delivery from major rivers, sinking of riverine deltas, increased coastal erosion, and sea-level rise signal a continuing negative trajectory for tidal flat ecosystems around the world."
 
+![](/images/terra_post/jitze_couperus_cargill_flats_flickr.jpg)
+
+&nbsp;&nbsp;&nbsp;&nbsp; *The interface of coastal development with tidal flat habitat off Redwood City, California (Photo: [Jitze Couperus](https://www.flickr.com/photos/jitze1942/5244615529/in/photolist-8Zs2tF-2mcBSEz-2mbaQWz-2eGrCBb-2mcR9AJ-riuRXd-2m9pjVX-dfpp5f-2ni8fyW-2maeZuS-237cW2k-2mbDn5Z-2mbfbXK-ZRJNMp-2mbvHuj-2mbaigy-2m9okJm-2m9KhCq-2ma4UN8-2maC7zZ-2m9H5Uu-2mb6sxZ-5A7XK2-SCXCLN-mEucZb-2mcJVgv-SCXCuA-5Q9qm-5qWU36-SCXCHG-r4fDrf-2maKF6K-2mbKNm7-2maWHYx-SCXC9f-of2jqp-PagPZo-24aBQVg-aMC5Jz-oJMgpT-9gsEyT-VRTZsv-P5Aez8-xsSKEo-3Yz3Si-YT1xo3-24Z2DH7-xbXZ3Q-qDc4vo-2kSmqmB))*.
+
 Tidal flats will affect the OHI global scores by adding additional layers to the habitat subgoal and carbon storage goal. The three new data layers created are tidal flat extent (measured in km<sup>2</sup>), tidal flat trend (proportional change), and tidal flat condition (current status compared to historic status).
 
 This post will give a brief explanation of tidal flat habitat, explore the new dataset, and demonstrate how to programmatically summarize the data in the R software environment. The goal of data summarization is to distill the large raster dataset into simple tabular data which can be integrated into the OHI annual analysis as new data layers for 2022 and beyond.  
