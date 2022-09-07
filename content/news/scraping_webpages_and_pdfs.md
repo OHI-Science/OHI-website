@@ -1,6 +1,6 @@
 ---
 title: "Scraping Webpages and PDF's in R"
-name: "Automating inconvenient data extraction"
+name: "Webscraping and PDF data extraction"
 bg_image: "/images/banners/html.png"
 card_image: "/images/html-full.jpeg"
 preview_text: "What to do when the data you need are trapped in highly formatted tables spread among 185 different PDFs which are only downloadable separately... "
