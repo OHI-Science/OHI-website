@@ -9,7 +9,7 @@ author: Peter Menzies
 menu:
   main:
     parent: 'News'
-    weight: 2
+    weight: 2 
 ---
 
 </br>
