@@ -10,7 +10,6 @@ menu:
   main:
     parent: 'News'
     weight: 2 
-draft: true
 ---
 
 </br>
