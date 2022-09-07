@@ -1,9 +1,9 @@
 ---
 regionId: 204
 title: Bangladesh
-rank: 145
-meanScore: 66.71
-globalMeanScore: 70.22
+rank: 86
+meanScore: 69.72
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

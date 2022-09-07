@@ -1,9 +1,9 @@
 ---
 regionId: 168
 title: Suriname
-rank: 91
-meanScore: 70.61
-globalMeanScore: 70.22
+rank: 146
+meanScore: 65.8
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

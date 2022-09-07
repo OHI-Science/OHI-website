@@ -1,9 +1,9 @@
 ---
 regionId: 145
 title: Greenland
-rank: 37
-meanScore: 75.79
-globalMeanScore: 70.22
+rank: 43
+meanScore: 74.33
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 228
 title: Guernsey
-rank: 188
-meanScore: 62.61
-globalMeanScore: 70.22
+rank: 177
+meanScore: 63.22
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

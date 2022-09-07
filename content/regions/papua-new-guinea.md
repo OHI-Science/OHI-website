@@ -1,9 +1,9 @@
 ---
 regionId: 17
 title: Papua New Guinea
-rank: 141
-meanScore: 66.83
-globalMeanScore: 70.22
+rank: 122
+meanScore: 67.53
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

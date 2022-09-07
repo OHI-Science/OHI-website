@@ -1,9 +1,9 @@
 ---
 regionId: 210
 title: Japan
-rank: 117
-meanScore: 68.86
-globalMeanScore: 70.22
+rank: 110
+meanScore: 68.65
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

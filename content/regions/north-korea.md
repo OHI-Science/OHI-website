@@ -1,9 +1,9 @@
 ---
 regionId: 21
 title: North Korea
-rank: 201
-meanScore: 60.66
-globalMeanScore: 70.22
+rank: 189
+meanScore: 62.11
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

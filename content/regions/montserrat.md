@@ -1,9 +1,9 @@
 ---
 regionId: 121
 title: Montserrat
-rank: 123
-meanScore: 68.43
-globalMeanScore: 70.22
+rank: 127
+meanScore: 66.7
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

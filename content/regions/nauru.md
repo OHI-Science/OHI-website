@@ -1,9 +1,9 @@
 ---
 regionId: 10
 title: Nauru
-rank: 172
-meanScore: 64.42
-globalMeanScore: 70.22
+rank: 113
+meanScore: 68.36
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

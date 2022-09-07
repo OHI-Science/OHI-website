@@ -1,9 +1,9 @@
 ---
 regionId: 202
 title: Tanzania
-rank: 124
-meanScore: 68.29
-globalMeanScore: 70.22
+rank: 150
+meanScore: 65.63
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

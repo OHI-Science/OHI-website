@@ -1,9 +1,9 @@
 ---
 regionId: 5
 title: New Caledonia
-rank: 66
-meanScore: 72.79
-globalMeanScore: 70.22
+rank: 111
+meanScore: 68.56
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

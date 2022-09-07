@@ -1,9 +1,9 @@
 ---
 regionId: 152
 title: Samoa
-rank: 62
-meanScore: 73.42
-globalMeanScore: 70.22
+rank: 61
+meanScore: 72.17
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

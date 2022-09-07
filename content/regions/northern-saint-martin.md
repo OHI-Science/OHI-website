@@ -1,9 +1,9 @@
 ---
 regionId: 221
 title: Northern Saint-Martin
-rank: 17
-meanScore: 79.04
-globalMeanScore: 70.22
+rank: 27
+meanScore: 76.09
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

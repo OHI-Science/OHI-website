@@ -1,9 +1,9 @@
 ---
 regionId: 37
 title: Mauritius
-rank: 122
-meanScore: 68.57
-globalMeanScore: 70.22
+rank: 126
+meanScore: 66.75
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

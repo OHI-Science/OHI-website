@@ -1,9 +1,9 @@
 ---
 regionId: 68
 title: Malta
-rank: 65
-meanScore: 72.93
-globalMeanScore: 70.22
+rank: 64
+meanScore: 71.8
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

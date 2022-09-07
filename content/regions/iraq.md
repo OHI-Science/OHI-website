@@ -1,9 +1,9 @@
 ---
 regionId: 192
 title: Iraq
-rank: 77
-meanScore: 71.9
-globalMeanScore: 70.22
+rank: 91
+meanScore: 69.38
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

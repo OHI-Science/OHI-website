@@ -1,9 +1,9 @@
 ---
 regionId: 80
 title: Greece
-rank: 45
-meanScore: 74.85
-globalMeanScore: 70.22
+rank: 106
+meanScore: 68.77
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---

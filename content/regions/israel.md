@@ -1,9 +1,9 @@
 ---
 regionId: 79
 title: Israel
-rank: 213
-meanScore: 56.76
-globalMeanScore: 70.22
+rank: 199
+meanScore: 59.59
+globalMeanScore: 69.21
 numRegions: 220
 layout: region_score
 ---
