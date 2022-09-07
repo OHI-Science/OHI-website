@@ -13,13 +13,18 @@ In order to build and run the website, Node.js and Hugo are both required.
 To run the server locally, run the following from the top level ohi-site directory,
 
 ```
-npm install
 hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 ```
+`hugo server` will tell Hugo to run a server locally, the other code cleans things up.
 
+
+
+If you run into an error that says you need npm install, then run this:
+```
+npm install
+```
 `npm install` will install all of the necessary third party packages used
 
-`hugo server` will tell Hugo to run a server locally
 
 
 ### Building
