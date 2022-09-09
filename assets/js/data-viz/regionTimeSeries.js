@@ -131,9 +131,9 @@ async function regionTimeSeries({
     })
 
     goalsInput.addEventListener('update', function (e) {
-      newGoalCode = e.detail.id
-      data = updateTimeSeriesData(regionId, newGoalCode)
-      plot.update(data)
+      var newGoalCode = e.detail.id
+      var newData = updateTimeSeriesData(regionId, newGoalCode)
+      plot.update(newData)
     })
 
     goalControl.appendChild(goalsInput);
