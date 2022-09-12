@@ -1,9 +1,9 @@
 ---
 regionId: 97
 title: Liberia
-rank: 129
-meanScore: 66.6
-globalMeanScore: 69.21
+rank: 125
+meanScore: 66.97
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

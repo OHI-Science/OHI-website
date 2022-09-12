@@ -1,9 +1,9 @@
 ---
 regionId: 116
 title: Puerto Rico and Virgin Islands of the United States
-rank: 84
-meanScore: 69.83
-globalMeanScore: 69.21
+rank: 86
+meanScore: 69.84
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

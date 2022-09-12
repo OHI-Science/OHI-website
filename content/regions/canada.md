@@ -1,9 +1,9 @@
 ---
 regionId: 218
 title: Canada
-rank: 94
-meanScore: 69.24
-globalMeanScore: 69.21
+rank: 97
+meanScore: 69.31
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

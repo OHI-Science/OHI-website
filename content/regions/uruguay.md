@@ -1,9 +1,9 @@
 ---
 regionId: 173
 title: Uruguay
-rank: 49
-meanScore: 73.68
-globalMeanScore: 69.21
+rank: 36
+meanScore: 74.98
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

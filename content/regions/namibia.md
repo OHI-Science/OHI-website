@@ -1,9 +1,9 @@
 ---
 regionId: 101
 title: Namibia
-rank: 165
-meanScore: 64.15
-globalMeanScore: 69.21
+rank: 157
+meanScore: 65.18
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

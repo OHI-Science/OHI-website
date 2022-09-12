@@ -1,9 +1,9 @@
 ---
 regionId: 110
 title: Bahamas
-rank: 25
+rank: 22
 meanScore: 76.41
-globalMeanScore: 69.21
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

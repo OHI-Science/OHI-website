@@ -1,9 +1,9 @@
 ---
 regionId: 24
 title: Cambodia
-rank: 130
-meanScore: 66.57
-globalMeanScore: 69.21
+rank: 77
+meanScore: 70.49
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

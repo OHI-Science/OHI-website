@@ -1,9 +1,9 @@
 ---
 regionId: 62
 title: Morocco
-rank: 198
-meanScore: 60.45
-globalMeanScore: 69.21
+rank: 184
+meanScore: 63.03
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

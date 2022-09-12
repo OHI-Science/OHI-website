@@ -1,9 +1,9 @@
 ---
 regionId: 18
 title: Fiji
-rank: 76
-meanScore: 70.63
-globalMeanScore: 69.21
+rank: 74
+meanScore: 70.66
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 184
 title: Italy
-rank: 70
-meanScore: 71.54
-globalMeanScore: 69.21
+rank: 85
+meanScore: 69.87
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

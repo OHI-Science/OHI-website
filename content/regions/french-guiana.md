@@ -1,9 +1,9 @@
 ---
 regionId: 169
 title: French Guiana
-rank: 117
-meanScore: 68.11
-globalMeanScore: 69.21
+rank: 113
+meanScore: 68.21
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

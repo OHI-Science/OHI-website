@@ -1,9 +1,9 @@
 ---
 regionId: 56
 title: Cape Verde
-rank: 68
-meanScore: 71.56
-globalMeanScore: 69.21
+rank: 49
+meanScore: 73.63
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

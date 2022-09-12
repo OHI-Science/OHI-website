@@ -1,9 +1,9 @@
 ---
 regionId: 222
 title: Sweden
-rank: 41
-meanScore: 74.55
-globalMeanScore: 69.21
+rank: 28
+meanScore: 75.69
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

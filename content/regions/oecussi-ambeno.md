@@ -1,9 +1,9 @@
 ---
 regionId: 237
 title: Oecussi Ambeno
-rank: 24
-meanScore: 76.52
-globalMeanScore: 69.21
+rank: 32
+meanScore: 75.14
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

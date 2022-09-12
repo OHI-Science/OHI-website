@@ -1,9 +1,9 @@
 ---
 regionId: 224
 title: Chile
-rank: 58
-meanScore: 72.35
-globalMeanScore: 69.21
+rank: 64
+meanScore: 71.89
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

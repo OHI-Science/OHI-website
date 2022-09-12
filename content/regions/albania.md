@@ -1,9 +1,9 @@
 ---
 regionId: 82
 title: Albania
-rank: 56
-meanScore: 72.55
-globalMeanScore: 69.21
+rank: 73
+meanScore: 70.96
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

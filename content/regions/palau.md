@@ -1,9 +1,9 @@
 ---
 regionId: 8
 title: Palau
-rank: 119
-meanScore: 67.8
-globalMeanScore: 69.21
+rank: 116
+meanScore: 67.82
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---

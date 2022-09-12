@@ -1,9 +1,9 @@
 ---
 regionId: 219
 title: Saint Pierre and Miquelon
-rank: 153
-meanScore: 65.35
-globalMeanScore: 69.21
+rank: 161
+meanScore: 64.96
+globalMeanScore: 69.25
 numRegions: 220
 layout: region_score
 ---
