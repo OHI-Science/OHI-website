@@ -1,9 +1,9 @@
 ---
 regionId: 41
 title: Mozambique
-rank: 179
-meanScore: 63.22
-globalMeanScore: 69.25
+rank: 152
+meanScore: 65.42
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

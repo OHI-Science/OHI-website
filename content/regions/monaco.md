@@ -1,9 +1,9 @@
 ---
 regionId: 185
 title: Monaco
-rank: 187
-meanScore: 62.66
-globalMeanScore: 69.25
+rank: 188
+meanScore: 61.75
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

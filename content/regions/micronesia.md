@@ -1,9 +1,9 @@
 ---
 regionId: 9
 title: Micronesia
-rank: 162
-meanScore: 64.83
-globalMeanScore: 69.25
+rank: 158
+meanScore: 64.86
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

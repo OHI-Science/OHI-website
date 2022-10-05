@@ -1,9 +1,9 @@
 ---
 regionId: 155
 title: Tonga
-rank: 117
-meanScore: 67.79
-globalMeanScore: 69.25
+rank: 128
+meanScore: 67.01
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

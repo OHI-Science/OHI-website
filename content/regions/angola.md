@@ -1,9 +1,9 @@
 ---
 regionId: 200
 title: Angola
-rank: 192
-meanScore: 61.07
-globalMeanScore: 69.25
+rank: 205
+meanScore: 58.39
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

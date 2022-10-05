@@ -1,9 +1,9 @@
 ---
 regionId: 7
 title: Solomon Islands
-rank: 133
-meanScore: 66.49
-globalMeanScore: 69.25
+rank: 142
+meanScore: 66.04
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

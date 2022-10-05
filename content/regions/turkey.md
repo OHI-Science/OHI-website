@@ -1,9 +1,9 @@
 ---
 regionId: 76
 title: Turkey
-rank: 129
-meanScore: 66.83
-globalMeanScore: 69.25
+rank: 140
+meanScore: 66.26
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

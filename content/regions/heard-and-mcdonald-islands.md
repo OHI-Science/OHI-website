@@ -1,9 +1,9 @@
 ---
 regionId: 94
 title: Heard and McDonald Islands
-rank: 9
-meanScore: 80.5
-globalMeanScore: 69.25
+rank: 11
+meanScore: 80.47
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

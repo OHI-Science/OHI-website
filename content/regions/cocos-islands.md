@@ -1,9 +1,9 @@
 ---
 regionId: 1
 title: Cocos Islands
-rank: 158
-meanScore: 65.12
-globalMeanScore: 69.25
+rank: 70
+meanScore: 71.53
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---
