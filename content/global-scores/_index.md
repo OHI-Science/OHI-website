@@ -22,5 +22,5 @@ A country's Index score is the average of 10 "goal" scores which represent the e
 
 The global score is the average of the country scores, weighted by the area of their EEZ. 
 
-Explore the [METHODOLOGY](/methodology) tab to learn about the general OHI framework or take a look at the [global methods](https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html) to dive deep into the nitty-gritty details of the global assessment.
+Explore the [METHODOLOGY](/methodology) tab to learn about the general OHI framework or take a look at the [global methods](images/htmls/Supplement.html) to dive deep into the nitty-gritty details of the global assessment.
 

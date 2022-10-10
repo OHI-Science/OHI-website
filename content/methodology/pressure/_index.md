@@ -55,6 +55,6 @@ The pressure estimate for each goal and country is then combined with the trend 
 
 Learn more about the pressure model and data used for the OHI global assessment by clicking below.
 
-{{<button text="Global Methods" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#532_Pressure icon="/images/misc/microscope-icon.svg">}}
+{{<button text="Global Methods" link=images/htmls/Supplement.html icon="/images/misc/microscope-icon.svg">}}
 
 
