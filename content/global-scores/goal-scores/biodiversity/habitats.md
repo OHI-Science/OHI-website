@@ -13,11 +13,12 @@ This goal measures the status of marine habitats that are particularly important
 
 {{< gauge regionId="0" goalCode="HAB" >}}
 
-The current score indicates that the seven habitats assessed- kelp forests, mangroves, coral reefs, seagrass beds, salt marshes, sea ice, and subtidal soft-bottom habitats- are still relatively healthy and intact on a global basis.
+The current score indicates that the eight habitats assessed- kelp forests, mangroves, coral reefs, seagrass beds, salt marshes, sea ice, subtidal soft-bottom habitats, and tidal flats- are still relatively healthy and intact on a global basis.
 
-Generally we know that there is a global decline in habitat extent and health, but for the most part this is hard to monitor, and many of the data associated with these habitats are of poor quality (aside from mangroves and sea ice). For this reason, we see a pretty stagnant score for the habitats sub-goal. Of course this isn't true when we look at regions which have particularly good habitat data, like Iceland. 
+Generally we know that there is a global decline in habitat extent and health, but for the most part this is hard to monitor, and much of the data associated with these habitats are of poor quality (aside from mangroves and sea ice). Low resolution data for several habitat types results in largely stagnant scores for the Habitat subgoal, because small changes in extent and health are not identified over short time periods. However, we are able to identify high resolution changes for regions which have particularly good habitat data, like Iceland.
 
-In Iceland, we see a modest decrease over the past 10 years, but its score is low (61). This decrease and low score are associated with the sea ice layer that is used in our Habitats goal model, which has a very poor condition associated with Iceland. We see similar stories in regions that also have sea ice, like Jan Mayen. 
+In Iceland, we see a modest decrease over the past 10 years, but its Habitat score is low (47). This decrease and low score are associated with the sea ice layer that is used in our Habitats subgoal model, which has a very poor condition associated with Iceland. We see similar stories in regions that also have sea ice, like Jan Mayen (56) and Greenland (55).
+
 
 
 
