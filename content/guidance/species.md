@@ -6,13 +6,13 @@ id: "SPP"
 description: "This subgoal measures the health of regionally iconic species that are relevant to local cultural identity."
 ---
 
-The Species sub-goal is a component of the Biodiversity goal and assesses the condition of all marine species present in a region, including endangered species and species in relatively good condition.
+The Species sub-goal is a component of the Biodiversity goal and assesses the condition of all marine species present in a region, including both endangered species and those in relatively good condition.
 
 > Data for this goal may also used in Sense of Place sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
 
 #### Practical Guidance
 
-Ideally, every marine species living in the assessment area will have spatial data describing their location and descriptions of their popoulation health.
+Ideally, every marine species in an assessment area will have spatial data describing their location and descriptions of their popoulation health.
 
 *_STEP 1: Identify and find the data_*
 
@@ -20,7 +20,7 @@ A useful starting point is to develop a list of all the species living in the as
 
 Then, begin hunting for data describing each species distribution and conservation status. It is best if you only use species for which there are both spatial data and conservation status (or, can be reliably estimated using gapfilling approaches). 
 
-For the global assessment, we identified the extinction risk of each species using data from the International Union for the Conservation of Nature (IUCN) (https://www.iucnredlist.org/resources/spatial-data-download). IUCN provides global species assessments that describe the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct. These risk categories are converted into weights (between 0 and 1) for calculations. IUCN comprehensively assesses *all* the species within a particular taxa, which provides a relatively unbiased geographic snapshot of how total marine biodiversity is faring, even though it is a very small sub-sample of overall species diversity.
+For the global assessment, a species's condition was assessed using the extinction risk status from the International Union for the Conservation of Nature (IUCN) (https://www.iucnredlist.org/resources/spatial-data-download). IUCN's  assessments describe the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct. These risk categories are converted into weights (between 0 and 1) for calculations. IUCN comprehensively assesses *all* the species within a particular taxa, which provides a relatively unbiased geographic snapshot of how total marine biodiversity is faring, even though it is a very small sub-sample of overall species diversity.
 
 The species ranges were mostly determined using IUCN distribution maps; however, AquaMaps data was used for species not covered by the IUCN distribution maps. 
 
@@ -40,14 +40,15 @@ It will be important to identify a meaningful reference points for both 0 and 10
 
 At this point, you will want to consider how to best aggregate all the species information to arrive at a single score.  For instance, will the model take into account range size? Or, count all species equally. An inherent disadvantage for conservation may occur when rare species get rarer in the future, and will therefore have a relatively small influence on the score while common species drive the results.
 
-The model used for the Global Assessment, starts by analyzing the data at the raster cell scale. The species located in each raster cell are replaced by their numeric extinction risk values and these values are then averaged to get a single condition value for each cell.  The resulting cell values are then averaged within each country's EEZ to get the region score.  
+The model used for the Global Assessment, starts by analyzing the data at the raster cell scale. The species located in each raster cell are replaced by their numeric extinction risk values and these values are then averaged to get a single condition value for each cell. The resulting cell values are then averaged within each country's EEZ to get the region score.  
 
 The result is that range size has an impact on score results. For example, most cone snail species will not have a big impact on the Species sub-goal score because they tend to be rare species and have small distributions. 
 
 This approach may, or may not, reflect the desired objectives of other OHI+ assessments.
 
 *_Additional notes_*
-Do you know how the data were collected? Do you have information on sampling effort? If you don’t know, you may not be sure whether changes in condition are due to monitoring efforts or biodiversity change, and you therefore may want to consider the uncertainty of your model.
+
+It is important to understand how the data were collected. This information can help determine whether changes in condition are due to monitoring efforts or biodiversity change. 
 
 
 #### Examples of the Approach

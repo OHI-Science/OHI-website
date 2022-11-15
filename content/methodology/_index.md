@@ -13,7 +13,7 @@ The underlying philosophy behind the Index is that a healthy ocean sustainably d
 
 For the global study, participating scientists, economists, and sociologists reviewed existing studies of what people want and expect from the ocean and then grouped them into ten categories called ‘goals.’  
 
-Each goal is scored based on the delivery of specific benefits with respect to a sustainable target. A goal is given a score of 100 if its benefits are maximized without compromising the ocean’s ability to deliver those benefits in the future.  Lower scores indicate that more benefits could be gained or that current methods are harming the delivery of future benefits.
+Each goal is scored on the delivery of specific benefits with respect to a sustainable target. A goal is given a score of 100 if its benefits are maximized without compromising the ocean’s ability to deliver those benefits in the future.  Lower scores indicate that more benefits could be gained or that current methods are harming the delivery of future benefits.
 
 The following provides a *very* brief overview of how we calculate *Goal Scores*, *Country Index Scores*, and *Global Index Scores*. For more information, take a look at the resources provided at the bottom of this page. 
 

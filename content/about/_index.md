@@ -14,9 +14,6 @@ menu:
 
 The Ocean Health Index was originally developed by an interdisciplinary team of scientists to assess global ocean health. This was a huge success and the global OHI assessment has been repeated every year since 2012! 
 
-**This year we are celebrating 10 years of OHI!**
-
-
 You can explore the global OHI scores in a variety of ways:
 
 {{<button text="Explore scores" link=/global-scores icon="images/flower_plot.png">}}

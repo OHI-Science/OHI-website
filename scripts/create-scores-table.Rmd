@@ -7,6 +7,7 @@ date: "2021-07-07"
 This R code reads in the `scores.csv` file and creates a markdown page for each country/region in the scores file.
 
 ```{r}
+
 library(here)
 library(dplyr)
 library(magrittr)

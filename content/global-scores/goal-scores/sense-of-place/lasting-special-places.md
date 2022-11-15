@@ -6,7 +6,7 @@ id: "LSP"
 ---
 
 ### IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT
-The Lasting Special Places sub-goal measures how well we are protecting, for current and future generations, the locations that contribute to marine-related cultural identity. 
+The Lasting Special Places sub-goal measures how well we are protecting the locations that contribute to marine-related cultural identity. 
 
 ### CURRENT SCORE
 
@@ -20,8 +20,8 @@ Currently, 72 of the 220 coastal countries and territories protect at least 30% 
 
 A great example of management being realized in the LSP subgoal score is Seychelles. Prior to 2021, Seychelles received a score of 53 for LSP, however, in 2021, the status score jumped to 100. This is because Seychelles completed its [commitment](https://www.nature.org/en-us/about-us/where-we-work/africa/stories-in-africa/seychelles-conservation-commitment-comes-to-life/) to increase its marine protection to a full 30% of its EEZ in 2020. This major accomplishment is realized in the 2021 OHI LSP status score.
 
-Similarly, Pitcairn's score has increased dramatically over the past 11 years. Until 2015, Pitcairn did not have any protected areas in its surrounding areas, and received a score 0. However, in 2015, the United Kingdom government implemented the largest single marine reserve in the world (at the time), and its score jumped to 100 in 2016, when the change was realized in the global OHI scores. 
+Similarly, Pitcairn's score has increased dramatically over the past 11 years. Until 2015, Pitcairn did not have any protected areas in its surrounding areas, and received a score 0. However, in 2015, the United Kingdom government implemented the largest single marine reserve in the world (at the time), and its score jumped to 100 in 2016. 
 
-At some point we hope to incorporate into the scores a metric that describes how well these marine protected areas are regulated. Currently, the UN says we have protected about 8% of the world's oceans, but "experts caution that only 2.2 percent of the world's oceans are fully off limits to commercial activity, and only 4.8 percent is actively managed." ([National Geographic, 2019](https://www.nationalgeographic.com/environment/article/paper-parks-undermine-marine-protected-areas))
+At some point we would like the scores to reflect hope to incorporate into the scores a metric that describes how well these marine protected areas are regulated. Currently, the UN says we have protected about 8% of the world's oceans, but "experts caution that only 2.2 percent of the world's oceans are fully off limits to commercial activity, and only 4.8 percent is actively managed." ([National Geographic, 2019](https://www.nationalgeographic.com/environment/article/paper-parks-undermine-marine-protected-areas))
 
 [Learn more about this goal]({{< ref "goals/sense-of-place/lasting-special-places.md" >}})

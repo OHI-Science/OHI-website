@@ -18,7 +18,7 @@ This goal describes how successfully the richness and variety of marine life is 
 
 ### GOAL DESCRIPTION
 
-People value the existence of a diverse array of species for their intrinsic qualities and their contribution to the structure and function of resilient ecosystems. The risk of species extinction generates great emotional and moral concern for many people. Furthermore, people donate large sums of money to help conserve species and habitats.
+People value the existence of a diverse array of species for their intrinsic qualities and their contribution to the structure and function of resilient ecosystems. The risk of species extinction generates great emotional and moral concern for many people. This concern is demonstrated by the large sums of money that people donate to help conserve species and habitats.
 
 For the Global OHI, this goal assesses the conservation status of species based on the best available global data through two sub-goals: Species and Habitats. Species are assessed because they are what one typically thinks of in relation to biodiversity. We also assess Habitats because only a small proportion of marine species worldwide have been mapped and assessed, so we consider habitats  a proxy for the condition of the broad suite of species that depend on them. 
 

@@ -7,19 +7,21 @@ id: "HAB"
 
 ### PRESERVING MARINE HABITATS
 
-This goal measures the status of marine habitats that are particularly important in supporting large numbers of marine species. 
+This goal measures the status of marine habitats that support large numbers of marine species. 
 
 ### CURRENT SCORE
 
 {{< gauge regionId="0" goalCode="HAB" >}}
 
-The current score indicates that the eight habitats assessed- kelp forests, mangroves, coral reefs, seagrass beds, salt marshes, sea ice, subtidal soft-bottom habitats, and tidal flats- are still relatively healthy and intact on a global basis.
+The current score indicates that the eight assessed habitats - kelp forests, mangroves, coral reefs, seagrass beds, salt marshes, sea ice, subtidal soft-bottom habitats, and tidal flats- have experienced declines (relative to recent historical periods) but are still relatively intact on a global basis.
 
-Generally we know that there is a global decline in habitat extent and health, but for the most part this is hard to monitor, and much of the data associated with these habitats are of poor quality (aside from mangroves and sea ice). Low resolution data for several habitat types results in largely stagnant scores for the Habitat subgoal, because small changes in extent and health are not identified over short time periods. However, we are able to identify high resolution changes for regions which have particularly good habitat data, like Iceland.
+This sub-goal score is higher than what is reported by numerous scientific studies and media reports. There is no question that the extent of mangrove forests, salt marshes and seagrass beds have declined considerably compared to historic levels; that sea ice is steadily declining (especially in the Arctic) and that a number of pressures now seriously challenge coral reefs. Many people have commented that the OHI does not accurately reflect the magnitude of this habitat loss.   
 
-In Iceland, we see a modest decrease over the past 10 years, but its Habitat score is low (47). This decrease and low score are associated with the sea ice layer that is used in our Habitats subgoal model, which has a very poor condition associated with Iceland. We see similar stories in regions that also have sea ice, like Jan Mayen (56) and Greenland (55).
+The main reason for this discrepancy is the Ocean Health Index uses a more recent reference point than these studies. Returning the ocean to pre-human or pre-industrial age conditions is not feasible, so we have chose to use habitat areas from around 1980 as our reference point, a target that is achievable. Changes that have occurred since then are significant, but not as dramatic as when compared to conditions hundreds of years ago.
 
+All of the goals that require habitat data, such as this one, are difficult to assess because much of the data are of poor quality, lack historical information, and are not tracked over time (aside from mangroves and sea ice). Despite these limitations, we are still able to to identify changes in some regions.
 
+For example, we observe declining habitat scores in Iceland (47), Jan Mayn (56), and Greenland (55) due to the steady loss of sea ice habitat. 
 
 
 [Learn more about this goal]({{< ref "goals/biodiversity/habitats.md" >}})

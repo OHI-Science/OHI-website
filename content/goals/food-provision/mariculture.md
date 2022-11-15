@@ -20,9 +20,9 @@ Aquaculture is the fastest growing animal food production sector in the world, w
 
 (image from [FAO 2020](https://www.fao.org/state-of-fisheries-aquaculture))
 
-The mariculture goal score is based on the quantity of food obtained from mariculture relative to the potential amount it could produce given the availability of suitable habitat. The harvest quantity for each species is adjusted for the sustainability of the farming practices where it is grown.
+The mariculture goal score is based on the quantity of food obtained from mariculture relative to the amount that could be produced given the availability of suitable habitat. The harvest quantity for each species is adjusted for the sustainability of the farming practices where it is grown.
 
-This approach does not penalize regions that have less geographic area conducive to mariculture, but it assumes that the coastal areas have necessary social inputs for labor, coastal access, infrastructure and economic demand. 
+This approach does not penalize regions that have less geographic area conducive to mariculture, but it does assume all suitable coastal areas have necessary social inputs for labor, coastal access, infrastructure and economic demand. 
 
 High scores mean that a country is sustainably rearing as much farmed fish and seafood as possible based on its own potential. A low score can indicate one of two things – that seafood is being farmed in an unsustainable manner or that regions are not maximizing their potential to farm marine animals or seaweed in their coastal territory.
 

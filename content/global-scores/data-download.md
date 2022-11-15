@@ -12,7 +12,7 @@ menu:
 
 The OHI 2022 global assessment includes scores from 2012 to 2022 for 220 coastal countries and territories.  
 
-This is a BIG deal because this marks our 11th year of calculating the global Ocean Health Index. The average 2022 Index score was 69 out of 100. Average Index scores have not dramatically changed over eleven years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 11 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This marks our 11th year of calculating the global Ocean Health Index. The average 2022 Index score was 69 out of 100. Average Index scores have not dramatically changed over eleven years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 11 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
 
 ![Flowerplot](/images/flower_GlobalAverage.png)
 
@@ -43,7 +43,7 @@ In the interest of transparency and to promote scientific discovery that builds 
 
 Extra materials we use to calculate scores are available from these locations:
 
-- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2021) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
+- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2022) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
 - [Calculating scores: ](https://github.com/OHI-Science/ohi-global/releases) GitHub repository (ohi-global) with scripts used to calculate scores.
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment.
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub.

@@ -14,7 +14,7 @@ The Lasting Special Places sub-goal measures how well we are protecting, for cur
 
 ### GOAL DESCRIPTION
 
-Special places are coastal and marine areas that are culturally significant for a variety of reasons.  Designating a place to be a landmarke, monument, and/or Marine Protected Area can help ensure its existence, provide valuable ecosystem services and preserve cultural heritage and identity.
+Special places are coastal and marine areas that are culturally significant for a variety of reasons. Designating a place to be a landmark, monument, and/or Marine Protected Area can help ensure its existence, provide valuable ecosystem services and preserve cultural heritage and identity.
 
 ![](/images/lasting_special_places.jpg)
 

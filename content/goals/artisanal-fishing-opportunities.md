@@ -19,7 +19,7 @@ This goal measures whether people who need to fish on a small, local scale have 
 
 ### GOAL DESCRIPTION
 
-Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, in particular in developing nations. Small-scale fishing is an important component of cultural identity and heritage.
+Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, especially in developing nations. Small-scale fishing is an important component of cultural identity and heritage.
 
 > Half the world’s fish harvest is captured by artisanal fishing families.
 

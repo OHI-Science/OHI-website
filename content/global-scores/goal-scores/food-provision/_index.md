@@ -18,7 +18,7 @@ One of the most fundamental services the ocean provides people is the provision 
 
 This goal measures the amount of seafood sustainably harvested or grown for human consumption from wild-caught commercial fisheries and mariculture.
 
-The more seafood that is sustainably harvested or cultured, the higher the goal score. The overall Food Provision score is a combination of fisheries and mariculture scores, with the contribution of each type of practice to the overall score is weighted by its relative contribution to the total seafood yield. This assumes that one tonne of seafood by any method is the same as any other tonne of seafood.
+The more seafood that is sustainably harvested or cultured, the higher the goal score. The overall Food Provision score is a combination of fisheries and mariculture scores, with their contribution weighted by their relative contribution to the total seafood yield. This assumes that one tonne of seafood by any method is the same as any other tonne of seafood.
 
 
 

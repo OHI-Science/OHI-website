@@ -6,7 +6,7 @@ id: "FIS"
 description: "This sub-goal describes the amount of sustainably harvested seafood for human consumption. "
 ---
 
-Fisheries is part of the Food Provision goal. The Fisheries subgoal measures the amount of seafood sustainably harvested in a given EEZ or region through any means for use primarily in human consumption and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries. The Food Provision goals aim to maximize the amount of sustainably produced seafood from wild or ocean-cultured stocks so both over- or under- harvesting should be penalized. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
+Fisheries is part of the Food Provision goal. This subgoal measures the amount of seafood sustainably harvested in a given EEZ or region through any means for human consumption, and thus includes wild-caught commercial fisheries, mariculture, artisanal-scale and recreational fisheries. The Food Provision goals aim to maximize the amount of sustainably produced seafood from wild or ocean-cultured stocks so both over- or under- harvesting should be penalized. A score of 100 means the country or region is harvesting seafood to the ecosystem’s production potential in an sustainable manner.
 
 
 >The sub-goals of Food Provision (Fisheries and Mariculture) measure the amount of goods sustainably harvested from the sea for human consumption, while the Natural Products goal measures the amounts of non-food goods for trade (e.g., fish meal and oil, fish for aquarium, etc) in your study area. Data for both goals are often recorded in the same sources. It may be time-saving for the goal keepers for these two goals to join efforts to gather data.
@@ -19,13 +19,13 @@ Fisheries is part of the Food Provision goal. The Fisheries subgoal measures the
 
 This subgoal requires data for each region describing the amount (tonnes) of catch for each stock and a metric describing the stock's status.
 
->Ideally, this subgoal will include seafood from commercial, recreational, and artisanal fisheries in your area, although most completed assessments have only included catch information from commercial fisheries due to data availability limitations. When data become available for artisanal and/or recreational catch, they should be included as part of the fisheries sub-goal or as a separate sub-goal depending on the context.
+>Ideally, this subgoal will include seafood from commercial, recreational, and artisanal fisheries in your area, although most completed assessments have only included catch information from commercial fisheries due to data limitations. When data become available for artisanal and/or recreational catch, they should be included as part of the fisheries sub-goal or as a separate sub-goal depending on the context.
 
-Fisheries science is a discipline that, in part, aims to estimate the amount of fish that can sustainably be extracted from the sea. Given the complexity of the subject, **it is important to consult with a fisheries scientist in your study area, as they will have local expertise to help develop a regionally relevant model and direct you to available data.** 
+Fisheries science is a discipline that, in part, aims to estimate the amount of fish that can be sustainably extracted from the sea. Given the complexity of the subject, **it is important to consult with a fisheries scientist in your study area, as they will have local expertise to help develop a regionally relevant model and direct you to available data.** 
 
 > The datasets used for the Global Assessment may also be useful for OHI+ assessments. We have used: Fisheries catch data from the Sea Around Us Project (seaaroundus.org) and global fisheries landings over time from FAO (fao.org/fishery/statistics/en). However, these data only report landings at the country scale, which may not be high enough resolution for a subcountry analysis. For stock status scores, we use data from the RAM Legacy Stock Assessment Database (https://www.ramlegacy.org/).  
 
-For stock status scores, the Global Assessment uses the population biomass (B) relative to the biomass that can deliver maximum sustainable yield (BMSY) for each landed stock (B/BMSY).  A B/Bmsy score of 1 indicates the stock is harvested at the maximum sustainable yield.  Values < 1 indicate that biomass is too low to provide maximum sustainable yield. Ideally, these data are modeled using formal stock assessments based on fishing effort, catch, and life-history traits. When formal stock assessments are unavailable, we estimate B/Bmsy using a data-limited catch-MSY approach (Rosenberg et al. 2014; Martell & Froese 2013; Thorson et al. 2013; Costello et al. 2012, 2016), however, this method has a great deal of error (Afflerbach et al. 2019). 
+For stock status scores, the Global Assessment uses the population biomass (B) relative to the biomass that can deliver maximum sustainable yield (BMSY) for each landed stock (B/BMSY).  A B/Bmsy score of 1 indicates the stock is harvested at the maximum sustainable yield.  Values < 1 indicate that biomass is too low to provide maximum sustainable yield. Ideally, these data are modeled using formal stock assessments based on fishing effort, catch, and life-history traits. When formal stock assessments are unavailable, we estimate B/Bmsy using a data-limited catch-MSY approach (Rosenberg et al. 2014; Martell & Froese 2013; Thorson et al. 2013; Costello et al. 2012, 2016), however, this method has a great deal of uncertainty (Afflerbach et al. 2019). 
 
 An alternative approach used by Sea Around Us classifies stocks into broad categories of: undeveloped, developing, fully exploited, and collapsed using landings data (http://www.seaaroundus.org/stock-status-plots-method/). This may be adequate for your needs.
 
@@ -33,11 +33,14 @@ For this subgoal, the **reference point** is the maximum amount of sustainably h
 
 *_STEP 2: Fisheries model_*
 
-B/Bmsy scores are converted to stock status scores with values ranging from 0 to 1. For OHI global, stock status equals B/Bmsy when B/Bmsy values are <1.05. This penalizes the harvest of stocks with biomass values too low to provide maximum sustainable yield. When B/Bmsy values are > 1.05, we adjust the status score to be < 1, with increasing penalties as the B/Bmsy gets larger. This penalizes regions for not fishing enough of underharvested stocks. The penalty applied for underharvesting is less than that applied to overharvested stocks, but regions suffering from food insecurity may decide to penalize underharvest more aggressively.  
+B/Bmsy scores are converted to stock status scores with values ranging from 0 to 1. For OHI global, stock status equals B/Bmsy when B/Bmsy values are $\leq$1. This penalizes the harvest of stocks with biomass values too low to provide maximum sustainable yield. Currently, when B/Bmsy values are > 1, the global assessment assigns a status score of 1. This is not the best approach, but we have resorted to it because we have not yet identified a sound way of penalizing underharvesting.  
 
-The current status for each region is calculated by combining the current status scores of all the stocks within a region. For the Global Assessment, the stock status scores are averaged using a geometric mean weighted by the average catch since 1980.  The geometric mean ensures that smaller, rarer populations are weighted more heavily in the score calcuation which takes into account the biodiversity of the catch.  However, other assessments have used other approaches to combining stock status scores.
+Ideally, assessments should apply increasing penalties as the B/Bmsy gets larger to penalize regions for not fishing enough of underharvested stocks. The penalty applied to underharvesting should be less than that applied to overharvested stocks, but regions suffering from food insecurity may decide to penalize underharvest more aggressively.  
+
+The current status for each region is calculated by combining the current status scores of all the stocks within a region. For the Global Assessment, the stock status scores are averaged using a geometric mean weighted by the average catch since 1980. The geometric mean ensures that smaller, rarer populations are weighted more heavily in the score calculation which takes into account the biodiversity of the catch.  However, other assessments have used other approaches to combining stock status scores.
 
 *Table. Combining stock status scores*
+
 Different approaches may be used to combine stock status scores to calculate each region's status score.
 
 Approach   | Description   |  Theory
@@ -49,7 +52,6 @@ geometric mean weighting | stock status scores are weighted by tonnes of catch b
 *_Additional considerations_*
 
 It is important to determine the true nature of zero or missing values. For example, missing data may indicate that the stock is no longer monitored.  Or, that there was no catch. If there was no catch in recent years, it is important to include those recent years as 0’s.
-
 
 #### Examples of the Approach
 {{< csvTable path="tables/fisheries.csv" sep=";" >}}

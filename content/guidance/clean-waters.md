@@ -9,24 +9,25 @@ description: "This goal captures the degree to which local waters are unpolluted
 color: "#4EA09F"
 weight: 9
 ---
-People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), and trash. Pollution can result in contaminated marine food resources, damage to mariculture, toxic blooms, beach closures, and mass kills of organisms. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist. The Clean Water goal captures the degree to which local waters are unpolluted by natural and human-made causes. This goal scores highest when the contamination level is zero.
+People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters can come from land and ocean-based sources and cause many problems. Pollution can result in contaminated marine food, damage to mariculture, toxic blooms, beach closures, and mass kills of organisms. People are sensitive to these phenomena occurring in areas they access for recreation or other purposes but people even appreciate clean waters they do not directly use. The Clean Water goal captures the degree to which coastal waters are unpolluted by human-made causes. This goal scores highest when the contamination level is zero.
 
 This goal should aim to capture the full spectrum of pollution types that can cause waters to become unsuitable for recreation, enjoyment, and other purposes. Categories of pollution can include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. Ideally, data will be from direct measurements of pollutants from each category collected from on-going monitoring programs. 
 
 #### Practical Guidance
 
 *-STEP 1: Identify pollution data-*
-First consider the types and sources of pollution that may be in your area (see table). Types of pollution can include: trash/plastics, excess nutrients (e.g., nitrogen and phosphorous), and organic (e.g., pesticides, medications) and inorganic (e.g., heavy metals) chemicals. Sources of pollution can originate on land or in marine environments. For example: Are there known sources of trash and marine debris? Does wastewater get effectively treated before it is discharged into the environment? How does urban and agricultural runoff contribute to your local coastal waters?  
 
-For the Global Assessment, we evaluate 4 categories of pollution from multiple sources: nutrient pollution, organic and inorganic chemical pollution, pathogens, and trash.
+First consider the types and sources of pollution that may be in your area (see table). Types of pollution can include: trash/plastics, excess nutrients (e.g., nitrogen and phosphorous), and organic (e.g., pesticides, medications) and inorganic (e.g., heavy metals) chemicals. Sources of pollution can originate on land or in marine environments. For example: Are there known sources of trash and marine debris? Is wastewater effectively treated before it is discharged into the environment? How does urban and agricultural runoff contribute to your local coastal waters?  
 
-Once the pollution types are identified, ideally you can find in situ measurements that directly measure pollutants. This could include monitoring data describing concentrations of pathogens, nitrogen, chemical contaminants, or trash.  Pollutants can be measured in samples from the water column, sediments, or organisms, such as shellfish. For the Global Assessment, trash pollution was based on point sample data of offshore marine plastics that were interpolated to obtain complete global maps. Data at this scale will not capture local sources of trash pollution and isn't great at describing coastal trash.
+For the Global Assessment, we include 4 categories of pollution from multiple sources: nutrient pollution, organic and inorganic chemical pollution, pathogens, and trash.
 
-Alternatively, for some pollutant the measurements could reflect the impact of the pollution. For example, instead of describing nitrogen or phosphorous concentrations, data can describe the frequency and location of anoxic conditions or toxic algal blooms. 
+Once the pollution types are identified, ideally you can find in situ measurements that directly measure pollutants. This could include data monitoring concentrations of pathogens, nitrogen, chemical contaminants, or trash.  Pollutants can be measured in samples from the water column, sediments, or organisms, such as shellfish. For the Global Assessment, trash pollution was based on point sample data of offshore marine plastics that were interpolated to obtain complete global maps. Data at this scale will not capture local sources of trash pollution and isn't great at describing coastal trash.
 
-If direct measurements of water pollution are unavailable, the pollution levels may be estimated by modeling available data sources.  For the Global Assessment, nutrient pollution was modeled from land-based agricultural inputs occurring within the watershed and then diffused into the ocean (reference here).  The model  included synthetic fertilizer inputs, but could be expanded to include inputs from manure, mariculture, and human wastewater.   
+Alternatively, for some pollutants the data could reflect the impact of the pollution. For example, instead of describing nitrogen or phosphorous concentrations, data can describe the frequency and location of anoxic conditions or toxic algal blooms. 
 
-If modeling is not a viable solution, proxy data could be used such as as coastal population or shipping density. For the Global Assessment, pathogen pollution from human wastewater is based on  the number of people who do not have improved access to sanitation.
+If direct measurements of water pollution are unavailable, the pollution levels may be estimated by modeling available data sources. For the Global Assessment, nutrient pollution was modeled from land-based agricultural inputs occurring within the watershed and then diffused into the ocean (e.g., [Halpern et al. 2019](https://www.nature.com/articles/s41598-019-47201-9)).  
+
+If modeling is not a viable solution, proxy data could be used such as coastal population or shipping density. For the Global Assessment, pathogen pollution from human wastewater is based on  the number of people who do not have improved access to sanitation.
 
 You should attempt to use more refined data than the Global Assessment data, because it relies heavily on proxy data for water quality and may not be very accurate at smaller spatial scales. 
 
@@ -49,7 +50,7 @@ The categories of pollution will need to be combined into a single score.  For t
 
 *_Other Notes_*
 
-The data used in the Clean Waters goal is also used as Pressures layers. You should approach the both of them at the same time when possible. For example, marine debris from plastic pollution is also one of the pressures layers. When the data are used as a pressure, the scores are inverted such that a high value of debris results in a high pressure score. 
+The data used in the Clean Waters goal is also incorporated into the model as pressures layers. When the data are used as a pressure, the scores are inverted such that a high value of debris results in a high pressure score. 
 
 
 ### Examples of the Approach
