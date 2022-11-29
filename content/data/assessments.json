@@ -290,15 +290,15 @@
       ]
     },
     {
-      "name": "Chile",
+      "name": "Patagonia of Chile",
       "Status": "Active",
       "LeadingGroup": "Universidad Austral de Chile, Valdivia",
-      "Contact": "Laura Nahuelhual Muñoz (laura.nahuel@gmail.com)",
+      "Contact": "Laura Nahuelhual Muñoz (laura.nahuel@gmail.com); Vanessa Pizarro (va.pizarropizarro@gmail.com)",
       "isPlus": false,
       "Links": [
         {
           "name": "Github",
-          "link": "https://github.com/OHI-Science/chl"
+          "link": "https://github.com/OHI-Science/pat"
         }
       ]
     },
