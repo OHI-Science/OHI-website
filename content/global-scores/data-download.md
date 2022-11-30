@@ -18,7 +18,6 @@ This marks our 11th year of calculating the global Ocean Health Index. The avera
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
 {{<button text="Supplemental Results" link=images/htmls/Supplement_Results.html icon="images/flower_plot.png">}}
-{{<button text="ArcGIS LIVING ATLAS" link=https://ucsb.maps.arcgis.com/home/item.html?id=1f305abdc47a45bf867783c7419db6d0 icon="images/misc/microscope-icon.svg">}}
 
 
 <br>
