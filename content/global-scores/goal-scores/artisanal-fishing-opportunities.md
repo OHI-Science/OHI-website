@@ -13,10 +13,11 @@ This goal measures whether people who need to fish on a small, local scale have 
 
 {{< gauge regionId="0" goalCode="AO" >}}
 
-The current score indicates that many regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.  
+The current score indicates that many regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.
 
-Despite the relatively good global score, trends in Artisanal Opportunities are decreasing. The global score has, on average, dropped a nearly one fifth of a point every year since 2012. This decline is likely due to the decreasing stock status in some artisanal fisheries, which means some artisanal stocks are being overfished. 
+Artisanal Opportunities has a relatively good global score, which was pretty stagnant until this year. This year the score jumped by over 2 points. Certain regions have improved their score in 2022 through a higher score on access to artisanal fishing opportunity through law and regulation as reported by the UN sustainable development goal 14.b.1 which measure the progress by countries in the degree of application of a legal, regulatory, policy, or institutional framework which recognizes and protects access rights for small-scale fisheries.
 
-Another factor that may have contributed to decreasing Artisanal Opportunities scores was an increase in need, indicated by a decrease in per capita GDP (standardized by purchasing power), in 2020 due to the global economic slowdown caused by the pandemic.
+Another factor that may have contributed to the latest increase in Artisanal Opportunities scores was a decrease in need, indicated by an increase in per capita GDP (standardized by purchasing power), in 2021 due to the beginning of the rebound from the global economic slowdown caused by the COVID-19 pandemic in 2020. 
+
 
 [Learn more about this goal]({{< ref "goals/artisanal-fishing-opportunities.md" >}})

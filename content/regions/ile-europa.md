@@ -1,9 +1,9 @@
 ---
 regionId: 35
 title: Ile Europa
-rank: 3
-meanScore: 85.76
-globalMeanScore: 70.22
+rank: 4
+meanScore: 88.85
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -19,13 +19,11 @@ A score of 100 means the country or region is meeting the needs of artisanal fis
 
 Ideally, this goal will include a measure of of how easy or hard it is for residents to *access* ocean resources when they need them. Measures of access include institutional and/or government regulations that provide people with access to marine waters through open coastlines and docks, readily available permitting for fish harvest, and programs that foster artisanal fishing opportunities. Another measure of access is that fish are actually available, which can be estimated by assessing the health of targeted species (see Fisheries subgoal) or the general sustainability of fishing practices. Sustainable gears are traditional hook and line, as opposed to unsustainable practices such as dynamite and gill net fishing. 
 
-The *need* for artisanal fishing is most directly tied to the percent of population below the poverty line. A combination of all of these metrics is ideal this is usually limited by data.
+The *need* for artisanal fishing is most directly tied to the percent of population below the poverty line. 
 
 > NOTE: The benefits of Artisanal Fishing can be difficult to parse from other goals. For example, tonnage of artisanally-caught fish will typically be included in the Food Provision goal. Another example is that in the Baltic Sea region, Artisanal Opportunities is very closely connected to Tourism and Recreation since there are a lot of locals and tourists using the shared sea for enjoyment. It will be necessary to determine how to apportion the data.
 
-The reference point will depend on the data and model. The reference point for this goal would likely be a metric of having full access to the resource. 
-
-In most cases, the availability of better local data may allow for improvements to the Global OHI assessment model (see table below). 
+The reference point will depend on the data and model. In most cases, the availability of better local data will allow for improvements to the Global OHI assessment model (see table below). 
 
 
 #### Examples of the Approach

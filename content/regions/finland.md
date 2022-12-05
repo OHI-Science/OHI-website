@@ -1,9 +1,9 @@
 ---
 regionId: 174
 title: Finland
-rank: 55
-meanScore: 73.84
-globalMeanScore: 70.22
+rank: 76
+meanScore: 70.94
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 178
 title: Poland
-rank: 119
-meanScore: 68.67
-globalMeanScore: 70.22
+rank: 159
+meanScore: 64.73
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

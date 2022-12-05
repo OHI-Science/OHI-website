@@ -1,9 +1,9 @@
 ---
 regionId: 75
 title: Ukraine
-rank: 206
-meanScore: 59.9
-globalMeanScore: 70.22
+rank: 201
+meanScore: 59.1
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

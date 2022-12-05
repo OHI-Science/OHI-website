@@ -1,9 +1,9 @@
 ---
 regionId: 186
 title: Montenegro
-rank: 154
-meanScore: 65.82
-globalMeanScore: 70.22
+rank: 212
+meanScore: 55.17
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

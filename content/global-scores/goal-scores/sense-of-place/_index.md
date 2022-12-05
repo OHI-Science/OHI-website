@@ -16,7 +16,7 @@ This goal describes how well we are preserving current and future access to the 
 
 The current score indicates that many regions are preserving the marine sources that possess cultural value.
 
-People derive a sense of identity or value from living near the ocean, visiting coastal or marine locations or just knowing that such places and their characteristic species exist.This goal tries to capture the aspects of the coastal and marine system that people value as part of their cultural identity by measuring two subgoals: the condition of iconic species and the condition of lasting special places.
+People derive a sense of identity or value from living near the ocean, visiting coastal or marine locations or just knowing that such places and their characteristic species exist. This goal tries to capture the aspects of the coastal and marine system that people value as part of their cultural identity by measuring two subgoals: the condition of iconic species and the condition of lasting special places.
 
 The health of iconic species and protected places are two ways of assessing the cultural, spiritual, aesthetic and other intangible benefits that people value for a region.
 

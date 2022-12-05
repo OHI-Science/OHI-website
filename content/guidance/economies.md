@@ -18,7 +18,7 @@ Before embarking on the Economies subgoal, consider how you want to structure th
 
 You will first determine the marine sectors to include in the assessment.  This may include: mariculture, fisheries, recreational fishing, bird watching, whale watching, tourism, sailing, kayaking, surfing, aquarium fishing, wave and wind energy, transportation and shipping, ports and harbors, ships and boatbuilding, and scientific research, among others. 
 
-> You will need to determine whether to include industries that are not considered sustainable, such as oil and gas extraction. It is also important to determine whether to include industries that do no rely on healthy oceans to thrive, such as wind/wave energy, shipping, and boat-building. However, these industries may employ many people and generate large revenue for a region. Ultimately, whether and how to include these industries is a decision that should be made on a case-by-case basis by the individual OHI+ group. For the global assessment we excluded sectors that are not considered sustainable, but decided to include sectors that do not depend on a healthy ocean.
+> You will need to determine whether to include industries that are not considered sustainable, such as oil and gas extraction. It is also important to determine whether to include industries that do not rely on healthy oceans to thrive, such as wind/wave energy, shipping, and boat-building. However, these industries may employ many people and generate large revenue for a region. Ultimately, whether and how to include these industries is a decision that should be made on a case-by-case basis by the individual OHI+ group. For the global assessment we excluded sectors that are not considered sustainable, but decided to include sectors that do not depend on a healthy ocean.
 
 *_STEP 2: Find the data_*
 
@@ -28,15 +28,15 @@ Revenue data should be collected for each marine sector and coastal region. When
 
 *_STEP 3: Identify the reference point_*
 
-The reference point for this sub-goal is often a **temporal reference point** that compares current revenue to past revenue in the same region. In this case, the goal is to maintain revenue year after year. Another approach would be to use locally established target for growth. 
+The reference point for this sub-goal is often a **temporal reference point** that compares current revenue to past revenue in the same region. In this case, the goal is to maintain revenue year after year. Another approach would be to use a locally established target for growth. 
 
-The temporal reference point can be obtained in many ways: e.g., maximum revenue acheived during the past 20 years; average of three highest years of revenue during the past 15 years; the revenue acheived 5 years ago, a slope estimate from a linear model using the past 10 years of data; etc.  
+The temporal reference point can be obtained in many ways: e.g., maximum revenue achieved during the past 20 years; average of three highest years of revenue during the past 15 years; the revenue achieved 5 years ago, a slope estimate from a linear model using the past 10 years of data; etc.  
 
 *_STEP 4: Other helpful information_*
 
-In your assessment, there is the opportunity to study the behavior of economic trends in your area. You can examine time-series with greater detail and, for example, establish a different time-periods that reflect economic cycles in your area, or even process the data to eliminate the “noise” from fluctuations and capture more persistent trends. This may be useful if there is a lot of uncertainty, or high variation in the data. For example, a sporadic event such as a large storm may negatively impact a year's revenue, but this may not accurately reflect longer term patterns. 
+Studying the behavior of economic trends in your area can provide useful insights. For example, time-series data can be used to identify general economic cycles specific to your area that can be used to scale reference points or identify the more persistent patterns amid the noise. This may be useful if there is a lot of uncertainty or high variation in the data. For example, a sporadic event such as a large storm may negatively impact a year's revenue, but this may not accurately reflect longer term patterns. 
 
-To smooth short-term fluctions, the global assessment uses a five-year moving-window average to calculate each year's revenue. There are other approaches to consider. For example, it may be helpful to buffer the reference point so revenues that fall under, but still within some range of the reference point, acheive a score of 100. 
+To smooth short-term fluctuations, the global assessment uses a five-year moving-window average to calculate each year's revenue. There are other approaches to consider. For example, it may be helpful to buffer the reference point so revenues that fall under, but still within some range of the reference point, achieve a score of 100. 
 
 Also consider adjusting the reference point to track the overall market, such that the Economies goal will not be penalized if revenue is lower than the reference period, but the decrease is consistent with the decline in the overall economy.  For example, if a country's overall GDP drops by 25%, a loss of 25% of marine related revenue would still score 100.  
 

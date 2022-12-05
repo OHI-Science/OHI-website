@@ -1,9 +1,9 @@
 ---
 regionId: 102
 title: South Africa
-rank: 176
-meanScore: 63.93
-globalMeanScore: 70.22
+rank: 189
+meanScore: 61.52
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 141
 title: Faeroe Islands
-rank: 171
-meanScore: 64.49
-globalMeanScore: 70.22
+rank: 186
+meanScore: 61.84
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

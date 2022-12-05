@@ -1,9 +1,9 @@
 ---
 regionId: 166
 title: Jamaica
-rank: 87
-meanScore: 70.83
-globalMeanScore: 70.22
+rank: 82
+meanScore: 70.23
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -7,7 +7,7 @@ cards_title: "Sub-Goals"
 ---
 
 ### SUSTAINING JOBS AND THRIVING COASTAL ECONOMIES
-This goal measures jobs and revenue from sustainable marine-related industries. Livelihoods and Economies is divided into two sub-goals: Livelihoods, and Economies. Each is measured separately because the number and quality of jobs and the amount of revenue produced are both of considerable interest to stakeholders and governments, and can have different patterns in some cases.
+This goal measures jobs and revenue from sustainable marine-related industries. This goal is divided into two subgoals because the number and quality of jobs (Livelihoods) and the amount of revenue produced (Economies) are both of considerable interest to stakeholders and governments, and can have different patterns in some cases.
 
 ### CURRENT SCORE
 

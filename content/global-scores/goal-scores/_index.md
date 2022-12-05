@@ -12,7 +12,7 @@ menu:
 
 <!--## Ocean benefits delivered to humans now and in the future.-->
 
-The overall global score was 70, but a closer look at the underlying goals reveals a great deal of variation in how well we are managing the sustainable delivery of different ocean benefits. 
+The overall global score was 69, but a closer look at the underlying goals reveals a great deal of variation in how well we are managing the sustainable delivery of different ocean benefits. 
 
 Select a goal below to see the scores that make up the global index and to learn how they have changed during the 10 years we have been conducting OHI assessments.
 

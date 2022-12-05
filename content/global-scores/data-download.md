@@ -8,17 +8,16 @@ menu:
     weight: 3
 ---
 
-### 10 YEARS OF SCORES! 
+### 11 YEARS OF SCORES! 
 
-The OHI 2021 global assessment includes scores from 2012 to 2021 for 220 coastal countries and territories.  
+The OHI 2022 global assessment includes scores from 2012 to 2022 for 220 coastal countries and territories.  
 
-This is a BIG deal because this marks our 10th year of calculating the global Ocean Health Index. The average 2021 Index score was 70 out of 100. Average Index scores have not dramatically changed over ten years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 10 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This marks our 11th year of calculating the global Ocean Health Index. The average 2022 Index score was 69 out of 100. Average Index scores have not dramatically changed over eleven years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 11 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
 
 ![Flowerplot](/images/flower_GlobalAverage.png)
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
-{{<button text="Supplemental Results" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement_Results.html icon="images/flower_plot.png">}}
-{{<button text="ArcGIS LIVING ATLAS" link=https://ucsb.maps.arcgis.com/home/item.html?id=1f305abdc47a45bf867783c7419db6d0 icon="images/misc/microscope-icon.svg">}}
+{{<button text="Supplemental Results" link=images/htmls/Supplement_Results.html icon="images/flower_plot.png">}}
 
 
 <br>
@@ -33,7 +32,7 @@ To learn more about the methods used to calculate the scores select the METHODOL
 
 {{<button text="METHODOLOGY TAB" link=/methodology icon="images/misc/microscope-icon.svg">}}
 
-{{<button text="GLOBAL METHODS" link=https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html icon="images/misc/microscope-icon.svg">}}
+{{<button text="GLOBAL METHODS" link=images/htmls/Supplement.html icon="images/misc/microscope-icon.svg">}}
 
 ----
 
@@ -43,7 +42,7 @@ In the interest of transparency and to promote scientific discovery that builds 
 
 Extra materials we use to calculate scores are available from these locations:
 
-- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2021) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
+- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2022) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
 - [Calculating scores: ](https://github.com/OHI-Science/ohi-global/releases) GitHub repository (ohi-global) with scripts used to calculate scores.
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment.
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub.

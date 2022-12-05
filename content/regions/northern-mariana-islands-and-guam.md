@@ -1,9 +1,9 @@
 ---
 regionId: 13
 title: Northern Mariana Islands and Guam
-rank: 192
-meanScore: 62.21
-globalMeanScore: 70.22
+rank: 203
+meanScore: 58.82
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

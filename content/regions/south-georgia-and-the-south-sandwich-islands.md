@@ -1,9 +1,9 @@
 ---
 regionId: 89
 title: South Georgia and the South Sandwich Islands
-rank: 11
-meanScore: 81.12
-globalMeanScore: 70.22
+rank: 54
+meanScore: 73.12
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

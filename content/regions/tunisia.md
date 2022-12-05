@@ -1,9 +1,9 @@
 ---
 regionId: 61
 title: Tunisia
-rank: 193
-meanScore: 62.02
-globalMeanScore: 70.22
+rank: 198
+meanScore: 60.03
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

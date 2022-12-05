@@ -1,9 +1,9 @@
 ---
 regionId: 179
 title: France
-rank: 42
-meanScore: 75.28
-globalMeanScore: 70.22
+rank: 43
+meanScore: 73.72
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 187
 title: Croatia
-rank: 41
-meanScore: 75.29
-globalMeanScore: 70.22
+rank: 153
+meanScore: 65.39
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

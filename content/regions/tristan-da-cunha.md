@@ -1,9 +1,9 @@
 ---
 regionId: 88
 title: Tristan da Cunha
-rank: 211
-meanScore: 57.63
-globalMeanScore: 70.22
+rank: 210
+meanScore: 55.73
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

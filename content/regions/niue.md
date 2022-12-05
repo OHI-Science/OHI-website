@@ -1,9 +1,9 @@
 ---
 regionId: 154
 title: Niue
-rank: 166
-meanScore: 64.84
-globalMeanScore: 70.22
+rank: 190
+meanScore: 61.43
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 105
 title: Bouvet Island
-rank: 92
-meanScore: 70.58
-globalMeanScore: 70.22
+rank: 68
+meanScore: 71.76
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

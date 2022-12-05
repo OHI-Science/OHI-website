@@ -1,9 +1,9 @@
 ---
 regionId: 16
 title: Australia
-rank: 56
-meanScore: 73.69
-globalMeanScore: 70.22
+rank: 80
+meanScore: 70.37
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

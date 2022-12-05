@@ -222,14 +222,15 @@ function timeSeries({
     // Bind data to the paths selection
     const paths = pathGroup
       .selectAll('.' + classes.line)
-      .data(data.series)
+
     paths
+      .data(data.series)
       .enter()
       .append('path')
+      .merge(paths)
       .classed(classes.line, true)
       .classed(classes.lineHighlighted, d => highlightLines.includes(d.id))
       .classed(classes.lineEmphasized, d => emphasizeLines.includes(d.id))
-      .merge(paths)
       .transition()
       .duration(transitionDuration)
       .attr('d', d => line(d.values))

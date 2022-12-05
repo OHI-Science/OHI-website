@@ -1,9 +1,9 @@
 ---
 regionId: 124
 title: Barbados
-rank: 81
-meanScore: 71.58
-globalMeanScore: 70.22
+rank: 113
+meanScore: 68.17
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

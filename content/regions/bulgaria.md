@@ -1,9 +1,9 @@
 ---
 regionId: 71
 title: Bulgaria
-rank: 143
-meanScore: 66.82
-globalMeanScore: 70.22
+rank: 167
+meanScore: 64.19
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

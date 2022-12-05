@@ -1,9 +1,9 @@
 ---
 regionId: 197
 title: Cameroon
-rank: 132
-meanScore: 67.37
-globalMeanScore: 70.22
+rank: 169
+meanScore: 63.94
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 29
 title: Mayotte
-rank: 10
-meanScore: 81.45
-globalMeanScore: 70.22
+rank: 14
+meanScore: 79.94
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

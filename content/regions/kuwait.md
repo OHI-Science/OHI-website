@@ -1,9 +1,9 @@
 ---
 regionId: 51
 title: Kuwait
-rank: 44
-meanScore: 74.88
-globalMeanScore: 70.22
+rank: 55
+meanScore: 73.01
+globalMeanScore: 69.33
 numRegions: 220
 layout: region_score
 ---

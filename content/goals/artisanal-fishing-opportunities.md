@@ -19,7 +19,7 @@ This goal measures whether people who need to fish on a small, local scale have 
 
 ### GOAL DESCRIPTION
 
-Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, in particular in developing nations. Small-scale fishing is an important component of cultural identity and heritage.
+Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, especially in developing nations. Small-scale fishing is an important component of cultural identity and heritage.
 
 > Half the world’s fish harvest is captured by artisanal fishing families.
 
@@ -38,7 +38,7 @@ While small-scale fishing provides benefits and opportunities for local communit
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
 
-{{<button text="OHI Model" link="https://ohi-science.org/ohiprep_v2021/Reference/methods_and_results/Supplement.html#61_Artisanal_opportunities" icon="/images/misc/microscope-icon.svg" >}}
+{{<button text="OHI Model" link="images/htmls/Supplement.html" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/artisanal-fishing-opportunities" icon="/images/misc/directions-icon.svg" >}}
 {{<button text="Download Infographic" link=images/infographs/AO.png icon="images/goal-icons/artisinal-fishing-opportunities.svg" >}}
 
