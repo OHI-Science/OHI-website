@@ -4,7 +4,7 @@ name: "2022 Ocean Health Index Release"
 bg_image: "/images/banners/lake.jpg"
 card_image: "/images/hex_ohi.png"
 preview_text: "This year marks the 11th global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The ..."
-Date: 2022-12-06
+Date: 2022-12-05
 author: Gage Clawson & Melanie Frazier
 menu:
   main:
