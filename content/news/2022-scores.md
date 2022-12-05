@@ -20,12 +20,7 @@ menu:
 We are proud to announce our 11th (!) year of measuring the state of the world’s oceans. 
 
 >  The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. 
-We invite you to visit the new Ocean Health Index website (which, if you are reading this, you are already on) to explore country and goal scores, see how scores are calculated, and learn more about conducting your own Ocean Health Index assessment!
-
-We invite you to visit the new Ocean Health Index [website](../../) (which, if you are reading this, you are already on) to explore country and goal scores, see how scores are calculated, and learn more about conducting your own Ocean Health Index assessment!
-
-![website](/images/misc/ohi_website.png)
-
+  
 As usual, the 2022 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years’ scores (2012-2022) using the latest science and data when available. As always, the data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2022) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
 
 This year’s assessment was led by the OHI fellows Juliet Cohen, Peter Menzies, and Cullen Molitor, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern. 
