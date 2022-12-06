@@ -78,3 +78,7 @@ Overall, the Clean Waters goal has increased modestly since 2012. The global sco
 
 For synthetic fertilizers, the past 11 years have witnessed about a 12% increase in fertilizer use (2010/2011 vs. 2010/2020), however, the trend varies dramatically by country. Some of the countries with the largest coastlines and most fertilizer use have actually witnessed a decrease in fertilizer use. For example, mainland China which uses nearly 30% of global fertilizer has decreased their fertilizer use by 11% in the past 11 years. The United States has decreased their fertilizer use by 2.3% over the same period, which actually results in a fairly substantial decrease in global fertilizer use because they account for about 11% of global fertilizer consumption. Germany has decreased their fertilizer use by an impressive 23% during the same period. Of the 166 countries reported by FAO, 49 of them have had a decreasing trend in fertilizer use from 2010-2020.
 
+
+ **Media**
+  
+  [Taking Ocean Vital Signs](https://www.news.ucsb.edu/2022/020786/taking-ocean-vital-signs?utm_source=newsletter&utm_medium=email&utm_content=Taking%20Ocean%20Vital%20Signs&utm_campaign=December%206%2C%202022) in the UCSB current.
