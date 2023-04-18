@@ -23,7 +23,7 @@ A [previous post](https://oceanhealthindex.org/news/cmip_1_what_is_this/) provid
 
 ##
 
-> We are always on the hunt for data. Please let us know (frazier@nceas.ucsb.edu) if you discover CMIP6 ensemble datasets and/or downscaled data that are publically available. I will add them to this post. MANY THANKS!
+> We are always on the hunt for data. Please let us know (frazier@nceas.ucsb.edu) if you discover CMIP6 ensemble datasets and/or downscaled data that are publicly available. I will add them to this post. MANY THANKS!
 
 
 <br>
@@ -163,13 +163,22 @@ But: if you must work with the raw data. Here are some resources that look usefu
 {{< csvTable path="tables/global_cmip6_derived_products.csv" sep="," >}}
 
 **1. [Xu et al. 2021](https://www.nature.com/articles/s41597-021-01079-3)
+
 2. [Olen and Lehsten 2022](https://www.sciencedirect.com/science/article/pii/S2352340922000166)
+
 3. [IPCC WGI Interactive Atlas](https://interactive-atlas.ipcc.ch/regional-information)
+
 4. [WorldClim](https://www.worldclim.org/data/cmip6/cmip6climate.html)
+
 5. [NOAA's Climate Change Web Portal: CMIP6](https://psl.noaa.gov/ipcc/cmip6/)
+
 6. [Muis et al. 2022](https://www.essoar.org/doi/10.1002/essoar.10511919.1)
+
 7. [Beusen et al. 2022](https://www.sciencedirect.com/science/article/pii/S0959378021002053#f0015)
+
 8. [Thrasher et al. 2022](https://www.nature.com/articles/s41597-022-01393-4)
+
+9. [Jiang et al. 2023](https://doi.org/10.1029/2022MS003563)
  
 ### United States CMIP6 derived models that we have explored
 {{< csvTable path="tables/us_cmip6_derived_products.csv" sep="," >}}
