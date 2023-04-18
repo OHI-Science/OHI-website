@@ -9,7 +9,7 @@ menu:
 ---
 
 # Contact OHI
-For all inquiries about the OHI, contact lead analyst
+For all inquiries about the OHI, contact 
 
-Gage Clawson at clawson@nceas.ucsb.edu
+Ben Halpern at halpern@nceas.ucsb.edu
 

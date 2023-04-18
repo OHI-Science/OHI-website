@@ -5,7 +5,7 @@ bg_image: "/images/banners/lake.jpg"
 card_image: "/images/hex_ohi.png"
 preview_text: "This year marks the 11th global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The ..."
 Date: 2022-12-06
-author: Gage Clawson & Melanie Frazier
+author: The OHI Team 
 menu:
   main:
     parent: 'News'
@@ -20,12 +20,7 @@ menu:
 We are proud to announce our 11th (!) year of measuring the state of the world’s oceans. 
 
 >  The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. 
-We invite you to visit the new Ocean Health Index website (which, if you are reading this, you are already on) to explore country and goal scores, see how scores are calculated, and learn more about conducting your own Ocean Health Index assessment!
-
-We invite you to visit the new Ocean Health Index [website](../../) (which, if you are reading this, you are already on) to explore country and goal scores, see how scores are calculated, and learn more about conducting your own Ocean Health Index assessment!
-
-![website](/images/misc/ohi_website.png)
-
+  
 As usual, the 2022 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years’ scores (2012-2022) using the latest science and data when available. As always, the data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2022) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
 
 This year’s assessment was led by the OHI fellows Juliet Cohen, Peter Menzies, and Cullen Molitor, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern. 
@@ -83,3 +78,7 @@ Overall, the Clean Waters goal has increased modestly since 2012. The global sco
 
 For synthetic fertilizers, the past 11 years have witnessed about a 12% increase in fertilizer use (2010/2011 vs. 2010/2020), however, the trend varies dramatically by country. Some of the countries with the largest coastlines and most fertilizer use have actually witnessed a decrease in fertilizer use. For example, mainland China which uses nearly 30% of global fertilizer has decreased their fertilizer use by 11% in the past 11 years. The United States has decreased their fertilizer use by 2.3% over the same period, which actually results in a fairly substantial decrease in global fertilizer use because they account for about 11% of global fertilizer consumption. Germany has decreased their fertilizer use by an impressive 23% during the same period. Of the 166 countries reported by FAO, 49 of them have had a decreasing trend in fertilizer use from 2010-2020.
 
+
+ **Media**
+  
+  [Taking Ocean Vital Signs](https://www.news.ucsb.edu/2022/020786/taking-ocean-vital-signs?utm_source=newsletter&utm_medium=email&utm_content=Taking%20Ocean%20Vital%20Signs&utm_campaign=December%206%2C%202022) in the UCSB current.
