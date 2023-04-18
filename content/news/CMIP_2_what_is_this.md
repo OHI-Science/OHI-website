@@ -164,28 +164,31 @@ But: if you must work with the raw data. Here are some resources that look usefu
 
 **1. [Xu et al. 2021](https://www.nature.com/articles/s41597-021-01079-3)
 
-2. [Olen and Lehsten 2022](https://www.sciencedirect.com/science/article/pii/S2352340922000166)
+**2. [Olen and Lehsten 2022](https://www.sciencedirect.com/science/article/pii/S2352340922000166)
 
-3. [IPCC WGI Interactive Atlas](https://interactive-atlas.ipcc.ch/regional-information)
+**3. [IPCC WGI Interactive Atlas](https://interactive-atlas.ipcc.ch/regional-information)
 
-4. [WorldClim](https://www.worldclim.org/data/cmip6/cmip6climate.html)
+**4. [WorldClim](https://www.worldclim.org/data/cmip6/cmip6climate.html)
 
-5. [NOAA's Climate Change Web Portal: CMIP6](https://psl.noaa.gov/ipcc/cmip6/)
+**5. [NOAA's Climate Change Web Portal: CMIP6](https://psl.noaa.gov/ipcc/cmip6/)
 
-6. [Muis et al. 2022](https://www.essoar.org/doi/10.1002/essoar.10511919.1)
+**6. [Muis et al. 2022](https://www.essoar.org/doi/10.1002/essoar.10511919.1)
 
-7. [Beusen et al. 2022](https://www.sciencedirect.com/science/article/pii/S0959378021002053#f0015)
+**7. [Beusen et al. 2022](https://www.sciencedirect.com/science/article/pii/S0959378021002053#f0015)
 
-8. [Thrasher et al. 2022](https://www.nature.com/articles/s41597-022-01393-4)
+**8. [Thrasher et al. 2022](https://www.nature.com/articles/s41597-022-01393-4)
 
-9. [Jiang et al. 2023](https://doi.org/10.1029/2022MS003563)
+**9. [Jiang et al. 2023](https://doi.org/10.1029/2022MS003563)
+
  
 ### United States CMIP6 derived models that we have explored
 {{< csvTable path="tables/us_cmip6_derived_products.csv" sep="," >}}
 
 **1. [AdaptWest Project 2022](https://adaptwest.databasin.org/pages/adaptwest-climatena/)
-2. [MACA Data Portal](https://climate.northwestknowledge.net/MACA/data_portal.php)
-3. [Mahoney et al. 2022](https://www.researchgate.net/publication/358571908_A_CMIP6_ensemble_for_downscaled_monthly_climate_normals_over_North_America)
+
+**2. [MACA Data Portal](https://climate.northwestknowledge.net/MACA/data_portal.php)
+
+**3. [Mahoney et al. 2022](https://www.researchgate.net/publication/358571908_A_CMIP6_ensemble_for_downscaled_monthly_climate_normals_over_North_America)
 
 ## References
 
