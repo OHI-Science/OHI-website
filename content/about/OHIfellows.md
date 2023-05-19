@@ -23,7 +23,28 @@ This program is an integral part of what the Ocean Health Index has accomplished
 
 ## Current Fellows
 
-The 2022 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
+The 2023 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
+
+<!--- <center>
+
+<img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/> 
+
+</center> -->
+
+### Erika Egg <a href = "http://github.com/eeerika" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+<div style="width: 100%;">
+<a href="https://eeerika.github.io/">
+  <img src="/images/people/Egg_Erika_2023.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Erika has always had a wide variety of interests and has strived to continuously embrace all of her different passions. During her undergraduate education at UC Santa Barbara, where she entered as a Regents Scholar, she decided to triple major in Environmental Studies, Linguistics (Emphasis in Language and Speech Technologies), and History of Art and Architecture (Emphasis in Architecture and Environment), graduating in 2022 with highest honors and membership in Phi Beta Kappa. During this time, she developed a greater passion for computational data analysis methods and a depth of issues at the intersection of her three primary fields of study. Her research experience has included lab, field, and data analysis work related to marine chemical analysis, landscape restoration, urban forestry, food security, and the environmental impacts of COVID-19. 
+</p> 
+<p>
+She is now pursuing a Master of Environmental Data Science at UC Santa Barbara’s Bren School of Environmental Science & Management and hopes to apply her interdisciplinary lens to analyzing urban-centered socio-environmental topics, resulting in the improvement of the quality and sustainability of human interactions with built and natural environments. Concurrently, she initially assisted with research data management for the Arctic Data Center at the National Center for Ecological Analysis and Synthesis (NCEAS) and then transitioned to her current position as an OHI Fellow. Growing up along the coast and seeing tourism-centered human-ocean interactions firsthand, she developed a passion for supporting a positive relationship between humans and marine environmental processes and is excited to learn how to more effectively support the processes she cares deeply about.
+</p>
+</div>
+
+## **2022 Fellows**
 
 <center>
 
