@@ -25,12 +25,6 @@ This program is an integral part of what the Ocean Health Index has accomplished
 
 The 2023 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
 
-<!--- <center>
-
-<img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/> 
-
-</center> -->
-
 ### Carlo Broderick <a href = "https://github.com/CarloBroderick" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
 <div style="width: 100%;">
 <a href="https://eeerika.github.io/">
@@ -41,6 +35,9 @@ Carlo Broderick is currently pursuing a master's degree in environmental data sc
 </p> 
 <p>
 Carlo went on to become the first employee of SupplyShift, a software company focused on supply chain management and corporate responsibility. During his time at SupplyShift, Carlo was responsible for overseeing the implementation of data collection and analysis programs for the supply chains of multiple Fortune-500 companies. The company has now grown to have a team of over 60 individuals worldwide. 
+</p>
+</div>
+Following his tenure at SupplyShift, Carlo took on the role of program coordinator for the Mellichamp Sustainable Materials and Product Design Initiative at UC Santa Barbara. These professional experiences provided Carlo with extensive knowledge and expertise in sustainability organizations that utilize data to address environmental crises.
 </p>
 </div>
 His current interests include machine learning, remote sensing, and the subtle art of the slow cooked bean. Carlo plans to leverage the machine learning techniques, learned at Bren, to assess the increasingly large data sets coming out of the environmental and supply chain management industries, all with a focus on remote sensing and global information systems. 
