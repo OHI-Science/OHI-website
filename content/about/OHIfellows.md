@@ -6,24 +6,38 @@ menu:
   main:
     parent: 'About'
     weight: 3
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-<br>
-<br>
+<br> <br>
 
 ## About the OHI Fellows Program
 
-The Ocean Health Index Global Fellowship was created to provide training to a small group of early-career data scientists. 
+The Ocean Health Index Global Fellowship was created to provide training
+to a small group of early-career data scientists.
 
-During the process of calculating OHI scores, the fellows dive into the theory, tools, and workflows the OHI uses to ensure openness, transparency, and reproducibility. The Fellows gain valuable experience and build useful skills.
+During the process of calculating OHI scores, the fellows dive into the
+theory, tools, and workflows the OHI uses to ensure openness,
+transparency, and reproducibility. The Fellows gain valuable experience
+and build useful skills.
 
-We benefit from their fresh eyes and new perspectives. Their contributions help the OHI grow and innovate. 
+We benefit from their fresh eyes and new perspectives. Their
+contributions help the OHI grow and innovate.
 
-This program is an integral part of what the Ocean Health Index has accomplished thus far and what it is today.
+This program is an integral part of what the Ocean Health Index has
+accomplished thus far and what it is today.
 
 ## Current Fellows
+<center>
 
-The 2023 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
+<img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/>
+
+</center>
+
+The 2023 Fellows are three students in the Environmental Data Science
+program at the Bren School of Environmental Science and Management.
 
 <!--- <center>
 
@@ -31,7 +45,8 @@ The 2023 Fellows are three students in the Environmental Data Science program at
 
 </center> -->
 
-### Carlo Broderick <a href = "https://github.com/CarloBroderick" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Carlo Broderick <a href = "https://github.com/CarloBroderick" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
 <div style="width: 100%;">
 <a href="https://github.com/CarloBroderick">
   <img src="/images/people/carlo_broderick_profile.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
@@ -51,9 +66,11 @@ His current interests include machine learning, remote sensing, and the subtle a
 </div>
 
 <div style="clear:both;"></div>
+
 <br>
 
-### Erika Egg <a href = "http://github.com/eeerika" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Erika Egg <a href = "http://github.com/eeerika" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
 <div style="width: 100%;">
 <a href="https://eeerika.github.io/">
   <img src="/images/people/Egg_Erika_2023.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
@@ -66,6 +83,23 @@ She is now pursuing a Master of Environmental Data Science at UC Santa Barbara�
 </p>
 </div>
 
+### Adelaide Robinson <a href = "http://github.com/adelaiderobinson" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://adelaiderobinson.github.io/">
+  <img src="/images/people/adelaide.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+</p> 
+Adelaide has worked in conservation since she completed her bachelor’s degree in animal biology from UC Davis in 2015. She primarily focused on monitoring salmon populations while working seasonally for various monitoring programs across the West coast. 
+
+</p> 
+As a fisheries technician at Point Reyes National Seashore, she led a Dual Frequency Identification (DIDSON) sonar camera project designed to monitor adult salmon. This included managing all data concerning nearly 3,000 hours of sonar footage. This project, along with experience collecting data in the field, piqued her interest in delving deeper into data management and analysis. 
+</p> 
+Adelaide is currently a graduate student in the Master of Environmental Data Science (MEDS) Program at UC Santa Barbara within the Bren School of Environmental Science and Management. As an OHI fellow, she is excited to work on an interdisciplinary project where she can combine her interests in data science, ecology, and sustainable fisheries economics. 
+</p>
+</div>
+
 ## **2022 Fellows**
 
 <center>
@@ -74,7 +108,8 @@ She is now pursuing a Master of Environmental Data Science at UC Santa Barbara�
 
 </center>
 
-### Juliet Cohen <a href = "http://github.com/julietcohen" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Juliet Cohen <a href = "http://github.com/julietcohen" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
 <div style="width: 100%;">
 <a href="https://julietcohen.github.io/">
   <img src="/images/people/Cohen_Juliet.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
@@ -88,9 +123,11 @@ Moving forward at the Ocean Health Index, she hopes to contribute to our underst
 </div>
 
 <div style="clear:both;"></div>
+
 <br>
 
-### Peter Menzies <a href = "http://github.com/petermenzies" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Peter Menzies <a href = "http://github.com/petermenzies" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
 <div style="width: 100%;">
 <a href="https://petermenzies.github.io/", target = "_blank">
 <img src="/images/people/Menzies_Peter_mountains.jpg" style="float: right; width: 40%; margin: 0px 6px;" /></a>
@@ -102,7 +139,8 @@ In his free time, when he wasn’t climbing rocks, Peter started teaching himsel
 </p>
 </div>
 
-### Cullen Molitor <a href = "http://github.com/cullen-molitor" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Cullen Molitor <a href = "http://github.com/cullen-molitor" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
 <div style="width: 100%;">
 <a href="https://cullen-molitor.github.io/">
   <img src="/images/people/Cullen_Molitor.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
@@ -117,27 +155,49 @@ Cullen is currently a master’s candidate of Environmental Data Science at the 
 
 ## **2020 Fellows**
 
-### Madeline Berger <a href = "http://github.com/madelinemberger" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
-<img src="/images/people/maddie_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-A San Francisco Bay Area native, Madeline learned to scuba dive in the Monterrey Bay at age 15 sparking a passion for coastal and ocean ecosystems. Madeline has a Master's degree from the Bren School, specializing in Conservation Planning and focusing on Environmental Data Science.  She also holds a B.A. in Economics from the University of California Los Angeles, where she also minored in Environmental Systems. 
-</p>
-<p>
-As an OHI fellow, she leveraged her interdisciplinary background and strong data analysis skills to assess ocean health on Tetiaroa Island.
-</p>
+### Madeline Berger <a href = "http://github.com/madelinemberger" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
-### Laura Ingulsrud <a href = "http://github.com/lauraing" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
-<img src="/images/people/laura_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-Laura grew up in Sacramento, CA and Tokyo, Japan, but has lived in Santa Barbara for the past 10 years. She moved here to get an Environmental Studies degree at UCSB and quickly fell in love with the central coast. Laura also has a master’s degree from the Bren School of Environmental Science & Management specializing in Coastal Marine Resources Management and Conservation Planning with a focus in Environmental Data Science.   
-</p>
-As a global OHI fellow, Laura combined data science with marine science and policy to help inform sustainable ocean management. Laura spends her free time playing in the ocean, obsessing over whales, and enjoying good food with friends.
-</p>
+<img src="/images/people/maddie_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> A San Francisco Bay Area native, Madeline learned to scuba dive in
+the Monterrey Bay at age 15 sparking a passion for coastal and ocean
+ecosystems. Madeline has a Master's degree from the Bren School,
+specializing in Conservation Planning and focusing on Environmental Data
+Science. She also holds a B.A. in Economics from the University of
+California Los Angeles, where she also minored in Environmental Systems.
+</p> <p> As an OHI fellow, she leveraged her interdisciplinary
+background and strong data analysis skills to assess ocean health on
+Tetiaroa Island. </p>
 
-### Sara Orofino <a href = "http://github.com/saraorofino" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
-<img src="/images/people/sara_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-Sara grew up in Placerville, California a town in the Northern Sierras. She graduated in 2014 from Oregon State University with a B.S. in Zoology. After college, she spent four years bouncing around from California to Southeast Asia and the Bahamas leading scuba diving tours, teaching marine science courses, and communicating scientific research to broad public audiences. She then obtained a masters degree from the Bren School of Environmental Science & Management, specializing in Coastal Marine Resource Management with an Environmental Data Science focus. As an OHI fellow used her data science skills to inform management solutions protecting threatened coastal resources and the communities that rely on them. In her free time, Sara loves to snorkel, scuba dive, read good books, and explore with friends.    
+### Laura Ingulsrud <a href = "http://github.com/lauraing" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<img src="/images/people/laura_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> Laura grew up in Sacramento, CA and Tokyo, Japan, but has lived in
+Santa Barbara for the past 10 years. She moved here to get an
+Environmental Studies degree at UCSB and quickly fell in love with the
+central coast. Laura also has a master's degree from the Bren School of
+Environmental Science & Management specializing in Coastal Marine
+Resources Management and Conservation Planning with a focus in
+Environmental Data Science.  
+</p> As a global OHI fellow, Laura combined data science with marine
+science and policy to help inform sustainable ocean management. Laura
+spends her free time playing in the ocean, obsessing over whales, and
+enjoying good food with friends. </p>
+
+### Sara Orofino <a href = "http://github.com/saraorofino" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<img src="/images/people/sara_2020.jpg" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> Sara grew up in Placerville, California a town in the Northern
+Sierras. She graduated in 2014 from Oregon State University with a B.S.
+in Zoology. After college, she spent four years bouncing around from
+California to Southeast Asia and the Bahamas leading scuba diving tours,
+teaching marine science courses, and communicating scientific research
+to broad public audiences. She then obtained a masters degree from the
+Bren School of Environmental Science & Management, specializing in
+Coastal Marine Resource Management with an Environmental Data Science
+focus. As an OHI fellow used her data science skills to inform
+management solutions protecting threatened coastal resources and the
+communities that rely on them. In her free time, Sara loves to snorkel,
+scuba dive, read good books, and explore with friends.  
 </p>
 
 ## **2019 Fellows**
@@ -150,24 +210,37 @@ Sara grew up in Placerville, California a town in the Northern Sierras. She grad
 
 <br>
 
-### Gage Clawson <a href = "http://github.com/gclawson1" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Gage Clawson <a href = "http://github.com/gclawson1" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vTdgGv_5w9WkZegV34xJKbq1fUyTHzJMQV6qQJ0DrFUnqE0TKDO7FR8nRVpfTkIoWwB-EPfwwBjdJ30/pub?w=928&h=619" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-Gage grew up in Manteo, North Carolina, a town located on a small island in the Outer Banks. He graduated from the University of North Carolina at Chapel Hill in 2018 with a B.S. in Statistics and Analytics and a B.A. in Music. Throughout college Gage performed in many of UNC’s ensembles, including the Jazz, Trumpet, and Wind Ensembles. Although he has a passion for music, his passion for statistics and the environment is stronger. Seeing firsthand the effects of environmental degradation on his hometown inspired his interest in environmental science.
-</p>
-<p>
-Gage started as an OHI Fellow as a first-year student at the Bren School, pursuing a specialization in Coastal Marine Resources Management with a focus in Environmental Data Science. He now is the lead analyst for the project! In his free time, Gage is an avid trumpet player, hiker, and general outdoorsy person. 
-</p>
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTdgGv_5w9WkZegV34xJKbq1fUyTHzJMQV6qQJ0DrFUnqE0TKDO7FR8nRVpfTkIoWwB-EPfwwBjdJ30/pub?w=928&amp;h=619" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> Gage grew up in Manteo, North Carolina, a town located on a small
+island in the Outer Banks. He graduated from the University of North
+Carolina at Chapel Hill in 2018 with a B.S. in Statistics and Analytics
+and a B.A. in Music. Throughout college Gage performed in many of UNC's
+ensembles, including the Jazz, Trumpet, and Wind Ensembles. Although he
+has a passion for music, his passion for statistics and the environment
+is stronger. Seeing firsthand the effects of environmental degradation
+on his hometown inspired his interest in environmental science. </p> <p>
+Gage started as an OHI Fellow as a first-year student at the Bren
+School, pursuing a specialization in Coastal Marine Resources Management
+with a focus in Environmental Data Science. He now is the lead analyst
+for the project! In his free time, Gage is an avid trumpet player,
+hiker, and general outdoorsy person. </p>
 
-### Molly Williams <a href = "http://github.com/molly-williams" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
-<img src="/images/people/molly_2019.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-Molly is originally from Seattle, WA and grew up in and around the Pacific Ocean. She received her undergraduate degree in Environmental Studies on the other coast at Mount Holyoke College. During this time, she spent a semester abroad studying in the Turks and Caicos Islands where she was captivated by the marine life as well as the challenge of managing human-environment relationships. After spending a few years teaching math in Hawaii and then wrangling microbes at an algae biofuel startup in Florida, Molly returned to UCSB to obtain a master’s degree from the UCSB Bren School of Environmental Science & Management. 
-</p>
-<p>
-As an OHI fellow, Molly leveraged her data science skills to help in the preservation of both cultural and ecological systems. 
-</p>
+### Molly Williams <a href = "http://github.com/molly-williams" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<img src="/images/people/molly_2019.jpg" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> Molly is originally from Seattle, WA and grew up in and around the
+Pacific Ocean. She received her undergraduate degree in Environmental
+Studies on the other coast at Mount Holyoke College. During this time,
+she spent a semester abroad studying in the Turks and Caicos Islands
+where she was captivated by the marine life as well as the challenge of
+managing human-environment relationships. After spending a few years
+teaching math in Hawaii and then wrangling microbes at an algae biofuel
+startup in Florida, Molly returned to UCSB to obtain a master's degree
+from the UCSB Bren School of Environmental Science & Management. </p>
+<p> As an OHI fellow, Molly leveraged her data science skills to help in
+the preservation of both cultural and ecological systems. </p>
 
 ## **2018 Fellows**
 
@@ -179,30 +252,40 @@ As an OHI fellow, Molly leveraged her data science skills to help in the preserv
 
 <br>
 
-### Camila Vargas <a href = "http://github.com/camilavargasp" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
+### Camila Vargas <a href = "http://github.com/camilavargasp" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
-<img src="/images/people/camila_2018.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-Camila is originally from Santiago, Chile and holds a degree in Biology from Pontificia Universidad Católica de Chile (PUC), with a major in ecology and specialization in natural resources management. She also holds a Master's degree from the Bren School of Environmental Science and Management, as a Latina America Fisheries Fellowship, with specialization is in Coastal Marine Resource Management. 
-</p>
-<p>
-Her focus on marine resources is motivated by her passion for ocean and marine life as well as her desire to develop solutions, using the best available science, for threatened coastal resources which are the main livelihood for many coastal communities.
-</p>
+<img src="/images/people/camila_2018.jpg" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> Camila is originally from Santiago, Chile and holds a degree in
+Biology from Pontificia Universidad Católica de Chile (PUC), with a
+major in ecology and specialization in natural resources management. She
+also holds a Master's degree from the Bren School of Environmental
+Science and Management, as a Latina America Fisheries Fellowship, with
+specialization is in Coastal Marine Resource Management. </p> <p> Her
+focus on marine resources is motivated by her passion for ocean and
+marine life as well as her desire to develop solutions, using the best
+available science, for threatened coastal resources which are the main
+livelihood for many coastal communities. </p>
 
-### Iwen Su <a href = "http://github.com/iwensu0313" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
-<img src="/images/people/iwen_2018.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-<p>
-Iwen grew up in San Diego and Taiwan, and received her B.A. in Biology, Marine Emphasis from Occidental College. She also holds a Master's degree from the Bren School of Environmental Science and Management, with a specialization in Coastal and Marine Resources Management.  
+### Iwen Su <a href = "http://github.com/iwensu0313" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<img src="/images/people/iwen_2018.jpg" style="float: right; width: 34%; margin: 0px 6px;"/>
+<p> Iwen grew up in San Diego and Taiwan, and received her B.A. in
+Biology, Marine Emphasis from Occidental College. She also holds a
+Master's degree from the Bren School of Environmental Science and
+Management, with a specialization in Coastal and Marine Resources
+Management.  
 </p>
 
 <p>
 Her career interests include marine spatial planning for fisheries and aquaculture and seafood sustainability. Outside of school, Iwen enjoys diving artificial reefs, and drawing pictures of sea-creatures to hang on her walls.
 </p>
 
-### Ellie Campbell <a href = "http://github.com/eleanorecc" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
-<img src="/images/people/ellie_2018.jpg" style="float: right; width: 39%; margin: 0px 6px;" />
-<p>
-Ellie graduated from the Bren School of Environmental Science & Management, where she pursued a Masters of Environmental Science and Management with a specialization in Energy and Climate. Originally from Anchorage, Alaska, Ellie graduated from Colorado College in 2016 with a B.A. in Mathematics.  In her free time, she enjoys spending time outdoors skiing, running, and playing ultimate frisbee.
-</p>
+### Ellie Campbell <a href = "http://github.com/eleanorecc" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
-
+<img src="/images/people/ellie_2018.jpg" style="float: right; width: 39%; margin: 0px 6px;"/>
+<p> Ellie graduated from the Bren School of Environmental Science &
+Management, where she pursued a Masters of Environmental Science and
+Management with a specialization in Energy and Climate. Originally from
+Anchorage, Alaska, Ellie graduated from Colorado College in 2016 with a
+B.A. in Mathematics. In her free time, she enjoys spending time outdoors
+skiing, running, and playing ultimate frisbee. </p>
