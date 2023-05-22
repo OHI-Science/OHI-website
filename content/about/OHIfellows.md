@@ -25,6 +25,12 @@ This program is an integral part of what the Ocean Health Index has accomplished
 
 The 2023 Fellows are three students in the Environmental Data Science program at the Bren School of Environmental Science and Management.
 
+<!--- <center>
+
+<img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/> 
+
+</center> -->
+
 ### Carlo Broderick <a href = "https://github.com/CarloBroderick" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
 <div style="width: 100%;">
 <a href="https://eeerika.github.io/">
@@ -43,12 +49,6 @@ Following his tenure at SupplyShift, Carlo took on the role of program coordinat
 His current interests include machine learning, remote sensing, and the subtle art of the slow cooked bean. Carlo plans to leverage the machine learning techniques, learned at Bren, to assess the increasingly large data sets coming out of the environmental and supply chain management industries, all with a focus on remote sensing and global information systems. 
 </p>
 </div>
-
-<!--- <center>
-
-<img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/> 
-
-</center> -->
 
 ### Erika Egg <a href = "http://github.com/eeerika" target = "_blank"> <img src = "/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;" /></a>
 <div style="width: 100%;">
