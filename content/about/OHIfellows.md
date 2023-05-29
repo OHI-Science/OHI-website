@@ -41,7 +41,7 @@ program at the Bren School of Environmental Science and Management.
 
 <!--- <center>
 
-<img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/> 
+<img src="/images/people/fellows_2023.jpg" style="width: 70%; height: 70%"/> 
 
 </center> -->
 
