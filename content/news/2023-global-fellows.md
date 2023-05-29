@@ -2,9 +2,9 @@
 title: "2023 OHI Global Fellows"
 name: "Introducing the 2023 OHI Global Fellows"
 bg_image: "/images/banners/disturbed-fish.jpg"
-card_image: "/images/people/fellows_2022.jpg"
-preview_text: "This year the Ocean Health Index Global Fellows program has taken on three new Data Science and Communication Fellows. All three fellows have been picked from the new Masters of Environmental Data Science..."
-Date: 2022-05-27
+card_image: "/images/people/fellows_2023.jpg"
+preview_text: "In 2023, the Ocean Health Index Global Fellows program has welcomed three fresh Data Science and Communication Fellows to its ranks. The selected trio all hail from the newly instituted Masters of Environmental Data Science..."
+Date: 2023-05-29
 author: Carlo Broderick, Adelaide Robinson, Erika Egg
 menu:
   main:
