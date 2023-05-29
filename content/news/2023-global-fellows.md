@@ -15,7 +15,7 @@ menu:
 
 {{<newsHead>}}
 
-In 2023, the Ocean Health Index Global Fellows program has welcomed three fresh Data Science and Communication Fellows to its ranks. The selected trio all hail from the newly instituted Masters of Environmental Data Science (MEDS](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)) program. This course is a collaborative effort between the Bren School of Environmental Science and Management, and the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)).
+In 2023, the Ocean Health Index Global Fellows program has welcomed three fresh Data Science and Communication Fellows to its ranks. The selected trio all hail from the newly instituted Masters of Environmental Data Science ([MEDS](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)) program. This course is a collaborative effort between the Bren School of Environmental Science and Management, and the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)).
 
 In this blogpost, we ask the incoming fellows questions to better understand their motivations while getting to know them. 
 
