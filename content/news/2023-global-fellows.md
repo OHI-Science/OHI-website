@@ -46,6 +46,8 @@ I grew up in the central valley town of Modesto, California. Modesto's motto is 
 
 > What are some of your interests, personally and professionally?
 
+<br>
+
 **Adelaide:**
 I’m passionate about the environment and wildlife, both in my personal life and career. I spend my free time birding, hiking, and caring for my growing pet family. Professionally I’m interested in utilizing data science to improve conservation efforts in fisheries and aquatic ecology.
 
@@ -61,6 +63,8 @@ I am personally interested in exercise and recreation. When I was young, I had a
 
 > What drew you to the Ocean Health Index, and what are you excited to learn?
 
+<br>
+
 **Adelaide:**
 I’ve worked primarily in fisheries monitoring, where the focus was typically on a few endangered species in a localized area. Working with the Ocean Health Index struck me as a great way to broaden my experience by contributing to a project that instead takes a composite indicator approach to monitoring, and synthesizes many sources of data. I’m also interested in data management and reproducibility, and I’m looking forward to learning more about the reproducible workflow OHI uses to efficiently calculate global scores each year.
 
@@ -73,6 +77,8 @@ I learned about the Ocean Health Index from a number of my instructors at UC San
 ## Question 4
 
 > What is something you have found interesting and want to recommend to others?
+
+<br>
 
 **Adelaide:** 
 I highly recommend rabbits as indoor pets. They are adorable, quiet, and great at composting your leftover veggies!
