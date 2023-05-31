@@ -290,15 +290,15 @@
       ]
     },
     {
-      "name": "Patagonia of Chile",
+      "name": "Chile",
       "Status": "Active",
-      "LeadingGroup": "Universidad Austral de Chile, Valdivia",
-      "Contact": "Laura Nahuelhual Muñoz (laura.nahuel@gmail.com); Vanessa Pizarro (va.pizarropizarro@gmail.com)",
+      "LeadingGroup": "Centro de Investigación en Ecosistemas Marinos de Altas Latitudes; Instituto Milenio en Socio-Ecología Costera",
+      "Contact": "Laura Nahuelhual Muñoz (laura.nahuel@gmail.com), Universidad de Los Lagos; Vanessa Pizarro (va.pizarropizarro@gmail.com)",
       "isPlus": false,
       "Links": [
         {
           "name": "Github",
-          "link": "https://github.com/OHI-Science/pat"
+          "link": "https://github.com/OHI-Science/chl"
         }
       ]
     },
