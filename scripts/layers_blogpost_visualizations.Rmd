@@ -1,0 +1,276 @@
+---
+title: "blog_test"
+author: "Adelaide Robinson"
+date: "2023-08-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(googlesheets4)
+library(tidyverse)
+library(networkD3)
+library(visNetwork)
+library(htmlwidgets)
+
+#read in the layers sheet
+layers <- read_sheet("https://docs.google.com/spreadsheets/d/1hNzPZsTy_MpEcPg2aPJQfgCRO9njN3-qVNQ_4lzryng/edit?pli=1#gid=0") |> janitor::clean_names()
+
+#read in the goal image icons
+ao_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/AO.png?raw=true"
+bd_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/BD.png?raw=true"
+cp_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/CP.png?raw=true"
+cs_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/CS.png?raw=true"
+cw_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/CW.png?raw=true"
+fp_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/FP.png?raw=true"
+le_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/LE.png?raw=true"
+np_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/NP.png?raw=true"
+sp_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/SP.png?raw=true"
+tr_image <- "https://github.com/OHI-Science/OHI-website/blob/main/content/images/goal_icons_old/TR.png?raw=true"
+ 
+
+# Define the words we want to remove
+#Only considering if they affect a goal, not specific method 
+words_to_remove <- c("status", "trend", "resilience", "pressure")
+
+# Use the paste function to create a regular expression pattern
+pattern_to_remove <- paste(words_to_remove, collapse = "|")
+
+# Apply str_remove with the pattern to the 'targets' column
+layers_intermediate <- layers %>%
+  mutate(goals = str_remove_all(targets, pattern_to_remove)) |> 
+  mutate(goals = str_replace_all(goals, "\\s+", " ")) |>  # Trim leading and trailing spaces
+  separate_rows(goals, sep = " ")
+
+#clean up goals
+layers_clean <- layers_intermediate |>
+  filter(!is.na(goals)) |> 
+  filter(!goals == "") |> 
+  filter(!goals %in% c("spatial", "weighting", "NA")) |> 
+  filter(!layer_name == "Food provision weights") |> 
+  mutate(layer_id = as.numeric(factor(layer_name, levels = unique(layer_name)))-1) |> 
+  mutate(goal_id = as.numeric(factor(goals, levels = unique(goals))) + (length(unique(layer_id))-1)) 
+
+#define unique layers
+layer_ids <- layers_clean |>
+  group_by(layer_id, layer_name) |> 
+  summarize(n = n()) |> 
+  select(label = layer_name, id = layer_id)
+
+#define unique goals
+goal_id <- layers_clean |> 
+  group_by(goal_id, goals) |> 
+  summarise(n = n()) |> 
+  select(label = goals, id = goal_id)
+
+#make the nodes df 
+nodes <- rbind(layer_ids, goal_id) |> 
+  mutate(id = as.numeric(id))|> 
+  mutate(title = case_when(label == "AO" ~ "Artisinal Opportunity",
+                           label == "CW" ~ "Clean Water",
+                           label == "CP" ~ "Coastal Protection",
+                           label == "CS" ~ "Carbon Storage",
+                           label == "ECO" ~ "Economies",
+                           label == "HAB" ~ "Habitat",
+                           label == "ICO"~ "Iconic species",
+                           label == "NP"~ "Natural Products",
+                           label == "SPP" ~"Species condition",
+                           label == "LIV"~ "Livelihoods",
+                           label == "LSP" ~ "Lasting Special Places",
+                           label == "MAR" ~ "Mariculture",
+                           label == "TR" ~ "Tourism and Recreation",
+                           label =="FIS" ~ "Fisheries",
+                           TRUE ~ label))
+
+edges <- layers_clean |>
+  mutate(weight = 1) |> 
+  select(from = layer_id, to = goal_id, weight) |> 
+  mutate(from = as.numeric(from), to = as.numeric(to)) |> 
+  distinct()
+
+#separate into goals and layers for grouping
+nodes <- nodes %>%
+  mutate(group = case_when(id > 96 ~ "goals",
+                           TRUE ~ "layers")) |> 
+  mutate(image = case_when(label == "AO" ~ ao_image,
+                           label == "CW" ~ cw_image,
+                           label == "CP" ~ cp_image,
+                           label == "CS" ~ cs_image,
+                           label == "ECO" ~ le_image,
+                           label == "HAB" ~ bd_image,
+                           label == "ICO"~ sp_image,
+                           label == "NP"~ np_image,
+                           label == "SPP" ~bd_image,
+                           label == "LIV"~ le_image,
+                           label == "LSP" ~ sp_image,
+                           label == "MAR" ~fp_image,
+                           label == "TR" ~ tr_image,
+                           label =="FIS" ~ fp_image,
+                           TRUE ~ NA)) |> 
+  mutate(goal = case_when(
+                           label == "ECO" ~ "Coastal livelihoods and economies",
+                           label == "HAB" ~ "Biodiversity",
+                           label == "ICO"~ "Sense of Place",
+                           label == "SPP" ~"Biodiversity",
+                           label == "LIV"~ "Coastal livelihoods and economies",
+                           label == "LSP" ~ "Sense of Place",
+                           label == "MAR" ~ "Food Provision",
+                           label =="FIS" ~ "Food Provision",
+                           !label %in% c("AO","CP", "CS", "ECO","HAB", "ICO","NP","SPP","LIV", "LSP","MAR", "TR", "FIS") ~ NA,
+                           TRUE ~ title)) |> 
+  mutate(layer = ifelse(group == "layer",title, NA))
+
+plot <- visNetwork(nodes=nodes, edges=edges) %>% 
+  visEdges(
+    hoverWidth = 10,
+    selectionWidth = 10,
+    color = list(highlight = "#a7354e", hover = "#a7354e")
+    ) |>
+   visInteraction(hover = TRUE) |> 
+  visOptions(clickToUse = F,highlightNearest =
+             list(enabled = TRUE, algorithm = "hierarchical",
+                                    degree = 1, hideColor = "rgba(0,0,0,0)", labelOnly = TRUE), 
+                                    nodesIdSelection = FALSE, selectedBy = list(variable = "goal", highlight = TRUE)) |> 
+   visGroups(
+    groupname = "goals",
+    color = "#a7354e",
+    size = 200,
+    shape = "circularImage",
+    font = list(size =0)
+  ) %>%
+  visGroups(
+    groupname = "layers",
+    color = "#377cbf",
+    size = 55,
+    font = list(size =0)) |> 
+ visPhysics(solver = "forceAtlas2Based", 
+            forceAtlas2Based = list(gravitationalConstant = -350,
+                                    damping = 1)
+             # Adjust the number of iterations as needed
+    )
+
+
+
+saveWidget(plot, "/Users/adelheid/Documents/Work/NCEAS/repositories/OHI-website/content/images/layers_blog/layer_connections.html")
+```
+
+Monterey Bay Aquarium Seafood Watch Aquaculture Recommendations. Tonnes of mariculture harvest- United Nations. 
+# Mariculture Graphic
+Make a graphic depicitng the connections between the mariculture data
+```{r}
+#retrieve the connections between goals
+layers_mar <- layers_intermediate |>
+  filter(!is.na(goals)) |> 
+  filter(!goals == "") |> 
+  filter(layer_name %in% c("Genetic escapes", 	
+"Mariculture sustainability score", 	
+"Mariculture harvest")) |> 
+  mutate(layer_id = as.numeric(factor(layer_name, levels = unique(layer_name)))-1) |> 
+  mutate(goal_id = as.numeric(factor(goals, levels = unique(goals))) + (length(unique(layer_id))-1)) 
+
+edges_mar <- layers_mar |>
+  mutate(weight = 1) |> 
+  select(from = layer_id, to = goal_id, weight) |> 
+  mutate(from = as.numeric(from), to = as.numeric(to))
+
+layer_ids_mar <- layers_mar |> group_by(layer_id, layer_name) |> 
+  summarize(n = n()) |> 
+  select(label = layer_name, id = layer_id)
+
+goal_id_mar <- layers_mar |> 
+  group_by(goal_id, goals) |> 
+  summarise(n = n()) |> 
+  select(label = goals, id = goal_id)
+
+nodes_mar <- rbind(layer_ids_mar, goal_id_mar) |> 
+  mutate(id = as.numeric(id))
+
+
+
+data_layers <- data.frame(label= c("Monterey Bay Aquarium Seafood Watch Recommendations", " FAO Global Aquaculture Production", "Mar_dataprep.RMD"), id = c(8,9,10))
+
+nodes_mar <- rbind(nodes_mar,data_layers) |> 
+   mutate(image = case_when(label == "AO" ~ ao_image,
+                           label == "CW" ~ cw_image,
+                           label == "CP" ~ cp_image,
+                           label == "CS" ~ cs_image,
+                           label == "ECO" ~ le_image,
+                           label == "HAB" ~ bd_image,
+                           label == "ICO"~ sp_image,
+                           label == "NP"~ np_image,
+                           label == "SPP" ~bd_image,
+                           label == "LIV"~ le_image,
+                           label == "LSP" ~ sp_image,
+                           label == "MAR" ~fp_image,
+                           label == "TR" ~ tr_image,
+                           label =="FIS" ~ fp_image,
+                           TRUE ~ NA)) |> 
+  mutate(group = case_when(label %in% c("MAR", "ECO", "FIS", "LIV", "SPP")~ "Goal",
+                   label %in% c("Mariculture harvest","Mariculture sustainability score",
+                                "Genetic escapes") ~ "Data Layer",
+                   label %in% c("Monterey Bay Aquarium Seafood Watch Recommendations",
+                                " FAO Global Aquaculture Production") ~ "Raw Data",
+                   label == "Mar_dataprep.RMD" ~ "Data Prep")) |> 
+  mutate(label = case_when(label =="MAR" ~"Mariculture",
+                           label == "ECO"~ "Economies",
+                           label == "FIS"~"Fisheries",
+                           label =="LIV" ~"Livelihoods",
+                          label == "SPP"~ "Species Condition",
+                          TRUE ~label)) 
+
+nodes_mar <- nodes_mar[order(
+  factor(nodes_mar$group, levels = c("Raw Data", "Data Prep", "Data Layer", "Goal"))
+), ]
+
+edges_new <- data.frame(from = c(8,9, 10, 10, 10), to = c(10,10, 0, 1, 2)) |> 
+  mutate(weight = 1)
+
+
+edges_final <- edges_new |> rbind(edges_mar) 
+
+ mar_plot <- visNetwork(nodes_mar, edges_final) |> 
+   visHierarchicalLayout(
+  direction = "LR", sortMethod = "directed"
+) |> 
+   visEdges(arrows = 'to') |> 
+  visNodes(font = list(size = 13)) |>
+  visGroups(
+    groupname = "Raw Data",
+    color = "#fcbc6c",
+    size = 22,
+    shape = "dot") |> 
+  visGroups(
+    groupname = "Data Prep",
+    color = "#f07446",
+    size = 22,
+    shape = "dot") |> 
+  visGroups(
+    groupname = "Data Layer",
+    color = "#377cbf",
+    size = 22,
+    shape = "dot") |> 
+   visGroups(
+    groupname = "Goal",
+    color = "#a7354e",
+    size = 22,
+    shape = "dot")  |> 
+  visLegend(useGroups = TRUE, 
+            position = "right",
+            width = .3,
+            zoom = FALSE) |> 
+  visOptions(width = "145%",
+             height = "84%") |> 
+    visPhysics(solver = "hierarchicalRepulsion", 
+            hierarchicalRepulsion = list(nodeDistance = 150,
+                                         springLength = 150)
+             # Adjust the number of iterations as needed
+    ) |>  visInteraction(zoomView = FALSE)
+
+
+saveWidget(mar_plot, "/Users/adelheid/Documents/Work/NCEAS/repositories/OHI-website/content/images/layers_blog/mar_connections.html")
+```
+
