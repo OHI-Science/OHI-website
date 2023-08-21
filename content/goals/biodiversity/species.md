@@ -31,6 +31,6 @@ Explore the full description of the data and model used in the Global OHI MODEL.
 ### OTHER RESOURCES
 INTERNATIONAL UNION OF CONSERVATION OF NATURE (IUCN)
 
-The IUCN Red List of Threatened Species provides taxonomic, conservation statsu and distribution infomration on plants and animals in order to determine the relative risk of extinction. 
+The IUCN Red List of Threatened Species provides taxonomic, conservation status and distribution information on plants and animals in order to determine the relative risk of extinction. 
 
 [Learn more](https://www.iucnredlist.org/)
