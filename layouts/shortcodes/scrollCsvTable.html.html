@@ -1,0 +1,42 @@
+{{/* Adapted from https://randomgeekery.org/post/2020/06/csv-and-data-tables-in-hugo/ */}}
+
+{{ $path := .Get "path" }}
+{{ $sep := "," }}
+{{ with .Get "sep" }}
+  {{ $sep = . }}
+{{ end }}
+
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "content" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+{{ $path := strings.TrimPrefix "data" $path }}
+{{ $path := strings.TrimPrefix "/" $path }}
+
+{{ $path = path.Join "content" "data" $path }}
+
+{{ $rows := getCSV $sep $path }}
+
+<div class="table-container">
+  <div class="scrollable-table">
+    <table class="centered-table">
+      {{ $headerRow := index $rows 0 }}
+      {{ $rows = after 1 $rows }}
+      <thead>
+        <tr>
+          {{ range $headerRow }}
+            <th>{{ . }}</th>
+          {{ end }}
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $rows }}
+          <tr>
+            {{ range . }}
+              <td>{{ . }}</td>
+            {{ end }}
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>
