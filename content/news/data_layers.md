@@ -1,8 +1,8 @@
 ---
 title: "Exploring OHI Data Layers"
 name: "A deep dive into how data is incorporated into the OHI framework"
-bg_image: "/images/banners/tidal_zone.jpg"
-card_image: "/images/tidal_flat.jpg"
+bg_image: "/images/banners/tidal_zone.jpeg"
+card_image: "/images/layers_blog/layer_visualization.jpeg"
 preview_text: ""
 Date: 2023-08-10
 author: Adelaide Robinson
@@ -36,17 +36,17 @@ The mariculture data prep is contained within a single R script: [Mar_dataprep.R
 
 ### Exploring the Connections Between Layers
 
-As OHI fellows we spend a large proportion of our time creating data layers. Data layers are the foundational components used to calculate OHI scores. As a reminder: each data layer is a new data set created from one or more raw data sources.
+As OHI fellows we spend a large proportion of our time creating data layers. Data layers are the foundational components used to calculate OHI scores. As a reminder: each data layer is a new dataset created from one or more raw data sources.
 
 Now that we have a better idea of what a data layer is, we can take a deeper look at how they fit into the OHI model. Below you'll find an interactive visualization that shows the relationships between all layers included in OHI and the goals that they are incorporated into.
 
 *Click on a goal or data layer icon, or select a goal from the dropdown list to see which data layers impact each goal score. Hover over the goal and data layer icons to see their titles.*
 
-<div style="width: 950px; overflow: hidden; border: 1px solid #000;">
+<div style="width: 930px; overflow: hidden; border: 1px solid #000;">
   <iframe seamless src="/images/layers_blog/layer_connections.html" width="1000" height="570" style="margin-left: -20px; margin-right: -500px; margin-top: -60px; margin-bottom: 10px; border: none;" scrolling="no"></iframe>
 </div>
 
-------------------------------------------------------------------------
+Code for visualizations in this blogpost can be found in the [website GitHub repospitory](https://github.com/OHI-Science/OHI-website/blob/dev/scripts/layers_blogpost_visualizations.Rmd).
 
 This post was created by the [2023 OHI Fellows](https://oceanhealthindex.org/about/ohifellows/).
 
