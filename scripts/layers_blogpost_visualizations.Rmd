@@ -71,6 +71,39 @@ goal_id <- layers_clean |>
   select(label = goals, id = goal_id)
 ```
 
+# Card Visualization
+
+Creating a simple visualization for the card on the website.
+
+```{r}
+#crate a data frame with all the elements we need
+nodes <- data.frame(label = c("Raw Data", "Data Prep", "Data Layer", "Goal"),
+                       id = c(0,1,2,3), 
+                       group = c("Raw Data", "Data Prep", "Data Layer", "Goal"))
+#define the connections
+edges <- data.frame(from = c(0, 1,2),
+                    to = c(1,2,3)) |> mutate(weight = 1)
+
+visNetwork(nodes,edges) |>
+  visHierarchicalLayout(
+  direction = "LR", sortMethod = "directed"
+) |> 
+  visEdges(arrows = 'to') |> #add arrows
+  visGroups(groupname = "Raw Data",
+            color = "#fcbc6c",
+            size =40,
+            borders = 0) |> 
+  visGroups(groupname = "Data Prep",
+            color = "#f07446",
+            size = 40) |> 
+  visGroups(groupname = "Data Layer",
+            color = "#377cbf",
+            size = 40) |> 
+  visGroups(groupname = "Goal",
+            color = "#a7354e",
+            size = 40)
+```
+
 # Mariculture Visualization
 
 This code is used to make a visualization that shows the data preparation and incorporation process for the mariculture data prep.
@@ -138,7 +171,7 @@ edges_new <- data.frame(from = c(8,9, 10, 10, 10), to = c(10,10, 0, 1, 2)) |>
 edges_final <- edges_new |> rbind(edges_mar) 
 
 #create the visualization
-mar_plot <- visNetwork(nodes_mar, edges_final) |> 
+visNetwork(nodes_mar, edges_final) |> 
    visHierarchicalLayout(
   direction = "LR", sortMethod = "directed"
 ) |> #make it a hierarchical layour
@@ -195,7 +228,7 @@ nodes <- rbind(layer_ids, goal_id) |>
                            label == "HAB" ~ "Habitat",
                            label == "ICO"~ "Iconic species",
                            label == "NP"~ "Natural Products",
-                           label == "SPP" ~"Species condition",
+                           label == "SPP" ~"Species Condition",
                            label == "LIV"~ "Livelihoods",
                            label == "LSP" ~ "Lasting Special Places",
                            label == "MAR" ~ "Mariculture",
@@ -244,7 +277,7 @@ nodes <- nodes %>%
 
 #create the plot
 
-layers_plot <-visNetwork(nodes=nodes, edges=edges) %>% 
+layers_plot <- visNetwork(nodes=nodes, edges=edges) %>% 
   visEdges(
     hoverWidth = 10,
     selectionWidth = 10,
