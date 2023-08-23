@@ -1,8 +1,8 @@
 ---
 title: "Exploring OHI Data Layers"
 name: "A deep dive into how data are incorporated into the OHI framework"
-bg_image: "/images/banners/tidal_zone.jpeg"
-card_image: "/images/layers_blog/layer_visualization.jpeg"
+bg_image: "/images/banners/turtle-swimming.jpg"
+card_image: "/images/layers_blog/layer_visualization.jpg"
 preview_text: ""
 Date: 2023-08-23
 author: Adelaide Robinson
