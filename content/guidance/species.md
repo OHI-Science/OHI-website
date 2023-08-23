@@ -8,7 +8,7 @@ description: "This subgoal measures the health of regionally iconic species that
 
 The Species sub-goal is a component of the Biodiversity goal and assesses the condition of all marine species present in a region, including both endangered species and those in relatively good condition.
 
-> Data for this goal may also used in Sense of Place sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
+> Data for this goal is also used in Sense of Place sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
 
 #### Practical Guidance
 

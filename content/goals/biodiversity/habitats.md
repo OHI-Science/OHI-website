@@ -17,7 +17,7 @@ This goal measures the status of marine habitats that support large numbers of m
 
 Healthier habitats mean healthier species! Habitat is included as a subgoal of the Biodiversity goal to provide a more complete picture of diversity in the system than only considering the conservation status of species (the other subgoal for Biodiversity). This is because species assessments are often incomplete.  
 
-This goal assessess the condition of marine habitats that are particularly important in supporting large numbers of marine species.  The status of each habitat is its current condition relative to its reference condition, which is often based on historical area. A score of 1 indicates that the condition equals or exceeds the reference point.  The subgoal score is then calculated by combining the habitat scores for each region.   
+This goal assesses the condition of marine habitats that are particularly important in supporting large numbers of marine species.  The status of each habitat is its current condition relative to its reference condition, which is often based on historical area. A score of 1 indicates that the condition equals or exceeds the reference point.  The subgoal score is then calculated by combining the habitat scores for each region.   
 
 For the global OHI assessment, we included mangroves, coral reefs, seagrass beds, salt marshes, sea ice, or subtidal soft-bottom habitats.  All habitats measured contribute equally to the score, regardless of their extent, because the presence of a diverse set of habitats, as well as the level of conservation of each, is considered valuable to achieve this goal. 
 
