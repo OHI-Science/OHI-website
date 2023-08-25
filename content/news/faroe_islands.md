@@ -24,7 +24,7 @@ The practice of whale hunting has been a long-standing tradition in the Faroe Is
 ![](/images/white_sided_dolphin.jpg)
 
 <div style="text-align: right; font-size: 0.7em;">
-Illustration of the <a href="https://en.wikipedia.org/wiki/Atlantic_white-sided_dolphin"> Atlantic white-sided dolphin</a> by <a href="https://www.matturalist.com/">Matthew Messina
+Illustration of the <a href="https://en.wikipedia.org/wiki/Atlantic_white-sided_dolphin"> Atlantic white-sided dolphin</a> by <a href="https://www.matturalist.com/">Matthew Messina</a>
 </div>
 
 The magnitude of the 2021 event can also be seen in the interactive graph below from the country's own national statistical authority, [Statistics Faroe Islands](https://hagstova.fo/en/environment/natural-resources/whale-hunt). To see the impact of the 2021 whale hunting event on the Faroe Island's whale hunting statistics, select the "Other Dolphins" item in the legend on the right.
