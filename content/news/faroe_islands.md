@@ -4,7 +4,7 @@ name: "Large whale hunting event impacts Faroe Island OHI Score."
 bg_image: "/images/banners/whale.jpg"
 card_image: "/images/tidal_flat.jpg"
 preview_text: "The practice of whale hunting has been a long-standing tradition in the Faroe Islands, an autonomous territory within the Kingdom of Denmark. This cultural practice has recently come under increased domestic and international scrutiny."
-date: 2023-07-05
+date: 2023-09-01
 author: "Carlo Broderick"
 menu:
   main:
