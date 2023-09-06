@@ -21,8 +21,8 @@ The Lasting Special Places (LSP) sub-goal of the Sense of Place goal within the 
 
 ![](/images/lsp_scores_blog/lsp_scores_graph.png)
 
-<div style="text-align: right; font-size: 0.7em;">
-Data from the [ohi-global GitHub repository](https://github.com/OHI-Science/ohi-global/blob/draft/eez/scores.csv), from September 8, 2023.
+<div style="text-align: center; font-size: 0.7em;">
+Data from the <a href = "https://github.com/OHI-Science/ohi-global/blob/draft/eez/scores.csv">ohi-global GitHub repository</a>, from September 8, 2023.
 </div>
 
 This means that we are continuing to approach the global movement’s goal of having at least 30% of the blue planet protected by 2030, supporting environmental health and sustainability [(World Ocean Day, n.d.)](https://worldoceanday.org/take-action/conservation-action-focus/). While this is very positive news, people may be left wondering: what exactly counts as “protected areas,” which are an integral part in calculating the scores for the LSP goal? How effective are these “protected areas” at creating environmental benefits? 
