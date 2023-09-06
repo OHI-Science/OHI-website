@@ -46,7 +46,7 @@ Now that we have a better idea of what a data layer is, we can take a deeper loo
   <iframe seamless src="/images/layers_blog/layer_connections.html" width="1000" height="570" style="margin-left: -20px; margin-right: -500px; margin-top: -60px; margin-bottom: 10px; border: none;" scrolling="no"></iframe>
 </div>
 
-Code for visualizations in this blogpost can be found in the [website GitHub repospitory](https://github.com/OHI-Science/OHI-website/blob/dev/scripts/layers_blogpost_visualizations.Rmd).
+Code for visualizations in this blogpost can be found in the [website GitHub repository](https://github.com/OHI-Science/OHI-website/blob/dev/scripts/layers_blogpost_visualizations.Rmd).
 
 This post was created by the [2023 OHI Fellows](https://oceanhealthindex.org/about/ohifellows/).
 
