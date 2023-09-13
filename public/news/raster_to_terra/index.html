@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://oceanhealthindex.org/news/raster_to_terra/">
+  <meta name="description" content="Switching from the raster package to terra for spatial analysis by Juliet Cohen
+Thu, Aug 25, 2022
+Spatial data in R has a reputation for being tedious and time consuming. With so many different spatial file types (.shp, .nc, .gpkg, .geojson, and .tif to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the raster package to calculate cell values across stacked layers and recognize patterns over space and time."/>
+  <meta name="date" content='September 13, 2023 11:30:09 PDT'>
+  <title>Shifting from Raster to Terra | OHI</title>
+  <link rel="stylesheet" href="https://oceanhealthindex.org/style.main.min.c1c42e0a9c5f4648992c3713f65277a6c0d6472387dbc6caa8e54ed971c4f30c.css?v=2023-09-13_11.30.09_-0700" media="screen">
+  <link rel="shortcut icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
+  
+<link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous"></head><body>
+
+<nav class="nav" role="navigation" aria-label="Main menu">
+
+  <button
+    id="menu-button"
+    class="menu-button"
+    aria-expanded="false"
+    aria-controls="main-menu"
+    aria-label="Show main menu"
+    aria-haspopup="true"
+  >
+    <span class="menu-button__icon">
+      <span class="menu-button__line"></span>
+      <span class="menu-button__line"></span>
+      <span class="menu-button__line"></span>
+    </span>
+
+  </button>
+
+  <a
+    class="nav__logo"
+    href="https://oceanhealthindex.org"
+    role="menuitem"
+    title="Ocean Health Index Homepage"
+  >
+
+
+
+
+
+
+  
+  
+
+
+<svg class="logo" viewBox="0 0 2657 1024" xmlns="http://www.w3.org/2000/svg" title="Ocean Health Index">
+  <g class="logo__image">
+    <path d="M586 777l-25 188 3 4 3-3 25-188-6-1zM567 773l-49 184c0 3 0 4 3 4h1l4-3 48-184-7-1zM548 766l-72 175c-1 3 0 5 2 5h2l4-2 72-175-8-3zM368 878c3 0 4-1 7-3l134-134-12-11-134 134c-3 2-3 6-2 9l-74 75c-2 1-2 2 0 4l2 1 3-1 75-75c-2 0 0 1 1 1zM402 906c3 0 4-2 5-3l116-151-12-9-115 151c-2 2-2 5 0 8l-66 85v4h1l3-1 66-86 2 2zM528 756l-94 164c-2 1-2 4 0 7l-54 94c-1 2 0 3 1 4h2l2-1 54-95c3 0 4-1 5-2l95-166-11-5zM687 758l-2 2 95 164 1 1h1v-2l-95-165zM669 768l-4 1 72 175 2 1h1l1-2-72-175z"/>
+    <path d="M1244 585c11-11 18-26 15-42-2-19-14-33-31-40 12-10 17-27 12-44-6-19-21-32-39-33 12-12 16-30 10-46-8-19-28-29-46-26 13-14 15-33 6-49a39 39 0 00-55-14l-8 3 7-5c17-13 19-37 6-52a37 37 0 00-52-7l-38 29 34-36c14-14 14-36 0-49a34 34 0 00-50 0l-61 60 53-68c10-15 8-36-7-46s-35-8-46 6l-76 99 62-108c8-14 4-33-11-42-14-8-33-4-42 10l-64 112-3 1-1-3 49-117c6-15-2-31-15-37-14-6-30 1-37 14l-50 120-6 4c0-3-2-5-3-7l33-125c4-13-4-27-18-31s-28 4-32 18l-33 125-9 8-5-11 17-127c1-12-7-24-20-25-12-1-24 7-25 20l-17 127c-5 4-8 8-10 15-2-6-6-11-10-15V20a19 19 0 10-39 0v129c-7 5-11 13-11 22v1c-1-9-6-16-13-21L548 22c-1-9-10-17-20-15s-17 10-15 19l17 129c-6 7-9 15-8 24l5 35-9-34c-3-9-9-16-17-18L467 35c-3-7-11-13-19-10s-13 10-10 18l34 127c-5 6-8 15-5 23l17 62-25-58c-4-8-11-13-20-14L389 62c-3-7-10-9-17-7s-9 11-7 17l50 121c-5 7-6 16-2 24l35 87-47-82c-4-8-13-12-21-12L314 96c-2-5-9-7-14-4s-7 9-4 14l65 115c-5 6-5 16-1 24l49 84v2l-3-1-59-76c-5-7-14-10-22-8l-81-105c-2-4-7-4-10-2-4 3-4 8-1 11l80 105c-4 7-4 17 1 24l59 77v5l-5-1-68-68c-6-5-15-7-21-4l-95-95c-3-2-7-2-9 0s-3 7 0 9l94 95c-3 7-2 16 4 21l69 68 2 10c-2-2-6-2-9 0l-76-59c-7-6-15-4-20 0l-108-83c-2-2-5-2-6 1s-1 5 1 7l108 82c-3 7 0 15 5 20l76 59c0 4 3 9 6 12h-13l-85-49c-5-3-13-2-17 2L87 319c-3-1-6 0-7 2s0 5 1 6l120 69c-1 6 1 13 8 15l84 49c1 7 5 12 11 15l4 2h-6c-6-2-13-1-18 1l-89-36c-6-3-12 0-16 4L50 392c-1-2-4 0-5 2s0 4 2 6l129 54c0 5 3 11 8 13l89 36c2 7 7 12 12 15l25 10-26-6c-7-1-13 0-18 4l-95-25c-5-1-11 1-13 5L24 467c-2 0-4 0-4 2s0 4 2 4l137 37c0 5 4 9 8 11l95 25c2 6 6 10 13 13l47 13-49-7c-6-1-13 2-17 7l-97-13c-4 0-8 1-9 5L8 546l-4 2 3 4 142 19c1 3 3 6 7 7l98 14c2 5 8 10 14 10l70 9h-70c-6 0-12 4-16 9h-98c-3 0-7 3-7 6H3c-2 0-3 1-3 2l3 3h144c2 3 4 5 7 5h98c3 5 8 9 16 9h92l-91 12c-6 2-11 6-13 12l-98 13c-3 0-6 3-6 7 0 2 3 5 6 5h1l99-13c2 5 8 8 13 8h2l113-15-110 28c-5 1-9 7-10 12l-98 26c-2 1-4 4-4 7s3 4 6 4h1l97-27c3 4 7 7 12 7h4l130-36-125 52c-5 2-8 8-8 13l-93 39c-1 2-3 3-3 5s3 3 4 3h2l93-39 9 5 5-1 145-61-135 79c-4 3-7 8-6 12l-89 51c-1 1-3 4-1 5l4 2h1l89-52 8 3 5-1 156-90-142 108c-4 3-6 7-4 11l-83 63c-2 1-2 2 0 4l2 1 2-1 83-63 5 1 6-3 152-115c-24-27-39-62-39-100a151 151 0 11293 50h465c27 0 50-23 50-50 2-17-7-33-21-41z"/>
+    <path d="M627 778l25 188c0 1 1 3 3 3l2-3-25-188h-5zM647 774l48 184c0 2 2 2 2 2l1-3-49-184-2 1zM610 780h-3v190l3 3 3-3V780h-3z"/>
+  </g>
+  
+  <g class="logo__title">
+    <path d="M1496 406c-89 0-141-66-141-140s53-141 141-141c89 0 141 66 141 141 0 76-52 140-141 140zm0-223c-41 0-71 25-71 84 0 39 17 84 71 84 51 0 71-43 71-84 0-42-20-84-71-84z"/>
+    <path d="M1822 222c-9-25-32-39-55-39-37 0-66 25-66 84 0 39 16 84 68 84 19 0 44-13 54-37l53 25c-23 41-62 68-107 68-84 0-134-65-134-140s46-141 129-141c53 0 87 25 112 70l-54 26zM1885 400V134h196v51h-129v49h121v51h-121v63h141v52h-208z"/>
+    <path d="M2182 134h68l100 266h-71l-13-42h-97l-13 42h-71l97-266zm68 175l-32-109h-2l-33 109h67z"/>
+    <path d="M2342 134h67l96 170h2V134h60v266h-65l-98-167h-1v167h-61V134zM1366 419h65v96h99v-96h66v265h-66V572h-97v112h-66V419zM1625 684V419h196v52h-129v48h121v51h-121v64h140v50h-207z"/>
+    <path d="M1922 419h68l100 266h-71l-13-42h-99l-13 42h-71l99-266zm68 174l-33-109h-1l-33 109h67z"/>
+    <path d="M2082 419h66v209h104v56h-170V419zM2210 419h205v52h-70v213h-66V471h-69v-52zM2424 419h66v96h98v-96h66v265h-66V572h-98v112h-66V419zM1366 703h65v266h-65V703zM1462 703h67l96 170h1V703h61v266h-68l-97-167h-1v167h-61V703zM1713 703h102c82 0 136 38 136 133s-54 133-136 133h-102V703zm67 211h38c50 0 67-35 67-77 0-43-18-76-68-76h-38v153zM1964 969V703h196v52h-129v48h121v51h-121v64h141v51h-208z"/>
+    <path d="M2262 826l-88-123h80l49 80 49-80h79l-87 123 101 143h-82l-61-99-63 99h-81l104-143z"/>
+    <path d="M2431 703h23v7h-8v25h-8v-25h-7v-7zM2458 703h12l5 23 5-23h11v30h-7v-23l-6 23h-7l-6-23v23h-7v-30z"/>
+  </g>
+  
+</svg></a>
+
+  <ul id="main-menu" class="nav__menu" role="menubar" aria-labelledby="menu-button">
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="global-scores"
+            aria-label="Global Scores submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            Global Scores
+          </a>
+          <ul class="nav__submenu" id="global-scores" role="menu" aria-label="Global Scores">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/global-scores/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Scores by country
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/global-scores/goal-scores/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Scores by goal
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/global-scores/data-download/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Data Download
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="methodology"
+            aria-label="Methodology submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            Methodology
+          </a>
+          <ul class="nav__submenu" id="methodology" role="menu" aria-label="Methodology">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Methods Overview
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/goals/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Goals
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/pressure/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Pressure Description
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/resilience/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Resilience Description
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/deep-dive/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Deep Dive
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="ohib-stylecolor#f26c25&#43;/b"
+            aria-label="OHI&lt;b style=&#34;color:#f26c25&#34;&gt;&#43;&lt;/b&gt; submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            OHI<b style="color:#f26c25">+</b>
+          </a>
+          <ul class="nav__submenu" id="ohib-stylecolor#f26c25&#43;/b" role="menu" aria-label="OHI&lt;b style=&#34;color:#f26c25&#34;&gt;&#43;&lt;/b&gt;">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/ohi&#43;/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  What is OHI&#43;
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/ohi&#43;/assessment/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Regional Assessments
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/ohi&#43;/conduct/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Conduct an OHI&#43;
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="resources"
+            aria-label="Resources submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            Resources
+          </a>
+          <ul class="nav__submenu" id="resources" role="menu" aria-label="Resources">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/resources/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Overview
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/resources/tools/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Tools
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/resources/data/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Data
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+        
+      
+  
+      <li class="nav__item nav__item--toplevel nav__item--current" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="about"
+            aria-label="About submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            About
+          </a>
+          <ul class="nav__submenu" id="about" role="menu" aria-label="About">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  What is OHI
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/news/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  News
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/ohifellows/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  OHI Fellows
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/people/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  People
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/publications/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Publications
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/supporters/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Supporters
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/contact/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Contact
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+  </ul>
+</nav>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="page-header" style="background-image: url('/images/banners/ca-sealion.jpg');" >
+  <div class="header-gradient"></div>
+  <h1 class="page-header__title">Shifting from Raster to Terra</h1>
+  
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+        
+          
+            <p class="photo-credit">PHOTO(S): © Brett Seymour/National Park Service</p>
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+</header><div  class="breadcrumb">
+  
+  
+    
+  
+    
+  
+  
+  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/">&nbspHome</a> >
+  
+
+  
+  
+  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/news/">&nbspNews</a> >
+  
+
+  
+  
+  <a class = "breadcrumb-item current" href="https://oceanhealthindex.org/news/raster_to_terra/">&nbspShifting from Raster to Terra</a>
+  
+
+</div>
+
+
+<section class="section"><div class="column-left">
+  <h2 class = "column-left__title">
+    Overview
+  </h2>
+  <div class="column-left__logo">
+
+
+  
+
+
+
+
+
+
+<svg class="logo logo--subtle" viewBox="0 0 1266 1024" xmlns="http://www.w3.org/2000/svg" >
+  <g class="logo__image">
+    <path d="M586 777l-25 188 3 4 3-3 25-188-6-1zM567 773l-49 184c0 3 0 4 3 4h1l4-3 48-184-7-1zM548 766l-72 175c-1 3 0 5 2 5h2l4-2 72-175-8-3zM368 878c3 0 4-1 7-3l134-134-12-11-134 134c-3 2-3 6-2 9l-74 75c-2 1-2 2 0 4l2 1 3-1 75-75c-2 0 0 1 1 1zM402 906c3 0 4-2 5-3l116-151-12-9-115 151c-2 2-2 5 0 8l-66 85v4h1l3-1 66-86 2 2zM528 756l-94 164c-2 1-2 4 0 7l-54 94c-1 2 0 3 1 4h2l2-1 54-95c3 0 4-1 5-2l95-166-11-5zM687 758l-2 2 95 164 1 1h1v-2l-95-165zM669 768l-4 1 72 175 2 1h1l1-2-72-175z"/>
+    <path d="M1244 585c11-11 18-26 15-42-2-19-14-33-31-40 12-10 17-27 12-44-6-19-21-32-39-33 12-12 16-30 10-46-8-19-28-29-46-26 13-14 15-33 6-49a39 39 0 00-55-14l-8 3 7-5c17-13 19-37 6-52a37 37 0 00-52-7l-38 29 34-36c14-14 14-36 0-49a34 34 0 00-50 0l-61 60 53-68c10-15 8-36-7-46s-35-8-46 6l-76 99 62-108c8-14 4-33-11-42-14-8-33-4-42 10l-64 112-3 1-1-3 49-117c6-15-2-31-15-37-14-6-30 1-37 14l-50 120-6 4c0-3-2-5-3-7l33-125c4-13-4-27-18-31s-28 4-32 18l-33 125-9 8-5-11 17-127c1-12-7-24-20-25-12-1-24 7-25 20l-17 127c-5 4-8 8-10 15-2-6-6-11-10-15V20a19 19 0 10-39 0v129c-7 5-11 13-11 22v1c-1-9-6-16-13-21L548 22c-1-9-10-17-20-15s-17 10-15 19l17 129c-6 7-9 15-8 24l5 35-9-34c-3-9-9-16-17-18L467 35c-3-7-11-13-19-10s-13 10-10 18l34 127c-5 6-8 15-5 23l17 62-25-58c-4-8-11-13-20-14L389 62c-3-7-10-9-17-7s-9 11-7 17l50 121c-5 7-6 16-2 24l35 87-47-82c-4-8-13-12-21-12L314 96c-2-5-9-7-14-4s-7 9-4 14l65 115c-5 6-5 16-1 24l49 84v2l-3-1-59-76c-5-7-14-10-22-8l-81-105c-2-4-7-4-10-2-4 3-4 8-1 11l80 105c-4 7-4 17 1 24l59 77v5l-5-1-68-68c-6-5-15-7-21-4l-95-95c-3-2-7-2-9 0s-3 7 0 9l94 95c-3 7-2 16 4 21l69 68 2 10c-2-2-6-2-9 0l-76-59c-7-6-15-4-20 0l-108-83c-2-2-5-2-6 1s-1 5 1 7l108 82c-3 7 0 15 5 20l76 59c0 4 3 9 6 12h-13l-85-49c-5-3-13-2-17 2L87 319c-3-1-6 0-7 2s0 5 1 6l120 69c-1 6 1 13 8 15l84 49c1 7 5 12 11 15l4 2h-6c-6-2-13-1-18 1l-89-36c-6-3-12 0-16 4L50 392c-1-2-4 0-5 2s0 4 2 6l129 54c0 5 3 11 8 13l89 36c2 7 7 12 12 15l25 10-26-6c-7-1-13 0-18 4l-95-25c-5-1-11 1-13 5L24 467c-2 0-4 0-4 2s0 4 2 4l137 37c0 5 4 9 8 11l95 25c2 6 6 10 13 13l47 13-49-7c-6-1-13 2-17 7l-97-13c-4 0-8 1-9 5L8 546l-4 2 3 4 142 19c1 3 3 6 7 7l98 14c2 5 8 10 14 10l70 9h-70c-6 0-12 4-16 9h-98c-3 0-7 3-7 6H3c-2 0-3 1-3 2l3 3h144c2 3 4 5 7 5h98c3 5 8 9 16 9h92l-91 12c-6 2-11 6-13 12l-98 13c-3 0-6 3-6 7 0 2 3 5 6 5h1l99-13c2 5 8 8 13 8h2l113-15-110 28c-5 1-9 7-10 12l-98 26c-2 1-4 4-4 7s3 4 6 4h1l97-27c3 4 7 7 12 7h4l130-36-125 52c-5 2-8 8-8 13l-93 39c-1 2-3 3-3 5s3 3 4 3h2l93-39 9 5 5-1 145-61-135 79c-4 3-7 8-6 12l-89 51c-1 1-3 4-1 5l4 2h1l89-52 8 3 5-1 156-90-142 108c-4 3-6 7-4 11l-83 63c-2 1-2 2 0 4l2 1 2-1 83-63 5 1 6-3 152-115c-24-27-39-62-39-100a151 151 0 11293 50h465c27 0 50-23 50-50 2-17-7-33-21-41z"/>
+    <path d="M627 778l25 188c0 1 1 3 3 3l2-3-25-188h-5zM647 774l48 184c0 2 2 2 2 2l1-3-49-184-2 1zM610 780h-3v190l3 3 3-3V780h-3z"/>
+  </g>
+  
+</svg></div>
+</div><div class="column-center">
+  <h1 id="switching-from-the-raster-package-to-terra-for-spatial-analysis">Switching from the <code>raster</code> package to <code>terra</code> for spatial analysis</h1>
+<p class="news-author">by Juliet Cohen</p>
+<p class="news-date">Thu, Aug 25, 2022</p>
+<p>Spatial data in <code>R</code> has a reputation for being tedious and time consuming. With so many different spatial file types (<code>.shp</code>, <code>.nc</code>, <code>.gpkg</code>, <code>.geojson</code>, and <code>.tif</code> to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the <code>raster</code> package to calculate cell values across stacked layers and recognize patterns over space and time. In pursuit of improving methodology and keeping up with the hip trends in environmental science, many scientists are motivated to make the spatial switch from <code>raster</code> to <code>terra</code>. The <code>terra</code> package is essentially the modern version of <code>raster</code>, but with faster processing speeds and more flexible functions.</p>
+<p>Some examples of similar functions between <code>raster</code> and <code>terra</code> are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>raster</th>
+<th>terra</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raster()</td>
+<td>rast()</td>
+<td>Rasterize a spatial file (such as a <code>.tif</code> or a spatial dataframe) into a rasterLayer (for the <code>raster</code> package) or <code>spatRaster</code> (for the <code>terra</code> package)</td>
+</tr>
+<tr>
+<td>stack()</td>
+<td>rast(), c()</td>
+<td>Create raster stack to execute calculations across layers. <code>terra::rast()</code> is a more broadly applicable function since it can detect the quantity of <code>spatRasters</code> present as <code>.tif</code> files in a directory, then automatically stacks them. Alternatively, if the files have already been read in as <code>spatRasters</code>, use <code>c()</code> to stack them and assign the stack to a new object name.</td>
+</tr>
+<tr>
+<td>calc()</td>
+<td>app(), lapp(), focal(), etc.</td>
+<td>Execute a function across a raster or raster stack. <code>terra</code> has multiple functions with varying degrees of flexibility depending on if the function is applied across layers, and if the same function is applied to each layer.</td>
+</tr>
+<tr>
+<td>resample()</td>
+<td>resample()</td>
+<td>Convert the origin and/or resolution of a raster to that of another. For example, you might want to add two rasters, but need to convert the first raster from a resolution of 0.5 degrees to 0.01 degrees to match the higher resolution of the second raster.</td>
+</tr>
+<tr>
+<td>extract()</td>
+<td>extract()</td>
+<td>Pull values from a raster object where they intersect the locations of another spatial object, such as points that fall within polygons. For <code>raster()</code>, the spatial objects can be points, lines, and polygons. For <code>terra</code>, the second spatial object must be a vector or matrix/dataframe of coordinates. For example, the spatial object from which we are extracting is a geometry columns of polygons, the user cannot input the entire spatial dataframe, but rather needs to vectorize the geometry column of the polygons using <code>terra::vect()</code> then input that object into <code>terra::extract()</code>.</td>
+</tr>
+<tr>
+<td>aggregate()</td>
+<td>aggregate()</td>
+<td>Combine cells of a raster to create a new raster with a lower resolution. Aggregation groups rectangular areas to create larger cells. The value for the resulting cells is computed with a user-specified function. This is also know as down-sampling.</td>
+</tr>
+<tr>
+<td>freq()</td>
+<td>freq()</td>
+<td>Create a frequency table of the values of a raster.</td>
+</tr>
+</tbody>
+</table>
+<p>Let&rsquo;s take a look at how we converted our workflow to calculate global <strong>soft bottom habitat destruction</strong> through the years 2012-2020.</p>
+<h2 id="soft-bottom-habitat-destruction">Soft Bottom Habitat Destruction</h2>
+<p>The Ocean Health Index (OHI) uses various spatial datasets to monitor the relationship between the health of marine systems and human well-being for 220 regions around the world. The way OHI historically calculated soft bottom habitat destruction was by using annual fisheries catch data as a proxy for trawling and dredging activity, because these types of fishing severely disturb benthic habitat. The fisheries catch data was rasterized and overlaid onto polygons of exclusive economic zones for all OHI regions, then spatially standardized by summing each fishing coordinate within the exclusive economic zone and dividing that sum by the square kilometers of softbottom habitat.</p>
+<p>In 2022, OHI switched the data source from fisheries catch to apparent fishing effort for trawling and dredging from <a href="www.globalfishingwatch.org">Global Fishing Watch</a> using their new user-friendly <a href="https://github.com/GlobalFishingWatch/gfwr">API</a>. This data comes in units of hours of apparent fishing effort associated with the coordinate, geartype, and year of each observation. We used the Global Fishing Watch API to pull codes for all the exclusive economic zones for the 220 OHI regions, then pulled apparent fishing effort for each exclusive economic zone from 2012-2020.</p>
+<center>
+<img src="/images/terra_post/ohi_hex_transparent.png" style="width: 20%; height: 20%"/><img src="/images/terra_post/gfwr_hex.png" style="width: 20%; height: 20%"/><img src="/images/terra_post/terra_hex.png" style="width: 20%; height: 20%"/> 
+</center>
+<details>
+<summary>
+Expand to see the Global Fishing Watch API in action
+</summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># iterate through all EEZ codes for all regions to extract apparent fishing hours:</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for</span>(i in regions) {
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># create dataframe that contains the column `id` that is list of all EEZ codes for one region</span>
+</span></span><span style="display:flex;"><span>  eez_code_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">get_region_id</span>(region_name <span style="color:#f92672">=</span> i, region_source <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;eez&#39;</span>, key <span style="color:#f92672">=</span> key)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># convert that column into a numeric list of EEZ codes to feed into the next loop:</span>
+</span></span><span style="display:flex;"><span>  eez_codes <span style="color:#f92672">&lt;-</span> eez_code_df<span style="color:#f92672">$</span>id
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Processing apparent fishing hours for &#34;</span>, i, <span style="color:#e6db74">&#34; EEZ code &#34;</span>, eez_codes))
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">for</span>(j in eez_codes) { 
+</span></span><span style="display:flex;"><span>    fishing_hours <span style="color:#f92672">&lt;-</span> gfwr<span style="color:#f92672">::</span><span style="color:#a6e22e">get_raster</span>(spatial_resolution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;high&#39;</span>, <span style="color:#75715e"># 0.01 degree resolution </span>
+</span></span><span style="display:flex;"><span>                                      temporal_resolution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;yearly&#39;</span>,
+</span></span><span style="display:flex;"><span>                                      group_by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;flagAndGearType&#39;</span>, 
+</span></span><span style="display:flex;"><span>                                      date_range <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2012-01-01,2020-12-31&#39;</span>, 
+</span></span><span style="display:flex;"><span>                                      region <span style="color:#f92672">=</span> j, 
+</span></span><span style="display:flex;"><span>                                      region_source <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;eez&#39;</span>,
+</span></span><span style="display:flex;"><span>                                      key <span style="color:#f92672">=</span> key) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># rename columns for clarity:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">rename</span>(year <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Time Range&#34;</span>,
+</span></span><span style="display:flex;"><span>             apparent_fishing_hours <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Apparent Fishing hours&#34;</span>,
+</span></span><span style="display:flex;"><span>             y <span style="color:#f92672">=</span> Lat,
+</span></span><span style="display:flex;"><span>             x <span style="color:#f92672">=</span> Lon,
+</span></span><span style="display:flex;"><span>             geartype <span style="color:#f92672">=</span> Geartype) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># keep track of the administrative country for each EEZ </span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">mutate</span>(eez_admin_rgn <span style="color:#f92672">=</span> i) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">select</span>(year, apparent_fishing_hours, y, x, eez_admin_rgn, geartype)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Extracted all apparent fishing hours for &#34;</span>, i, <span style="color:#e6db74">&#34; EEZ code &#34;</span>, j))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">write_csv</span>(fishing_hours, <span style="color:#a6e22e">paste0</span>(filepath, i, <span style="color:#e6db74">&#34;_&#34;</span>, j, <span style="color:#e6db74">&#34;_effort.csv&#34;</span>)) 
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></details>
+<p>While initially cleaning the Global Fishing Watch data, we separate it into different dataframes for trawling and dredging since we need to process the geartypes differently. In order to convert the fishing effort coordinates into annual <code>spatRasters</code>, we use the following approach:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>years <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(<span style="color:#ae81ff">2012</span><span style="color:#f92672">:</span><span style="color:#ae81ff">2020</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for</span>(i in years){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># trawling data:</span>
+</span></span><span style="display:flex;"><span>  trawl_annual_raster <span style="color:#f92672">&lt;-</span> fish_effort_trawl_annual <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(year <span style="color:#f92672">==</span> i) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span>year) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    terra<span style="color:#f92672">::</span><span style="color:#a6e22e">rast</span>(type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;xyz&#34;</span>, crs <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;EPSG:4326&#34;</span>, digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, extent <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  filename <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;fish_effort_trawl_&#34;</span>, i, <span style="color:#e6db74">&#34;.tif&#34;</span>)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># save annual raster file for trawling:</span>
+</span></span><span style="display:flex;"><span>  terra<span style="color:#f92672">::</span><span style="color:#a6e22e">writeRaster</span>(
+</span></span><span style="display:flex;"><span>    trawl_annual_raster, 
+</span></span><span style="display:flex;"><span>    filename <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(filepath, i, filename), 
+</span></span><span style="display:flex;"><span>    overwrite <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>terra</code> processes this dataframe into a <code>spatRaster</code> object because we simplified it into just 3 columns: x, y, and fishing effort, and with the argument <code>type = &quot;xyz&quot;</code> we specified that there&rsquo;s an x value, y value, and other value (z) at that coordinate. Note that the <code>WGS84</code> coordinate reference system is specified using the simple <code>&quot;EPSG:4326&quot;</code> syntax, rather than the complex <code>proj4</code> format that <code>raster::raster()</code> prefers: <code>&quot;+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0&quot;</code>. We run the same code for the dredging dataframe.</p>
+<p>Next, we subset the trawling data by filtering for just bottom trawling and exclude mid-water trawling, since bottom trawling is the method that damages the seafloor. In order to do this, we multiply the trawling effort <code>spatRaster</code> by another <code>spatRaster</code> that represents the proportion of bottom trawling to mid-water trawling at each coordinate, provided by Watson and Tidd (2018). The raw trawling proportion raster has many <code>NA</code> values:</p>
+<center>
+<img src="/images/terra_post/trawling_prop_2017_raw.png" style="width: 80%; height: 80%"/>
+</center>
+<p>In order to multiply these <code>spatRasters</code>, we first want to interpolate the bottom trawling proportion raster as accurately as possible. This interpolation takes 2 steps:</p>
+<p><strong>1. Use the local mean of surrounding cells to fill in <code>NA</code> values (nearest neighbor) using <code>terra::focal()</code>.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>trawl_depth_proportion_interpolated <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">focal</span>(
+</span></span><span style="display:flex;"><span>  x <span style="color:#f92672">=</span> trawl_depth_proportion,
+</span></span><span style="display:flex;"><span>  w <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, <span style="color:#75715e"># sets a 5 cell window around NA pixel</span>
+</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>,
+</span></span><span style="display:flex;"><span>  na.policy <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;only&#34;</span>, <span style="color:#75715e"># only interpolate NA values</span>
+</span></span><span style="display:flex;"><span>  na.rm <span style="color:#f92672">=</span> T,
+</span></span><span style="display:flex;"><span>  overwrite <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p><strong>2. Interpolate all remaining <code>NA</code> values using the <code>terra::global()</code> function.</strong></p>
+<p><code>global()</code> can be used similarly to <code>terra::app()</code> for simple functions, such as calculating the mean of all non-<code>NA</code> values in the entire raster layer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>global_trawl_proportion_avg <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">global</span>(
+</span></span><span style="display:flex;"><span>  trawl_depth_proportion_interpolated, 
+</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>,
+</span></span><span style="display:flex;"><span>  na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>trawl_depth_proportion_interpolated<span style="color:#a6e22e">[is.na</span>(trawl_depth_proportion_interpolated)] <span style="color:#f92672">&lt;-</span> global_trawl_proportion_avg[1,<span style="color:#ae81ff">1</span>]
+</span></span></code></pre></div><p>In order to check if any <code>NA</code> values remain, we can use the <code>isNA</code> function in <code>terra::global()</code> that returns the sum of all <code>NA</code> values in the <code>spatRaster</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>terra<span style="color:#f92672">::</span><span style="color:#a6e22e">global</span>(
+</span></span><span style="display:flex;"><span>  trawl_depth_proportion_interpolated, 
+</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;isNA&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>An output of 0 informs us we have successfully interpolated all <code>NA</code>&rsquo;s!</p>
+<p>The fully interpolated and resampled map for trawling proportion looks like this:</p>
+<center>
+<img src="/images/terra_post/trawling_prop_2017_interp.png" style="width: 80%; height: 80%"/>
+</center>
+<p>The continental raster cells were originally <code>NA</code> values, and we used <code>terra::global()</code> to fill them in with the mean value in our last interpolation step. While it does not make logical sense to assign land value with a trawling proportion value greater than 0, this is useful for our use case because the only purpose of this trawling proportion raster is to retain the trawling fishing effort values in the <em>other</em> raster and subset many of them to a smaller value if the proportion is less than 1 in this interpolated raster. As a result, all the land cells that have a value of 1 in the interpolated raster will be multiplied by <code>NA</code> in the fishing effort raster, so they will not be counted in the final fishing effort scores.</p>
+<p>Next, we check the raster&rsquo;s resolution, extent, and other characteristics by calling the raster object and viewing the output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>class       : SpatRaster 
+</span></span><span style="display:flex;"><span>dimensions  : 360, 720, 1  (nrow, ncol, nlyr)
+</span></span><span style="display:flex;"><span>resolution  : 0.5, 0.5  (x, y)
+</span></span><span style="display:flex;"><span>extent      : -180, 180, -90, 90  (xmin, xmax, ymin, ymax)
+</span></span><span style="display:flex;"><span>coord. ref. : lon/lat WGS 84 (EPSG:4326) 
+</span></span><span style="display:flex;"><span>source      : bottom_trawl_prop_2017.tif 
+</span></span><span style="display:flex;"><span>name        : bottom_trawl_prop_2017 
+</span></span><span style="display:flex;"><span>min value   :                      0 
+</span></span><span style="display:flex;"><span>max value   :                      1 
+</span></span></code></pre></div><p>Note that the resolution is 0.5 degrees. We want to up-sample this <code>spatRaster</code> to increase the resolution to that of the fishing raster, which is 0.01 degrees. We can do this by using the trawling effort raster as a template resolution in the <code>resample()</code> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># resample the interpolated trawling proportion data</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># match the resolution of the GFW fishing effort data</span>
+</span></span><span style="display:flex;"><span>trawl_depth_proportion_resampled <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">resample</span>(
+</span></span><span style="display:flex;"><span>  x <span style="color:#f92672">=</span> trawl_depth_proportion_interpolated,
+</span></span><span style="display:flex;"><span>  y <span style="color:#f92672">=</span> fish_effort_trawl, <span style="color:#75715e"># use the GFW data as the sample geometry</span>
+</span></span><span style="display:flex;"><span>  method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;near&#34;</span> <span style="color:#75715e"># nearest neighbor calculation to up-sample</span>
+</span></span><span style="display:flex;"><span>) 
+</span></span></code></pre></div><p>We can check that the resolution was increased to 0.01 degrees by calling the name of the raster again to view the adjusted raster characteristics:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>class       : SpatRaster 
+</span></span><span style="display:flex;"><span>dimensions  : 14930, 36001, 1  (nrow, ncol, nlyr)
+</span></span><span style="display:flex;"><span>resolution  : 0.01, 0.01  (x, y)
+</span></span><span style="display:flex;"><span>extent      : -180.005, 180.005, -67.315, 81.985  (xmin, xmax, ymin, ymax)
+</span></span><span style="display:flex;"><span>coord. ref. : lon/lat WGS 84 (EPSG:4326) 
+</span></span><span style="display:flex;"><span>source      : trawl_depth_proportion_resampled_2017.tif 
+</span></span><span style="display:flex;"><span>name        : focal_mean 
+</span></span><span style="display:flex;"><span>min value   :          0 
+</span></span><span style="display:flex;"><span>max value   :          1 
+</span></span></code></pre></div><p>Great!</p>
+<p>Next, we need to match the <code>spatRaster</code> extents, which is the minimum and maximum coordinates in both the x and y directions (xmin, xmax, ymin, ymax). We use <code>terra::extend()</code> for this. First extend one <code>spatRaster</code> to the extent of the other, and then vice versa to ensure that each of the four dimensions are maximized and consistent with the other <code>spatRaster</code>. If we were to use the <code>raster</code> package, the equivalent (but slower) function goes by the same name. Both packages also have the function <code>crop()</code> that reduces the extent of a larger raster to that of a smaller raster.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>trawl_depth_proportion_extended <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">extend</span>(
+</span></span><span style="display:flex;"><span>  trawl_depth_proportion_raster,
+</span></span><span style="display:flex;"><span>  fish_effort_raster
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fish_effort_extended <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">extend</span>(
+</span></span><span style="display:flex;"><span>  fish_effort_raster, 
+</span></span><span style="display:flex;"><span>  trawl_depth_proportion_extended
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>In order to check if the extents match, we can use <code>terra::compareGeom()</code> to return <code>TRUE</code> or <code>FALSE</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>terra<span style="color:#f92672">::</span><span style="color:#a6e22e">compareGeom</span>(
+</span></span><span style="display:flex;"><span>  fish_effort_extended, 
+</span></span><span style="display:flex;"><span>  trawl_depth_proportion_extended, 
+</span></span><span style="display:flex;"><span>  stopOnError <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span> <span style="color:#75715e"># makes the function return FALSE if the extents are different</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>There is no direct equivalent <code>raster</code> function for <code>terra::compareGeom()</code>, and it&rsquo;s quite handy!</p>
+<p>The 2017 map of fishing effort looks like this:</p>
+<center>
+<img src="/images/terra_post/map_2017.png"/>
+</center>
+<p>Next, we use <code>writeRaster()</code> to re-write the two extended <code>spatRasters</code> as <code>.tif</code> files to the same directory so we can read them in as <code>spatRasters</code> in our next loop.</p>
+<p>The last step before multiplying the <code>spatRasters</code> is to stack them. With the <code>raster</code> package, we would use <code>stack()</code>. With <code>terra</code>, we simply read in the <code>spatRasters</code> simultaneously from the same directory using the familiar function <code>rast()</code> and the result is a <code>spatRaster</code> object with two layers that have matching resolutions, origins, and extents!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># define the 2 raster filepaths as an object </span>
+</span></span><span style="display:flex;"><span>rasters <span style="color:#f92672">&lt;-</span> here<span style="color:#f92672">::</span><span style="color:#a6e22e">here</span>(<span style="color:#e6db74">&#39;data&#39;</span>, <span style="color:#e6db74">&#39;int&#39;</span>, <span style="color:#e6db74">&#39;fish_effort_annual&#39;</span>, <span style="color:#e6db74">&#39;trawling&#39;</span>, i, <span style="color:#e6db74">&#39;extended&#39;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list.files</span>(pattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;.tif&#34;</span>, full <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># stack the spatRasters, with each spatRaster representing 1 layer:</span>
+</span></span><span style="display:flex;"><span>trawl_stack <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">rast</span>(rasters)
+</span></span></code></pre></div><p>Finally, it&rsquo;s time to multiply the <code>spatRasters</code>! There are a few options for multiplying, summing, taking the mean of two rasters, or executing custom functions in the <code>terra</code> package. For example, you could use <code>app()</code>, <code>lapp()</code>, <code>sapp()</code>, etc. You should choose your calculation function depending on:</p>
+<ol>
+<li>If you are calculating through layers, across only one layer, if you are using the same calculation on all layers or not (for example, if you have three layers you might execute <code>x * y * z</code> or <code>x * y + z</code>)</li>
+<li>If your function is simple (like &ldquo;sum&rdquo; or &ldquo;mean&rdquo;) or a complex custom function that would take much more compute to execute over a large, global <code>spatRaster</code>.</li>
+</ol>
+<p>Since we are working with only two layers and are executing a basic multiplication, we can use the simplest option: <code>app()</code> or have a little more fun with the syntax and use <code>lapp()</code> like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>trawling_corrected <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">lapp</span>(
+</span></span><span style="display:flex;"><span>  trawl_stack, 
+</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(x,y){<span style="color:#a6e22e">return</span>(x<span style="color:#f92672">*</span>y)}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>If we were working with <code>rasterLayers</code> in the <code>raster</code> package, we would have used the general function <code>calc()</code> for simple calculations.</p>
+<p>After cleaning up the dredging <code>spatRaster</code>, we want to add the fishing effort associated with each cell to our corrected trawling raster, so we stack them as we did before and execute simple addition across layers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>all_fishing <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">app</span>(
+</span></span><span style="display:flex;"><span>  effort_stack, 
+</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sum&#34;</span>, 
+</span></span><span style="display:flex;"><span>  na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>In order to pair the trawling and dredging fishing effort with the 220 OHI regions, we extract the trawling and dredging points from the exclusive economic zone polygons that are associated with each region. In <code>raster</code> and <code>terra</code>, we would use their respective functions both called <code>extract()</code>. <code>terra::extract()</code> allows for more flexibility in extracting the proportion of cells that fall within the polygons, if they are on the borders. However, our experience with these functions is that they are very slow to execute.</p>
+<blockquote>
+<p><code>exact_extractr::exact_extract()</code> offers <em>much</em> faster processing speeds, but requires different syntax. This function allows the user different options for the output that range in complexity. For example, one can extract a list of dataframes, each of which contains the cell values and weight (coverage proportion) for one polygon. The user can then use those values and weights as they want. Alternatively, <code>exact_extract()</code> can do a weighted calculation for us, with arguments that specfies a <em>weighted</em> function and the data to use as weights.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>years_all <span style="color:#f92672">&lt;-</span>  <span style="color:#a6e22e">as.factor</span>(<span style="color:#ae81ff">2012</span><span style="color:#f92672">:</span><span style="color:#ae81ff">2020</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for </span>(i in years_all) {
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;Processing &#34;</span>, i, <span style="color:#e6db74">&#34; fishing effort.&#34;</span>))
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># read in the annual fishing raster for all regions</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># this represents corrected trawling plus dredging data </span>
+</span></span><span style="display:flex;"><span>  fishing_raster <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">rast</span>(<span style="color:#a6e22e">paste0</span>(filepath, filename, i, <span style="color:#e6db74">&#34;.tif&#34;</span>))
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># extract the fishing effort that falls within the polygons of OHI regions</span>
+</span></span><span style="display:flex;"><span>  extracted <span style="color:#f92672">&lt;-</span> exactextractr<span style="color:#f92672">::</span><span style="color:#a6e22e">exact_extract</span>(fishing_raster, ohi_regions_filtered)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># sum effort by polygon and append polygon dataframes into 1</span>
+</span></span><span style="display:flex;"><span>  all_polygon_effort <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">for </span>(j in <span style="color:#a6e22e">seq_along</span>(extracted)) {
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    df <span style="color:#f92672">&lt;-</span> extracted[[j]]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    weighted_effort_polygon <span style="color:#f92672">&lt;-</span> df <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># weight the fishing effort within each cell by the porportional coverage of the cell</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">mutate</span>(effort <span style="color:#f92672">=</span> value<span style="color:#f92672">*</span>coverage_fraction,
+</span></span><span style="display:flex;"><span>             polygon_id <span style="color:#f92672">=</span> j) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">select</span>(polygon_id, effort) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">group_by</span>(polygon_id) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">summarize</span>(effort_sum <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span>(effort, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bind the polygon-specific sum to the master dataframe of polygon sums</span>
+</span></span><span style="display:flex;"><span>    all_polygon_effort <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(all_polygon_effort, weighted_effort_polygon)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># bind regional id&#39;s to the polygon id&#39;s</span>
+</span></span><span style="display:flex;"><span>  rgn_id <span style="color:#f92672">&lt;-</span> ohi_regions_filtered<span style="color:#f92672">$</span>rgn_id
+</span></span><span style="display:flex;"><span>  regional_polygon_effort <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cbind</span>(all_polygon_effort, rgn_id)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  regional_polygon_effort <span style="color:#f92672">&lt;-</span> regional_polygon_effort <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">group_by</span>(rgn_id) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># combine each land and eez polygon for the same region</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># some of the fishing points landed just on the border of these polygons</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># meaning they are associated with land when they should be in the EEZ</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">summarize</span>(effort_sum <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span>(effort_sum, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mutate</span>(year <span style="color:#f92672">=</span> i)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># convert this raster info into a csv that represents fishing effort</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># for each OHI region for year i </span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">write.csv</span>(regional_polygon_effort, file <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(filepath, filename, i, <span style="color:#e6db74">&#34;.csv&#34;</span>),
+</span></span><span style="display:flex;"><span>  row.names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Saved &#34;</span>, i, <span style="color:#e6db74">&#34; fishing effort csv to &#34;</span>, filepath, filename, i, <span style="color:#e6db74">&#34;.csv&#34;</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>That about covers it for fishing effort rasters. You can find the complete script <a href="https://github.com/OHI-Science/ohiprep_v2022/tree/gh-pages/globalprep/hab_prs_hd_subtidal_soft_bottom/v2022">here</a> on the OHI github repository for the 2022 assessment. Please feel free to contact the OHI team with any questions or suggestions. For more spatial wrangling with <code>terra</code>, check out the upcoming blog post about our new tidal flats data layer!</p>
+<center>
+<img src="/images/terra_post/fish_icon_ohi.png" style="width: 20%; height: 20%"/>
+</center>
+<h2 id="references">References</h2>
+<ul>
+<li>
+<p>Daniel Baston (2022). <em>exactextractr: Fast Extraction from Raster Datasets using Polygons</em>. R package version 0.8.2, <a href="https://CRAN.R-project.org/package=exactextractr">https://CRAN.R-project.org/package=exactextractr</a>.</p>
+</li>
+<li>
+<p>Global Fishing Watch. [2022]. <a href="https://www.globalfishingwatch.org">www.globalfishingwatch.org</a></p>
+</li>
+<li>
+<p>Hijmans R (2022). <em>terra: Spatial Data Analysis</em>. R package version 1.6-3, <a href="https://CRAN.R-project.org/package=terra">https://CRAN.R-project.org/package=terra</a>.</p>
+</li>
+<li>
+<p>R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <a href="https://www.R-project.org/">https://www.R-project.org/</a>.</p>
+</li>
+<li>
+<p>Watson, R. A. and Tidd, A. 2018. Mapping nearly a century and a half of global marine fishing: 1869–2015. Marine Policy, 93, pp. 171-177. <a href="https://www.sciencedirect.com/science/article/pii/S0308597X18300605?via%3Dihub">(Paper URL)</a></p>
+</li>
+<li>
+<p>Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke
+C, Woo K, Yutani H (2019). “Welcome to the tidyverse.” <em>Journal of Open Source Software</em>, <em>4</em>(43), 1686. doi:10.21105/joss.01686 <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.</p>
+</li>
+</ul>
+<hr>
+<p>This post was created by the <a href="https://oceanhealthindex.org/about/ohifellows/">2022 OHI Fellows</a>.</p>
+<hr>
+
+</div><div class="column-right">
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  
+  
+
+  
+    
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+      
+    
+    
+      
+    
+  
+
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/" class="right-nav-item">What is OHI</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/news/" class="right-nav-item">News</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/ohifellows/" class="right-nav-item">OHI Fellows</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/people/" class="right-nav-item">People</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/publications/" class="right-nav-item">Publications</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/supporters/" class="right-nav-item">Supporters</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/contact/" class="right-nav-item">Contact</a>
+    </div>
+  
+</div></section>
+
+
+<footer class="footer">
+  <div class="footer__content footer__content--top">
+    <a class="footer__logo" href="https://oceanhealthindex.org">
+
+
+  
+
+
+
+
+
+  
+  
+
+
+<svg class="logo logo--dark" viewBox="0 0 2657 1024" xmlns="http://www.w3.org/2000/svg" title="Ocean Health Index">
+  <g class="logo__image">
+    <path d="M586 777l-25 188 3 4 3-3 25-188-6-1zM567 773l-49 184c0 3 0 4 3 4h1l4-3 48-184-7-1zM548 766l-72 175c-1 3 0 5 2 5h2l4-2 72-175-8-3zM368 878c3 0 4-1 7-3l134-134-12-11-134 134c-3 2-3 6-2 9l-74 75c-2 1-2 2 0 4l2 1 3-1 75-75c-2 0 0 1 1 1zM402 906c3 0 4-2 5-3l116-151-12-9-115 151c-2 2-2 5 0 8l-66 85v4h1l3-1 66-86 2 2zM528 756l-94 164c-2 1-2 4 0 7l-54 94c-1 2 0 3 1 4h2l2-1 54-95c3 0 4-1 5-2l95-166-11-5zM687 758l-2 2 95 164 1 1h1v-2l-95-165zM669 768l-4 1 72 175 2 1h1l1-2-72-175z"/>
+    <path d="M1244 585c11-11 18-26 15-42-2-19-14-33-31-40 12-10 17-27 12-44-6-19-21-32-39-33 12-12 16-30 10-46-8-19-28-29-46-26 13-14 15-33 6-49a39 39 0 00-55-14l-8 3 7-5c17-13 19-37 6-52a37 37 0 00-52-7l-38 29 34-36c14-14 14-36 0-49a34 34 0 00-50 0l-61 60 53-68c10-15 8-36-7-46s-35-8-46 6l-76 99 62-108c8-14 4-33-11-42-14-8-33-4-42 10l-64 112-3 1-1-3 49-117c6-15-2-31-15-37-14-6-30 1-37 14l-50 120-6 4c0-3-2-5-3-7l33-125c4-13-4-27-18-31s-28 4-32 18l-33 125-9 8-5-11 17-127c1-12-7-24-20-25-12-1-24 7-25 20l-17 127c-5 4-8 8-10 15-2-6-6-11-10-15V20a19 19 0 10-39 0v129c-7 5-11 13-11 22v1c-1-9-6-16-13-21L548 22c-1-9-10-17-20-15s-17 10-15 19l17 129c-6 7-9 15-8 24l5 35-9-34c-3-9-9-16-17-18L467 35c-3-7-11-13-19-10s-13 10-10 18l34 127c-5 6-8 15-5 23l17 62-25-58c-4-8-11-13-20-14L389 62c-3-7-10-9-17-7s-9 11-7 17l50 121c-5 7-6 16-2 24l35 87-47-82c-4-8-13-12-21-12L314 96c-2-5-9-7-14-4s-7 9-4 14l65 115c-5 6-5 16-1 24l49 84v2l-3-1-59-76c-5-7-14-10-22-8l-81-105c-2-4-7-4-10-2-4 3-4 8-1 11l80 105c-4 7-4 17 1 24l59 77v5l-5-1-68-68c-6-5-15-7-21-4l-95-95c-3-2-7-2-9 0s-3 7 0 9l94 95c-3 7-2 16 4 21l69 68 2 10c-2-2-6-2-9 0l-76-59c-7-6-15-4-20 0l-108-83c-2-2-5-2-6 1s-1 5 1 7l108 82c-3 7 0 15 5 20l76 59c0 4 3 9 6 12h-13l-85-49c-5-3-13-2-17 2L87 319c-3-1-6 0-7 2s0 5 1 6l120 69c-1 6 1 13 8 15l84 49c1 7 5 12 11 15l4 2h-6c-6-2-13-1-18 1l-89-36c-6-3-12 0-16 4L50 392c-1-2-4 0-5 2s0 4 2 6l129 54c0 5 3 11 8 13l89 36c2 7 7 12 12 15l25 10-26-6c-7-1-13 0-18 4l-95-25c-5-1-11 1-13 5L24 467c-2 0-4 0-4 2s0 4 2 4l137 37c0 5 4 9 8 11l95 25c2 6 6 10 13 13l47 13-49-7c-6-1-13 2-17 7l-97-13c-4 0-8 1-9 5L8 546l-4 2 3 4 142 19c1 3 3 6 7 7l98 14c2 5 8 10 14 10l70 9h-70c-6 0-12 4-16 9h-98c-3 0-7 3-7 6H3c-2 0-3 1-3 2l3 3h144c2 3 4 5 7 5h98c3 5 8 9 16 9h92l-91 12c-6 2-11 6-13 12l-98 13c-3 0-6 3-6 7 0 2 3 5 6 5h1l99-13c2 5 8 8 13 8h2l113-15-110 28c-5 1-9 7-10 12l-98 26c-2 1-4 4-4 7s3 4 6 4h1l97-27c3 4 7 7 12 7h4l130-36-125 52c-5 2-8 8-8 13l-93 39c-1 2-3 3-3 5s3 3 4 3h2l93-39 9 5 5-1 145-61-135 79c-4 3-7 8-6 12l-89 51c-1 1-3 4-1 5l4 2h1l89-52 8 3 5-1 156-90-142 108c-4 3-6 7-4 11l-83 63c-2 1-2 2 0 4l2 1 2-1 83-63 5 1 6-3 152-115c-24-27-39-62-39-100a151 151 0 11293 50h465c27 0 50-23 50-50 2-17-7-33-21-41z"/>
+    <path d="M627 778l25 188c0 1 1 3 3 3l2-3-25-188h-5zM647 774l48 184c0 2 2 2 2 2l1-3-49-184-2 1zM610 780h-3v190l3 3 3-3V780h-3z"/>
+  </g>
+  
+  <g class="logo__title">
+    <path d="M1496 406c-89 0-141-66-141-140s53-141 141-141c89 0 141 66 141 141 0 76-52 140-141 140zm0-223c-41 0-71 25-71 84 0 39 17 84 71 84 51 0 71-43 71-84 0-42-20-84-71-84z"/>
+    <path d="M1822 222c-9-25-32-39-55-39-37 0-66 25-66 84 0 39 16 84 68 84 19 0 44-13 54-37l53 25c-23 41-62 68-107 68-84 0-134-65-134-140s46-141 129-141c53 0 87 25 112 70l-54 26zM1885 400V134h196v51h-129v49h121v51h-121v63h141v52h-208z"/>
+    <path d="M2182 134h68l100 266h-71l-13-42h-97l-13 42h-71l97-266zm68 175l-32-109h-2l-33 109h67z"/>
+    <path d="M2342 134h67l96 170h2V134h60v266h-65l-98-167h-1v167h-61V134zM1366 419h65v96h99v-96h66v265h-66V572h-97v112h-66V419zM1625 684V419h196v52h-129v48h121v51h-121v64h140v50h-207z"/>
+    <path d="M1922 419h68l100 266h-71l-13-42h-99l-13 42h-71l99-266zm68 174l-33-109h-1l-33 109h67z"/>
+    <path d="M2082 419h66v209h104v56h-170V419zM2210 419h205v52h-70v213h-66V471h-69v-52zM2424 419h66v96h98v-96h66v265h-66V572h-98v112h-66V419zM1366 703h65v266h-65V703zM1462 703h67l96 170h1V703h61v266h-68l-97-167h-1v167h-61V703zM1713 703h102c82 0 136 38 136 133s-54 133-136 133h-102V703zm67 211h38c50 0 67-35 67-77 0-43-18-76-68-76h-38v153zM1964 969V703h196v52h-129v48h121v51h-121v64h141v51h-208z"/>
+    <path d="M2262 826l-88-123h80l49 80 49-80h79l-87 123 101 143h-82l-61-99-63 99h-81l104-143z"/>
+    <path d="M2431 703h23v7h-8v25h-8v-25h-7v-7zM2458 703h12l5 23 5-23h11v30h-7v-23l-6 23h-7l-6-23v23h-7v-30z"/>
+  </g>
+  
+</svg></a>
+    <div class="footer__socials">
+  <div class="socials">
+    
+      <a class="socials__link socials__link--facebook" href="https://www.facebook.com/OceanHealthIndex/" target="_blank">
+        <svg class="socials__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M449 0c35 0 63 28 63 63v386c0 35-28 63-63 63H343V319h67l12-83h-79v-53c0-23 11-45 47-45h36V68s-33-6-64-6c-66 0-108 40-108 111v63h-73v83h73v193H63c-35 0-63-28-63-63V63C0 28 28 0 63 0h386z"/></svg>
+      </a>
+    
+    
+      <a class="socials__link socials__link--twitter" href="https://twitter.com/OceanHealthIndx" target="_blank">
+        <svg class="socials__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M161 464c193 0 299-160 299-299v-13c20-15 38-34 52-55-19 9-40 14-60 17 22-13 38-34 46-58-21 12-43 20-67 25a105 105 0 00-179 96c-84-4-163-44-216-110-28 48-14 110 32 140-17 0-33-5-48-13v2c0 49 36 93 85 103-16 4-32 4-48 1 14 43 54 72 98 73A211 211 0 010 417c48 31 104 47 161 47"/></svg>
+      </a>
+    
+  </div>
+</div>
+  </div>
+  <div class="footer__legal">
+    <div class="footer__content footer__content--bottom">
+      <div class="footer__copyright">
+        ©<script>document.write(new Date().getFullYear());</script> Ocean Health Index
+      </div>
+      <div class="footer__legal-links">
+        <a class="footer__legal-link" href="/privacy-policy">Privacy Policy</a>
+        <a class="footer__legal-link" href="/terms-of-service">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/js/main.js" async></script></body>
+
+</html>

@@ -1,0 +1,549 @@
+{
+  "Africa": [
+    {
+      "name": "Kenya",
+      "Status": "Active",
+      "LeadingGroup": "Conservation International, Africa Field Division",
+      "Contact":"Dr. Peter Alele (palele@conservation.org)",
+      "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/ken"
+        },
+        {
+          "name": "Website",
+          "link": "https://cordioea.net/ocean-health-index-ohi/"
+        }
+      ]
+    },
+    {
+      "name": "Tanzania",
+      "Status": "Active",
+      "LeadingGroup": "Conservation International, Africa Field Division",
+      "Contact":"Alice Ruhweza (aruhweza@conservation.org)",
+      "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/tza"
+        },
+        {
+          "name": "Website",
+          "link": "https://cordioea.net/ocean-health-index-ohi/"
+        }
+      ]
+    }
+  ],
+  "Arctic": [
+    {
+      "name": "Arctic",
+      "Status": "Completed (2018)",
+      "LeadingGroup": "Imperial College London",
+      "Contact":"Michael Burgass (m.burgass14@imperial.ac.uk)",
+      "Description": "Academic assessment conducted as part of a PhD dissertation.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://link.springer.com/article/10.1007/s10113-018-1395-6"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/arc"
+        }
+      ]
+    }
+  ],
+  
+
+  "North America":[
+    {
+      "name": "Canada",
+      "Status": "Completed (2017)",
+      "LeadingGroup": "Healthy Oceans Network (CHONe)",
+      "Contact":"Remi Daigle (daigleremi @ gmail.com)",
+      "Description": "A pilot study to better represent Canada at the national level by incorporating public goals and goal weightings that are more relevant to Canadians.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/ohi-canada"
+        },
+        {
+          "name": "Publications",
+          "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178044"
+        }
+      ]
+    },
+    {
+      "name": "Canada-Atlantic",
+      "Status": "Completed (2017)",
+      "LeadingGroup": "Institut des Sciences de la Mer de Rimouski, Université du Québec à Rimouski",
+      "Contact":"Remi Daigle (daigleremi @ gmail.com)",
+      "Description": "An OHI+ assessment for Atlantic Canada’s marine biogeographic regions with a focus on the Saint Lawrence gulf/estuary.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178044"
+        }
+      ]
+    },
+    {
+      "name": "Canada-British Columbia",
+      "Status": "Completed (2020)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis at UC Santa Barbara",
+      "Contact":"Dr. Ben Halpern (halpern @ bren.ucsb.edu)",
+      "Description": "Working with local partners, this assessment will incorporate locally meaningful information, priorities, and perspectives to track change in the health of B.C.’s ocean during the past ten years and to describe how management may have contributed to these patterns.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/ohibc"
+        },
+        {
+          "name": "Website",
+          "link": "http://www.ohibc.org/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227502"
+        }
+      ]
+    },
+    {
+      "name": "Mexico",
+      "Status": "Active",
+      "LeadingGroup": "Mexico’s Department of the Environment and Natural Resources (SEMARNAT)",
+      "Contact": "Salomon Diaz (salomon.diaz @ semarnat.gob.mx)",
+      "Description": "Working with local partners, this assessment will incorporate locally meaningful information, priorities, and perspectives to track change in the health of B.C.’s ocean during the past ten years and to describe how management may have contributed to these patterns.",
+      "isPlus": false,
+      "Links": []
+    },
+    {
+      "name": "US-Northeast",
+      "Status": "Complteted (2021)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis at UC Santa Barbara",
+      "Contact": "Dr. Ben Halpern (halpern @ nceas.ucsb.edu)",
+      "Description": "The OHI is being used as a tool for monitoring and evaluation in the US Northeast Ocean Plan, finalized by the National Ocean Council on December 7, 2016. Working with local partners, we will adapt the Index to capture priorities for ocean health in the Northeast. Our approach will incorporate locally meaningful information and perspectives in order to track change in the health of the ocean. The OHI will also be applied over the past ten years to examine changes in regional ocean health to better understand how management may have contributed to these patterns.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Northeast/ne-scores"
+        },
+        {
+          "name": "Website",
+          "link": "http://ohi-northeast.weebly.com/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://www.jamiecmontgomery.com/publication/ohine/"
+        }, 
+        {
+          "name": "Shiny app",
+          "link": "https://ohi-northeast.shinyapps.io/ne-dashboard/"
+        }
+      ]
+    },
+    {
+      "name": "US-West-Coast",
+      "Status": "Completed (2014)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis at UC Santa Barbara and Conservation International",
+      "Contact": "Dr. Julia Stewart Lowndes (lowndes @ nceas.ucsb.edu)",
+      "Description": "Test of the OHI framework for five coastal sub-regions, using ~80% local data and modified goal models.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publication",
+          "link": "/about/publications"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/ohi-uswest/releases"
+        }
+      ]
+    }
+  ],
+  "Oceania": [
+    {
+      "name": "Fiji",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis at UC Santa Barbara and Conservation International",
+      "Contact":"Erich J Pacheco (epacheco@conservation.org)",
+      "Description": "Test of the OHI framework at the national scale, using available local data for five goals.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2212041614001363"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/ohi-fiji/releases"
+        }
+      ]
+    },
+    {
+      "name": "New Caledonia",
+      "Status": "Active",
+      "LeadingGroup": "Conservation International, Department of Marine Affairs",
+      "Contact":"Mael Imirizaldu (mimirizaldu@conservation.org)",
+      "Description": "Following the Proof of Concept assessment completed in 2016, the project focuses on establishing a baseline for the management of the Coral Sea Park to allow for ongoing monitoring, assessing, and adaptive management.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://github.com/OHI-Science/ohi-science.github.io/blob/master/assets/downloads/pubs/OHI_New_Caledonia.pdf"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/cnc"
+        }
+      ]
+    },
+    {
+      "name": "Palmyra",
+      "Status": "Completed (2020)",
+      "LeadingGroup": "The Nature Conservancy’s Palmyra 4site team and NCEAS",
+      "Contact":"Sara Orofino (saraorofino@ucsb.edu), Gage Clawson (clawson@nceas.ucsb.edu)",
+      "Description": "To assess the performance of 7 goals on Palmyra, a mostly uninhabited island in the Line Islands Archipelago halfway between Hawaii and American Samoa that is a National Wildlife Refuge administered by the U.S. Fish and Wildlife Service and was purchased by The Nature Conservancy in 2000.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Methods and Results",
+          "link": "https://raw.githack.com/OHI-4site/pal-scores/master/documents/methods-results/Supplement.html"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-4site/pal-prep"
+        }
+      ]
+    },
+    {
+      "name": "Samoa",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "Conservation International, Division of Environmental Conservation",
+      "Contact":"-",
+      "Description": "National level assessment to measure progress towards ocean health and sustainable economic growth.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "OHI Go Workshop",
+          "link": "http://ohi-science.org/sam/workshop"
+        }
+      ]
+    },
+    {
+      "name": "Tetiaroa",
+      "Status": "Completed (2020)",
+      "LeadingGroup": "Tetiaroa Society’s Tetiaroa 4site team and NCEAS",
+      "Contact":"Madeline Berger (berger@nceas.ucsb.edu), Gage Clawson (clawson@nceas.ucsb.edu)",
+      "Description": "To assess the performance of 5 goals on Tetiaroa, a mostly uninhabited collection of islets in the Windward group of the Society Islands of French Polynesia where management, conservation, and protection of the entire island are carried out by the Tetiaroa Society, a US-based non-profit organization.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Methods and Results",
+          "link": "https://raw.githack.com/OHI-4site/tet-scores/master/documents/methods-results/Supplement.html"
+        },
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-4site/tet-prep"
+        }
+      ]
+    },
+    {
+      "name": "US-Hawaii",
+      "Status": "Completed (2018)",
+      "LeadingGroup": "Conservation International and the U.S. National Oceanic and Atmospheric Administration",
+      "Contact":"Dr. Eva Schemmel (eschemmel@conservation.org)",
+      "Description": "The Hawaii Ocean Health Index is integrating economic, social, and ecological information to track the sustainable use of our ocean resources. This assessment will increase awareness on the activities that are being done across the state that support the sustainable use of our ocean resources and identify remaining knowledge gaps and priorities. With this information we we will catalyze stakeholder involvement across sectors and facilitate collaborations to ensure the health of our ocean now and into the future.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/mhi"
+        },
+        {
+          "name": "Webstie",
+          "link": "http://ohi-science.org/mhi/"
+        }
+      ]
+    }
+  ],
+  "South America": [
+    {
+      "name": "Brazil",
+      "Status": "Completed (2014)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis at UC Santa Barbara and Conservation International",
+      "Contact": "Erich J Pacheco (epacheco @ conservation.org)",
+      "Description": "Test of the OHI framework for Brazil’s 17 coastal states, using ~50% local data and modified models for five goals.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0092589"
+        }
+      ]
+    },
+    {
+      "name": "Chile",
+      "Status": "Active",
+      "LeadingGroup": "Centro de Investigación en Ecosistemas Marinos de Altas Latitudes; Instituto Milenio en Socio-Ecología Costera",
+      "Contact": "Laura Nahuelhual Muñoz (laura.nahuel@gmail.com), Universidad de Los Lagos; Vanessa Pizarro (va.pizarropizarro@gmail.com)",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/chl"
+        }
+      ]
+    },
+    {
+      "name": "Colombia",
+      "Status": "Active",
+      "LeadingGroup": "Colombian Commission for the Oceans",
+      "Contact": "Ivan Murillo (datos @ cco.gov.co)",
+      "Description": "National assessment of Colombia’s Pacific, Atlantic, and Caribbean Islands regions developed with 113 national indicators and through a multi-agency working group.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/col"
+        }
+      ]
+    },
+    {
+      "name": "Ecuador-Gulf-Of-Guayaquil",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "Ecuador’s Technical Sea Secretariat (SETEMAR)",
+      "Contact": "Santiago Torres Báez (storres@secretariamar.gob.ec)",
+      "Description": "Completed assessment of the Gulf of Guayaquil (Provinces of El Oro, Guayas, Santa Elena) using 96 local indicators, 4 context specific models, and 5 locally relevant reference points..",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publication",
+          "link": "https://ohi-science.org/resources/publications#ecuador"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/gye"
+        }
+      ]
+    },
+    {
+      "name": "Peru",
+      "Status": "Active",
+      "LeadingGroup": "Peru’s Ministry of Environment",
+      "Contact": "Nina Prado",
+      "Description": "Pilot study in Ica province.",
+      "isPlus": false,
+      "Links": []
+    }
+  ],
+  "Europe": [
+    {
+      "name": "Baltic Sea",
+      "Status": "Active",
+      "LeadingGroup": "Stockholm Resilience Centre",
+      "Contact": "Thorsten Bleckner (thorsten.blenckner@su.se)",
+      "Description": "Transboundary assessment of the Baltic Sea at jurisdiction and basin scales. Nine goals are being assessed.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/bhi"
+        },
+        {
+          "name": "Website",
+          "link": "http://ohi-science.org/bhi"
+        },
+        {
+          "name": "Media",
+          "link": "http://www.su.se/ostersjocentrum/english/baltic-eye/research/baltic-health-index"
+        },
+        {
+          "name": "Publications",
+          "link": "https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10178"
+        },
+        {
+          "name": "Shiny app",
+          "link": "https://baltic-ohi.shinyapps.io/dashboard/"
+        }
+      ]
+    },
+    {
+      "name": "Norway",
+      "Status": "Active",
+      "LeadingGroup": "Norwegian Institute for Nature Research",
+      "Contact": "Dr. Per Fauchald (Per.Fauchald@nina.no)",
+      "Description": "Study exploring human-ecological interactions in 81 municipalities in northern Norway.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Norway/"
+        }
+      ]
+    },
+    {
+      "name": "Spain-Bay Of Biscay",
+      "Status": "Active",
+      "LeadingGroup": "Azti Tecnalia",
+      "Contact": "Angel Borja (aborja@azti.es)",
+      "Description": "This group will compare OHI process and scores with findings of other existing methodologies for assessing ocean health.",
+      "isPlus": false,
+      "Links": []
+    },
+    {
+      "name": "Spain-Gulf Of Cadiz",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "Spanish Oceanography Institute",
+      "Contact": "Marcos Llope (marcos.llope@cd.ieo.es)",
+      "Description": "This assessment will evaluate the Gulf of Cadiz and compare its health through time.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/cdz"
+        }
+      ]
+    },
+    {
+      "name": "Spain-Ria De Vigo",
+      "Status": "Completed (2016)",
+      "LeadingGroup": "Campus do Mar",
+      "Contact": "Sebastian Villasante (s.villasante.arg@gmail.com)",
+      "Description": "This assessment will evaluate the coast of Galicia and compare its health through time.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/rdv"
+        },
+        {
+          "name": "Publications",
+          "link": "https://github.com/OHI-Science/ohi-science.github.io/blob/master/assets/downloads/pubs/OHI%2BRiadeVigoAO_2015.pdf"
+        }
+      ]
+    },
+    {
+      "name": "United-Kingdom Cornwall",
+      "Status": "Completed (2021)",
+      "LeadingGroup": "University of Exeter",
+      "Contact": "Dr. Matt Witt (M.J.Witt@exeter.ac.uk)",
+      "Description": "In English waters Marine Spatial Planning (MSP) is currently being implemented by the UK Marine Management Organisation (MMO) through a set of regional Marine Plans. The South West Marine Plan (SWMP) offers a regional approach for MSP in busy maritime areas such as the Western Approaches, English Channel and Celtic Sea.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/esw"
+        },
+        {
+          "name": "Website",
+          "link": "https://www.ohi.sustainable-seas.org/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://www.ohi.sustainable-seas.org/communication"
+        }
+      ]
+    }
+  ],
+  "Asia": [
+    {
+      "name": "China",
+      "Status": "Active (2015)",
+      "LeadingGroup": "China State Oceanic Administration",
+      "Contact": "Zhiguo Liu (liuzhiguo150@163.com), Wen Quan (qwen@nmemc.gov.cn)",
+      "Description": "National assessment of China’s 11 coastal provinces using locally developed models, reference points, and data.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/chn"
+        }
+      ]
+    },
+    {
+      "name": "China - Xiamen",
+      "Status": "Completed (2016)",
+      "LeadingGroup": "Fujian Provincial Key Laboratory for Coastal Ecology and Environmental Studies, Coastal and Ocean Management Institute, Xiamen University",
+      "Contact": "Deqiang Ma (dqma@xmu.edu.cn), Qinhua Fang (qhfang@xmu.edu.cn), Shuhao Liao (362453823@qq.com)",
+      "Description": "Applying the Ocean Health Index framework to the city level: A case study of Xiamen, China",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1470160X16000480"
+        }
+      ]
+    },    
+    {
+      "name": "China - Shanghai",
+      "Status": "Completed (2021)",
+      "LeadingGroup": "School of Geographic and Oceanographic Sciences, Nanjing University",
+      "Contact": "Zhen Wu (zhenwu@smail.nju.edu.cn)",
+      "Description": "Application of the Ocean Health Index to assess ecosystem health for the coastal areas of Shanghai, China",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1470160X21003150"
+        }
+      ]
+    },
+    {
+      "name": "Indonesia-Bali",
+      "Status": "Completed (2018)",
+      "LeadingGroup": "Ministry of Marine Affairs and Fisheries, Conservation International",
+      "Contact": "Iwan Dewantama (idewantama@conservation.org)",
+      "Description": "Pilot assessment for the provincial island of Bali to fine tune the OHI framework to the Indonesian context and build local capacity.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/bali"
+        },
+        {
+          "name": "Website",
+          "link": "http://ohi-science.org/bali"
+        },
+        {
+          "name": "Media",
+          "link": "https://nyegaragunung.net/en/english-how-healthy-is-the-bali-sea-bali-ocean-health-index-ohi-2018/"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "Hamaraag — Israel’s National Nature Assessment Program",
+      "Contact": "Yossi Mossel (yossimosse@hamaarag.org.il)",
+      "Description": "First indepently-led assessment, evaluated 6 regions of Israel’s Mediterranean coast.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/ohi-israel"
+        },
+        {
+          "name": "Website",
+          "link": "http://www.hamaarag.org.il/ocean-health-index"
+        }
+      ]
+    },
+    {
+      "name": "South Korea",
+      "Status": "Active (2015)",
+      "LeadingGroup": "Korean Maritime Institute (KMI)",
+      "Contact": "Jungho Nam (jhnam007@gmail.com)",
+      "Description": "Nationwide project to assess the health of oceans in South Korea. Efforts will focus on running management scenarios to test implications of proposed projects.",
+      "isPlus": false,
+      "Links": []
+    }
+  ]
+}

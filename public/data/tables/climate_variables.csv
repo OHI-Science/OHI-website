@@ -1,0 +1,52 @@
+Parameter name,ÊESGF variable id,CDS parameter name for CMIP5,Units
+Near-surface air temperature,tas,2m temperature,Kelvin
+Daily maximum near-surface air temperature,tasmax,Maximum 2m temperature in the last 24 hours,Kelvin
+Daily minimum near-surface air temperature,tasmin,Maximum 2m temperature in the last 24 hours,Kelvin
+Surface temperature,ts,Skin temperature,Kelvin
+Sea level pressure,psl,Mean sea level pressure,Pa
+Surface air pressure,ps,Surface pressure,Pa
+Eastward near-surface wind,uas,10m u component of wind,m s-1
+Northward near-surface wind,vas,10m v component of wind,m s-1
+Near-surface wind speed,sfcWind,10m wind speed,m s-1
+Near-surface relative humidity,hurs,2m relative humidity,1
+Near-surface specific humidity,huss,2m specific humidity,1
+Precipitation,pr,Mean precipitation flux,kg m-2 s-1
+Snowfall flux,prsn,Snowfall,kg m-2 s-1
+Evaporation Including sublimation and transpiration,evspsbl,Evaporation,kg m-2 s-1
+Surface downward eastward wind stress,tauu,Eastward turbulent surface stress,Pa
+Surface downward northward wind stress,tauv,Northward turbulent surface stress,Pa
+Surface upward latent heat flux,hfls,Surface latent heat flux,W m-2
+Surface upward sensible heat flux,hfss,Surface sensible heat flux,W m-2
+Surface downwelling longwave radiation,rlds,Surface thermal radiation downwards,W m-2
+Surface upwelling longwave radiation,rlus,Surface upwelling longwave radiation,W m-2
+Surface downwelling shortwave radiation,rsds,Surface solar radiation downwards,W m-2
+Surface upwelling shortwave radiation,rsus,Surface upwelling shortwave radiation,W m-2
+TOA incident shortwave radiation,rsdt,TOA incident solar radiation,W m-2
+TOA outgoing shortwave radiation,rsut,TOA outgoing shortwave radiation,W m-2
+TOA outgoing longwave radiation,rlut,TOA outgoing longwave radiation,W m-2
+Total cloud cover percentage,clt,Total cloud cover,%
+Air temperature,ta,Air temperature,K
+Eastward wind,ua,U-component of wind,m s-1
+Northward wind,va,V-component of wind,m s-1
+Relative humidity,hur,Relative humidity,1
+Specific humidity,hus,Specific humidity,1
+Geopotential height,zg,Geopotential height,m
+Surface snow amount,snw,Surface snow amount,kg m-2
+Snow depth,snd,Snow depth,m
+Total runoff,mrro,Runoff,kg m-2 s-1
+Moisture in upper portion of soil column,mrsos,Soil moisture content,kg m-2
+Sea-Ice area percentage (ocean grid),siconc,Sea-ice area percentage,1
+Sea Ice thickness,sithick,Sea ice thickness,m
+Sea-Ice mass per area,simass,Sea ice plus snow amount,kg m-2
+Surface temperature of sea Ice,sitemptop,Sea ice surface temperature,K
+Sea surface temperature,tos,Sea surface temperature,K
+Sea surface salinity,sos,Sea surface salinity,PSU
+Sea surface height above geoid,zos,Sea surface height above geoid,m
+Grid-cell area for ocean variables*,areacello,NOT AVAILABLE,m2
+Sea floor depth below geoid*,deptho,NOT AVAILABLE,m
+Sea area percentage*,sftof,NOT AVAILABLE,%
+Grid-cell area for atmospheric grid variables*,areacella,NOT AVAILABLE,m2
+Capacity of soil to store water (field capacity)*,mrsofc,NOT AVAILABLE,kg m-2
+Percentage of the grid cell occupied by land (including lakes)*,sftlf,NOT AVAILABLE,%
+Land ice area percentage*,sftgif,NOT AVAILABLE,1
+Surface altitude*,orog,NOT AVAILABLE,m
