@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scores on Ocean Health Index</title>
+    <link>https://oceanhealthindex.org/global-scores/</link>
+    <description>Recent content in Scores on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oceanhealthindex.org/global-scores/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Download</title>
+      <link>https://oceanhealthindex.org/global-scores/data-download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oceanhealthindex.org/global-scores/data-download/</guid>
+      <description>11 YEARS OF SCORES! The OHI 2022 global assessment includes scores from 2012 to 2022 for 220 coastal countries and territories.
+This marks our 11th year of calculating the global Ocean Health Index. The average 2022 Index score was 69 out of 100. Average Index scores have not dramatically changed over eleven years, which could be expected at a global scale. However, some individual goals and regions have had significant changes.</description>
+    </item>
+    
+  </channel>
+</rss>

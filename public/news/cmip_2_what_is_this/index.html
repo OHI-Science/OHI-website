@@ -1,0 +1,3521 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://oceanhealthindex.org/news/cmip_2_what_is_this/">
+  <meta name="description" content="CMIP6 Climate Scenario data: Where do I get the data! by Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard
+Fri, Dec 16, 2022
+If you are an ecologist or biologist and need predictions of future climate variables, then the CMIP6 Scenario data will probably be what you want!
+In this blogpost, we provide an overview of the raw CMIP6 data because this is helpful for understanding these data. However, because we believe non-climate scientists should probably seek more derived CMIP6 products, we also provide information about some of these products that we have used in our research."/>
+  <meta name="date" content='September 13, 2023 11:30:09 PDT'>
+  <title>CMIP6: Finding data | OHI</title>
+  <link rel="stylesheet" href="https://oceanhealthindex.org/style.main.min.c1c42e0a9c5f4648992c3713f65277a6c0d6472387dbc6caa8e54ed971c4f30c.css?v=2023-09-13_11.30.09_-0700" media="screen">
+  <link rel="shortcut icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
+  
+<link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous"></head><body>
+
+<nav class="nav" role="navigation" aria-label="Main menu">
+
+  <button
+    id="menu-button"
+    class="menu-button"
+    aria-expanded="false"
+    aria-controls="main-menu"
+    aria-label="Show main menu"
+    aria-haspopup="true"
+  >
+    <span class="menu-button__icon">
+      <span class="menu-button__line"></span>
+      <span class="menu-button__line"></span>
+      <span class="menu-button__line"></span>
+    </span>
+
+  </button>
+
+  <a
+    class="nav__logo"
+    href="https://oceanhealthindex.org"
+    role="menuitem"
+    title="Ocean Health Index Homepage"
+  >
+
+
+
+
+
+
+  
+  
+
+
+<svg class="logo" viewBox="0 0 2657 1024" xmlns="http://www.w3.org/2000/svg" title="Ocean Health Index">
+  <g class="logo__image">
+    <path d="M586 777l-25 188 3 4 3-3 25-188-6-1zM567 773l-49 184c0 3 0 4 3 4h1l4-3 48-184-7-1zM548 766l-72 175c-1 3 0 5 2 5h2l4-2 72-175-8-3zM368 878c3 0 4-1 7-3l134-134-12-11-134 134c-3 2-3 6-2 9l-74 75c-2 1-2 2 0 4l2 1 3-1 75-75c-2 0 0 1 1 1zM402 906c3 0 4-2 5-3l116-151-12-9-115 151c-2 2-2 5 0 8l-66 85v4h1l3-1 66-86 2 2zM528 756l-94 164c-2 1-2 4 0 7l-54 94c-1 2 0 3 1 4h2l2-1 54-95c3 0 4-1 5-2l95-166-11-5zM687 758l-2 2 95 164 1 1h1v-2l-95-165zM669 768l-4 1 72 175 2 1h1l1-2-72-175z"/>
+    <path d="M1244 585c11-11 18-26 15-42-2-19-14-33-31-40 12-10 17-27 12-44-6-19-21-32-39-33 12-12 16-30 10-46-8-19-28-29-46-26 13-14 15-33 6-49a39 39 0 00-55-14l-8 3 7-5c17-13 19-37 6-52a37 37 0 00-52-7l-38 29 34-36c14-14 14-36 0-49a34 34 0 00-50 0l-61 60 53-68c10-15 8-36-7-46s-35-8-46 6l-76 99 62-108c8-14 4-33-11-42-14-8-33-4-42 10l-64 112-3 1-1-3 49-117c6-15-2-31-15-37-14-6-30 1-37 14l-50 120-6 4c0-3-2-5-3-7l33-125c4-13-4-27-18-31s-28 4-32 18l-33 125-9 8-5-11 17-127c1-12-7-24-20-25-12-1-24 7-25 20l-17 127c-5 4-8 8-10 15-2-6-6-11-10-15V20a19 19 0 10-39 0v129c-7 5-11 13-11 22v1c-1-9-6-16-13-21L548 22c-1-9-10-17-20-15s-17 10-15 19l17 129c-6 7-9 15-8 24l5 35-9-34c-3-9-9-16-17-18L467 35c-3-7-11-13-19-10s-13 10-10 18l34 127c-5 6-8 15-5 23l17 62-25-58c-4-8-11-13-20-14L389 62c-3-7-10-9-17-7s-9 11-7 17l50 121c-5 7-6 16-2 24l35 87-47-82c-4-8-13-12-21-12L314 96c-2-5-9-7-14-4s-7 9-4 14l65 115c-5 6-5 16-1 24l49 84v2l-3-1-59-76c-5-7-14-10-22-8l-81-105c-2-4-7-4-10-2-4 3-4 8-1 11l80 105c-4 7-4 17 1 24l59 77v5l-5-1-68-68c-6-5-15-7-21-4l-95-95c-3-2-7-2-9 0s-3 7 0 9l94 95c-3 7-2 16 4 21l69 68 2 10c-2-2-6-2-9 0l-76-59c-7-6-15-4-20 0l-108-83c-2-2-5-2-6 1s-1 5 1 7l108 82c-3 7 0 15 5 20l76 59c0 4 3 9 6 12h-13l-85-49c-5-3-13-2-17 2L87 319c-3-1-6 0-7 2s0 5 1 6l120 69c-1 6 1 13 8 15l84 49c1 7 5 12 11 15l4 2h-6c-6-2-13-1-18 1l-89-36c-6-3-12 0-16 4L50 392c-1-2-4 0-5 2s0 4 2 6l129 54c0 5 3 11 8 13l89 36c2 7 7 12 12 15l25 10-26-6c-7-1-13 0-18 4l-95-25c-5-1-11 1-13 5L24 467c-2 0-4 0-4 2s0 4 2 4l137 37c0 5 4 9 8 11l95 25c2 6 6 10 13 13l47 13-49-7c-6-1-13 2-17 7l-97-13c-4 0-8 1-9 5L8 546l-4 2 3 4 142 19c1 3 3 6 7 7l98 14c2 5 8 10 14 10l70 9h-70c-6 0-12 4-16 9h-98c-3 0-7 3-7 6H3c-2 0-3 1-3 2l3 3h144c2 3 4 5 7 5h98c3 5 8 9 16 9h92l-91 12c-6 2-11 6-13 12l-98 13c-3 0-6 3-6 7 0 2 3 5 6 5h1l99-13c2 5 8 8 13 8h2l113-15-110 28c-5 1-9 7-10 12l-98 26c-2 1-4 4-4 7s3 4 6 4h1l97-27c3 4 7 7 12 7h4l130-36-125 52c-5 2-8 8-8 13l-93 39c-1 2-3 3-3 5s3 3 4 3h2l93-39 9 5 5-1 145-61-135 79c-4 3-7 8-6 12l-89 51c-1 1-3 4-1 5l4 2h1l89-52 8 3 5-1 156-90-142 108c-4 3-6 7-4 11l-83 63c-2 1-2 2 0 4l2 1 2-1 83-63 5 1 6-3 152-115c-24-27-39-62-39-100a151 151 0 11293 50h465c27 0 50-23 50-50 2-17-7-33-21-41z"/>
+    <path d="M627 778l25 188c0 1 1 3 3 3l2-3-25-188h-5zM647 774l48 184c0 2 2 2 2 2l1-3-49-184-2 1zM610 780h-3v190l3 3 3-3V780h-3z"/>
+  </g>
+  
+  <g class="logo__title">
+    <path d="M1496 406c-89 0-141-66-141-140s53-141 141-141c89 0 141 66 141 141 0 76-52 140-141 140zm0-223c-41 0-71 25-71 84 0 39 17 84 71 84 51 0 71-43 71-84 0-42-20-84-71-84z"/>
+    <path d="M1822 222c-9-25-32-39-55-39-37 0-66 25-66 84 0 39 16 84 68 84 19 0 44-13 54-37l53 25c-23 41-62 68-107 68-84 0-134-65-134-140s46-141 129-141c53 0 87 25 112 70l-54 26zM1885 400V134h196v51h-129v49h121v51h-121v63h141v52h-208z"/>
+    <path d="M2182 134h68l100 266h-71l-13-42h-97l-13 42h-71l97-266zm68 175l-32-109h-2l-33 109h67z"/>
+    <path d="M2342 134h67l96 170h2V134h60v266h-65l-98-167h-1v167h-61V134zM1366 419h65v96h99v-96h66v265h-66V572h-97v112h-66V419zM1625 684V419h196v52h-129v48h121v51h-121v64h140v50h-207z"/>
+    <path d="M1922 419h68l100 266h-71l-13-42h-99l-13 42h-71l99-266zm68 174l-33-109h-1l-33 109h67z"/>
+    <path d="M2082 419h66v209h104v56h-170V419zM2210 419h205v52h-70v213h-66V471h-69v-52zM2424 419h66v96h98v-96h66v265h-66V572h-98v112h-66V419zM1366 703h65v266h-65V703zM1462 703h67l96 170h1V703h61v266h-68l-97-167h-1v167h-61V703zM1713 703h102c82 0 136 38 136 133s-54 133-136 133h-102V703zm67 211h38c50 0 67-35 67-77 0-43-18-76-68-76h-38v153zM1964 969V703h196v52h-129v48h121v51h-121v64h141v51h-208z"/>
+    <path d="M2262 826l-88-123h80l49 80 49-80h79l-87 123 101 143h-82l-61-99-63 99h-81l104-143z"/>
+    <path d="M2431 703h23v7h-8v25h-8v-25h-7v-7zM2458 703h12l5 23 5-23h11v30h-7v-23l-6 23h-7l-6-23v23h-7v-30z"/>
+  </g>
+  
+</svg></a>
+
+  <ul id="main-menu" class="nav__menu" role="menubar" aria-labelledby="menu-button">
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="global-scores"
+            aria-label="Global Scores submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            Global Scores
+          </a>
+          <ul class="nav__submenu" id="global-scores" role="menu" aria-label="Global Scores">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/global-scores/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Scores by country
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/global-scores/goal-scores/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Scores by goal
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/global-scores/data-download/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Data Download
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="methodology"
+            aria-label="Methodology submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            Methodology
+          </a>
+          <ul class="nav__submenu" id="methodology" role="menu" aria-label="Methodology">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Methods Overview
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/goals/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Goals
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/pressure/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Pressure Description
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/resilience/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Resilience Description
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/methodology/deep-dive/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Deep Dive
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="ohib-stylecolor#f26c25&#43;/b"
+            aria-label="OHI&lt;b style=&#34;color:#f26c25&#34;&gt;&#43;&lt;/b&gt; submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            OHI<b style="color:#f26c25">+</b>
+          </a>
+          <ul class="nav__submenu" id="ohib-stylecolor#f26c25&#43;/b" role="menu" aria-label="OHI&lt;b style=&#34;color:#f26c25&#34;&gt;&#43;&lt;/b&gt;">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/ohi&#43;/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  What is OHI&#43;
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/ohi&#43;/assessment/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Regional Assessments
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/ohi&#43;/conduct/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Conduct an OHI&#43;
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+  
+      <li class="nav__item nav__item--toplevel" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="resources"
+            aria-label="Resources submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            Resources
+          </a>
+          <ul class="nav__submenu" id="resources" role="menu" aria-label="Resources">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/resources/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Overview
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/resources/tools/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Tools
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/resources/data/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Data
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+
+      
+      
+        
+      
+  
+      <li class="nav__item nav__item--toplevel nav__item--current" role="none">
+          <a
+            class="nav__link nav__link--toplevel"
+            role="menuitem"
+            aria-controls="about"
+            aria-label="About submenu toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            About
+          </a>
+          <ul class="nav__submenu" id="about" role="menu" aria-label="About">
+           
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  What is OHI
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/news/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  News
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/ohifellows/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  OHI Fellows
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/people/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  People
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/publications/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Publications
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/supporters/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Supporters
+                </a>
+              </li>
+            
+              <li class="nav__item nav__item--submenu" role="none">
+                <a
+                  href="https://oceanhealthindex.org/about/contact/"
+                  class="nav__link nav__link--submenu"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Contact
+                </a>
+              </li>
+            
+
+          </ul>
+        </li>
+
+      
+
+    
+  </ul>
+</nav>
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="page-header" style="background-image: url('/images/banners/lake.jpg');" >
+  <div class="header-gradient"></div>
+  <h1 class="page-header__title">CMIP6: Finding data</h1>
+  
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+        
+          
+            <p class="photo-credit">PHOTO(S): © Keith A. Ellenbogen</p>
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+  
+    
+  
+    
+      
+    
+  
+
+</header><div  class="breadcrumb">
+  
+  
+    
+  
+    
+  
+  
+  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/">&nbspHome</a> >
+  
+
+  
+  
+  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/news/">&nbspNews</a> >
+  
+
+  
+  
+  <a class = "breadcrumb-item current" href="https://oceanhealthindex.org/news/cmip_2_what_is_this/">&nbspCMIP6: Finding data</a>
+  
+
+</div>
+
+
+<section class="section"><div class="column-left">
+  <h2 class = "column-left__title">
+    Overview
+  </h2>
+  <div class="column-left__logo">
+
+
+  
+
+
+
+
+
+
+<svg class="logo logo--subtle" viewBox="0 0 1266 1024" xmlns="http://www.w3.org/2000/svg" >
+  <g class="logo__image">
+    <path d="M586 777l-25 188 3 4 3-3 25-188-6-1zM567 773l-49 184c0 3 0 4 3 4h1l4-3 48-184-7-1zM548 766l-72 175c-1 3 0 5 2 5h2l4-2 72-175-8-3zM368 878c3 0 4-1 7-3l134-134-12-11-134 134c-3 2-3 6-2 9l-74 75c-2 1-2 2 0 4l2 1 3-1 75-75c-2 0 0 1 1 1zM402 906c3 0 4-2 5-3l116-151-12-9-115 151c-2 2-2 5 0 8l-66 85v4h1l3-1 66-86 2 2zM528 756l-94 164c-2 1-2 4 0 7l-54 94c-1 2 0 3 1 4h2l2-1 54-95c3 0 4-1 5-2l95-166-11-5zM687 758l-2 2 95 164 1 1h1v-2l-95-165zM669 768l-4 1 72 175 2 1h1l1-2-72-175z"/>
+    <path d="M1244 585c11-11 18-26 15-42-2-19-14-33-31-40 12-10 17-27 12-44-6-19-21-32-39-33 12-12 16-30 10-46-8-19-28-29-46-26 13-14 15-33 6-49a39 39 0 00-55-14l-8 3 7-5c17-13 19-37 6-52a37 37 0 00-52-7l-38 29 34-36c14-14 14-36 0-49a34 34 0 00-50 0l-61 60 53-68c10-15 8-36-7-46s-35-8-46 6l-76 99 62-108c8-14 4-33-11-42-14-8-33-4-42 10l-64 112-3 1-1-3 49-117c6-15-2-31-15-37-14-6-30 1-37 14l-50 120-6 4c0-3-2-5-3-7l33-125c4-13-4-27-18-31s-28 4-32 18l-33 125-9 8-5-11 17-127c1-12-7-24-20-25-12-1-24 7-25 20l-17 127c-5 4-8 8-10 15-2-6-6-11-10-15V20a19 19 0 10-39 0v129c-7 5-11 13-11 22v1c-1-9-6-16-13-21L548 22c-1-9-10-17-20-15s-17 10-15 19l17 129c-6 7-9 15-8 24l5 35-9-34c-3-9-9-16-17-18L467 35c-3-7-11-13-19-10s-13 10-10 18l34 127c-5 6-8 15-5 23l17 62-25-58c-4-8-11-13-20-14L389 62c-3-7-10-9-17-7s-9 11-7 17l50 121c-5 7-6 16-2 24l35 87-47-82c-4-8-13-12-21-12L314 96c-2-5-9-7-14-4s-7 9-4 14l65 115c-5 6-5 16-1 24l49 84v2l-3-1-59-76c-5-7-14-10-22-8l-81-105c-2-4-7-4-10-2-4 3-4 8-1 11l80 105c-4 7-4 17 1 24l59 77v5l-5-1-68-68c-6-5-15-7-21-4l-95-95c-3-2-7-2-9 0s-3 7 0 9l94 95c-3 7-2 16 4 21l69 68 2 10c-2-2-6-2-9 0l-76-59c-7-6-15-4-20 0l-108-83c-2-2-5-2-6 1s-1 5 1 7l108 82c-3 7 0 15 5 20l76 59c0 4 3 9 6 12h-13l-85-49c-5-3-13-2-17 2L87 319c-3-1-6 0-7 2s0 5 1 6l120 69c-1 6 1 13 8 15l84 49c1 7 5 12 11 15l4 2h-6c-6-2-13-1-18 1l-89-36c-6-3-12 0-16 4L50 392c-1-2-4 0-5 2s0 4 2 6l129 54c0 5 3 11 8 13l89 36c2 7 7 12 12 15l25 10-26-6c-7-1-13 0-18 4l-95-25c-5-1-11 1-13 5L24 467c-2 0-4 0-4 2s0 4 2 4l137 37c0 5 4 9 8 11l95 25c2 6 6 10 13 13l47 13-49-7c-6-1-13 2-17 7l-97-13c-4 0-8 1-9 5L8 546l-4 2 3 4 142 19c1 3 3 6 7 7l98 14c2 5 8 10 14 10l70 9h-70c-6 0-12 4-16 9h-98c-3 0-7 3-7 6H3c-2 0-3 1-3 2l3 3h144c2 3 4 5 7 5h98c3 5 8 9 16 9h92l-91 12c-6 2-11 6-13 12l-98 13c-3 0-6 3-6 7 0 2 3 5 6 5h1l99-13c2 5 8 8 13 8h2l113-15-110 28c-5 1-9 7-10 12l-98 26c-2 1-4 4-4 7s3 4 6 4h1l97-27c3 4 7 7 12 7h4l130-36-125 52c-5 2-8 8-8 13l-93 39c-1 2-3 3-3 5s3 3 4 3h2l93-39 9 5 5-1 145-61-135 79c-4 3-7 8-6 12l-89 51c-1 1-3 4-1 5l4 2h1l89-52 8 3 5-1 156-90-142 108c-4 3-6 7-4 11l-83 63c-2 1-2 2 0 4l2 1 2-1 83-63 5 1 6-3 152-115c-24-27-39-62-39-100a151 151 0 11293 50h465c27 0 50-23 50-50 2-17-7-33-21-41z"/>
+    <path d="M627 778l25 188c0 1 1 3 3 3l2-3-25-188h-5zM647 774l48 184c0 2 2 2 2 2l1-3-49-184-2 1zM610 780h-3v190l3 3 3-3V780h-3z"/>
+  </g>
+  
+</svg></div>
+</div><div class="column-center">
+  <h1 id="cmip6-climate-scenario-data-where-do-i-get-the-data">CMIP6 Climate Scenario data: Where do I get the data!</h1>
+<p class="news-author">by Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard</p>
+<p class="news-date">Fri, Dec 16, 2022</p>
+<p>If you are an ecologist or biologist and need predictions of future climate variables, then the CMIP6 Scenario data will probably be what you want!</p>
+<p>In this blogpost, we provide an overview of the raw CMIP6 data because this is helpful for understanding these data. However, because we believe non-climate scientists should probably seek more derived CMIP6 products, we also provide information about some of these products that we have used in our research.</p>
+<p>A <a href="https://oceanhealthindex.org/news/cmip_1_what_is_this/">previous post</a> provides an overview of the CMIP6 Scenario data. If you are new to CMIP data, we recommend starting there. <a href="https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained/">This article</a>, &ldquo;CMIP6: the next generation of climate models explained&rdquo; also provides an excellent overview of CMIP6 that manages to be high-level <em>and</em> understandable. And, much of the content in this post is derived from this <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections#CMIP6:Globalclimateprojections-Parameterlistings">excellent source</a>, which I highly recommend reading because it provides a super useful and down-to-earth description of CMIP6.</p>
+<h2 id="heading"></h2>
+<blockquote>
+<p>We are always on the hunt for data. Please let us know (<a href="mailto:frazier@nceas.ucsb.edu">frazier@nceas.ucsb.edu</a>) if you discover CMIP6 ensemble datasets and/or downscaled data that are publicly available. I will add them to this post. MANY THANKS!</p>
+</blockquote>
+<br>
+<h2 id="heading-1"></h2>
+<h2 id="raw-cmip-data">Raw CMIP data</h2>
+<h3 id="earth-system-grid-federation-a-deep-dive">Earth System Grid Federation: A deep dive</h3>
+<p>The CMIP6 data archive is distributed through the <a href="https://esgf-node.llnl.gov/search/cmip6/">Earth System Grid Federation (ESGF)</a>.</p>
+<p><img src="/images/cmip6/ESGF_1.png" alt="esgf1"></p>
+<h2 id="heading-2"></h2>
+<blockquote>
+<p>If the ESGF website seems daunting, don&rsquo;t worry, we feel the same!</p>
+</blockquote>
+<h2 id="heading-3"></h2>
+<p>There are a series of dropdown menus on the left of the ESGF site that will guide you through the process of finding data. We recommend an iterative approach because if the &ldquo;Search&rdquo; button is clicked after selecting a menu option, the subsequent menus will be simplified as irrelevant categories are removed.</p>
+<p><img src="/images/cmip6/esfg_dropdowns.jpg" alt="esgf2"></p>
+<p><em>Source ID &amp; Institution ID</em></p>
+<p>The global climate models and institutions that produce them. I usually skip over this section because it is rare for me to select on the model, and depending on the climate variable of interest, many of these options will disappear.</p>
+<details>
+<summary> Click the triangle to see all the climate models and institutions </summary>
+<p><em>CMIP6 data models and institutions (from this incredibly helpful <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections">resource</a>):</em>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table>
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell"></th>
+      
+        <th class ="csv-table__header-cell">goal</th>
+      
+        <th class ="csv-table__header-cell">2012</th>
+      
+        <th class ="csv-table__header-cell">2013</th>
+      
+        <th class ="csv-table__header-cell">2014</th>
+      
+        <th class ="csv-table__header-cell">2015</th>
+      
+        <th class ="csv-table__header-cell">2016</th>
+      
+        <th class ="csv-table__header-cell">2017</th>
+      
+        <th class ="csv-table__header-cell">2018</th>
+      
+        <th class ="csv-table__header-cell">2019</th>
+      
+        <th class ="csv-table__header-cell">2020</th>
+      
+        <th class ="csv-table__header-cell">2021</th>
+      
+        <th class ="csv-table__header-cell">2022</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+          
+            <td class="csv-table__cell">Index</td>
+          
+        
+          
+            <td class="csv-table__cell">69.4</td>
+          
+        
+          
+            <td class="csv-table__cell">69.9</td>
+          
+        
+          
+            <td class="csv-table__cell">70.3</td>
+          
+        
+          
+            <td class="csv-table__cell">70.6</td>
+          
+        
+          
+            <td class="csv-table__cell">70.7</td>
+          
+        
+          
+            <td class="csv-table__cell">70.4</td>
+          
+        
+          
+            <td class="csv-table__cell">70.4</td>
+          
+        
+          
+            <td class="csv-table__cell">70</td>
+          
+        
+          
+            <td class="csv-table__cell">68.8</td>
+          
+        
+          
+            <td class="csv-table__cell">69</td>
+          
+        
+          
+            <td class="csv-table__cell">69.2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">2</td>
+          
+        
+          
+            <td class="csv-table__cell">Artisanal opportunities</td>
+          
+        
+          
+            <td class="csv-table__cell">75.8</td>
+          
+        
+          
+            <td class="csv-table__cell">76.3</td>
+          
+        
+          
+            <td class="csv-table__cell">76.7</td>
+          
+        
+          
+            <td class="csv-table__cell">76.7</td>
+          
+        
+          
+            <td class="csv-table__cell">75.9</td>
+          
+        
+          
+            <td class="csv-table__cell">75.1</td>
+          
+        
+          
+            <td class="csv-table__cell">75.1</td>
+          
+        
+          
+            <td class="csv-table__cell">74.9</td>
+          
+        
+          
+            <td class="csv-table__cell">75.4</td>
+          
+        
+          
+            <td class="csv-table__cell">74.8</td>
+          
+        
+          
+            <td class="csv-table__cell">77.1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">3</td>
+          
+        
+          
+            <td class="csv-table__cell">Species condition (subgoal)</td>
+          
+        
+          
+            <td class="csv-table__cell">79.7</td>
+          
+        
+          
+            <td class="csv-table__cell">79.5</td>
+          
+        
+          
+            <td class="csv-table__cell">79.3</td>
+          
+        
+          
+            <td class="csv-table__cell">79.1</td>
+          
+        
+          
+            <td class="csv-table__cell">78.9</td>
+          
+        
+          
+            <td class="csv-table__cell">78.7</td>
+          
+        
+          
+            <td class="csv-table__cell">78.5</td>
+          
+        
+          
+            <td class="csv-table__cell">78.3</td>
+          
+        
+          
+            <td class="csv-table__cell">78.1</td>
+          
+        
+          
+            <td class="csv-table__cell">77.9</td>
+          
+        
+          
+            <td class="csv-table__cell">77.7</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">4</td>
+          
+        
+          
+            <td class="csv-table__cell">Biodiversity</td>
+          
+        
+          
+            <td class="csv-table__cell">79</td>
+          
+        
+          
+            <td class="csv-table__cell">78.5</td>
+          
+        
+          
+            <td class="csv-table__cell">78</td>
+          
+        
+          
+            <td class="csv-table__cell">78.2</td>
+          
+        
+          
+            <td class="csv-table__cell">77.9</td>
+          
+        
+          
+            <td class="csv-table__cell">77.4</td>
+          
+        
+          
+            <td class="csv-table__cell">77.1</td>
+          
+        
+          
+            <td class="csv-table__cell">76.7</td>
+          
+        
+          
+            <td class="csv-table__cell">76.4</td>
+          
+        
+          
+            <td class="csv-table__cell">76.3</td>
+          
+        
+          
+            <td class="csv-table__cell">76.3</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">5</td>
+          
+        
+          
+            <td class="csv-table__cell">Habitat (subgoal)</td>
+          
+        
+          
+            <td class="csv-table__cell">78.4</td>
+          
+        
+          
+            <td class="csv-table__cell">77.5</td>
+          
+        
+          
+            <td class="csv-table__cell">76.8</td>
+          
+        
+          
+            <td class="csv-table__cell">77.4</td>
+          
+        
+          
+            <td class="csv-table__cell">76.8</td>
+          
+        
+          
+            <td class="csv-table__cell">76.1</td>
+          
+        
+          
+            <td class="csv-table__cell">75.7</td>
+          
+        
+          
+            <td class="csv-table__cell">75.1</td>
+          
+        
+          
+            <td class="csv-table__cell">74.7</td>
+          
+        
+          
+            <td class="csv-table__cell">74.8</td>
+          
+        
+          
+            <td class="csv-table__cell">74.9</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">6</td>
+          
+        
+          
+            <td class="csv-table__cell">Coastal protection</td>
+          
+        
+          
+            <td class="csv-table__cell">82.6</td>
+          
+        
+          
+            <td class="csv-table__cell">82.5</td>
+          
+        
+          
+            <td class="csv-table__cell">82.6</td>
+          
+        
+          
+            <td class="csv-table__cell">82.6</td>
+          
+        
+          
+            <td class="csv-table__cell">82.7</td>
+          
+        
+          
+            <td class="csv-table__cell">82.2</td>
+          
+        
+          
+            <td class="csv-table__cell">81.9</td>
+          
+        
+          
+            <td class="csv-table__cell">81.7</td>
+          
+        
+          
+            <td class="csv-table__cell">81.8</td>
+          
+        
+          
+            <td class="csv-table__cell">81.9</td>
+          
+        
+          
+            <td class="csv-table__cell">82.3</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">7</td>
+          
+        
+          
+            <td class="csv-table__cell">Carbon storage</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81.1</td>
+          
+        
+          
+            <td class="csv-table__cell">81.1</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+          
+            <td class="csv-table__cell">81</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">8</td>
+          
+        
+          
+            <td class="csv-table__cell">Clean water</td>
+          
+        
+          
+            <td class="csv-table__cell">67.7</td>
+          
+        
+          
+            <td class="csv-table__cell">67.6</td>
+          
+        
+          
+            <td class="csv-table__cell">68.5</td>
+          
+        
+          
+            <td class="csv-table__cell">68.8</td>
+          
+        
+          
+            <td class="csv-table__cell">69.2</td>
+          
+        
+          
+            <td class="csv-table__cell">69.3</td>
+          
+        
+          
+            <td class="csv-table__cell">69.4</td>
+          
+        
+          
+            <td class="csv-table__cell">69</td>
+          
+        
+          
+            <td class="csv-table__cell">69.2</td>
+          
+        
+          
+            <td class="csv-table__cell">70.2</td>
+          
+        
+          
+            <td class="csv-table__cell">70.2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">9</td>
+          
+        
+          
+            <td class="csv-table__cell">Fisheries (subgoal)</td>
+          
+        
+          
+            <td class="csv-table__cell">53.7</td>
+          
+        
+          
+            <td class="csv-table__cell">54.4</td>
+          
+        
+          
+            <td class="csv-table__cell">54.9</td>
+          
+        
+          
+            <td class="csv-table__cell">54.8</td>
+          
+        
+          
+            <td class="csv-table__cell">54.1</td>
+          
+        
+          
+            <td class="csv-table__cell">53.8</td>
+          
+        
+          
+            <td class="csv-table__cell">53.4</td>
+          
+        
+          
+            <td class="csv-table__cell">53.5</td>
+          
+        
+          
+            <td class="csv-table__cell">53.5</td>
+          
+        
+          
+            <td class="csv-table__cell">53.4</td>
+          
+        
+          
+            <td class="csv-table__cell">53.4</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">10</td>
+          
+        
+          
+            <td class="csv-table__cell">Food provision</td>
+          
+        
+          
+            <td class="csv-table__cell">50.6</td>
+          
+        
+          
+            <td class="csv-table__cell">50.9</td>
+          
+        
+          
+            <td class="csv-table__cell">51.3</td>
+          
+        
+          
+            <td class="csv-table__cell">51.2</td>
+          
+        
+          
+            <td class="csv-table__cell">50.5</td>
+          
+        
+          
+            <td class="csv-table__cell">50.1</td>
+          
+        
+          
+            <td class="csv-table__cell">49.8</td>
+          
+        
+          
+            <td class="csv-table__cell">49.8</td>
+          
+        
+          
+            <td class="csv-table__cell">49.8</td>
+          
+        
+          
+            <td class="csv-table__cell">49.6</td>
+          
+        
+          
+            <td class="csv-table__cell">49.5</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">11</td>
+          
+        
+          
+            <td class="csv-table__cell">Mariculture (subgoal)</td>
+          
+        
+          
+            <td class="csv-table__cell">5.7</td>
+          
+        
+          
+            <td class="csv-table__cell">5.6</td>
+          
+        
+          
+            <td class="csv-table__cell">5.6</td>
+          
+        
+          
+            <td class="csv-table__cell">5.7</td>
+          
+        
+          
+            <td class="csv-table__cell">5.8</td>
+          
+        
+          
+            <td class="csv-table__cell">5.9</td>
+          
+        
+          
+            <td class="csv-table__cell">6</td>
+          
+        
+          
+            <td class="csv-table__cell">6.1</td>
+          
+        
+          
+            <td class="csv-table__cell">6.2</td>
+          
+        
+          
+            <td class="csv-table__cell">6.4</td>
+          
+        
+          
+            <td class="csv-table__cell">6.6</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">12</td>
+          
+        
+          
+            <td class="csv-table__cell">Iconic species (subgoal)</td>
+          
+        
+          
+            <td class="csv-table__cell">64</td>
+          
+        
+          
+            <td class="csv-table__cell">65</td>
+          
+        
+          
+            <td class="csv-table__cell">65</td>
+          
+        
+          
+            <td class="csv-table__cell">65.5</td>
+          
+        
+          
+            <td class="csv-table__cell">64.7</td>
+          
+        
+          
+            <td class="csv-table__cell">64.6</td>
+          
+        
+          
+            <td class="csv-table__cell">65.5</td>
+          
+        
+          
+            <td class="csv-table__cell">62.7</td>
+          
+        
+          
+            <td class="csv-table__cell">60.3</td>
+          
+        
+          
+            <td class="csv-table__cell">59.8</td>
+          
+        
+          
+            <td class="csv-table__cell">59.7</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">13</td>
+          
+        
+          
+            <td class="csv-table__cell">Sense of place</td>
+          
+        
+          
+            <td class="csv-table__cell">59.4</td>
+          
+        
+          
+            <td class="csv-table__cell">60</td>
+          
+        
+          
+            <td class="csv-table__cell">60.8</td>
+          
+        
+          
+            <td class="csv-table__cell">61.2</td>
+          
+        
+          
+            <td class="csv-table__cell">61.5</td>
+          
+        
+          
+            <td class="csv-table__cell">62.4</td>
+          
+        
+          
+            <td class="csv-table__cell">63.6</td>
+          
+        
+          
+            <td class="csv-table__cell">62.6</td>
+          
+        
+          
+            <td class="csv-table__cell">61.4</td>
+          
+        
+          
+            <td class="csv-table__cell">61.3</td>
+          
+        
+          
+            <td class="csv-table__cell">61</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">14</td>
+          
+        
+          
+            <td class="csv-table__cell">Lasting special places (subgoal)</td>
+          
+        
+          
+            <td class="csv-table__cell">54.8</td>
+          
+        
+          
+            <td class="csv-table__cell">55</td>
+          
+        
+          
+            <td class="csv-table__cell">56.6</td>
+          
+        
+          
+            <td class="csv-table__cell">57</td>
+          
+        
+          
+            <td class="csv-table__cell">58.2</td>
+          
+        
+          
+            <td class="csv-table__cell">60.1</td>
+          
+        
+          
+            <td class="csv-table__cell">61.6</td>
+          
+        
+          
+            <td class="csv-table__cell">62.6</td>
+          
+        
+          
+            <td class="csv-table__cell">62.5</td>
+          
+        
+          
+            <td class="csv-table__cell">62.7</td>
+          
+        
+          
+            <td class="csv-table__cell">62.3</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">15</td>
+          
+        
+          
+            <td class="csv-table__cell">Natural products</td>
+          
+        
+          
+            <td class="csv-table__cell">76.1</td>
+          
+        
+          
+            <td class="csv-table__cell">76</td>
+          
+        
+          
+            <td class="csv-table__cell">77.4</td>
+          
+        
+          
+            <td class="csv-table__cell">78.2</td>
+          
+        
+          
+            <td class="csv-table__cell">78.5</td>
+          
+        
+          
+            <td class="csv-table__cell">78.3</td>
+          
+        
+          
+            <td class="csv-table__cell">77</td>
+          
+        
+          
+            <td class="csv-table__cell">75.7</td>
+          
+        
+          
+            <td class="csv-table__cell">76</td>
+          
+        
+          
+            <td class="csv-table__cell">75.1</td>
+          
+        
+          
+            <td class="csv-table__cell">74.9</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">16</td>
+          
+        
+          
+            <td class="csv-table__cell">Tourism &amp; recreation</td>
+          
+        
+          
+            <td class="csv-table__cell">44.5</td>
+          
+        
+          
+            <td class="csv-table__cell">45.6</td>
+          
+        
+          
+            <td class="csv-table__cell">46.3</td>
+          
+        
+          
+            <td class="csv-table__cell">47.4</td>
+          
+        
+          
+            <td class="csv-table__cell">49</td>
+          
+        
+          
+            <td class="csv-table__cell">48</td>
+          
+        
+          
+            <td class="csv-table__cell">48.4</td>
+          
+        
+          
+            <td class="csv-table__cell">48.1</td>
+          
+        
+          
+            <td class="csv-table__cell">35.3</td>
+          
+        
+          
+            <td class="csv-table__cell">38.5</td>
+          
+        
+          
+            <td class="csv-table__cell">38.8</td>
+          
+        
+      </tr>
+    
+  </table>
+</div></p>
+</details>
+<h2 id="heading-4"></h2>
+<p><em>Source Type</em></p>
+<p>A description of the general circulation model. In most cases, the model is a coupled atmospheric and oceanic general circulation model (AOGCM), but other models are used.</p>
+<blockquote>
+<p>Atmospheric (AGCMs) and oceanic GCMs (OGCMs) can be coupled to form an atmosphere-ocean coupled general circulation model (CGCM or AOGCM). With the addition of submodels such as a sea ice model or a model for evapotranspiration over land, AOGCMs become the basis for a full climate model. &ndash; <a href="https://en.wikipedia.org/wiki/General_circulation_model">Wikipedia</a></p>
+</blockquote>
+<h2 id="heading-5"></h2>
+<p><em>Experiment ID (aka &ldquo;scenarios&rdquo;)</em></p>
+<p>The IPCC Sixth Assessment Report (CMIP6) includes 8 future scenarios (2015-2100) and one historical scenario (1850-2014). These scenarios represent different pathways the world might follow, which will lead to different predictions of future climate.</p>
+<details>
+<summary> Click the triangle to see the climate scenarios </summary>
+<p><em>CMIP6 data climate scenarios (from this incredibly helpful <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections">resource</a>) and <a href="https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways">here</a>.</em></p>
+<table>
+<thead>
+<tr>
+<th>IPCC Scenarios</th>
+<th>Description</th>
+<th>Estimated Warming 2041-2060, C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>historical</td>
+<td>Simulation of climate variables from the recent past from 1850 to 2014. These predictions are from a coupled atmosphere-ocean general circulation model (AOGCM) using observed variables such as atmospheric composition, land use and solar forcing. The historical simulation can be used to evaluate model performance against present climate and observed climate change.</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>SSP1-1.9</td>
+<td>Based on SSP1 with low climate change mitigation and adaptation challenges which leads to a future pathway with a radiative forcing of 1.9 W/m2 in the year 2100. The SSP1-1.9 scenario fills a gap at the very low end of the range of plausible future forcing pathways, due to interest in informing a possible goal of limiting global mean warming to 1.5°C above pre-industrial levels based on the Paris COP21 agreement.</td>
+<td>1.6</td>
+</tr>
+<tr>
+<td>SSP1-2.6</td>
+<td>Based on SSP1 with low climate change mitigation and adaptation challenges which leads to a radiative forcing of 2.6 W/m2 in the year 2100. The SSP1-2.6 scenario represents the low end of plausible future forcing pathways. SSP1-2.6 depicts a &ldquo;best case&rdquo; future from a sustainability perspective.</td>
+<td>1.7</td>
+</tr>
+<tr>
+<td>SSP4-3.4</td>
+<td>Based on SSP4 in which climate change adaptation challenges dominate which leads to a radiative forcing of 3.4 W/m2 in the year 2100. The SSP4-3.4 scenario fills a gap at the low end of the range of plausible future forcing pathways. SSP4-3.4 is of interest to mitigation policy since mitigation costs differ substantially between forcing levels of 4.5 W/m2 and 2.6 W/m2.</td>
+<td></td>
+</tr>
+<tr>
+<td>SSP5-3.4OS</td>
+<td>Based on SSP5 in which climate change mitigation challenges dominate with a peak and decline in forcing towards an eventual radiative forcing of 3.4 W/m2 in the year 2100. The SSP5-3.4OS scenario branches from SSP5-8.5 in the year 2040 whereupon it applies substantially negative net emissions. SSP5-3.4OS explores the climate science and policy implications of a peak and decline in forcing during the 21st century. SSP5-3.4OS fills a gap in existing climate simulations by investigating the implications of a substantial overshoot in radiative forcing relative to a longer-term target.</td>
+<td></td>
+</tr>
+<tr>
+<td>SSP2-4.5</td>
+<td>Based on SSP2 with intermediate climate change mitigation and adaptation challenges which lead to a radiative forcing of 4.5 W/m2 in the year 2100. The SSP2-4.5 scenario represents the medium part of plausible future forcing pathways. SSP2-4.5 is comparable to the CMIP5 experiment RCP4.5.</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>SSP4-6.0</td>
+<td>SSP4-6.0 is based on SSP4 in which climate change adaptation challenges dominate and RCP6.0 which lead to a radiative forcing of 6.0 W/m2 in the year 2100. The SSP4-6.0 scenario fills in the range of medium plausible future forcing pathways. SSP4-6.0 defines the low end of the forcing range for unmitigated SSP baseline scenarios.</td>
+<td></td>
+</tr>
+<tr>
+<td>SSP3-7.0</td>
+<td>Based on SSP3 in which climate change mitigation and adaptation challenges are high which leads to a radiative forcing of 7.0 W/m2 in the year 2100. The SSP3-7.0 scenario represents the medium to high end of plausible future forcing pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baseline pathways.</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>SSP5-8.5</td>
+<td>SSP5-8.5 is based on SSP5 in which climate change mitigation challenges dominate which leads to a radiative forcing of 8.5 W/m2 in the year 2100. The ssp585 scenario represents the high end of plausible future forcing pathways.  SSP5-8.5 is comparable to the CMIP5 experiment RCP8.5.</td>
+<td>2.4</td>
+</tr>
+</tbody>
+</table>
+</details>
+<br>
+<p><em>Variant Label</em></p>
+<p>Modeling centers often run the same climate model with slightly different settings and initial conditions. A model and its collection of runs is referred to as an ensemble (not to be confused with &ldquo;ensembles&rdquo; that combine the various climate models, typically from different institutions). For some models, there is only one variant, but some models (e.g., CanESM5) include large numbers of variants.</p>
+<p>These are interesting from a statistical perspective because they give some idea of the variation at this modeling scale.</p>
+<details>
+<summary> Click the triangle to learn more about these ensembles </summary>
+<p><em>CMIP6 esembles (taken entirely from this incredibly helpful <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections">resource</a>):</em>
+Within these ensembles, four different categories of sensitivity studies are done, and the resulting individual model runs are labelled by four integers indexing the experiments in each category</p>
+<p>e.g. r<W>i<X>p<Y>f<Z>, where W, X, Y and Z are positive integers as defined below:</p>
+<ul>
+<li>The first category, labelled realization_index (referred to with letter r), performs experiments which differ only in random perturbations of the initial conditions of the experiment. Comparing different realizations allow estimation of the internal variability of the model climate.</li>
+<li>The second category, labelled initialization_index (referred to with letter i), refers to variation in initialisation parameters. Comparing differently initialised output provides an estimate of how sensitive the model is to initial conditions.</li>
+<li>The third category, labelled physics_index (referred to with letter p), refers to variations in the way in which sub-grid scale processes are represented. Comparing different simulations in this category provides an estimate of the structural uncertainty associated with choices in the model design.</li>
+<li>The fourth category labelled forcing_index (referred to with letter f) is used to distinguish runs of a single CMIP6 experiment, but with different forcings applied.</li>
+</ul>
+</details>
+<h2 id="heading-6"></h2>
+<p><em>Variable</em></p>
+<p>Many different climate variables (e.g., sea surface temperature, near surface air temperature, rainfall) are modeled for the CMIP6 project.</p>
+<p>The climate variables often go by a short identifier. For example, to search for sea surface temperature data, you will often need to use it&rsquo;s shortname which is &ldquo;tos&rdquo;. You can learn more about some of the common CMIP6 climate variables and their shortname (i.e., ESGF Variable ID) in the below table.</p>
+<details>
+<summary> Click the triangle to see a long list of CMIP6 climate variables</summary>
+<p><em>Some common CMIP6 climate variables (from this incredibly helpful <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections#CMIP6:Globalclimateprojections-Parameterlistings">resource</a>):</em>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table>
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell">Parameter name</th>
+      
+        <th class ="csv-table__header-cell">�ESGF variable id</th>
+      
+        <th class ="csv-table__header-cell">CDS parameter name for CMIP5</th>
+      
+        <th class ="csv-table__header-cell">Units</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Near-surface air temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">tas</td>
+          
+        
+          
+            <td class="csv-table__cell">2m temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">Kelvin</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Daily maximum near-surface air temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">tasmax</td>
+          
+        
+          
+            <td class="csv-table__cell">Maximum 2m temperature in the last 24 hours</td>
+          
+        
+          
+            <td class="csv-table__cell">Kelvin</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Daily minimum near-surface air temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">tasmin</td>
+          
+        
+          
+            <td class="csv-table__cell">Maximum 2m temperature in the last 24 hours</td>
+          
+        
+          
+            <td class="csv-table__cell">Kelvin</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">ts</td>
+          
+        
+          
+            <td class="csv-table__cell">Skin temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">Kelvin</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea level pressure</td>
+          
+        
+          
+            <td class="csv-table__cell">psl</td>
+          
+        
+          
+            <td class="csv-table__cell">Mean sea level pressure</td>
+          
+        
+          
+            <td class="csv-table__cell">Pa</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface air pressure</td>
+          
+        
+          
+            <td class="csv-table__cell">ps</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface pressure</td>
+          
+        
+          
+            <td class="csv-table__cell">Pa</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Eastward near-surface wind</td>
+          
+        
+          
+            <td class="csv-table__cell">uas</td>
+          
+        
+          
+            <td class="csv-table__cell">10m u component of wind</td>
+          
+        
+          
+            <td class="csv-table__cell">m s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Northward near-surface wind</td>
+          
+        
+          
+            <td class="csv-table__cell">vas</td>
+          
+        
+          
+            <td class="csv-table__cell">10m v component of wind</td>
+          
+        
+          
+            <td class="csv-table__cell">m s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Near-surface wind speed</td>
+          
+        
+          
+            <td class="csv-table__cell">sfcWind</td>
+          
+        
+          
+            <td class="csv-table__cell">10m wind speed</td>
+          
+        
+          
+            <td class="csv-table__cell">m s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Near-surface relative humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">hurs</td>
+          
+        
+          
+            <td class="csv-table__cell">2m relative humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Near-surface specific humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">huss</td>
+          
+        
+          
+            <td class="csv-table__cell">2m specific humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Precipitation</td>
+          
+        
+          
+            <td class="csv-table__cell">pr</td>
+          
+        
+          
+            <td class="csv-table__cell">Mean precipitation flux</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2 s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Snowfall flux</td>
+          
+        
+          
+            <td class="csv-table__cell">prsn</td>
+          
+        
+          
+            <td class="csv-table__cell">Snowfall</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2 s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Evaporation Including sublimation and transpiration</td>
+          
+        
+          
+            <td class="csv-table__cell">evspsbl</td>
+          
+        
+          
+            <td class="csv-table__cell">Evaporation</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2 s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface downward eastward wind stress</td>
+          
+        
+          
+            <td class="csv-table__cell">tauu</td>
+          
+        
+          
+            <td class="csv-table__cell">Eastward turbulent surface stress</td>
+          
+        
+          
+            <td class="csv-table__cell">Pa</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface downward northward wind stress</td>
+          
+        
+          
+            <td class="csv-table__cell">tauv</td>
+          
+        
+          
+            <td class="csv-table__cell">Northward turbulent surface stress</td>
+          
+        
+          
+            <td class="csv-table__cell">Pa</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface upward latent heat flux</td>
+          
+        
+          
+            <td class="csv-table__cell">hfls</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface latent heat flux</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface upward sensible heat flux</td>
+          
+        
+          
+            <td class="csv-table__cell">hfss</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface sensible heat flux</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface downwelling longwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rlds</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface thermal radiation downwards</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface upwelling longwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rlus</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface upwelling longwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface downwelling shortwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rsds</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface solar radiation downwards</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface upwelling shortwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rsus</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface upwelling shortwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">TOA incident shortwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rsdt</td>
+          
+        
+          
+            <td class="csv-table__cell">TOA incident solar radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">TOA outgoing shortwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rsut</td>
+          
+        
+          
+            <td class="csv-table__cell">TOA outgoing shortwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">TOA outgoing longwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">rlut</td>
+          
+        
+          
+            <td class="csv-table__cell">TOA outgoing longwave radiation</td>
+          
+        
+          
+            <td class="csv-table__cell">W m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Total cloud cover percentage</td>
+          
+        
+          
+            <td class="csv-table__cell">clt</td>
+          
+        
+          
+            <td class="csv-table__cell">Total cloud cover</td>
+          
+        
+          
+            <td class="csv-table__cell">%</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Air temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">ta</td>
+          
+        
+          
+            <td class="csv-table__cell">Air temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">K</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Eastward wind</td>
+          
+        
+          
+            <td class="csv-table__cell">ua</td>
+          
+        
+          
+            <td class="csv-table__cell">U-component of wind</td>
+          
+        
+          
+            <td class="csv-table__cell">m s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Northward wind</td>
+          
+        
+          
+            <td class="csv-table__cell">va</td>
+          
+        
+          
+            <td class="csv-table__cell">V-component of wind</td>
+          
+        
+          
+            <td class="csv-table__cell">m s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Relative humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">hur</td>
+          
+        
+          
+            <td class="csv-table__cell">Relative humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Specific humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">hus</td>
+          
+        
+          
+            <td class="csv-table__cell">Specific humidity</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Geopotential height</td>
+          
+        
+          
+            <td class="csv-table__cell">zg</td>
+          
+        
+          
+            <td class="csv-table__cell">Geopotential height</td>
+          
+        
+          
+            <td class="csv-table__cell">m</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface snow amount</td>
+          
+        
+          
+            <td class="csv-table__cell">snw</td>
+          
+        
+          
+            <td class="csv-table__cell">Surface snow amount</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Snow depth</td>
+          
+        
+          
+            <td class="csv-table__cell">snd</td>
+          
+        
+          
+            <td class="csv-table__cell">Snow depth</td>
+          
+        
+          
+            <td class="csv-table__cell">m</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Total runoff</td>
+          
+        
+          
+            <td class="csv-table__cell">mrro</td>
+          
+        
+          
+            <td class="csv-table__cell">Runoff</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2 s-1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Moisture in upper portion of soil column</td>
+          
+        
+          
+            <td class="csv-table__cell">mrsos</td>
+          
+        
+          
+            <td class="csv-table__cell">Soil moisture content</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea-Ice area percentage (ocean grid)</td>
+          
+        
+          
+            <td class="csv-table__cell">siconc</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea-ice area percentage</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea Ice thickness</td>
+          
+        
+          
+            <td class="csv-table__cell">sithick</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea ice thickness</td>
+          
+        
+          
+            <td class="csv-table__cell">m</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea-Ice mass per area</td>
+          
+        
+          
+            <td class="csv-table__cell">simass</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea ice plus snow amount</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface temperature of sea Ice</td>
+          
+        
+          
+            <td class="csv-table__cell">sitemptop</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea ice surface temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">K</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea surface temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">tos</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea surface temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">K</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea surface salinity</td>
+          
+        
+          
+            <td class="csv-table__cell">sos</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea surface salinity</td>
+          
+        
+          
+            <td class="csv-table__cell">PSU</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea surface height above geoid</td>
+          
+        
+          
+            <td class="csv-table__cell">zos</td>
+          
+        
+          
+            <td class="csv-table__cell">Sea surface height above geoid</td>
+          
+        
+          
+            <td class="csv-table__cell">m</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Grid-cell area for ocean variables*</td>
+          
+        
+          
+            <td class="csv-table__cell">areacello</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">m2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea floor depth below geoid*</td>
+          
+        
+          
+            <td class="csv-table__cell">deptho</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">m</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Sea area percentage*</td>
+          
+        
+          
+            <td class="csv-table__cell">sftof</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">%</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Grid-cell area for atmospheric grid variables*</td>
+          
+        
+          
+            <td class="csv-table__cell">areacella</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">m2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Capacity of soil to store water (field capacity)*</td>
+          
+        
+          
+            <td class="csv-table__cell">mrsofc</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">kg m-2</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Percentage of the grid cell occupied by land (including lakes)*</td>
+          
+        
+          
+            <td class="csv-table__cell">sftlf</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">%</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Land ice area percentage*</td>
+          
+        
+          
+            <td class="csv-table__cell">sftgif</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">Surface altitude*</td>
+          
+        
+          
+            <td class="csv-table__cell">orog</td>
+          
+        
+          
+            <td class="csv-table__cell">NOT AVAILABLE</td>
+          
+        
+          
+            <td class="csv-table__cell">m</td>
+          
+        
+      </tr>
+    
+  </table>
+</div></p>
+</details>
+<br>
+<br>
+<h2 id="resources-for-derived-products">Resources for derived products</h2>
+<p>We&rsquo;ve said this <a href="https://oceanhealthindex.org/news/cmip_1_what_is_this/">before</a>, but we&rsquo;ll say it again: If you are an ecologist or biologist you should, if possible, avoid the raw climate data and use more derived products that others have created.</p>
+<p>Using derived products can provide many advantages:</p>
+<blockquote>
+<p>Derived data products are generally easier to work with because the raw ESGF has many idiosyncrasy&rsquo;s. One example: data are often reported using an irregular grid that must be interpolated to a regular grid.</p>
+</blockquote>
+<blockquote>
+<p>You will be able to harness the power of the ensemble! Most derived CMIP6 data products are &ldquo;ensembles&rdquo; that combine a subset of the CMIP6 climate models into a single dataset. In most cases, ensembles are more accurate than any given single climate model.</p>
+</blockquote>
+<blockquote>
+<p>Much of the raw CMIP data is very coarse resolution (e.g., 1 to 1.25 degrees). You may be able to find downscaled climate data which has translated coarse resolution spatial information into a finer spatial resolution. This is often better suited to the scale we want to work at.</p>
+</blockquote>
+<p>Of course, it is possible to download raw data and generate ensembles and downscaled data, however, avoiding this will save lots of time and computational energy. Derived datasets are generally created by experts who have spent a good deal of time thinking about how to deal with the idiosyncrasies of CMIP6 data, selecting and combining the climate models, and correcting for <a href="https://climate.copernicus.eu/sites/default/files/2021-01/infosheet7.pdf">bias</a>.</p>
+<p>But: if you must work with the raw data. Here are some resources that look useful:</p>
+<ul>
+<li>
+<p>I have explored raw netCDF ESGF climate models a bit, and I can confirm that CDO (Climate Data Operators) can be a good option for manipulating these files. If you don&rsquo;t work from the terminal, it can feel a bit intimidating at first but I have found it to be worth it. This <a href="https://mathmarecol.github.io/Welcome/cdo.html">resource</a> is what I used to get started! This guide also describes how to use ncview which is a netCDF viewer that I have also found useful!</p>
+</li>
+<li>
+<p>In general, dealing with netCDF files in R deserves its own post (to be continued)! But I have found this <a href="https://docs.ropensci.org/tidync/">R package</a> helpful.</p>
+</li>
+<li>
+<p><a href="https://claut.gitlab.io/man_ccia/">Climate Change Impact Assessment: A practical walk-through</a></p>
+</li>
+</ul>
+<h3 id="global-cmip6-derived-models-that-we-are-using">Global CMIP6 derived models that we are using</h3>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table>
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell">Source</th>
+      
+        <th class ="csv-table__header-cell">Variables</th>
+      
+        <th class ="csv-table__header-cell">Scenarios</th>
+      
+        <th class ="csv-table__header-cell">Time Frame</th>
+      
+        <th class ="csv-table__header-cell">Ensemble Details</th>
+      
+        <th class ="csv-table__header-cell">Resolution</th>
+      
+        <th class ="csv-table__header-cell">Instructions</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+          
+            <td class="csv-table__cell">land and ocean: SST, sea level pressure, surface pressure, air temperature, zonal wind, meridional wind, relative humidity, geopotential height, soil moisture, soil temperature</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP245, SSP585</td>
+          
+        
+          
+            <td class="csv-table__cell">1979-2100, 6h intervals</td>
+          
+        
+          
+            <td class="csv-table__cell">bias corrected, 18 cmip6 models</td>
+          
+        
+          
+            <td class="csv-table__cell">1.25 degrees</td>
+          
+        
+          
+            <td class="csv-table__cell"></td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">2</td>
+          
+        
+          
+            <td class="csv-table__cell">human population</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP1_2.6, SSP2_3.4, SSP3_7.0, SSP4_3.4, SSP5_8.5</td>
+          
+        
+          
+            <td class="csv-table__cell">2010-2100, yearly</td>
+          
+        
+          
+            <td class="csv-table__cell">modelled to be consistent with both the CMIP6 RCP-specific urban fraction dataset (LUH2-v2f, luh.umd.edu) and the country level SSP population and urban fraction scenarios from the SSP database</td>
+          
+        
+          
+            <td class="csv-table__cell">30 arcseconds (~1km equator)</td>
+          
+        
+          
+            <td class="csv-table__cell">ftp: sidekick.nateko.lu.se</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">3</td>
+          
+        
+          
+            <td class="csv-table__cell">land and ocean: Mean/min/max air temp, extreme air temp variables, SST, sea ice conc, SLR, pH, surface ozone, surface PM2.5, population density</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP1-2.6, SSP-4.5, SSP3-7.0, SSP5-8.5</td>
+          
+        
+          
+            <td class="csv-table__cell">near term (2021-2040), medium term (2041-2060), long term (2081-2100), historical</td>
+          
+        
+          
+            <td class="csv-table__cell">ensemble model means (vary for climate variables)</td>
+          
+        
+          
+            <td class="csv-table__cell">1 degree</td>
+          
+        
+          
+            <td class="csv-table__cell"></td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">4</td>
+          
+        
+          
+            <td class="csv-table__cell">land only: monthly avg. min. temp, monthly avg. max temp, monthly total ppt, range of bioclimatic variables</td>
+          
+        
+          
+            <td class="csv-table__cell">ssp126, ssp245, ssp370, ssp585</td>
+          
+        
+          
+            <td class="csv-table__cell">2021-2040, 2041-2060, 2061-2080, 2081-2100</td>
+          
+        
+          
+            <td class="csv-table__cell">downscaled data for N=23 climate models (not ensemble averages)</td>
+          
+        
+          
+            <td class="csv-table__cell">10 min, 5 min, 2.5 min, 30 sec</td>
+          
+        
+          
+            <td class="csv-table__cell">access through R library sdmpredictors</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">5</td>
+          
+        
+          
+            <td class="csv-table__cell">ocean (mostly) and land: depends on scenario,  temperature, ppt, wind, sst (and at different depths), salinity, oxygen, NPP  </td>
+          
+        
+          
+            <td class="csv-table__cell">ssp126, ssp245, ssp370, ssp585</td>
+          
+        
+          
+            <td class="csv-table__cell">30 year periods: 1955-1984, 1965-1994, 1975-2004, 1985-2014; 2020-2049, 2030-2059, 2040-2069, 2050-2079, 2060-2089, 2070-2099</td>
+          
+        
+          
+            <td class="csv-table__cell">data provided for many ensembles or averaged (not bias corrected)</td>
+          
+        
+          
+            <td class="csv-table__cell">1 degree</td>
+          
+        
+          
+            <td class="csv-table__cell"></td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">6</td>
+          
+        
+          
+            <td class="csv-table__cell">mostly coastal: sea level change variables</td>
+          
+        
+          
+            <td class="csv-table__cell">ssp5-8.5</td>
+          
+        
+          
+            <td class="csv-table__cell">historical and 2020-2050</td>
+          
+        
+          
+            <td class="csv-table__cell">ensemble</td>
+          
+        
+          
+            <td class="csv-table__cell">coastal = 0.1 degrees</td>
+          
+        
+          
+            <td class="csv-table__cell">see R script;https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-water-level-change-indicators-cmip6?tab=overview</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">7</td>
+          
+        
+          
+            <td class="csv-table__cell">land/river: nitrogen and phosphorous loading and export</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP1 - SSP5</td>
+          
+        
+          
+            <td class="csv-table__cell">1970-2070 (5 year periods)</td>
+          
+        
+          
+            <td class="csv-table__cell">modeled based on several assumptions about landuse, agriculture, wastewater, etc.</td>
+          
+        
+          
+            <td class="csv-table__cell">0.5 degree</td>
+          
+        
+          
+            <td class="csv-table__cell">https://dataportaal.pbl.nl/downloads/IMAGE/GNM/</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">8</td>
+          
+        
+          
+            <td class="csv-table__cell">land: near-surface relative humidity (hurs), near-surface specific humidity (huss), daily mean precipitation rate (pr), surface downwelling longwave radiation (rlds), surface downwelling shortwave radiation (rsds), daily-mean surface wind speed (sfcWind), daily maximum near-surface air temperature (tasmax), daily minimum near-surface air temperature (tasmin), and daily mean near-surface air temperature (tas)</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP245, SSP585</td>
+          
+        
+          
+            <td class="csv-table__cell">monthly, 1950-2100</td>
+          
+        
+          
+            <td class="csv-table__cell">downscaled, bias corrected ensemble with 35 GCM models</td>
+          
+        
+          
+            <td class="csv-table__cell">0.25 degree</td>
+          
+        
+          
+            <td class="csv-table__cell">https://nex-gddp-cmip6-cog.s3.us-west-2.amazonaws.com/index.html#monthly/</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">9</td>
+          
+        
+          
+            <td class="csv-table__cell">ocean: 10 OA indicators</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP1_1.9, SSP1_2.6, SSP2_4.5, SSP3_7.0, SSP5_8.5</td>
+          
+        
+          
+            <td class="csv-table__cell">1850-2010 and 2020 -2100, decadal averages</td>
+          
+        
+          
+            <td class="csv-table__cell">ensemble 14 ESMs, bias corrected</td>
+          
+        
+          
+            <td class="csv-table__cell">1 degree</td>
+          
+        
+          
+            <td class="csv-table__cell">https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0259391.html</td>
+          
+        
+      </tr>
+    
+  </table>
+</div>
+<p>**1. <a href="https://www.nature.com/articles/s41597-021-01079-3">Xu et al. 2021</a></p>
+<p>**2. <a href="https://www.sciencedirect.com/science/article/pii/S2352340922000166">Olen and Lehsten 2022</a></p>
+<p>**3. <a href="https://interactive-atlas.ipcc.ch/regional-information">IPCC WGI Interactive Atlas</a></p>
+<p>**4. <a href="https://www.worldclim.org/data/cmip6/cmip6climate.html">WorldClim</a></p>
+<p>**5. <a href="https://psl.noaa.gov/ipcc/cmip6/">NOAA&rsquo;s Climate Change Web Portal: CMIP6</a></p>
+<p>**6. <a href="https://www.essoar.org/doi/10.1002/essoar.10511919.1">Muis et al. 2022</a></p>
+<p>**7. <a href="https://www.sciencedirect.com/science/article/pii/S0959378021002053#f0015">Beusen et al. 2022</a></p>
+<p>**8. <a href="https://www.nature.com/articles/s41597-022-01393-4">Thrasher et al. 2022</a></p>
+<p>**9. <a href="https://doi.org/10.1029/2022MS003563">Jiang et al. 2023</a></p>
+<h3 id="united-states-cmip6-derived-models-that-we-have-explored">United States CMIP6 derived models that we have explored</h3>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="column-center__full-width-container">
+  <table>
+    
+    
+    <tr class ="csv-table__header">
+      
+        <th class ="csv-table__header-cell">Source</th>
+      
+        <th class ="csv-table__header-cell">Variables</th>
+      
+        <th class ="csv-table__header-cell">Scenarios</th>
+      
+        <th class ="csv-table__header-cell">Time Frame</th>
+      
+        <th class ="csv-table__header-cell">Ensemble Details</th>
+      
+        <th class ="csv-table__header-cell">Resolution</th>
+      
+        <th class ="csv-table__header-cell">Instructions</th>
+      
+    </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">1</td>
+          
+        
+          
+            <td class="csv-table__cell">land: Two sets of variables are available for download. One consists of 33 biologically relevant variables, including seasonal and annual means, extremes, growing and chilling degree days, snow fall, potential evapotranspiration, and a number of drought indices. The second dataset consists of 48 monthly temperature and precipitation variables. See the metadata for complete description of variables.</td>
+          
+        
+          
+            <td class="csv-table__cell">CMIP6: SSP1_2.6, SSP2_4.5, SSP3_7.0, SSP5_8.5</td>
+          
+        
+          
+            <td class="csv-table__cell">yearly and monthly variables averaged for 20 or 30 year periods</td>
+          
+        
+          
+            <td class="csv-table__cell">The ensemble mean projections are calculated from the 8-model ensemble and a larger 13-model ensemble (see dendrogram below), the latter being representative of the full unconstrained CMIP6 ensemble (Mahony et al. 2022). Consistent with the guidance provided by Hausfather et al. (2022), users wishing to use an ensemble mean projection are encouraged to use the 8-model rather than the 13-model ensemble mean.</td>
+          
+        
+          
+            <td class="csv-table__cell">Lambert Azimuthal Equal-Area projection, at 1km resolution</td>
+          
+        
+          
+            <td class="csv-table__cell">These are derived from Mahoney et al. 2022</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">2</td>
+          
+        
+          
+            <td class="csv-table__cell">land: humidity, precipitation, min/max air temp, solar radiation, vapor pressure deficit, wind speed</td>
+          
+        
+          
+            <td class="csv-table__cell">CMIP5: RCP4.5, RCP8.5</td>
+          
+        
+          
+            <td class="csv-table__cell">monthly and daily</td>
+          
+        
+          
+            <td class="csv-table__cell">20 climate models provided (no ensemble)</td>
+          
+        
+          
+            <td class="csv-table__cell">~4 or 6km</td>
+          
+        
+          
+            <td class="csv-table__cell">can obtain and combine climate models using R packages climate futures toolbox (CFT) (https://github.com/earthlab/cft), or climateR (https://mikejohnson51.github.io/climateR-intro/#123)</td>
+          
+        
+      </tr>
+    
+      <tr class="csv-table__row">
+        
+          
+            <td class="csv-table__cell">3</td>
+          
+        
+          
+            <td class="csv-table__cell">land:     Annual: MAT, MWMT, MCMT, TD, AHM, SHM, EMT, EXT and MAR;
+    Seasonal: Tmax, Tmin, Tave and Rad;
+    Monthly: Tmax, Tmin, Tave and Rad.</td>
+          
+        
+          
+            <td class="csv-table__cell">SSP126, SSP245, SSP370, SSP585, SSP245, SSP370, SSP585</td>
+          
+        
+          
+            <td class="csv-table__cell">annual, 20-year, 30-year periods</td>
+          
+        
+          
+            <td class="csv-table__cell">ensemble of 13 CMIP6 models</td>
+          
+        
+          
+            <td class="csv-table__cell">~4km for NA; ~800 m for Western North America</td>
+          
+        
+          
+            <td class="csv-table__cell">https://climatena.ca/spatialData</td>
+          
+        
+      </tr>
+    
+  </table>
+</div>
+<p>**1. <a href="https://adaptwest.databasin.org/pages/adaptwest-climatena/">AdaptWest Project 2022</a></p>
+<p>**2. <a href="https://climate.northwestknowledge.net/MACA/data_portal.php">MACA Data Portal</a></p>
+<p>**3. <a href="https://www.researchgate.net/publication/358571908_A_CMIP6_ensemble_for_downscaled_monthly_climate_normals_over_North_America">Mahoney et al. 2022</a></p>
+<h2 id="references">References</h2>
+<ul>
+<li>
+<p><a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections">ECMWF</a>: A super useful and down-to-earth description of CMIP6!</p>
+</li>
+<li>
+<p>Tebaldi, C., et al., 2021. Climate model projections from the Scenario Model Intercomparison Project (ScenarioMIP) of CMIP6. Earth System Dynamics 12, 253–293. <a href="https://doi.org/10.5194/esd-12-253-2021">https://doi.org/10.5194/esd-12-253-2021</a></p>
+</li>
+<li>
+<p>O’Neill, B.C., Tebaldi, C., van Vuuren, D.P., Eyring, V., Friedlingstein, P., Hurtt, G., Knutti, R., Kriegler, E., Lamarque, J.-F., Lowe, J., Meehl, G.A., Moss, R., Riahi, K., Sanderson, B.M., 2016. The Scenario Model Intercomparison Project (ScenarioMIP) for CMIP6. Geoscientific Model Development 9, 3461–3482. <a href="https://doi.org/10.5194/gmd-9-3461-2016">https://doi.org/10.5194/gmd-9-3461-2016</a></p>
+</li>
+</ul>
+<br>
+<br>
+<b>
+<hr>
+<p>This post was created as part of the <a href="https://belmontforum.org/connect/oceans2018/groups/marisco-project/">MARISCO project</a> which is funded by the Belmont Forum.</p>
+<p>Belmont Forum members and partner organizations work together to direct and fund research on environmental change that affect us all.</p>
+<p><img src="/images/cmip6/logos.jpg" alt="cmip_scenarios"></p>
+<hr>
+
+</div><div class="column-right">
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  
+  
+
+  
+    
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+      
+    
+      
+      
+        
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+      
+    
+    
+      
+    
+  
+
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/" class="right-nav-item">What is OHI</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/news/" class="right-nav-item">News</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/ohifellows/" class="right-nav-item">OHI Fellows</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/people/" class="right-nav-item">People</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/publications/" class="right-nav-item">Publications</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/supporters/" class="right-nav-item">Supporters</a>
+    </div>
+  
+    <div class="right-col-nav">
+      <a href= "https://oceanhealthindex.org/about/contact/" class="right-nav-item">Contact</a>
+    </div>
+  
+</div></section>
+
+
+<footer class="footer">
+  <div class="footer__content footer__content--top">
+    <a class="footer__logo" href="https://oceanhealthindex.org">
+
+
+  
+
+
+
+
+
+  
+  
+
+
+<svg class="logo logo--dark" viewBox="0 0 2657 1024" xmlns="http://www.w3.org/2000/svg" title="Ocean Health Index">
+  <g class="logo__image">
+    <path d="M586 777l-25 188 3 4 3-3 25-188-6-1zM567 773l-49 184c0 3 0 4 3 4h1l4-3 48-184-7-1zM548 766l-72 175c-1 3 0 5 2 5h2l4-2 72-175-8-3zM368 878c3 0 4-1 7-3l134-134-12-11-134 134c-3 2-3 6-2 9l-74 75c-2 1-2 2 0 4l2 1 3-1 75-75c-2 0 0 1 1 1zM402 906c3 0 4-2 5-3l116-151-12-9-115 151c-2 2-2 5 0 8l-66 85v4h1l3-1 66-86 2 2zM528 756l-94 164c-2 1-2 4 0 7l-54 94c-1 2 0 3 1 4h2l2-1 54-95c3 0 4-1 5-2l95-166-11-5zM687 758l-2 2 95 164 1 1h1v-2l-95-165zM669 768l-4 1 72 175 2 1h1l1-2-72-175z"/>
+    <path d="M1244 585c11-11 18-26 15-42-2-19-14-33-31-40 12-10 17-27 12-44-6-19-21-32-39-33 12-12 16-30 10-46-8-19-28-29-46-26 13-14 15-33 6-49a39 39 0 00-55-14l-8 3 7-5c17-13 19-37 6-52a37 37 0 00-52-7l-38 29 34-36c14-14 14-36 0-49a34 34 0 00-50 0l-61 60 53-68c10-15 8-36-7-46s-35-8-46 6l-76 99 62-108c8-14 4-33-11-42-14-8-33-4-42 10l-64 112-3 1-1-3 49-117c6-15-2-31-15-37-14-6-30 1-37 14l-50 120-6 4c0-3-2-5-3-7l33-125c4-13-4-27-18-31s-28 4-32 18l-33 125-9 8-5-11 17-127c1-12-7-24-20-25-12-1-24 7-25 20l-17 127c-5 4-8 8-10 15-2-6-6-11-10-15V20a19 19 0 10-39 0v129c-7 5-11 13-11 22v1c-1-9-6-16-13-21L548 22c-1-9-10-17-20-15s-17 10-15 19l17 129c-6 7-9 15-8 24l5 35-9-34c-3-9-9-16-17-18L467 35c-3-7-11-13-19-10s-13 10-10 18l34 127c-5 6-8 15-5 23l17 62-25-58c-4-8-11-13-20-14L389 62c-3-7-10-9-17-7s-9 11-7 17l50 121c-5 7-6 16-2 24l35 87-47-82c-4-8-13-12-21-12L314 96c-2-5-9-7-14-4s-7 9-4 14l65 115c-5 6-5 16-1 24l49 84v2l-3-1-59-76c-5-7-14-10-22-8l-81-105c-2-4-7-4-10-2-4 3-4 8-1 11l80 105c-4 7-4 17 1 24l59 77v5l-5-1-68-68c-6-5-15-7-21-4l-95-95c-3-2-7-2-9 0s-3 7 0 9l94 95c-3 7-2 16 4 21l69 68 2 10c-2-2-6-2-9 0l-76-59c-7-6-15-4-20 0l-108-83c-2-2-5-2-6 1s-1 5 1 7l108 82c-3 7 0 15 5 20l76 59c0 4 3 9 6 12h-13l-85-49c-5-3-13-2-17 2L87 319c-3-1-6 0-7 2s0 5 1 6l120 69c-1 6 1 13 8 15l84 49c1 7 5 12 11 15l4 2h-6c-6-2-13-1-18 1l-89-36c-6-3-12 0-16 4L50 392c-1-2-4 0-5 2s0 4 2 6l129 54c0 5 3 11 8 13l89 36c2 7 7 12 12 15l25 10-26-6c-7-1-13 0-18 4l-95-25c-5-1-11 1-13 5L24 467c-2 0-4 0-4 2s0 4 2 4l137 37c0 5 4 9 8 11l95 25c2 6 6 10 13 13l47 13-49-7c-6-1-13 2-17 7l-97-13c-4 0-8 1-9 5L8 546l-4 2 3 4 142 19c1 3 3 6 7 7l98 14c2 5 8 10 14 10l70 9h-70c-6 0-12 4-16 9h-98c-3 0-7 3-7 6H3c-2 0-3 1-3 2l3 3h144c2 3 4 5 7 5h98c3 5 8 9 16 9h92l-91 12c-6 2-11 6-13 12l-98 13c-3 0-6 3-6 7 0 2 3 5 6 5h1l99-13c2 5 8 8 13 8h2l113-15-110 28c-5 1-9 7-10 12l-98 26c-2 1-4 4-4 7s3 4 6 4h1l97-27c3 4 7 7 12 7h4l130-36-125 52c-5 2-8 8-8 13l-93 39c-1 2-3 3-3 5s3 3 4 3h2l93-39 9 5 5-1 145-61-135 79c-4 3-7 8-6 12l-89 51c-1 1-3 4-1 5l4 2h1l89-52 8 3 5-1 156-90-142 108c-4 3-6 7-4 11l-83 63c-2 1-2 2 0 4l2 1 2-1 83-63 5 1 6-3 152-115c-24-27-39-62-39-100a151 151 0 11293 50h465c27 0 50-23 50-50 2-17-7-33-21-41z"/>
+    <path d="M627 778l25 188c0 1 1 3 3 3l2-3-25-188h-5zM647 774l48 184c0 2 2 2 2 2l1-3-49-184-2 1zM610 780h-3v190l3 3 3-3V780h-3z"/>
+  </g>
+  
+  <g class="logo__title">
+    <path d="M1496 406c-89 0-141-66-141-140s53-141 141-141c89 0 141 66 141 141 0 76-52 140-141 140zm0-223c-41 0-71 25-71 84 0 39 17 84 71 84 51 0 71-43 71-84 0-42-20-84-71-84z"/>
+    <path d="M1822 222c-9-25-32-39-55-39-37 0-66 25-66 84 0 39 16 84 68 84 19 0 44-13 54-37l53 25c-23 41-62 68-107 68-84 0-134-65-134-140s46-141 129-141c53 0 87 25 112 70l-54 26zM1885 400V134h196v51h-129v49h121v51h-121v63h141v52h-208z"/>
+    <path d="M2182 134h68l100 266h-71l-13-42h-97l-13 42h-71l97-266zm68 175l-32-109h-2l-33 109h67z"/>
+    <path d="M2342 134h67l96 170h2V134h60v266h-65l-98-167h-1v167h-61V134zM1366 419h65v96h99v-96h66v265h-66V572h-97v112h-66V419zM1625 684V419h196v52h-129v48h121v51h-121v64h140v50h-207z"/>
+    <path d="M1922 419h68l100 266h-71l-13-42h-99l-13 42h-71l99-266zm68 174l-33-109h-1l-33 109h67z"/>
+    <path d="M2082 419h66v209h104v56h-170V419zM2210 419h205v52h-70v213h-66V471h-69v-52zM2424 419h66v96h98v-96h66v265h-66V572h-98v112h-66V419zM1366 703h65v266h-65V703zM1462 703h67l96 170h1V703h61v266h-68l-97-167h-1v167h-61V703zM1713 703h102c82 0 136 38 136 133s-54 133-136 133h-102V703zm67 211h38c50 0 67-35 67-77 0-43-18-76-68-76h-38v153zM1964 969V703h196v52h-129v48h121v51h-121v64h141v51h-208z"/>
+    <path d="M2262 826l-88-123h80l49 80 49-80h79l-87 123 101 143h-82l-61-99-63 99h-81l104-143z"/>
+    <path d="M2431 703h23v7h-8v25h-8v-25h-7v-7zM2458 703h12l5 23 5-23h11v30h-7v-23l-6 23h-7l-6-23v23h-7v-30z"/>
+  </g>
+  
+</svg></a>
+    <div class="footer__socials">
+  <div class="socials">
+    
+      <a class="socials__link socials__link--facebook" href="https://www.facebook.com/OceanHealthIndex/" target="_blank">
+        <svg class="socials__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M449 0c35 0 63 28 63 63v386c0 35-28 63-63 63H343V319h67l12-83h-79v-53c0-23 11-45 47-45h36V68s-33-6-64-6c-66 0-108 40-108 111v63h-73v83h73v193H63c-35 0-63-28-63-63V63C0 28 28 0 63 0h386z"/></svg>
+      </a>
+    
+    
+      <a class="socials__link socials__link--twitter" href="https://twitter.com/OceanHealthIndx" target="_blank">
+        <svg class="socials__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M161 464c193 0 299-160 299-299v-13c20-15 38-34 52-55-19 9-40 14-60 17 22-13 38-34 46-58-21 12-43 20-67 25a105 105 0 00-179 96c-84-4-163-44-216-110-28 48-14 110 32 140-17 0-33-5-48-13v2c0 49 36 93 85 103-16 4-32 4-48 1 14 43 54 72 98 73A211 211 0 010 417c48 31 104 47 161 47"/></svg>
+      </a>
+    
+  </div>
+</div>
+  </div>
+  <div class="footer__legal">
+    <div class="footer__content footer__content--bottom">
+      <div class="footer__copyright">
+        ©<script>document.write(new Date().getFullYear());</script> Ocean Health Index
+      </div>
+      <div class="footer__legal-links">
+        <a class="footer__legal-link" href="/privacy-policy">Privacy Policy</a>
+        <a class="footer__legal-link" href="/terms-of-service">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/js/main.js" async></script></body>
+
+</html>

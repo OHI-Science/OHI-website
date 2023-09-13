@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goal: Biodiversity on Ocean Health Index</title>
+    <link>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/</link>
+    <description>Recent content in Goal: Biodiversity on Ocean Health Index</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sub-Goal: Habitat</title>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/habitats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/habitats/</guid>
+      <description>PRESERVING MARINE HABITATS This goal measures the status of marine habitats that support large numbers of marine species.
+CURRENT SCORE The current score indicates that the eight assessed habitats - kelp forests, mangroves, coral reefs, seagrass beds, salt marshes, sea ice, subtidal soft-bottom habitats, and tidal flats- have experienced declines (relative to recent historical periods) but are still relatively intact on a global basis.
+This sub-goal score is higher than what is reported by numerous scientific studies and media reports.</description>
+    </item>
+    
+    <item>
+      <title>Sub-Goal: Species</title>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/species/</guid>
+      <description>PRESERVING MARINE SPECIES This goal measures the conservation status of marine species.
+CURRENT SCORE A high score indicates that most native marine species in a country are not identified as threatened or vulnerable by the IUCN which monitors the status of many species.
+The current score indicates a potential risk of losing a significant proportion of marine species diversity across the globe. The IUCN Red List of Threatened Species estimates that 35% of all assessed species are threatened with extinction, including 37% of species of sharks and rays.</description>
+    </item>
+    
+  </channel>
+</rss>
