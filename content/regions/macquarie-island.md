@@ -2,8 +2,8 @@
 regionId: 4
 title: Macquarie Island
 rank: 1
-meanScore: 90.94
-globalMeanScore: 69.33
+meanScore: 91.18
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

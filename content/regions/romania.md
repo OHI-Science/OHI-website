@@ -1,9 +1,9 @@
 ---
 regionId: 72
 title: Romania
-rank: 127
-meanScore: 67.17
-globalMeanScore: 69.33
+rank: 109
+meanScore: 66.31
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

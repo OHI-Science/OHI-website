@@ -1,9 +1,9 @@
 ---
 regionId: 129
 title: Panama
-rank: 28
-meanScore: 75.76
-globalMeanScore: 69.33
+rank: 63
+meanScore: 71.45
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

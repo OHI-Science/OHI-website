@@ -1,9 +1,9 @@
 ---
 regionId: 205
 title: Myanmar
-rank: 154
-meanScore: 65.29
-globalMeanScore: 69.33
+rank: 143
+meanScore: 64.41
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

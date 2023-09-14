@@ -1,9 +1,9 @@
 ---
 regionId: 167
 title: Guyana
-rank: 214
-meanScore: 54.26
-globalMeanScore: 69.33
+rank: 215
+meanScore: 53.54
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

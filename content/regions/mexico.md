@@ -1,9 +1,9 @@
 ---
 regionId: 135
 title: Mexico
-rank: 42
-meanScore: 73.72
-globalMeanScore: 69.33
+rank: 91
+meanScore: 68.52
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

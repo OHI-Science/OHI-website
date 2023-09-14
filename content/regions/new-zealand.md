@@ -1,9 +1,9 @@
 ---
 regionId: 162
 title: New Zealand
-rank: 10
-meanScore: 80.63
-globalMeanScore: 69.33
+rank: 51
+meanScore: 72.33
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

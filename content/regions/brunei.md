@@ -1,9 +1,9 @@
 ---
 regionId: 247
 title: Brunei
-rank: 199
-meanScore: 59.88
-globalMeanScore: 69.33
+rank: 196
+meanScore: 59.03
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

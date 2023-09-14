@@ -1,9 +1,9 @@
 ---
 regionId: 14
 title: Taiwan
-rank: 168
-meanScore: 64.16
-globalMeanScore: 69.33
+rank: 84
+meanScore: 69.52
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

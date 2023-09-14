@@ -1,9 +1,9 @@
 ---
 regionId: 123
 title: Dominica
-rank: 91
-meanScore: 69.59
-globalMeanScore: 69.33
+rank: 96
+meanScore: 67.93
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

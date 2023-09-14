@@ -1,9 +1,9 @@
 ---
 regionId: 193
 title: Guinea Bissau
-rank: 134
-meanScore: 66.84
-globalMeanScore: 69.33
+rank: 135
+meanScore: 64.87
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

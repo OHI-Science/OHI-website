@@ -1,9 +1,9 @@
 ---
 regionId: 150
 title: Palmyra Atoll
-rank: 6
-meanScore: 83.11
-globalMeanScore: 69.33
+rank: 7
+meanScore: 83.28
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

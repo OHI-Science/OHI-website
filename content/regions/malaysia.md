@@ -1,9 +1,9 @@
 ---
 regionId: 206
 title: Malaysia
-rank: 155
-meanScore: 65.13
-globalMeanScore: 69.33
+rank: 189
+meanScore: 59.84
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

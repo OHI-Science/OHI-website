@@ -1,9 +1,9 @@
 ---
 regionId: 195
 title: Ivory Coast
-rank: 218
-meanScore: 49.76
-globalMeanScore: 69.33
+rank: 210
+meanScore: 54.9
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

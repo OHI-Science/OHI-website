@@ -1,9 +1,9 @@
 ---
 regionId: 148
 title: Line Islands (Kiribati)
-rank: 171
-meanScore: 63.78
-globalMeanScore: 69.33
+rank: 127
+meanScore: 65.46
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---

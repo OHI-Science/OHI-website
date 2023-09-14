@@ -1,9 +1,9 @@
 ---
 regionId: 216
 title: Indonesia
-rank: 181
-meanScore: 62.66
-globalMeanScore: 69.33
+rank: 192
+meanScore: 59.6
+globalMeanScore: 67.47
 numRegions: 220
 layout: region_score
 ---
