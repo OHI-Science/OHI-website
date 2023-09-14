@@ -5,21 +5,23 @@ library(tidyverse)
 
 # set up path and read in scores data
 base_path <- "/home/egg/" # change to where your ohi-global repo is
-scores <- read_csv(paste0(base_path, "ohi-global/eez/scores.csv")) # scores csv within the ohi-global repo
+scores <- read_csv(paste0(base_path, "ohi-global/yearly_results/global2023/Results/data/area_weighted_average_scores_by_year_and_goal")) # scores csv within the ohi-global repo
 
 # get only LSP in the scores dimension, and get global averages by year
 lsp_scores <- scores %>%
-  filter(goal == "LSP" & dimension == "score") %>% # get LSP sub-goal and score dimension
-  group_by(year) %>% # group by year
-  summarize(score_avg = mean(score, na.rm = TRUE)) # take average by year
+  filter(goal == "Lasting special places (subgoal)") %>% # get scores just for LSP sub-goal (eez area weighted average of region scores)
+  pivot_longer(cols = starts_with("20"), # pivot the years to be more easily usable
+               names_to = "year", 
+               values_to = "score") %>%
+  mutate(year = as.numeric(year)) # make year numeric for plotting
 
 # create a plot of these averages over time
-ggplot(data = lsp_scores, aes(x = year, y = score_avg)) +
+ggplot(data = lsp_scores, aes(x = year, y = score)) +
   geom_line(size = 2, color = "darkblue") + # make line thicker and dark blue
   theme_minimal() + # clean up theming
   labs(x = "Year",
        y = "Average LSP Score",
-       title = "Global average Lasting Special Place (LSP) scores over time") + # set x, y, title names
+       title = "Area-weighted global average Lasting Special Places (LSP) scores over time") + # set x, y, title names
   lims(y = c(0, 100)) + # set to range of possible scores to give better idea of increase relative to full range
   theme(plot.title = element_text(hjust = 0.5)) # center the title
 ```
