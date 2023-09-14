@@ -8,13 +8,13 @@ menu:
     weight: 3
 ---
 
-### 11 YEARS OF SCORES! 
+### 12 YEARS OF SCORES! 
 
-The OHI 2022 global assessment includes scores from 2012 to 2022 for 220 coastal countries and territories.  
+The OHI 2023 global assessment includes scores from 2012 to 2023 for 220 coastal countries and territories.  
 
-This marks our 11th year of calculating the global Ocean Health Index. The average 2022 Index score was 69 out of 100. Average Index scores have not dramatically changed over eleven years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 11 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This marks our 12th year of calculating the global Ocean Health Index. The average 2022 Index score was 67 out of 100. Average Index scores have not dramatically changed over eleven years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 12 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
 
-![Flowerplot](/images/flower_GlobalAverage.png)
+![Flowerplot](/images/flower_GlobalAverage_2023.png)
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
 {{<button text="Supplemental Results" link=images/htmls/Supplement_Results.html icon="images/flower_plot.png">}}
