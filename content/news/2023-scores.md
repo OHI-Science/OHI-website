@@ -4,7 +4,7 @@ name: "2023 Ocean Health Index Release"
 bg_image: "/images/banners/lake.jpg"
 card_image: "/images/hex_ohi.png"
 preview_text: "This year marks the 12th global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The ..."
-Date: 2023-09-12
+Date: 2023-09-15
 author: The OHI Team 
 menu:
   main: 
@@ -60,24 +60,20 @@ Protecting iconic species is critical for maintaining the connection people have
 
 Marine natural products can provide substantial economic benefits when sustainably harvested and traded. For example, millions of marine ornamental (aquarium) fish are harvested and exported for sale each year. This trade can provide a valuable and long-term income stream for low-income coastal communities if undertaken in a sustainable manner. This goal uses data from harvest and production of non-food seaweed, ornamental fish, and wild-caught fish used for fish oil and meal. A high score indicates that natural resources are maximally harvested at a rate that does not threaten future harvest and minimizes ecological harm.
 
-The area weighted global natural products goal score has remained within a six point range for the last 12 years. Within recent years we have seen a higher level of volatility in global scores as the lowest and highest goal scores have been recorded in the last three years. We believe this was due to the COVID-19 pandemic’s impact on the industry and trade of natural products. Since the COVID shock the global score has rebounded and is now at its highest level on record. 
+The area weighted global natural products goal score has remained within a six point range for the last 12 years. Within recent years we have seen a higher level of volatility in global scores as the lowest and highest goal scores have been recorded in the last three years. We believe this was due to the COVID-19 pandemic's impact on the industry and trade of natural products. Since the COVID shock the global score has rebounded and is now at its highest level on record.
 
 **Tourism and Recreation**
 
 The Tourism and Recreation goal aims to measure how well regions are sustainably providing access to coastal tourism and recreation activities and reflect how much people value and enjoy coastal spaces.
 
-This year, the goal had a major overhaul. Originally, the goal used proportion of employment in tourism as one of its data layers. The original data source, the [World Travel & Tourism Council (WTTC)](https://wttc.org), is no longer freely accessible, so we switched data sources to the [United Nations World Tourism Organization (UNWTO)](https://www.unwto.org/tourism-statistics/key-tourism-statistics). The UNWTO’s dataset on employment in tourism had a large amount of missing data that was unable to be reasonably gapfilled at this time, so we transitioned to using one of their other datasets that provided total international arrivals. We specifically used data representing visitors who spent at least one overnight, gapfilling this with same-day visitors subtracted from total arrivals [(UNWTO, n.d.)](https://www.unwto.org/glossary-tourism-terms). To make this a proportion and try incorporate capacity/space for coastal tourism and ability to help tourists, we divided this by coastal area (1 kilometer inland and 3 nautical miles offshore) as well as total population for the region.
+This year, the goal had a major overhaul. Originally, the goal used proportion of employment in tourism as one of its data layers. The original data source, the [World Travel & Tourism Council (WTTC)](https://wttc.org), is no longer freely accessible, so we switched data sources to the [United Nations World Tourism Organization (UNWTO)](https://www.unwto.org/tourism-statistics/key-tourism-statistics). The UNWTO's dataset on employment in tourism had a large amount of missing data that was unable to be reasonably gapfilled at this time, so we transitioned to using one of their other datasets that provided total international arrivals. We specifically used data representing visitors who spent at least one overnight, gapfilling this with same-day visitors subtracted from total arrivals [(UNWTO, n.d.)](https://www.unwto.org/glossary-tourism-terms). To make this a proportion and try incorporate capacity/space for coastal tourism and ability to help tourists, we divided this by coastal area (1 kilometer inland and 3 nautical miles offshore) as well as total population for the region.
 
 These methods changes resulted in large overall decreases in global scores for this goal across the years. However, we can still see a general trend that reflects what could be expected, particularly the large decrease between 2019 and 2020 as seen in the table above. As new or updated global data sources become available or known, we hope to continue incorporating methods updates for this goal.
 
 ## References
 
-1. **IUCN.** (2022). *IUCN Red List Categories of Threatened Species (version 2022-2)*. <http://www.iucnredlist.org/>
+1.  **IUCN.** (2022). *IUCN Red List Categories of Threatened Species (version 2022-2)*. <http://www.iucnredlist.org/>
 
-2. **Reyes-García, V., Cámara-Leret, R., Halpern, B. S., O\'Hara, C., Renard, D., Zafra-Calvo, N., & Díaz, S. (2023). Biocultural vulnerability exposes threats of culturally important species.** *Proceedings of the National Academy of Sciences*, *120*(2), e2217303120. [https://doi.org/10.1073/pnas.221730312](https://doi.org/10.1073/pnas.2217303120)
+2.  **Reyes-García, V., Cámara-Leret, R., Halpern, B. S., O'Hara, C., Renard, D., Zafra-Calvo, N., & Díaz, S. (2023). Biocultural vulnerability exposes threats of culturally important species.** *Proceedings of the National Academy of Sciences*, *120*(2), e2217303120. [https://doi.org/10.1073/pnas.221730312](https://doi.org/10.1073/pnas.2217303120)
 
-3. **United Nations World Tourism Organization (UNWTO).** (n.d.). [*Glossary of tourism terms*](https://www.unwto.org/glossary-tourism-terms). Retrieved September 14, 2023.
-
-**Media**
-
-[Taking Ocean Vital Signs](https://www.news.ucsb.edu/2022/020786/taking-ocean-vital-signs?utm_source=newsletter&utm_medium=email&utm_content=Taking%20Ocean%20Vital%20Signs&utm_campaign=December%206%2C%202022) in the UCSB current.
+3.  **United Nations World Tourism Organization (UNWTO).** (n.d.). [*Glossary of tourism terms*](https://www.unwto.org/glossary-tourism-terms). Retrieved September 14, 2023.
