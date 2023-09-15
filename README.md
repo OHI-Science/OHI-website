@@ -208,3 +208,13 @@ See `content/data/_index.md`
 Remember that when the `scores.csv` file is updated, the region pages should be re-generated. See the "Region pages" section, above.
 
 Run code in scripts/create-region-pages.Rmd.  This updates the region pages as well as creates an updated trend.csv file for data analysis.
+
+# Adding individual commits from dev to main
+eg. in the case of adding a blog post but other changes have occurred since working on it that you don't also want to push
+
+1. Go into the main branch within your version of the OHI-website project: `git checkout main`
+2. Find the commit numbers you want to add. For example, if you're trying to add a blog post, go to the commit history for your blog post file. NOTE: be sure to have committed all supplementary file commits with any of your main blog post document commits; otherwise, you'll need to search for commits where you edited supplmentary files as well.
+3. Use `git cherry-pick long-commit-number`, replacing long-commit-number with your earliest commit number. Proceed to repeat this with every relevant commit chronologically (not sure if this matters, but it is what we did before and it worked).
+4. Lastly, push all of these changes: `git push origin main`
+
+These instructions were adapted from [here](https://mattstauffer.com/blog/how-to-merge-only-specific-commits-from-a-pull-request/), under "How to use `git cherry-pick`."
