@@ -7,7 +7,7 @@ preview_text: "This year marks the 12th global Ocean Health Index (OHI, for shor
 Date: 2023-09-12
 author: The OHI Team 
 menu:
-  main:
+  main: 
     parent: 'News'
     weight: 2
 ---
@@ -16,14 +16,13 @@ menu:
 
 {{<newsHead>}}
 
+We are proud to announce our 12th year of measuring the state of the world's oceans.
 
-We are proud to announce our 12th year of measuring the state of the world’s oceans. 
+> The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean.
 
->  The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. 
-  
-As usual, the 2023 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years’ scores (2012-2023) using the latest science and data when available. As always, the data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2023) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
+As usual, the 2023 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years' scores (2012-2023) using the latest science and data when available. As always, the data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2023) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
 
-This year’s assessment was led by the OHI fellows Juliet Cohen, Peter Menzies, and Cullen Molitor, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern. 
+This year's assessment was led by the OHI fellows Juliet Cohen, Peter Menzies, and Cullen Molitor, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern.
 
 ## Overview of Results
 
@@ -45,20 +44,32 @@ Scores for many regions are reasonably good, and global scores have increased si
 
 {{< csvTable path="tables/article_table.csv" sep="," >}}
 
-
 ## MORE RESULTS
 
-Below we take a deeper dive into some of the interesting patterns we observed in the data for specific goals and regions.  
+Below we take a deeper dive into some of the interesting patterns we observed in the data for specific goals and regions.
 
 **Tourism and Recreation**
 
 The Tourism and Recreation goal aims to measure how well regions are sustainably providing access to coastal tourism and recreation activities and reflect how much people value and enjoy coastal spaces.
 
-This year, the goal had a major overhaul. Originally, the goal used proportion of employment in tourism as one of its data layers. The original data source, the WTTC, is no longer freely accessible, so we switched data sources to the UNWTO. The UNWTO’s dataset on employment in tourism had a large amount of missing data that was unable to be reasonably gapfilled at this time, so we transitioned to using one of their other datasets that provided total international arrivals. We specifically used data representing visitors who spent at least one overnight, gapfilling this with same-day visitors subtracted from total arrivals. To make this a proportion and try incorporate capacity/space for coastal tourism and ability to help tourists, we divided this by coastal area (1 kilometer inland and 3 nautical miles offshore) as well as total population for the region.
+This year, the goal had a major overhaul. Originally, the goal used proportion of employment in tourism as one of its data layers. The original data source, the WTTC, is no longer freely accessible, so we switched data sources to the UNWTO. The UNWTO's dataset on employment in tourism had a large amount of missing data that was unable to be reasonably gapfilled at this time, so we transitioned to using one of their other datasets that provided total international arrivals. We specifically used data representing visitors who spent at least one overnight, gapfilling this with same-day visitors subtracted from total arrivals. To make this a proportion and try incorporate capacity/space for coastal tourism and ability to help tourists, we divided this by coastal area (1 kilometer inland and 3 nautical miles offshore) as well as total population for the region.
 
 These methods changes resulted in large overall decreases in global scores for this goal across the years. However, we can still see a general trend that reflects what could be expected, particularly the large decrease between 2019 and 2020 as seen in the table above. As new or updated global data sources become available or known, we hope to continue incorporating methods updates for this goal.
 
+**Iconic Species**
 
- **Media**
-  
-  [Taking Ocean Vital Signs](https://www.news.ucsb.edu/2022/020786/taking-ocean-vital-signs?utm_source=newsletter&utm_medium=email&utm_content=Taking%20Ocean%20Vital%20Signs&utm_campaign=December%206%2C%202022) in the UCSB current.
+The iconic species subgoal, a component of sense of place, measures the conservation status of iconic species. The list of species used in this goal was originally created by combining [WWF](https://wwf.panda.org) lists of priority and flagship species. This year we added additional culturally important species from [Reyes-García et al., 2013](https://www.pnas.org/doi/10.1073/pnas.2217303120) to broaden the scope of species covered. Of the new species added, the majority were listed as least concern by the IUCN redlist. Since we recalculate scores for all years every time new data is incorporated, this resulted in an increase for scores across all years as compared to [last year's calculations](https://oceanhealthindex.org/news/2022-scores/).
+
+Despite the increase in iconic species scores overall, *table 1* shows a decrease in the average score over time, with this year having the lowest calculated score. Changes in the iconic species score are largely driven by changes in IUCN conservation status, and are dependent on the species found in each OHI region. Since 2012, 12 of the iconic species decreased in the level to which they were threatened, while 15 species increased ([IUCN Redlist, 2022](http://www.iucnredlist.org/)). One such increase occurred for the grey reef shark, whose IUCN status changed from near threatened to endangered in 2020 ([IUCN Redlist, 2022](http://www.iucnredlist.org/)).
+
+Protecting iconic species is critical for maintaining the connection people have with the ocean worldwide. Improvements in this goal depend on the success of conservation efforts for iconic species and their ecosystems. In order to preserve the important role these species play, it's also critical to monitor additional holistic metrics of iconic species preservation, including biocultural status ([Reyes-García et al., 2023](https://www.pnas.org/doi/10.1073/pnas.2217303120)).
+
+## References
+
+IUCN. (2022). *IUCN Red List Categories of Threatened Species (version 2022-2)*. <http://www.iucnredlist.org/>
+
+Reyes-García, V., Cámara-Leret, R., Halpern, B. S., O\'Hara, C., Renard, D., Zafra-Calvo, N., & Díaz, S. (2023). Biocultural vulnerability exposes threats of culturally important species. *Proceedings of the National Academy of Sciences*, *120*(2), e2217303120. [https://doi.org/10.1073/pnas.221730312](https://doi.org/10.1073/pnas.2217303120)
+
+**Media**
+
+[Taking Ocean Vital Signs](https://www.news.ucsb.edu/2022/020786/taking-ocean-vital-signs?utm_source=newsletter&utm_medium=email&utm_content=Taking%20Ocean%20Vital%20Signs&utm_campaign=December%206%2C%202022) in the UCSB current.
