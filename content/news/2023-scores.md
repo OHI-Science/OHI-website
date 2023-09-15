@@ -56,6 +56,12 @@ Despite the increase in iconic species scores overall, *table 1* shows a decreas
 
 Protecting iconic species is critical for maintaining the connection people have with the ocean worldwide. Improvements in this goal depend on the success of conservation efforts for iconic species and their ecosystems. In order to preserve the important role these species play, it's also critical to monitor additional holistic metrics of iconic species preservation, including biocultural status [(Reyes-García et al., 2023)](https://www.pnas.org/doi/10.1073/pnas.2217303120).
 
+**Natural Products**
+
+Marine natural products can provide substantial economic benefits when sustainably harvested and traded. For example, millions of marine ornamental (aquarium) fish are harvested and exported for sale each year. This trade can provide a valuable and long-term income stream for low-income coastal communities if undertaken in a sustainable manner. This goal uses data from harvest and production of non-food seaweed, ornamental fish, and wild-caught fish used for fish oil and meal. A high score indicates that natural resources are maximally harvested at a rate that does not threaten future harvest and minimizes ecological harm.
+
+The area weighted global natural products goal score has remained within a six point range for the last 12 years. Within recent years we have seen a higher level of volatility in global scores as the lowest and highest goal scores have been recorded in the last three years. We believe this was due to the COVID-19 pandemic’s impact on the industry and trade of natural products. Since the COVID shock the global score has rebounded and is now at its highest level on record. 
+
 **Tourism and Recreation**
 
 The Tourism and Recreation goal aims to measure how well regions are sustainably providing access to coastal tourism and recreation activities and reflect how much people value and enjoy coastal spaces.
