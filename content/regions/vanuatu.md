@@ -1,9 +1,9 @@
 ---
 regionId: 6
 title: Vanuatu
-rank: 202
-meanScore: 57.77
-globalMeanScore: 67.47
+rank: 208
+meanScore: 60.54
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

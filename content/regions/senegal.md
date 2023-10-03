@@ -1,9 +1,9 @@
 ---
 regionId: 66
 title: Senegal
-rank: 145
-meanScore: 64.01
-globalMeanScore: 67.47
+rank: 97
+meanScore: 72.54
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

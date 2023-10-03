@@ -1,9 +1,9 @@
 ---
 regionId: 12
 title: Wake Island
-rank: 121
-meanScore: 65.78
-globalMeanScore: 67.47
+rank: 177
+meanScore: 65.77
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

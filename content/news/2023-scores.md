@@ -12,7 +12,7 @@ menu:
     weight: 2
 ---
 
-# 12 years of OHI Scores!
+# 2023 Ocean Health Index Scores!
 
 {{<newsHead>}}
 
@@ -20,13 +20,13 @@ We are proud to announce our 12th year of measuring the state of the world's oce
 
 > The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean.
 
-As usual, the 2023 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years' scores (2012-2023) using the latest science and data when available. As always, the data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2023) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
+As usual, the 2023 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years' scores (2012-2023) using the latest science and data when available. The data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2023) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
 
-This year's assessment was led by the OHI fellows Juliet Cohen, Peter Menzies, and Cullen Molitor, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern.
+This year's assessment was led by the OHI fellows Erika Egg, Carlo Broderick, and Adelaide Robinson, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern.
 
 ## Overview of Results
 
-The overall global index score was 69 (Figure 1), which is similar to previous years. The regions with the highest scores tend to be uninhabited, or low human population, islands, although New Zealand, Bahamas, and the United Arab Emirates also have relatively high scores (Figure 2). Regions with lower scores tend to be in Africa, Latin America and the Caribbean, and Asia.
+The overall global index score was 73 (Figure 1), which is similar to previous years. The regions with the highest scores tend to be uninhabited, or low human population, islands, although New Zealand, Portugal, Ecuador, Brazil, and the United Arab Emirates also have relatively high scores (Figure 2). Regions with lower scores tend to be in Africa, the Middle East, and parts of Asia.
 
 ###### Figure 1. Flower plot describing the average 2023 global Ocean Health scores (eez area weighted average of region scores) for the overall Index (center value) and goals/subgoals (petals).
 
@@ -36,7 +36,7 @@ The overall global index score was 69 (Figure 1), which is similar to previous y
 
 ![](/images/infographs/global_map_Index_2023_mol.png)
 
-Although overall index scores have hovered around 70 since 2012, a deeper dive into the index reveals some interesting trends and patterns.
+Although overall index scores have hovered around 73 since 2012, a deeper dive into the index reveals some interesting trends and patterns.
 
 Scores for many regions are reasonably good, and global scores have increased since 2012 for some goals, such as: sense of place and clean waters. However, we observed some worrisome patterns for fisheries, iconic species, species condition, and tourism & recreation (due to the economic downturn of the COVID-19 pandemic).
 
@@ -66,9 +66,10 @@ The area weighted global natural products goal score has remained within a six p
 
 The Tourism and Recreation goal aims to measure how well regions are sustainably providing access to coastal tourism and recreation activities and reflect how much people value and enjoy coastal spaces.
 
-This year, the goal had a major overhaul. Originally, the goal used proportion of employment in tourism as one of its data layers. The original data source, the [World Travel & Tourism Council (WTTC)](https://wttc.org), is no longer freely accessible, so we switched data sources to the [United Nations World Tourism Organization (UNWTO)](https://www.unwto.org/tourism-statistics/key-tourism-statistics). The UNWTO's dataset on employment in tourism had a large amount of missing data that was unable to be reasonably gapfilled at this time, so we transitioned to using one of their other datasets that provided total international arrivals. We specifically used data representing visitors who spent at least one overnight, gapfilling this with same-day visitors subtracted from total arrivals [(UNWTO, n.d.)](https://www.unwto.org/glossary-tourism-terms). To make this a proportion and try incorporate capacity/space for coastal tourism and ability to help tourists, we divided this by coastal area (1 kilometer inland and 3 nautical miles offshore) as well as total population for the region.
+This year, the goal had a major overhaul. Originally, the goal used proportion of employment in tourism as one of its data layers. The original data source, the [World Travel & Tourism Council (WTTC)](https://wttc.org), is no longer freely accessible, so we switched data sources to the [United Nations World Tourism Organization (UNWTO)](https://www.unwto.org/tourism-statistics/key-tourism-statistics). The UNWTO's dataset on employment in tourism had a large amount of missing data that was unable to be reasonably gapfilled at this time, so we transitioned to using one of their other datasets that provided total international arrivals. We specifically used data representing visitors who spent at least one overnight, gapfilling this with same-day visitors subtracted from total arrivals [(UNWTO, n.d.)](https://www.unwto.org/glossary-tourism-terms). To make this a proportion, we divided by the total amount of international arrivals indicated in the dataset. 
 
-These methods changes resulted in large overall decreases in global scores for this goal across the years. However, we can still see a general trend that reflects what could be expected, particularly the large decrease between 2019 and 2020 as seen in the table above. As new or updated global data sources become available or known, we hope to continue incorporating methods updates for this goal.
+These methods changes generally resulted in increases for most regions across the years. Some regions that previously scored very well (e.g., Phillippines), score poorly, while regions with large populations (China, USA), scored similarly under the old methods. With the new data, we still see the large decrease between 2019 and 2020, a result of the 2020 Covid-19 pandemic. Tourism and recreation scores are starting to recover from the Covid-19 pandemic, but we still do not see the pre-2020 levels yet. As new or updated global data sources become available or known, we hope to continue incorporating methods updates for this goal (e.g., including domestic tourism, including a metric for coastal arrivals, etc.).
+
 
 ## References
 

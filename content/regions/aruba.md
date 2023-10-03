@@ -1,9 +1,9 @@
 ---
 regionId: 250
 title: Aruba
-rank: 20
-meanScore: 77.98
-globalMeanScore: 67.47
+rank: 32
+meanScore: 77.82
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

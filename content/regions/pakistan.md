@@ -1,9 +1,9 @@
 ---
 regionId: 53
 title: Pakistan
-rank: 198
-meanScore: 58.67
-globalMeanScore: 67.47
+rank: 159
+meanScore: 68.48
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

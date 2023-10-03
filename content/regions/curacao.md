@@ -1,9 +1,9 @@
 ---
 regionId: 244
 title: Curacao
-rank: 49
-meanScore: 72.59
-globalMeanScore: 67.47
+rank: 165
+meanScore: 67.73
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

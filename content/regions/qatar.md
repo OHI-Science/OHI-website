@@ -1,9 +1,9 @@
 ---
 regionId: 190
 title: Qatar
-rank: 37
-meanScore: 74.21
-globalMeanScore: 67.47
+rank: 9
+meanScore: 83.45
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

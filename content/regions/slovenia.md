@@ -1,9 +1,9 @@
 ---
 regionId: 188
 title: Slovenia
-rank: 16
-meanScore: 80.04
-globalMeanScore: 67.47
+rank: 139
+meanScore: 70.48
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

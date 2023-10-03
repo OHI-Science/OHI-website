@@ -1,9 +1,9 @@
 ---
 regionId: 153
 title: Cook Islands
-rank: 154
-meanScore: 63.49
-globalMeanScore: 67.47
+rank: 102
+meanScore: 72.42
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

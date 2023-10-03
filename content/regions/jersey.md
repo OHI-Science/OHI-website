@@ -1,9 +1,9 @@
 ---
 regionId: 227
 title: Jersey
-rank: 57
+rank: 111
 meanScore: 72.17
-globalMeanScore: 67.47
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

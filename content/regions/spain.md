@@ -1,9 +1,9 @@
 ---
 regionId: 182
 title: Spain
-rank: 65
-meanScore: 70.99
-globalMeanScore: 67.47
+rank: 38
+meanScore: 77.47
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

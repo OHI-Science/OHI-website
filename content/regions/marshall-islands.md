@@ -1,9 +1,9 @@
 ---
 regionId: 11
 title: Marshall Islands
-rank: 108
-meanScore: 66.53
-globalMeanScore: 67.47
+rank: 69
+meanScore: 74.44
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

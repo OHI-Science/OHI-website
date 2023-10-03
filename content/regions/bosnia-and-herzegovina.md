@@ -1,9 +1,9 @@
 ---
 regionId: 232
 title: Bosnia and Herzegovina
-rank: 44
-meanScore: 73.55
-globalMeanScore: 67.47
+rank: 119
+meanScore: 71.69
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

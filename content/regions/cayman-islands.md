@@ -1,9 +1,9 @@
 ---
 regionId: 113
 title: Cayman Islands
-rank: 169
-meanScore: 62.03
-globalMeanScore: 67.47
+rank: 201
+meanScore: 61.69
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

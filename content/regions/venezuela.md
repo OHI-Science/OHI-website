@@ -1,9 +1,9 @@
 ---
 regionId: 139
 title: Venezuela
-rank: 45
-meanScore: 73.37
-globalMeanScore: 67.47
+rank: 15
+meanScore: 81.66
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---
