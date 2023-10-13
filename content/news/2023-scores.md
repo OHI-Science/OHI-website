@@ -22,7 +22,7 @@ We are proud to announce our 12th year of measuring the state of the world's oce
 
 As usual, the 2023 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years' scores (2012-2023) using the latest science and data when available. The data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2023) and [Score calculation](https://github.com/OHI-Science/ohi-global/releases)).
 
-This year's assessment was led by the OHI fellows Erika Egg, Carlo Broderick, and Adelaide Robinson, and NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern.
+This year's assessment was led by the OHI fellows Erika Egg, Carlo Broderick, and Adelaide Robinson, and supported by NCEAS scientists Gage Clawson, Melanie Frazier, and Ben Halpern.
 
 ## Overview of Results
 

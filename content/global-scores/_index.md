@@ -10,7 +10,7 @@ menu:
 ---
 The global Ocean Health Index measures the state of the world’s oceans. 
 
-The global OHI score for the 2023 assessment was 67. This interactive map shows  how different countries and goals contributed to this score, as well as how the score has changed since 2012. Click on colored regions (i.e. EEZs) to see short country summaries.
+The global OHI score for the 2023 assessment was 73. This interactive map shows  how different countries and goals contributed to this score, as well as how the score has changed since 2012. Click on colored regions (i.e. EEZs) to see short country summaries.
 
 {{< scoresGlobe >}}
 

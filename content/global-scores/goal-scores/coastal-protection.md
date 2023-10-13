@@ -16,7 +16,7 @@ The current score indicates that although, in many places, these habitats (mangr
 
 Since 2012, we have seen a modest decline in coastal protection scores globally. Like the carbon storage goal and habitat subgoal the data quality for many of our habitats is poor. However, a negative trend can be elucidated in the coastal protection goal due to the declining status of coastal sea ice, which has data derived from satellite imagery.
 
-For the 2022 OHI assessment, Norway saw a large improvement in coastal protection with a score increase of 8 percentage points. Not far behind, Russia improved by 4 percentage points. 
+For the 2023 OHI assessment, Norway saw a large decrease in coastal protection with a score decrease of ~8 percentage points, likely due to declining sea ice. However, in Russia, we see a 2 point improvement. 
 
 
 
