@@ -1,9 +1,9 @@
 ---
 regionId: 140
 title: Guadeloupe and Martinique
-rank: 85
-meanScore: 70
-globalMeanScore: 69.33
+rank: 59
+meanScore: 75.33
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

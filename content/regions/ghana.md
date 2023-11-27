@@ -1,9 +1,9 @@
 ---
 regionId: 106
 title: Ghana
-rank: 160
-meanScore: 64.67
-globalMeanScore: 69.33
+rank: 136
+meanScore: 70.68
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

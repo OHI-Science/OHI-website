@@ -1,9 +1,9 @@
 ---
 regionId: 45
 title: Eritrea
-rank: 215
-meanScore: 53.41
-globalMeanScore: 69.33
+rank: 220
+meanScore: 54.81
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

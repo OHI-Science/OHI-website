@@ -1,9 +1,9 @@
 ---
 regionId: 207
 title: Vietnam
-rank: 187
-meanScore: 61.78
-globalMeanScore: 69.33
+rank: 155
+meanScore: 68.92
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

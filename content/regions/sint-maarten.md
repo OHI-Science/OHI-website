@@ -1,9 +1,9 @@
 ---
 regionId: 220
 title: Sint Maarten
-rank: 7
-meanScore: 82.17
-globalMeanScore: 69.33
+rank: 57
+meanScore: 75.49
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

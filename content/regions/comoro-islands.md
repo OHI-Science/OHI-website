@@ -1,9 +1,9 @@
 ---
 regionId: 28
 title: Comoro Islands
-rank: 84
-meanScore: 70.06
-globalMeanScore: 69.33
+rank: 29
+meanScore: 78.44
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

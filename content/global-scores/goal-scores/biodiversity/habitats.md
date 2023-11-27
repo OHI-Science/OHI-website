@@ -21,7 +21,7 @@ The main reason for this discrepancy is the Ocean Health Index uses a more recen
 
 All of the goals that require habitat data, such as this one, are difficult to assess because much of the data are of poor quality, lack historical information, and are not tracked over time (aside from mangroves and sea ice). Despite these limitations, we are still able to to identify changes in some regions.
 
-For example, we observe declining habitat scores in Iceland (47), Jan Mayn (56), and Greenland (55) due to the steady loss of sea ice habitat. 
+For example, we observe poor habitat scores in Iceland (50), Jan Mayen (56), and Greenland (55) due to the steady loss of sea ice habitat. 
 
 
 [Learn more about this goal]({{< ref "goals/biodiversity/habitats.md" >}})

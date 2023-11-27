@@ -1,9 +1,9 @@
 ---
 regionId: 60
 title: Gibraltar
-rank: 192
-meanScore: 61.28
-globalMeanScore: 69.33
+rank: 180
+meanScore: 65.52
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

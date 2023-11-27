@@ -1,9 +1,9 @@
 ---
 regionId: 36
 title: Ile Tromelin
-rank: 45
-meanScore: 73.66
-globalMeanScore: 69.33
+rank: 81
+meanScore: 73.64
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

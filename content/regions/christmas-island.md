@@ -1,9 +1,9 @@
 ---
 regionId: 2
 title: Christmas Island
-rank: 104
-meanScore: 68.59
-globalMeanScore: 69.33
+rank: 141
+meanScore: 70.16
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

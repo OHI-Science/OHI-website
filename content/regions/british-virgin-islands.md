@@ -1,9 +1,9 @@
 ---
 regionId: 117
 title: British Virgin Islands
-rank: 119
-meanScore: 67.67
-globalMeanScore: 69.33
+rank: 203
+meanScore: 61.31
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

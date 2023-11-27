@@ -1,9 +1,9 @@
 ---
 regionId: 15
 title: Philippines
-rank: 149
-meanScore: 65.57
-globalMeanScore: 69.33
+rank: 214
+meanScore: 58.32
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

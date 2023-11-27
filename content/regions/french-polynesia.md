@@ -1,9 +1,9 @@
 ---
 regionId: 147
 title: French Polynesia
-rank: 65
-meanScore: 72.27
-globalMeanScore: 69.33
+rank: 47
+meanScore: 76.54
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

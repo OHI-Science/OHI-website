@@ -1,9 +1,9 @@
 ---
 regionId: 176
 title: Germany
-rank: 49
-meanScore: 73.29
-globalMeanScore: 69.33
+rank: 50
+meanScore: 76.21
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

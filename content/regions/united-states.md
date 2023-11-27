@@ -1,9 +1,9 @@
 ---
 regionId: 163
 title: United States
-rank: 78
-meanScore: 70.68
-globalMeanScore: 69.33
+rank: 91
+meanScore: 72.78
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

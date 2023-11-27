@@ -1,9 +1,9 @@
 ---
 regionId: 175
 title: Denmark
-rank: 164
-meanScore: 64.37
-globalMeanScore: 69.33
+rank: 166
+meanScore: 67.59
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---

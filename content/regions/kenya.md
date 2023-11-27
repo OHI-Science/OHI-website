@@ -1,9 +1,9 @@
 ---
 regionId: 43
 title: Kenya
-rank: 96
-meanScore: 69.36
-globalMeanScore: 69.33
+rank: 86
+meanScore: 73.01
+globalMeanScore: 73.46
 numRegions: 220
 layout: region_score
 ---
