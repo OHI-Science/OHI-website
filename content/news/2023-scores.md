@@ -4,7 +4,7 @@ name: "2023 Ocean Health Index Release"
 bg_image: "/images/banners/lake.jpg"
 card_image: "/images/hex_ohi.png"
 preview_text: "This year marks the 12th global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The ..."
-Date: 2023-09-15
+Date: 2023-12-03
 author: The OHI Team 
 menu:
   main: 
