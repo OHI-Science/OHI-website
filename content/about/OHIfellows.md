@@ -32,76 +32,6 @@ accomplished thus far and what it is today.
 ## Current Fellows
 <center>
 
-<img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
-
-</center>
-
-
-### Anna Ramji <a href = "https://github.com/annaramji" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
-
-<div style="width: 100%;">
-<a href="https://annaramji.github.io">
-  <img src="/images/people/Anna_Ramji.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-</a>
-<p>
-Anna Ramji grew up hiking and fishing along the Eastern Sierra Nevada mountain range, where she developed an interest in ecology and the impacts of climate change on native ecosystems. She spent much of her childhood on Northern Californian beaches, developing a profound respect for the power, beauty, and importance of the Pacific Ocean. During her time as an undergraduate at the University of California, Berkeley, she worked as a research assistant and laboratory manager at Caldwell Laboratory, studying stomatopods and several species of octopus. Anna enjoyed taking extra-curricular courses in Data Science, Japanese, French, and Urban Design. She earned her Bachelor of Science degree in Environmental Sciences with a dual focus in Biology and Chemistry, graduating with Honors in 2021. She has since worked to co-author a
-<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265292"> peer-reviewed paper </a>
-on body patterns of Octopus chierchiae with alumni from Caldwell Lab, which was published in PLOS One in April, 2023. 
-</p> 
-<p>
-Her interest in data science – particularly data visualization as a powerful tool for scientific communication – drew her to the Master of Environmental Data Science (MEDS) program at the Bren School of Environmental Science & Management. As a MEDS graduate student, she enjoyed combining her expertise in environmental issues with her passion for data science and visualization to become an enthusiastic and inclusive scientific communicator while maintaining a tidy and reproducible data science practice. She particularly enjoyed courses in Machine Learning, Data Management, Geospatial Analysis & Remote Sensing, and Data Visualization. In her <a href="https://bren.ucsb.edu/projects/identifying-priority-survey-sites-early-season-milkweed-conservation"> capstone project</a>, she helped create a tool for researchers at the Santa Barbara Botanic Garden to plan surveys of milkweed species in the Los Padres National Forest for conservation efforts. Anna was the sole recipient of the faculty-nominated Academic Achievement Award in the MEDS class of 2024. 
-</p>
-<p>
-She is interested in a wide range of sustainability-oriented topics, including agroecology, clean energy, and working with marine ecological data. Anna hopes to bring her environmental data science experience and passion for developing data-driven sustainable solutions to future roles. 
-</p>
-</div>
-
-<div style="clear:both;"></div>
-
-<br>
-
-### Dustin Duncan <a href = "http://github.com/dustin-duncan" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
-
-<div style="width: 100%;">
-<a href="https://github.com/dustin-duncan/">
-  <img src="/images/people/Egg_Erika_2023.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-</a>
-<p>
-Dustin Duncan graduated from the University of California, Santa Barbara in 2022 with a B.S. in Aquatic Biology. Growing up in San Diego, CA, Dustin was in and around the water his entire life. As a result, his goal in his undergraduate career was to learn more about the relationship between humans and aquatic ecosystems. It became apparent in his undergraduate research that a greater emphasis was required to determine and show how this relationship could be both widely sustainable and profitable. After graduation, Dustin participated in an internship developing Community Based Fisheries Management plans in the Hawaiian Islands. Dustin’s goal in completing the Bren Masters of Environmental Science and Management is to investigate the best practices that will incentivise companies to invest in marine resource management from a bottom-up perspective. More specifically, he hopes to explore various practices of marine management that benefit marine ecosystems while ensuring shareholder profit for both communities and investing companies. He will also explore how to effectively communicate the effect of profitable sustainable endeavors to business executives.
-</p> 
-<p>
-</p>
-</div>
-<div style="clear:both;"></div>
-
-<br>
-
-### Sophia Lecuona Manos <a href = "http://github.com/sophialecuona" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
-
-<div style="width: 100%;">
-<a href="https://github.com/sophialecuona/">
-  <img src="/images/people/Sophia_LecuonaManos.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
-</a>
-<p>
-Sophia Lecuona Manos is passionate about fisheries management and science communication. She graduated from the University of California, Santa Barbara with a B.S. in Aquatic Biology in 2022. In the Kuris Parasitology Lab, she co-led a team of undergraduates to conduct research on a newly introduced copepod that consumes the eggs of rock crabs. Her team was awarded a grant from the UCSB Coastal Fund, and she allocated funds to crab husbandry, conference registrations, and publication costs.
-</p> 
-<p>
-Sophia was honored with the "Best Student Presentation Award" at the <i>2022 International Conference on Copepoda</i> (ICOC) and the <i>2023 Southern California Academy of Sciences </i> (SCAS) meeting, strengthening her enthusiasm for effectively communicating scientific discoveries to both fellow scientists and the broader public. Her team was also invited to present at the <i> 2023 Ecological Society of America </i> (ESA) meeting. 
-</p> 
-<p>
-As Sophia researched the rock crab fishery further, she was alarmed to find it was limited in data and needed improved management protocols. Sophia pursued the Bren School to deepen her understanding of resource management and the interdisciplinary aspects of sustainability within aquatic ecosystems. She is specializing in Coastal Resource Management with a focus on Strategic Environmental Communication and Media. 
-</p>
-<p>
-Her goal is to develop best practices for fisheries management and contribute to a more equitable food system by making scientific findings more accessible and impactful. She plans to achieve this by pursuing machine learning, geospatial analysis, and reproducible coding methods to identify and share solutions addressing natural resource challenges.
-</p>
-</div>
-<div style="clear:both;"></div>
-
-<br>
-
-## **2023 Fellows**
-<center>
-
 <img src="/images/people/fellows_2023.jpg" style="width: 50%; height: 50%"/>
 
 </center>
@@ -169,9 +99,6 @@ As a fisheries technician at Point Reyes National Seashore, she led a Dual Frequ
 Adelaide is currently a graduate student in the Master of Environmental Data Science (MEDS) Program at UC Santa Barbara within the Bren School of Environmental Science and Management. As an OHI fellow, she is excited to work on an interdisciplinary project where she can combine her interests in data science, ecology, and sustainable fisheries economics. 
 </p>
 </div>
-<div style="clear:both;"></div>
-
-<br>
 
 ## **2022 Fellows**
 
@@ -225,9 +152,6 @@ Cullen is a marine ecologist with expertise in long term monitoring of kelp fore
 Cullen is currently a master’s candidate of Environmental Data Science at the Bren School of Environmental Science and Management at UC Santa Barbara. At Bren, Cullen has been excited about working with spatial data and remote sensing technologies. He uses these skills for his capstone project where his team is developing a workflow that uses satellite imagery and machine learning to make crop yield predictions in sub-Saharan Africa. As a global OHI fellow, Cullen is excited to continue working in marine science with his expanded data processing, modeling, and presentation skills. He is glad to participate in a program that seeks to improve our understanding of the health of our global oceans.
 </p>
 </div>
-<div style="clear:both;"></div>
-
-<br>
 
 ## **2020 Fellows**
 
@@ -275,10 +199,6 @@ management solutions protecting threatened coastal resources and the
 communities that rely on them. In her free time, Sara loves to snorkel,
 scuba dive, read good books, and explore with friends.  
 </p>
-
-<div style="clear:both;"></div>
-
-<br>
 
 ## **2019 Fellows**
 

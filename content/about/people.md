@@ -7,7 +7,7 @@ menu:
     parent: 'About'
     weight: 3
 ---
-The Ocean Health Index team develops scientific methods and calculates scores, manages current operations and directs future development, and communicates results to governments, marine managers, scientists, and the public.
+The Ocean Health Index team develops scientific methods and calculates scores, manages current operations and directs future development, and communicates results to governments, marine managers, scientists, and the public.  
 
 Ben Halpern has been with the project since planning began in 2008.  
 
