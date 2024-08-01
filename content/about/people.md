@@ -21,7 +21,7 @@ The team gratefully acknowledges the individuals, foundations, organizations and
 
 ## Previous Contributors
 
-{{<contributors path="contributors.json">}}
+{{<contributors path="contributors.json">}} 
 
 
 
