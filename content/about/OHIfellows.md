@@ -29,14 +29,6 @@ contributions help the OHI grow and innovate.
 This program is an integral part of what the Ocean Health Index has
 accomplished thus far and what it is today.
 
-## Current Fellows
-
-<center>
-
-<img src="/images/people/fellows_2024.jpg" style="width: 50%; height: 50%"/>
-
-</center>
-
 
 ## Current Fellows
 <center>
