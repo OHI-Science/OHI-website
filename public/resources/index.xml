@@ -2,20 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources Overview on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/resources/</link>
+    <link>http://localhost:1313/resources/</link>
     <description>Recent content in Resources Overview on Ocean Health Index</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oceanhealthindex.org/resources/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tools</title>
-      <link>https://oceanhealthindex.org/resources/tools/</link>
+      <link>http://localhost:1313/resources/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oceanhealthindex.org/resources/tools/</guid>
-      <description>How to start practicing open data science! Open data science means that methods, data, and code are available so others can access, reuse, and build from it without much fuss. We use a variety of programs, tools, and practices to do reproducible research.
-Our workflow depends on R, RStudio, RMarkdown, and Git/GitHub. These resources will get you started.
-Introduction to Open Data Science is a hands-on training book that introduces the tools, practices, and workflows that underpin our work (Lowndes et al.</description>
+      <guid>http://localhost:1313/resources/tools/</guid>
+      <description>How to start practicing open data science! Open data science means that methods, data, and code are available so others can access, reuse, and build from it without much fuss. We use a variety of programs, tools, and practices to do reproducible research.&#xA;Our workflow depends on R, RStudio, RMarkdown, and Git/GitHub. These resources will get you started.&#xA;Introduction to Open Data Science is a hands-on training book that introduces the tools, practices, and workflows that underpin our work (Lowndes et al.</description>
     </item>
-    
   </channel>
 </rss>

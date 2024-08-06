@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
+<html lang="en-US"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://oceanhealthindex.org/news/raster_to_terra/">
+  <link rel="canonical" href="http://localhost:1313/news/raster_to_terra/">
   <meta name="description" content="Switching from the raster package to terra for spatial analysis by Juliet Cohen
 Thu, Aug 25, 2022
 Spatial data in R has a reputation for being tedious and time consuming. With so many different spatial file types (.shp, .nc, .gpkg, .geojson, and .tif to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the raster package to calculate cell values across stacked layers and recognize patterns over space and time."/>
-  <meta name="date" content='September 13, 2023 11:30:09 PDT'>
+  <meta name="date" content='August 6, 2024 11:40:25 PDT'>
   <title>Shifting from Raster to Terra | OHI</title>
-  <link rel="stylesheet" href="https://oceanhealthindex.org/style.main.min.c1c42e0a9c5f4648992c3713f65277a6c0d6472387dbc6caa8e54ed971c4f30c.css?v=2023-09-13_11.30.09_-0700" media="screen">
-  <link rel="shortcut icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="http://localhost:1313/style.main.min.be81eaa14848f2d569f520523ff3c1874cf717146950af8fcf7b5cac347f8ec1.css?v=2024-08-06_11.40.25_-0700" media="screen">
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
   
-<link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous"></head><body>
+<link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-100.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-100.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-100italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-100italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-200.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-200.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-200italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-200italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-300.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-300.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-300italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-300italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-500.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-500.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-600.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-600.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-700.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-700.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-800.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-800.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-900.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-900.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-regular.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous"></head><body>
 
 <nav class="nav" role="navigation" aria-label="Main menu">
 
@@ -35,7 +35,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
 
   <a
     class="nav__logo"
-    href="https://oceanhealthindex.org"
+    href="http://localhost:1313/"
     role="menuitem"
     title="Ocean Health Index Homepage"
   >
@@ -93,7 +93,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/global-scores/"
+                  href="http://localhost:1313/global-scores/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -104,7 +104,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/global-scores/goal-scores/"
+                  href="http://localhost:1313/global-scores/goal-scores/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -115,7 +115,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/global-scores/data-download/"
+                  href="http://localhost:1313/global-scores/data-download/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -152,7 +152,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/methodology/"
+                  href="http://localhost:1313/methodology/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -163,7 +163,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/goals/"
+                  href="http://localhost:1313/goals/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -174,7 +174,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/methodology/pressure/"
+                  href="http://localhost:1313/methodology/pressure/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -185,7 +185,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/methodology/resilience/"
+                  href="http://localhost:1313/methodology/resilience/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -196,7 +196,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/methodology/deep-dive/"
+                  href="http://localhost:1313/methodology/deep-dive/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -233,7 +233,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/ohi&#43;/"
+                  href="http://localhost:1313/ohi&#43;/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -244,7 +244,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/ohi&#43;/assessment/"
+                  href="http://localhost:1313/ohi&#43;/assessment/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -255,7 +255,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/ohi&#43;/conduct/"
+                  href="http://localhost:1313/ohi&#43;/conduct/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -292,7 +292,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/resources/"
+                  href="http://localhost:1313/resources/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -303,7 +303,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/resources/tools/"
+                  href="http://localhost:1313/resources/tools/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -314,7 +314,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/resources/data/"
+                  href="http://localhost:1313/resources/data/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -353,7 +353,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/about/"
+                  href="http://localhost:1313/about/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -364,7 +364,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/news/"
+                  href="http://localhost:1313/news/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -375,7 +375,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/about/ohifellows/"
+                  href="http://localhost:1313/about/ohifellows/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -386,7 +386,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/about/people/"
+                  href="http://localhost:1313/about/people/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -397,7 +397,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/about/publications/"
+                  href="http://localhost:1313/about/publications/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -408,7 +408,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/about/supporters/"
+                  href="http://localhost:1313/about/supporters/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -419,7 +419,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="https://oceanhealthindex.org/about/contact/"
+                  href="http://localhost:1313/about/contact/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -572,17 +572,17 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
     
   
   
-  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/">&nbspHome</a> >
+  <a class = "breadcrumb-item" href="http://localhost:1313/">&nbspHome</a> >
   
 
   
   
-  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/news/">&nbspNews</a> >
+  <a class = "breadcrumb-item" href="http://localhost:1313/news/">&nbspNews</a> >
   
 
   
   
-  <a class = "breadcrumb-item current" href="https://oceanhealthindex.org/news/raster_to_terra/">&nbspShifting from Raster to Terra</a>
+  <a class = "breadcrumb-item current" href="http://localhost:1313/news/raster_to_terra/">&nbspShifting from Raster to Terra</a>
   
 
 </div>
@@ -674,7 +674,7 @@ Spatial data in R has a reputation for being tedious and time consuming. With so
 Expand to see the Global Fishing Watch API in action
 </summary>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># iterate through all EEZ codes for all regions to extract apparent fishing hours:</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for</span>(i in regions) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(i <span style="color:#66d9ef">in</span> regions) {
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># create dataframe that contains the column `id` that is list of all EEZ codes for one region</span>
 </span></span><span style="display:flex;"><span>  eez_code_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">get_region_id</span>(region_name <span style="color:#f92672">=</span> i, region_source <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;eez&#39;</span>, key <span style="color:#f92672">=</span> key)
@@ -684,7 +684,7 @@ Expand to see the Global Fishing Watch API in action
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Processing apparent fishing hours for &#34;</span>, i, <span style="color:#e6db74">&#34; EEZ code &#34;</span>, eez_codes))
 </span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">for</span>(j in eez_codes) { 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(j <span style="color:#66d9ef">in</span> eez_codes) { 
 </span></span><span style="display:flex;"><span>    fishing_hours <span style="color:#f92672">&lt;-</span> gfwr<span style="color:#f92672">::</span><span style="color:#a6e22e">get_raster</span>(spatial_resolution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;high&#39;</span>, <span style="color:#75715e"># 0.01 degree resolution </span>
 </span></span><span style="display:flex;"><span>                                      temporal_resolution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;yearly&#39;</span>,
 </span></span><span style="display:flex;"><span>                                      group_by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;flagAndGearType&#39;</span>, 
@@ -711,7 +711,7 @@ Expand to see the Global Fishing Watch API in action
 <p>While initially cleaning the Global Fishing Watch data, we separate it into different dataframes for trawling and dredging since we need to process the geartypes differently. In order to convert the fishing effort coordinates into annual <code>spatRasters</code>, we use the following approach:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>years <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(<span style="color:#ae81ff">2012</span><span style="color:#f92672">:</span><span style="color:#ae81ff">2020</span>) 
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for</span>(i in years){
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(i <span style="color:#66d9ef">in</span> years){
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># trawling data:</span>
 </span></span><span style="display:flex;"><span>  trawl_annual_raster <span style="color:#f92672">&lt;-</span> fish_effort_trawl_annual <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span>    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(year <span style="color:#f92672">==</span> i) <span style="color:#f92672">%&gt;%</span>
@@ -828,7 +828,7 @@ Expand to see the Global Fishing Watch API in action
 <p>Since we are working with only two layers and are executing a basic multiplication, we can use the simplest option: <code>app()</code> or have a little more fun with the syntax and use <code>lapp()</code> like so:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>trawling_corrected <span style="color:#f92672">&lt;-</span> terra<span style="color:#f92672">::</span><span style="color:#a6e22e">lapp</span>(
 </span></span><span style="display:flex;"><span>  trawl_stack, 
-</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(x,y){<span style="color:#a6e22e">return</span>(x<span style="color:#f92672">*</span>y)}
+</span></span><span style="display:flex;"><span>  fun <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(x,y){<span style="color:#66d9ef">return</span>(x<span style="color:#f92672">*</span>y)}
 </span></span><span style="display:flex;"><span>)
 </span></span></code></pre></div><p>If we were working with <code>rasterLayers</code> in the <code>raster</code> package, we would have used the general function <code>calc()</code> for simple calculations.</p>
 <p>After cleaning up the dredging <code>spatRaster</code>, we want to add the fishing effort associated with each cell to our corrected trawling raster, so we stack them as we did before and execute simple addition across layers:</p>
@@ -843,7 +843,7 @@ Expand to see the Global Fishing Watch API in action
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>years_all <span style="color:#f92672">&lt;-</span>  <span style="color:#a6e22e">as.factor</span>(<span style="color:#ae81ff">2012</span><span style="color:#f92672">:</span><span style="color:#ae81ff">2020</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for </span>(i in years_all) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> years_all) {
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;Processing &#34;</span>, i, <span style="color:#e6db74">&#34; fishing effort.&#34;</span>))
 </span></span><span style="display:flex;"><span>  
@@ -857,7 +857,7 @@ Expand to see the Global Fishing Watch API in action
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># sum effort by polygon and append polygon dataframes into 1</span>
 </span></span><span style="display:flex;"><span>  all_polygon_effort <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">for </span>(j in <span style="color:#a6e22e">seq_along</span>(extracted)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (j <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">seq_along</span>(extracted)) {
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    df <span style="color:#f92672">&lt;-</span> extracted[[j]]
 </span></span><span style="display:flex;"><span>    
@@ -1061,31 +1061,31 @@ C, Woo K, Yutani H (2019). “Welcome to the tidyverse.” <em>Journal of Open S
 
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/about/" class="right-nav-item">What is OHI</a>
+      <a href= "http://localhost:1313/about/" class="right-nav-item">What is OHI</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/news/" class="right-nav-item">News</a>
+      <a href= "http://localhost:1313/news/" class="right-nav-item">News</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/about/ohifellows/" class="right-nav-item">OHI Fellows</a>
+      <a href= "http://localhost:1313/about/ohifellows/" class="right-nav-item">OHI Fellows</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/about/people/" class="right-nav-item">People</a>
+      <a href= "http://localhost:1313/about/people/" class="right-nav-item">People</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/about/publications/" class="right-nav-item">Publications</a>
+      <a href= "http://localhost:1313/about/publications/" class="right-nav-item">Publications</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/about/supporters/" class="right-nav-item">Supporters</a>
+      <a href= "http://localhost:1313/about/supporters/" class="right-nav-item">Supporters</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "https://oceanhealthindex.org/about/contact/" class="right-nav-item">Contact</a>
+      <a href= "http://localhost:1313/about/contact/" class="right-nav-item">Contact</a>
     </div>
   
 </div></section>
@@ -1093,7 +1093,7 @@ C, Woo K, Yutani H (2019). “Welcome to the tidyverse.” <em>Journal of Open S
 
 <footer class="footer">
   <div class="footer__content footer__content--top">
-    <a class="footer__logo" href="https://oceanhealthindex.org">
+    <a class="footer__logo" href="http://localhost:1313/">
 
 
   

@@ -2,29 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goal: Sense of Place on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/goals/sense-of-place/</link>
+    <link>http://localhost:1313/goals/sense-of-place/</link>
     <description>Recent content in Goal: Sense of Place on Ocean Health Index</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oceanhealthindex.org/goals/sense-of-place/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/goals/sense-of-place/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sub-Goal: Iconic Species</title>
-      <link>https://oceanhealthindex.org/goals/sense-of-place/iconic-species/</link>
+      <link>http://localhost:1313/goals/sense-of-place/iconic-species/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oceanhealthindex.org/goals/sense-of-place/iconic-species/</guid>
-      <description>Protecting culturally significant species The iconic species subgoal measures the conservation status of iconic marine species, which are the animals that have unique importance to humans as demonstrated through traditional activities, ethnic or religious practices, existence value, or locally acknowledged aesthetic value.
-GOAL DESCRIPTION Iconic species are those that are relevant to local cultural identity through a species’ relationship to one or more of the following: 1) traditional activities such as fishing, hunting or commerce; 2) local ethnic or religious practices; 3) existence value; and 4) locally-recognized aesthetic value (e.</description>
+      <guid>http://localhost:1313/goals/sense-of-place/iconic-species/</guid>
+      <description>Protecting culturally significant species The iconic species subgoal measures the conservation status of iconic marine species, which are the animals that have unique importance to humans as demonstrated through traditional activities, ethnic or religious practices, existence value, or locally acknowledged aesthetic value.&#xA;GOAL DESCRIPTION Iconic species are those that are relevant to local cultural identity through a species’ relationship to one or more of the following: 1) traditional activities such as fishing, hunting or commerce; 2) local ethnic or religious practices; 3) existence value; and 4) locally-recognized aesthetic value (e.</description>
     </item>
-    
     <item>
       <title>Sub-Goal: Lasting Special Places</title>
-      <link>https://oceanhealthindex.org/goals/sense-of-place/lasting-special-places/</link>
+      <link>http://localhost:1313/goals/sense-of-place/lasting-special-places/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oceanhealthindex.org/goals/sense-of-place/lasting-special-places/</guid>
-      <description>IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT The Lasting Special Places sub-goal measures how well we are protecting, for current and future generations, the locations that contribute to marine-related cultural identity.
-GOAL DESCRIPTION Special places are coastal and marine areas that are culturally significant for a variety of reasons. Designating a place to be a landmark, monument, and/or Marine Protected Area can help ensure its existence, provide valuable ecosystem services and preserve cultural heritage and identity.</description>
+      <guid>http://localhost:1313/goals/sense-of-place/lasting-special-places/</guid>
+      <description>IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT The Lasting Special Places sub-goal measures how well we are protecting, for current and future generations, the locations that contribute to marine-related cultural identity.&#xA;GOAL DESCRIPTION Special places are coastal and marine areas that are culturally significant for a variety of reasons. Designating a place to be a landmark, monument, and/or Marine Protected Area can help ensure its existence, provide valuable ecosystem services and preserve cultural heritage and identity.</description>
     </item>
-    
   </channel>
 </rss>

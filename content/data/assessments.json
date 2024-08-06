@@ -2,7 +2,7 @@
   "Africa": [
     {
       "name": "Kenya",
-      "Status": "Active",
+      "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International, Africa Field Division",
       "Contact":"Dr. Peter Alele (palele@conservation.org)",
       "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
@@ -515,6 +515,20 @@
         {
           "name": "Media",
           "link": "https://nyegaragunung.net/en/english-how-healthy-is-the-bali-sea-bali-ocean-health-index-ohi-2018/"
+        }
+      ]
+    },
+    {
+      "name": "Indonesia-Tuban",
+      "Status": "Completed (2020)",
+      "LeadingGroup": "Universitas PGRI Ronggolawe",
+      "Contact": "Marita Joesidawati (maritajoes@gmail.com)",
+      "Description": "Measurement of Indonesian Marine Health Index to Assess The Health of The Coastal Ecosystem of Tuban, East Java.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://iopscience.iop.org/article/10.1088/1755-1315/1036/1/012046/meta"
         }
       ]
     },

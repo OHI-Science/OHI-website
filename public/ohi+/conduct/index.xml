@@ -2,39 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conduct an OHI&#43; on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/ohi&#43;/conduct/</link>
+    <link>http://localhost:1313/ohi&#43;/conduct/</link>
     <description>Recent content in Conduct an OHI&#43; on Ocean Health Index</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://oceanhealthindex.org/ohi+/conduct/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/ohi+/conduct/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inform</title>
-      <link>https://oceanhealthindex.org/ohi&#43;/conduct/inform/</link>
+      <link>http://localhost:1313/ohi&#43;/conduct/inform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oceanhealthindex.org/ohi&#43;/conduct/inform/</guid>
-      <description>Congratulations! You have successfully Conducted your indepenent OHI+ assessment, and you are in the last phase of OHI+, Inform. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers.
-Citation: Ocean Health Index. 2016. Ocean Health Index Assessment - Inform Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: ohi-science.org/inform</description>
+      <guid>http://localhost:1313/ohi&#43;/conduct/inform/</guid>
+      <description>Congratulations! You have successfully Conducted your indepenent OHI+ assessment, and you are in the last phase of OHI+, Inform. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers.&#xA;Citation: Ocean Health Index. 2016. Ocean Health Index Assessment - Inform Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: ohi-science.org/inform</description>
     </item>
-    
     <item>
       <title>Learn</title>
-      <link>https://oceanhealthindex.org/ohi&#43;/conduct/learn/</link>
+      <link>http://localhost:1313/ohi&#43;/conduct/learn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oceanhealthindex.org/ohi&#43;/conduct/learn/</guid>
-      <description>Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.
-You are currently at the first of four phases of conducting an OHI assessment - the Learn Phase. Here you will get an overview of the OHI framework, its workflow, what to expect from an OHI assessment, and how the scores are calculated, in order to prepare yourself for the next planning phase of an assessment.</description>
+      <guid>http://localhost:1313/ohi&#43;/conduct/learn/</guid>
+      <description>Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.&#xA;You are currently at the first of four phases of conducting an OHI assessment - the Learn Phase. Here you will get an overview of the OHI framework, its workflow, what to expect from an OHI assessment, and how the scores are calculated, in order to prepare yourself for the next planning phase of an assessment.</description>
     </item>
-    
     <item>
       <title>Plan</title>
-      <link>https://oceanhealthindex.org/ohi&#43;/conduct/plan/</link>
+      <link>http://localhost:1313/ohi&#43;/conduct/plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oceanhealthindex.org/ohi&#43;/conduct/plan/</guid>
-      <description>You have successfully Learned about OHI, and you can start Planning your own assessment. This section will help you understand the financial requirements, human resources, and data requirements of conducting an assessment, as well as how to engage stakeholders and assessmble a technical team, in order to Conduct an OHI assessment in the next phase.
-Citation: Ocean Health Index. 2016. Ocean Health Index Assessment - Plan Phases. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara.</description>
+      <guid>http://localhost:1313/ohi&#43;/conduct/plan/</guid>
+      <description>You have successfully Learned about OHI, and you can start Planning your own assessment. This section will help you understand the financial requirements, human resources, and data requirements of conducting an assessment, as well as how to engage stakeholders and assessmble a technical team, in order to Conduct an OHI assessment in the next phase.&#xA;Citation: Ocean Health Index. 2016. Ocean Health Index Assessment - Plan Phases. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara.</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,7 +9,7 @@ menu:
 ---
 The Ocean Health Index team develops scientific methods and calculates scores, manages current operations and directs future development, and communicates results to governments, marine managers, scientists, and the public.  
 
-Ben Halpern has been with the project since planning began in 2008.  
+Ben Halpern has been with the project since planning began in 2008. 
 
 The team gratefully acknowledges the individuals, foundations, organizations and corporations listed as Contributors and Sustaining Partners. This project would not exist without them.
 
@@ -21,7 +21,7 @@ The team gratefully acknowledges the individuals, foundations, organizations and
 
 ## Previous Contributors
 
-{{<contributors path="contributors.json">}}
+{{<contributors path="contributors.json">}} 
 
 
 
