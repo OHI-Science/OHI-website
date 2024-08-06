@@ -520,7 +520,7 @@
     },
     {
       "name": "Indonesia-Tuban",
-      "Status": "Completed (2020)", // check this update
+      "Status": "Completed (2020)",
       "LeadingGroup": "Universitas PGRI Ronggolawe",
       "Contact": "Marita Joesidawati (maritajoes@gmail.com)",
       "Description": "Measurement of Indonesian Marine Health Index to Assess The Health of The Coastal Ecosystem of Tuban, East Java.",
@@ -531,7 +531,7 @@
           "link": "https://iopscience.iop.org/article/10.1088/1755-1315/1036/1/012046/meta"
         }
       ]
-    }, // END Indonesia-Tuban
+    },
     {
       "name": "Israel",
       "Status": "Completed (2015)",
