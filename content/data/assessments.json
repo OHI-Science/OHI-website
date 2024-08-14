@@ -545,6 +545,20 @@
       ]
     },
     {
+      "name": "Indonesia-Maluku",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "Department of Marine Science, Faculty of Fishery and Marine Science and Konservasi Indonesia Foundation",
+      "Contact": "Irma Kesaulya (irkesaulya@gmail.com)",
+      "Description": "A partial analysis of ocean health index based on clean waters and biodiversity goals.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://jurnal.usk.ac.id/index/search/authors/view?firstName=Irma&middleName=&lastName=Kesaulya&affiliation=Pattimura%20University&country=ID"
+        }
+      ]
+    },
+    {
       "name": "Indonesia-Tuban",
       "Status": "Completed (2020)",
       "LeadingGroup": "Universitas PGRI Ronggolawe",
