@@ -87,6 +87,10 @@
       "isPlus": false,
       "Links": [
         {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/can-atl"
+        },
+        {
           "name": "Publications",
           "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178044"
         }
@@ -121,7 +125,12 @@
       "Contact": "Salomon Diaz (salomon.diaz @ semarnat.gob.mx)",
       "Description": "Working with local partners, this assessment will incorporate locally meaningful information, priorities, and perspectives to track change in the health of B.C.’s ocean during the past ten years and to describe how management may have contributed to these patterns.",
       "isPlus": false,
-      "Links": []
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/mex"
+        }
+      ]
     },
     {
       "name": "US-Northeast",
@@ -232,6 +241,10 @@
       "isPlus": false,
       "Links": [
         {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/sam"
+        },
+        {
           "name": "OHI Go Workshop",
           "link": "http://ohi-science.org/sam/workshop"
         }
@@ -268,8 +281,12 @@
           "link": "https://github.com/OHI-Science/mhi"
         },
         {
-          "name": "Webstie",
+          "name": "Website",
           "link": "http://ohi-science.org/mhi/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://raw.githack.com/OHI-4site/tet-scores/master/documents/methods-results/Supplement.html#1_Ocean_Health_Index_(OHI)_Global_Assessment"
         }
       ]
     }
@@ -386,6 +403,10 @@
         {
           "name": "Github",
           "link": "https://github.com/OHI-Norway/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://link.springer.com/article/10.1007/s11625-024-01521-6"
         }
       ]
     },
@@ -396,7 +417,12 @@
       "Contact": "Angel Borja (aborja@azti.es)",
       "Description": "This group will compare OHI process and scores with findings of other existing methodologies for assessing ocean health.",
       "isPlus": false,
-      "Links": []
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/bob"
+        }
+      ]
     },
     {
       "name": "Spain-Gulf Of Cadiz",
@@ -557,7 +583,12 @@
       "Contact": "Jungho Nam (jhnam007@gmail.com)",
       "Description": "Nationwide project to assess the health of oceans in South Korea. Efforts will focus on running management scenarios to test implications of proposed projects.",
       "isPlus": false,
-      "Links": []
+      "Links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/OHI-Science/kor"
+        }
+      ]
     }
   ]
 }
