@@ -545,6 +545,20 @@
       ]
     },
     {
+      "name": "Indonesia-Gulf of Madura",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "PB University, Marine Science and Technology Department and Universitas Terbuka, Fisheries Management Department",
+      "Contact": "Achmad Syukri Raihan (asyukri106@gmail.com)",
+      "Description": "Assessment of oceanographic trend and Ocean Health Index in the Gulf of Madura.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.e3s-conferences.org/articles/e3sconf/abs/2024/13/e3sconf_isst2024_01012/e3sconf_isst2024_01012.html"
+        }
+      ]
+    },
+    {
       "name": "Indonesia-Maluku",
       "Status": "Completed (2024)",
       "LeadingGroup": "Department of Marine Science, Faculty of Fishery and Marine Science and Konservasi Indonesia Foundation",
