@@ -8,4 +8,4 @@ menu:
     weight: 5
 ---
 
-<meta http-equiv="refresh" content="0; url=../images/htmls/Supplement.html">
+<meta http-equiv="refresh" content="0; url=../../images/htmls/Supplement.html">
