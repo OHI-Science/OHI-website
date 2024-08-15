@@ -8,4 +8,4 @@ menu:
     weight: 5
 ---
 
-{{<redirect path="../images/htmls/Supplement.html">}}
+<meta http-equiv="refresh" content="0; url=../images/htmls/Supplement.html">
