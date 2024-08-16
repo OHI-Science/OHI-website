@@ -2,14 +2,14 @@
   "Africa": [
     {
       "name": "Kenya",
-      "Status": "Active",
+      "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International, Africa Field Division",
       "Contact":"Dr. Peter Alele (palele@conservation.org)",
       "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/ken"
         },
         {
@@ -20,14 +20,14 @@
     },
     {
       "name": "Tanzania",
-      "Status": "Active",
+      "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International, Africa Field Division",
       "Contact":"Alice Ruhweza (aruhweza@conservation.org)",
       "Description": "Indian Ocean Commission award “Assessing the multisectorial context for biodiversity conservation in and sharing lessons among Tanzania and Kenya using the Ocean Health Index organizing framework and decision-making tool”.",
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/tza"
         },
         {
@@ -51,7 +51,7 @@
           "link": "https://link.springer.com/article/10.1007/s10113-018-1395-6"
         },
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/arc"
         }
       ]
@@ -69,7 +69,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/ohi-canada"
         },
         {
@@ -87,6 +87,10 @@
       "isPlus": false,
       "Links": [
         {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/can-atl"
+        },
+        {
           "name": "Publications",
           "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178044"
         }
@@ -101,7 +105,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/ohibc"
         },
         {
@@ -121,7 +125,12 @@
       "Contact": "Salomon Diaz (salomon.diaz @ semarnat.gob.mx)",
       "Description": "Working with local partners, this assessment will incorporate locally meaningful information, priorities, and perspectives to track change in the health of B.C.’s ocean during the past ten years and to describe how management may have contributed to these patterns.",
       "isPlus": false,
-      "Links": []
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/mex"
+        }
+      ]
     },
     {
       "name": "US-Northeast",
@@ -132,7 +141,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Northeast/ne-scores"
         },
         {
@@ -162,7 +171,7 @@
           "link": "/about/publications"
         },
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/ohi-uswest/releases"
         }
       ]
@@ -182,14 +191,14 @@
           "link": "https://www.sciencedirect.com/science/article/pii/S2212041614001363"
         },
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/ohi-fiji/releases"
         }
       ]
     },
     {
       "name": "New Caledonia",
-      "Status": "Active",
+      "Status": "Completed (2016)",
       "LeadingGroup": "Conservation International, Department of Marine Affairs",
       "Contact":"Mael Imirizaldu (mimirizaldu@conservation.org)",
       "Description": "Following the Proof of Concept assessment completed in 2016, the project focuses on establishing a baseline for the management of the Coral Sea Park to allow for ongoing monitoring, assessing, and adaptive management.",
@@ -200,7 +209,7 @@
           "link": "https://github.com/OHI-Science/ohi-science.github.io/blob/master/assets/downloads/pubs/OHI_New_Caledonia.pdf"
         },
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/cnc"
         }
       ]
@@ -218,7 +227,7 @@
           "link": "https://raw.githack.com/OHI-4site/pal-scores/master/documents/methods-results/Supplement.html"
         },
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-4site/pal-prep"
         }
       ]
@@ -231,6 +240,10 @@
       "Description": "National level assessment to measure progress towards ocean health and sustainable economic growth.",
       "isPlus": false,
       "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/sam"
+        },
         {
           "name": "OHI Go Workshop",
           "link": "http://ohi-science.org/sam/workshop"
@@ -268,8 +281,12 @@
           "link": "https://github.com/OHI-Science/mhi"
         },
         {
-          "name": "Webstie",
+          "name": "Website",
           "link": "http://ohi-science.org/mhi/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://raw.githack.com/OHI-4site/tet-scores/master/documents/methods-results/Supplement.html#1_Ocean_Health_Index_(OHI)_Global_Assessment"
         }
       ]
     }
@@ -297,7 +314,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/chl"
         }
       ]
@@ -311,7 +328,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/col"
         }
       ]
@@ -329,7 +346,7 @@
           "link": "https://ohi-science.org/resources/publications#ecuador"
         },
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/gye"
         }
       ]
@@ -377,15 +394,19 @@
     },
     {
       "name": "Norway",
-      "Status": "Active",
+      "Status": "Completed (2024)",
       "LeadingGroup": "Norwegian Institute for Nature Research",
       "Contact": "Dr. Per Fauchald (Per.Fauchald@nina.no)",
       "Description": "Study exploring human-ecological interactions in 81 municipalities in northern Norway.",
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Norway/"
+        },
+        {
+          "name": "Publications",
+          "link": "https://link.springer.com/article/10.1007/s11625-024-01521-6"
         }
       ]
     },
@@ -396,7 +417,12 @@
       "Contact": "Angel Borja (aborja@azti.es)",
       "Description": "This group will compare OHI process and scores with findings of other existing methodologies for assessing ocean health.",
       "isPlus": false,
-      "Links": []
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/bob"
+        }
+      ]
     },
     {
       "name": "Spain-Gulf Of Cadiz",
@@ -407,7 +433,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/cdz"
         }
       ]
@@ -421,7 +447,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/rdv"
         },
         {
@@ -439,7 +465,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/esw"
         },
         {
@@ -456,14 +482,14 @@
   "Asia": [
     {
       "name": "China",
-      "Status": "Active (2015)",
+      "Status": "Completed (2015)",
       "LeadingGroup": "China State Oceanic Administration",
       "Contact": "Zhiguo Liu (liuzhiguo150@163.com), Wen Quan (qwen@nmemc.gov.cn)",
       "Description": "National assessment of China’s 11 coastal provinces using locally developed models, reference points, and data.",
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/chn"
         }
       ]
@@ -505,7 +531,7 @@
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/bali"
         },
         {
@@ -515,6 +541,34 @@
         {
           "name": "Media",
           "link": "https://nyegaragunung.net/en/english-how-healthy-is-the-bali-sea-bali-ocean-health-index-ohi-2018/"
+        }
+      ]
+    },
+    {
+      "name": "Indonesia-Gulf of Madura",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "PB University, Marine Science and Technology Department and Universitas Terbuka, Fisheries Management Department",
+      "Contact": "Achmad Syukri Raihan (asyukri106@gmail.com)",
+      "Description": "Assessment of oceanographic trend and Ocean Health Index in the Gulf of Madura.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.e3s-conferences.org/articles/e3sconf/abs/2024/13/e3sconf_isst2024_01012/e3sconf_isst2024_01012.html"
+        }
+      ]
+    },
+    {
+      "name": "Indonesia-Maluku",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "Department of Marine Science, Faculty of Fishery and Marine Science and Konservasi Indonesia Foundation",
+      "Contact": "Irma Kesaulya (irkesaulya@gmail.com)",
+      "Description": "A partial analysis of ocean health index based on clean waters and biodiversity goals.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://jurnal.usk.ac.id/index/search/authors/view?firstName=Irma&middleName=&lastName=Kesaulya&affiliation=Pattimura%20University&country=ID"
         }
       ]
     },
@@ -534,14 +588,14 @@
     },
     {
       "name": "Israel",
-      "Status": "Completed (2015)",
+      "Status": "Completed (2014)",
       "LeadingGroup": "Hamaraag — Israel’s National Nature Assessment Program",
       "Contact": "Yossi Mossel (yossimosse@hamaarag.org.il)",
       "Description": "First indepently-led assessment, evaluated 6 regions of Israel’s Mediterranean coast.",
       "isPlus": false,
       "Links": [
         {
-          "name": "Github",
+          "name": "GitHub",
           "link": "https://github.com/OHI-Science/ohi-israel"
         },
         {
@@ -552,12 +606,17 @@
     },
     {
       "name": "South Korea",
-      "Status": "Active (2015)",
+      "Status": "Completed (2016)",
       "LeadingGroup": "Korean Maritime Institute (KMI)",
       "Contact": "Jungho Nam (jhnam007@gmail.com)",
       "Description": "Nationwide project to assess the health of oceans in South Korea. Efforts will focus on running management scenarios to test implications of proposed projects.",
       "isPlus": false,
-      "Links": []
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/kor"
+        }
+      ]
     }
   ]
 }
