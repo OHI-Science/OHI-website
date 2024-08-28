@@ -8,4 +8,4 @@ menu:
     weight: 5
 ---
 
-{{< redirect path="/images/htmls/Supplement2.html" >}}
+{{< redirect path="/images/test.html" >}}
