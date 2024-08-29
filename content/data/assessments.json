@@ -521,7 +521,21 @@
           "link": "https://www.sciencedirect.com/science/article/pii/S1470160X16000480"
         }
       ]
-    },    
+    }, 
+    {
+      "name": "China - Fujian Province",
+      "Status": "Completed (2018)",
+      "LeadingGroup": "College of the Environment & Ecology, Xiamen University",
+      "Contact": "Xiongzhi Xue (xzxue@xmu.edu.cn)",
+      "Description": "A methodological framework for coastal development assessment: A case study of Fujian Province, China.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0048969717326608#f0025"
+        }
+      ]
+    },
     {
       "name": "China - Shanghai",
       "Status": "Completed (2021)",
