@@ -377,6 +377,15 @@
       "Description": "Pilot study in Ica province.",
       "isPlus": false,
       "Links": []
+    },
+    {
+      "name": "Argentina-Patagonia",
+      "Status": "Active",
+      "LeadingGroup": "n/a",
+      "Contact": "n/a",
+      "Description": "n/a",
+      "isPlus": false,
+      "Links": []
     }
   ],
   "Europe": [
