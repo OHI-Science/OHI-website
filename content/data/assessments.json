@@ -269,6 +269,24 @@
       ]
     },
     {
+      "name": "Moorea",
+      "Status": "Completed (2022)",
+      "LeadingGroup": "National Center for Scientific Research, PSL Université Paris",
+      "Contact":"Maria D. Castro-Cadenas (mariadolores.castrocadenas@imbrsea.eu)",
+      "Description": "Tracking changes in social-ecological systems along environmental disturbances with the ocean health index.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0048969722035203"
+        },
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/mra"
+        }
+      ]
+    },
+    {
       "name": "US-Hawaii",
       "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International and the U.S. National Oceanic and Atmospheric Administration",
