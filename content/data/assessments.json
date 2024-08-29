@@ -51,6 +51,22 @@
       ]
     }
   ],
+  "Antarctica": [
+    {
+      "name": "Antarctic Coast",
+      "Status": "Completed (2017)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis",
+      "Contact":"Benjamin Halpern (halpern@nceas.ucsb.edu)",
+      "Description": "An assessment of the Antartic coast broken into its subregions defined by the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR) and as a whole region using 7 OHI.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2017.00020/full"
+        }
+      ]
+    }
+  ],
   "Arctic": [
     {
       "name": "Arctic",
