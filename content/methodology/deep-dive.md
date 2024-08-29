@@ -7,5 +7,4 @@ menu:
     parent: 'Methodology'
     weight: 5
 ---
-
-{{< redirect path="/images/test.html" >}}
+{{< redirect path="../images/htmls/Supplement.html" >}}
