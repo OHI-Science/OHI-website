@@ -716,6 +716,20 @@
       ]
     },
     {
+      "name": "Philippines - Davao City, Mati City, Cagayan de Oro, Cebu City, Puerto Princesa, Metro Manila, and Laoag City",
+      "Status": "Completed (2022)",
+      "LeadingGroup": "Transdisciplinary Science and Engineering Program, Graduate School of Advanced Science and Engineering, Hiroshima University",
+      "Contact": "Jonathan Salar Cabrera (jonathan.s.cabrera85@gmail.com)",
+      "Description": "Development of adaptive expert-driven coastal zone health index framework.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.mdpi.com/2077-1312/10/9/1183"
+        }
+      ]
+    },
+    {
       "name": "South Korea",
       "Status": "Completed (2016)",
       "LeadingGroup": "Korean Maritime Institute (KMI)",
