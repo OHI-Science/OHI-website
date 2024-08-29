@@ -495,6 +495,20 @@
       ]
     },
     {
+      "name": "China - Laizhou Bay",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "College of Environmental Science and Engineering, Ocean University of China and The First Institute of Oceanography, State Oceanic Administration",
+      "Contact": "Wei Zheng (zhengwei@fio.org.cn)",
+      "Description": "Assessment and regulation of ocean health based on ecosystem services: Case study in the Laizhou Bay, China.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://link.springer.com/article/10.1007/s13131-015-0777-6#preview"
+        }
+      ]
+    },
+    {
       "name": "China - Xiamen",
       "Status": "Completed (2016)",
       "LeadingGroup": "Fujian Provincial Key Laboratory for Coastal Ecology and Environmental Studies, Coastal and Ocean Management Institute, Xiamen University",
