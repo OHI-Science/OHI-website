@@ -19,6 +19,20 @@
       ]
     },
     {
+      "name": "Nairobi Convention",
+      "Status": "Completed (2012)",
+      "LeadingGroup": "Nairobi Convention Secretariat, Conservation International and CORDIO",
+      "Contact": "Ussif Rashid Sumaila (r.sumaila@oceans.ubc.ca)",
+      "Description": "Measuring Ocean Health in the Western Indian Ocean.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://nairobiconvention.org/clearinghouse/sites/default/files/Measuring%20Ocean%20Health%20in%20the%20Western%20Indian%20Ocean.pdf"
+        }
+      ]
+    },
+    {
       "name": "Tanzania",
       "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International, Africa Field Division",
