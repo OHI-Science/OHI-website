@@ -661,6 +661,20 @@
       ]
     },
     {
+      "name": "Japan-Tokyo Metropolitan Area (Chiba, Kanagawa, Tokyo)",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "Graduate School of Frontier Sciences, The University of Tokyo",
+      "Contact": "Yutian Ding (6821112140@edu.k.u-tokyo.ac.jp)",
+      "Description": "Application of the Ocean Health Index to assess ocean and coastal conditions of the Tokyo Metropolitan area.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1470160X24007374#da005"
+        }
+      ]
+    },
+    {
       "name": "South Korea",
       "Status": "Completed (2016)",
       "LeadingGroup": "Korean Maritime Institute (KMI)",
