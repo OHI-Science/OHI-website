@@ -36,7 +36,7 @@
       "name": "Red Sea and Gulf of Aden",
       "Status": "Completed (2024)",
       "LeadingGroup": "National Center for Ecological Analysis and Synthesis",
-      "Contact":"n/a",
+      "Contact":"Melanie Frazier (frazier@nceas.ucsb.edu)",
       "Description": "Assessment of ocean health in the Red Sea and Gulf of Aden region.",
       "isPlus": false,
       "Links": [
@@ -650,10 +650,6 @@
         {
           "name": "Website",
           "link": "http://ohi-science.org/bali"
-        },
-        {
-          "name": "Media",
-          "link": "https://nyegaragunung.net/en/english-how-healthy-is-the-bali-sea-bali-ocean-health-index-ohi-2018/"
         }
       ]
     },
