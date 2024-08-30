@@ -33,6 +33,24 @@
       ]
     },
     {
+      "name": "Red Sea and Gulf of Aden",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis",
+      "Contact":"n/a",
+      "Description": "Assessment of ocean health in the Red Sea and Gulf of Aden region.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-RSGA/OHI_RSGA"
+        },
+        {
+          "name": "Website",
+          "link": "https://ohi-rsga.github.io/OHI_RSGA/"
+        }
+      ]
+    },
+    {
       "name": "Tanzania",
       "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International, Africa Field Division",
