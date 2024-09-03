@@ -3,3 +3,8 @@ title: Ocean Health Index
 languageCode: en-us
 metaDataFormat: yaml
 enableEmoji: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
