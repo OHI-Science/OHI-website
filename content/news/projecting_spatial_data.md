@@ -4,8 +4,8 @@ name: "The Challenges of Projecting Spatial Data"
 bg_image: "/images/crs-examples/dark-globe-angle-3.jpg"
 card_image: "/images/crs-examples/old-world-map-card.jpg"
 preview_text: "Have you ever wondered what happens to your data when you project it from one CRS to another? Or whether or not you should convert your data from counts to density..."
-Date: 2024-09-10
-author: Anna Ramji
+date: 2024-09-10
+author: "Anna Ramji"
 menu:
   main:
     parent: 'News'
@@ -13,14 +13,12 @@ menu:
 ---
 
 </br>
-</br>
-{{<newsHead>}}
 
 <h1 style="margin-bottom: 0;">The Trouble with Transformation</h1>
 <div style="height: 10px;"></div>
 <h4 style="margin-top: 0;">The Challenges of Projecting Spatial Data</h4>
 
-
+{{<newsHead>}}
 
 ## Introduction 
 
@@ -50,10 +48,9 @@ We’ll read the raster into R using `terra`’s `rast()` function and the `{her
 
 <details>
 <summary>`{here}`</summary>
-<p> <br>
+<p>
 To learn more about `{here}`, see their [official website](https://here.r-lib.org/) and
 the [CRAN documentation](https://cloud.r-project.org/web/packages/here/index.html).
-</br>
 </p>
 </details>
 
