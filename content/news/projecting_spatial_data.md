@@ -495,19 +495,19 @@ check
 
 ## References
 
-Duncan, D. (2024). Ensuring Accuracy in Spatial Analysis. Ocean Health Index. <https://oceanhealthindex.org/news/crs_deep_dive/> 
+Duncan, D. (2024). *Ensuring Accuracy in Spatial Analysis*. Ocean Health Index. <https://oceanhealthindex.org/news/crs_deep_dive/> 
 
-National Oceanic and Atmospheric Administration. (n.d.). Commercial fishing (Landings and revenue). NOAA Fisheries Ecosystem and Socioeconomic Indicators. <https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit> 
+National Oceanic and Atmospheric Administration. (n.d.). *Commercial fishing (Landings and revenue)*. NOAA Fisheries Ecosystem and Socioeconomic Indicators. <https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit> 
 
 
-Sea Around Us. (2024). Catches by Fishing sector in the Global Ocean [Data visualization]. Retrieved September 10, 2024, from <https://www.seaaroundus.org/data/#/global?chart=catch-chart&dimension=sector&measure=tonnage&limit=10>
+Sea Around Us. (2024). *Catches by Fishing sector in the Global Ocean* [Data visualization]. Retrieved September 10, 2024, from <https://www.seaaroundus.org/data/#/global?chart=catch-chart&dimension=sector&measure=tonnage&limit=10>
 
 Vox. (2016). Why all world maps are wrong [Video]. YouTube. <https://www.youtube.com/watch?v=kIID5FDi2JQ> 
 
-Watson, R. (2017). A database of global marine commercial, small-scale, illegal and unreported fisheries catch 1950–2014. Scientific Data, 4, 170039
+Watson, R. (2017). A database of global marine commercial, small-scale, illegal and unreported fisheries catch 1950–2014. *Scientific Data, 4*, 170039
 
 
-Xiao, N. (2017). Map projections [Data visualization]. <https://ncxiao.github.io/map-projections/index.html>  
+Xiao, N. (2017). *Map projections* [Data visualization]. <https://ncxiao.github.io/map-projections/index.html>  
 
 
 **News Card Image:** Photo by <a href="https://unsplash.com/@nypl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">The New York Public Library</a> on <a href="https://unsplash.com/photos/pN3nx7YJ_B4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
