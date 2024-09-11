@@ -70,10 +70,6 @@ When working with new data, it is important to start with a preliminary explorat
 fish
 ```
 
-<details>
-<summary>
-Output (raster information)
-</summary>
 
 ```console
 class       : SpatRaster 
@@ -86,7 +82,7 @@ name        : commercial_landings_2017
 min value   :                      0.0 
 max value   :                 145169.4
 ```
-</details>
+
 
 This shows us important basic information about the spatial object, `fish`. What we're going to pay a lot of attention to in this example is the coordinate reference system (CRS) (`coord. ref.:` in the output above). 
 
@@ -95,9 +91,14 @@ A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/cr
 <details>
 <summary>My Favorite Resources for Understanding Coordinate Reference Systems</summary>
 <br/>
-<p>
-My favorite resources for understanding this concept are [this Vox video](https://www.youtube.com/watch?v=kIID5FDi2JQ) on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map, [this ArcGIS Pro article](https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm), and [Ningchuan Xiao's interactive visualization](https://ncxiao.github.io/map-projections/index.html) of how different projections warp the area of different parts of the world using [Tissot's indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix) and Gedymin faces. If you're not a fan of gifs you can click "pause" on that visualization, or use [this Map Projection Playground](https://observablehq.com/@floledermann/projection-playground) by Florian Ledermann to visualize how different variables impact 2-D representations of area.
-</p>
+
+My favorite resources for understanding this concept are:
+*   <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map
+
+*   <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a>
+
+*   and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using [Tissot's indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix) and Gedymin faces by <a href="https://github.com/ncxiao">Ningchuan Xiao</a>. If you're not a fan of gifs you can click "pause" on that visualization, or use [this Map Projection Playground](https://observablehq.com/@floledermann/projection-playground) by Florian Ledermann to visualize how different variables impact 2-D representations of area.
+
 </details>
 
 
@@ -143,7 +144,7 @@ terra::plot(cell_area,
 print(cell_area)
 ```
 
-<details>
+
 <summary>
 Output (cell area summary)
 </summary>
@@ -162,7 +163,7 @@ min value   :  122442386
 max value   : 3077249667 
 	
 ```
-</details>
+
 
 The summary output shows us that the cell size, or surface area covered by individual raster cells, varies significantly, with a minimum area of 122 million square meters (m<sup>2</sup>) and maximum area of 3 billion m<sup>2</sup>. We checked that these were in square meters by using `terra::crs()` on the object. You can also run `terra::expanse()` on the `cell_area` object, and for an intuition check, the surface area of the Earth is 510 trillion m<sup>2</sup>, which is close to what we get (around 509 trillion). This confirms that we are working in square meters. 
 
@@ -229,8 +230,7 @@ terra::plot(log(fish + 1),  main = "Log-transformed Commercial Landings (EPSG:43
 <figcaption>Log-transformed commercial landings (tonnes), in original CRS projection EPSG:4326</figcaption>
 </center>
 
-
-
+<br/>
 
 According to this visualization, there are more fisheries landings closer to coasts, with notable aggregations around Northern Europe, East and Southeast Asia, and Alaska. 
 
@@ -250,8 +250,7 @@ Output (Sum)
 </summary>
 
 ```console
-
-sum
+                               sum
 <dbl>
 commercial_landings_2017	86331119	
 ```
@@ -457,7 +456,7 @@ commercial_landings_2017 85253920
 This total value is now around 85 million! Yay! While this is not exactly the same as the value we calculated in the original data (86 million), is significantly closer to it than the value of 389 million that we got by simply projecting the commercial landings (counts) data. This shows that converting counts to density *before* projecting to a new CRS is absolutely required if you do not want to introduce a massive error in your data. 
 
 
-Beyond the potential for errors, density, or $\frac{tonnes}{ m^2}$ , can be visually less biased than counts ($tonnes$) because it automatically controls for differences in cell sizes when working with lat/lon CRS (or, any unequal area CRS).. 
+Beyond the potential for errors, density, or $$\frac{tonnes}{ m^2}$$ , can be visually less biased than counts ($$tonnes$$) because it automatically controls for differences in cell sizes when working with lat/lon CRS (or, any unequal area CRS).. 
 
 If we had not converted to density before projecting the data to Mollweide, and continued to reproject to another CRS, the data would continue to be warped and transformed, echoing the original mistake. 
 
