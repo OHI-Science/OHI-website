@@ -109,7 +109,7 @@ The `dimensions` field indicates that there are 347 rows, 720 columns, and only 
 
 The `lon/lat` text before `WGS 84` in the output indicates that we are dealing with a geographic CRS with angular units (degrees) of latitude and longitude. 
 
-The `name` field indicates that the raster has one layer, named "commercial_landings_2017". The `min value` and `max value` fields indicate that across all raster cells in this layer, the minimum value is 0 and the maximum value is 145169.4. 
+The `name` field indicates that the raster has one layer, named "commercial_landings_2017". The `min value` and `max value` fields indicate that across all raster cells in this layer, the minimum value is `0` and the maximum value is `145169.4`. 
 
 Another important aspect of a raster's structure is its resolution. Resolution describes the amount of Earth's area that each grid cell represents. When a raster has more cells, the data will have a finer, more detailed resolution. One interesting thing about lon/lat coordinate reference systems is that the cells represent different amounts of area. This has all sorts of implications for how we interpret visualizations of the data!
 
@@ -168,10 +168,10 @@ The summary output shows us that the cell size, or surface area covered by indiv
 
 The plot shows us that the cell size is not consistent across the globe – cell size appears to decrease as we move from the equator to the poles. This is notable for several reasons: 
 
-First, the poles may appear to have higher values than they actually do – the visualization shows us value (commercial landings in tonnes) per cell size. The same value visualized near the poles will appear higher than if it were visualized near the equator. 
-We can think about this with an example commercial landings value of 200 tonnes and cell areas of 50 m<sup>2</sup> near the equator and 20 m<sup>2</sup> near the poles. The value will appear as a 4 near the equator and a 10 near the poles. Thus, this coarser resolution at the poles can lead to higher landings shown over a greater area than in reality.
+*   The poles may appear to have higher values than they actually do – the visualization shows us value (commercial landings in tonnes) per cell size. The same value visualized near the poles will appear higher than if it were visualized near the equator. 
+    *   We can think about this with an example commercial landings value of 200 tonnes and cell areas of 50 m<sup>2</sup> near the equator and 20 m<sup>2</sup> near the poles. The value will appear as a 4 near the equator and a 10 near the poles. Thus, this coarser resolution at the poles can lead to higher landings shown over a greater area than in reality.
 
-This inconsistency in cell area may also hide some higher values near the equator, as each of those larger raster cells appear as uniformly sized pixels when plotted with the rest of the data.
+*   This inconsistency in cell area may also hide some higher values near the equator, as each of those larger raster cells appear as uniformly sized pixels when plotted with the rest of the data.
 
 
 
@@ -282,8 +282,6 @@ SPOILER ALERT: Because we are working with count data (i.e., tonnes), this will 
 
 We often use the Mollweide projection in our research because it is an equal area projection that is easier to work with and does not visually distort the significance of the poles. 
 
-For an interactive visualization of how areas are distorted in different projections, I recommend Ningchuan Xiao's [Map Projections visualizer](https://ncxiao.github.io/map-projections/index.html). 
-
 
 ### Process
 
@@ -314,7 +312,8 @@ Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected
 <figcaption>Log-transformed commercial landings data, projected to Mollweide</figcaption>
 </center>
 
-<\br>
+</br>
+
 Compared to the log-transformed landings data in its original CRS, EPSG:4326: 
 <center>
 <img src="/images/crs-examples/fish_log_plot_og_crs_simple.png"/>
