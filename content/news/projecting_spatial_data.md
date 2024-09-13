@@ -77,7 +77,10 @@ When working with new data, it is important to start with a preliminary explorat
 # print out geospatial data info (class, dimensions, resolution, extent, CRS, etc.)
 fish
 ```
-
+<details open>
+<summary>
+Output (summary of <code>fish</code> spatial object)
+</summary>
 
 ```console
 class       : SpatRaster 
@@ -90,7 +93,7 @@ name        : commercial_landings_2017
 min value   :                      0.0 
 max value   :                 145169.4
 ```
-
+</details>
 
 
 This spatial object's coordinate reference system (CRS) – printed on the `coord. ref. :` line – is [WGS 84 (EPSG:4326)](https://epsg.io/4326), which is a geographic CRS used by Google Earth and is the native system of Global Positioning Systems (GPS). `WGS 84` refers to the datum World Geodetic System 1984 ensemble, which specifies that the WGS 84 ellipsoid is used. `EPSG 4326` defines the full CRS using the WGS 84 ellipsoid, and it is the horizontal component of the 3-dimensional system. The `lon/lat` text before `WGS 84` in the output indicates that we are dealing with a geographic coordinate system with angular units (degrees) of latitude and longitude. 
@@ -144,7 +147,7 @@ What do you notice about how cell size changes in relation to the equator?
 print(cell_area)
 ```
 
-
+<details open>
 <summary>
 Output (cell area summary)
 </summary>
@@ -163,7 +166,7 @@ min value   :  122442386
 max value   : 3077249667 
 	
 ```
-
+</details>
 
 The summary output shows that area represented by each raster cell ranges from 122 million square meters (m<sup>2</sup>) to 3 billion m<sup>2</sup>. We confirmed that these were in square meters with `terra::crs()`. We also summed the total global area using `terra::expanse()` on the `cell_area` object, and obtained a total calculated surface area of around 509 trillion, which is similar to Earth's 510 trillion m<sup>2</sup> area. 
 
@@ -186,8 +189,10 @@ We can use `summary(fish)` for a basic statistical summary of the map's values:
 # print out summary of value layer
 summary(fish)
 ```
-
-<summary>Output:</summary>
+<details>
+<summary>
+Output (statistical summary of <code>fish</code>)
+</summary>
 
 ```console
  commercial_landings_2017
@@ -200,6 +205,7 @@ summary(fish)
  NA's   :47150 
 
 ```
+</details>
 
 And we can use `terra::plot()` to visualize the data:
 
@@ -242,8 +248,9 @@ terra::global(fish, "sum", na.rm = TRUE)
 #> 86.3 million tonnes
 ```
 
+<details open>
 <summary>
-Output:
+Global summation of values (tonnes)
 </summary>
 
 ```console
@@ -251,6 +258,7 @@ Output:
 <dbl>
 commercial_landings_2017	86331119	
 ```
+</details>
 
 ***Does this value make sense?***
 
@@ -488,11 +496,16 @@ terra::global(new_tonnes, "sum", na.rm = TRUE)
 #> ~85 million!
 
 ```
+<details open>
+<summary>
+Output (total commercial landings following density-to-counts approach)
+</summary>
 
 ```console
                               sum
 commercial_landings_2017 85253920	
 ```
+</details>
 
 This total value is now around 85 million! Yay! While this is not exactly the same as the value we calculated in the original data (86 million), is significantly closer to it than the value of 389 million that we got by simply projecting the commercial landings (counts) data. 
 
