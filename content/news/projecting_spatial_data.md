@@ -335,10 +335,12 @@ terra::plot(log(fish + 1), main = "Original CRS: WGS 84 EPSG 4326")
 
 <div id="Figure1" class="tabcontent">
   <img src="/images/crs-examples/fish_log_plot_mollweide.png" alt="Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide">
+  <figcaption>Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide</figcaption>
 </div>
 
 <div id="Figure2" class="tabcontent">
-  <img src="/images/crs-examples/fish_log_plot_og_crs_simple.png" alt="Log-transformed raster of commercial fisheries landings (tonnes, 2017) in the original CRS (WGS 84 EPSG:4326)" figcaption="Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide">
+  <img src="/images/crs-examples/fish_log_plot_og_crs_simple.png" alt="Log-transformed raster of commercial fisheries landings (tonnes, 2017) in the original CRS (WGS 84 EPSG:4326)">
+  <figcaption>Log-transformed raster of commercial fisheries landings (tonnes, 2017) in the original CRS (WGS 84 EPSG:4326)</figcaption>
 </div>
 
 <script>
@@ -360,19 +362,6 @@ document.getElementById("defaultOpen").click();
 </script>
 
 </br>
-
-<center>
-<img src="/images/crs-examples/fish_log_plot_mollweide.png"/>
-<figcaption>Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide</figcaption>
-</center>
-
-</br>
-
-Compared to: 
-<center>
-<img src="/images/crs-examples/fish_log_plot_og_crs_simple.png"/>
-<figcaption>Log-transformed raster of commercial fisheries landings (tonnes, 2017) in the original CRS (WGS 84 EPSG:4326)</figcaption>
-</center>
 
 
 When looking at the Mollweide plot, even when comparing it to the plot of the data in its original CRS, the values don't appear to have changed dramatically. We can see that the shape is quite different though – we've gone from a rectangle to an oval, and can see the warping and changes around the edges, especially at the polar extremes. There are still aggregations of higher values around the coasts of Northern Europe, East and Southeast Asia, and Alaska. 
