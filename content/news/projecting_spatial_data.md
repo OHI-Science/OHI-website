@@ -55,14 +55,12 @@ We'll read the raster into R using `terra`'s `rast()` function and the `{here}` 
 
 <details>
 <summary>
-<code>`{here}`</code>
+<code>{here}</code>
 </summary>
 
-The `here()` function describes the file path to the project root, or location where the project is located on your
-computer. It is useful for creating reproducible file paths in version-controlled R projects and enables file paths to be compatible across different operating systems by using comma separated strings, rather than hard-coded "/" or "\" separators. 
+The `here()` function describes the file path to the project root, or location where the project is located on your computer. It is useful for creating reproducible file paths in version-controlled R projects and enables file paths to be compatible across different operating systems by using comma separated strings, rather than hard-coded directional "/" or "\\" separators. 
 
-To learn more about the `{here}` package, check out the <a href="https://here.r-lib.org/">official website</a> and
-the <a href="https://cloud.r-project.org/web/packages/here/index.html">CRAN documentation</a>.
+To learn more about the `{here}` package, check out the <a href="https://here.r-lib.org/">official website</a> and the <a href="https://cloud.r-project.org/web/packages/here/index.html">CRAN documentation</a>.
 
 </details>
 
@@ -102,21 +100,10 @@ This is our initial geographic CRS, and any changes we make to this down the lin
 A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/crs_deep_dive/) dives into details about coordinate reference systems, projections, and more. For now, we can think about coordinate reference systems as a way to describe locations in a standardized way such that a 2-dimensional point on a projected map describes a "real" position on Earth. 
 
 <details>
-<summary>My favorite resources for understanding and visualizing different Coordinate Reference Systems</summary>
+<summary><b>My favorite resources for understanding and visualizing different Coordinate Reference Systems</b></summary>
 <br/>
 
-My favorite resources for understanding this concept are:
-
-<ul>
-  <li> * <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map</li>
-  <li>- <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a></li>
-  <li>and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a></li>
-  <li>If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.</li>
-</ul>
-
-*  test
-
--  test2
+My favorite resources for understanding this concept are: <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map, <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a>, and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a>. If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.
 
 </details>
 
@@ -183,16 +170,15 @@ The summary output shows that area represented by each raster cell ranges from 1
 The plot shows us that the raster cells do not represent the same area across the globe. As we move from the equator to the poles, the area that raster cells represent decreases significantly. 
 
 This is notable for several reasons: 
-<ul>
-*   <li list-style: circle>The poles will be over-represented in any visual representation of these data. This is why Greenland looks so large in many maps – it is often visually represented to have the same area as Africa, when in reality Africa is over 14 times larger.</li> 
+
+*  The poles will be over-represented in any visual representation of these data. This is why Greenland looks so large in many maps – it is often visually represented to have the same area as Africa, when in reality Africa is over 14 times larger.
 
 *   The data will be misleading if the values are counts, e.g., tonnes of fish, number of people, etc.. For example, imagine that fish population densities are constant throughout the oceans (which is obviously not true). If this density data is converted to counts data, the extremes of the Northern and Southern Hemispheres will have lower counts because they represent less ocean area. 
 
 *   This inconsistency in cell area may also hide some higher values near the equator, as each of those larger raster cells appear as uniformly sized pixels when plotted with the rest of the data.
-</ul>
 
 
-Now we can explore the data within the map architecture. 
+Now that we understand more about the map architecture, we can explore the data within it!
 
 We can use `summary(fish)` for a basic statistical summary of the map's values:
 
@@ -224,7 +210,7 @@ terra::plot(fish)
 
 <center>
 <img src="/images/crs-examples/fish_base_plot.png"/>
-<figcaption>Basic plot of commercial landings (tonnes) 2017 data.</figcaption>
+<figcaption>Basic plot of commercial fisheries landings (tonnes) in 2017.</figcaption>
 </center>
 
 This plot is not very helpful for visualizing general patterns in landings because a few very large values of landings are making the smaller values difficult to see. We can log-transform the data to get a better look at what's going on:
@@ -307,6 +293,72 @@ terra::plot(log(fish_moll + 1), main = "Transformed CRS: Mollweide")
 terra::plot(log(fish + 1), main = "Original CRS: WGS 84 EPSG 4326")
 ```
 
+
+<style>
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Figure1')" id="defaultOpen">Mollweide Projection</button>
+  <button class="tablinks" onclick="openTab(event, 'Figure2')">Original CRS (WGS 84 EPSG:4326)</button>
+</div>
+
+<div id="Figure1" class="tabcontent">
+  <img src="/images/crs-examples/fish_log_plot_mollweide.png" alt="Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide">
+</div>
+
+<div id="Figure2" class="tabcontent">
+  <img src="/images/crs-examples/fish_log_plot_og_crs_simple.png" alt="Log-transformed raster of commercial fisheries landings (tonnes, 2017) in the original CRS (WGS 84 EPSG:4326)" figcaption="Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide">
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
 </br>
 
 <center>
@@ -319,7 +371,7 @@ terra::plot(log(fish + 1), main = "Original CRS: WGS 84 EPSG 4326")
 Compared to: 
 <center>
 <img src="/images/crs-examples/fish_log_plot_og_crs_simple.png"/>
-<figcaption>Compared to log-transformed landings data in the original CRS (WGS 84 EPSG:4326)</figcaption>
+<figcaption>Log-transformed raster of commercial fisheries landings (tonnes, 2017) in the original CRS (WGS 84 EPSG:4326)</figcaption>
 </center>
 
 
