@@ -378,7 +378,10 @@ print(cell_area_moll)
 ```
 
 <details>
-<summary>Output (Mollweide cell area summary)</summary>
+<summary>
+Output (Mollweide cell area summary)
+</summary>
+
 ```console
 class       : SpatRaster 
 dimensions  : 764, 1546, 1  (nrow, ncol, nlyr)
@@ -419,13 +422,12 @@ terra::global(fish_moll, "sum", na.rm = TRUE)
 # 389.3 million
 ```
 
-<caption>Global summation of values (tonnes) in Mollweide projection of commercial landings data</caption>
+<center>Global summation of values (tonnes) in Mollweide projection of commercial landings data</center>
 
 ```console
                                sum
 commercial_landings_2017 389271065
 ```
-
 
 
 389 million tonnes is a much higher value than the ~87 million value calculated with the raw data!!! Reprojecting the data impacted the values to a significant degree. 
@@ -481,16 +483,10 @@ terra::global(new_tonnes, "sum", na.rm = TRUE)
 
 ```
 
-<details>
-<summary>
-Output (cell area summary)
-</summary>
-
 ```console
                               sum
 commercial_landings_2017 85253920	
 ```
-</details>
 
 This total value is now around 85 million! Yay! While this is not exactly the same as the value we calculated in the original data (86 million), is significantly closer to it than the value of 389 million that we got by simply projecting the commercial landings (counts) data. This shows that converting counts to density *before* projecting to a new CRS is absolutely required if you do not want to introduce a massive error in your data. 
 
