@@ -22,11 +22,18 @@ menu:
 
 ## Introduction 
 
-Have you ever wondered what happens to your data when you project it from one CRS to another? Or whether or not you should convert your data from counts to density before projecting?
+Have you ever wondered what happens to your mapped raster data when you project it from one Coordinate Reference System (CRS) to another? Or whether anything can go wrong when projecting?
 
 In this article, we'll walk through how reprojecting and transforming geospatial data can potentially lead to large errors! To help you avoid this problem we'll show you how to check for and avoid these problems.
 
-To demonstrate these ideas, we'll look through a fairly straightforward example using commercial landings data ([Watson, 2017](https://www.nature.com/articles/sdata201739)), which was received via personal correspondence with R. A. Watson and preprocessed by past fellows in 2020: <a href="https://github.com/OHI-Science/ohiprep_v2024/blob/gh-pages/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd">ohiprep_v2024/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd</a> and saved in [this repository](https://github.com/OHI-Science/ohiprep_v2024/tree/gh-pages/Reference/CRS) for this walkthrough. Commercial landings "are the weight of, or revenue from, fish that are caught, brought to shore, processed, and sold for profit", not including recreational or subsistence fishing ([NOAA, n.d.](https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit.)). This data also includes estimates of illegal, unregulated, and unreported catch (IUU) and discards at sea ([Watson, 2017](https://www.nature.com/articles/sdata201739)). 
+To demonstrate these ideas, we'll look through a fairly straightforward example using commercial landings data ([Watson, 2017](https://www.nature.com/articles/sdata201739)).
+
+
+<details>
+<summary>Learn more about the data!></summary>
+<br/>
+The commercial fisheries landings data was received via personal correspondence with R. A. Watson and preprocessed by past fellows in 2020: <a href="https://github.com/OHI-Science/ohiprep_v2024/blob/gh-pages/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd">ohiprep_v2024/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd</a> and saved in [this repository](https://github.com/OHI-Science/ohiprep_v2024/tree/gh-pages/Reference/CRS) for this walkthrough. Commercial landings "are the weight of, or revenue from, fish that are caught, brought to shore, processed, and sold for profit", not including recreational or subsistence fishing ([NOAA, n.d.](https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit.)). The data also includes estimates of illegal, unregulated, and unreported catch (IUU) and discards at sea ([Watson, 2017](https://www.nature.com/articles/sdata201739)). 
+</details>
 
 ### Packages Used
 
@@ -51,6 +58,9 @@ We'll read the raster into R using `terra`'s `rast()` function and the `{here}` 
 `{here}`
 </summary>
 <p>
+The `here()` function describes the file path to the project root, or location where the project is located on your
+computer. It is useful for creating reproducible file paths in version-controlled R projects and enables file paths to be compatible across different operating systems by using comma separated strings, rather than hard-coded "/" or "\" separators. 
+
 To learn more about `{here}`, see their <a href="https://here.r-lib.org/">official website</a> and
 the <a href="https://cloud.r-project.org/web/packages/here/index.html">CRAN documentation</a>.
 </p>
@@ -84,44 +94,41 @@ max value   :                 145169.4
 ```
 
 
-This shows us important basic information about the spatial object, `fish`. What we're going to pay a lot of attention to in this example is the coordinate reference system (CRS) (`coord. ref.:` in the output above). 
+
+This spatial object's coordinate reference system (CRS) – printed on the `coord. ref. :` line – is [WGS 84 (EPSG:4326)](https://epsg.io/4326), which is a geographic CRS used by Google Earth and is the native system of Global Positioning Systems (GPS). `WGS 84` refers to the datum World Geodetic System 1984 ensemble, which specifies that the WGS 84 ellipsoid is used. `EPSG 4326` defines the full CRS using the WGS 84 ellipsoid, and it is the horizontal component of the 3-dimensional system. The `lon/lat` text before `WGS 84` in the output indicates that we are dealing with a geographic coordinate system with angular units (degrees) of latitude and longitude. 
+
+This is our initial geographic CRS, and any changes we make to this down the line will involve projecting and transforming the data. 
 
 A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/crs_deep_dive/) dives into details about coordinate reference systems, projections, and more. For now, we can think about coordinate reference systems as a way to describe locations in a standardized way such that a 2-dimensional point on a projected map describes a "real" position on Earth. 
 
 <details>
-<summary>My Favorite Resources for Understanding Coordinate Reference Systems</summary>
+<summary>My favorite resources for understanding and visualizing different Coordinate Reference Systems</summary>
 <br/>
 
 My favorite resources for understanding this concept are:
-<ul>
+
+<ul style="list-style-type: circle">
   <li><a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map</li>
   <li><a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a></li>
   <li>and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a></li>
   <li>If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.</li>
 </ul>
+
 </details>
 
 
-
-This spatial object's CRS is [WGS 84 (EPSG:4326)](https://epsg.io/4326), which is a geographic coordinate reference system used by Google Earth and is the native system of Global Positioning Systems (GPS). `WGS 84` refers to the datum World Geodetic System 1984 ensemble, which specifies that the WGS 84 ellipsoid is used. `EPSG 4326` defines the full coordinate reference system and indicates the projection on that WGS 84 ellipsoid and is the horizontal component of the 3-D system. 
-This is our initial geographic coordinate reference system, and any changes we make to this down the line will involve projecting and transforming the data. 
-
 The `dimensions` field indicates that there are 347 rows, 720 columns, and only one layer, which we know is tonnes of commercial fisheries landings in 2017. 
 
-The `lon/lat` text before `WGS 84` in the output indicates that we are dealing with a geographic CRS with angular units (degrees) of latitude and longitude. 
 
 The `name` field indicates that the raster has one layer, named "commercial_landings_2017". The `min value` and `max value` fields indicate that across all raster cells in this layer, the minimum value is `0` and the maximum value is `145169.4`. 
 
-Another important aspect of a raster's structure is its resolution. Resolution describes the amount of Earth's area that each grid cell represents. When a raster has more cells, the data will have a finer, more detailed resolution. One interesting thing about lon/lat coordinate reference systems is that the cells represent different amounts of area. This has all sorts of implications for how we interpret visualizations of the data!
-
-
+Another important aspect of a raster's structure is its resolution. Resolution describes the amount of Earth's area that each grid cell represents. When a raster has more cells, the data will have a finer, more detailed resolution. One interesting thing about `lon/lat` coordinate reference systems is that the cells represent different amounts of area. This has all sorts of implications for how we interpret visualizations of the data!
 
 
 This might sound abstract – what we're really curious about here is the area of the raster cells and any trend in cell size that is inherent to the current CRS. For an interactive visualization of how areas are distorted in different projections, I recommend Ningchuan Xiao's [Map Projections visualizer](https://ncxiao.github.io/map-projections/index.html) ([Xiao, 2017](https://ncxiao.github.io/map-projections/index.html)). 
 
 The plot below displays how cell sizes vary in the original CRS's extent. The plot colors indicate cell size, with dark purple indicating the smallest size and yellow indicating the highest cell size. 
 
-Below the plot, we've printed basic summary info of the cell area object created using `terra::cellSize()`. 
 
 ```r
 cell_area <- terra::cellSize(fish)
@@ -165,12 +172,15 @@ max value   : 3077249667
 ```
 
 
-The summary output shows us that the cell size, or surface area covered by individual raster cells, varies significantly, with a minimum area of 122 million square meters (m<sup>2</sup>) and maximum area of 3 billion m<sup>2</sup>. We checked that these were in square meters by using `terra::crs()` on the object. You can also run `terra::expanse()` on the `cell_area` object, and for an intuition check, the surface area of the Earth is 510 trillion m<sup>2</sup>, which is close to what we get (around 509 trillion). This confirms that we are working in square meters. 
+The summary output shows that area represented by each raster cell ranges from 122 million square meters (m<sup>2</sup>) to 3 billion m<sup>2</sup>. We confirmed that these were in square meters with `terra::crs()`. We also summed the total global area using `terra::expanse()` on the `cell_area` object, and obtained a total calculated surface area of around 509 trillion, which is similar to Earth's 510 trillion m<sup>2</sup> area. 
 
-The plot shows us that the cell size is not consistent across the globe – cell size appears to decrease as we move from the equator to the poles. This is notable for several reasons: 
+The plot shows us that the raster cells do not represent the same area across the globe. As we move from the equator to the poles, the area that raster cells represent decreases significantly. 
 
-*   The poles may appear to have higher values than they actually do – the visualization shows us value (commercial landings in tonnes) per cell size. The same value visualized near the poles will appear higher than if it were visualized near the equator. 
-    *   We can think about this with an example commercial landings value of 200 tonnes and cell areas of 50 m<sup>2</sup> near the equator and 20 m<sup>2</sup> near the poles. The value will appear as a 4 near the equator and a 10 near the poles. Thus, this coarser resolution at the poles can lead to higher landings shown over a greater area than in reality.
+This is notable for several reasons: 
+
+*   The poles will be over-represented in any visual representation of these data. This is why Greenland looks so large in many maps – it is often visually represented to have the same area as Africa, when in reality Africa is over 14 times larger. 
+
+*   The data will be misleading if the values are counts, e.g., tonnes of fish, number of people, etc.. For example, imagine that fish population densities are constant throughout the oceans (which is obviously not true). If this density data is converted to counts data, the extremes of the Northern and Southern Hemispheres will have lower counts because they represent less ocean area. 
 
 *   This inconsistency in cell area may also hide some higher values near the equator, as each of those larger raster cells appear as uniformly sized pixels when plotted with the rest of the data.
 
@@ -184,10 +194,7 @@ We can use `summary(fish)` for a basic statistical summary of the map's values:
 # print out summary of value layer
 summary(fish)
 ```
-<details>
-<summary>
-Output (raster summary)
-</summary>
+
 
 ```console
  commercial_landings_2017
@@ -200,8 +207,6 @@ Output (raster summary)
  NA's   :47150 
 
 ```
-</details>
-
 
 And we can use `terra::plot()` to visualize the data:
 
@@ -244,17 +249,11 @@ terra::global(fish, "sum", na.rm = TRUE)
 #> 86.3 million tonnes
 ```
 
-<details>
-<summary>
-Output (Sum)
-</summary>
-
 ```console
                                sum
 <dbl>
 commercial_landings_2017	86331119	
 ```
-</details>
 
 ***Does this value make sense?***
 
@@ -332,10 +331,6 @@ cell_area_moll <- terra::cellSize(fish_moll)
 
 print(cell_area_moll)
 ```
-<details>
-<summary>
-Output (cell area summary for data in Mollweide)
-</summary>
 
 ```console
 class       : SpatRaster 
@@ -348,7 +343,6 @@ name        :      area
 min value   :         0 
 max value   : 547291328 
 ```
-</details>
 
 
 We can also plot the cell area of the projected raster with respect to latitude, colored by raster cell size:
@@ -378,19 +372,16 @@ terra::global(fish_moll, "sum", na.rm = TRUE)
 # 389.3 million
 ```
 
-<details>
-<summary>
-Output (global summation of values (tonnes) in Mollweide projection of commercial landings data)
-</summary>
+<caption>Global summation of values (tonnes) in Mollweide projection of commercial landings data</caption>
 
 ```console
                                sum
 commercial_landings_2017 389271065
 ```
-</details>
 
 
-389 million tonnes is a much higher value than the raw data's ~87 million value!!! Reprojecting the data impacted the values to a significant degree. 
+
+389 million tonnes is a much higher value than the ~87 million value calculated with the raw data!!! Reprojecting the data impacted the values to a significant degree. 
 
 
 When the data was projected, cell sizes changed and were also warped (increased and decreased in different areas) to be uniform across the globe. When we projected the data from EPSG:4326 to Mollweide, the count associated with one cell in the original raster was applied to multiple cells in the Mollweide CRS. This results in a large error in our data! 
@@ -398,6 +389,7 @@ When the data was projected, cell sizes changed and were also warped (increased 
 For example, if a raster cell near the equator had a landings value of 100 tonnes and a cell area of 1 billion m<sup>2</sup>, and that raster cell in EPSG:4326 corresponded to an equivalent of 2 raster cells in Mollweide with an area of 500 million m<sup>2</sup> each, the values wouldn't be broken into 50 tonnes in one new cell and 50 tonnes in the other. Instead, they would both appear as 100 tonnes, for a total new value of 200 tonnes. 
 
 We can tell that this type of inflation occurred based on how much higher the global summary value became. Many cells in the original raster were warped to fit into the corresponding Mollweide cells. 
+
 
 ## Solution: Convert Counts to Density
 
