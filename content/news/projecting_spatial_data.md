@@ -30,9 +30,9 @@ To demonstrate these ideas, we'll look through a fairly straightforward example 
 
 
 <details>
-<summary>Learn more about the data!></summary>
+<summary>Learn more about the data!</summary>
 <br/>
-The commercial fisheries landings data was received via personal correspondence with R. A. Watson and preprocessed by past fellows in 2020: <a href="https://github.com/OHI-Science/ohiprep_v2024/blob/gh-pages/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd">ohiprep_v2024/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd</a> and saved in [this repository](https://github.com/OHI-Science/ohiprep_v2024/tree/gh-pages/Reference/CRS) for this walkthrough. Commercial landings "are the weight of, or revenue from, fish that are caught, brought to shore, processed, and sold for profit", not including recreational or subsistence fishing ([NOAA, n.d.](https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit.)). The data also includes estimates of illegal, unregulated, and unreported catch (IUU) and discards at sea ([Watson, 2017](https://www.nature.com/articles/sdata201739)). 
+The commercial fisheries landings data was received via personal correspondence with R. A. Watson and preprocessed by past fellows in 2020: <a href="https://github.com/OHI-Science/ohiprep_v2024/blob/gh-pages/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd">ohiprep_v2024/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd</a> and saved in <a href="https://github.com/OHI-Science/ohiprep_v2024/tree/gh-pages/Reference/CRS">this repository</a> for this walkthrough. Commercial landings "are the weight of, or revenue from, fish that are caught, brought to shore, processed, and sold for profit", not including recreational or subsistence fishing <a href="https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit.">(NOAA, n.d.)</a>. The data also includes estimates of illegal, unregulated, and unreported catch (IUU) and discards at sea <a href="https://www.nature.com/articles/sdata201739">(Watson, 2017)</a>. 
 </details>
 
 ### Packages Used
@@ -55,15 +55,15 @@ We'll read the raster into R using `terra`'s `rast()` function and the `{here}` 
 
 <details>
 <summary>
-`{here}`
+<code>`{here}`</code>
 </summary>
-<p>
+
 The `here()` function describes the file path to the project root, or location where the project is located on your
 computer. It is useful for creating reproducible file paths in version-controlled R projects and enables file paths to be compatible across different operating systems by using comma separated strings, rather than hard-coded "/" or "\" separators. 
 
-To learn more about `{here}`, see their <a href="https://here.r-lib.org/">official website</a> and
+To learn more about the `{here}` package, check out the <a href="https://here.r-lib.org/">official website</a> and
 the <a href="https://cloud.r-project.org/web/packages/here/index.html">CRAN documentation</a>.
-</p>
+
 </details>
 
 ```r
@@ -107,12 +107,16 @@ A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/cr
 
 My favorite resources for understanding this concept are:
 
-<ul style="list-style-type: circle">
-  <li><a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map</li>
-  <li><a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a></li>
+<ul>
+  <li> * <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map</li>
+  <li>- <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a></li>
   <li>and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a></li>
   <li>If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.</li>
 </ul>
+
+*  test
+
+-  test2
 
 </details>
 
@@ -120,14 +124,13 @@ My favorite resources for understanding this concept are:
 The `dimensions` field indicates that there are 347 rows, 720 columns, and only one layer, which we know is tonnes of commercial fisheries landings in 2017. 
 
 
-The `name` field indicates that the raster has one layer, named "commercial_landings_2017". The `min value` and `max value` fields indicate that across all raster cells in this layer, the minimum value is `0` and the maximum value is `145169.4`. 
+The `name` field indicates that the raster has one layer, named "`commercial_landings_2017`". The `min value` and `max value` fields indicate that across all raster cells in this layer, the minimum value is `0` and the maximum value is `145169.4`. 
 
 Another important aspect of a raster's structure is its resolution. Resolution describes the amount of Earth's area that each grid cell represents. When a raster has more cells, the data will have a finer, more detailed resolution. One interesting thing about `lon/lat` coordinate reference systems is that the cells represent different amounts of area. This has all sorts of implications for how we interpret visualizations of the data!
 
+<br/>
 
-This might sound abstract – what we're really curious about here is the area of the raster cells and any trend in cell size that is inherent to the current CRS. For an interactive visualization of how areas are distorted in different projections, I recommend Ningchuan Xiao's [Map Projections visualizer](https://ncxiao.github.io/map-projections/index.html) ([Xiao, 2017](https://ncxiao.github.io/map-projections/index.html)). 
-
-The plot below displays how cell sizes vary in the original CRS's extent. The plot colors indicate cell size, with dark purple indicating the smallest size and yellow indicating the highest cell size. 
+To understand more about how cell area varies in the original CRS's extent, we will use `terra::cellSize()` and plot the cell area with respect to latitude.  
 
 
 ```r
@@ -142,10 +145,13 @@ terra::plot(cell_area,
 
 <center>
 <img src="/images/crs-examples/cell_size_og_crs.png"/>
-<figcaption>What do you notice about how cell size changes in relation to the equator?</figcaption>
+<figcaption>The plot colors indicate cell size, with dark purple indicating the smallest size and yellow indicating the highest cell size.</figcaption>
 </center>
 
-
+<details>
+<summary>Hint</summary>
+What do you notice about how cell size changes in relation to the equator?
+</details>
 
 ```r
 print(cell_area)
@@ -177,13 +183,13 @@ The summary output shows that area represented by each raster cell ranges from 1
 The plot shows us that the raster cells do not represent the same area across the globe. As we move from the equator to the poles, the area that raster cells represent decreases significantly. 
 
 This is notable for several reasons: 
-
-*   The poles will be over-represented in any visual representation of these data. This is why Greenland looks so large in many maps – it is often visually represented to have the same area as Africa, when in reality Africa is over 14 times larger. 
+<ul>
+*   <li list-style: circle>The poles will be over-represented in any visual representation of these data. This is why Greenland looks so large in many maps – it is often visually represented to have the same area as Africa, when in reality Africa is over 14 times larger.</li> 
 
 *   The data will be misleading if the values are counts, e.g., tonnes of fish, number of people, etc.. For example, imagine that fish population densities are constant throughout the oceans (which is obviously not true). If this density data is converted to counts data, the extremes of the Northern and Southern Hemispheres will have lower counts because they represent less ocean area. 
 
 *   This inconsistency in cell area may also hide some higher values near the equator, as each of those larger raster cells appear as uniformly sized pixels when plotted with the rest of the data.
-
+</ul>
 
 
 Now we can explore the data within the map architecture. 
@@ -301,21 +307,19 @@ terra::plot(log(fish_moll + 1), main = "Transformed CRS: Mollweide")
 terra::plot(log(fish + 1), main = "Original CRS: WGS 84 EPSG 4326")
 ```
 
-Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide:
-
 </br>
 
 <center>
 <img src="/images/crs-examples/fish_log_plot_mollweide.png"/>
-<figcaption>Log-transformed commercial landings data, projected to Mollweide</figcaption>
+<figcaption>Log-transformed raster of commercial fisheries landings (tonnes, 2017) projected to Mollweide</figcaption>
 </center>
 
 </br>
 
-Compared to the log-transformed landings data in its original CRS, EPSG:4326: 
+Compared to: 
 <center>
 <img src="/images/crs-examples/fish_log_plot_og_crs_simple.png"/>
-<figcaption>Compared to log-transformed data in original CRS</figcaption>
+<figcaption>Compared to log-transformed landings data in the original CRS (WGS 84 EPSG:4326)</figcaption>
 </center>
 
 
@@ -332,6 +336,8 @@ cell_area_moll <- terra::cellSize(fish_moll)
 print(cell_area_moll)
 ```
 
+<details>
+<summary>Output (Mollweide cell area summary)</summary>
 ```console
 class       : SpatRaster 
 dimensions  : 764, 1546, 1  (nrow, ncol, nlyr)
@@ -343,7 +349,7 @@ name        :      area
 min value   :         0 
 max value   : 547291328 
 ```
-
+</details>
 
 We can also plot the cell area of the projected raster with respect to latitude, colored by raster cell size:
 
@@ -356,7 +362,7 @@ terra::plot(cell_area_moll, main = "Cell Size: Mollweide Projection")
 
 <center>
 <img src="/images/crs-examples/cell_size_mollweide.png"/>
-<figcaption>Cell size of commercial landings data projected to Mollweide</figcaption>
+<figcaption>Cell size of commercial landings data, projected to Mollweide</figcaption>
 </center>
 
 
@@ -448,40 +454,11 @@ commercial_landings_2017 85253920
 This total value is now around 85 million! Yay! While this is not exactly the same as the value we calculated in the original data (86 million), is significantly closer to it than the value of 389 million that we got by simply projecting the commercial landings (counts) data. This shows that converting counts to density *before* projecting to a new CRS is absolutely required if you do not want to introduce a massive error in your data. 
 
 
-Beyond the potential for errors, density, or $$\frac{tonnes}{ m^2}$$ , can be visually less biased than counts ($$tonnes$$) because it automatically controls for differences in cell sizes when working with lat/lon CRS (or, any unequal area CRS).. 
+Beyond the potential for errors, density (e.g., tonnes/m<sup>2</sup>), can be visually less biased than counts (e.g., tonnes) because it automatically controls for differences in cell sizes when working with lat/lon CRS (or, any unequal area CRS).
 
 If we had not converted to density before projecting the data to Mollweide, and continued to reproject to another CRS, the data would continue to be warped and transformed, echoing the original mistake. 
 
-
-
-
-
-In the example below, we take the commercial landings (tonnes) data that was projected from EPSG:4326 to Mollweide without a density conversion intermediate step, and then reproject that problematic data to another CRS
-
-
-```r
-# Robinson projection
-rob <- "+proj=robin +datum=WGS84 +units=m +no_defs"
-
-fish_moll_rob <- terra::project(fish_moll, crs(rob))
-plot(log(fish_moll_rob + 1))
-
-
-terra::global(fish_moll_rob, "sum", na.rm = TRUE)
-
-# now back to lat long:
-fish_moll_rob_latlon <- project(fish_moll_rob, fish)
-
-plot(log(fish_moll_rob_latlon + 1))
-plot(log(fish + 1))
-
-# check to see if it exactly matches the start
-check <- fish_moll_rob_latlon - fish
-plot(log(check + 1))
-check
-
-```
-
+<br/>
 
 
 ## References
