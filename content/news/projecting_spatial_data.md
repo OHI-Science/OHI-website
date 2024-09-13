@@ -41,7 +41,7 @@ It's important to understand at least a little bit about coordinate references s
 A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/crs_deep_dive/) delves into details about coordinate reference systems, projections, and more. For now, we can think about coordinate reference systems as a way to describe locations in a standardized way such that a 2-dimensional point on a projected map describes a "real" position on Earth. 
 
 <details>
-<summary><b>My favorite resources for understanding and visualizing different Coordinate Reference Systems</b></summary>
+<summary><b>My favorite resources for understanding and visualizing different coordinate reference systems</b></summary>
 <br/>
 My favorite resources for understanding this concept are: <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map, <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a>, and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a>. If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.
 
@@ -64,7 +64,7 @@ To begin, we will read in the data and familiarize ourselves with some of the ba
 
 ### Process 
 
-We'll read the raster into R using `terra`'s `rast()` function and the `{here}` package. 
+We'll read the raster into R using `{terra}`'s `rast()` function and the `{here}` package. 
 
 <details>
 <summary>
