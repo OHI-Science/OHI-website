@@ -4,7 +4,7 @@ name: "The Challenges of Projecting Spatial Data"
 bg_image: "/images/crs-examples/dark-globe-angle-3.jpg"
 card_image: "/images/crs-examples/old-world-map-card.jpg"
 preview_text: "Have you ever wondered what happens to your data when you project it from one CRS to another? Or whether or not you should convert your data from counts to density..."
-date: 2024-09-10
+date: 2024-09-13
 author: "Anna Ramji"
 menu:
   main:
@@ -488,12 +488,12 @@ terra::global(new_tonnes, "sum", na.rm = TRUE)
 commercial_landings_2017 85253920	
 ```
 
-This total value is now around 85 million! Yay! While this is not exactly the same as the value we calculated in the original data (86 million), is significantly closer to it than the value of 389 million that we got by simply projecting the commercial landings (counts) data. This shows that converting counts to density *before* projecting to a new CRS is absolutely required if you do not want to introduce a massive error in your data. 
+This total value is now around 85 million! Yay! While this is not exactly the same as the value we calculated in the original data (86 million), is significantly closer to it than the value of 389 million that we got by simply projecting the commercial landings (counts) data. 
 
+This shows that converting counts to density *before* projecting to a new CRS is absolutely required if you do not want to introduce a massive error in your data. If we had not converted to density before projecting the data to Mollweide, and continued to reproject to another CRS, the data would continue to be warped and transformed, echoing the original mistake. 
 
 Beyond the potential for errors, density (e.g., tonnes/m<sup>2</sup>), can be visually less biased than counts (e.g., tonnes) because it automatically controls for differences in cell sizes when working with lat/lon CRS (or, any unequal area CRS).
 
-If we had not converted to density before projecting the data to Mollweide, and continued to reproject to another CRS, the data would continue to be warped and transformed, echoing the original mistake. 
 
 <br/>
 
