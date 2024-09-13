@@ -187,6 +187,7 @@ We can use `summary(fish)` for a basic statistical summary of the map's values:
 summary(fish)
 ```
 
+<summary>Output:</summary>
 
 ```console
  commercial_landings_2017
@@ -240,6 +241,10 @@ One way to do this is to see how many tonnes of fish were caught globally in 201
 terra::global(fish, "sum", na.rm = TRUE)
 #> 86.3 million tonnes
 ```
+
+<summary>
+Output:
+</summary>
 
 ```console
                                sum
@@ -376,8 +381,7 @@ cell_area_moll <- terra::cellSize(fish_moll)
 
 print(cell_area_moll)
 ```
-
-<details>
+<details open>
 <summary>
 Output (Mollweide cell area summary)
 </summary>
@@ -421,14 +425,16 @@ These changes are interesting, but not unexpected for this kind of transformatio
 terra::global(fish_moll, "sum", na.rm = TRUE)
 # 389.3 million
 ```
-
-<center>Global summation of values (tonnes) in Mollweide projection of commercial landings data</center>
+<details open>
+<summary>
+Global summation of values (tonnes) in Mollweide projection of commercial landings data
+</summary>
 
 ```console
                                sum
 commercial_landings_2017 389271065
 ```
-
+</details>
 
 389 million tonnes is a much higher value than the ~87 million value calculated with the raw data!!! Reprojecting the data impacted the values to a significant degree. 
 
