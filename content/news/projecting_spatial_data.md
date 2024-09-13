@@ -10,6 +10,8 @@ menu:
   main:
     parent: 'News'
     weight: 2 
+    
+toc: true
 ---
 
 </br>
@@ -22,7 +24,7 @@ menu:
 
 ## Introduction 
 
-Have you ever wondered what happens to your mapped raster data when you project it from one Coordinate Reference System (CRS) to another? Or whether anything can go wrong when projecting?
+Have you ever wondered what happens to your mapped raster data when you project it from one <b>C</b>oordinate <b>R</b>eference <b>S</b>ystem (<b>CRS</b>) to another? Or whether anything can go wrong when projecting?
 
 In this article, we'll walk through how reprojecting and transforming geospatial data can potentially lead to large errors! To help you avoid this problem we'll show you how to check for and avoid these problems.
 
@@ -30,10 +32,23 @@ To demonstrate these ideas, we'll look through a fairly straightforward example 
 
 
 <details>
-<summary>Learn more about the data!</summary>
+<summary><b>Learn more about the data!</b></summary>
 <br/>
 The commercial fisheries landings data was received via personal correspondence with R. A. Watson and preprocessed by past fellows in 2020: <a href="https://github.com/OHI-Science/ohiprep_v2024/blob/gh-pages/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd">ohiprep_v2024/globalprep/prs_fish/v2020/fishing_pressure_layers.Rmd</a> and saved in <a href="https://github.com/OHI-Science/ohiprep_v2024/tree/gh-pages/Reference/CRS">this repository</a> for this walkthrough. Commercial landings "are the weight of, or revenue from, fish that are caught, brought to shore, processed, and sold for profit", not including recreational or subsistence fishing <a href="https://ecowatch.noaa.gov/thematic/commercial-landings#:~:text=Commercial%20landings%20are%20the%20weight,processed%2C%20and%20sold%20for%20profit.">(NOAA, n.d.)</a>. The data also includes estimates of illegal, unregulated, and unreported catch (IUU) and discards at sea <a href="https://www.nature.com/articles/sdata201739">(Watson, 2017)</a>. 
 </details>
+
+### Coordinate Reference Systems
+
+It's important to understand at least a little bit about coordinate references systems before we move on. 
+A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/crs_deep_dive/) delves into details about coordinate reference systems, projections, and more. For now, we can think about coordinate reference systems as a way to describe locations in a standardized way such that a 2-dimensional point on a projected map describes a "real" position on Earth. 
+
+<details>
+<summary><b>My favorite resources for understanding and visualizing different Coordinate Reference Systems</b></summary>
+<br/>
+My favorite resources for understanding this concept are: <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map, <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a>, and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a>. If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.
+
+</details>
+
 
 ### Packages Used
 
@@ -100,18 +115,8 @@ This spatial object's coordinate reference system (CRS) – printed on the `coor
 
 This is our initial geographic CRS, and any changes we make to this down the line will involve projecting and transforming the data. 
 
-A previous [OHI News post by Dustin Duncan](https://oceanhealthindex.org/news/crs_deep_dive/) dives into details about coordinate reference systems, projections, and more. For now, we can think about coordinate reference systems as a way to describe locations in a standardized way such that a 2-dimensional point on a projected map describes a "real" position on Earth. 
 
-<details>
-<summary><b>My favorite resources for understanding and visualizing different Coordinate Reference Systems</b></summary>
-<br/>
-
-My favorite resources for understanding this concept are: <a href="https://www.youtube.com/watch?v=kIID5FDi2JQ">this Vox video</a> on how areas of the globe must be distorted in order to render the 3-D ellipsoid of Earth into a 2D map, <a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/coordinate-systems-and-projections.htm">this ArcGIS Pro article</a>, and <a href="https://ncxiao.github.io/map-projections/index.html">this interactive visualization</a> of how different projections warp the area of different parts of the world using <a href="https://en.wikipedia.org/wiki/Tissot%27s_indicatrix">Tissot's indicatrix</a> and Gedymin faces, by <a href="https://github.com/ncxiao">Ningchuan Xiao</a>. If you're not a fan of gifs you can click "pause" on that visualization, or use <a href="https://observablehq.com/@floledermann/projection-playground">this Map Projection Playground</a> by Florian Ledermann to visualize how different variables impact 2-D representations of area.
-
-</details>
-
-
-The `dimensions` field indicates that there are 347 rows, 720 columns, and only one layer, which we know is tonnes of commercial fisheries landings in 2017. 
+The `dimensions` field indicates that there are `347` rows (`nrow`), `720` columns (`ncol`), and only `1` layer (`nlyr`), which we know is tonnes of commercial fisheries landings in 2017. 
 
 
 The `name` field indicates that the raster has one layer, named "`commercial_landings_2017`". The `min value` and `max value` fields indicate that across all raster cells in this layer, the minimum value is `0` and the maximum value is `145169.4`. 
