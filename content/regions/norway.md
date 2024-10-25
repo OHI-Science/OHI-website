@@ -1,9 +1,9 @@
 ---
 regionId: 223
 title: Norway
-rank: 44
-meanScore: 76.97
-globalMeanScore: 73.46
+rank: 103
+meanScore: 68.26
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

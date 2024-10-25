@@ -34,13 +34,19 @@
   </url><url>
     <loc>http://localhost:1313/goals/biodiversity/</loc>
   </url><url>
-    <loc>http://localhost:1313/news/2024-global-fellows/</loc>
-    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/news/</loc>
+    <lastmod>2024-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/news/projecting_spatial_data/</loc>
+    <lastmod>2024-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/news/crs_deep_dive/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/news/2024-global-fellows/</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/news/2023-scores/</loc>
@@ -459,7 +465,13 @@
   </url><url>
     <loc>http://localhost:1313/regions/oecussi-ambeno/</loc>
   </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/antarctic-coast/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/antarctica/</loc>
+  </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/arctic/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/argentina-patagonia/</loc>
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/indonesia-bali/</loc>
   </url><url>
@@ -487,11 +499,19 @@
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/israel/</loc>
   </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-bay/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-metropolitan-area/</loc>
+  </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/kenya/</loc>
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/indonesia-maluku/</loc>
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/mexico/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/moorea/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/nairobi-convention/</loc>
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/new-caledonia/</loc>
   </url><url>
@@ -502,6 +522,10 @@
     <loc>http://localhost:1313/ohi&#43;/assessment/palmyra/</loc>
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/peru/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/philippines/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ohi&#43;/assessment/red-sea-and-gulf-of-aden/</loc>
   </url><url>
     <loc>http://localhost:1313/ohi&#43;/assessment/samoa/</loc>
   </url><url>

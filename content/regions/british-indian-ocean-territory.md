@@ -1,9 +1,9 @@
 ---
 regionId: 38
 title: British Indian Ocean Territory
-rank: 66
-meanScore: 74.73
-globalMeanScore: 73.46
+rank: 99
+meanScore: 68.51
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

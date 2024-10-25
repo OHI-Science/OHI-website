@@ -1,9 +1,9 @@
 ---
 regionId: 164
 title: Belize
-rank: 68
-meanScore: 74.71
-globalMeanScore: 73.46
+rank: 80
+meanScore: 69.98
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

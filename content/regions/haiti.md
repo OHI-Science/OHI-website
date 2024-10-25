@@ -1,9 +1,9 @@
 ---
 regionId: 114
 title: Haiti
-rank: 120
-meanScore: 71.62
-globalMeanScore: 73.46
+rank: 163
+meanScore: 63.67
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

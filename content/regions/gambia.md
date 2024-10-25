@@ -1,9 +1,9 @@
 ---
 regionId: 65
 title: Gambia
-rank: 104
-meanScore: 72.37
-globalMeanScore: 73.46
+rank: 109
+meanScore: 67.49
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

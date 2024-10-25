@@ -1,9 +1,9 @@
 ---
 regionId: 91
 title: Crozet Islands
-rank: 134
-meanScore: 70.84
-globalMeanScore: 73.46
+rank: 126
+meanScore: 66.04
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

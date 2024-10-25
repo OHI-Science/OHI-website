@@ -1,9 +1,9 @@
 ---
 regionId: 3
 title: Norfolk Island
-rank: 106
-meanScore: 72.32
-globalMeanScore: 73.46
+rank: 17
+meanScore: 78.4
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

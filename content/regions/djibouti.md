@@ -1,9 +1,9 @@
 ---
 regionId: 46
 title: Djibouti
-rank: 31
-meanScore: 78.01
-globalMeanScore: 73.46
+rank: 46
+meanScore: 74.2
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

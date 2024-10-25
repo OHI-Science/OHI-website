@@ -1,9 +1,9 @@
 ---
 regionId: 84
 title: Algeria
-rank: 178
-meanScore: 65.67
-globalMeanScore: 73.46
+rank: 135
+meanScore: 65.59
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

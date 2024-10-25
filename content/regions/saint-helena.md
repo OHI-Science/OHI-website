@@ -1,9 +1,9 @@
 ---
 regionId: 86
 title: Saint Helena
-rank: 199
-meanScore: 62.39
-globalMeanScore: 73.46
+rank: 118
+meanScore: 66.67
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

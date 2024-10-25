@@ -1,9 +1,9 @@
 ---
 regionId: 245
 title: Bonaire
-rank: 135
-meanScore: 70.81
-globalMeanScore: 73.46
+rank: 47
+meanScore: 73.89
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

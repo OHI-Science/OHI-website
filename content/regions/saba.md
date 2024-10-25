@@ -1,9 +1,9 @@
 ---
 regionId: 248
 title: Saba
-rank: 30
-meanScore: 78.23
-globalMeanScore: 73.46
+rank: 16
+meanScore: 78.66
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

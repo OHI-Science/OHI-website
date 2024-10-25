@@ -1,9 +1,9 @@
 ---
 regionId: 30
 title: Glorioso Islands
-rank: 79
-meanScore: 73.66
-globalMeanScore: 73.46
+rank: 37
+meanScore: 74.76
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

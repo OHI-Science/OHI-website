@@ -1,9 +1,9 @@
 ---
 regionId: 31
 title: Seychelles
-rank: 5
-meanScore: 86.55
-globalMeanScore: 73.46
+rank: 12
+meanScore: 80.1
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

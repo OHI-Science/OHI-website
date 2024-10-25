@@ -1,9 +1,9 @@
 ---
 regionId: 131
 title: Nicaragua
-rank: 98
-meanScore: 72.53
-globalMeanScore: 73.46
+rank: 73
+meanScore: 70.54
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

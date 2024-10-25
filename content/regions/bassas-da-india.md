@@ -1,9 +1,9 @@
 ---
 regionId: 34
 title: Bassas da India
-rank: 55
-meanScore: 75.67
-globalMeanScore: 73.46
+rank: 21
+meanScore: 76.36
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

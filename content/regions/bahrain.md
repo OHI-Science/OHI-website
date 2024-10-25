@@ -1,9 +1,9 @@
 ---
 regionId: 52
 title: Bahrain
-rank: 63
-meanScore: 74.83
-globalMeanScore: 73.46
+rank: 81
+meanScore: 69.97
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

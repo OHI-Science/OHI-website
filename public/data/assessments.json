@@ -19,6 +19,38 @@
       ]
     },
     {
+      "name": "Nairobi Convention",
+      "Status": "Completed (2012)",
+      "LeadingGroup": "Nairobi Convention Secretariat, Conservation International and CORDIO",
+      "Contact": "Ussif Rashid Sumaila (r.sumaila@oceans.ubc.ca)",
+      "Description": "Measuring Ocean Health in the Western Indian Ocean.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://nairobiconvention.org/clearinghouse/sites/default/files/Measuring%20Ocean%20Health%20in%20the%20Western%20Indian%20Ocean.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Red Sea and Gulf of Aden",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis",
+      "Contact":"Melanie Frazier (frazier@nceas.ucsb.edu)",
+      "Description": "Assessment of ocean health in the Red Sea and Gulf of Aden region.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-RSGA/OHI_RSGA"
+        },
+        {
+          "name": "Website",
+          "link": "https://ohi-rsga.github.io/OHI_RSGA/"
+        }
+      ]
+    },
+    {
       "name": "Tanzania",
       "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International, Africa Field Division",
@@ -29,10 +61,22 @@
         {
           "name": "GitHub",
           "link": "https://github.com/OHI-Science/tza"
-        },
+        }
+      ]
+    }
+  ],
+  "Antarctica": [
+    {
+      "name": "Antarctic Coast",
+      "Status": "Completed (2017)",
+      "LeadingGroup": "National Center for Ecological Analysis and Synthesis",
+      "Contact":"Benjamin Halpern (halpern@nceas.ucsb.edu)",
+      "Description": "An assessment of the Antartic coast broken into its subregions defined by the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR) and as a whole region using 7 OHI.",
+      "isPlus": false,
+      "Links": [
         {
-          "name": "Website",
-          "link": "https://cordioea.net/ocean-health-index-ohi/"
+          "name": "Publications",
+          "link": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2017.00020/full"
         }
       ]
     }
@@ -269,6 +313,24 @@
       ]
     },
     {
+      "name": "Moorea",
+      "Status": "Completed (2022)",
+      "LeadingGroup": "National Center for Scientific Research, PSL Université Paris",
+      "Contact":"Maria D. Castro-Cadenas (mariadolores.castrocadenas@imbrsea.eu)",
+      "Description": "Tracking changes in social-ecological systems along environmental disturbances with the ocean health index.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0048969722035203"
+        },
+        {
+          "name": "GitHub",
+          "link": "https://github.com/OHI-Science/mra"
+        }
+      ]
+    },
+    {
       "name": "US-Hawaii",
       "Status": "Completed (2018)",
       "LeadingGroup": "Conservation International and the U.S. National Oceanic and Atmospheric Administration",
@@ -357,6 +419,15 @@
       "LeadingGroup": "Peru’s Ministry of Environment",
       "Contact": "Nina Prado",
       "Description": "Pilot study in Ica province.",
+      "isPlus": false,
+      "Links": []
+    },
+    {
+      "name": "Argentina-Patagonia",
+      "Status": "Active",
+      "LeadingGroup": "n/a",
+      "Contact": "n/a",
+      "Description": "n/a",
       "isPlus": false,
       "Links": []
     }
@@ -495,6 +566,34 @@
       ]
     },
     {
+      "name": "China - Tianjin Offshore",
+      "Status": "Completed (2013)",
+      "LeadingGroup": "School of Environmental Science and Engineering, Tianjin University",
+      "Contact": "Xue-Yi You (xyyou@tju.edu.cn)",
+      "Description": "Assessment of Marine Ecosystem Health of Tianjin Offshore, China.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://sciendo.com/article/10.2478/s13545-013-0100-0"
+        }
+      ]
+    },
+    {
+      "name": "China - Laizhou Bay",
+      "Status": "Completed (2015)",
+      "LeadingGroup": "College of Environmental Science and Engineering, Ocean University of China and The First Institute of Oceanography, State Oceanic Administration",
+      "Contact": "Wei Zheng (zhengwei@fio.org.cn)",
+      "Description": "Assessment and regulation of ocean health based on ecosystem services: Case study in the Laizhou Bay, China.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://link.springer.com/article/10.1007/s13131-015-0777-6#preview"
+        }
+      ]
+    },
+    {
       "name": "China - Xiamen",
       "Status": "Completed (2016)",
       "LeadingGroup": "Fujian Provincial Key Laboratory for Coastal Ecology and Environmental Studies, Coastal and Ocean Management Institute, Xiamen University",
@@ -507,7 +606,21 @@
           "link": "https://www.sciencedirect.com/science/article/pii/S1470160X16000480"
         }
       ]
-    },    
+    }, 
+    {
+      "name": "China - Fujian Province",
+      "Status": "Completed (2018)",
+      "LeadingGroup": "College of the Environment & Ecology, Xiamen University",
+      "Contact": "Xiongzhi Xue (xzxue@xmu.edu.cn)",
+      "Description": "A methodological framework for coastal development assessment: A case study of Fujian Province, China.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0048969717326608#f0025"
+        }
+      ]
+    },
     {
       "name": "China - Shanghai",
       "Status": "Completed (2021)",
@@ -537,10 +650,6 @@
         {
           "name": "Website",
           "link": "http://ohi-science.org/bali"
-        },
-        {
-          "name": "Media",
-          "link": "https://nyegaragunung.net/en/english-how-healthy-is-the-bali-sea-bali-ocean-health-index-ohi-2018/"
         }
       ]
     },
@@ -601,6 +710,48 @@
         {
           "name": "Website",
           "link": "http://www.hamaarag.org.il/ocean-health-index"
+        }
+      ]
+    },
+    {
+      "name": "Japan-Tokyo Bay",
+      "Status": "Completed (2019)",
+      "LeadingGroup": "University of Tokyo",
+      "Contact": "Tomonari Okada (okada-t92y2@mlit.go.jp)",
+      "Description": "Method for the quantitative evaluation of ecosystem services in coastal regions.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.proquest.com/docview/2166936612?parentSessionId=D1vms8%2BJVtVqWacpftquV3gqRTBG%2FdUzyG1wx9WXEk8%3D&sourcetype=Scholarly%20Journals"
+        }
+      ]
+    },
+    {
+      "name": "Japan-Tokyo Metropolitan Area (Chiba, Kanagawa, Tokyo)",
+      "Status": "Completed (2024)",
+      "LeadingGroup": "Graduate School of Frontier Sciences, The University of Tokyo",
+      "Contact": "Yutian Ding (6821112140@edu.k.u-tokyo.ac.jp)",
+      "Description": "Application of the Ocean Health Index to assess ocean and coastal conditions of the Tokyo Metropolitan area.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1470160X24007374#da005"
+        }
+      ]
+    },
+    {
+      "name": "Philippines - Davao City, Mati City, Cagayan de Oro, Cebu City, Puerto Princesa, Metro Manila, and Laoag City",
+      "Status": "Completed (2022)",
+      "LeadingGroup": "Transdisciplinary Science and Engineering Program, Graduate School of Advanced Science and Engineering, Hiroshima University",
+      "Contact": "Jonathan Salar Cabrera (jonathan.s.cabrera85@gmail.com)",
+      "Description": "Development of adaptive expert-driven coastal zone health index framework.",
+      "isPlus": false,
+      "Links": [
+        {
+          "name": "Publications",
+          "link": "https://www.mdpi.com/2077-1312/10/9/1183"
         }
       ]
     },

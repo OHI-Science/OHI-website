@@ -1,9 +1,9 @@
 ---
 regionId: 93
 title: Kerguelen Islands
-rank: 37
-meanScore: 77.48
-globalMeanScore: 73.46
+rank: 82
+meanScore: 69.82
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---
