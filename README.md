@@ -66,6 +66,15 @@ The content for the website is all contained within the `/content/` directory. T
 markdown uses the [commonMark syntax](https://commonmark.org/help/), with some additional
 add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called "front-matter". 
 
+### Updating scores
+Replace content/data/scores.csv with the latest update from ohi-global (e.g., ohi-global/yearly_results/global2024/OHI_final_formatted_scores_2024-09-11.csv) and change the name to scores.
+
+Open content/data/index.md
+and change the name of this variable in the header material 
+"dataVersion: "2024-10-25""
+
+Run these scripts: scripts/create-region-pages.Rmd and create-scores-table.Rmd
+
 ## Front-matter
 
 Front-matter is located at the top of each markdown file, between two `---` separators, in `yaml` format. The properties common to all pages are:

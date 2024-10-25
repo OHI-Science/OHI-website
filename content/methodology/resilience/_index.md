@@ -56,10 +56,6 @@ The resilience data is then combined to estimate the total resilience for each g
 
 The pressure estimate for each goal and country is then combined with the trend and resilience estimates to estimate goal scores.
 
-Learn more about the resilience model and data used for the OHI global assessment by clicking below.
-
-{{<button text="Global Methods" link=images/htmls/Supplement.html icon="/images/misc/microscope-icon.svg">}}
-
 
 #### REFERENCES
 Chambers, J.C., C.R. Allen and S.A. Cushman. 2019. Operationalizing ecological resilience concepts for managing species and ecosystems at risk. Front. Ecol. Evol. https://www.frontiersin.org/articles/10.3389/fevo.2019.00241/full
