@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scores on Ocean Health Index</title>
-    <link>http://localhost:1313/global-scores/</link>
+    <link>https://oceanhealthindex.org/global-scores/</link>
     <description>Recent content in Scores on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/global-scores/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/global-scores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Download</title>
-      <link>http://localhost:1313/global-scores/data-download/</link>
+      <link>https://oceanhealthindex.org/global-scores/data-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/data-download/</guid>
+      <guid>https://oceanhealthindex.org/global-scores/data-download/</guid>
       <description>2024 OHI Assessment The OHI 2024 global assessment includes scores from 2012 to 2024 for 220 coastal countries and territories.&#xA;This marks our 12th year of calculating the global Ocean Health Index. The average 2023 Index score was 69 out of 100. This year the average global OHI scores declined by several points because this year&amp;rsquo;s scores incorporate the massive decline in tourism and recreation due to COVID. Much of tourism has recovered, but these data are not yet available.</description>
     </item>
   </channel>

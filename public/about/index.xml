@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>What is OHI on Ocean Health Index</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://oceanhealthindex.org/about/</link>
     <description>Recent content in What is OHI on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/about/contact/</link>
+      <link>https://oceanhealthindex.org/about/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/contact/</guid>
+      <guid>https://oceanhealthindex.org/about/contact/</guid>
       <description>Contact OHI For all inquiries about the OHI, contact&#xA;Ben Halpern at halpern@nceas.ucsb.edu</description>
     </item>
     <item>
       <title>OHI Fellows</title>
-      <link>http://localhost:1313/about/ohifellows/</link>
+      <link>https://oceanhealthindex.org/about/ohifellows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/ohifellows/</guid>
+      <guid>https://oceanhealthindex.org/about/ohifellows/</guid>
       <description>About the OHI Fellows Program The Ocean Health Index Global Fellowship was created to provide training to a small group of early-career data scientists.&#xA;During the process of calculating OHI scores, the fellows dive into the theory, tools, and workflows the OHI uses to ensure openness, transparency, and reproducibility. The Fellows gain valuable experience and build useful skills.&#xA;We benefit from their fresh eyes and new perspectives. Their contributions help the OHI grow and innovate.</description>
     </item>
     <item>
       <title>People</title>
-      <link>http://localhost:1313/about/people/</link>
+      <link>https://oceanhealthindex.org/about/people/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/people/</guid>
+      <guid>https://oceanhealthindex.org/about/people/</guid>
       <description>The Ocean Health Index team develops scientific methods and calculates scores, manages current operations and directs future development, and communicates results to governments, marine managers, scientists, and the public.&#xA;Ben Halpern has been with the project since planning began in 2008.&#xA;The team gratefully acknowledges the individuals, foundations, organizations and corporations listed as Contributors and Sustaining Partners. This project would not exist without them.&#xA;Ben Halpern&#xA;Lead Scientist&#xA;Melanie Frazier</description>
     </item>
     <item>
       <title>Publications</title>
-      <link>http://localhost:1313/about/publications/</link>
+      <link>https://oceanhealthindex.org/about/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/publications/</guid>
+      <guid>https://oceanhealthindex.org/about/publications/</guid>
       <description>Peer-reviewed publications by the OHI team; * indicates open access.&#xA;OHI assessments Global all data and supplementary methods&#xA;Halpern et al. 2017, PLoS ONE*. Drivers and implications of change in global ocean health over the past 5 years.&#xA;Halpern et al. 2015, PLoS ONE*. Patterns and emerging trends in global ocean health. (2013 and updated 2012 global data)&#xA;Halpern et al. 2012, Nature. An index to assess the health and benefits of the global ocean.</description>
     </item>
     <item>
       <title>Supporters</title>
-      <link>http://localhost:1313/about/supporters/</link>
+      <link>https://oceanhealthindex.org/about/supporters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/supporters/</guid>
+      <guid>https://oceanhealthindex.org/about/supporters/</guid>
       <description>We are grateful for the generous support from the Pacific Life Foundation and the Gordon and Betty Moore Foundation, as well as our founding contributors for helping us build the Ocean Health Index from the beginning. Without their generosity of intellectual and financial support the Ocean Health Index would not be a reality.&#xA;The Pacific Life Foundation The Pacific Life Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index.</description>
     </item>
   </channel>

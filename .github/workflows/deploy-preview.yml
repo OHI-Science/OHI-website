@@ -11,21 +11,34 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
+          
+      # Adjust Node setup
       - uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '18' # Change to Node v18 if Node v20 has compatibility issues
+          
+      # Add npm cache cleaning (optional but may help)
+      - name: Clean npm cache
+        run: npm cache clean --force
+        
+      - name: Install dependencies
+        run: npm install
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.136.0'
           extended: true
-      - name: Build
+          
+      # Build with debugging
+      - name: Build with Debugging
         run: |
           npm install
-          hugo --baseURL="https://preview.oceanhealthindex.org/"
-      # Copy the source to the nceas server
+          hugo --baseURL="https://preview.oceanhealthindex.org/" --debug
+
+      # Copy the source to the NCEAS server
       - name: Copy
         uses: dataoneorg/rsync-deploy@latest
         with:

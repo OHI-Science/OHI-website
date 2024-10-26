@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data on Ocean Health Index</title>
-    <link>http://localhost:1313/resources/data/</link>
+    <link>https://oceanhealthindex.org/resources/data/</link>
     <description>Recent content in Data on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/resources/data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/resources/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cumulative Human Impacts</title>
-      <link>http://localhost:1313/resources/data/cumulative-human-impacts/</link>
+      <link>https://oceanhealthindex.org/resources/data/cumulative-human-impacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/data/cumulative-human-impacts/</guid>
+      <guid>https://oceanhealthindex.org/resources/data/cumulative-human-impacts/</guid>
       <description>Most recent project We mapped the cumulative impact of human activities on global oceans from 2003 to 2013. We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.&#xA;Citation: Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean.</description>
     </item>
     <item>
       <title>Global OHI</title>
-      <link>http://localhost:1313/resources/data/global-ohi/</link>
+      <link>https://oceanhealthindex.org/resources/data/global-ohi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/data/global-ohi/</guid>
+      <guid>https://oceanhealthindex.org/resources/data/global-ohi/</guid>
       <description> </description>
     </item>
   </channel>

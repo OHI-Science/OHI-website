@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goals on Ocean Health Index</title>
-    <link>http://localhost:1313/goals/</link>
+    <link>https://oceanhealthindex.org/goals/</link>
     <description>Recent content in Goals on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/goals/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/goals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goal: Artisanal Fishing Opportunities</title>
-      <link>http://localhost:1313/goals/artisanal-fishing-opportunities/</link>
+      <link>https://oceanhealthindex.org/goals/artisanal-fishing-opportunities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/artisanal-fishing-opportunities/</guid>
+      <guid>https://oceanhealthindex.org/goals/artisanal-fishing-opportunities/</guid>
       <description>ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES This goal measures whether people who need to fish on a small, local scale have the opportunity to do so.&#xA;GOAL DESCRIPTION Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, especially in developing nations. Small-scale fishing is an important component of cultural identity and heritage.</description>
     </item>
     <item>
       <title>Goal: Natural Products</title>
-      <link>http://localhost:1313/goals/natural-products/</link>
+      <link>https://oceanhealthindex.org/goals/natural-products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/natural-products/</guid>
+      <guid>https://oceanhealthindex.org/goals/natural-products/</guid>
       <description>HARVESTING OCEAN RESOURCES SUSTAINABLY This goal assesses how well countries are maximizing the sustainable harvest of non-food marine resources.&#xA;GOAL DESCRIPTION Marine natural products can provide substantial economic benefits when sustainably harvested and traded. For example, millions of marine ornamental (aquarium) fish are harvested and exported for sale each year. This trade can provide a valuable and long-term income stream for low-income coastal communities if undertaken in a sustainable manner.</description>
     </item>
     <item>
       <title>Goal: Carbon Storage</title>
-      <link>http://localhost:1313/goals/carbon-storage/</link>
+      <link>https://oceanhealthindex.org/goals/carbon-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/carbon-storage/</guid>
+      <guid>https://oceanhealthindex.org/goals/carbon-storage/</guid>
       <description>PRESERVING HABITATS THAT ABSORB CARBON This goal captures the ability of coastal habitats to store carbon given the amount of carbon they store and their health.&#xA;GOAL DESCRIPTION Carbon dioxide (CO₂) is the primary heat trapping gas in Earth’s atmosphere and is a key driver of global climate change. The ocean plays a major role in slowing the pace of global climate change by absorbing CO₂ from the atmosphere and storing it as carbon.</description>
     </item>
     <item>
       <title>Goal: Coastal Protection</title>
-      <link>http://localhost:1313/goals/coastal-protection/</link>
+      <link>https://oceanhealthindex.org/goals/coastal-protection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/coastal-protection/</guid>
+      <guid>https://oceanhealthindex.org/goals/coastal-protection/</guid>
       <description>PRESERVING HABITATS THAT SAFEGUARD SHORES This goal aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.).&#xA;GOAL DESCRIPTION Storm protection by coastal habitats saves lives, property and is worth billions of dollars each year. Coral reefs, mangroves, seagrasses, salt marshes, and sea ice act as natural buffers against incoming waves.</description>
     </item>
     <item>
       <title>Goal: Tourism and Recreation</title>
-      <link>http://localhost:1313/goals/tourism-and-recreation/</link>
+      <link>https://oceanhealthindex.org/goals/tourism-and-recreation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/tourism-and-recreation/</guid>
+      <guid>https://oceanhealthindex.org/goals/tourism-and-recreation/</guid>
       <description>THE DRAW OF THE OCEAN Coastal and marine tourism is a vital part of a country’s economy. This goal measures participation in sustainable tourism to coastal regions.&#xA;GOAL DESCRIPTION Tourism and recreation in coastal areas is a major component of thriving coastal communities and a measure of how much people value ocean systems. Tourism and recreation provide opportunities for the enjoyment of marine and coastal environments. The ability to visit culturally or aesthetically pleasing places with healthy coastal ecosystems, diverse wildlife, and opportunities for exploration and recreation contributes to the well-being of many people.</description>
     </item>
     <item>
       <title>Goal: Clean Waters</title>
-      <link>http://localhost:1313/goals/clean-waters/</link>
+      <link>https://oceanhealthindex.org/goals/clean-waters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/clean-waters/</guid>
+      <guid>https://oceanhealthindex.org/goals/clean-waters/</guid>
       <description>CLEAN WATERS ARE IMPORTANT The Clean Water goal captures the degree to which local waters are unpolluted by human-made causes.&#xA;GOAL DESCRIPTION People value marine waters that are free of pollution and debris for aesthetic and health reasons.&#xA;Chemicals, excess nutrients, pathogens, and trash that enter the marine environment can harm human health, livelihoods, and recreation, as well as the health of marine life and habitats.&#xA;There are many sources of pollution in marine systems.</description>
     </item>
   </channel>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goal: Food Provision on Ocean Health Index</title>
-    <link>http://localhost:1313/goals/food-provision/</link>
+    <link>https://oceanhealthindex.org/goals/food-provision/</link>
     <description>Recent content in Goal: Food Provision on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/goals/food-provision/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/goals/food-provision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sub Goal: Wild Caught Fisheries</title>
-      <link>http://localhost:1313/goals/food-provision/wild-caught-fisheries/</link>
+      <link>https://oceanhealthindex.org/goals/food-provision/wild-caught-fisheries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/food-provision/wild-caught-fisheries/</guid>
+      <guid>https://oceanhealthindex.org/goals/food-provision/wild-caught-fisheries/</guid>
       <description>AN IMPORTANT GLOBAL FOOD SOURCE This goal assesses our ability to sustainably maximize wild-caught fisheries.&#xA;GOAL DESCRIPTION One of the most fundamental services the ocean provides is the provision of seafood. One in 7 people rely on fish as a daily source of protein, yet global catches have been declining steadily since peak catch in 1996 (Pauly and Zeller 2016). Given pressures on fisheries and projected increases in human population, it may become difficult to rely on wild-caught marine fish to meet basic nutritional needs.</description>
     </item>
     <item>
       <title>Sub-Goal: Mariculture</title>
-      <link>http://localhost:1313/goals/food-provision/mariculture/</link>
+      <link>https://oceanhealthindex.org/goals/food-provision/mariculture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/food-provision/mariculture/</guid>
+      <guid>https://oceanhealthindex.org/goals/food-provision/mariculture/</guid>
       <description>AN INCREASINGLY IMPORTANT SOURCE OF FOOD This goal assesses our ability to sustainably maximize the production of farm-raised marine food.&#xA;GOAL DESCRIPTION As humanity’s population continues to expand, we must increasingly rely upon new and improved methods for cultivating food on land and in the ocean. The term aquaculture refers to the cultivation in water (fresh and saltwater) of animals or plants for human consumption. Mariculture refers to the commercial harvest of seafood that is farm-raised in the ocean and along the coast.</description>
     </item>
   </channel>
