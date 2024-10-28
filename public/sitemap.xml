@@ -2,755 +2,755 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oceanhealthindex.org/goals/food-provision/</loc>
+    <loc>http://localhost:1313/goals/food-provision/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/artisanal-fishing-opportunities/</loc>
+    <loc>http://localhost:1313/goals/artisanal-fishing-opportunities/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/artisanal-fishing-opportunities/</loc>
+    <loc>http://localhost:1313/guidance/artisanal-fishing-opportunities/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/natural-products/</loc>
+    <loc>http://localhost:1313/goals/natural-products/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/natural-products/</loc>
+    <loc>http://localhost:1313/guidance/natural-products/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/carbon-storage/</loc>
+    <loc>http://localhost:1313/goals/carbon-storage/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/carbon-storage/</loc>
+    <loc>http://localhost:1313/guidance/carbon-storage/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/coastal-protection/</loc>
+    <loc>http://localhost:1313/goals/coastal-protection/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/coastal-protection/</loc>
+    <loc>http://localhost:1313/guidance/coastal-protection/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/livelihoods-and-economies/</loc>
+    <loc>http://localhost:1313/goals/livelihoods-and-economies/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/tourism-and-recreation/</loc>
+    <loc>http://localhost:1313/goals/tourism-and-recreation/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/tourism-and-recreation/</loc>
+    <loc>http://localhost:1313/guidance/tourism-and-recreation/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/sense-of-place/</loc>
+    <loc>http://localhost:1313/goals/sense-of-place/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/clean-waters/</loc>
+    <loc>http://localhost:1313/goals/clean-waters/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/clean-waters/</loc>
+    <loc>http://localhost:1313/guidance/clean-waters/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/biodiversity/</loc>
+    <loc>http://localhost:1313/goals/biodiversity/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/</loc>
+    <loc>http://localhost:1313/news/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/projecting_spatial_data/</loc>
+    <loc>http://localhost:1313/news/projecting_spatial_data/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/crs_deep_dive/</loc>
+    <loc>http://localhost:1313/news/crs_deep_dive/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2024-global-fellows/</loc>
+    <loc>http://localhost:1313/news/2024-global-fellows/</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2023-scores/</loc>
+    <loc>http://localhost:1313/news/2023-scores/</loc>
     <lastmod>2023-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/lsp_scores/</loc>
+    <loc>http://localhost:1313/news/lsp_scores/</loc>
     <lastmod>2023-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/faroe_islands/</loc>
+    <loc>http://localhost:1313/news/faroe_islands/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/data_layers/</loc>
+    <loc>http://localhost:1313/news/data_layers/</loc>
     <lastmod>2023-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2023-global-fellows/</loc>
+    <loc>http://localhost:1313/news/2023-global-fellows/</loc>
     <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/cmip_2_what_is_this/</loc>
+    <loc>http://localhost:1313/news/cmip_2_what_is_this/</loc>
     <lastmod>2022-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2022-scores/</loc>
+    <loc>http://localhost:1313/news/2022-scores/</loc>
     <lastmod>2022-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/scraping_webpages_and_pdfs/</loc>
+    <loc>http://localhost:1313/news/scraping_webpages_and_pdfs/</loc>
     <lastmod>2022-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/tidal_flats/</loc>
+    <loc>http://localhost:1313/news/tidal_flats/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/raster_to_terra/</loc>
+    <loc>http://localhost:1313/news/raster_to_terra/</loc>
     <lastmod>2022-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2022-global-fellows/</loc>
+    <loc>http://localhost:1313/news/2022-global-fellows/</loc>
     <lastmod>2022-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/cmip_1_what_is_this/</loc>
+    <loc>http://localhost:1313/news/cmip_1_what_is_this/</loc>
     <lastmod>2022-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2021-scores/</loc>
+    <loc>http://localhost:1313/news/2021-scores/</loc>
     <lastmod>2021-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2020-scores/</loc>
+    <loc>http://localhost:1313/news/2020-scores/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2020-baltic-health-index/</loc>
+    <loc>http://localhost:1313/news/2020-baltic-health-index/</loc>
     <lastmod>2020-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/2019-scores/</loc>
+    <loc>http://localhost:1313/news/2019-scores/</loc>
     <lastmod>2019-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/transparency-trust/</loc>
+    <loc>http://localhost:1313/news/transparency-trust/</loc>
     <lastmod>2019-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/news/three-lessons/</loc>
+    <loc>http://localhost:1313/news/three-lessons/</loc>
     <lastmod>2019-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/albania/</loc>
+    <loc>http://localhost:1313/regions/albania/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/algeria/</loc>
+    <loc>http://localhost:1313/regions/algeria/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/american-samoa/</loc>
+    <loc>http://localhost:1313/regions/american-samoa/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/amsterdam-island-and-saint-paul-island/</loc>
+    <loc>http://localhost:1313/regions/amsterdam-island-and-saint-paul-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/andaman-and-nicobar/</loc>
+    <loc>http://localhost:1313/regions/andaman-and-nicobar/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/angola/</loc>
+    <loc>http://localhost:1313/regions/angola/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/anguilla/</loc>
+    <loc>http://localhost:1313/regions/anguilla/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/antigua-and-barbuda/</loc>
+    <loc>http://localhost:1313/regions/antigua-and-barbuda/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/argentina/</loc>
+    <loc>http://localhost:1313/regions/argentina/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/aruba/</loc>
+    <loc>http://localhost:1313/regions/aruba/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ascension/</loc>
+    <loc>http://localhost:1313/regions/ascension/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/australia/</loc>
+    <loc>http://localhost:1313/regions/australia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/azores/</loc>
+    <loc>http://localhost:1313/regions/azores/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bahamas/</loc>
+    <loc>http://localhost:1313/regions/bahamas/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bahrain/</loc>
+    <loc>http://localhost:1313/regions/bahrain/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bangladesh/</loc>
+    <loc>http://localhost:1313/regions/bangladesh/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/barbados/</loc>
+    <loc>http://localhost:1313/regions/barbados/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bassas-da-india/</loc>
+    <loc>http://localhost:1313/regions/bassas-da-india/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/belgium/</loc>
+    <loc>http://localhost:1313/regions/belgium/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/belize/</loc>
+    <loc>http://localhost:1313/regions/belize/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/benin/</loc>
+    <loc>http://localhost:1313/regions/benin/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bermuda/</loc>
+    <loc>http://localhost:1313/regions/bermuda/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bonaire/</loc>
+    <loc>http://localhost:1313/regions/bonaire/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bosnia-and-herzegovina/</loc>
+    <loc>http://localhost:1313/regions/bosnia-and-herzegovina/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bouvet-island/</loc>
+    <loc>http://localhost:1313/regions/bouvet-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/brazil/</loc>
+    <loc>http://localhost:1313/regions/brazil/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/british-indian-ocean-territory/</loc>
+    <loc>http://localhost:1313/regions/british-indian-ocean-territory/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/british-virgin-islands/</loc>
+    <loc>http://localhost:1313/regions/british-virgin-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/brunei/</loc>
+    <loc>http://localhost:1313/regions/brunei/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/bulgaria/</loc>
+    <loc>http://localhost:1313/regions/bulgaria/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cambodia/</loc>
+    <loc>http://localhost:1313/regions/cambodia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cameroon/</loc>
+    <loc>http://localhost:1313/regions/cameroon/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/canada/</loc>
+    <loc>http://localhost:1313/regions/canada/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/canary-islands/</loc>
+    <loc>http://localhost:1313/regions/canary-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cape-verde/</loc>
+    <loc>http://localhost:1313/regions/cape-verde/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cayman-islands/</loc>
+    <loc>http://localhost:1313/regions/cayman-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/chile/</loc>
+    <loc>http://localhost:1313/regions/chile/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/china/</loc>
+    <loc>http://localhost:1313/regions/china/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/christmas-island/</loc>
+    <loc>http://localhost:1313/regions/christmas-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/clipperton-island/</loc>
+    <loc>http://localhost:1313/regions/clipperton-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cocos-islands/</loc>
+    <loc>http://localhost:1313/regions/cocos-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/colombia/</loc>
+    <loc>http://localhost:1313/regions/colombia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/comoro-islands/</loc>
+    <loc>http://localhost:1313/regions/comoro-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/conduct/</loc>
+    <loc>http://localhost:1313/ohi&#43;/conduct/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/about/contact/</loc>
+    <loc>http://localhost:1313/about/contact/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cook-islands/</loc>
+    <loc>http://localhost:1313/regions/cook-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/costa-rica/</loc>
+    <loc>http://localhost:1313/regions/costa-rica/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/croatia/</loc>
+    <loc>http://localhost:1313/regions/croatia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/crozet-islands/</loc>
+    <loc>http://localhost:1313/regions/crozet-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cuba/</loc>
+    <loc>http://localhost:1313/regions/cuba/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/resources/data/cumulative-human-impacts/</loc>
+    <loc>http://localhost:1313/resources/data/cumulative-human-impacts/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/curacao/</loc>
+    <loc>http://localhost:1313/regions/curacao/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/cyprus/</loc>
+    <loc>http://localhost:1313/regions/cyprus/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/resources/data/</loc>
+    <loc>http://localhost:1313/resources/data/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/data-download/</loc>
+    <loc>http://localhost:1313/global-scores/data-download/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/methodology/deep-dive/</loc>
+    <loc>http://localhost:1313/methodology/deep-dive/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/democratic-republic-of-the-congo/</loc>
+    <loc>http://localhost:1313/regions/democratic-republic-of-the-congo/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/denmark/</loc>
+    <loc>http://localhost:1313/regions/denmark/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/djibouti/</loc>
+    <loc>http://localhost:1313/regions/djibouti/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/dominica/</loc>
+    <loc>http://localhost:1313/regions/dominica/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/dominican-republic/</loc>
+    <loc>http://localhost:1313/regions/dominican-republic/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/east-timor/</loc>
+    <loc>http://localhost:1313/regions/east-timor/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ecuador/</loc>
+    <loc>http://localhost:1313/regions/ecuador/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/egypt/</loc>
+    <loc>http://localhost:1313/regions/egypt/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/el-salvador/</loc>
+    <loc>http://localhost:1313/regions/el-salvador/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/equatorial-guinea/</loc>
+    <loc>http://localhost:1313/regions/equatorial-guinea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/eritrea/</loc>
+    <loc>http://localhost:1313/regions/eritrea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/estonia/</loc>
+    <loc>http://localhost:1313/regions/estonia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/faeroe-islands/</loc>
+    <loc>http://localhost:1313/regions/faeroe-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/falkland-islands/</loc>
+    <loc>http://localhost:1313/regions/falkland-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/fiji/</loc>
+    <loc>http://localhost:1313/regions/fiji/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/finland/</loc>
+    <loc>http://localhost:1313/regions/finland/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/france/</loc>
+    <loc>http://localhost:1313/regions/france/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/french-guiana/</loc>
+    <loc>http://localhost:1313/regions/french-guiana/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/french-polynesia/</loc>
+    <loc>http://localhost:1313/regions/french-polynesia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/gabon/</loc>
+    <loc>http://localhost:1313/regions/gabon/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/gambia/</loc>
+    <loc>http://localhost:1313/regions/gambia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/georgia/</loc>
+    <loc>http://localhost:1313/regions/georgia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/germany/</loc>
+    <loc>http://localhost:1313/regions/germany/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ghana/</loc>
+    <loc>http://localhost:1313/regions/ghana/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/gibraltar/</loc>
+    <loc>http://localhost:1313/regions/gibraltar/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/gilbert-islands/</loc>
+    <loc>http://localhost:1313/regions/gilbert-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/resources/data/global-ohi/</loc>
+    <loc>http://localhost:1313/resources/data/global-ohi/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/</loc>
+    <loc>http://localhost:1313/regions/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/glorioso-islands/</loc>
+    <loc>http://localhost:1313/regions/glorioso-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/artisanal-fishing-opportunities/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/artisanal-fishing-opportunities/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/biodiversity/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/carbon-storage/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/carbon-storage/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/clean-waters/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/clean-waters/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/coastal-protection/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/coastal-protection/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/food-provision/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/natural-products/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/natural-products/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/sense-of-place/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/tourism-and-recreation/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/tourism-and-recreation/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/</loc>
+    <loc>http://localhost:1313/goals/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/greece/</loc>
+    <loc>http://localhost:1313/regions/greece/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/greenland/</loc>
+    <loc>http://localhost:1313/regions/greenland/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/grenada/</loc>
+    <loc>http://localhost:1313/regions/grenada/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/guadeloupe-and-martinique/</loc>
+    <loc>http://localhost:1313/regions/guadeloupe-and-martinique/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/guatemala/</loc>
+    <loc>http://localhost:1313/regions/guatemala/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/guernsey/</loc>
+    <loc>http://localhost:1313/regions/guernsey/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/economies/</loc>
+    <loc>http://localhost:1313/guidance/economies/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/habitats/</loc>
+    <loc>http://localhost:1313/guidance/habitats/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/iconic-species/</loc>
+    <loc>http://localhost:1313/guidance/iconic-species/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/lasting-special-places/</loc>
+    <loc>http://localhost:1313/guidance/lasting-special-places/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/livelihoods/</loc>
+    <loc>http://localhost:1313/guidance/livelihoods/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/mariculture/</loc>
+    <loc>http://localhost:1313/guidance/mariculture/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/species/</loc>
+    <loc>http://localhost:1313/guidance/species/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/guinea/</loc>
+    <loc>http://localhost:1313/regions/guinea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/guinea-bissau/</loc>
+    <loc>http://localhost:1313/regions/guinea-bissau/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/guyana/</loc>
+    <loc>http://localhost:1313/regions/guyana/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/haiti/</loc>
+    <loc>http://localhost:1313/regions/haiti/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/heard-and-mcdonald-islands/</loc>
+    <loc>http://localhost:1313/regions/heard-and-mcdonald-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/honduras/</loc>
+    <loc>http://localhost:1313/regions/honduras/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/howland-island-and-baker-island/</loc>
+    <loc>http://localhost:1313/regions/howland-island-and-baker-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/iceland/</loc>
+    <loc>http://localhost:1313/regions/iceland/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ile-europa/</loc>
+    <loc>http://localhost:1313/regions/ile-europa/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ile-tromelin/</loc>
+    <loc>http://localhost:1313/regions/ile-tromelin/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/india/</loc>
+    <loc>http://localhost:1313/regions/india/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/indonesia/</loc>
+    <loc>http://localhost:1313/regions/indonesia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/conduct/inform/</loc>
+    <loc>http://localhost:1313/ohi&#43;/conduct/inform/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/iran/</loc>
+    <loc>http://localhost:1313/regions/iran/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/iraq/</loc>
+    <loc>http://localhost:1313/regions/iraq/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ireland/</loc>
+    <loc>http://localhost:1313/regions/ireland/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/israel/</loc>
+    <loc>http://localhost:1313/regions/israel/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/italy/</loc>
+    <loc>http://localhost:1313/regions/italy/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ivory-coast/</loc>
+    <loc>http://localhost:1313/regions/ivory-coast/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/jamaica/</loc>
+    <loc>http://localhost:1313/regions/jamaica/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/jan-mayen/</loc>
+    <loc>http://localhost:1313/regions/jan-mayen/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/japan/</loc>
+    <loc>http://localhost:1313/regions/japan/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/jarvis-island/</loc>
+    <loc>http://localhost:1313/regions/jarvis-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/jersey/</loc>
+    <loc>http://localhost:1313/regions/jersey/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/johnston-atoll/</loc>
+    <loc>http://localhost:1313/regions/johnston-atoll/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/jordan/</loc>
+    <loc>http://localhost:1313/regions/jordan/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/juan-de-nova-island/</loc>
+    <loc>http://localhost:1313/regions/juan-de-nova-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/kenya/</loc>
+    <loc>http://localhost:1313/regions/kenya/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/kerguelen-islands/</loc>
+    <loc>http://localhost:1313/regions/kerguelen-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/kuwait/</loc>
+    <loc>http://localhost:1313/regions/kuwait/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/latvia/</loc>
+    <loc>http://localhost:1313/regions/latvia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/conduct/learn/</loc>
+    <loc>http://localhost:1313/ohi&#43;/conduct/learn/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/lebanon/</loc>
+    <loc>http://localhost:1313/regions/lebanon/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/liberia/</loc>
+    <loc>http://localhost:1313/regions/liberia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/libya/</loc>
+    <loc>http://localhost:1313/regions/libya/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/line-islands/</loc>
+    <loc>http://localhost:1313/regions/line-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/lithuania/</loc>
+    <loc>http://localhost:1313/regions/lithuania/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/macquarie-island/</loc>
+    <loc>http://localhost:1313/regions/macquarie-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/madagascar/</loc>
+    <loc>http://localhost:1313/regions/madagascar/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/madeira/</loc>
+    <loc>http://localhost:1313/regions/madeira/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/malaysia/</loc>
+    <loc>http://localhost:1313/regions/malaysia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/maldives/</loc>
+    <loc>http://localhost:1313/regions/maldives/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/malta/</loc>
+    <loc>http://localhost:1313/regions/malta/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/marshall-islands/</loc>
+    <loc>http://localhost:1313/regions/marshall-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/mauritania/</loc>
+    <loc>http://localhost:1313/regions/mauritania/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/mauritius/</loc>
+    <loc>http://localhost:1313/regions/mauritius/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/mayotte/</loc>
+    <loc>http://localhost:1313/regions/mayotte/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/methodology/</loc>
+    <loc>http://localhost:1313/methodology/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/mexico/</loc>
+    <loc>http://localhost:1313/regions/mexico/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/micronesia/</loc>
+    <loc>http://localhost:1313/regions/micronesia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/monaco/</loc>
+    <loc>http://localhost:1313/regions/monaco/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/montenegro/</loc>
+    <loc>http://localhost:1313/regions/montenegro/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/montserrat/</loc>
+    <loc>http://localhost:1313/regions/montserrat/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/morocco/</loc>
+    <loc>http://localhost:1313/regions/morocco/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/mozambique/</loc>
+    <loc>http://localhost:1313/regions/mozambique/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/myanmar/</loc>
+    <loc>http://localhost:1313/regions/myanmar/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/namibia/</loc>
+    <loc>http://localhost:1313/regions/namibia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/nauru/</loc>
+    <loc>http://localhost:1313/regions/nauru/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/netherlands/</loc>
+    <loc>http://localhost:1313/regions/netherlands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/new-caledonia/</loc>
+    <loc>http://localhost:1313/regions/new-caledonia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/new-zealand/</loc>
+    <loc>http://localhost:1313/regions/new-zealand/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/nicaragua/</loc>
+    <loc>http://localhost:1313/regions/nicaragua/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/nigeria/</loc>
+    <loc>http://localhost:1313/regions/nigeria/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/niue/</loc>
+    <loc>http://localhost:1313/regions/niue/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/norfolk-island/</loc>
+    <loc>http://localhost:1313/regions/norfolk-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/north-korea/</loc>
+    <loc>http://localhost:1313/regions/north-korea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/northern-mariana-islands-and-guam/</loc>
+    <loc>http://localhost:1313/regions/northern-mariana-islands-and-guam/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/northern-saint-martin/</loc>
+    <loc>http://localhost:1313/regions/northern-saint-martin/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/norway/</loc>
+    <loc>http://localhost:1313/regions/norway/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/oecussi-ambeno/</loc>
+    <loc>http://localhost:1313/regions/oecussi-ambeno/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/antarctic-coast/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/antarctic-coast/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/antarctica/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/antarctica/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/arctic/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/arctic/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/argentina-patagonia/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/argentina-patagonia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/indonesia-bali/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/indonesia-bali/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/baltic-sea/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/baltic-sea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/brazil/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/brazil/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/canada/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/canada/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/canada-atlantic/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/canada-atlantic/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/canada-british-columbia/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/canada-british-columbia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/patagonia-chile/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/patagonia-chile/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/china/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/china/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/colombia/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/colombia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/ecuador-gulf-of-guayaquil/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/ecuador-gulf-of-guayaquil/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/fiji/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/fiji/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/indonesia-gulf-of-madura/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/indonesia-gulf-of-madura/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/israel/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/israel/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/japan-tokyo-bay/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-bay/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/japan-tokyo-metropolitan-area/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-metropolitan-area/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/kenya/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/kenya/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/indonesia-maluku/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/indonesia-maluku/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/mexico/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/mexico/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/moorea/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/moorea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/nairobi-convention/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/nairobi-convention/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/new-caledonia/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/new-caledonia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/north-america/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/north-america/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/norway/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/norway/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/palmyra/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/palmyra/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/peru/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/peru/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/philippines/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/philippines/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/red-sea-and-gulf-of-aden/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/red-sea-and-gulf-of-aden/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/samoa/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/samoa/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/south-korea/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/south-korea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/spain-bay-of-biscay/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/spain-bay-of-biscay/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/spain-gulf-of-cadiz/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/spain-gulf-of-cadiz/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/spain-ria-de-vigo/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/spain-ria-de-vigo/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/tanzania/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/tanzania/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/tetiaroa/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/tetiaroa/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/indonesia-tuban/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/indonesia-tuban/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/united-kingdom-cornwall/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/united-kingdom-cornwall/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/us-hawaii/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/us-hawaii/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/us-northeast/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/us-northeast/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/us-west-coast/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/us-west-coast/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/about/ohifellows/</loc>
+    <loc>http://localhost:1313/about/ohifellows/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/oman/</loc>
+    <loc>http://localhost:1313/regions/oman/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/pakistan/</loc>
+    <loc>http://localhost:1313/regions/pakistan/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/palau/</loc>
+    <loc>http://localhost:1313/regions/palau/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/palmyra-atoll/</loc>
+    <loc>http://localhost:1313/regions/palmyra-atoll/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/panama/</loc>
+    <loc>http://localhost:1313/regions/panama/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/papua-new-guinea/</loc>
+    <loc>http://localhost:1313/regions/papua-new-guinea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/about/people/</loc>
+    <loc>http://localhost:1313/about/people/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/peru/</loc>
+    <loc>http://localhost:1313/regions/peru/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/philippines/</loc>
+    <loc>http://localhost:1313/regions/philippines/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/phoenix-islands/</loc>
+    <loc>http://localhost:1313/regions/phoenix-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/pitcairn/</loc>
+    <loc>http://localhost:1313/regions/pitcairn/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/conduct/plan/</loc>
+    <loc>http://localhost:1313/ohi&#43;/conduct/plan/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/poland/</loc>
+    <loc>http://localhost:1313/regions/poland/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/portugal/</loc>
+    <loc>http://localhost:1313/regions/portugal/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/methodology/pressure/</loc>
+    <loc>http://localhost:1313/methodology/pressure/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/prince-edward-islands/</loc>
+    <loc>http://localhost:1313/regions/prince-edward-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/about/publications/</loc>
+    <loc>http://localhost:1313/about/publications/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/puerto-rico-and-virgin-islands-of-the-united-states/</loc>
+    <loc>http://localhost:1313/regions/puerto-rico-and-virgin-islands-of-the-united-states/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/qatar/</loc>
+    <loc>http://localhost:1313/regions/qatar/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/assessment/</loc>
+    <loc>http://localhost:1313/ohi&#43;/assessment/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/republique-du-congo/</loc>
+    <loc>http://localhost:1313/regions/republique-du-congo/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/methodology/resilience/</loc>
+    <loc>http://localhost:1313/methodology/resilience/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/resources/</loc>
+    <loc>http://localhost:1313/resources/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/r%C3%A9union/</loc>
+    <loc>http://localhost:1313/regions/r%C3%A9union/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/romania/</loc>
+    <loc>http://localhost:1313/regions/romania/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/russia/</loc>
+    <loc>http://localhost:1313/regions/russia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saba/</loc>
+    <loc>http://localhost:1313/regions/saba/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saint-helena/</loc>
+    <loc>http://localhost:1313/regions/saint-helena/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saint-kitts-and-nevis/</loc>
+    <loc>http://localhost:1313/regions/saint-kitts-and-nevis/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saint-lucia/</loc>
+    <loc>http://localhost:1313/regions/saint-lucia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saint-pierre-and-miquelon/</loc>
+    <loc>http://localhost:1313/regions/saint-pierre-and-miquelon/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saint-vincent-and-the-grenadines/</loc>
+    <loc>http://localhost:1313/regions/saint-vincent-and-the-grenadines/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/samoa/</loc>
+    <loc>http://localhost:1313/regions/samoa/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sao-tome-and-principe/</loc>
+    <loc>http://localhost:1313/regions/sao-tome-and-principe/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/saudi-arabia/</loc>
+    <loc>http://localhost:1313/regions/saudi-arabia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/</loc>
+    <loc>http://localhost:1313/global-scores/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/senegal/</loc>
+    <loc>http://localhost:1313/regions/senegal/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/seychelles/</loc>
+    <loc>http://localhost:1313/regions/seychelles/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sierra-leone/</loc>
+    <loc>http://localhost:1313/regions/sierra-leone/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/singapore/</loc>
+    <loc>http://localhost:1313/regions/singapore/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sint-eustatius/</loc>
+    <loc>http://localhost:1313/regions/sint-eustatius/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sint-maarten/</loc>
+    <loc>http://localhost:1313/regions/sint-maarten/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/slovenia/</loc>
+    <loc>http://localhost:1313/regions/slovenia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/solomon-islands/</loc>
+    <loc>http://localhost:1313/regions/solomon-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/somalia/</loc>
+    <loc>http://localhost:1313/regions/somalia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/south-africa/</loc>
+    <loc>http://localhost:1313/regions/south-africa/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/south-georgia-and-the-south-sandwich-islands/</loc>
+    <loc>http://localhost:1313/regions/south-georgia-and-the-south-sandwich-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/south-korea/</loc>
+    <loc>http://localhost:1313/regions/south-korea/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/spain/</loc>
+    <loc>http://localhost:1313/regions/spain/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sri-lanka/</loc>
+    <loc>http://localhost:1313/regions/sri-lanka/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/wild-caught-fisheries/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/food-provision/wild-caught-fisheries/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/food-provision/wild-caught-fisheries/</loc>
+    <loc>http://localhost:1313/goals/food-provision/wild-caught-fisheries/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/guidance/wild-caught-fisheries/</loc>
+    <loc>http://localhost:1313/guidance/wild-caught-fisheries/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/habitats/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/biodiversity/habitats/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/biodiversity/habitats/</loc>
+    <loc>http://localhost:1313/goals/biodiversity/habitats/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/iconic-species/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/sense-of-place/iconic-species/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/sense-of-place/iconic-species/</loc>
+    <loc>http://localhost:1313/goals/sense-of-place/iconic-species/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/lasting-special-places/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/sense-of-place/lasting-special-places/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/sense-of-place/lasting-special-places/</loc>
+    <loc>http://localhost:1313/goals/sense-of-place/lasting-special-places/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/livelihoods-and-economies/livelihoods/</loc>
+    <loc>http://localhost:1313/goals/livelihoods-and-economies/livelihoods/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/mariculture/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/food-provision/mariculture/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/food-provision/mariculture/</loc>
+    <loc>http://localhost:1313/goals/food-provision/mariculture/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/biodiversity/species/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/biodiversity/species/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/biodiversity/species/</loc>
+    <loc>http://localhost:1313/goals/biodiversity/species/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/economies/</loc>
+    <loc>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/economies/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/goals/livelihoods-and-economies/economies/</loc>
+    <loc>http://localhost:1313/goals/livelihoods-and-economies/economies/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sudan/</loc>
+    <loc>http://localhost:1313/regions/sudan/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/about/supporters/</loc>
+    <loc>http://localhost:1313/about/supporters/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/suriname/</loc>
+    <loc>http://localhost:1313/regions/suriname/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/sweden/</loc>
+    <loc>http://localhost:1313/regions/sweden/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/syria/</loc>
+    <loc>http://localhost:1313/regions/syria/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/taiwan/</loc>
+    <loc>http://localhost:1313/regions/taiwan/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/tanzania/</loc>
+    <loc>http://localhost:1313/regions/tanzania/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/thailand/</loc>
+    <loc>http://localhost:1313/regions/thailand/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/togo/</loc>
+    <loc>http://localhost:1313/regions/togo/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/tokelau/</loc>
+    <loc>http://localhost:1313/regions/tokelau/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/tonga/</loc>
+    <loc>http://localhost:1313/regions/tonga/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/resources/tools/</loc>
+    <loc>http://localhost:1313/resources/tools/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/trinidad-and-tobago/</loc>
+    <loc>http://localhost:1313/regions/trinidad-and-tobago/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/tristan-da-cunha/</loc>
+    <loc>http://localhost:1313/regions/tristan-da-cunha/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/tunisia/</loc>
+    <loc>http://localhost:1313/regions/tunisia/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/turkey/</loc>
+    <loc>http://localhost:1313/regions/turkey/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/turks-and-caicos-islands/</loc>
+    <loc>http://localhost:1313/regions/turks-and-caicos-islands/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/tuvalu/</loc>
+    <loc>http://localhost:1313/regions/tuvalu/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/ukraine/</loc>
+    <loc>http://localhost:1313/regions/ukraine/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/united-arab-emirates/</loc>
+    <loc>http://localhost:1313/regions/united-arab-emirates/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/united-kingdom/</loc>
+    <loc>http://localhost:1313/regions/united-kingdom/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/united-states/</loc>
+    <loc>http://localhost:1313/regions/united-states/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/uruguay/</loc>
+    <loc>http://localhost:1313/regions/uruguay/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/vanuatu/</loc>
+    <loc>http://localhost:1313/regions/vanuatu/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/venezuela/</loc>
+    <loc>http://localhost:1313/regions/venezuela/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/vietnam/</loc>
+    <loc>http://localhost:1313/regions/vietnam/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/wake-island/</loc>
+    <loc>http://localhost:1313/regions/wake-island/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/wallis-and-futuna/</loc>
+    <loc>http://localhost:1313/regions/wallis-and-futuna/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/western-sahara/</loc>
+    <loc>http://localhost:1313/regions/western-sahara/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/ohi&#43;/</loc>
+    <loc>http://localhost:1313/ohi&#43;/</loc>
   </url><url>
-    <loc>https://oceanhealthindex.org/regions/yemen/</loc>
+    <loc>http://localhost:1313/regions/yemen/</loc>
   </url>
 </urlset>

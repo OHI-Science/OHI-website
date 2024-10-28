@@ -2,157 +2,157 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/news/</link>
+    <link>http://localhost:1313/news/</link>
     <description>Recent content in News on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oceanhealthindex.org/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Trouble with Transformation</title>
-      <link>https://oceanhealthindex.org/news/projecting_spatial_data/</link>
+      <link>http://localhost:1313/news/projecting_spatial_data/</link>
       <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/projecting_spatial_data/</guid>
+      <guid>http://localhost:1313/news/projecting_spatial_data/</guid>
       <description>The Trouble with Transformation The Challenges of Projecting Spatial Data by Anna Ramji&#xA;Fri, Sep 13, 2024&#xA;Introduction Have you ever wondered what happens to your mapped raster data when you project it from one Coordinate Reference System (CRS) to another? Or whether anything can go wrong when projecting?&#xA;In this article, we&amp;rsquo;ll walk through how reprojecting and transforming geospatial data can potentially lead to large errors! To help you avoid this problem we&amp;rsquo;ll show you how to check for and avoid these problems.</description>
     </item>
     <item>
       <title>Coordinate Reference Systems: Ensuring Accuracy in Spatial Analysis</title>
-      <link>https://oceanhealthindex.org/news/crs_deep_dive/</link>
+      <link>http://localhost:1313/news/crs_deep_dive/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/crs_deep_dive/</guid>
+      <guid>http://localhost:1313/news/crs_deep_dive/</guid>
       <description>Ensuring Accuracy in Spatial Analysis A Mesophotic Dive into Coordinate Reference Systems by Dustin Duncan&#xA;Fri, Aug 30, 2024&#xA;What is a Coordinate Reference System? Coordinate reference systems can refer to either geographic coordinate systems or projected coordinate systems. Geographic coordinate systems describe locations on earth using a three-dimensional reference, and are used along with a specified map projection to create a projected coordinate system, which describes the same information on a two-dimensional surface (1) .</description>
     </item>
     <item>
       <title>2024 OHI Global Fellows</title>
-      <link>https://oceanhealthindex.org/news/2024-global-fellows/</link>
+      <link>http://localhost:1313/news/2024-global-fellows/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2024-global-fellows/</guid>
+      <guid>http://localhost:1313/news/2024-global-fellows/</guid>
       <description>Getting to know the 2024 Fellows by Anna Ramji, Dustin Duncan, Sophia Lecuona Manos&#xA;Wed, Jul 31, 2024&#xA;In 2024, the Ocean Health Index Global Fellows program has welcomed three fresh Data Science and Communication Fellows to its ranks. The selected trio all hail from the Bren School of Environmental Science &amp;amp; Management, with one Master of Environmental Data Science (MEDS) alumna and two current Master of Environmental Science and Management (MESM) students.</description>
     </item>
     <item>
       <title>2023 Global Ocean Health Index</title>
-      <link>https://oceanhealthindex.org/news/2023-scores/</link>
+      <link>http://localhost:1313/news/2023-scores/</link>
       <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2023-scores/</guid>
+      <guid>http://localhost:1313/news/2023-scores/</guid>
       <description>2023 Ocean Health Index Scores! by The OHI Team&#xA;Sun, Dec 03, 2023&#xA;We are proud to announce our 12th year of measuring the state of the world&amp;rsquo;s oceans.&#xA;The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean.&#xA;As usual, the 2023 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources.</description>
     </item>
     <item>
       <title>What might increases in Lasting Special Place scores mean for the environment?</title>
-      <link>https://oceanhealthindex.org/news/lsp_scores/</link>
+      <link>http://localhost:1313/news/lsp_scores/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/lsp_scores/</guid>
+      <guid>http://localhost:1313/news/lsp_scores/</guid>
       <description>The Lasting Special Places Sub-goal: Protected Areas and their Environmental Impacts by Erika Egg&#xA;Fri, Sep 15, 2023&#xA;The Ocean Health Index&amp;rsquo;s (OHI) Lasting Special Places (LSP) sub-goal within the Sense of Place goal aims to quantify “how well we are protecting the locations that contribute to marine-related cultural identity” (OHI, n.d., para. 1). We look at that in terms of meeting a threshold of protection: 30% of coastal area protected for a given OHI region translates to a score of 100 for this sub-goal, with coastal area defined as the combined area 3 nautical miles (nm) offshore and 1 kilometer (km) inland along the OHI region’s coast.</description>
     </item>
     <item>
       <title>Waves of Controversy: The Faroe Islands&#39; Whale Hunt</title>
-      <link>https://oceanhealthindex.org/news/faroe_islands/</link>
+      <link>http://localhost:1313/news/faroe_islands/</link>
       <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/faroe_islands/</guid>
+      <guid>http://localhost:1313/news/faroe_islands/</guid>
       <description>Waves of Controversy The Faroe Islands&#39; Whale Hunt and its Ripple Effect on Ocean Health Index Scores by Carlo Broderick&#xA;Fri, Sep 01, 2023&#xA;The practice of whale hunting has been a long-standing tradition in the Faroe Islands, an autonomous territory within the Kingdom of Denmark (Olsen 2011). However, this cultural practice has recently come under increased domestic and international scrutiny. In September 2021, an unusually large whale hunt drew widespread attention and criticism.</description>
     </item>
     <item>
       <title>Exploring OHI Data Layers</title>
-      <link>https://oceanhealthindex.org/news/data_layers/</link>
+      <link>http://localhost:1313/news/data_layers/</link>
       <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/data_layers/</guid>
+      <guid>http://localhost:1313/news/data_layers/</guid>
       <description>Understanding the journey from raw data to goal scores in OHI by Adelaide Robinson&#xA;Wed, Aug 23, 2023&#xA;The Ocean Health Index monitors 10 key goals for ensuring the ocean is able to sustainably meet the needs of people around the world. In order to monitor ocean health at a comprehensive scale, the OHI team has to process and incorporate many different datasets. But how exactly do we get from raw data to calculating goal scores?</description>
     </item>
     <item>
       <title>2023 OHI Global Fellows</title>
-      <link>https://oceanhealthindex.org/news/2023-global-fellows/</link>
+      <link>http://localhost:1313/news/2023-global-fellows/</link>
       <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2023-global-fellows/</guid>
+      <guid>http://localhost:1313/news/2023-global-fellows/</guid>
       <description>Getting to know the 2023 Fellows by Carlo Broderick, Adelaide Robinson, Erika Egg&#xA;Mon, May 29, 2023&#xA;In 2023, the Ocean Health Index Global Fellows program has welcomed three fresh Data Science and Communication Fellows to its ranks. The selected trio all hail from the newly instituted Masters of Environmental Data Science (MEDS) program. This course is a collaborative effort between the Bren School of Environmental Science and Management, and the National Center for Ecological Analysis and Synthesis (NCEAS).</description>
     </item>
     <item>
       <title>CMIP6: Finding data</title>
-      <link>https://oceanhealthindex.org/news/cmip_2_what_is_this/</link>
+      <link>http://localhost:1313/news/cmip_2_what_is_this/</link>
       <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/cmip_2_what_is_this/</guid>
+      <guid>http://localhost:1313/news/cmip_2_what_is_this/</guid>
       <description>CMIP6 Climate Scenario data: Where do I get the data! by Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard&#xA;Fri, Dec 16, 2022&#xA;If you are an ecologist or biologist and need predictions of future climate variables, then the CMIP6 Scenario data will probably be what you want!&#xA;In this blogpost, we provide an overview of the raw CMIP6 data because this is helpful for understanding these data. However, because we believe non-climate scientists should probably seek more derived CMIP6 products, we also provide information about some of these products that we have used in our research.</description>
     </item>
     <item>
       <title>2022 Global Ocean Health Index</title>
-      <link>https://oceanhealthindex.org/news/2022-scores/</link>
+      <link>http://localhost:1313/news/2022-scores/</link>
       <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2022-scores/</guid>
+      <guid>http://localhost:1313/news/2022-scores/</guid>
       <description>11 years of OHI Scores! by The OHI Team&#xA;Tue, Dec 06, 2022&#xA;We are proud to announce our 11th (!) year of measuring the state of the world’s oceans.&#xA;The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean.&#xA;As usual, the 2022 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources.</description>
     </item>
     <item>
       <title>Scraping Webpages and PDF&#39;s in R</title>
-      <link>https://oceanhealthindex.org/news/scraping_webpages_and_pdfs/</link>
+      <link>http://localhost:1313/news/scraping_webpages_and_pdfs/</link>
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/scraping_webpages_and_pdfs/</guid>
+      <guid>http://localhost:1313/news/scraping_webpages_and_pdfs/</guid>
       <description>Scraping Webpages and PDF&amp;rsquo;s in R with rvest and tabulizer by Peter Menzies&#xA;Wed, Sep 07, 2022&#xA;Overview Sometimes the data we need aren&amp;rsquo;t readily accessible — this shouldn&amp;rsquo;t be news to any of us who regularly work with and seek out datasets. The following post will walk through an R script we wrote to scrape download links from a webpage, download the PDFs found at those links, and then extract data from the downloaded documents.</description>
     </item>
     <item>
       <title>Introducing Tidal Flat Habitat</title>
-      <link>https://oceanhealthindex.org/news/tidal_flats/</link>
+      <link>http://localhost:1313/news/tidal_flats/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/tidal_flats/</guid>
+      <guid>http://localhost:1313/news/tidal_flats/</guid>
       <description>Adding tidal flat ecosystems to OHI by Cullen Molitor&#xA;Thu, Sep 01, 2022&#xA;The Ocean Health Index has decided to update the habitat subgoal of biodiversity by adding tidal flat ecosystems to complement the existing habitat types (seagrass, kelp, coral reefs, mangroves, salt marsh, sea ice edge, and soft bottom). Tidal flat habitat is defined as sand, rock, or mud flats that undergo regular tidal inundation. This vital habitat is distributed globally, but up until this recently there was very limited data on the extent of these ecosystems, especially at the global scale.</description>
     </item>
     <item>
       <title>Shifting from Raster to Terra</title>
-      <link>https://oceanhealthindex.org/news/raster_to_terra/</link>
+      <link>http://localhost:1313/news/raster_to_terra/</link>
       <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/raster_to_terra/</guid>
+      <guid>http://localhost:1313/news/raster_to_terra/</guid>
       <description>Switching from the raster package to terra for spatial analysis by Juliet Cohen&#xA;Thu, Aug 25, 2022&#xA;Spatial data in R has a reputation for being tedious and time consuming. With so many different spatial file types (.shp, .nc, .gpkg, .geojson, and .tif to name a few) with various resolutions and coordinate reference systems, it can be challenging to produce accurate maps. Most data scientists have historically utilized the raster package to calculate cell values across stacked layers and recognize patterns over space and time.</description>
     </item>
     <item>
       <title>2022 OHI Global Fellows</title>
-      <link>https://oceanhealthindex.org/news/2022-global-fellows/</link>
+      <link>http://localhost:1313/news/2022-global-fellows/</link>
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2022-global-fellows/</guid>
+      <guid>http://localhost:1313/news/2022-global-fellows/</guid>
       <description>Getting to know the 2022 Fellows by Cullen Molitor, Peter Menzies, Juliet Cohen&#xA;Fri, May 27, 2022&#xA;This year the Ocean Health Index Global Fellows program has taken on three new Data Science and Communication Fellows. All three fellows have been picked from the new Masters of Environmental Data Science (MEDS) program, jointly taught through the Bren School of Environmental Science and Management and the National Center for Ecological Analysis and Synthesis (NCEAS).</description>
     </item>
     <item>
       <title>CMIP6: Predicting Future Climate Change</title>
-      <link>https://oceanhealthindex.org/news/cmip_1_what_is_this/</link>
+      <link>http://localhost:1313/news/cmip_1_what_is_this/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/cmip_1_what_is_this/</guid>
+      <guid>http://localhost:1313/news/cmip_1_what_is_this/</guid>
       <description>CMIP6 Climate Scenario data: We are here to help! by Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard&#xA;Fri, Jan 28, 2022&#xA;If you are an ecologist or biologist and need data predicting future climate, then CMIP6 Scenario data may be what you are searching for! But, these data are big and complicated, and it can take some effort to understand them, especially if you are not a climate scientist.</description>
     </item>
     <item>
       <title>2021 Global Ocean Health Index</title>
-      <link>https://oceanhealthindex.org/news/2021-scores/</link>
+      <link>http://localhost:1313/news/2021-scores/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2021-scores/</guid>
+      <guid>http://localhost:1313/news/2021-scores/</guid>
       <description>The Global Ocean Health Index Celebrates its 10th Birthday! by Gage Clawson &amp;amp; Melanie Frazier&#xA;Tue, Dec 07, 2021&#xA;We are proud to announce our 10th (!) year of measuring the state of the world’s oceans.&#xA;The global Ocean Health Index (OHI, for short) measures how well we are managing the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. We invite you to visit the new Ocean Health Index website (which, if you are reading this, you are already on) to explore country and goal scores, see how scores are calculated, and learn more about conducting your own Ocean Health Index assessment!</description>
     </item>
     <item>
       <title>2020 Global Ocean Health Index</title>
-      <link>https://oceanhealthindex.org/news/2020-scores/</link>
+      <link>http://localhost:1313/news/2020-scores/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2020-scores/</guid>
+      <guid>http://localhost:1313/news/2020-scores/</guid>
       <description>2020 Global Ocean Health Index scores now available! by Gage Clawson &amp;amp; Melanie Frazier&#xA;Tue, Dec 01, 2020&#xA;We are proud to announce the 2020 Ocean Health Index scores (available here)!&#xA;This year marks the ninth global Ocean Health Index (OHI, for short) assessment measuring the sustainable delivery of 10 benefits, or goals, that people want and need from the ocean. The 2020 assessment was led by Gage Clawson, a former OHI Fellow, and Melanie Frazier.</description>
     </item>
     <item>
       <title>2020 Baltic Health Index (BHI)</title>
-      <link>https://oceanhealthindex.org/news/2020-baltic-health-index/</link>
+      <link>http://localhost:1313/news/2020-baltic-health-index/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2020-baltic-health-index/</guid>
+      <guid>http://localhost:1313/news/2020-baltic-health-index/</guid>
       <description>A new open data tool for science and management by Melanie Frazier&#xA;Mon, Sep 21, 2020&#xA;The new assessment tool, the Baltic Health Index (BHI) evaluates comprehensively the health status of the Baltic Sea and has been calculated by researchers at the Stockholm Resilience Centre, Stockholm University, in cooperation with scientists in California who have established the well-known global Ocean Health Index (OHI) framework. The Ocean Health Index provides comprehensive, and quantitative assessments of progress towards healthy and sustainable oceans.</description>
     </item>
     <item>
       <title>2019 Global Ocean Health Index Scores</title>
-      <link>https://oceanhealthindex.org/news/2019-scores/</link>
+      <link>http://localhost:1313/news/2019-scores/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/2019-scores/</guid>
+      <guid>http://localhost:1313/news/2019-scores/</guid>
       <description>2019 Global Ocean Health Index Scores by Melanie Frazier&#xA;Tue, Dec 03, 2019&#xA;We are excited to announce the global Ocean Health Index (OHI) scores for 2019! The overall global Index score was 71, similar to scores in previous years.&#xA;This marks our eighth year of conducting the global assessment, and the second year hosting the Global Fellows Program to include University of California, Santa Barbara students with training to calculate the global scores.</description>
     </item>
     <item>
       <title>Building Transparency and Trust</title>
-      <link>https://oceanhealthindex.org/news/transparency-trust/</link>
+      <link>http://localhost:1313/news/transparency-trust/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/transparency-trust/</guid>
+      <guid>http://localhost:1313/news/transparency-trust/</guid>
       <description>Building Transparency and Trust for Healthy New England Seas Using the Ocean Health Index by Jenny Seifert&#xA;Mon, Nov 04, 2019&#xA;In a world of increasingly complex decision making, transparency has become paramount. This is no exception in science and, specifically, in science-based management of natural resources.&#xA;Transparency is at the core of the Ocean Health Index (OHI). As a scientific evaluation of ocean health designed to inform management decisions that affect not just oceans but also people, it comes with the responsibility of transparency.</description>
     </item>
     <item>
       <title>Assessing Local Oceans</title>
-      <link>https://oceanhealthindex.org/news/three-lessons/</link>
+      <link>http://localhost:1313/news/three-lessons/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/news/three-lessons/</guid>
+      <guid>http://localhost:1313/news/three-lessons/</guid>
       <description>Three Lessons for Using the Global Ocean Health Index to Assess Local Oceans by Jenny Seifert&#xA;Fri, Apr 26, 2019&#xA;Cross-posted at NCEAS&#xA;It just made sense. That was a theme I drew from conversations with four people involved in separate efforts to use the Ocean Health Index’s global framework to zoom in on ocean health in their particular regions to support local ocean planning.&#xA;The Index was designed to be useful to ocean planning around the world, and to be useful, it must be applicable to place-based management, which is how so many decisions that affect ocean health are made after all.</description>
     </item>
   </channel>

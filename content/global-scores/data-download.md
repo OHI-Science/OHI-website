@@ -12,7 +12,7 @@ menu:
 
 The OHI 2024 global assessment includes scores from 2012 to 2024 for 220 coastal countries and territories.  
 
-This marks our 12th year of calculating the global Ocean Health Index. The average 2023 Index score was 69 out of 100. This year the average global OHI scores declined by several points because this year's scores incorporate the massive decline in tourism and recreation due to COVID. Much of tourism has recovered, but these data are not yet available. You can now download 13 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This marks our 13th year of calculating the global Ocean Health Index. The average 2024 Index score was 69 out of 100. This year the average global OHI scores declined by several points because this year's scores incorporate the massive decline in tourism and recreation due to COVID. Much of tourism has recovered, but these data are not yet available. You can now download 13 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
 
 ![Flowerplot](/images/flower_GlobalAverage2024.png)
 
