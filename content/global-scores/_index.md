@@ -10,7 +10,7 @@ menu:
 ---
 The global Ocean Health Index measures the state of the world’s oceans. 
 
-The global OHI score for the 2024 assessment was 69. This interactive map shows  how different countries and goals contributed to this score, as well as how the score has changed since 2012. Click on colored regions (i.e. EEZs) to see short country summaries.
+The global OHI score for the 2024 assessment was 69, which was quite a bit lower than last year's score of 73. This was due to COVID-related declines in tourism and recreation [the 2024 scores reflect 2021 data]. You can explore this and other goals using the interactive map which shows how different countries and goals contribute to the global score, as well as how the score has changed since 2012. Click on colored regions (i.e. EEZs) to see short country summaries.
 
 {{< scoresGlobe >}}
 

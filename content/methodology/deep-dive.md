@@ -8,4 +8,4 @@ menu:
     # weight: 5
 ---
 	
-{{<redirect path="https://ohi-science.org/ohiprep_v2024/Reference/methods_and_results/Supplement2023.html">}}
+{{<redirect path="https://ohi-science.org/ohi-methods">}}
