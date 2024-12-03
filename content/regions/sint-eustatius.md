@@ -1,9 +1,9 @@
 ---
 regionId: 249
 title: Sint Eustatius
-rank: 42
-meanScore: 77.33
-globalMeanScore: 73.46
+rank: 22
+meanScore: 76.34
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

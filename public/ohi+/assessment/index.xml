@@ -8,10 +8,31 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/ohi+/assessment/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>OHI Assessments: Antarctic Coast</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/antarctic-coast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/antarctic-coast/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Antarctica</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/antarctica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/antarctica/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>OHI Assessments: Arctic</title>
       <link>http://localhost:1313/ohi&#43;/assessment/arctic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ohi&#43;/assessment/arctic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Argentina-Patagonia</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/argentina-patagonia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/argentina-patagonia/</guid>
       <description></description>
     </item>
     <item>
@@ -106,6 +127,20 @@
       <description></description>
     </item>
     <item>
+      <title>OHI Assessments: Japan-Tokyo Bay</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-bay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-bay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Japan-Tokyo Metropolitan Area (Chiba, Kanagawa, Tokyo)</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-metropolitan-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/japan-tokyo-metropolitan-area/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>OHI Assessments: Kenya</title>
       <link>http://localhost:1313/ohi&#43;/assessment/kenya/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -124,6 +159,20 @@
       <link>http://localhost:1313/ohi&#43;/assessment/mexico/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ohi&#43;/assessment/mexico/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Moorea</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/moorea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/moorea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Nairobi Convention</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/nairobi-convention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/nairobi-convention/</guid>
       <description></description>
     </item>
     <item>
@@ -159,6 +208,20 @@
       <link>http://localhost:1313/ohi&#43;/assessment/peru/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ohi&#43;/assessment/peru/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Philippines - Davao City, Mati City, Cagayan de Oro, Cebu City, Puerto Princesa, Metro Manila, and Laoag City</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/philippines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/philippines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OHI Assessments: Red Sea and Gulf of Aden</title>
+      <link>http://localhost:1313/ohi&#43;/assessment/red-sea-and-gulf-of-aden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ohi&#43;/assessment/red-sea-and-gulf-of-aden/</guid>
       <description></description>
     </item>
     <item>

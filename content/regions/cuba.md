@@ -1,9 +1,9 @@
 ---
 regionId: 112
 title: Cuba
-rank: 113
-meanScore: 72.07
-globalMeanScore: 73.46
+rank: 159
+meanScore: 63.79
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

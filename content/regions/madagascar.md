@@ -1,9 +1,9 @@
 ---
 regionId: 42
 title: Madagascar
-rank: 156
-meanScore: 68.9
-globalMeanScore: 73.46
+rank: 190
+meanScore: 60.61
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

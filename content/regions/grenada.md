@@ -1,9 +1,9 @@
 ---
 regionId: 125
 title: Grenada
-rank: 175
-meanScore: 65.88
-globalMeanScore: 73.46
+rank: 147
+meanScore: 64.5
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

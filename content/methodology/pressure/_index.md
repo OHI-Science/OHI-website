@@ -53,8 +53,7 @@ We estimate the total pressure acting on every goal in each country based on the
 
 The pressure estimate for each goal and country is then combined with the trend and resilience estimates to calculate goal scores.
 
-Learn more about the pressure model and data used for the OHI global assessment by clicking below.
 
-{{<button text="Global Methods" link=images/htmls/Supplement.html icon="/images/misc/microscope-icon.svg">}}
+
 
 

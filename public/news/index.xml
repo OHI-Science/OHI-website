@@ -6,8 +6,29 @@
     <description>Recent content in News on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Global Ocean Health Index</title>
+      <link>http://localhost:1313/news/2024-scores/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2024-scores/</guid>
+      <description>2024 Ocean Health Index Scores! by Sophia Lecuona, Anna Ramji, Dustin Duncan, Melanie Frazier, Ben Halpern&#xA;Tue, Dec 03, 2024&#xA;This year marked the largest decline in global Ocean Health Index scores we have observed over 13 years of assessments.&#xA;The global Ocean Health Index (OHI, for short) measures how well we are managing the marine resources we depend upon and enjoy. We measure 10 benefits, or goals, that people want and need from the ocean for 220 coastal countries and territories.</description>
+    </item>
+    <item>
+      <title>The Trouble with Transformation</title>
+      <link>http://localhost:1313/news/projecting_spatial_data/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/projecting_spatial_data/</guid>
+      <description>The Trouble with Transformation The Challenges of Projecting Spatial Data by Anna Ramji&#xA;Fri, Sep 13, 2024&#xA;Introduction Have you ever wondered what happens to your mapped raster data when you project it from one Coordinate Reference System (CRS) to another? Or whether anything can go wrong when projecting?&#xA;In this article, we&amp;rsquo;ll walk through how reprojecting and transforming geospatial data can potentially lead to large errors! To help you avoid this problem we&amp;rsquo;ll show you how to check for and avoid these problems.</description>
+    </item>
+    <item>
+      <title>Coordinate Reference Systems: Ensuring Accuracy in Spatial Analysis</title>
+      <link>http://localhost:1313/news/crs_deep_dive/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/crs_deep_dive/</guid>
+      <description>Ensuring Accuracy in Spatial Analysis A Mesophotic Dive into Coordinate Reference Systems by Dustin Duncan&#xA;Fri, Aug 30, 2024&#xA;What is a Coordinate Reference System? Coordinate reference systems can refer to either geographic coordinate systems or projected coordinate systems. Geographic coordinate systems describe locations on earth using a three-dimensional reference, and are used along with a specified map projection to create a projected coordinate system, which describes the same information on a two-dimensional surface (1) .</description>
+    </item>
     <item>
       <title>2024 OHI Global Fellows</title>
       <link>http://localhost:1313/news/2024-global-fellows/</link>

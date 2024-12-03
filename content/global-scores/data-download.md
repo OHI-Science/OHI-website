@@ -8,16 +8,15 @@ menu:
     weight: 3
 ---
 
-### 2023 OHI Assessment
+### 2024 OHI Assessment
 
-The OHI 2023 global assessment includes scores from 2012 to 2023 for 220 coastal countries and territories.  
+The OHI 2024 global assessment includes scores from 2012 to 2024 for 220 coastal countries and territories.  
 
-This marks our 12th year of calculating the global Ocean Health Index. The average 2023 Index score was 73 out of 100. Average Index scores have not dramatically changed over twelve years, which could be expected at a global scale. However, some individual goals and regions have had significant changes. You can now download 12 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This marks our 13th year of calculating the global Ocean Health Index. The average 2024 Index score was 69 out of 100. This year the average global OHI scores declined by several points because this year's scores incorporate the massive decline in tourism and recreation due to COVID. Much of tourism has recovered, but these data are not yet available. You can now download 13 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
 
-![Flowerplot](/images/flower_GlobalAverage2023.png)
+![Flowerplot](/images/flower_GlobalAverage2024.png)
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
-{{<button text="Supplemental Results" link=images/htmls/Supplement_Results.html icon="images/flower_plot.png">}}
 
 
 <br>
@@ -32,7 +31,6 @@ To learn more about the methods used to calculate the scores select the METHODOL
 
 {{<button text="METHODOLOGY TAB" link=/methodology icon="images/misc/microscope-icon.svg">}}
 
-{{<button text="GLOBAL METHODS" link=images/htmls/Supplement.html icon="images/misc/microscope-icon.svg">}}
 
 ----
 
@@ -42,8 +40,8 @@ In the interest of transparency and to promote scientific discovery that builds 
 
 Extra materials we use to calculate scores are available from these locations:
 
-- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2022) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
-- [Calculating scores: ](https://github.com/OHI-Science/ohi-global/releases) GitHub repository (ohi-global) with scripts used to calculate scores.
+- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2024) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
+- [Calculating scores: ](https://github.com/OHI-Science/ohi-global) GitHub repository (ohi-global) with scripts used to calculate scores.
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment.
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub.
 

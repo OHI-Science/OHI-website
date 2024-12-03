@@ -1,9 +1,9 @@
 ---
 regionId: 90
 title: Prince Edward Islands
-rank: 18
-meanScore: 81.01
-globalMeanScore: 73.46
+rank: 8
+meanScore: 82.03
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

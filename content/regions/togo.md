@@ -1,9 +1,9 @@
 ---
 regionId: 98
 title: Togo
-rank: 170
-meanScore: 66.34
-globalMeanScore: 73.46
+rank: 167
+meanScore: 63.55
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 133
 title: Honduras
-rank: 117
-meanScore: 71.8
-globalMeanScore: 73.46
+rank: 96
+meanScore: 68.74
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

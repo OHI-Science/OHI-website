@@ -1,9 +1,9 @@
 ---
 regionId: 92
 title: Amsterdam Island and Saint Paul Island
-rank: 215
-meanScore: 58
-globalMeanScore: 73.46
+rank: 165
+meanScore: 63.63
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---

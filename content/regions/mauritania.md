@@ -1,9 +1,9 @@
 ---
 regionId: 64
 title: Mauritania
-rank: 118
-meanScore: 71.79
-globalMeanScore: 73.46
+rank: 76
+meanScore: 70.41
+globalMeanScore: 68.78
 numRegions: 220
 layout: region_score
 ---
