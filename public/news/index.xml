@@ -6,8 +6,15 @@
     <description>Recent content in News on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Global Ocean Health Index</title>
+      <link>http://localhost:1313/news/2024-scores/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2024-scores/</guid>
+      <description>2024 Ocean Health Index Scores! by Sophia Lecuona, Anna Ramji, Dustin Duncan, Melanie Frazier, Ben Halpern&#xA;Tue, Dec 03, 2024&#xA;This year marked the largest decline in global Ocean Health Index scores we have observed over 13 years of assessments.&#xA;The global Ocean Health Index (OHI, for short) measures how well we are managing the marine resources we depend upon and enjoy. We measure 10 benefits, or goals, that people want and need from the ocean for 220 coastal countries and territories.</description>
+    </item>
     <item>
       <title>The Trouble with Transformation</title>
       <link>http://localhost:1313/news/projecting_spatial_data/</link>

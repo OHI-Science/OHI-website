@@ -6,7 +6,7 @@
     <description>Recent content in Home on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goal: Artisanal Fishing Opportunities</title>
@@ -91,6 +91,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/guidance/clean-waters/</guid>
       <description>People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters can come from land and ocean-based sources and cause many problems. Pollution can result in contaminated marine food, damage to mariculture, toxic blooms, beach closures, and mass kills of organisms. People are sensitive to these phenomena occurring in areas they access for recreation or other purposes but people even appreciate clean waters they do not directly use.</description>
+    </item>
+    <item>
+      <title>2024 Global Ocean Health Index</title>
+      <link>http://localhost:1313/news/2024-scores/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2024-scores/</guid>
+      <description>2024 Ocean Health Index Scores! by Sophia Lecuona, Anna Ramji, Dustin Duncan, Melanie Frazier, Ben Halpern&#xA;Tue, Dec 03, 2024&#xA;This year marked the largest decline in global Ocean Health Index scores we have observed over 13 years of assessments.&#xA;The global Ocean Health Index (OHI, for short) measures how well we are managing the marine resources we depend upon and enjoy. We measure 10 benefits, or goals, that people want and need from the ocean for 220 coastal countries and territories.</description>
     </item>
     <item>
       <title>The Trouble with Transformation</title>
