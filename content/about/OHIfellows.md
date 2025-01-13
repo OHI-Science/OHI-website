@@ -13,6 +13,86 @@ editor_options:
 
 <br> <br>
 
+## We are accepting applications for 2025 OHI Fellows!!
+The Ocean Health Index (OHI) project is seeking 3 fellows to work with our team to conduct the
+2025 global Ocean Health Index assessment!
+
+**We will be hiring**
+
+We will hire 3 environmental data science fellows who will focus on preparing, processing and
+synthesizing data and calculating OHI scores. Fellows will also be responsible for
+communicating OHI methods and results to a wide audience through the creation of web
+content, reports, blogs, social media, data visualizations, infographics, etc.
+
+**Timing**
+
+- Beginning of May, 2025: Fellows will begin working part time (~ 10 hours per week) to
+learn about the Ocean Health Index, be introduced to our workflow, and begin working on
+tasks.
+- June 23rd - September 12th: Fellows will work full time (40 hours per week) to update
+scores, incorporate new research, and develop communications around the Index.
+
+**Location**
+
+Work will be conducted at the National Center for Ecological Analysis and Synthesis (NCEAS)
+center located at 1021 Anacapa Street, Suite 300, Santa Barbara, CA 93101.
+
+**More information**
+
+The Ocean Health Index (OHI) measures how well oceans are able to sustainably provide the
+benefits that humans need and desire, such as food and recreation. The OHI has been calculated
+every year since 2012 for 220 countries and territories and is used to determine how well countries
+are managing ocean resources. More information is available at oceanhealthindex.org.
+OHI Fellows will be mentored and supported by the OHI team at the National Center for Ecological
+Analysis and Synthesis (NCEAS) at UCSB. Fellows will learn about the OHI framework, how to work
+as a team to calculate and communicate the global Ocean Health Index, and how to weave open
+data science into marine science and conservation.
+This is an exciting opportunity to:
+
+- Learn and apply the latest methods of open data science, such as collaborative data
+analysis, working openly online, and automatic reporting with R, RStudio and GitHub
+- Gain hands-on experience in data science and communication through the 2025 global OHI
+assessment
+- Advance the approaches to calculating OHI scores and improve communication around the
+Index
+- Gain experience collaborating as a team and communicating scientific processes and results
+through blog posts, social media, interactive reports, etc.
+
+**Qualifications**
+- Must be a current UCSB student (undergraduate or graduate) at the start of the position
+- Must be interested in working with data and/or communicating complex information to further
+environmental science
+- Must be organized, motivated, and able to work independently and collaboratively to meet
+deadlines
+- Must be a problem solver and willing to learn new skills
+- Must enjoy teamwork and collaborative problem solving
+- Preference given to students pursuing a degree in environmental data science, biology,
+ecology, geography or related field and experience using R, RStudio, and GitHub
+
+**Details**
+
+- This is paid work from May to the beginning of September 2023.
+- Fellows will be expected to work 10 hours per week from May to June 13 for OHI training,
+and 40 hours per week from June 23 to September 12 in the summer for preparing the global
+index.
+- Fellows will work on-site at NCEAS in downtown Santa Barbara, and are expected to
+coordinate with each other to maximize in-person collaboration with each other and the OHI
+team.
+- Fellows cannot have other paid appointments during the summer quarter or part-time
+appointments exceeding 25% for spring quarter.
+Salary offers are determined based on final candidate qualifications and experience;
+the budget for the position; and application of fair, equitable and consistent pay
+practices at the University. The full salary range for this position is $15.50 - $40 per hour. The
+budgeted hourly range that the University reasonably expects to pay for this position is
+$24 an hour.
+
+**Deadline**
+
+**Applications due by 5pm PST on Friday, January 24, 2025.** Please send your
+resume/CV and a cover letter highlighting your qualifications and interest to frazier@nceas.ucsb.edu
+with the subject header “OHI Fellows.” Please name the files like so:
+Lastname_analyst_DocumentType.pdf.
+
 ## About the OHI Fellows Program
 
 The Ocean Health Index Global Fellowship was created to provide training
@@ -30,7 +110,7 @@ This program is an integral part of what the Ocean Health Index has
 accomplished thus far and what it is today.
 
 
-## Current Fellows
+## 2024 Fellows
 <center>
 
 <img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
