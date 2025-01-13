@@ -35,18 +35,18 @@ For the global OHI assessment, we assess three general categories of resilience:
 
 <br>
 
-* **Ecological Health**
-* Healthy ecosystems have the ability to absorb disturbance to maintain critical functions (Chambers et al. 2019). For the global OHI assessment, ecosystem health is measured as the relative condition of assessed species in a given location. For some goals, there is little evidence that this index of ecosystem integrity directly affects the value of the goal (or subgoal). In these instances, ecological integrity falls out of the resilience model.
+**Ecological Health**
+Healthy ecosystems have the ability to absorb disturbance to maintain critical functions (Chambers et al. 2019). For the global OHI assessment, ecosystem health is measured as the relative condition of assessed species in a given location. For some goals, there is little evidence that this index of ecosystem integrity directly affects the value of the goal (or subgoal). In these instances, ecological integrity falls out of the resilience model.
 
 <br>
 
-* **Regulatory effort**
-* Institutional measures (e.g., rules, regulations, and laws) can address the specific pressures acting on systems. For the global OHI assessment, regulatory effort is comprised of five categories that address the 5 pressure categories: fishing pressure, habitat destruction, climate change, water pollution, and species introductions. There is also an additional category for goal-specific regulations that apply to a goal or goals, but do not address a specific pressure category.  
+**Regulatory effort**
+Institutional measures (e.g., rules, regulations, and laws) can address the specific pressures acting on systems. For the global OHI assessment, regulatory effort is comprised of five categories that address the 5 pressure categories: fishing pressure, habitat destruction, climate change, water pollution, and species introductions. There is also an additional category for goal-specific regulations that apply to a goal or goals, but do not address a specific pressure category.  
 
 <br>
 
-* **Social integrity**
-* Well functioning societies have the capacity and resources to mitigate a wide array of challenges.This indicator is intended to describe the effectiveness of social institutions that exist to meet human needs such as government, economy, education, heathcare, and religion.
+**Social integrity**
+Well functioning societies have the capacity and resources to mitigate a wide array of challenges.This indicator is intended to describe the effectiveness of social institutions that exist to meet human needs such as government, economy, education, heathcare, and religion.
 
 ----
 

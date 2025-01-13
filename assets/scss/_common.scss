@@ -140,11 +140,13 @@ ul {
 
   li {
     margin: 0.5rem 0;
-    list-style: none;
+    /* Remove this line to restore default bullets */
+    /* list-style: none; */
     position: relative;
   }
 
   li:before:not(.nav__item) {
+    /* Remove this block if you don't want custom bullets */
     content: "";
     position: absolute;
     width: 0.4rem;
@@ -155,7 +157,6 @@ ul {
     top: 0.6rem;
   }
 }
-
 ol {
   counter-reset: listitem;
   margin-left: 0.5rem;
