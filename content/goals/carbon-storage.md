@@ -30,6 +30,6 @@ Approximately one-third of all coastal habitat area has been lost in the last 50
 #### LEARN MORE
 Explore the full description of the data and model used in the Global OHI MODEL. Or, take a look at PRACTICAL GUIDANCE for advice on adapting the goal for future assessments and to learn how previous OHI+ assessments have modified this goal to address differences in data availability or priorities.
 
-{{<button text="OHI Model" link="images/htmls/Supplement.html" icon="/images/misc/microscope-icon.svg" >}}
+{{<button text="OHI Model" link="https://ohi-science.org/ohi-methods/goals/goal-models-data.html#carbon-storage" icon="/images/misc/microscope-icon.svg" >}}
 {{<button text="Practical Guidance" link="/guidance/carbon-storage" icon="/images/misc/directions-icon.svg" >}}
 {{<button text="Download Infographic" link=images/infographs/CS.png icon="images/goal-icons/carbon-storage.svg" >}}
