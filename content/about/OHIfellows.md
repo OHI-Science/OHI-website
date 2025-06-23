@@ -16,16 +16,19 @@ editor_options:
 ## **2025 Fellows**
 <center>
 
-<img src="images/people/fellows_2025.jpg" style="width: 70%; height: 70%"/>
+<img src="/images/people/fellows_2025.jpg" style="width: 70%; height: 70%"/>
+
+The 2025 fellows on the terrace at NCEAS!
 
 </center>
+
 
 
 ### Carmen Hoyt <a href = "https://github.com/ceh58" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
 <div style="width: 100%;">
 <a href="https://ceh58.github.io">
-  <img src="/images/people/Hoyt_Carmen_2025.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+  <img src="/images/people/Hoyt_Carmen_2025.JPG" style="float: right; width: 50%; margin: 0px 6px;" />
 </a>
 <p>
 Carmen’s journey began on the Gulf Coast of Florida, where she first fell in love with the ocean. Her childhood experiences on the water inspired her to pursue a B.S. in Biology (concentration in Marine Biology) and a B.S. in Earth and Ocean Sciences at Duke University (2018). 
@@ -51,8 +54,8 @@ When she is not at her computer, you can find her in the ocean surfing, sailing,
 ### Haylee Oyler <a href = "http://github.com/haylee360" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
 <div style="width: 100%;">
-<a href="https://github.com/dustin-duncan/">
-  <img src="/images/people/Dustin_Duncan.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<a href="https://github.com/haylee360/">
+  <img src="/images/people/Haylee_Oyler_2025.jpeg" style="float: right; width: 50%; margin: 0px 6px;" />
 </a>
 <p>
 Haylee Oyler is passionate about the intersection of people and nature. Growing up in California’s Central Valley, they saw firsthand the interconnectedness of environmental pollution and public health. This led Haylee to study Environmental Science at the University of California, Berkeley. There, they worked on multiple projects studying human-environment interactions, such as shifting wildfire regimes in response to climate change and the effects of conservation policy on mangrove pollution. Their honors senior thesis explored community science participation during a global pandemic and deepened their interest in data justice and representation in science.
@@ -61,7 +64,7 @@ Haylee Oyler is passionate about the intersection of people and nature. Growing 
 After graduating, Haylee worked as a research technician in a community ecology lab at the University of California, Los Angeles, where they continued to strengthen their analytical and technical skills. They also gained experience mentoring students and promoting a safe working environment for all lab members.
 </p>
 <p>
-Now, Haylee is a recent graduate of the Master of Environmental Data Science program at the University of California, Santa Barbara. Haylee has continued to explore principles of environmental justice in their capstone project, where their team improved the Climate and Economic Justice Screening Tool to incorporate a broader assessment of disadvantaged communities in the United States. They served as the lead data analyst and developer for their team’s [online geospatial mapping tool](https://apps.bren.ucsb.edu/justice40/en/#3/33.47/-97.5) that visualizes environmental hazards from over 30 data sources.
+Now, Haylee is a recent graduate of the Master of Environmental Data Science program at the University of California, Santa Barbara. Haylee has continued to explore principles of environmental justice in their capstone project, where their team improved the Climate and Economic Justice Screening Tool to incorporate a broader assessment of disadvantaged communities in the United States. They served as the lead data analyst and developer for their team’s <a href = "https://apps.bren.ucsb.edu/justice40/en/#3/33.47/-97.5" target = "_blank">online geospatial mapping tool</a> that visualizes environmental hazards from over 30 data sources.
 </p>
 <p>
 Haylee is excited to bring their community-centered perspective and technical skills to the Ocean Health Index at NCEAS. Outside of their career aspirations, Haylee enjoys rock climbing, volleyball, reading, writing, and watercolor!
@@ -71,11 +74,11 @@ Haylee is excited to bring their community-centered perspective and technical sk
 
 <br>
 
-### Madison Ends <a href = "http://github.com/sophialecuona" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+### Madison Enda <a href = "https://github.com/madisonenda" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
 
 <div style="width: 100%;">
-<a href="https://github.com/sophialecuona/">
-  <img src="/images/people/Sophia_LecuonaManos.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+<a href="https://github.com/madisonenda">
+  <img src="/images/people/Madison_Enda_2025.JPG" style="float: right; width: 34%; margin: 0px 6px;" />
 </a>
 <p>
 Madison Enda grew up in Southern California, where she fell in love with coastal and marine environments by exploring the beaches near her home and spending a ton of time in the water!
@@ -100,7 +103,7 @@ When Madison has free time, she loves spending it in the water! She feels greatl
 ## **2024 Fellows**
 <center>
 
-<img src="images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
+<img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
 
 </center>
 

@@ -2,8 +2,8 @@
 title: "2025 OHI Global Fellows"
 name: "Introducing the 2025 OHI Global Fellows"
 bg_image: "/images/banners/disturbed-fish.jpg"
-card_image: "/images/people/fellows_2025.jpg"
-preview_text: "In 2024, the Ocean Health Index Global Fellows program has welcomed three fresh Data Science and Communication Fellows to its ranks. The selected trio all hail from the Bren School of Environmental Science & Management..."
+card_image: "/images/people/fellows_2025_crop.jpeg"
+preview_text: "We’re celebrating a milestone: the [National Center for Ecological Analysis and Synthesis (NCEAS) turns **30** this year! Over the last three decades, NCEAS has been a leader in advancing environmental data science..."
 Date: 2025-06-23
 author: Carmen Hoyt, Haylee Oyler, and Madison Enda
 menu:
