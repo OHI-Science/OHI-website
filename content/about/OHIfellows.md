@@ -16,10 +16,82 @@ editor_options:
 ## **2025 Fellows**
 <center>
 
-<img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
+<img src="images/people/fellows_2025.jpg" style="width: 70%; height: 70%"/>
 
 </center>
 
+
+### Carmen Hoyt <a href = "https://github.com/ceh58" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://ceh58.github.io">
+  <img src="/images/people/Hoyt_Carmen_2025.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Carmen’s journey began on the Gulf Coast of Florida, where she first fell in love with the ocean. Her childhood experiences on the water inspired her to pursue a B.S. in Biology (concentration in Marine Biology) and a B.S. in Earth and Ocean Sciences at Duke University (2018). 
+</p> 
+<p>
+After graduation, she quite literally “dove” into opportunities to work and travel all over the world. Some of the highlights include aquaculture in Palau, PADI SCUBA instruction in Indonesia and the Turks and Caicos, and environmental consulting in Hawaii. Her work as a consultant introduced her to various environmental applications for data science, and she ultimately decided that the Master of Environmental Data Science (MEDS) program at the Bren School was an excellent fit for her personal interests and career aspirations.  
+</p>
+<p>
+She is interested in a wide range of sustainability-oriented topics, including agroecology, clean energy, and working with marine ecological data. Anna hopes to bring her environmental data science experience and passion for developing data-driven sustainable solutions to future roles. 
+</p>
+<p>
+As a MEDS student, she authored a successful capstone proposal with emLab and Global Fishing Watch, blending her technical skills with her passion for ocean science. Carmen and the Seamissions team were able to calculate emissions estimates for various seafood groups and countries, providing critical insights to move towards a more climate-aware seafood system.
+</p>
+<p>
+When she is not at her computer, you can find her in the ocean surfing, sailing, or taking underwater photos!
+</p>
+</div>
+
+<div style="clear:both;"></div>
+
+<br>
+
+### Haylee Oyler <a href = "http://github.com/haylee360" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://github.com/dustin-duncan/">
+  <img src="/images/people/Dustin_Duncan.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Haylee Oyler is passionate about the intersection of people and nature. Growing up in California’s Central Valley, they saw firsthand the interconnectedness of environmental pollution and public health. This led Haylee to study Environmental Science at the University of California, Berkeley. There, they worked on multiple projects studying human-environment interactions, such as shifting wildfire regimes in response to climate change and the effects of conservation policy on mangrove pollution. Their honors senior thesis explored community science participation during a global pandemic and deepened their interest in data justice and representation in science.
+</p> 
+<p>
+After graduating, Haylee worked as a research technician in a community ecology lab at the University of California, Los Angeles, where they continued to strengthen their analytical and technical skills. They also gained experience mentoring students and promoting a safe working environment for all lab members.
+</p>
+<p>
+Now, Haylee is a recent graduate of the Master of Environmental Data Science program at the University of California, Santa Barbara. Haylee has continued to explore principles of environmental justice in their capstone project, where their team improved the Climate and Economic Justice Screening Tool to incorporate a broader assessment of disadvantaged communities in the United States. They served as the lead data analyst and developer for their team’s [online geospatial mapping tool](https://apps.bren.ucsb.edu/justice40/en/#3/33.47/-97.5) that visualizes environmental hazards from over 30 data sources.
+</p>
+<p>
+Haylee is excited to bring their community-centered perspective and technical skills to the Ocean Health Index at NCEAS. Outside of their career aspirations, Haylee enjoys rock climbing, volleyball, reading, writing, and watercolor!
+</p>
+</div>
+<div style="clear:both;"></div>
+
+<br>
+
+### Madison Ends <a href = "http://github.com/sophialecuona" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://github.com/sophialecuona/">
+  <img src="/images/people/Sophia_LecuonaManos.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Madison Enda grew up in Southern California, where she fell in love with coastal and marine environments by exploring the beaches near her home and spending a ton of time in the water!
+She attended the State University of New York at Stony Brook on an D-1 athletic scholarship for competitive swimming, and received her BS in Marine Biology with minors in ‘Ecosystems & Human Impact’ and ‘Coastal Environmental Studies’.
+</p> 
+<p>
+During this time, she developed a keen interest in marine foundation species ecology, particularly how major anthropogenic stressors impact their distribution, demography, and adaptation rate. Madison went on to study abroad in Eilat, Israel, learning more about coral ecology from the reefs in the Red Sea. 
+</p> 
+<p>
+After a brief stint in coral aquaculture, she participated in coral reef ecology research through the Pacific branch of the Naval Information Warfare Center (NIWC PAC) based in San Diego, California. This experience strengthened her desire to model changes in marine environments and provide support for the people who rely on them, and it ultimately led her to the Master’s of Environmental Data Science (MEDS) program at Bren. Over the course of the MEDS program, Madison authored a capstone project on habitat evaluation within the California Marine Protected Area network, which afforded her the opportunity to work with large geospatial datasets on foundation species coverage and calculate habitat distribution and abundance. Madison was extremely excited at the prospect of her work being used by researchers to directly inform real world decisions, and can’t wait to see what new challenges await her during her time as an OHI fellow! 
+</p>
+<p>
+When Madison has free time, she loves spending it in the water! She feels greatly rejuvenated when swimming, scuba diving, or amateur free diving, but you’ll also catch her antiquing, thrifting, catching critters in animal crossing, or returning overdue books at the public library!
+</p>
+</div>
+<div style="clear:both;"></div>
 
 <br>
 
@@ -28,7 +100,7 @@ editor_options:
 ## **2024 Fellows**
 <center>
 
-<img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
+<img src="images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
 
 </center>
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources Overview on Ocean Health Index</title>
-    <link>http://localhost:1313/resources/</link>
+    <link>https://oceanhealthindex.org/resources/</link>
     <description>Recent content in Resources Overview on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/resources/tools/</link>
+      <link>https://oceanhealthindex.org/resources/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/tools/</guid>
-      <description>How to start practicing open data science! Open data science means that methods, data, and code are available so others can access, reuse, and build from it without much fuss. We use a variety of programs, tools, and practices to do reproducible research.&#xA;Our workflow depends on R, RStudio, RMarkdown, and Git/GitHub. These resources will get you started.&#xA;Introduction to Open Data Science is a hands-on training book that introduces the tools, practices, and workflows that underpin our work (Lowndes et al.</description>
+      <guid>https://oceanhealthindex.org/resources/tools/</guid>
+      <description>&lt;h2 id=&#34;how-to-start-practicing-open-data-science&#34;&gt;How to start practicing open data science!&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Open data science means that methods, data, and code are available so others can access, reuse, and build from it without much fuss. We use a variety of programs, tools, and practices to do reproducible research.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Our workflow depends on R, RStudio, RMarkdown, and Git/GitHub. These resources will get you started.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ohi-science.org/data-science-training/&#34;&gt;Introduction to Open Data Science&lt;/a&gt; is a hands-on training book that introduces the tools, practices, and workflows that underpin our work (&lt;a href=&#34;https://www.nature.com/articles/s41559-017-0160&#34;&gt;Lowndes et al. 2017&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
