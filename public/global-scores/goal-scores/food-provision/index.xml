@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goal: Food Provision on Ocean Health Index</title>
-    <link>http://localhost:1313/global-scores/goal-scores/food-provision/</link>
+    <link>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/</link>
     <description>Recent content in Goal: Food Provision on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/global-scores/goal-scores/food-provision/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/global-scores/goal-scores/food-provision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sub Goal: Wild Caught Fisheries</title>
-      <link>http://localhost:1313/global-scores/goal-scores/food-provision/wild-caught-fisheries/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/wild-caught-fisheries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/food-provision/wild-caught-fisheries/</guid>
-      <description>AN IMPORTANT GLOBAL FOOD SOURCE This goal assesses our ability to sustainably maximize wild-caught fisheries.&#xA;CURRENT SCORE The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch by overharvesting, whereas a few are not catching as much wild-caught seafood as they could.&#xA;The global score has, on average, dropped nearly one fifthteenth of a point every year since 2012. This modest decline is due mainly to the decreasing sustainability of some fisheries, which means many stocks are being overfished.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/wild-caught-fisheries/</guid>
+      <description>&lt;h3 id=&#34;an-important-global-food-source&#34;&gt;AN IMPORTANT GLOBAL FOOD SOURCE&lt;/h3&gt;&#xA;&lt;p&gt;This goal assesses our ability to sustainably maximize wild-caught fisheries.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;FIS&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates that most regions are significantly below their sustainable target values. Many regions are jeopardizing future catch by overharvesting, whereas a few are not catching as much wild-caught seafood as they could.&lt;/p&gt;&#xA;&lt;p&gt;The global score has, on average, dropped nearly one fifthteenth of a point every year since 2012. This modest decline is due mainly to the decreasing sustainability of some fisheries, which means many stocks are being overfished. In fact, the &lt;a href=&#34;https://www.minderoo.org/global-fishing-index/results/key-findings/&#34;&gt;Global Fishing Index&lt;/a&gt; found that nearly half of assessed fish in 2018 were overfished. However, many stocks are not assessed which means we don&amp;rsquo;t know how many stocks are doing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sub-Goal: Mariculture</title>
-      <link>http://localhost:1313/global-scores/goal-scores/food-provision/mariculture/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/mariculture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/food-provision/mariculture/</guid>
-      <description>AN INCREASINGLY IMPORTANT SOURCE OF FOOD This goal assesses our ability to sustainably maximize the production of farm-raised marine food.&#xA;CURRENT SCORE The current score indicates that most regions are not sustainably producing as much farmed seafood as they could. A small number of countries are responsible for almost all global mariculture production. In fact, in 2020 China produced a staggering 67% of global mariculture production.&#xA;Even though mariculture has been one of the fastest growing food sectors in the world over the past 20 years (FAO 2020) global mariculture scores have only seen a slight increase since 2012.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/food-provision/mariculture/</guid>
+      <description>&lt;h3 id=&#34;an-increasingly-important-source-of-food&#34;&gt;AN INCREASINGLY IMPORTANT SOURCE OF FOOD&lt;/h3&gt;&#xA;&lt;p&gt;This goal assesses our ability to sustainably maximize the production of farm-raised marine food.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;MAR&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates that most regions are not sustainably producing as much farmed seafood as they could. A small number of countries are responsible for almost all global mariculture production. In fact, in 2020 China produced a staggering 67% of global mariculture production.&lt;/p&gt;&#xA;&lt;p&gt;Even though mariculture has been one of the fastest growing food sectors in the world over the past 20 years (&lt;a href=&#34;https://www.fao.org/3/ca9229en/online/ca9229en.html&#34;&gt;FAO 2020&lt;/a&gt;) global mariculture scores have only seen a slight increase since 2012. This is largely because many countries could sustainably produce much more aquaculture. Several countries are not producing aquaculture in a sustainable manner.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

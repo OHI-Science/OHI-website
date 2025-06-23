@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goals on Ocean Health Index</title>
-    <link>http://localhost:1313/global-scores/goal-scores/</link>
+    <link>https://oceanhealthindex.org/global-scores/goal-scores/</link>
     <description>Recent content in Goals on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/global-scores/goal-scores/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/global-scores/goal-scores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goal: Artisanal Fishing Opportunities</title>
-      <link>http://localhost:1313/global-scores/goal-scores/artisanal-fishing-opportunities/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/artisanal-fishing-opportunities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/artisanal-fishing-opportunities/</guid>
-      <description>ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES This goal measures whether people who need to fish on a small, local scale have the opportunity to do so.&#xA;CURRENT SCORE The current score indicates that many regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/artisanal-fishing-opportunities/</guid>
+      <description>&lt;h3 id=&#34;ensuring-access-to-artisanal-fishing-for-local-communities&#34;&gt;ENSURING ACCESS TO ARTISANAL FISHING FOR LOCAL COMMUNITIES&lt;/h3&gt;&#xA;&lt;p&gt;This goal measures whether people who need to fish on a small, local scale have the opportunity to do so.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;AO&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates that many regions are addressing and meeting the needs that people and communities have to fish artisanally by implementing government policies that permit or encourage them to do so and providing appropriate access to near-shore areas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goal: Carbon Storage</title>
-      <link>http://localhost:1313/global-scores/goal-scores/carbon-storage/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/carbon-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/carbon-storage/</guid>
-      <description>PRESERVING HABITATS THAT ABSORB CARBON This goal captures the ability of coastal habitats to store carbon given the amount of carbon they store and their health.&#xA;CURRENT SCORE The current score indicates there has been a global decline in the assessed carbon storing habitats since 1980: mangroves, seagrass beds, salt marshes, and tidal flats.&#xA;The relatively high score for this goal suggest these habitats, despite declines, are relatively healthy and intact in many countries.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/carbon-storage/</guid>
+      <description>&lt;h3 id=&#34;preserving-habitats-that-absorb-carbon&#34;&gt;PRESERVING HABITATS THAT ABSORB CARBON&lt;/h3&gt;&#xA;&lt;p&gt;This goal captures the ability of coastal habitats to store carbon given the amount of carbon they store and their health.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;CS&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates there has been a global decline in the assessed carbon storing habitats since 1980: mangroves, seagrass beds, salt marshes, and tidal flats.&lt;/p&gt;&#xA;&lt;p&gt;The relatively high score for this goal suggest these habitats, despite declines, are relatively healthy and intact in many countries. However, this conclusion is uncertain because much of the data associated with these habitats are of poor quality (aside from mangroves). In particular, habitat health data are lacking, and with the exception of mangrove, they are not tracked over time. As a result, most of our habitat layers rely on global health values. For this reason, we see a relatively stagnant global score for the Carbon Storage goal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goal: Clean Waters</title>
-      <link>http://localhost:1313/global-scores/goal-scores/clean-waters/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/clean-waters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/clean-waters/</guid>
-      <description>CLEAN WATERS ARE IMPORTANT The Clean Water goal captures the degree to which local waters are unpolluted by human-made causes.&#xA;CURRENT SCORE The current score indicates that there are large opportunities for improvement. The reduction of chemicals, nutrients, human and animal wastes and trash requires will require action at every level of society as well as adjustments to behavior on an individual basis.&#xA;Overall, the Clean Waters goal has modestly improved since 2012.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/clean-waters/</guid>
+      <description>&lt;h3 id=&#34;clean-waters-are-important&#34;&gt;CLEAN WATERS ARE IMPORTANT&lt;/h3&gt;&#xA;&lt;p&gt;The Clean Water goal captures the degree to which local waters are unpolluted by human-made causes.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;CW&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates that there are large opportunities for improvement. The reduction of chemicals, nutrients, human and animal wastes and trash requires will require action at every level of society as well as adjustments to behavior on an individual basis.&lt;/p&gt;&#xA;&lt;p&gt;Overall, the Clean Waters goal has modestly improved since 2012. The global score has, on average, increased by one fifth of a point every year since 2012. This increase is likely due to a decrease in human pathogens because of improved access to sanitation facilities and a decrease in land-based nitrogen input associated with manure and fertilizer application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goal: Coastal Protection</title>
-      <link>http://localhost:1313/global-scores/goal-scores/coastal-protection/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/coastal-protection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/coastal-protection/</guid>
-      <description>PRESERVING HABITATS THAT SAFEGUARD SHORES This goal aims to assess the protection that coastal habitats provide against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.).&#xA;CURRENT SCORE The current score indicates that although, in many places, these habitats (mangroves, salt marshes, coastal sea ice, coral reefs, and seagrasses) remain healthy and intact, their condition has degraded in comparison to about thirty years ago.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/coastal-protection/</guid>
+      <description>&lt;h3 id=&#34;preserving-habitats-that-safeguard-shores&#34;&gt;PRESERVING HABITATS THAT SAFEGUARD SHORES&lt;/h3&gt;&#xA;&lt;p&gt;This goal aims to assess the protection that coastal habitats provide against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.).&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;CP&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates that although, in many places, these habitats (mangroves, salt marshes, coastal sea ice, coral reefs, and seagrasses) remain healthy and intact, their condition  has degraded in comparison to about thirty years ago.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goal: Natural Products</title>
-      <link>http://localhost:1313/global-scores/goal-scores/natural-products/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/natural-products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/natural-products/</guid>
-      <description>HARVESTING OCEAN RESOURCES SUSTAINABLY This goal assesses how well countries are maximizing the sustainable harvest of non-food marine resources.&#xA;CURRENT SCORE The current score indicates that many regions have potential to improve sustainable harvests of natural products, either by eliminating overharvesting, increasing harvests that are too low, or reducing the pressures that decrease potential harvests.&#xA;Despite the relatively good global score, trends in Natural Products are decreasing. This decline is likely due to the decreasing sustainability of forage fisheries, which largely drive the Natural Products scores due to the large amount of harvest compared to seaweeds and ornamental fish in many regions.</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/natural-products/</guid>
+      <description>&lt;h3 id=&#34;harvesting-ocean-resources-sustainably&#34;&gt;HARVESTING OCEAN RESOURCES SUSTAINABLY&lt;/h3&gt;&#xA;&lt;p&gt;This goal assesses how well countries are maximizing the sustainable harvest of non-food marine resources.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;NP&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The current score indicates that many regions have potential to improve sustainable harvests of natural products, either by eliminating overharvesting, increasing harvests that are too low, or reducing the pressures that decrease potential harvests.&lt;/p&gt;&#xA;&lt;p&gt;Despite the relatively good global score, trends in Natural Products are decreasing. This decline is likely due to the decreasing sustainability of forage fisheries, which largely drive the Natural Products scores due to the large amount of harvest compared to seaweeds and ornamental fish in many regions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goal: Tourism and Recreation</title>
-      <link>http://localhost:1313/global-scores/goal-scores/tourism-and-recreation/</link>
+      <link>https://oceanhealthindex.org/global-scores/goal-scores/tourism-and-recreation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/goal-scores/tourism-and-recreation/</guid>
-      <description>THE DRAW OF THE OCEAN Coastal and marine tourism is a vital part of a country’s economy. This goal measures participation in sustainable tourism to coastal regions.&#xA;CURRENT SCORE This year&amp;rsquo;s analysis provided insight into the pandemic’s impact on global tourism.&#xA;This year, the data we used to for tourism sustainability was from the from the World Travel and Tourism Council (WTTC) and the World Economic Forum’s (WEF) new Travel and Tourism Development Index (TTDI).</description>
+      <guid>https://oceanhealthindex.org/global-scores/goal-scores/tourism-and-recreation/</guid>
+      <description>&lt;h3 id=&#34;the-draw-of-the-ocean&#34;&gt;THE DRAW OF THE OCEAN&lt;/h3&gt;&#xA;&lt;p&gt;Coastal and marine tourism is a vital part of a country’s economy. This goal measures participation in sustainable tourism to coastal regions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;TR&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;This year&amp;rsquo;s analysis provided insight into the pandemic’s impact on global tourism.&lt;/p&gt;&#xA;&lt;p&gt;This year, the data we used to for tourism sustainability was from the from the World Travel and Tourism Council (WTTC) and the World Economic Forum’s (WEF) new &lt;a href=&#34;https://www.weforum.org/reports/travel-and-tourism-development-index-2021/&#34;&gt;Travel and Tourism Development Index (TTDI)&lt;/a&gt;. Sustainabiliy was based on three pillars: Environmental Sustainability, Socio-economic Resilience and Conditions, and Travel and Tourism Demand Pressure and Impact. Scores generally increased among assessment regions from 2019 to 2021.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
