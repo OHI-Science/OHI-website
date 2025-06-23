@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-US"><head>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="http://localhost:1313/news/cmip_2_what_is_this/">
-  <meta name="description" content="CMIP6 Climate Scenario data: Where do I get the data! by Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard
+  <link rel="canonical" href="https://oceanhealthindex.org/news/cmip_2_what_is_this/">
+  <meta name="description" content="CMIP6 Climate Scenario data: Where do I get the data!
+by Melanie Frazier, Ben Halpern, Alejandra Vargas, Mandy Lombard
 Fri, Dec 16, 2022
 If you are an ecologist or biologist and need predictions of future climate variables, then the CMIP6 Scenario data will probably be what you want!
 In this blogpost, we provide an overview of the raw CMIP6 data because this is helpful for understanding these data. However, because we believe non-climate scientists should probably seek more derived CMIP6 products, we also provide information about some of these products that we have used in our research."/>
-  <meta name="date" content='May 2, 2025 12:17:23 EDT'>
+  <meta name="date" content='June 23, 2025 12:17:33 PDT'>
   <title>CMIP6: Finding data | OHI</title>
-  <link rel="stylesheet" href="http://localhost:1313/style.main.min.4c0c613e87559ef3ca033cd0eb6f130a6ad37dfbe0e4d7381c93e453fea9a811.css?v=2025-05-02_12.17.23_-0400" media="screen">
-  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://oceanhealthindex.org/style.main.min.0387999d3258e96654091dd258df267802a7aadef61759205671a5583e4f7836.css?v=2025-06-23_12.17.33_-0700" media="screen">
+  <link rel="shortcut icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://oceanhealthindex.org/images/favicon.png" type="image/x-icon">
   
-<link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-100.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-100.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-100italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-100italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-200.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-200.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-200italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-200italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-300.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-300.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-300italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-300italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-500.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-500.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-600.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-600.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-700.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-700.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-800.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-800.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-900.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-900.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="http://localhost:1313/fonts/montserrat-v15-latin-regular.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="http://localhost:1313/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous"></head><body>
+<link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-100italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-200italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-300italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-500.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-600.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-700.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-800.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-900.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-italic.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://oceanhealthindex.org/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous"></head><body>
 
 <nav class="nav" role="navigation" aria-label="Main menu">
 
@@ -36,7 +37,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
 
   <a
     class="nav__logo"
-    href="http://localhost:1313/"
+    href="https://oceanhealthindex.org/"
     role="menuitem"
     title="Ocean Health Index Homepage"
   >
@@ -94,7 +95,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/global-scores/"
+                  href="https://oceanhealthindex.org/global-scores/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -105,7 +106,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/global-scores/goal-scores/"
+                  href="https://oceanhealthindex.org/global-scores/goal-scores/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -116,7 +117,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/global-scores/data-download/"
+                  href="https://oceanhealthindex.org/global-scores/data-download/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -153,7 +154,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/methodology/"
+                  href="https://oceanhealthindex.org/methodology/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -164,7 +165,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/goals/"
+                  href="https://oceanhealthindex.org/goals/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -175,7 +176,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/methodology/pressure/"
+                  href="https://oceanhealthindex.org/methodology/pressure/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -186,7 +187,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/methodology/resilience/"
+                  href="https://oceanhealthindex.org/methodology/resilience/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -197,7 +198,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/methodology/deep-dive/"
+                  href="https://oceanhealthindex.org/methodology/deep-dive/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -234,7 +235,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/ohi&#43;/"
+                  href="https://oceanhealthindex.org/ohi&#43;/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -245,7 +246,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/ohi&#43;/assessment/"
+                  href="https://oceanhealthindex.org/ohi&#43;/assessment/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -256,7 +257,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/ohi&#43;/conduct/"
+                  href="https://oceanhealthindex.org/ohi&#43;/conduct/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -293,7 +294,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/resources/"
+                  href="https://oceanhealthindex.org/resources/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -304,7 +305,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/resources/tools/"
+                  href="https://oceanhealthindex.org/resources/tools/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -315,7 +316,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/resources/data/"
+                  href="https://oceanhealthindex.org/resources/data/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -354,7 +355,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/about/"
+                  href="https://oceanhealthindex.org/about/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -365,7 +366,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/news/"
+                  href="https://oceanhealthindex.org/news/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -376,7 +377,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/about/ohifellows/"
+                  href="https://oceanhealthindex.org/about/ohifellows/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -387,7 +388,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/about/people/"
+                  href="https://oceanhealthindex.org/about/people/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -398,7 +399,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/about/publications/"
+                  href="https://oceanhealthindex.org/about/publications/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -409,7 +410,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/about/supporters/"
+                  href="https://oceanhealthindex.org/about/supporters/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -420,7 +421,7 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
             
               <li class="nav__item nav__item--submenu" role="none">
                 <a
-                  href="http://localhost:1313/about/contact/"
+                  href="https://oceanhealthindex.org/about/contact/"
                   class="nav__link nav__link--submenu"
                   role="menuitem"
                   tabindex="-1"
@@ -571,17 +572,17 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
     
   
   
-  <a class = "breadcrumb-item" href="http://localhost:1313/">&nbspHome</a> >
+  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/">&nbspHome</a> >
   
 
   
   
-  <a class = "breadcrumb-item" href="http://localhost:1313/news/">&nbspNews</a> >
+  <a class = "breadcrumb-item" href="https://oceanhealthindex.org/news/">&nbspNews</a> >
   
 
   
   
-  <a class = "breadcrumb-item current" href="http://localhost:1313/news/cmip_2_what_is_this/">&nbspCMIP6: Finding data</a>
+  <a class = "breadcrumb-item current" href="https://oceanhealthindex.org/news/cmip_2_what_is_this/">&nbspCMIP6: Finding data</a>
   
 
 </div>
@@ -616,21 +617,19 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
 <p>If you are an ecologist or biologist and need predictions of future climate variables, then the CMIP6 Scenario data will probably be what you want!</p>
 <p>In this blogpost, we provide an overview of the raw CMIP6 data because this is helpful for understanding these data. However, because we believe non-climate scientists should probably seek more derived CMIP6 products, we also provide information about some of these products that we have used in our research.</p>
 <p>A <a href="https://oceanhealthindex.org/news/cmip_1_what_is_this/">previous post</a> provides an overview of the CMIP6 Scenario data. If you are new to CMIP data, we recommend starting there. <a href="https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained/">This article</a>, &ldquo;CMIP6: the next generation of climate models explained&rdquo; also provides an excellent overview of CMIP6 that manages to be high-level <em>and</em> understandable. And, much of the content in this post is derived from this <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections#CMIP6:Globalclimateprojections-Parameterlistings">excellent source</a>, which I highly recommend reading because it provides a super useful and down-to-earth description of CMIP6.</p>
-<h2 id="heading"></h2>
+<h2></h2>
 <blockquote>
-<p>We are always on the hunt for data. Please let us know (<a href="mailto:frazier@nceas.ucsb.edu">frazier@nceas.ucsb.edu</a>) if you discover CMIP6 ensemble datasets and/or downscaled data that are publicly available. I will add them to this post. MANY THANKS!</p>
-</blockquote>
+<p>We are always on the hunt for data. Please let us know (<a href="mailto:frazier@nceas.ucsb.edu">frazier@nceas.ucsb.edu</a>) if you discover CMIP6 ensemble datasets and/or downscaled data that are publicly available. I will add them to this post. MANY THANKS!</p></blockquote>
 <br>
-<h2 id="heading-1"></h2>
+<h2></h2>
 <h2 id="raw-cmip-data">Raw CMIP data</h2>
 <h3 id="earth-system-grid-federation-a-deep-dive">Earth System Grid Federation: A deep dive</h3>
 <p>The CMIP6 data archive is distributed through the <a href="https://esgf-node.llnl.gov/search/cmip6/">Earth System Grid Federation (ESGF)</a>.</p>
 <p><img src="/images/cmip6/ESGF_1.png" alt="esgf1"></p>
-<h2 id="heading-2"></h2>
+<h2></h2>
 <blockquote>
-<p>If the ESGF website seems daunting, don&rsquo;t worry, we feel the same!</p>
-</blockquote>
-<h2 id="heading-3"></h2>
+<p>If the ESGF website seems daunting, don&rsquo;t worry, we feel the same!</p></blockquote>
+<h2></h2>
 <p>There are a series of dropdown menus on the left of the ESGF site that will guide you through the process of finding data. We recommend an iterative approach because if the &ldquo;Search&rdquo; button is clicked after selecting a menu option, the subsequent menus will be simplified as irrelevant categories are removed.</p>
 <p><img src="/images/cmip6/esfg_dropdowns.jpg" alt="esgf2"></p>
 <p><em>Source ID &amp; Institution ID</em></p>
@@ -1593,73 +1592,72 @@ In this blogpost, we provide an overview of the raw CMIP6 data because this is h
   </table>
 </div></p>
 </details>
-<h2 id="heading-4"></h2>
+<h2></h2>
 <p><em>Source Type</em></p>
 <p>A description of the general circulation model. In most cases, the model is a coupled atmospheric and oceanic general circulation model (AOGCM), but other models are used.</p>
 <blockquote>
-<p>Atmospheric (AGCMs) and oceanic GCMs (OGCMs) can be coupled to form an atmosphere-ocean coupled general circulation model (CGCM or AOGCM). With the addition of submodels such as a sea ice model or a model for evapotranspiration over land, AOGCMs become the basis for a full climate model. &ndash; <a href="https://en.wikipedia.org/wiki/General_circulation_model">Wikipedia</a></p>
-</blockquote>
-<h2 id="heading-5"></h2>
+<p>Atmospheric (AGCMs) and oceanic GCMs (OGCMs) can be coupled to form an atmosphere-ocean coupled general circulation model (CGCM or AOGCM). With the addition of submodels such as a sea ice model or a model for evapotranspiration over land, AOGCMs become the basis for a full climate model. &ndash; <a href="https://en.wikipedia.org/wiki/General_circulation_model">Wikipedia</a></p></blockquote>
+<h2></h2>
 <p><em>Experiment ID (aka &ldquo;scenarios&rdquo;)</em></p>
 <p>The IPCC Sixth Assessment Report (CMIP6) includes 8 future scenarios (2015-2100) and one historical scenario (1850-2014). These scenarios represent different pathways the world might follow, which will lead to different predictions of future climate.</p>
 <details>
 <summary> Click the triangle to see the climate scenarios </summary>
 <p><em>CMIP6 data climate scenarios (from this incredibly helpful <a href="https://confluence.ecmwf.int/display/CKB/CMIP6%3A+Global+climate+projections">resource</a>) and <a href="https://en.wikipedia.org/wiki/Shared_Socioeconomic_Pathways">here</a>.</em></p>
 <table>
-<thead>
-<tr>
-<th>IPCC Scenarios</th>
-<th>Description</th>
-<th>Estimated Warming 2041-2060, C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>historical</td>
-<td>Simulation of climate variables from the recent past from 1850 to 2014. These predictions are from a coupled atmosphere-ocean general circulation model (AOGCM) using observed variables such as atmospheric composition, land use and solar forcing. The historical simulation can be used to evaluate model performance against present climate and observed climate change.</td>
-<td>NA</td>
-</tr>
-<tr>
-<td>SSP1-1.9</td>
-<td>Based on SSP1 with low climate change mitigation and adaptation challenges which leads to a future pathway with a radiative forcing of 1.9 W/m2 in the year 2100. The SSP1-1.9 scenario fills a gap at the very low end of the range of plausible future forcing pathways, due to interest in informing a possible goal of limiting global mean warming to 1.5°C above pre-industrial levels based on the Paris COP21 agreement.</td>
-<td>1.6</td>
-</tr>
-<tr>
-<td>SSP1-2.6</td>
-<td>Based on SSP1 with low climate change mitigation and adaptation challenges which leads to a radiative forcing of 2.6 W/m2 in the year 2100. The SSP1-2.6 scenario represents the low end of plausible future forcing pathways. SSP1-2.6 depicts a &ldquo;best case&rdquo; future from a sustainability perspective.</td>
-<td>1.7</td>
-</tr>
-<tr>
-<td>SSP4-3.4</td>
-<td>Based on SSP4 in which climate change adaptation challenges dominate which leads to a radiative forcing of 3.4 W/m2 in the year 2100. The SSP4-3.4 scenario fills a gap at the low end of the range of plausible future forcing pathways. SSP4-3.4 is of interest to mitigation policy since mitigation costs differ substantially between forcing levels of 4.5 W/m2 and 2.6 W/m2.</td>
-<td></td>
-</tr>
-<tr>
-<td>SSP5-3.4OS</td>
-<td>Based on SSP5 in which climate change mitigation challenges dominate with a peak and decline in forcing towards an eventual radiative forcing of 3.4 W/m2 in the year 2100. The SSP5-3.4OS scenario branches from SSP5-8.5 in the year 2040 whereupon it applies substantially negative net emissions. SSP5-3.4OS explores the climate science and policy implications of a peak and decline in forcing during the 21st century. SSP5-3.4OS fills a gap in existing climate simulations by investigating the implications of a substantial overshoot in radiative forcing relative to a longer-term target.</td>
-<td></td>
-</tr>
-<tr>
-<td>SSP2-4.5</td>
-<td>Based on SSP2 with intermediate climate change mitigation and adaptation challenges which lead to a radiative forcing of 4.5 W/m2 in the year 2100. The SSP2-4.5 scenario represents the medium part of plausible future forcing pathways. SSP2-4.5 is comparable to the CMIP5 experiment RCP4.5.</td>
-<td>2.0</td>
-</tr>
-<tr>
-<td>SSP4-6.0</td>
-<td>SSP4-6.0 is based on SSP4 in which climate change adaptation challenges dominate and RCP6.0 which lead to a radiative forcing of 6.0 W/m2 in the year 2100. The SSP4-6.0 scenario fills in the range of medium plausible future forcing pathways. SSP4-6.0 defines the low end of the forcing range for unmitigated SSP baseline scenarios.</td>
-<td></td>
-</tr>
-<tr>
-<td>SSP3-7.0</td>
-<td>Based on SSP3 in which climate change mitigation and adaptation challenges are high which leads to a radiative forcing of 7.0 W/m2 in the year 2100. The SSP3-7.0 scenario represents the medium to high end of plausible future forcing pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baseline pathways.</td>
-<td>2.1</td>
-</tr>
-<tr>
-<td>SSP5-8.5</td>
-<td>SSP5-8.5 is based on SSP5 in which climate change mitigation challenges dominate which leads to a radiative forcing of 8.5 W/m2 in the year 2100. The ssp585 scenario represents the high end of plausible future forcing pathways.  SSP5-8.5 is comparable to the CMIP5 experiment RCP8.5.</td>
-<td>2.4</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>IPCC Scenarios</th>
+          <th>Description</th>
+          <th>Estimated Warming 2041-2060, C</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>historical</td>
+          <td>Simulation of climate variables from the recent past from 1850 to 2014. These predictions are from a coupled atmosphere-ocean general circulation model (AOGCM) using observed variables such as atmospheric composition, land use and solar forcing. The historical simulation can be used to evaluate model performance against present climate and observed climate change.</td>
+          <td>NA</td>
+      </tr>
+      <tr>
+          <td>SSP1-1.9</td>
+          <td>Based on SSP1 with low climate change mitigation and adaptation challenges which leads to a future pathway with a radiative forcing of 1.9 W/m2 in the year 2100. The SSP1-1.9 scenario fills a gap at the very low end of the range of plausible future forcing pathways, due to interest in informing a possible goal of limiting global mean warming to 1.5°C above pre-industrial levels based on the Paris COP21 agreement.</td>
+          <td>1.6</td>
+      </tr>
+      <tr>
+          <td>SSP1-2.6</td>
+          <td>Based on SSP1 with low climate change mitigation and adaptation challenges which leads to a radiative forcing of 2.6 W/m2 in the year 2100. The SSP1-2.6 scenario represents the low end of plausible future forcing pathways. SSP1-2.6 depicts a &ldquo;best case&rdquo; future from a sustainability perspective.</td>
+          <td>1.7</td>
+      </tr>
+      <tr>
+          <td>SSP4-3.4</td>
+          <td>Based on SSP4 in which climate change adaptation challenges dominate which leads to a radiative forcing of 3.4 W/m2 in the year 2100. The SSP4-3.4 scenario fills a gap at the low end of the range of plausible future forcing pathways. SSP4-3.4 is of interest to mitigation policy since mitigation costs differ substantially between forcing levels of 4.5 W/m2 and 2.6 W/m2.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>SSP5-3.4OS</td>
+          <td>Based on SSP5 in which climate change mitigation challenges dominate with a peak and decline in forcing towards an eventual radiative forcing of 3.4 W/m2 in the year 2100. The SSP5-3.4OS scenario branches from SSP5-8.5 in the year 2040 whereupon it applies substantially negative net emissions. SSP5-3.4OS explores the climate science and policy implications of a peak and decline in forcing during the 21st century. SSP5-3.4OS fills a gap in existing climate simulations by investigating the implications of a substantial overshoot in radiative forcing relative to a longer-term target.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>SSP2-4.5</td>
+          <td>Based on SSP2 with intermediate climate change mitigation and adaptation challenges which lead to a radiative forcing of 4.5 W/m2 in the year 2100. The SSP2-4.5 scenario represents the medium part of plausible future forcing pathways. SSP2-4.5 is comparable to the CMIP5 experiment RCP4.5.</td>
+          <td>2.0</td>
+      </tr>
+      <tr>
+          <td>SSP4-6.0</td>
+          <td>SSP4-6.0 is based on SSP4 in which climate change adaptation challenges dominate and RCP6.0 which lead to a radiative forcing of 6.0 W/m2 in the year 2100. The SSP4-6.0 scenario fills in the range of medium plausible future forcing pathways. SSP4-6.0 defines the low end of the forcing range for unmitigated SSP baseline scenarios.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>SSP3-7.0</td>
+          <td>Based on SSP3 in which climate change mitigation and adaptation challenges are high which leads to a radiative forcing of 7.0 W/m2 in the year 2100. The SSP3-7.0 scenario represents the medium to high end of plausible future forcing pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baseline pathways.</td>
+          <td>2.1</td>
+      </tr>
+      <tr>
+          <td>SSP5-8.5</td>
+          <td>SSP5-8.5 is based on SSP5 in which climate change mitigation challenges dominate which leads to a radiative forcing of 8.5 W/m2 in the year 2100. The ssp585 scenario represents the high end of plausible future forcing pathways.  SSP5-8.5 is comparable to the CMIP5 experiment RCP8.5.</td>
+          <td>2.4</td>
+      </tr>
+  </tbody>
 </table>
 </details>
 <br>
@@ -1678,7 +1676,7 @@ Within these ensembles, four different categories of sensitivity studies are don
 <li>The fourth category labelled forcing_index (referred to with letter f) is used to distinguish runs of a single CMIP6 experiment, but with different forcings applied.</li>
 </ul>
 </details>
-<h2 id="heading-6"></h2>
+<h2></h2>
 <p><em>Variable</em></p>
 <p>Many different climate variables (e.g., sea surface temperature, near surface air temperature, rainfall) are modeled for the CMIP6 project.</p>
 <p>The climate variables often go by a short identifier. For example, to search for sea surface temperature data, you will often need to use it&rsquo;s shortname which is &ldquo;tos&rdquo;. You can learn more about some of the common CMIP6 climate variables and their shortname (i.e., ESGF Variable ID) in the below table.</p>
@@ -2752,14 +2750,11 @@ Within these ensembles, four different categories of sensitivity studies are don
 <p>We&rsquo;ve said this <a href="https://oceanhealthindex.org/news/cmip_1_what_is_this/">before</a>, but we&rsquo;ll say it again: If you are an ecologist or biologist you should, if possible, avoid the raw climate data and use more derived products that others have created.</p>
 <p>Using derived products can provide many advantages:</p>
 <blockquote>
-<p>Derived data products are generally easier to work with because the raw ESGF has many idiosyncrasy&rsquo;s. One example: data are often reported using an irregular grid that must be interpolated to a regular grid.</p>
-</blockquote>
+<p>Derived data products are generally easier to work with because the raw ESGF has many idiosyncrasy&rsquo;s. One example: data are often reported using an irregular grid that must be interpolated to a regular grid.</p></blockquote>
 <blockquote>
-<p>You will be able to harness the power of the ensemble! Most derived CMIP6 data products are &ldquo;ensembles&rdquo; that combine a subset of the CMIP6 climate models into a single dataset. In most cases, ensembles are more accurate than any given single climate model.</p>
-</blockquote>
+<p>You will be able to harness the power of the ensemble! Most derived CMIP6 data products are &ldquo;ensembles&rdquo; that combine a subset of the CMIP6 climate models into a single dataset. In most cases, ensembles are more accurate than any given single climate model.</p></blockquote>
 <blockquote>
-<p>Much of the raw CMIP data is very coarse resolution (e.g., 1 to 1.25 degrees). You may be able to find downscaled climate data which has translated coarse resolution spatial information into a finer spatial resolution. This is often better suited to the scale we want to work at.</p>
-</blockquote>
+<p>Much of the raw CMIP data is very coarse resolution (e.g., 1 to 1.25 degrees). You may be able to find downscaled climate data which has translated coarse resolution spatial information into a finer spatial resolution. This is often better suited to the scale we want to work at.</p></blockquote>
 <p>Of course, it is possible to download raw data and generate ensembles and downscaled data, however, avoiding this will save lots of time and computational energy. Derived datasets are generally created by experts who have spent a good deal of time thinking about how to deal with the idiosyncrasies of CMIP6 data, selecting and combining the climate models, and correcting for <a href="https://climate.copernicus.eu/sites/default/files/2021-01/infosheet7.pdf">bias</a>.</p>
 <p>But: if you must work with the raw data. Here are some resources that look useful:</p>
 <ul>
@@ -3426,31 +3421,31 @@ Within these ensembles, four different categories of sensitivity studies are don
 
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/about/" class="right-nav-item">What is OHI</a>
+      <a href= "https://oceanhealthindex.org/about/" class="right-nav-item">What is OHI</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/news/" class="right-nav-item">News</a>
+      <a href= "https://oceanhealthindex.org/news/" class="right-nav-item">News</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/about/ohifellows/" class="right-nav-item">OHI Fellows</a>
+      <a href= "https://oceanhealthindex.org/about/ohifellows/" class="right-nav-item">OHI Fellows</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/about/people/" class="right-nav-item">People</a>
+      <a href= "https://oceanhealthindex.org/about/people/" class="right-nav-item">People</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/about/publications/" class="right-nav-item">Publications</a>
+      <a href= "https://oceanhealthindex.org/about/publications/" class="right-nav-item">Publications</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/about/supporters/" class="right-nav-item">Supporters</a>
+      <a href= "https://oceanhealthindex.org/about/supporters/" class="right-nav-item">Supporters</a>
     </div>
   
     <div class="right-col-nav">
-      <a href= "http://localhost:1313/about/contact/" class="right-nav-item">Contact</a>
+      <a href= "https://oceanhealthindex.org/about/contact/" class="right-nav-item">Contact</a>
     </div>
   
 </div></section>
@@ -3458,7 +3453,7 @@ Within these ensembles, four different categories of sensitivity studies are don
 
 <footer class="footer">
   <div class="footer__content footer__content--top">
-    <a class="footer__logo" href="http://localhost:1313/">
+    <a class="footer__logo" href="https://oceanhealthindex.org/">
 
 
   

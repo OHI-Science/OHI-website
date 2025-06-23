@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>What is OHI on Ocean Health Index</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://oceanhealthindex.org/about/</link>
     <description>Recent content in What is OHI on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/about/contact/</link>
+      <link>https://oceanhealthindex.org/about/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/contact/</guid>
-      <description>Contact OHI For all inquiries about the OHI, contact&#xA;Ben Halpern at halpern@nceas.ucsb.edu</description>
+      <guid>https://oceanhealthindex.org/about/contact/</guid>
+      <description>&lt;h1 id=&#34;contact-ohi&#34;&gt;Contact OHI&lt;/h1&gt;&#xA;&lt;p&gt;For all inquiries about the OHI, contact&lt;/p&gt;&#xA;&lt;p&gt;Ben Halpern at &lt;a href=&#34;mailto:halpern@nceas.ucsb.edu&#34;&gt;halpern@nceas.ucsb.edu&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>OHI Fellows</title>
-      <link>http://localhost:1313/about/ohifellows/</link>
+      <link>https://oceanhealthindex.org/about/ohifellows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/ohifellows/</guid>
-      <description>We are accepting applications for 2025 OHI Fellows!! The Ocean Health Index (OHI) project is seeking 3 fellows to work with our team to conduct the 2025 global Ocean Health Index assessment!&#xA;We will be hiring&#xA;We will hire 3 environmental data science fellows who will focus on preparing, processing and synthesizing data and calculating OHI scores. Fellows will also be responsible for communicating OHI methods and results to a wide audience through the creation of web content, reports, blogs, social media, data visualizations, infographics, etc.</description>
+      <guid>https://oceanhealthindex.org/about/ohifellows/</guid>
+      <description>&lt;p&gt;&lt;br&gt; &lt;br&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2025-fellows&#34;&gt;&lt;strong&gt;2025 Fellows&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;center&gt;&#xA;&lt;/center&gt;&#xA;&lt;br&gt;&#xA;&lt;h2 id=&#34;2024-fellows&#34;&gt;&lt;strong&gt;2024 Fellows&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;center&gt;&#xA;&lt;img src=&#34;images/people/fellows_2024.jpg&#34; style=&#34;width: 70%; height: 70%&#34;/&gt;&#xA;&lt;/center&gt;&#xA;&lt;h3 id=&#34;anna-ramji&#34;&gt;Anna Ramji &lt;a href = &#34;https://github.com/annaramji&#34; target = &#34;_blank&#34;&gt; &lt;img src=&#34;https://oceanhealthindex.org/images/GitHub-Mark-120px-plus.png&#34; style=&#34;center: left; width: 3%; margin: 0px 6px;&#34;/&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;div style=&#34;width: 100%;&#34;&gt;&#xA;&lt;a href=&#34;https://annaramji.github.io&#34;&gt;&#xA;  &lt;img src=&#34;https://oceanhealthindex.org/images/people/Anna_Ramji.jpg&#34; style=&#34;float: right; width: 34%; margin: 0px 6px;&#34; /&gt;&#xA;&lt;/a&gt;&#xA;&lt;p&gt;&#xA;Anna Ramji grew up hiking and fishing along the Eastern Sierra Nevada mountain range, where she developed an interest in ecology and the impacts of climate change on native ecosystems. She spent much of her childhood on Northern Californian beaches, developing a profound respect for the power, beauty, and importance of the Pacific Ocean. During her time as an undergraduate at the University of California, Berkeley, she worked as a research assistant and laboratory manager at Caldwell Laboratory, studying stomatopods and several species of octopus. Anna enjoyed taking extra-curricular courses in Data Science, Japanese, French, and Urban Design. She earned her Bachelor of Science degree in Environmental Sciences with a dual focus in Biology and Chemistry, graduating with Honors in 2021. She has since worked to co-author a&#xA;&lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265292&#34;&gt; peer-reviewed paper &lt;/a&gt;&#xA;on body patterns of Octopus chierchiae with alumni from Caldwell Lab, which was published in PLOS One in April, 2023. &#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>People</title>
-      <link>http://localhost:1313/about/people/</link>
+      <link>https://oceanhealthindex.org/about/people/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/people/</guid>
-      <description>The Ocean Health Index team develops scientific methods and calculates scores, manages current operations and directs future development, and communicates results to governments, marine managers, scientists, and the public.&#xA;Ben Halpern has been with the project since planning began in 2008.&#xA;The team gratefully acknowledges the individuals, foundations, organizations and corporations listed as Contributors and Sustaining Partners. This project would not exist without them.&#xA;Ben Halpern&#xA;Lead Scientist&#xA;Melanie Frazier</description>
+      <guid>https://oceanhealthindex.org/about/people/</guid>
+      <description>&lt;p&gt;The Ocean Health Index team develops scientific methods and calculates scores, manages current operations and directs future development, and communicates results to governments, marine managers, scientists, and the public.&lt;/p&gt;&#xA;&lt;p&gt;Ben Halpern has been with the project since planning began in 2008.&lt;/p&gt;&#xA;&lt;p&gt;The team gratefully acknowledges the individuals, foundations, organizations and corporations listed as Contributors and Sustaining Partners. This project would not exist without them.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;people-container&#34;&gt;&#xA;  &#xA;    &#xA;  &#xA;    &#xA;      &#xA;      &lt;div class=&#34;people-card 1&#34;  onclick=&#34;showPerson(this)&#34;&gt;&#xA;          &lt;div class=&#34;person-card-body&#34; style=&#39;background-image: url(/images/people/Ben_Halpern.png);&#39;&gt;&lt;/div&gt;&#xA;          &lt;/span&gt;&#xA;          &lt;div class=&#34;person-info&#34;&gt;&#xA;            &lt;p class=&#34;person-name&#34;&gt;Ben Halpern&lt;/p&gt;&#xA;            &lt;p class=&#34;person-title&#34;&gt; Lead Scientist&lt;/p&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;person-expanded&#34;&gt;&#xA;            &lt;p&gt; &lt;/p&gt;&#xA;          &lt;/div&gt;&#xA;      &lt;/div&gt;&#xA;    &#xA;  &#xA;    &#xA;      &#xA;      &lt;div class=&#34;people-card 2&#34;  onclick=&#34;showPerson(this)&#34;&gt;&#xA;          &lt;div class=&#34;person-card-body&#34; style=&#39;background-image: url(/images/people/Melanie_Frazier.png);&#39;&gt;&lt;/div&gt;&#xA;          &lt;/span&gt;&#xA;          &lt;div class=&#34;person-info&#34;&gt;&#xA;            &lt;p class=&#34;person-name&#34;&gt;Melanie Frazier&lt;/p&gt;</description>
     </item>
     <item>
       <title>Publications</title>
-      <link>http://localhost:1313/about/publications/</link>
+      <link>https://oceanhealthindex.org/about/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/publications/</guid>
-      <description>Peer-reviewed publications by the OHI team; * indicates open access.&#xA;OHI assessments Global all data and supplementary methods&#xA;Halpern et al. 2017, PLoS ONE*. Drivers and implications of change in global ocean health over the past 5 years.&#xA;Halpern et al. 2015, PLoS ONE*. Patterns and emerging trends in global ocean health. (2013 and updated 2012 global data)&#xA;Halpern et al. 2012, Nature. An index to assess the health and benefits of the global ocean.</description>
+      <guid>https://oceanhealthindex.org/about/publications/</guid>
+      <description>&lt;p&gt;Peer-reviewed publications by the OHI team; * indicates open access.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ohi-assessments&#34;&gt;OHI assessments&lt;/h2&gt;&#xA;&lt;h4 class=&#34;publication-section&#34;&gt;Global&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://oceanhealthindex.org/global-scores/data-download/&#34;&gt;all data and supplementary methods&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178267&#34;&gt;Halpern et al. 2017&lt;/a&gt;, &lt;em&gt;PLoS ONE&lt;/em&gt;*. Drivers and implications of change in global ocean health over the past 5 years.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117863&#34;&gt;Halpern et al. 2015&lt;/a&gt;, &lt;em&gt;PLoS ONE&lt;/em&gt;*. Patterns and emerging trends in global ocean health. &lt;a href=&#34;https://github.com/OHI-Science/ohi-global/blob/master/eez2013/OHI2013_PLOS.zip?raw=true&#34;&gt;(2013 and updated 2012 global data)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html&#34;&gt;Halpern et al. 2012, Nature&lt;/a&gt;. An index to assess the health and benefits of the global ocean. &lt;a href=&#34;ftp://ohi.nceas.ucsb.edu/pub/data/2012/layers.html&#34;&gt;(original 2012 global data)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Supporters</title>
-      <link>http://localhost:1313/about/supporters/</link>
+      <link>https://oceanhealthindex.org/about/supporters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/supporters/</guid>
-      <description>We are grateful for the generous support from the Pacific Life Foundation and the Gordon and Betty Moore Foundation, as well as our founding contributors for helping us build the Ocean Health Index from the beginning. Without their generosity of intellectual and financial support the Ocean Health Index would not be a reality.&#xA;The Pacific Life Foundation The Pacific Life Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index.</description>
+      <guid>https://oceanhealthindex.org/about/supporters/</guid>
+      <description>&lt;p&gt;We are grateful for the generous support from the Pacific Life Foundation and the Gordon and Betty Moore Foundation, as well as our founding contributors for helping us build the Ocean Health Index from the beginning. Without their generosity of intellectual and financial support the Ocean Health Index would not be a reality.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-pacific-life-foundation&#34;&gt;The Pacific Life Foundation&lt;/h3&gt;&#xA;&lt;p&gt;The Pacific Life Foundation made a commitment in 2011 to become the Founding Presenting Sponsor of the Ocean Health Index. The Foundation has a strong tradition of creating positive societal change through its grant making program. Established in 1984 and headquartered in Newport Beach, CA, the Pacific Life Foundation is the charitable giving arm of Pacific Life Insurance Company and, during that time, has contributed over $84 million in donations to thousands of nonprofits.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

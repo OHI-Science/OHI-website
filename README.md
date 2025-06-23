@@ -8,6 +8,8 @@ Repository for the Ocean Health Index website.
 
 In order to build and run the website, Node.js and Hugo are both required.
 
+### NOTE: DO NOT work from the server (use your local computer)
+
 ### Running
 
 To run the server locally, run the following from the top level ohi-site directory,

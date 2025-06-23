@@ -13,107 +13,94 @@ editor_options:
 
 <br> <br>
 
-## We are accepting applications for 2025 OHI Fellows!!
-The Ocean Health Index (OHI) project is seeking 3 fellows to work with our team to conduct the
-2025 global Ocean Health Index assessment!
-
-**We will be hiring**
-
-We will hire 3 environmental data science fellows who will focus on preparing, processing and
-synthesizing data and calculating OHI scores. Fellows will also be responsible for
-communicating OHI methods and results to a wide audience through the creation of web
-content, reports, blogs, social media, data visualizations, infographics, etc.
-
-**Timing**
-
-- Beginning of May, 2025: Fellows will begin working part time (~ 10 hours per week) to
-learn about the Ocean Health Index, be introduced to our workflow, and begin working on
-tasks.
-- June 23rd - September 12th: Fellows will work full time (40 hours per week) to update
-scores, incorporate new research, and develop communications around the Index.
-
-**Location**
-
-Work will be conducted at the National Center for Ecological Analysis and Synthesis (NCEAS)
-center located at 1021 Anacapa Street, Suite 300, Santa Barbara, CA 93101.
-
-**More information**
-
-The Ocean Health Index (OHI) measures how well oceans are able to sustainably provide the
-benefits that humans need and desire, such as food and recreation. The OHI has been calculated
-every year since 2012 for 220 countries and territories and is used to determine how well countries
-are managing ocean resources. More information is available at oceanhealthindex.org.
-OHI Fellows will be mentored and supported by the OHI team at the National Center for Ecological
-Analysis and Synthesis (NCEAS) at UCSB. Fellows will learn about the OHI framework, how to work
-as a team to calculate and communicate the global Ocean Health Index, and how to weave open
-data science into marine science and conservation.
-This is an exciting opportunity to:
-
-- Learn and apply the latest methods of open data science, such as collaborative data
-analysis, working openly online, and automatic reporting with R, RStudio and GitHub
-- Gain hands-on experience in data science and communication through the 2025 global OHI
-assessment
-- Advance the approaches to calculating OHI scores and improve communication around the
-Index
-- Gain experience collaborating as a team and communicating scientific processes and results
-through blog posts, social media, interactive reports, etc.
-
-**Qualifications**
-- Must be a current UCSB student (undergraduate or graduate) at the start of the position
-- Must be interested in working with data and/or communicating complex information to further
-environmental science
-- Must be organized, motivated, and able to work independently and collaboratively to meet
-deadlines
-- Must be a problem solver and willing to learn new skills
-- Must enjoy teamwork and collaborative problem solving
-- Preference given to students pursuing a degree in environmental data science, biology,
-ecology, geography or related field and experience using R, RStudio, and GitHub
-
-**Details**
-
-- This is paid work from May to the beginning of September 2023.
-- Fellows will be expected to work 10 hours per week from May to June 13 for OHI training,
-and 40 hours per week from June 23 to September 12 in the summer for preparing the global
-index.
-- Fellows will work on-site at NCEAS in downtown Santa Barbara, and are expected to
-coordinate with each other to maximize in-person collaboration with each other and the OHI
-team.
-- Fellows cannot have other paid appointments during the summer quarter or part-time
-appointments exceeding 25% for spring quarter.
-Salary offers are determined based on final candidate qualifications and experience;
-the budget for the position; and application of fair, equitable and consistent pay
-practices at the University. The full salary range for this position is $15.50 - $40 per hour. The
-budgeted hourly range that the University reasonably expects to pay for this position is
-$24 an hour.
-
-**Deadline**
-
-**Applications due by 5pm PST on Friday, January 24, 2025.** Please send your
-resume/CV and a cover letter highlighting your qualifications and interest to frazier@nceas.ucsb.edu
-with the subject header “OHI Fellows.” Please name the files like so:
-Lastname_analyst_DocumentType.pdf.
-
-## About the OHI Fellows Program
-
-The Ocean Health Index Global Fellowship was created to provide training
-to a small group of early-career data scientists.
-
-During the process of calculating OHI scores, the fellows dive into the
-theory, tools, and workflows the OHI uses to ensure openness,
-transparency, and reproducibility. The Fellows gain valuable experience
-and build useful skills.
-
-We benefit from their fresh eyes and new perspectives. Their
-contributions help the OHI grow and innovate.
-
-This program is an integral part of what the Ocean Health Index has
-accomplished thus far and what it is today.
-
-
-## 2024 Fellows
+## **2025 Fellows**
 <center>
 
-<img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
+<img src="images/people/fellows_2025.jpg" style="width: 70%; height: 70%"/>
+
+</center>
+
+
+### Carmen Hoyt <a href = "https://github.com/ceh58" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://ceh58.github.io">
+  <img src="/images/people/Hoyt_Carmen_2025.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Carmen’s journey began on the Gulf Coast of Florida, where she first fell in love with the ocean. Her childhood experiences on the water inspired her to pursue a B.S. in Biology (concentration in Marine Biology) and a B.S. in Earth and Ocean Sciences at Duke University (2018). 
+</p> 
+<p>
+After graduation, she quite literally “dove” into opportunities to work and travel all over the world. Some of the highlights include aquaculture in Palau, PADI SCUBA instruction in Indonesia and the Turks and Caicos, and environmental consulting in Hawaii. Her work as a consultant introduced her to various environmental applications for data science, and she ultimately decided that the Master of Environmental Data Science (MEDS) program at the Bren School was an excellent fit for her personal interests and career aspirations.  
+</p>
+<p>
+She is interested in a wide range of sustainability-oriented topics, including agroecology, clean energy, and working with marine ecological data. Anna hopes to bring her environmental data science experience and passion for developing data-driven sustainable solutions to future roles. 
+</p>
+<p>
+As a MEDS student, she authored a successful capstone proposal with emLab and Global Fishing Watch, blending her technical skills with her passion for ocean science. Carmen and the Seamissions team were able to calculate emissions estimates for various seafood groups and countries, providing critical insights to move towards a more climate-aware seafood system.
+</p>
+<p>
+When she is not at her computer, you can find her in the ocean surfing, sailing, or taking underwater photos!
+</p>
+</div>
+
+<div style="clear:both;"></div>
+
+<br>
+
+### Haylee Oyler <a href = "http://github.com/haylee360" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://github.com/dustin-duncan/">
+  <img src="/images/people/Dustin_Duncan.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Haylee Oyler is passionate about the intersection of people and nature. Growing up in California’s Central Valley, they saw firsthand the interconnectedness of environmental pollution and public health. This led Haylee to study Environmental Science at the University of California, Berkeley. There, they worked on multiple projects studying human-environment interactions, such as shifting wildfire regimes in response to climate change and the effects of conservation policy on mangrove pollution. Their honors senior thesis explored community science participation during a global pandemic and deepened their interest in data justice and representation in science.
+</p> 
+<p>
+After graduating, Haylee worked as a research technician in a community ecology lab at the University of California, Los Angeles, where they continued to strengthen their analytical and technical skills. They also gained experience mentoring students and promoting a safe working environment for all lab members.
+</p>
+<p>
+Now, Haylee is a recent graduate of the Master of Environmental Data Science program at the University of California, Santa Barbara. Haylee has continued to explore principles of environmental justice in their capstone project, where their team improved the Climate and Economic Justice Screening Tool to incorporate a broader assessment of disadvantaged communities in the United States. They served as the lead data analyst and developer for their team’s [online geospatial mapping tool](https://apps.bren.ucsb.edu/justice40/en/#3/33.47/-97.5) that visualizes environmental hazards from over 30 data sources.
+</p>
+<p>
+Haylee is excited to bring their community-centered perspective and technical skills to the Ocean Health Index at NCEAS. Outside of their career aspirations, Haylee enjoys rock climbing, volleyball, reading, writing, and watercolor!
+</p>
+</div>
+<div style="clear:both;"></div>
+
+<br>
+
+### Madison Ends <a href = "http://github.com/sophialecuona" target = "_blank"> <img src="/images/GitHub-Mark-120px-plus.png" style="center: left; width: 3%; margin: 0px 6px;"/></a>
+
+<div style="width: 100%;">
+<a href="https://github.com/sophialecuona/">
+  <img src="/images/people/Sophia_LecuonaManos.jpg" style="float: right; width: 34%; margin: 0px 6px;" />
+</a>
+<p>
+Madison Enda grew up in Southern California, where she fell in love with coastal and marine environments by exploring the beaches near her home and spending a ton of time in the water!
+She attended the State University of New York at Stony Brook on an D-1 athletic scholarship for competitive swimming, and received her BS in Marine Biology with minors in ‘Ecosystems & Human Impact’ and ‘Coastal Environmental Studies’.
+</p> 
+<p>
+During this time, she developed a keen interest in marine foundation species ecology, particularly how major anthropogenic stressors impact their distribution, demography, and adaptation rate. Madison went on to study abroad in Eilat, Israel, learning more about coral ecology from the reefs in the Red Sea. 
+</p> 
+<p>
+After a brief stint in coral aquaculture, she participated in coral reef ecology research through the Pacific branch of the Naval Information Warfare Center (NIWC PAC) based in San Diego, California. This experience strengthened her desire to model changes in marine environments and provide support for the people who rely on them, and it ultimately led her to the Master’s of Environmental Data Science (MEDS) program at Bren. Over the course of the MEDS program, Madison authored a capstone project on habitat evaluation within the California Marine Protected Area network, which afforded her the opportunity to work with large geospatial datasets on foundation species coverage and calculate habitat distribution and abundance. Madison was extremely excited at the prospect of her work being used by researchers to directly inform real world decisions, and can’t wait to see what new challenges await her during her time as an OHI fellow! 
+</p>
+<p>
+When Madison has free time, she loves spending it in the water! She feels greatly rejuvenated when swimming, scuba diving, or amateur free diving, but you’ll also catch her antiquing, thrifting, catching critters in animal crossing, or returning overdue books at the public library!
+</p>
+</div>
+<div style="clear:both;"></div>
+
+<br>
+
+
+
+## **2024 Fellows**
+<center>
+
+<img src="images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
 
 </center>
 
