@@ -13,8 +13,19 @@ editor_options:
 
 <br> <br>
 
+## **2025 Fellows**
+<center>
 
-## 2024 Fellows
+<img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
+
+</center>
+
+
+<br>
+
+
+
+## **2024 Fellows**
 <center>
 
 <img src="/images/people/fellows_2024.jpg" style="width: 70%; height: 70%"/>
