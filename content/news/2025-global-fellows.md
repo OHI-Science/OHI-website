@@ -56,6 +56,9 @@ After participating in the MEDS program, I was so proud of our team’s capstone
 
 <br>
 
+**Carmen:** 
+Whenever I need a break from the computer screen, I like to take a walk and listen to a new episode of [Ologies](https://www.alieward.com/ologies) by Allie Ward! There are no shortage of episodes, and you may even recognize NCEAS's very own [Ben Halpern](https://www.alieward.com/ologies/aquacultureecology)!
+
 **Haylee:** 
 I couldn’t pick one thing, so I made a list of my recent ocean-adjacent things that have been bringing me joy lately. The graphic novel [Anzuelo](https://www.simonandschuster.com/books/Anzuelo/Emma-Rios/9798368809267) by Emma Rios, the album [At the Beach in Every Life](https://youtube.com/playlist?list=PLm8ILOHjnsk6zFfvMEUO7Lt5Ip6F08ZwJ&si=oYcA0c63OJV9xeyg) by Gigi Perez, and the poem [I Go Down to the Shore](https://www.goodreads.com/quotes/677855-i-go-down-to-the-shore-i-go-down-to) by Mary Oliver. 
 
