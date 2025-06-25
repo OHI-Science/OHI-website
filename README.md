@@ -27,6 +27,25 @@ npm install
 ```
 `npm install` will install all of the necessary third party packages used
 
+#### Hugo build error 6/23/25
+`ERROR deprecated: data.GetCSV was deprecated in Hugo v0.123.0 and subsequently removed. use resources.Get or resources.GetRemote with transform.Unmarshal.
+ERROR deprecated: data.GetJSON was deprecated in Hugo v0.123.0 and subsequently removed. use resources.Get or resources.GetRemote with transform.Unmarshal.
+Built in 2010 ms
+Error: error building site: logged 2 error(s)`
+
+We narrowed down that this error was likely happening because we had just installed the newest version of Hugo that was no longer compatible with the OHI website build. We then decided to downgrade Hugo to version 0.122.0, and that seemed to fix the error. The exact steps we took are as follows:
+
+1. `brew uninstall hugo`
+2. Download the 0.122.0 version from the [Hugo GitHub](https://github.com/gohugoio/hugo/releases/tag/v0.122.0). **Specifically, we downloaded hugo_extended_0.122.0_darwin-universal.tar.gz**
+3. Extract the downloaded file
+`tar -xvzf hugo_extended_0.122.0_darwin-universal.tar.gz`
+4. For MacOS, manually put Hugo into your homebrew bin
+`sudo mv hugo /opt/homebrew/bin/`
+
+This threw a security issue about the developer not being verified. Because I felt confident about the GitHub download, I decided to allow the program to run anyways using this command:
+5. `sudo xattr -rd com.apple.quarantine /opt/homebrew/bin/hugo` 
+
+After that, hugo server ran as expected. 
 
 
 ### Building
