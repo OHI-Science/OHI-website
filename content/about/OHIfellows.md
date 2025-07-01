@@ -28,16 +28,13 @@ The 2025 fellows on the terrace at NCEAS!
 
 <div style="width: 100%;">
 <a href="https://ceh58.github.io">
-  <img src="/images/people/Hoyt_Carmen_2025.JPG" style="float: right; width: 50%; margin: 0px 6px;" />
+  <img src="/images/people/Hoyt_Carmen_2025.JPG" style="float: right; width: 34%; margin: 0px 6px;" />
 </a>
 <p>
 Carmen’s journey began on the Gulf Coast of Florida, where she first fell in love with the ocean. Her childhood experiences on the water inspired her to pursue a B.S. in Biology (concentration in Marine Biology) and a B.S. in Earth and Ocean Sciences at Duke University (2018). 
 </p> 
 <p>
 After graduation, she quite literally “dove” into opportunities to work and travel all over the world. Some of the highlights include aquaculture in Palau, PADI SCUBA instruction in Indonesia and the Turks and Caicos, and environmental consulting in Hawaii. Her work as a consultant introduced her to various environmental applications for data science, and she ultimately decided that the Master of Environmental Data Science (MEDS) program at the Bren School was an excellent fit for her personal interests and career aspirations.  
-</p>
-<p>
-She is interested in a wide range of sustainability-oriented topics, including agroecology, clean energy, and working with marine ecological data. Anna hopes to bring her environmental data science experience and passion for developing data-driven sustainable solutions to future roles. 
 </p>
 <p>
 As a MEDS student, she authored a successful capstone proposal with emLab and Global Fishing Watch, blending her technical skills with her passion for ocean science. Carmen and the Seamissions team were able to calculate emissions estimates for various seafood groups and countries, providing critical insights to move towards a more climate-aware seafood system.
@@ -55,7 +52,7 @@ When she is not at her computer, you can find her in the ocean surfing, sailing,
 
 <div style="width: 100%;">
 <a href="https://github.com/haylee360/">
-  <img src="/images/people/Haylee_Oyler_2025.jpeg" style="float: right; width: 50%; margin: 0px 6px;" />
+  <img src="/images/people/Haylee_Oyler_2025.jpeg" style="float: right; width: 34%; margin: 0px 6px;" />
 </a>
 <p>
 Haylee Oyler is passionate about the intersection of people and nature. Growing up in California’s Central Valley, they saw firsthand the interconnectedness of environmental pollution and public health. This led Haylee to study Environmental Science at the University of California, Berkeley. There, they worked on multiple projects studying human-environment interactions, such as shifting wildfire regimes in response to climate change and the effects of conservation policy on mangrove pollution. Their honors senior thesis explored community science participation during a global pandemic and deepened their interest in data justice and representation in science.
