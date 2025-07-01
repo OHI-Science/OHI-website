@@ -37,9 +37,6 @@ Carmen’s journey began on the Gulf Coast of Florida, where she first fell in l
 After graduation, she quite literally “dove” into opportunities to work and travel all over the world. Some of the highlights include aquaculture in Palau, PADI SCUBA instruction in Indonesia and the Turks and Caicos, and environmental consulting in Hawaii. Her work as a consultant introduced her to various environmental applications for data science, and she ultimately decided that the Master of Environmental Data Science (MEDS) program at the Bren School was an excellent fit for her personal interests and career aspirations.  
 </p>
 <p>
-She is interested in a wide range of sustainability-oriented topics, including agroecology, clean energy, and working with marine ecological data. Anna hopes to bring her environmental data science experience and passion for developing data-driven sustainable solutions to future roles. 
-</p>
-<p>
 As a MEDS student, she authored a successful capstone proposal with emLab and Global Fishing Watch, blending her technical skills with her passion for ocean science. Carmen and the Seamissions team were able to calculate emissions estimates for various seafood groups and countries, providing critical insights to move towards a more climate-aware seafood system.
 </p>
 <p>
