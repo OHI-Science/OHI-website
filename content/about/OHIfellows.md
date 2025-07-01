@@ -28,7 +28,7 @@ The 2025 fellows on the terrace at NCEAS!
 
 <div style="width: 100%;">
 <a href="https://ceh58.github.io">
-  <img src="/images/people/Hoyt_Carmen_2025.JPG" style="float: right; width: 50%; margin: 0px 6px;" />
+  <img src="/images/people/Hoyt_Carmen_2025.JPG" style="float: right; width: 34%; margin: 0px 6px;" />
 </a>
 <p>
 Carmen’s journey began on the Gulf Coast of Florida, where she first fell in love with the ocean. Her childhood experiences on the water inspired her to pursue a B.S. in Biology (concentration in Marine Biology) and a B.S. in Earth and Ocean Sciences at Duke University (2018). 
@@ -52,7 +52,7 @@ When she is not at her computer, you can find her in the ocean surfing, sailing,
 
 <div style="width: 100%;">
 <a href="https://github.com/haylee360/">
-  <img src="/images/people/Haylee_Oyler_2025.jpeg" style="float: right; width: 50%; margin: 0px 6px;" />
+  <img src="/images/people/Haylee_Oyler_2025.jpeg" style="float: right; width: 34%; margin: 0px 6px;" />
 </a>
 <p>
 Haylee Oyler is passionate about the intersection of people and nature. Growing up in California’s Central Valley, they saw firsthand the interconnectedness of environmental pollution and public health. This led Haylee to study Environmental Science at the University of California, Berkeley. There, they worked on multiple projects studying human-environment interactions, such as shifting wildfire regimes in response to climate change and the effects of conservation policy on mangrove pollution. Their honors senior thesis explored community science participation during a global pandemic and deepened their interest in data justice and representation in science.
