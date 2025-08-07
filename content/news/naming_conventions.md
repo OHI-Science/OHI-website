@@ -81,6 +81,8 @@ At **OHI**, we use this to convert a mix of region codes (like UN
 georegion IDs) into a unified naming standard --- making dataset joining
 much easier.
 
+
+````markdown
 ```{r}
 # install.packages("countrycode")
 library(countrycode)
@@ -90,6 +92,7 @@ countrycode(c("South Korea", "Germany", "Brazil"),
             origin = "country.name",
             destination = "iso3c")
 ```
+````
 
 ## Taxonomy and Species Names
 
@@ -156,6 +159,7 @@ This package is incredibly helpful for
 These functions helped me standardize species data and avoid issues like
 double-counting or missing species entirely due to taxonomic changes.
 
+````markdown
 ```{r}
 # install.packages("rfishbase")
 library(rfishbase)
@@ -170,6 +174,7 @@ sci_to_common("Thunnus maccoyii")
 validate_names(c("Thunnus maccoyii", "Thunnus atlanticus", "Scomber
 japonicus"))
 ```
+````
 
 ## Wrapping Up
 
