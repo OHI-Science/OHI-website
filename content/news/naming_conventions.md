@@ -98,15 +98,15 @@ countrycode(c("South Korea", "Germany", "Brazil"),
 
 For many of the **OHI** goals--- such as:
 
--   `Artisanal Opportunities`
+-   [Artisanal Opportunities](https://oceanhealthindex.org/goals/artisanal-fishing-opportunities/)
 
--   `Food Provisioning`
+-   [Food Provision](https://oceanhealthindex.org/goals/food-provision/)
 
--   `Biodiversity`
+-   [Biodiversity](https://oceanhealthindex.org/goals/biodiversity/)
 
--   `Sense of Place`
+-   [Sense of Place](https://oceanhealthindex.org/goals/sense-of-place/)
 
--   `Natural Products`
+-   [Natural Products](https://oceanhealthindex.org/goals/natural-products/)
 
 their score calculations involve marine organism data, typically
 structured as observational records with species names and identifiers.
