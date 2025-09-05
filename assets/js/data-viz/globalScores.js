@@ -376,26 +376,46 @@ async function globalScores({
 
     // Add information about the selected region. The text that is shown depends if this
     // is trend data annual score data.
+    // Create paragraph element
     const paragraph = document.createElement('p');
-    paragraph.classList.add(classes.regionDetailsParagraph)
-    if (trendIsSelected()) {
-      paragraph.innerHTML = `The ${goalLabel} score has changed an average of <b>${scoreForSelection.toPrecision(2)}</b> from ${year}`
-    } else {
-      paragraph.innerHTML = `The ${goalLabel} ${dimension} for ${regionLabel} in ${year} is <b>${Math.round(scoreForSelection)}</b>.`
-    }
-    
-    // Create a link to the region
+    paragraph.classList.add(classes.regionDetailsParagraph);
+  
+    // Create the link element
     const link = document.createElement('a');
-    link.href = regionLink
-    link.title = `See full details about scores for ${regionLabel}`
-    link.innerHTML = `See all score data for ${regionLabel}`
-    link.classList.add(classes.regionDetailsLink)
-
+    link.classList.add(classes.regionDetailsLink);
+    
+    // Added case for missing data
+    if (!regionLabel || isNaN(scoreForSelection)) {
+      // Missing data case
+      if (trendIsSelected()) {
+        paragraph.innerHTML = `There is no ${goalLabel} trend data for this region over ${year}.`;
+      } else {
+        paragraph.innerHTML = `There is no ${goalLabel} score for this region in ${year}.`;
+      }
+    
+      link.href = "/missing-score/";
+      link.title = "Why this score is missing";
+      link.innerHTML = "Learn why this score is missing";
+    
+    } else if (trendIsSelected()) {
+      // Valid trend data
+      paragraph.innerHTML = `The ${goalLabel} score has changed an average of <b>${scoreForSelection.toPrecision(2)}</b> from ${year}.`;
+    
+      link.href = regionLink;
+      link.title = `See full details about scores for ${regionLabel}`;
+      link.innerHTML = `See all score data for ${regionLabel}`;
+    
+    } else {
+      // Valid annual score
+      paragraph.innerHTML = `The ${goalLabel} score for ${regionLabel} in ${year} is <b>${Math.round(scoreForSelection)}</b>.`;
+    
+      link.href = regionLink;
+      link.title = `See full details about scores for ${regionLabel}`;
+      link.innerHTML = `See all score data for ${regionLabel}`;
+    }
     // Add everything to the container
     detailsContainer.append(button, title, paragraph, link)
-
   }
-
 };
 
 export default globalScores
