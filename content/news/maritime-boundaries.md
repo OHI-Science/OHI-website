@@ -1,6 +1,6 @@
 ---
 title: "A Line in the Sand: What Makes a Maritime Boundary?"
-name: "Changing ocean borders and their impact on OHI assessment"
+name: "Changing Ocean Borders and Their Impact on OHI Assessment"
 bg_image: "/images/maritime-boundaries/ships.jpg"
 card_image: "/images/maritime-boundaries/beach-boundary.jpg"
 preview_text: "When you think of a border, what comes to mind? The line drawn between countries? The landmass of a continent?"
@@ -76,11 +76,11 @@ As climate change continues to drive our ecosystems towards extremes, these **bo
 
 To manage these pressures, states have turned to a mix of bilateral treaties, international arbitration, and joint-development agreements [^17]. Bodies like the International Court of Justice and the International Tribunal for the Law of the Sea have helped resolve disputes through legal rulings, while joint resource-sharing pacts allow countries to avoid escalation while still benefiting economically [^18]. These solutions highlight that cooperation, rather than unilateral assertion, is often the most sustainable path forward [^19].
 
-So far, we've seen that boundaries change for a number of reasons—political, economic, ecological. But **what do these shifting maritime boundaries mean for the Ocean Health Index?** Because scores are calculated within the framework of EEZs, the implications are significant. Any shift in boundaries reshapes how we measure a nation’s performance. A country’s apparent progress or decline may reflect not just ecological realities but also the way its maritime borders are defined. In this sense, the fluidity of boundaries directly influences our understanding of ocean health and stewardship, reminding us that the environment cannot be divorced from the political and social frameworks in which it is embedded.
+So far, we've seen that boundaries change for a number of reasons—political, economic, and ecological. But **what do these shifting maritime boundaries mean for the Ocean Health Index?** Because scores are calculated within the framework of EEZs, the implications are significant. Any shift in boundaries reshapes how we measure a nation’s performance. A country’s apparent progress or decline may reflect not just ecological realities but also the way its maritime borders are defined. In this sense, the fluidity of boundaries directly influences our understanding of ocean health and stewardship, reminding us that the environment cannot be divorced from the political and social frameworks in which it is embedded.
 
 ## Beyond Ownership
 
-The discussion of borders, both terrestrial and marine, rests on one vital assumption: that land and sea are things that can be owned. The concept of private property is a deeply ingrained framework of modern society, so much so that its legitimacy is almost never called into question. Yet, it is not the only frame with which people have imagined their relationship to the Earth. Indigenous nations around the world have long held a different perspective on land-relations, centering care and stewardship of natural spaces in the same way one might care for a loved one [^20]. 
+The discussion of borders, both terrestrial and marine, rests on one vital assumption: that land and sea are things that can be owned. The concept of private property is a deeply ingrained framework of modern society, so much so that its legitimacy is almost never called into question. Yet, it is not the only frame with which people have imagined their relationship to the Earth. Indigenous nations around the world have long held a different perspective on land relations, centering care and stewardship of natural spaces in the same way one might care for a loved one [^20]. 
 
 Across the globe, Indigenous ocean stewardship offers powerful examples of alternatives to ownership-based management. In Hawai‘i, traditional stewardship practices offer a vivid reminder that the ocean can be managed through care rather than control. Systems such as the kapu placed strict, seasonal restrictions on harvesting certain fish species, allowing populations to recover and ensuring abundance for future generations [^21]. These rules are deeply cultural, rooted in respect for the ocean as a living relative rather than a resource to be managed. Today, Hawaiian communities are revitalizing these practices through community-based subsistence fishing and co-management programs that blend Indigenous knowledge with modern science [^22]. 
 
@@ -102,13 +102,13 @@ Territoriality: Contradictory Meanings, Changing Significance, Regional Studies,
 
 [^6]: **6**. Newman, D. (2003). On borders and power: A theoretical framework. Journal of Borderlands Studies, 18, 13–25. <https://doi.org/10.1080/08865655.2003.9695598>
 
-[^7]: **7**. Overview - Convention & Related Agreements. (2025). . Available at: <https://www.un.org/depts/los/convention_agreements/convention_overview_convention.htm> Last accessed 2 September 2025.
+[^7]: **7**. Overview - Convention & Related Agreements. (2025). Available at: <https://www.un.org/depts/los/convention_agreements/convention_overview_convention.htm> Last accessed 2 September 2025.
 
 [^8]: **8**. Proclamation No. 2668. Policy of the United States with Respect to Coastal Fisheries in Certain Areas of the High Seas. 28 September 1945, 10 Fed. Reg. 12304. <https://www.archives.gov/federal-register/codification/proclamations/02668.html>
 
 [^9]: **9**. Nandan, S.N. (2025). THE EXCLUSIVE ECONOMIC ZONE: A HISTORICAL PERSPECTIVE. Available at: <https://www.fao.org/4/s5280t/s5280t0p.htm> Last accessed 1 September 2025. 
 
-[^10]: **10**. PREAMBLE TO THE UNITED NATIONS CONVENTION ON THE LAW OF THE SEA. (2025).Available at: <https://www.un.org/depts/los/convention_agreements/texts/unclos/part5.htm> Last accessed 30 August 2025. 
+[^10]: **10**. PREAMBLE TO THE UNITED NATIONS CONVENTION ON THE LAW OF THE SEA. (2025). Available at: <https://www.un.org/depts/los/convention_agreements/texts/unclos/part5.htm> Last accessed 30 August 2025. 
 
 [^11]: **11**. Peters, A. & Wolfrum, R. (2025). Exclusive Economic Zone. Oxford Public International Law. Available at: <https://opil.ouplaw.com/display/10.1093/law:epil/9780199231690/law-9780199231690-e1156> Last accessed 3 September 2025.
 
