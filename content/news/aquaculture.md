@@ -13,7 +13,6 @@ menu:
 editor_options:
   markdown:
     wrap: 72
-draft: TRUE
 ---
 
 ### Farmed or wild-caught? That is the question.
