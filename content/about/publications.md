@@ -73,6 +73,8 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 <h4 class="publication-section">Cumulative Human Impacts</h4>
 
+[Halpern et al. 2025](https://www.science.org/stoken/author-tokens/ST-2884/full), *Scientific**. Cumulative impacts to global marine ecosystems projected to more than double by mid-century. [(data)](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF18K77KZ); [(code)](https://github.com/OHI-Science/stressors)
+
 [Halpern et al. 2019](https://www.nature.com/articles/s41598-019-47201-9), *Scientific Reports**. Recent pace of change in human impact on the world’s ocean. [(data)](https://knb.ecoinformatics.org/view/doi:10.5063/F12B8WBS); [(code)](https://github.com/OHI-Science/impact*acceleration)
 
 [Halpern et al. 2015](http://www.nature.com/ncomms/2015/150714/ncomms8615/full/ncomms8615.html), *Nature Communications**. Spatial and temporal changes in cumulative human impacts on the world’s ocean. [(data)](https://knb.ecoinformatics.org/#view/doi:10.5063/F19Z92TW)

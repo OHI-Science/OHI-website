@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/resources/data/</link>
+    <link>http://localhost:1313/resources/data/</link>
     <description>Recent content in Data on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://oceanhealthindex.org/resources/data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/resources/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cumulative Human Impacts</title>
-      <link>https://oceanhealthindex.org/resources/data/cumulative-human-impacts/</link>
+      <link>http://localhost:1313/resources/data/cumulative-human-impacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/resources/data/cumulative-human-impacts/</guid>
-      <description>&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;h4 id=&#34;most-recent-project&#34;&gt;Most recent project&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;We mapped the cumulative impact of human activities on global oceans from 2003 to 2013.  We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.nature.com/articles/s41598-019-47201-9&#34;&gt;Citation:&lt;/a&gt;&#xA;Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean. Sci Rep 9, 11609. &lt;a href=&#34;https://doi.org/10.1038/s41598-019-47201-9&#34;&gt;https://doi.org/10.1038/s41598-019-47201-9&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/data/cumulative-human-impacts/</guid>
+      <description>Most recent project We mapped the cumulative impact of human activities on global oceans from 2003 to 2013. We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.&#xA;Citation: Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean.</description>
     </item>
     <item>
       <title>Global OHI</title>
-      <link>https://oceanhealthindex.org/resources/data/global-ohi/</link>
+      <link>http://localhost:1313/resources/data/global-ohi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/resources/data/global-ohi/</guid>
-      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=../../../global-scores/data-download/&#34;&gt;&#xA;&lt;link rel=&#34;canonical&#34; href=&#34;../../../global-scores/data-download/&#34;&gt;&#xA;&lt;script type=&#34;text/javascript&#34;&gt;&#xA;    window.location.href = &#34;..\/..\/..\/global-scores\/data-download\/&#34;;&#xA;&lt;/script&gt;</description>
+      <guid>http://localhost:1313/resources/data/global-ohi/</guid>
+      <description> </description>
     </item>
   </channel>
 </rss>

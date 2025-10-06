@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goal: Biodiversity on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/goals/biodiversity/</link>
+    <link>http://localhost:1313/goals/biodiversity/</link>
     <description>Recent content in Goal: Biodiversity on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://oceanhealthindex.org/goals/biodiversity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/goals/biodiversity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sub-Goal: Habitat</title>
-      <link>https://oceanhealthindex.org/goals/biodiversity/habitats/</link>
+      <link>http://localhost:1313/goals/biodiversity/habitats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/goals/biodiversity/habitats/</guid>
-      <description>&lt;h3 id=&#34;preserving-marine-habitats&#34;&gt;PRESERVING MARINE HABITATS&lt;/h3&gt;&#xA;&lt;p&gt;This goal measures the status of marine habitats that support large numbers of marine species.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;goal-description&#34;&gt;GOAL DESCRIPTION&lt;/h3&gt;&#xA;&lt;p&gt;Healthier habitats mean healthier species! Habitat is included as a subgoal of the Biodiversity goal to provide a more complete picture of diversity in the system than only considering the conservation status of species (the other subgoal for Biodiversity). This is because species assessments are often incomplete.&lt;/p&gt;&#xA;&lt;p&gt;This goal assesses the condition of marine habitats that are particularly important in supporting large numbers of marine species.  The status of each habitat is its current condition relative to its reference condition, which is often based on historical area. A score of 1 indicates that the condition equals or exceeds the reference point.  The subgoal score is then calculated by combining the habitat scores for each region.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/goals/biodiversity/habitats/</guid>
+      <description>PRESERVING MARINE HABITATS This goal measures the status of marine habitats that support large numbers of marine species.&#xA;GOAL DESCRIPTION Healthier habitats mean healthier species! Habitat is included as a subgoal of the Biodiversity goal to provide a more complete picture of diversity in the system than only considering the conservation status of species (the other subgoal for Biodiversity). This is because species assessments are often incomplete.&#xA;This goal assesses the condition of marine habitats that are particularly important in supporting large numbers of marine species.</description>
     </item>
     <item>
       <title>Sub-Goal: Species</title>
-      <link>https://oceanhealthindex.org/goals/biodiversity/species/</link>
+      <link>http://localhost:1313/goals/biodiversity/species/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/goals/biodiversity/species/</guid>
-      <description>&lt;h3 id=&#34;preserving-marine-species&#34;&gt;PRESERVING MARINE SPECIES&lt;/h3&gt;&#xA;&lt;p&gt;This goal measures the conservation status of marine species.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;goal-description&#34;&gt;GOAL DESCRIPTION&lt;/h3&gt;&#xA;&lt;p&gt;The species that inhabit the ocean have a vital role in shaping the existing marine environment.  They are valued for their beauty and inherent right to exist, as well as their role in supporting productive habitats that provide many benefits for people.&lt;/p&gt;&#xA;&lt;p&gt;From the largest predators to microscopic plankton, these species depend upon each other for survival. The interaction of species that have naturally evolved in a given location is essential for ecosystem structure and stability.  In additon, the maintenance of large numbers of species provides diverse genetic resource that makes it possible to avoid functional collapse, should conditions change in the future.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/goals/biodiversity/species/</guid>
+      <description>PRESERVING MARINE SPECIES This goal measures the conservation status of marine species.&#xA;GOAL DESCRIPTION The species that inhabit the ocean have a vital role in shaping the existing marine environment. They are valued for their beauty and inherent right to exist, as well as their role in supporting productive habitats that provide many benefits for people.&#xA;From the largest predators to microscopic plankton, these species depend upon each other for survival.</description>
     </item>
   </channel>
 </rss>
