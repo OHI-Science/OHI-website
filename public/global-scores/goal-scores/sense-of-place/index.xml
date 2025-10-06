@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goal: Sense of Place on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/</link>
+    <link>http://localhost:1313/global-scores/goal-scores/sense-of-place/</link>
     <description>Recent content in Goal: Sense of Place on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/global-scores/goal-scores/sense-of-place/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sub-Goal: Iconic Species</title>
-      <link>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/iconic-species/</link>
+      <link>http://localhost:1313/global-scores/goal-scores/sense-of-place/iconic-species/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/iconic-species/</guid>
-      <description>&lt;h3 id=&#34;protecting-culturally-significant-species&#34;&gt;Protecting culturally significant species&lt;/h3&gt;&#xA;&lt;p&gt;The iconic species sub-goal measures the conservation status of iconic marine species, which are the animals that have unique importance to humans as demonstrated through traditional activities, ethnic or religious practices, existence value, or locally acknowledged aesthetic value.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;ICO&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;A high score indicates that few to none of the iconic species in a country’s EEZ have been categorized by the International Union for Conservation of Nature (IUCN) as endangered, threatened, vulnerable, or at risk of extinction. A low score indicates that many iconic species are at risk.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/global-scores/goal-scores/sense-of-place/iconic-species/</guid>
+      <description>Protecting culturally significant species The iconic species sub-goal measures the conservation status of iconic marine species, which are the animals that have unique importance to humans as demonstrated through traditional activities, ethnic or religious practices, existence value, or locally acknowledged aesthetic value.&#xA;CURRENT SCORE A high score indicates that few to none of the iconic species in a country’s EEZ have been categorized by the International Union for Conservation of Nature (IUCN) as endangered, threatened, vulnerable, or at risk of extinction.</description>
     </item>
     <item>
       <title>Sub-Goal: Lasting Special Places</title>
-      <link>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/lasting-special-places/</link>
+      <link>http://localhost:1313/global-scores/goal-scores/sense-of-place/lasting-special-places/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/global-scores/goal-scores/sense-of-place/lasting-special-places/</guid>
-      <description>&lt;h3 id=&#34;identifying-and-protecting-the-areas-we-care-about&#34;&gt;IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT&lt;/h3&gt;&#xA;&lt;p&gt;The Lasting Special Places sub-goal measures how well we are protecting the locations that contribute to marine-related cultural identity.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-score&#34;&gt;CURRENT SCORE&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;div class=&#34;score-gauge&#34; data-region-id=&#34;0&#34; data-goal-code=&#34;LSP&#34;&gt;&lt;/div&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://worldoceanday.org/take-action/social-media-toolkit/?gclid=Cj0KCQjwt-6LBhDlARIsAIPRQcK8Aw3Gk9-0D6TyFjVJAlnMRJtcVlgLDwl5Q0BYSGuyYzlPp8q28awaAu-FEALw_wcB&#34;&gt;global movement&lt;/a&gt; to protect at least 30% of our blue planet by 2030 motivates the reference point for this goal. A score of 100 would mean that all countries are protecting at least 30% of their coastal area.&lt;/p&gt;&#xA;&lt;p&gt;The Ocean Health Index focuses on the protection of coastal areas located 3 nm offshore and 1 km inland because this is the part of the ocean most people interact with and directly value. This differs from most agencies which measure protected areas throughout the ocean or within exclusive economic zones (EEZ, i.e., 200 nm offshore). As of 2022, nearly 27% of land located within 1km of the coastline is designated as a protected area, and nearly 22% of ocean located within 3nm of the coast is protected. If we look at EEZ areas, just over 7.8% of the EEZ area is protected.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/global-scores/goal-scores/sense-of-place/lasting-special-places/</guid>
+      <description>IDENTIFYING AND PROTECTING THE AREAS WE CARE ABOUT The Lasting Special Places sub-goal measures how well we are protecting the locations that contribute to marine-related cultural identity.&#xA;CURRENT SCORE The global movement to protect at least 30% of our blue planet by 2030 motivates the reference point for this goal. A score of 100 would mean that all countries are protecting at least 30% of their coastal area.&#xA;The Ocean Health Index focuses on the protection of coastal areas located 3 nm offshore and 1 km inland because this is the part of the ocean most people interact with and directly value.</description>
     </item>
   </channel>
 </rss>

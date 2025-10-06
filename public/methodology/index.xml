@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Methodology Overview on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/methodology/</link>
+    <link>http://localhost:1313/methodology/</link>
     <description>Recent content in Methodology Overview on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://oceanhealthindex.org/methodology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/methodology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Dive</title>
-      <link>https://oceanhealthindex.org/methodology/deep-dive/</link>
+      <link>http://localhost:1313/methodology/deep-dive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/methodology/deep-dive/</guid>
-      <description>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=https://ohi-science.org/ohi-methods&#34;&gt;&#xA;&lt;link rel=&#34;canonical&#34; href=&#34;https://ohi-science.org/ohi-methods&#34;&gt;&#xA;&lt;script type=&#34;text/javascript&#34;&gt;&#xA;    window.location.href = &#34;https:\/\/ohi-science.org\/ohi-methods&#34;;&#xA;&lt;/script&gt;</description>
+      <guid>http://localhost:1313/methodology/deep-dive/</guid>
+      <description> </description>
     </item>
   </channel>
 </rss>
