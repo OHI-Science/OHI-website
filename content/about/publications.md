@@ -15,25 +15,25 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 [all data and supplementary methods](/global-scores/data-download/)
 
-[Halpern et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178267), *PLoS ONE**. Drivers and implications of change in global ocean health over the past 5 years.
+[Halpern et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178267), *PLoS ONE*. Drivers and implications of change in global ocean health over the past 5 years.
 
-[Halpern et al. 2015](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117863), *PLoS ONE**. Patterns and emerging trends in global ocean health. [(2013 and updated 2012 global data)](https://github.com/OHI-Science/ohi-global/blob/master/eez2013/OHI2013_PLOS.zip?raw=true)
+[Halpern et al. 2015](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117863), *PLoS ONE*. Patterns and emerging trends in global ocean health. [(2013 and updated 2012 global data)](https://github.com/OHI-Science/ohi-global/blob/master/eez2013/OHI2013_PLOS.zip?raw=true)
 
 [Halpern et al. 2012, Nature](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html). An index to assess the health and benefits of the global ocean. [(original 2012 global data)](ftp://ohi.nceas.ucsb.edu/pub/data/2012/layers.html)
 
 <h4 class="publication-section">Best Practices</h4>
 
-[Lowndes et al. 2017](https://www.nature.com/articles/s41559-017-0160), *Nature Ecology & Evolution**. Our path to better science in less time using open data science tools. [(website with resources and media links)](http://ohi-science.org/betterscienceinlesstime/)
+[Lowndes et al. 2017](https://www.nature.com/articles/s41559-017-0160), *Nature Ecology & Evolution*. Our path to better science in less time using open data science tools. [(website with resources and media links)](http://ohi-science.org/betterscienceinlesstime/)
 
-[Lowndes et al. 2015](http://doi.org/10.7717/peerj.1503), *PeerJ**. Best practices for assessing ocean health in multiple contexts using tailorable frameworks.
+[Lowndes et al. 2015](http://doi.org/10.7717/peerj.1503), *PeerJ*. Best practices for assessing ocean health in multiple contexts using tailorable frameworks.
 
 <h4 class="publication-section">U.S. West Coast</h4>
 
-[Halpern et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0098995), *PLoS ONE**. Assessing the health of the U.S. West Coast with a regional-scale application of the Ocean Health Index. [(data)](https://github.com/OHI-Science/ohi-uswest/blob/master/USwest_PLOS.zip?raw=true)
+[Halpern et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0098995), *PLoS ONE*. Assessing the health of the U.S. West Coast with a regional-scale application of the Ocean Health Index. [(data)](https://github.com/OHI-Science/ohi-uswest/blob/master/USwest_PLOS.zip?raw=true)
 
 <h4 class="publication-section">Brazil</h4>
 
-[Elfes et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0092589), *PLoS ONE**. A regional-scale Ocean Health Index for Brazil. 
+[Elfes et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0092589), *PLoS ONE*. A regional-scale Ocean Health Index for Brazil. 
 
 <h4 class="publication-section">Fiji</h4>
 
@@ -45,13 +45,13 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 <h4 class="publication-section">Canada</h4>
 
-[O’Hara et al. 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227502), *PLoS ONE**. Changes in ocean health in British Columbia from 2001 to 2016.
+[O’Hara et al. 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227502), *PLoS ONE*. Changes in ocean health in British Columbia from 2001 to 2016.
 
-[Daigle et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178044), *PLoS ONE**. Incorporating public priorities in the Ocean Health Index: Canada as a case study.
+[Daigle et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178044), *PLoS ONE*. Incorporating public priorities in the Ocean Health Index: Canada as a case study.
 
 <h4 class="publication-section">Arctic</h4>
 
-[Burgass et al. 2018](https://link.springer.com/article/10.1007/s10113-018-1395-6), *Regional Environmental Change**. A pan-Arctic assessment of the status of marine social-ecological systems.
+[Burgass et al. 2018](https://link.springer.com/article/10.1007/s10113-018-1395-6), *Regional Environmental Change*. A pan-Arctic assessment of the status of marine social-ecological systems.
 
 ## OHI supporting methods
 
@@ -65,23 +65,23 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 <h4 class="publication-section">Species</h4>
 
-[O’Hara et al. 2019](https://onlinelibrary.wiley.com/doi/full/10.1111/conl.12651), *Conservation Letters**. Mapping status and conservation of global at‐risk marine biodiversity.
+[O’Hara et al. 2019](https://onlinelibrary.wiley.com/doi/full/10.1111/conl.12651), *Conservation Letters*. Mapping status and conservation of global at‐risk marine biodiversity.
 
-[O’Hara et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175739), *PLoS ONE**. Aligning marine species range data to better serve science and conservation. [(website with interactive figures and maps)](http://ohi-science.nceas.ucsb.edu/plos*marine*rangemaps/)
+[O’Hara et al. 2017](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175739), *PLoS ONE*. Aligning marine species range data to better serve science and conservation. [(website with interactive figures and maps)](http://ohi-science.nceas.ucsb.edu/plos*marine*rangemaps/)
 
-[Selig et al. 2013](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0060284), *PLoS ONE**. Assessing global marine biodiversity status within a coupled socio-ecological perspective.
+[Selig et al. 2013](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0060284), *PLoS ONE*. Assessing global marine biodiversity status within a coupled socio-ecological perspective.
 
 <h4 class="publication-section">Cumulative Human Impacts</h4>
 
-[Halpern et al. 2025](https://www.science.org/stoken/author-tokens/ST-2884/full), *Scientific**. Cumulative impacts to global marine ecosystems projected to more than double by mid-century. [(data)](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF18K77KZ); [(code)](https://github.com/OHI-Science/stressors)
+[Halpern et al. 2025](https://www.science.org/stoken/author-tokens/ST-2884/full), *Science*. Cumulative impacts to global marine ecosystems projected to more than double by mid-century. [(data)](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF18K77KZ); [(code)](https://github.com/OHI-Science/stressors)
 
-[Halpern et al. 2019](https://www.nature.com/articles/s41598-019-47201-9), *Scientific Reports**. Recent pace of change in human impact on the world’s ocean. [(data)](https://knb.ecoinformatics.org/view/doi:10.5063/F12B8WBS); [(code)](https://github.com/OHI-Science/impact*acceleration)
+[Halpern et al. 2019](https://www.nature.com/articles/s41598-019-47201-9), *Scientific Reports*. Recent pace of change in human impact on the world’s ocean. [(data)](https://knb.ecoinformatics.org/view/doi:10.5063/F12B8WBS); [(code)](https://github.com/OHI-Science/impact*acceleration)
 
-[Halpern et al. 2015](http://www.nature.com/ncomms/2015/150714/ncomms8615/full/ncomms8615.html), *Nature Communications**. Spatial and temporal changes in cumulative human impacts on the world’s ocean. [(data)](https://knb.ecoinformatics.org/#view/doi:10.5063/F19Z92TW)
+[Halpern et al. 2015](http://www.nature.com/ncomms/2015/150714/ncomms8615/full/ncomms8615.html), *Nature Communications*. Spatial and temporal changes in cumulative human impacts on the world’s ocean. [(data)](https://knb.ecoinformatics.org/#view/doi:10.5063/F19Z92TW)
 
-[Micheli et al. 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0079889), *PLoS ONE**. Cumulative Human Impacts on Mediterranean and Black Sea Marine Ecosystems: Assessing Current Pressures and Opportunities. [(website with interactive maps)](https://mermexregio.obs-vlfr.fr/)
+[Micheli et al. 2013](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0079889), *PLoS ONE*. Cumulative Human Impacts on Mediterranean and Black Sea Marine Ecosystems: Assessing Current Pressures and Opportunities. [(website with interactive maps)](https://mermexregio.obs-vlfr.fr/)
 
-[Halpern et al. 2008](http://www.sciencemag.org/content/319/5865/948.abstract),* Science*. A global map of human impact on marine ecosystems. [(data)](https://www.nceas.ucsb.edu/globalmarine/impacts)
+[Halpern et al. 2008](http://www.sciencemag.org/content/319/5865/948.abstract),*Science*. A global map of human impact on marine ecosystems. [(data)](https://www.nceas.ucsb.edu/globalmarine/impacts)
 
 <h4 class="publication-section">Reference points</h4>
 
@@ -89,7 +89,7 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 
 <h4 class="publication-section">Uncertainty</h4>
 
-[Frazier et al. 2016](http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0160377), *PLoS ONE**. Mapping Uncertainty Due to Missing Data in the Global Ocean Health Index.
+[Frazier et al. 2016](http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0160377), *PLoS ONE*. Mapping Uncertainty Due to Missing Data in the Global Ocean Health Index.
 
 <h4 class="publication-section">Goal weighting</h4>
 
@@ -102,9 +102,9 @@ Peer-reviewed publications by the OHI team; * indicates open access.
 [Jacobsen et al. 2014](http://www.sciencedirect.com/science/article/pii/S0308597X13002169), *Marine Policy*. A global synthesis of the economic multiplier effects of marine sectors.
 
 ## Marine assessments
-[Katona et al. 2017](https://www.openchannels.org/literature/16817), *OpenChannels: Forum for Ocean Planning and Management**. Navigating the seascape of ocean management: waypoints on the voyage toward sustainable use.
+[Katona et al. 2017](https://www.openchannels.org/literature/16817), *OpenChannels: Forum for Ocean Planning and Management*. Navigating the seascape of ocean management: waypoints on the voyage toward sustainable use.
 
-[Borja et al. 2016](http://journal.frontiersin.org/article/10.3389/fmars.2016.00020/full), *Frontiers in Marine Science**. Overview of Integrative Assessment of Marine Systems: The Ecosystem Approach in Practice.
+[Borja et al. 2016](http://journal.frontiersin.org/article/10.3389/fmars.2016.00020/full), *Frontiers in Marine Science*. Overview of Integrative Assessment of Marine Systems: The Ecosystem Approach in Practice.
 
 [IOC-UNESCO and UNEP 2016](http://www.geftwap.org/publications/lmes-technical-report/view) Large Marine Ecosystems: Status and Trends. Nairobi.
 Halpern, & Frazier 2016. Chapter 7.7: Cumulative human impacts in the world’s large marine ecosystems. pp 225-237.
