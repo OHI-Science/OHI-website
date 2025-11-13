@@ -3,22 +3,51 @@ type: resources
 title: "Cumulative Human Impacts"
 name: "Cumulative Human Impacts Dataset"
 card_image: "/images/infographs/trends_cumulative_impact.jpg"
-card_text: "Change in human impact on global oceans from 2003 to 2013, mapped to ~1 km gridded resolution."
+card_text: "Human impacts on global oceans."
 bg_image: "/images/banners/fish-net.jpg"
 ---
 <br>
 <br>
 <br>
 
-#### Most recent project
+## Projects
 
->We mapped the cumulative impact of human activities on global oceans from 2003 to 2013.  We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.  
+> Over the years we have worked on several projects mapping the cumulative impact of human activities on global oceans. 
+Here you can find the links to these data.
+
+### Current and future projected impacts
+
+For our most recent work, we used future projections of human stressors to map current and future cumulative impact on marine systems.
+
+*[Citation:](https://www.science.org/doi/abs/10.1126/science.adv2906)
+Benjamin S Halpern, Melanie Frazier, Casey C O’Hara, O Alejandra Vargas-Fonseca, Amanda T Lombard. Cumulative impacts to global marine ecosystems projected to more than double by mid-centurey. Science, 1216-1219.
+
+
+We evaluated ten anthropogenic pressures for six categories, including climate (water temperature; air heat-index; sea level rise), ocean chemistry (ocean acidification; dissolved oxygen), pollution (nutrient input; light), net primary productivity (NPP), disturbance (coastal human population density), and fisheries (fisheries biomass loss). 
+We mapped pressure data at 10 km resolution for both current (roughly 2010-2020) and future (typically 2041-2060, or midcentury) pressure intensities, with focus on the SSP2-4.5 and SSP5-8.5 scenarios. 
+We estimate how these pressures will impact marine habitats based on their overlap with current distributions of 20 marine habitats and the unique vulnerability of each habitat to each pressure.
+The SSP2-4.5, “Middle of the road” scenario approximates current climate policy, whereas the SSP5-8.5, “Fossil-fueled development” is considered an “extreme counterfactual scenario” in which CO2 emissions double by midcentury.
+
+All data are available from [KNB](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF18K77KZ) and the scripts are located on [GitHub](https://github.com/OHI-Science/stressors).
+
+All raster data are 10 km resolution, in Mollweide Coordinate Reference system.
+
+We include several zipped files of data: 
+(1) github_repo_stressors-1.zip is the contents of the GitHub repository that includes R scripts and data used for all calculations; 
+(2) habitat_maps includes 20 .tif files of the habitat data used in the analysis and metadata; 
+(3) pressures_raw includes 60 .tif files of raw (i.e., unscaled) pressure data and metadata; 
+(4) pressures_rescaled includes 48 .tif files of rescaled pressure data (the raw heat index files get collapsed when rescaling) with values all between 0 (no pressure) and 1 (highest pressure), and metadata; 
+(5) impacts_by_pressure includes 40 .tif files that describe the cumulative impact for each pressure across all habitats, at this step, the surface and benthic oxygen as well as the surface temperature and benthic temperature data are combined into a single pressure layers (i.e., reduced-oxygen and ocean-warming); 
+(6) cumulative_impact includes 4 files describing the cumulative impact averaged across all habitats within each pixel.
+
+
+### Trends in impact (2003-2013)
+
+Previously, we had mapped the yearly cumulative impact of human activities on global oceans from 2003 to 2013. We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.
 
 *[Citation:](https://www.nature.com/articles/s41598-019-47201-9)
-Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean. Sci Rep 9, 11609. https://doi.org/10.1038/s41598-019-47201-9*
+Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean. Sci Rep 9, 11609.
 
-
-##### Accessing the data
 The data from this analysis are available from KNB, with a package for each stressor (link to the KNB package by clicking the "Data package name"). 
 
 All raster files are .tif format and coordinate reference system is mollweide wgs84. 
@@ -62,8 +91,9 @@ Shipping | [Shipping](https://knb.ecoinformatics.org/view/resource_map_doi:10.50
 
 The code to create and analyze these data is available from Github: https://github.com/OHI-Science/impact_acceleration
 
-#### Earlier projects
-We mapped the change, using 2008 and 2013 data, in cumulative impacts to global marine ecosystems  from fishing, climate change, and ocean- and land-based stressors ([Halpern et al. 2015](https://www.nature.com/articles/ncomms8615)). Seven data packages are available from KNB:
+
+### Change over a 5 year period (2008 vs. 2013)
+We mapped the change, using both 2008 and 2013 data, in cumulative impacts to global marine ecosystems  from fishing, climate change, and ocean- and land-based stressors ([Halpern et al. 2015](https://www.nature.com/articles/ncomms8615)). Seven data packages are available from KNB:
 
 1. [supplementary data](https://knb.ecoinformatics.org/#view/doi:10.5063/F19Z92TW)  habitat data and other files 
 
@@ -89,6 +119,6 @@ difference between 2008 and 2013 pressure and cumulative impact data.
 All raster files are .tif format and coordinate reference system is mollweide wgs84. 
 
 
-**Original Cumulative Human Impact Data**
+### Original Cumulative Human Impact Data
 
 The original project for mapping the cumulative human impact to marine ecosystems ([Halpern et al. 2008](https://science.sciencemag.org/content/319/5865/948.abstract)) additionally has 4 packages of data, with the [main cumulative impact data](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF19C6VN5) available along with several nested datasets available within that page.

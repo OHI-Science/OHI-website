@@ -622,7 +622,7 @@
       <link>http://localhost:1313/resources/data/cumulative-human-impacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resources/data/cumulative-human-impacts/</guid>
-      <description>Most recent project We mapped the cumulative impact of human activities on global oceans from 2003 to 2013. We found that our impact is increasing for the majority of the ocean (59%). Most of the increase was due to climate change but also from fishing, land-based pollution, and shipping.&#xA;Citation: Halpern, B.S., Frazier, M., Afflerbach, J., Lowndes, J.S., Micheli, F., O’Hara, C., Scarborough, C., Selkoe, K.A., 2019. Recent pace of change in human impact on the world’s ocean.</description>
+      <description>Projects Over the years we have worked on several projects mapping the cumulative impact of human activities on global oceans. Here you can find the links to these data.&#xA;Current and future projected impacts For our most recent work, we used future projections of human stressors to map current and future cumulative impact on marine systems.&#xA;*Citation: Benjamin S Halpern, Melanie Frazier, Casey C O’Hara, O Alejandra Vargas-Fonseca, Amanda T Lombard.</description>
     </item>
     <item>
       <title>Curacao</title>
@@ -1876,6 +1876,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/regions/portugal/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Pressures of Food Production</title>
+      <link>http://localhost:1313/resources/data/food-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resources/data/food-systems/</guid>
+      <description>A team of experts in a working group at NCEAS put all food on the same table to assess and map the cumulative pressures of food prouction from ocean, aquatic, and terrestrial foods (crops and livestock).&#xA;The global assessment mapped the individual and cumulative pressures from climate emissions, nitrogen and phosphorous pollution, water use, and land/sea disturbance.&#xA;*Citation: Halpern, B.S., Frazier, M., Verstaen, J. et al. The environmental footprint of global food production.</description>
     </item>
     <item>
       <title>Prince Edward Islands</title>
