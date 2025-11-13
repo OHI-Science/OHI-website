@@ -600,6 +600,8 @@
   </url><url>
     <loc>http://localhost:1313/methodology/pressure/</loc>
   </url><url>
+    <loc>http://localhost:1313/resources/data/food-systems/</loc>
+  </url><url>
     <loc>http://localhost:1313/regions/prince-edward-islands/</loc>
   </url><url>
     <loc>http://localhost:1313/about/publications/</loc>

@@ -16,10 +16,11 @@ The global assessment mapped the individual and cumulative pressures from climat
 *[Citation:](https://www.nature.com/articles/s41893-022-00965-x)
 Halpern, B.S., Frazier, M., Verstaen, J. et al. The environmental footprint of global food production. Nat Sustain 5, 1027–1039 (2022). https://doi.org/10.1038/s41893-022-00965-x
 
-![](../../images/food_pressures.png)
+![](/images/food_pressures.png)
 
 <br>
 <br>
+
 All data are available from [KNB](https://knb.ecoinformatics.org/view/urn%3Auuid%3A6322fa40-915d-45cb-88ed-69e7e04dd8f3) and the scripts are located on [GitHub](https://github.com/OHI-Science/global_food_pressures).
 
 These global raster data describe the environmental footprint of the majority of food production for 2017. 
