@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scores on Ocean Health Index</title>
-    <link>http://localhost:1313/global-scores/</link>
+    <link>https://oceanhealthindex.org/global-scores/</link>
     <description>Recent content in Scores on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/global-scores/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oceanhealthindex.org/global-scores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Download</title>
-      <link>http://localhost:1313/global-scores/data-download/</link>
+      <link>https://oceanhealthindex.org/global-scores/data-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/global-scores/data-download/</guid>
+      <guid>https://oceanhealthindex.org/global-scores/data-download/</guid>
       <description>2025 OHI Assessment The OHI 2025 global assessment includes scores from 2012 to 2025 for 220 coastal countries and territories.&#xA;This marks our 14th year of calculating the global Ocean Health Index. The average 2025 Index score was 72 out of 100. You can now download 14 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.</description>
     </item>
   </channel>
