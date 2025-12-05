@@ -1,9 +1,9 @@
 ---
 regionId: 85
 title: Ascension
-rank: 24
-meanScore: 76.26
-globalMeanScore: 68.78
+rank: 23
+meanScore: 79.79
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

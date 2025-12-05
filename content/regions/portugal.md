@@ -1,9 +1,9 @@
 ---
 regionId: 183
 title: Portugal
-rank: 67
-meanScore: 70.98
-globalMeanScore: 68.78
+rank: 114
+meanScore: 71.54
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

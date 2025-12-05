@@ -6,8 +6,15 @@
     <description>Recent content in News on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 Global Ocean Health Index</title>
+      <link>http://localhost:1313/news/2025-scores/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-scores/</guid>
+      <description>2025 Ocean Health Index Scores! by Carmen Hoyt, Haylee Oyler, Madison Enda, Melanie Frazier, Ben Halpern&#xA;Wed, Dec 03, 2025&#xA;This year’s Ocean Health Index (OHI) scores show a world continuing to recover from the COVID-19 pandemic.&#xA;This year, the overall global OHI score was 72, which was a 2 point improvement from last year’s score of 70, but still less than the pre-pandemic score of 75.&#xA;NOTE: Because OHI assessments rely on reported data, which often lag by two years, our results likely underestimate the true pace of recovery.</description>
+    </item>
     <item>
       <title>Aquaculture: A Dark Horse in the Race to Feed the World</title>
       <link>http://localhost:1313/news/aquaculture/</link>

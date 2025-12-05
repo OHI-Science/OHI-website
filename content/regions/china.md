@@ -1,9 +1,9 @@
 ---
 regionId: 209
 title: China
-rank: 184
-meanScore: 61.48
-globalMeanScore: 68.78
+rank: 197
+meanScore: 62.17
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

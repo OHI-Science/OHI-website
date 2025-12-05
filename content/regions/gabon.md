@@ -1,9 +1,9 @@
 ---
 regionId: 198
 title: Gabon
-rank: 94
-meanScore: 68.78
-globalMeanScore: 68.78
+rank: 57
+meanScore: 75.41
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 177
 title: Netherlands
-rank: 161
-meanScore: 63.78
-globalMeanScore: 68.78
+rank: 65
+meanScore: 74.71
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

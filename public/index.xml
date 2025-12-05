@@ -6,7 +6,7 @@
     <description>Recent content in Home on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goal: Artisanal Fishing Opportunities</title>
@@ -91,6 +91,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/guidance/clean-waters/</guid>
       <description>People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters can come from land and ocean-based sources and cause many problems. Pollution can result in contaminated marine food, damage to mariculture, toxic blooms, beach closures, and mass kills of organisms. People are sensitive to these phenomena occurring in areas they access for recreation or other purposes but people even appreciate clean waters they do not directly use.</description>
+    </item>
+    <item>
+      <title>2025 Global Ocean Health Index</title>
+      <link>http://localhost:1313/news/2025-scores/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-scores/</guid>
+      <description>2025 Ocean Health Index Scores! by Carmen Hoyt, Haylee Oyler, Madison Enda, Melanie Frazier, Ben Halpern&#xA;Wed, Dec 03, 2025&#xA;This year’s Ocean Health Index (OHI) scores show a world continuing to recover from the COVID-19 pandemic.&#xA;This year, the overall global OHI score was 72, which was a 2 point improvement from last year’s score of 70, but still less than the pre-pandemic score of 75.&#xA;NOTE: Because OHI assessments rely on reported data, which often lag by two years, our results likely underestimate the true pace of recovery.</description>
     </item>
     <item>
       <title>Aquaculture: A Dark Horse in the Race to Feed the World</title>
@@ -643,7 +650,7 @@
       <link>http://localhost:1313/global-scores/data-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/global-scores/data-download/</guid>
-      <description>2024 OHI Assessment The OHI 2024 global assessment includes scores from 2012 to 2024 for 220 coastal countries and territories.&#xA;This marks our 13th year of calculating the global Ocean Health Index. The average 2024 Index score was 69 out of 100. This year the average global OHI scores declined by several points because this year&amp;rsquo;s scores incorporate the massive decline in tourism and recreation due to COVID. Much of tourism has recovered, but these data are not yet available.</description>
+      <description>2025 OHI Assessment The OHI 2025 global assessment includes scores from 2012 to 2025 for 220 coastal countries and territories.&#xA;This marks our 14th year of calculating the global Ocean Health Index. The average 2025 Index score was 72 out of 100. You can now download 14 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.</description>
     </item>
     <item>
       <title>Deep Dive</title>

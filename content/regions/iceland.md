@@ -1,9 +1,9 @@
 ---
 regionId: 143
 title: Iceland
-rank: 154
-meanScore: 64.25
-globalMeanScore: 68.78
+rank: 61
+meanScore: 74.91
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

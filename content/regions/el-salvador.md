@@ -1,9 +1,9 @@
 ---
 regionId: 134
 title: El Salvador
-rank: 164
-meanScore: 63.66
-globalMeanScore: 68.78
+rank: 147
+meanScore: 68.51
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

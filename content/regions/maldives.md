@@ -1,9 +1,9 @@
 ---
 regionId: 39
 title: Maldives
-rank: 92
-meanScore: 69.07
-globalMeanScore: 68.78
+rank: 56
+meanScore: 75.42
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

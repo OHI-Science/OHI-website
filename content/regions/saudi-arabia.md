@@ -1,9 +1,9 @@
 ---
 regionId: 50
 title: Saudi Arabia
-rank: 137
-meanScore: 65.26
-globalMeanScore: 68.78
+rank: 54
+meanScore: 75.49
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

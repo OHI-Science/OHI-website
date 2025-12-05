@@ -1,9 +1,9 @@
 ---
 regionId: 40
 title: Sri Lanka
-rank: 208
-meanScore: 57.13
-globalMeanScore: 68.78
+rank: 196
+meanScore: 62.25
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 19
 title: Tuvalu
-rank: 39
-meanScore: 74.67
-globalMeanScore: 68.78
+rank: 158
+meanScore: 67.11
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

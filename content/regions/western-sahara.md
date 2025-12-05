@@ -1,9 +1,9 @@
 ---
 regionId: 63
 title: Western Sahara
-rank: 66
-meanScore: 71.22
-globalMeanScore: 68.78
+rank: 152
+meanScore: 67.66
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

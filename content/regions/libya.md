@@ -1,9 +1,9 @@
 ---
 regionId: 67
 title: Libya
-rank: 218
-meanScore: 49.82
-globalMeanScore: 68.78
+rank: 217
+meanScore: 53.56
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

@@ -1,9 +1,9 @@
 ---
 regionId: 78
 title: Lebanon
-rank: 216
-meanScore: 51.36
-globalMeanScore: 68.78
+rank: 220
+meanScore: 44.52
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

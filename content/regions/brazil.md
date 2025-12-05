@@ -1,9 +1,9 @@
 ---
 regionId: 171
 title: Brazil
-rank: 75
-meanScore: 70.48
-globalMeanScore: 68.78
+rank: 62
+meanScore: 74.87
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---
