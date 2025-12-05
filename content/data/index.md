@@ -1,10 +1,10 @@
 ---
 headless: true
-dataVersion: "2025-12-4"
+dataVersion: "2025-12-5"
 missingValueCode: 'NA'
 dataFiles:
   scores: scores.csv
-  trends: trends2.csv
+  trends: trends.csv
   regions: regions.topojson
 ---
 
