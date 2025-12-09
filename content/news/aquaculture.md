@@ -1,8 +1,8 @@
 ---
 title: "Aquaculture: A Dark Horse in the Race to Feed the World"
 name: "What is aquaculture and how is it incorporated in the OHI assessment."
-bg_image: "/images/maritime-boundaries/ships.jpg"
-card_image: "/images/maritime-boundaries/beach-boundary.jpg"
+bg_image: "/images/aqua_1.jpg"
+card_image: "/images/aqua_2.jpg"
 preview_text: "Farmed or wild-caught? That is the question."
 date: 2025-09-05
 author: "Carmen Hoyt"
