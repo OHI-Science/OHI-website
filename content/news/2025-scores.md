@@ -67,7 +67,7 @@ Conflict and political instability can severely disrupt the management of marine
 Three of the four regions with the largest recent declines in OHI scores—Yemen, Ukraine, and Libya—are experiencing war or significant internal turmoil, limiting their ability to sustainably manage ocean assets.
 
 
-###Learn more
+### Learn more
 You can [learn more](https://oceanhealthindex.org/) about the OHI Index and [explore all the goal scores](https://oceanhealthindex.org/global-scores/) on our website! 
 
 > As usual, the 2025 assessment includes a new year of data, calculated using the most recent data available from agencies and other sources. Given our commitment to using the best available science, we also updated previous years' scores (2012-2024) using the latest science and data when available. The data and code underlying these results are publicly available ([Data preparation](https://github.com/OHI-Science/ohiprep_v2025) and [Score calculation](https://github.com/OHI-Science/ohi-global)).
