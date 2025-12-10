@@ -1,9 +1,9 @@
 ---
 regionId: 138
 title: Peru
-rank: 153
-meanScore: 64.31
-globalMeanScore: 68.78
+rank: 171
+meanScore: 65.56
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

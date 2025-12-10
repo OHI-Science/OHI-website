@@ -1,9 +1,9 @@
 ---
 regionId: 130
 title: Costa Rica
-rank: 157
-meanScore: 64.08
-globalMeanScore: 68.78
+rank: 136
+meanScore: 69.73
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

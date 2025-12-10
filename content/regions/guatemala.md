@@ -1,9 +1,9 @@
 ---
 regionId: 136
 title: Guatemala
-rank: 138
-meanScore: 65.22
-globalMeanScore: 68.78
+rank: 125
+meanScore: 70.88
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

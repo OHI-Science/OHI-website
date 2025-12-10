@@ -1,9 +1,9 @@
 ---
 regionId: 214
 title: Egypt
-rank: 130
-meanScore: 65.9
-globalMeanScore: 68.78
+rank: 123
+meanScore: 70.92
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

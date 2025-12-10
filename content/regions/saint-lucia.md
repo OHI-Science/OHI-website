@@ -1,9 +1,9 @@
 ---
 regionId: 122
 title: Saint Lucia
-rank: 156
-meanScore: 64.12
-globalMeanScore: 68.78
+rank: 85
+meanScore: 73.69
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

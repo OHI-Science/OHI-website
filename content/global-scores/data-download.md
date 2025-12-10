@@ -8,13 +8,18 @@ menu:
     weight: 3
 ---
 
-### 2024 OHI Assessment
+### 2025 OHI Assessment
 
-The OHI 2024 global assessment includes scores from 2012 to 2024 for 220 coastal countries and territories.  
+The OHI 2025 global assessment includes scores from 2012 to 2025 for 
+220 coastal countries and territories.  
 
-This marks our 13th year of calculating the global Ocean Health Index. The average 2024 Index score was 69 out of 100. This year the average global OHI scores declined by several points because this year's scores incorporate the massive decline in tourism and recreation due to COVID. Much of tourism has recovered, but these data are not yet available. You can now download 13 years of data which makes the OHI a very useful resource for exploring changes in the sustainable use of ocean resources over time.
+This marks our 14th year of calculating the global Ocean Health Index. 
+The average 2025 Index score was 72 out of 100. 
+You can now download 14 years of data which makes 
+the OHI a very useful resource for exploring changes 
+in the sustainable use of ocean resources over time.
 
-![Flowerplot](/images/flower_GlobalAverage2024.png)
+![Flowerplot](/images/flower_GlobalAverage2025.png)
 
 {{<button text="Download Scores" link=data/scores.csv icon="images/misc/download-icon.svg">}}
 
@@ -40,7 +45,7 @@ In the interest of transparency and to promote scientific discovery that builds 
 
 Extra materials we use to calculate scores are available from these locations:
 
-- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2024) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
+- [Preparing data: ](https://github.com/OHI-Science/ohiprep_v2025) GitHub repository (ohiprep) with scripts used to prepare data. We also have a [document](https://github.com/OHI-Science/ohiprep_v2021/blob/gh-pages/Reference/SOP_dataOrganization/dataOrganization_SOP.md) describing how these files are organized.  
 - [Calculating scores: ](https://github.com/OHI-Science/ohi-global) GitHub repository (ohi-global) with scripts used to calculate scores.
 - [OHI Global Guide: ](http://ohi-science.org/ohi-global-guide/index.html) A (very) detailed manual for conducting the global assessment.
 - [Large data files: ](https://mazu.nceas.ucsb.edu/data/) Extra data too large to host on GitHub.

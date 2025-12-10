@@ -1,9 +1,9 @@
 ---
 regionId: 73
 title: Russia
-rank: 28
-meanScore: 75.72
-globalMeanScore: 68.78
+rank: 30
+meanScore: 78.88
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

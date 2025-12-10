@@ -1,9 +1,9 @@
 ---
 regionId: 120
 title: Antigua and Barbuda
-rank: 40
-meanScore: 74.64
-globalMeanScore: 68.78
+rank: 25
+meanScore: 79.69
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

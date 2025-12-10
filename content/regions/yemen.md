@@ -1,9 +1,9 @@
 ---
 regionId: 47
 title: Yemen
-rank: 142
-meanScore: 64.79
-globalMeanScore: 68.78
+rank: 208
+meanScore: 58.65
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

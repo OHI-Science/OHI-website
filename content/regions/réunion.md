@@ -1,9 +1,9 @@
 ---
 regionId: 32
 title: Réunion
-rank: 74
-meanScore: 70.5
-globalMeanScore: 68.78
+rank: 27
+meanScore: 79.39
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

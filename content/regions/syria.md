@@ -1,9 +1,9 @@
 ---
 regionId: 77
 title: Syria
-rank: 220
-meanScore: 46.87
-globalMeanScore: 68.78
+rank: 219
+meanScore: 47.14
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

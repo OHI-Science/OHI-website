@@ -15,7 +15,7 @@ In order to build and run the website, Node.js and Hugo are both required.
 To run the server locally, run the following from the top level ohi-site directory,
 
 ```
-hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
+# hugo server --disableFastRender --noHTTPCache --cleanDestinationDir
 ```
 `hugo server` will tell Hugo to run a server locally, the other code cleans things up.
 
@@ -95,7 +95,10 @@ markdown uses the [commonMark syntax](https://commonmark.org/help/), with some a
 add-ons called "shortcodes". Content markdown files also use metadata at the start of the markdown file called "front-matter". 
 
 ### Updating scores
-Replace content/data/scores.csv with the latest update from ohi-global (e.g., ohi-global/yearly_results/global2024/OHI_final_formatted_scores_2024-09-11.csv) and change the name to scores.
+Replace content/data/scores.csv with the latest 
+update from ohi-global 
+(e.g., ohi-global/yearly_results/global2024/OHI_final_formatted_scores_2024-09-11.csv) 
+and change the name to scores.
 
 Open content/data/index.md
 and change the name of this variable in the header material 
@@ -119,10 +122,16 @@ Front-matter is located at the top of each markdown file, between two `---` sepa
 
 ## Shortcodes (markdown extensions)
 
-In addition to basic markdown formatting, the following codes can be used in any of the markdown content files:
+In addition to basic markdown formatting, the following 
+codes can be used in any of the markdown content files:
 
 ### `{{< scoresGlobe >}}`
-This code inserts the data visualization that shows the score for each region on an interactive globe, where the year and goal can be changed using inputs. The scores globe uses the data contained in the `content/data/scores.csv` file (see `content/data/_index.md` for details). There should only be a maximum of 1 scores globe on each page.
+This code inserts the data visualization that shows the score 
+for each region on an interactive globe, where the year and 
+goal can be changed using inputs. The scores globe uses the data c
+ontained in the `content/data/scores.csv` file 
+(see `content/data/_index.md` for details). 
+There should only be a maximum of 1 scores globe on each page.
 
 ### `{{< csvTable path="path/to/table.csv" >}}`
 
@@ -135,11 +144,21 @@ Besides using [regular markdown table syntax](https://www.markdownguide.org/exte
 
 ### `{{< regionsDropdown label="Select a region" >}}`
 
-The `regionsDropdown` shortcode creates a dropdown with all of the OHI region names that are included in the `scores.csv` file. When a user selects one of the regions, then they are directed to the score page for that region. The `label` text option is optional.
+The `regionsDropdown` shortcode creates a dropdown 
+with all of the OHI region names that are included in the 
+`scores.csv` file. When a user selects one of the regions, 
+then they are directed to the score page for that region. The 
+`label` text option is optional.
 
 ### `{{< gauge regionId="0" goalCode="ICO" >}}`
 
-The `gauge` shortcode renders a gauge visualization showing the score for the given region and given goal, for the most current year that is available in the `scores.csv` file. For the `regionId` property, use one of the numbers that are used to identify regions in `scores.csv`; use "0" for the global average. The `goalCode` property should similarly be set to one of the two to three digit letter codes used in `scores.csv`.
+The `gauge` shortcode renders a gauge visualization showing
+the score for the given region and given goal, for the most 
+current year that is available in the `scores.csv` file. 
+For the `regionId` property, use one of the numbers that are 
+used to identify regions in `scores.csv`; use "0" for the global 
+average. The `goalCode` property should similarly be set to one of the 
+two to three digit letter codes used in `scores.csv`.
 
 ### `{{< aster regionId="0" linkTo="methodology" >}}`
 

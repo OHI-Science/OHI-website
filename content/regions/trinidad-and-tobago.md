@@ -1,9 +1,9 @@
 ---
 regionId: 126
 title: Trinidad and Tobago
-rank: 134
-meanScore: 65.68
-globalMeanScore: 68.78
+rank: 176
+meanScore: 65.36
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---

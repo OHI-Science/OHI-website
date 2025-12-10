@@ -1,9 +1,9 @@
 ---
 regionId: 54
 title: United Arab Emirates
-rank: 14
-meanScore: 79.83
-globalMeanScore: 68.78
+rank: 6
+meanScore: 85.54
+globalMeanScore: 72.31
 numRegions: 220
 layout: region_score
 ---
