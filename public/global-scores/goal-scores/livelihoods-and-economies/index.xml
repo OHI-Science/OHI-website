@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goal: Livelihoods and Economies on Ocean Health Index</title>
-    <link>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/</link>
+    <link>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/</link>
     <description>Recent content in Goal: Livelihoods and Economies on Ocean Health Index</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sub-Goal: Livelihoods</title>
-      <link>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</link>
+      <link>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</guid>
+      <guid>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/livelihoods/</guid>
       <description>MARINE ENVIRONMENTS PROVIDE JOB OPPORTUNITIES This sub-goal describes the quantity and quality of marine-related jobs for people living on the coast, such as: commercial fishing, mariculture, tourism and recreation, and whale watching.&#xA;CURRENT SCORE Sadly, the Livelihoods subgoal has not been meaningfully updated since the origin of the global Ocean Health Index in 2012. The datasets we used for this model were discontinued, and we have been unable to find good replacements.</description>
     </item>
     <item>
       <title>Sub-Goal:Economies</title>
-      <link>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/economies/</link>
+      <link>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/economies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://oceanhealthindex.org/global-scores/goal-scores/livelihoods-and-economies/economies/</guid>
+      <guid>http://localhost:1313/global-scores/goal-scores/livelihoods-and-economies/economies/</guid>
       <description>MARINE ENVIRONMENTS SUPPORT ECONOMIES The Economies goal captures the economic value associated with marine industries using revenue from marine sectors, such as commercial fishing, mariculture, tourism and recreation, shipping and transportation, whale watching, ports and harbors, ship and boat building, and renewable energy production.&#xA;CURRENT SCORE Sadly, the Economies subgoal has not been meaningfully updated since the origin of the global Ocean Health Index in 2012. The datasets we used for this model were discontinued, and we have been unable to find good replacements.</description>
     </item>
   </channel>

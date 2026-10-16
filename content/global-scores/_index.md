@@ -8,6 +8,11 @@ menu:
     weight: 1
     name: 'Scores by country'
 ---
+> **We are no longer updating OHI scores.**  
+If you would like to support the continuation of 
+the Ocean Health Index, please be in touch 
+(Ben Halpern at [halpern@nceas.ucsb.edu](mailto:halpern@nceas.ucsb.edu)).
+
 The global Ocean Health Index measures the state of the world’s oceans. 
 
 The global OHI score for the 2025 assessment was 72, which shows evidence of
